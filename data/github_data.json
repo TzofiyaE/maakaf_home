@@ -25,7 +25,7 @@
           "pullRequests": 114,
           "issues": 24,
           "prComments": 649,
-          "issueComments": 816
+          "issueComments": 815
         },
         {
           "repoName": "argus",
@@ -83,7 +83,7 @@
         "totalPRs": 131,
         "totalIssues": 47,
         "totalPRComments": 685,
-        "totalIssueComments": 1077
+        "totalIssueComments": 1076
       }
     },
     {
@@ -133,7 +133,7 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 459,
-        "followers": 2311,
+        "followers": 2310,
         "following": 1099,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
@@ -388,7 +388,7 @@
         "company": "Consultant, Trainer and Open Source developer",
         "blog": "https://szabgab.com/",
         "twitterUsername": null,
-        "publicRepos": 1052,
+        "publicRepos": 1053,
         "followers": 656,
         "following": 16,
         "accountType": "User",
@@ -697,7 +697,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 364,
+          "commits": 363,
           "pullRequests": 11,
           "issues": 34,
           "prComments": 11,
@@ -705,7 +705,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 364,
+        "totalCommits": 363,
         "totalPRs": 11,
         "totalIssues": 34,
         "totalPRComments": 11,
@@ -714,16 +714,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1597,
+    "totalCommits": 1596,
     "totalPRs": 281,
     "totalIssues": 183,
     "totalPRComments": 782,
-    "totalIssueComments": 1380,
+    "totalIssueComments": 1379,
     "totalRepos": 38,
     "successfulUsers": 11,
     "failedUsers": 0,
     "totalUsers": 11,
-    "analysisTimeframe": "2025-05-23 to 2025-11-19",
+    "analysisTimeframe": "2025-05-24 to 2025-11-20",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
