@@ -98,7 +98,7 @@
         "twitterUsername": null,
         "publicRepos": 44,
         "followers": 30,
-        "following": 49,
+        "following": 50,
         "accountType": "User",
         "createdAt": "2015-02-22T11:19:54.000Z"
       },
@@ -560,7 +560,7 @@
           "repoName": "maakaf-temp",
           "description": "A website for the Isreli open-source community- Ma'akaf",
           "url": "https://github.com/Maakaf/maakaf-temp",
-          "commits": 1,
+          "commits": 0,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -598,7 +598,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 237,
+        "totalCommits": 236,
         "totalPRs": 11,
         "totalIssues": 30,
         "totalPRComments": 0,
@@ -714,7 +714,7 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1596,
+    "totalCommits": 1595,
     "totalPRs": 281,
     "totalIssues": 183,
     "totalPRComments": 782,
@@ -723,7 +723,7 @@
     "successfulUsers": 11,
     "failedUsers": 0,
     "totalUsers": 11,
-    "analysisTimeframe": "2025-05-24 to 2025-11-20",
+    "analysisTimeframe": "2025-05-25 to 2025-11-21",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
