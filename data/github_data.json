@@ -2,6 +2,67 @@
   "users": [
     {
       "user": {
+        "username": "davidmeirlevy",
+        "displayName": "David Meir-Levy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6875922?v=4",
+        "bio": null,
+        "location": "Tel-Aviv",
+        "company": "@prici-io  @configu @qelos-io",
+        "blog": "https://www.davidlevy.co.il",
+        "twitterUsername": "DavidMeirLevy",
+        "publicRepos": 72,
+        "followers": 54,
+        "following": 13,
+        "accountType": "User",
+        "createdAt": "2014-03-06T18:34:31.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "qelos",
+          "description": "The platform to create AI platforms",
+          "url": "https://github.com/qelos-io/qelos",
+          "commits": 402,
+          "pullRequests": 11,
+          "issues": 10,
+          "prComments": 11,
+          "issueComments": 33
+        }
+      ],
+      "summary": {
+        "totalCommits": 402,
+        "totalPRs": 11,
+        "totalIssues": 10,
+        "totalPRComments": 11,
+        "totalIssueComments": 33
+      }
+    },
+    {
+      "user": {
+        "username": "moshe-stein24",
+        "displayName": null,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/119971810?v=4",
+        "bio": null,
+        "location": null,
+        "company": null,
+        "blog": "",
+        "twitterUsername": null,
+        "publicRepos": 8,
+        "followers": 0,
+        "following": 3,
+        "accountType": "User",
+        "createdAt": "2022-12-06T19:46:01.000Z"
+      },
+      "repos": [],
+      "summary": {
+        "totalCommits": 0,
+        "totalPRs": 0,
+        "totalIssues": 0,
+        "totalPRComments": 0,
+        "totalIssueComments": 0
+      }
+    },
+    {
+      "user": {
         "username": "fruch",
         "displayName": "Israel Fruchter",
         "avatarUrl": "https://avatars.githubusercontent.com/u/340979?v=4",
@@ -21,31 +82,31 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 296,
-          "pullRequests": 113,
-          "issues": 24,
-          "prComments": 648,
-          "issueComments": 813
+          "commits": 309,
+          "pullRequests": 123,
+          "issues": 25,
+          "prComments": 755,
+          "issueComments": 896
         },
         {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
-          "commits": 18,
-          "pullRequests": 7,
+          "commits": 20,
+          "pullRequests": 8,
           "issues": 12,
           "prComments": 26,
-          "issueComments": 57
+          "issueComments": 64
         },
         {
           "repoName": "scylla-ccm",
           "description": "Cassandra Cluster Manager, modified for Scylla",
           "url": "https://github.com/scylladb/scylla-ccm",
-          "commits": 7,
-          "pullRequests": 3,
+          "commits": 10,
+          "pullRequests": 5,
           "issues": 0,
-          "prComments": 0,
-          "issueComments": 18
+          "prComments": 6,
+          "issueComments": 23
         },
         {
           "repoName": "scylla-cqlsh",
@@ -65,7 +126,27 @@
           "pullRequests": 2,
           "issues": 10,
           "prComments": 7,
-          "issueComments": 165
+          "issueComments": 161
+        },
+        {
+          "repoName": "scylla-bench",
+          "description": null,
+          "url": "https://github.com/scylladb/scylla-bench",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 5,
+          "issueComments": 4
+        },
+        {
+          "repoName": "cassandra-stress",
+          "description": null,
+          "url": "https://github.com/scylladb/cassandra-stress",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "scylla-monitoring",
@@ -79,11 +160,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 334,
-        "totalPRs": 130,
-        "totalIssues": 46,
-        "totalPRComments": 684,
-        "totalIssueComments": 1069
+        "totalCommits": 355,
+        "totalPRs": 145,
+        "totalIssues": 47,
+        "totalPRComments": 802,
+        "totalIssueComments": 1164
       }
     },
     {
@@ -107,19 +188,19 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 51,
-          "pullRequests": 14,
-          "issues": 14,
-          "prComments": 55,
-          "issueComments": 71
+          "commits": 55,
+          "pullRequests": 17,
+          "issues": 15,
+          "prComments": 58,
+          "issueComments": 82
         }
       ],
       "summary": {
-        "totalCommits": 51,
-        "totalPRs": 14,
-        "totalIssues": 14,
-        "totalPRComments": 55,
-        "totalIssueComments": 71
+        "totalCommits": 55,
+        "totalPRs": 17,
+        "totalIssues": 15,
+        "totalPRComments": 58,
+        "totalIssueComments": 82
       }
     },
     {
@@ -143,27 +224,27 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 192,
-          "pullRequests": 26,
-          "issues": 27,
+          "commits": 205,
+          "pullRequests": 29,
+          "issues": 26,
           "prComments": 5,
-          "issueComments": 26
+          "issueComments": 29
         },
         {
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 170,
-          "pullRequests": 28,
+          "commits": 171,
+          "pullRequests": 27,
           "issues": 22,
           "prComments": 18,
-          "issueComments": 61
+          "issueComments": 62
         },
         {
           "repoName": "mcp-server-nodejs-api-docs",
           "description": "MCP Server for Node.js API documentation",
           "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 53,
+          "commits": 24,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
@@ -193,9 +274,9 @@
           "repoName": "anti-trojan-source",
           "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
           "url": "https://github.com/lirantal/anti-trojan-source",
-          "commits": 15,
+          "commits": 16,
           "pullRequests": 5,
-          "issues": 1,
+          "issues": 2,
           "prComments": 0,
           "issueComments": 5
         },
@@ -253,7 +334,7 @@
           "repoName": "create-node-lib",
           "description": "Scaffold a batteries-included Node.js library project with docs, tests, semantic releases and more",
           "url": "https://github.com/lirantal/create-node-lib",
-          "commits": 18,
+          "commits": 16,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -318,14 +399,70 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "enhanced-postgres-mcp-server",
+          "description": null,
+          "url": "https://github.com/GarethCott/enhanced-postgres-mcp-server",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "klavis",
+          "description": "Klavis AI (YC X25):  MCP integration platforms that let AI agents use tools reliably at any scale",
+          "url": "https://github.com/Klavis-AI/klavis",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 515,
-        "totalPRs": 70,
-        "totalIssues": 55,
+        "totalCommits": 499,
+        "totalPRs": 72,
+        "totalIssues": 57,
         "totalPRComments": 28,
-        "totalIssueComments": 127
+        "totalIssueComments": 131
+      }
+    },
+    {
+      "user": {
+        "username": "sivanbecker",
+        "displayName": "Sivan Becker",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/20453622?v=4",
+        "bio": null,
+        "location": null,
+        "company": null,
+        "blog": "",
+        "twitterUsername": null,
+        "publicRepos": 28,
+        "followers": 8,
+        "following": 13,
+        "accountType": "User",
+        "createdAt": "2016-07-14T07:01:25.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 6,
+          "pullRequests": 10,
+          "issues": 9,
+          "prComments": 0,
+          "issueComments": 15
+        }
+      ],
+      "summary": {
+        "totalCommits": 6,
+        "totalPRs": 10,
+        "totalIssues": 9,
+        "totalPRComments": 0,
+        "totalIssueComments": 15
       }
     },
     {
@@ -355,31 +492,6 @@
     },
     {
       "user": {
-        "username": "sivanbecker",
-        "displayName": "Sivan Becker",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/20453622?v=4",
-        "bio": null,
-        "location": null,
-        "company": null,
-        "blog": "",
-        "twitterUsername": null,
-        "publicRepos": 28,
-        "followers": 8,
-        "following": 13,
-        "accountType": "User",
-        "createdAt": "2016-07-14T07:01:25.000Z"
-      },
-      "repos": [],
-      "summary": {
-        "totalCommits": 0,
-        "totalPRs": 0,
-        "totalIssues": 0,
-        "totalPRComments": 0,
-        "totalIssueComments": 0
-      }
-    },
-    {
-      "user": {
         "username": "szabgab",
         "displayName": "Gábor Szabó",
         "avatarUrl": "https://avatars.githubusercontent.com/u/48833?v=4",
@@ -389,74 +501,29 @@
         "blog": "https://szabgab.com/",
         "twitterUsername": null,
         "publicRepos": 1053,
-        "followers": 657,
+        "followers": 656,
         "following": 16,
         "accountType": "User",
         "createdAt": "2009-01-23T19:05:27.000Z"
       },
-      "repos": [],
+      "repos": [
+        {
+          "repoName": "ladino-diksionaryo-data",
+          "description": "Las palavras, los egzempios del diksionaryo",
+          "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        }
+      ],
       "summary": {
         "totalCommits": 0,
         "totalPRs": 0,
         "totalIssues": 0,
         "totalPRComments": 0,
-        "totalIssueComments": 0
-      }
-    },
-    {
-      "user": {
-        "username": "Lidor57",
-        "displayName": "Lidor Maimon",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/219325371?v=4",
-        "bio": null,
-        "location": null,
-        "company": null,
-        "blog": "",
-        "twitterUsername": null,
-        "publicRepos": 6,
-        "followers": 0,
-        "following": 0,
-        "accountType": "User",
-        "createdAt": "2025-07-04T17:09:24.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "os-practice",
-          "description": null,
-          "url": "https://github.com/UrielOfir/os-practice",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 2,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
-          "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        }
-      ],
-      "summary": {
-        "totalCommits": 27,
-        "totalPRs": 13,
-        "totalIssues": 2,
-        "totalPRComments": 0,
-        "totalIssueComments": 4
+        "totalIssueComments": 2
       }
     },
     {
@@ -480,21 +547,21 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 184,
+          "commits": 186,
           "pullRequests": 3,
           "issues": 17,
           "prComments": 0,
-          "issueComments": 31
+          "issueComments": 33
         },
         {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 14,
-          "pullRequests": 3,
-          "issues": 12,
+          "commits": 32,
+          "pullRequests": 10,
+          "issues": 15,
           "prComments": 0,
-          "issueComments": 24
+          "issueComments": 28
         },
         {
           "repoName": "os-practice",
@@ -574,7 +641,7 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 1
+          "issueComments": 3
         },
         {
           "repoName": "site",
@@ -598,11 +665,67 @@
         }
       ],
       "summary": {
-        "totalCommits": 235,
-        "totalPRs": 11,
-        "totalIssues": 30,
+        "totalCommits": 255,
+        "totalPRs": 18,
+        "totalIssues": 33,
         "totalPRComments": 0,
-        "totalIssueComments": 69
+        "totalIssueComments": 77
+      }
+    },
+    {
+      "user": {
+        "username": "Lidor57",
+        "displayName": "Lidor Maimon",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/219325371?v=4",
+        "bio": null,
+        "location": null,
+        "company": null,
+        "blog": "",
+        "twitterUsername": null,
+        "publicRepos": 6,
+        "followers": 0,
+        "following": 0,
+        "accountType": "User",
+        "createdAt": "2025-07-04T17:09:24.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "os-practice",
+          "description": null,
+          "url": "https://github.com/UrielOfir/os-practice",
+          "commits": 0,
+          "pullRequests": 1,
+          "issues": 2,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 0,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
+        }
+      ],
+      "summary": {
+        "totalCommits": 27,
+        "totalPRs": 13,
+        "totalIssues": 2,
+        "totalPRComments": 0,
+        "totalIssueComments": 4
       }
     },
     {
@@ -636,94 +759,33 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 58,
-          "pullRequests": 27,
+          "commits": 59,
+          "pullRequests": 28,
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 61,
-        "totalPRs": 30,
+        "totalCommits": 62,
+        "totalPRs": 31,
         "totalIssues": 1,
         "totalPRComments": 3,
         "totalIssueComments": 1
       }
-    },
-    {
-      "user": {
-        "username": "moshe-stein24",
-        "displayName": null,
-        "avatarUrl": "https://avatars.githubusercontent.com/u/119971810?v=4",
-        "bio": null,
-        "location": null,
-        "company": null,
-        "blog": "",
-        "twitterUsername": null,
-        "publicRepos": 8,
-        "followers": 0,
-        "following": 3,
-        "accountType": "User",
-        "createdAt": "2022-12-06T19:46:01.000Z"
-      },
-      "repos": [],
-      "summary": {
-        "totalCommits": 0,
-        "totalPRs": 0,
-        "totalIssues": 0,
-        "totalPRComments": 0,
-        "totalIssueComments": 0
-      }
-    },
-    {
-      "user": {
-        "username": "davidmeirlevy",
-        "displayName": "David Meir-Levy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/6875922?v=4",
-        "bio": null,
-        "location": "Tel-Aviv",
-        "company": "@prici-io  @configu @qelos-io",
-        "blog": "https://www.davidlevy.co.il",
-        "twitterUsername": "DavidMeirLevy",
-        "publicRepos": 72,
-        "followers": 54,
-        "following": 13,
-        "accountType": "User",
-        "createdAt": "2014-03-06T18:34:31.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "qelos",
-          "description": "The platform to create AI platforms",
-          "url": "https://github.com/qelos-io/qelos",
-          "commits": 348,
-          "pullRequests": 11,
-          "issues": 34,
-          "prComments": 11,
-          "issueComments": 31
-        }
-      ],
-      "summary": {
-        "totalCommits": 348,
-        "totalPRs": 11,
-        "totalIssues": 34,
-        "totalPRComments": 11,
-        "totalIssueComments": 31
-      }
     }
   ],
   "globalSummary": {
-    "totalCommits": 1571,
-    "totalPRs": 279,
-    "totalIssues": 182,
-    "totalPRComments": 781,
-    "totalIssueComments": 1372,
-    "totalRepos": 38,
+    "totalCommits": 1661,
+    "totalPRs": 317,
+    "totalIssues": 174,
+    "totalPRComments": 902,
+    "totalIssueComments": 1509,
+    "totalRepos": 43,
     "successfulUsers": 11,
     "failedUsers": 0,
     "totalUsers": 11,
-    "analysisTimeframe": "2025-05-26 to 2025-11-22",
+    "analysisTimeframe": "2025-05-27 to 2025-11-23",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
