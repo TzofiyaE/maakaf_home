@@ -74,16 +74,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 59,
-          "pullRequests": 28,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 1
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -92,6 +82,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 59,
+          "pullRequests": 28,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 1
         }
       ],
       "summary": {
@@ -123,7 +123,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 410,
+          "commits": 420,
           "pullRequests": 11,
           "issues": 10,
           "prComments": 11,
@@ -131,7 +131,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 410,
+        "totalCommits": 420,
         "totalPRs": 11,
         "totalIssues": 10,
         "totalPRComments": 11,
@@ -184,21 +184,21 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 315,
+          "commits": 314,
           "pullRequests": 125,
-          "issues": 25,
-          "prComments": 775,
-          "issueComments": 899
+          "issues": 26,
+          "prComments": 778,
+          "issueComments": 901
         },
         {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
-          "commits": 20,
-          "pullRequests": 7,
+          "commits": 17,
+          "pullRequests": 6,
           "issues": 11,
-          "prComments": 16,
-          "issueComments": 64
+          "prComments": 10,
+          "issueComments": 67
         },
         {
           "repoName": "scylla-ccm",
@@ -228,7 +228,7 @@
           "pullRequests": 2,
           "issues": 10,
           "prComments": 7,
-          "issueComments": 166
+          "issueComments": 169
         },
         {
           "repoName": "cassandra-stress",
@@ -261,16 +261,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "scylla-machine-image",
-          "description": null,
-          "url": "https://github.com/scylladb/scylla-machine-image",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "gemini",
           "description": "Test data integrity by comparing against an Oracle running in parallel",
           "url": "https://github.com/scylladb/gemini",
@@ -279,14 +269,24 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "scylla-machine-image",
+          "description": null,
+          "url": "https://github.com/scylladb/scylla-machine-image",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 361,
-        "totalPRs": 147,
-        "totalIssues": 46,
-        "totalPRComments": 812,
-        "totalIssueComments": 1171
+        "totalCommits": 357,
+        "totalPRs": 146,
+        "totalIssues": 47,
+        "totalPRComments": 809,
+        "totalIssueComments": 1179
       }
     },
     {
@@ -314,7 +314,7 @@
           "pullRequests": 17,
           "issues": 15,
           "prComments": 58,
-          "issueComments": 83
+          "issueComments": 85
         }
       ],
       "summary": {
@@ -322,7 +322,7 @@
         "totalPRs": 17,
         "totalIssues": 15,
         "totalPRComments": 58,
-        "totalIssueComments": 83
+        "totalIssueComments": 85
       }
     },
     {
@@ -336,7 +336,7 @@
         "blog": "zviel.com",
         "twitterUsername": null,
         "publicRepos": 18,
-        "followers": 8,
+        "followers": 9,
         "following": 25,
         "accountType": "User",
         "createdAt": "2023-05-06T21:59:34.000Z"
@@ -373,7 +373,7 @@
         "twitterUsername": "liran_tal",
         "publicRepos": 459,
         "followers": 2310,
-        "following": 1100,
+        "following": 1101,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
       },
@@ -382,11 +382,11 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 205,
+          "commits": 195,
           "pullRequests": 29,
-          "issues": 26,
+          "issues": 24,
           "prComments": 5,
-          "issueComments": 29
+          "issueComments": 28
         },
         {
           "repoName": "npq",
@@ -402,7 +402,7 @@
           "repoName": "mcp-server-nodejs-api-docs",
           "description": "MCP Server for Node.js API documentation",
           "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 21,
+          "commits": 19,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
@@ -422,11 +422,11 @@
           "repoName": "npm-security-best-practices",
           "description": "Collection of npm package manager Security Best Practices",
           "url": "https://github.com/lirantal/npm-security-best-practices",
-          "commits": 23,
+          "commits": 24,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 1,
-          "issueComments": 1
+          "issueComments": 2
         },
         {
           "repoName": "anti-trojan-source",
@@ -492,7 +492,7 @@
           "repoName": "create-node-lib",
           "description": "Scaffold a batteries-included Node.js library project with docs, tests, semantic releases and more",
           "url": "https://github.com/lirantal/create-node-lib",
-          "commits": 16,
+          "commits": 12,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -580,9 +580,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 496,
+        "totalCommits": 481,
         "totalPRs": 72,
-        "totalIssues": 57,
+        "totalIssues": 55,
         "totalPRComments": 28,
         "totalIssueComments": 131
       }
@@ -800,7 +800,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 257,
+          "commits": 256,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -877,6 +877,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "perlweekly",
+          "description": "A free, once a week e-mail round-up of hand-picked news and articles about Perl",
+          "url": "https://github.com/szabgab/perlweekly",
+          "commits": 4,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
+        },
+        {
           "repoName": "ladino-diksionaryo-data",
           "description": "Las palavras, los egzempios del diksionaryo",
           "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
@@ -887,14 +897,14 @@
           "issueComments": 2
         },
         {
-          "repoName": "perlweekly",
-          "description": "A free, once a week e-mail round-up of hand-picked news and articles about Perl",
-          "url": "https://github.com/szabgab/perlweekly",
-          "commits": 4,
+          "repoName": "OSDC-Code-Maven.github.io",
+          "description": "Open Source Development Courses",
+          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
+          "commits": 1,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 3
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -923,16 +933,6 @@
       },
       "repos": [
         {
-          "repoName": "posthog",
-          "description": "🦔 PostHog provides open-source web & product analytics, session recording, feature flagging and A/B testing that you can self-host. Get started - free.",
-          "url": "https://github.com/PostHog/posthog",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "paperless-mcp",
           "description": "An MCP (Model Context Protocol) server for interacting with a Paperless-NGX API server. This server provides tools for managing documents, tags, correspondents, and document types in your Paperless-NGX instance.",
           "url": "https://github.com/baruchiro/paperless-mcp",
@@ -943,6 +943,16 @@
           "issueComments": 2
         },
         {
+          "repoName": "posthog",
+          "description": "🦔 PostHog provides open-source web & product analytics, session recording, feature flagging and A/B testing that you can self-host. Get started - free.",
+          "url": "https://github.com/PostHog/posthog",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
           "repoName": "BcsStudent",
           "description": "My blog, mainly about programming, in Hebrew",
           "url": "https://github.com/baruchiro/BcsStudent",
@@ -951,6 +961,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "israeli-bank-scrapers",
+          "description": "Provide scrapers for all major Israeli banks and credit card companies",
+          "url": "https://github.com/eshaham/israeli-bank-scrapers",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 2,
+          "issueComments": 1
         },
         {
           "repoName": "OpenHands",
@@ -967,8 +987,8 @@
         "totalCommits": 5,
         "totalPRs": 2,
         "totalIssues": 1,
-        "totalPRComments": 1,
-        "totalIssueComments": 3
+        "totalPRComments": 3,
+        "totalIssueComments": 4
       }
     },
     {
@@ -1119,16 +1139,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2158,
-    "totalPRs": 348,
-    "totalIssues": 202,
-    "totalPRComments": 916,
-    "totalIssueComments": 1576,
-    "totalRepos": 69,
+    "totalCommits": 2149,
+    "totalPRs": 347,
+    "totalIssues": 201,
+    "totalPRComments": 915,
+    "totalIssueComments": 1587,
+    "totalRepos": 71,
     "successfulUsers": 13,
     "failedUsers": 0,
     "totalUsers": 13,
-    "analysisTimeframe": "2025-05-29 to 2025-11-25",
+    "analysisTimeframe": "2025-05-30 to 2025-11-26",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
