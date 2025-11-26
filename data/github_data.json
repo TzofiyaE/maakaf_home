@@ -2,6 +2,152 @@
   "users": [
     {
       "user": {
+        "username": "UrielOfir",
+        "displayName": "Uriel Ofir",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/30144878?v=4",
+        "bio": "Manager of the Israeli open-source community: maakaf.com.\r\nCOBOL programmer.",
+        "location": "Jerusalem, Israel",
+        "company": "mizrahi-tefahot",
+        "blog": "urielofir.website",
+        "twitterUsername": "OfirUriel",
+        "publicRepos": 87,
+        "followers": 39,
+        "following": 15,
+        "accountType": "User",
+        "createdAt": "2017-07-13T09:26:30.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 186,
+          "pullRequests": 3,
+          "issues": 17,
+          "prComments": 0,
+          "issueComments": 33
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 32,
+          "pullRequests": 10,
+          "issues": 15,
+          "prComments": 0,
+          "issueComments": 28
+        },
+        {
+          "repoName": "os-practice",
+          "description": null,
+          "url": "https://github.com/UrielOfir/os-practice",
+          "commits": 9,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
+        },
+        {
+          "repoName": "maakaf_home_backend",
+          "description": null,
+          "url": "https://github.com/Maakaf/maakaf_home_backend",
+          "commits": 27,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
+        },
+        {
+          "repoName": "cobol-programming-course",
+          "description": "Training materials and labs for a \"Getting Started\" level course on COBOL",
+          "url": "https://github.com/openmainframeproject/cobol-programming-course",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "docsy",
+          "description": "Hugo theme for open source documentation",
+          "url": "https://github.com/google/docsy",
+          "commits": 0,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        },
+        {
+          "repoName": "docsy-example",
+          "description": "An example documentation site using the Docsy Hugo theme",
+          "url": "https://github.com/google/docsy-example",
+          "commits": 0,
+          "pullRequests": 2,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        },
+        {
+          "repoName": "hugo",
+          "description": "The world’s fastest framework for building websites.",
+          "url": "https://github.com/gohugoio/hugo",
+          "commits": 0,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "maakaf-temp",
+          "description": "A website for the Isreli open-source community- Ma'akaf",
+          "url": "https://github.com/Maakaf/maakaf-temp",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "awesome-opensource-israel",
+          "description": "A curated list of Israeli-made projects, events, and individuals",
+          "url": "https://github.com/lirantal/awesome-opensource-israel",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
+        },
+        {
+          "repoName": "site",
+          "description": "Public Website for the Developer Relations Foundation.",
+          "url": "https://github.com/DevRel-Foundation/site",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "maakaf-website",
+          "description": "The official website of 'Maakaf' community",
+          "url": "https://github.com/Maakaf/maakaf-website",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        }
+      ],
+      "summary": {
+        "totalCommits": 255,
+        "totalPRs": 18,
+        "totalIssues": 33,
+        "totalPRComments": 0,
+        "totalIssueComments": 77
+      }
+    },
+    {
+      "user": {
         "username": "Lidor57",
         "displayName": "Lidor Maimon",
         "avatarUrl": "https://avatars.githubusercontent.com/u/219325371?v=4",
@@ -887,16 +1033,6 @@
           "issueComments": 3
         },
         {
-          "repoName": "ladino-diksionaryo-data",
-          "description": "Las palavras, los egzempios del diksionaryo",
-          "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
           "repoName": "OSDC-Code-Maven.github.io",
           "description": "Open Source Development Courses",
           "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
@@ -905,6 +1041,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "ladino-diksionaryo-data",
+          "description": "Las palavras, los egzempios del diksionaryo",
+          "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
         }
       ],
       "summary": {
@@ -933,6 +1079,16 @@
       },
       "repos": [
         {
+          "repoName": "BcsStudent",
+          "description": "My blog, mainly about programming, in Hebrew",
+          "url": "https://github.com/baruchiro/BcsStudent",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "paperless-mcp",
           "description": "An MCP (Model Context Protocol) server for interacting with a Paperless-NGX API server. This server provides tools for managing documents, tags, correspondents, and document types in your Paperless-NGX instance.",
           "url": "https://github.com/baruchiro/paperless-mcp",
@@ -951,16 +1107,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
-        },
-        {
-          "repoName": "BcsStudent",
-          "description": "My blog, mainly about programming, in Hebrew",
-          "url": "https://github.com/baruchiro/BcsStudent",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
         },
         {
           "repoName": "israeli-bank-scrapers",
@@ -993,161 +1139,71 @@
     },
     {
       "user": {
-        "username": "UrielOfir",
-        "displayName": "Uriel Ofir",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/30144878?v=4",
-        "bio": "Manager of the Israeli open-source community: maakaf.com.\r\nCOBOL programmer.",
-        "location": "Jerusalem, Israel",
-        "company": "mizrahi-tefahot",
-        "blog": "urielofir.website",
-        "twitterUsername": "OfirUriel",
-        "publicRepos": 87,
-        "followers": 39,
-        "following": 15,
+        "username": "Meir-Crombie",
+        "displayName": "Meir Crombie",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/123464542?v=4",
+        "bio": "Student of JCT. BSc in Computer Science.\r\n",
+        "location": "Jerusalem",
+        "company": null,
+        "blog": "",
+        "twitterUsername": null,
+        "publicRepos": 11,
+        "followers": 5,
+        "following": 19,
         "accountType": "User",
-        "createdAt": "2017-07-13T09:26:30.000Z"
+        "createdAt": "2023-01-24T11:06:55.000Z"
       },
       "repos": [
-        {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 186,
-          "pullRequests": 3,
-          "issues": 17,
-          "prComments": 0,
-          "issueComments": 33
-        },
-        {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 32,
-          "pullRequests": 10,
-          "issues": 15,
-          "prComments": 0,
-          "issueComments": 28
-        },
         {
           "repoName": "os-practice",
           "description": null,
           "url": "https://github.com/UrielOfir/os-practice",
-          "commits": 9,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
-          "repoName": "maakaf_home_backend",
-          "description": null,
-          "url": "https://github.com/Maakaf/maakaf_home_backend",
-          "commits": 27,
+          "commits": 1,
           "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
-          "repoName": "cobol-programming-course",
-          "description": "Training materials and labs for a \"Getting Started\" level course on COBOL",
-          "url": "https://github.com/openmainframeproject/cobol-programming-course",
-          "commits": 0,
-          "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
         },
         {
-          "repoName": "docsy",
-          "description": "Hugo theme for open source documentation",
-          "url": "https://github.com/google/docsy",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
+          "repoName": "DataGenerator",
+          "description": "A C++-based open-source project for generating diverse and customizable datasets. DataGenerator aims to provide developers and data scientists with flexible tools to create synthetic data for testing, machine learning, and development purposes. Contributions and feedback are welcome!",
+          "url": "https://github.com/DevLev-OpenSource/DataGenerator",
+          "commits": 22,
+          "pullRequests": 3,
+          "issues": 21,
           "prComments": 0,
-          "issueComments": 2
+          "issueComments": 5
         },
         {
-          "repoName": "docsy-example",
-          "description": "An example documentation site using the Docsy Hugo theme",
-          "url": "https://github.com/google/docsy-example",
-          "commits": 0,
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 1,
           "pullRequests": 2,
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
-        },
-        {
-          "repoName": "hugo",
-          "description": "The world’s fastest framework for building websites.",
-          "url": "https://github.com/gohugoio/hugo",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "maakaf-temp",
-          "description": "A website for the Isreli open-source community- Ma'akaf",
-          "url": "https://github.com/Maakaf/maakaf-temp",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "awesome-opensource-israel",
-          "description": "A curated list of Israeli-made projects, events, and individuals",
-          "url": "https://github.com/lirantal/awesome-opensource-israel",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
-          "repoName": "site",
-          "description": "Public Website for the Developer Relations Foundation.",
-          "url": "https://github.com/DevRel-Foundation/site",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "maakaf-website",
-          "description": "The official website of 'Maakaf' community",
-          "url": "https://github.com/Maakaf/maakaf-website",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 255,
-        "totalPRs": 18,
-        "totalIssues": 33,
+        "totalCommits": 24,
+        "totalPRs": 6,
+        "totalIssues": 22,
         "totalPRComments": 0,
-        "totalIssueComments": 77
+        "totalIssueComments": 7
       }
     }
   ],
   "globalSummary": {
-    "totalCommits": 2149,
-    "totalPRs": 347,
-    "totalIssues": 201,
+    "totalCommits": 2173,
+    "totalPRs": 353,
+    "totalIssues": 223,
     "totalPRComments": 915,
-    "totalIssueComments": 1587,
-    "totalRepos": 71,
-    "successfulUsers": 13,
+    "totalIssueComments": 1594,
+    "totalRepos": 72,
+    "successfulUsers": 14,
     "failedUsers": 0,
-    "totalUsers": 13,
+    "totalUsers": 14,
     "analysisTimeframe": "2025-05-30 to 2025-11-26",
     "minForkCountFilter": "3"
   },
