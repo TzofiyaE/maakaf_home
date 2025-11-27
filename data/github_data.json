@@ -21,7 +21,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 186,
+          "commits": 180,
           "pullRequests": 3,
           "issues": 17,
           "prComments": 0,
@@ -68,16 +68,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "docsy",
-          "description": "Hugo theme for open source documentation",
-          "url": "https://github.com/google/docsy",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
           "repoName": "docsy-example",
           "description": "An example documentation site using the Docsy Hugo theme",
           "url": "https://github.com/google/docsy-example",
@@ -106,6 +96,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "docsy",
+          "description": "Hugo theme for open source documentation",
+          "url": "https://github.com/google/docsy",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -139,8 +139,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 255,
-        "totalPRs": 18,
+        "totalCommits": 249,
+        "totalPRs": 17,
         "totalIssues": 33,
         "totalPRComments": 0,
         "totalIssueComments": 77
@@ -220,16 +220,6 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 3,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
@@ -238,6 +228,16 @@
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 3,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -269,7 +269,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 420,
+          "commits": 421,
           "pullRequests": 11,
           "issues": 10,
           "prComments": 11,
@@ -277,7 +277,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 420,
+        "totalCommits": 421,
         "totalPRs": 11,
         "totalIssues": 10,
         "totalPRComments": 11,
@@ -319,7 +319,7 @@
         "company": "@scylladb",
         "blog": "http://fruch.github.io/",
         "twitterUsername": null,
-        "publicRepos": 128,
+        "publicRepos": 129,
         "followers": 26,
         "following": 16,
         "accountType": "User",
@@ -330,11 +330,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 314,
-          "pullRequests": 125,
+          "commits": 315,
+          "pullRequests": 126,
           "issues": 26,
-          "prComments": 778,
-          "issueComments": 901
+          "prComments": 791,
+          "issueComments": 907
         },
         {
           "repoName": "argus",
@@ -344,7 +344,7 @@
           "pullRequests": 6,
           "issues": 11,
           "prComments": 10,
-          "issueComments": 67
+          "issueComments": 65
         },
         {
           "repoName": "scylla-ccm",
@@ -377,16 +377,6 @@
           "issueComments": 169
         },
         {
-          "repoName": "cassandra-stress",
-          "description": null,
-          "url": "https://github.com/scylladb/cassandra-stress",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "scylla-bench",
           "description": null,
           "url": "https://github.com/scylladb/scylla-bench",
@@ -395,6 +385,16 @@
           "issues": 0,
           "prComments": 5,
           "issueComments": 4
+        },
+        {
+          "repoName": "cassandra-stress",
+          "description": null,
+          "url": "https://github.com/scylladb/cassandra-stress",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "scylla-monitoring",
@@ -414,7 +414,7 @@
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 0
+          "issueComments": 2
         },
         {
           "repoName": "scylla-machine-image",
@@ -428,11 +428,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 357,
-        "totalPRs": 146,
+        "totalCommits": 358,
+        "totalPRs": 147,
         "totalIssues": 47,
-        "totalPRComments": 809,
-        "totalIssueComments": 1179
+        "totalPRComments": 822,
+        "totalIssueComments": 1185
       }
     },
     {
@@ -460,7 +460,7 @@
           "pullRequests": 17,
           "issues": 15,
           "prComments": 58,
-          "issueComments": 85
+          "issueComments": 87
         }
       ],
       "summary": {
@@ -468,7 +468,7 @@
         "totalPRs": 17,
         "totalIssues": 15,
         "totalPRComments": 58,
-        "totalIssueComments": 85
+        "totalIssueComments": 87
       }
     },
     {
@@ -519,7 +519,7 @@
         "twitterUsername": "liran_tal",
         "publicRepos": 459,
         "followers": 2310,
-        "following": 1101,
+        "following": 1103,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
       },
@@ -528,7 +528,7 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 195,
+          "commits": 190,
           "pullRequests": 29,
           "issues": 24,
           "prComments": 5,
@@ -726,7 +726,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 481,
+        "totalCommits": 476,
         "totalPRs": 72,
         "totalIssues": 55,
         "totalPRComments": 28,
@@ -923,16 +923,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "mdbooks.code-maven.com",
-          "description": "Collection of Public mdBooks",
-          "url": "https://github.com/szabgab/mdbooks.code-maven.com",
-          "commits": 27,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "awesome-lists",
           "description": "The awesome list of all the awesome lists",
           "url": "https://github.com/szabgab/awesome-lists",
@@ -946,7 +936,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 256,
+          "commits": 251,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -961,6 +951,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "mdbooks.code-maven.com",
+          "description": "Collection of Public mdBooks",
+          "url": "https://github.com/szabgab/mdbooks.code-maven.com",
+          "commits": 21,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "netns-proxy",
@@ -1054,11 +1054,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 419,
+        "totalCommits": 408,
         "totalPRs": 22,
         "totalIssues": 27,
         "totalPRComments": 3,
-        "totalIssueComments": 52
+        "totalIssueComments": 51
       }
     },
     {
@@ -1079,16 +1079,6 @@
       },
       "repos": [
         {
-          "repoName": "BcsStudent",
-          "description": "My blog, mainly about programming, in Hebrew",
-          "url": "https://github.com/baruchiro/BcsStudent",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "paperless-mcp",
           "description": "An MCP (Model Context Protocol) server for interacting with a Paperless-NGX API server. This server provides tools for managing documents, tags, correspondents, and document types in your Paperless-NGX instance.",
           "url": "https://github.com/baruchiro/paperless-mcp",
@@ -1097,6 +1087,16 @@
           "issues": 0,
           "prComments": 1,
           "issueComments": 2
+        },
+        {
+          "repoName": "israeli-bank-scrapers",
+          "description": "Provide scrapers for all major Israeli banks and credit card companies",
+          "url": "https://github.com/eshaham/israeli-bank-scrapers",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 1
         },
         {
           "repoName": "posthog",
@@ -1109,14 +1109,14 @@
           "issueComments": 1
         },
         {
-          "repoName": "israeli-bank-scrapers",
-          "description": "Provide scrapers for all major Israeli banks and credit card companies",
-          "url": "https://github.com/eshaham/israeli-bank-scrapers",
-          "commits": 0,
-          "pullRequests": 0,
+          "repoName": "BcsStudent",
+          "description": "My blog, mainly about programming, in Hebrew",
+          "url": "https://github.com/baruchiro/BcsStudent",
+          "commits": 2,
+          "pullRequests": 1,
           "issues": 0,
-          "prComments": 2,
-          "issueComments": 1
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "OpenHands",
@@ -1133,7 +1133,7 @@
         "totalCommits": 5,
         "totalPRs": 2,
         "totalIssues": 1,
-        "totalPRComments": 3,
+        "totalPRComments": 4,
         "totalIssueComments": 4
       }
     },
@@ -1178,7 +1178,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 1,
+          "commits": 2,
           "pullRequests": 2,
           "issues": 0,
           "prComments": 0,
@@ -1186,7 +1186,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 24,
+        "totalCommits": 25,
         "totalPRs": 6,
         "totalIssues": 22,
         "totalPRComments": 0,
@@ -1195,16 +1195,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2173,
+    "totalCommits": 2154,
     "totalPRs": 353,
     "totalIssues": 223,
-    "totalPRComments": 915,
-    "totalIssueComments": 1594,
+    "totalPRComments": 929,
+    "totalIssueComments": 1601,
     "totalRepos": 72,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-05-30 to 2025-11-26",
+    "analysisTimeframe": "2025-05-31 to 2025-11-27",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
