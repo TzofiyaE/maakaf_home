@@ -21,7 +21,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 180,
+          "commits": 177,
           "pullRequests": 3,
           "issues": 17,
           "prComments": 0,
@@ -139,7 +139,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 249,
+        "totalCommits": 246,
         "totalPRs": 17,
         "totalIssues": 33,
         "totalPRComments": 0,
@@ -164,6 +164,16 @@
       },
       "repos": [
         {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
           "repoName": "os-practice",
           "description": null,
           "url": "https://github.com/UrielOfir/os-practice",
@@ -182,16 +192,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
-        },
-        {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
-          "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
         }
       ],
       "summary": {
@@ -269,7 +269,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 421,
+          "commits": 428,
           "pullRequests": 11,
           "issues": 10,
           "prComments": 11,
@@ -277,7 +277,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 421,
+        "totalCommits": 428,
         "totalPRs": 11,
         "totalIssues": 10,
         "totalPRComments": 11,
@@ -330,11 +330,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 315,
-          "pullRequests": 126,
+          "commits": 321,
+          "pullRequests": 127,
           "issues": 26,
-          "prComments": 791,
-          "issueComments": 907
+          "prComments": 799,
+          "issueComments": 910
         },
         {
           "repoName": "argus",
@@ -354,7 +354,7 @@
           "pullRequests": 4,
           "issues": 0,
           "prComments": 6,
-          "issueComments": 21
+          "issueComments": 20
         },
         {
           "repoName": "scylla-cqlsh",
@@ -374,17 +374,7 @@
           "pullRequests": 2,
           "issues": 10,
           "prComments": 7,
-          "issueComments": 169
-        },
-        {
-          "repoName": "scylla-bench",
-          "description": null,
-          "url": "https://github.com/scylladb/scylla-bench",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 5,
-          "issueComments": 4
+          "issueComments": 172
         },
         {
           "repoName": "cassandra-stress",
@@ -395,6 +385,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "scylla-bench",
+          "description": null,
+          "url": "https://github.com/scylladb/scylla-bench",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 5,
+          "issueComments": 4
         },
         {
           "repoName": "scylla-monitoring",
@@ -428,11 +428,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 358,
-        "totalPRs": 147,
+        "totalCommits": 364,
+        "totalPRs": 148,
         "totalIssues": 47,
-        "totalPRComments": 822,
-        "totalIssueComments": 1185
+        "totalPRComments": 830,
+        "totalIssueComments": 1190
       }
     },
     {
@@ -519,7 +519,7 @@
         "twitterUsername": "liran_tal",
         "publicRepos": 459,
         "followers": 2310,
-        "following": 1103,
+        "following": 1104,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
       },
@@ -528,7 +528,7 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 190,
+          "commits": 171,
           "pullRequests": 29,
           "issues": 24,
           "prComments": 5,
@@ -726,7 +726,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 476,
+        "totalCommits": 457,
         "totalPRs": 72,
         "totalIssues": 55,
         "totalPRComments": 28,
@@ -779,7 +779,7 @@
         "company": null,
         "blog": "",
         "twitterUsername": null,
-        "publicRepos": 8,
+        "publicRepos": 9,
         "followers": 0,
         "following": 5,
         "accountType": "User",
@@ -936,7 +936,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 251,
+          "commits": 241,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1023,6 +1023,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "ladino-diksionaryo-data",
+          "description": "Las palavras, los egzempios del diksionaryo",
+          "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        },
+        {
           "repoName": "perlweekly",
           "description": "A free, once a week e-mail round-up of hand-picked news and articles about Perl",
           "url": "https://github.com/szabgab/perlweekly",
@@ -1041,20 +1051,10 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
-        },
-        {
-          "repoName": "ladino-diksionaryo-data",
-          "description": "Las palavras, los egzempios del diksionaryo",
-          "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
         }
       ],
       "summary": {
-        "totalCommits": 408,
+        "totalCommits": 398,
         "totalPRs": 22,
         "totalIssues": 27,
         "totalPRComments": 3,
@@ -1095,7 +1095,7 @@
           "commits": 0,
           "pullRequests": 0,
           "issues": 0,
-          "prComments": 3,
+          "prComments": 4,
           "issueComments": 1
         },
         {
@@ -1133,7 +1133,7 @@
         "totalCommits": 5,
         "totalPRs": 2,
         "totalIssues": 1,
-        "totalPRComments": 4,
+        "totalPRComments": 5,
         "totalIssueComments": 4
       }
     },
@@ -1195,16 +1195,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2154,
-    "totalPRs": 353,
+    "totalCommits": 2135,
+    "totalPRs": 354,
     "totalIssues": 223,
-    "totalPRComments": 929,
-    "totalIssueComments": 1601,
+    "totalPRComments": 938,
+    "totalIssueComments": 1606,
     "totalRepos": 72,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-05-31 to 2025-11-27",
+    "analysisTimeframe": "2025-06-01 to 2025-11-28",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
