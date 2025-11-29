@@ -18,16 +18,6 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 177,
-          "pullRequests": 3,
-          "issues": 17,
-          "prComments": 0,
-          "issueComments": 33
-        },
-        {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
@@ -36,6 +26,16 @@
           "issues": 15,
           "prComments": 0,
           "issueComments": 28
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 166,
+          "pullRequests": 3,
+          "issues": 17,
+          "prComments": 0,
+          "issueComments": 33
         },
         {
           "repoName": "os-practice",
@@ -139,7 +139,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 246,
+        "totalCommits": 235,
         "totalPRs": 17,
         "totalIssues": 33,
         "totalPRComments": 0,
@@ -269,18 +269,18 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 428,
+          "commits": 433,
           "pullRequests": 11,
-          "issues": 10,
-          "prComments": 11,
+          "issues": 11,
+          "prComments": 12,
           "issueComments": 33
         }
       ],
       "summary": {
-        "totalCommits": 428,
+        "totalCommits": 433,
         "totalPRs": 11,
-        "totalIssues": 10,
-        "totalPRComments": 11,
+        "totalIssues": 11,
+        "totalPRComments": 12,
         "totalIssueComments": 33
       }
     },
@@ -377,16 +377,6 @@
           "issueComments": 172
         },
         {
-          "repoName": "cassandra-stress",
-          "description": null,
-          "url": "https://github.com/scylladb/cassandra-stress",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "scylla-bench",
           "description": null,
           "url": "https://github.com/scylladb/scylla-bench",
@@ -395,6 +385,16 @@
           "issues": 0,
           "prComments": 5,
           "issueComments": 4
+        },
+        {
+          "repoName": "cassandra-stress",
+          "description": null,
+          "url": "https://github.com/scylladb/cassandra-stress",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "scylla-monitoring",
@@ -407,16 +407,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "gemini",
-          "description": "Test data integrity by comparing against an Oracle running in parallel",
-          "url": "https://github.com/scylladb/gemini",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
           "repoName": "scylla-machine-image",
           "description": null,
           "url": "https://github.com/scylladb/scylla-machine-image",
@@ -425,6 +415,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "gemini",
+          "description": "Test data integrity by comparing against an Oracle running in parallel",
+          "url": "https://github.com/scylladb/gemini",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
         }
       ],
       "summary": {
@@ -538,11 +538,11 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 171,
-          "pullRequests": 27,
+          "commits": 175,
+          "pullRequests": 29,
           "issues": 22,
           "prComments": 18,
-          "issueComments": 62
+          "issueComments": 63
         },
         {
           "repoName": "mcp-server-nodejs-api-docs",
@@ -726,11 +726,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 457,
-        "totalPRs": 72,
+        "totalCommits": 461,
+        "totalPRs": 74,
         "totalIssues": 55,
         "totalPRComments": 28,
-        "totalIssueComments": 131
+        "totalIssueComments": 132
       }
     },
     {
@@ -1023,14 +1023,14 @@
           "issueComments": 0
         },
         {
-          "repoName": "ladino-diksionaryo-data",
-          "description": "Las palavras, los egzempios del diksionaryo",
-          "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
-          "commits": 0,
+          "repoName": "OSDC-Code-Maven.github.io",
+          "description": "Open Source Development Courses",
+          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
+          "commits": 1,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 2
+          "issueComments": 0
         },
         {
           "repoName": "perlweekly",
@@ -1043,14 +1043,14 @@
           "issueComments": 3
         },
         {
-          "repoName": "OSDC-Code-Maven.github.io",
-          "description": "Open Source Development Courses",
-          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
-          "commits": 1,
+          "repoName": "ladino-diksionaryo-data",
+          "description": "Las palavras, los egzempios del diksionaryo",
+          "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
+          "commits": 0,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 0
+          "issueComments": 2
         }
       ],
       "summary": {
@@ -1079,26 +1079,6 @@
       },
       "repos": [
         {
-          "repoName": "paperless-mcp",
-          "description": "An MCP (Model Context Protocol) server for interacting with a Paperless-NGX API server. This server provides tools for managing documents, tags, correspondents, and document types in your Paperless-NGX instance.",
-          "url": "https://github.com/baruchiro/paperless-mcp",
-          "commits": 3,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 1,
-          "issueComments": 2
-        },
-        {
-          "repoName": "israeli-bank-scrapers",
-          "description": "Provide scrapers for all major Israeli banks and credit card companies",
-          "url": "https://github.com/eshaham/israeli-bank-scrapers",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 4,
-          "issueComments": 1
-        },
-        {
           "repoName": "posthog",
           "description": "🦔 PostHog provides open-source web & product analytics, session recording, feature flagging and A/B testing that you can self-host. Get started - free.",
           "url": "https://github.com/PostHog/posthog",
@@ -1109,6 +1089,16 @@
           "issueComments": 1
         },
         {
+          "repoName": "paperless-mcp",
+          "description": "An MCP (Model Context Protocol) server for interacting with a Paperless-NGX API server. This server provides tools for managing documents, tags, correspondents, and document types in your Paperless-NGX instance.",
+          "url": "https://github.com/baruchiro/paperless-mcp",
+          "commits": 3,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 1,
+          "issueComments": 2
+        },
+        {
           "repoName": "BcsStudent",
           "description": "My blog, mainly about programming, in Hebrew",
           "url": "https://github.com/baruchiro/BcsStudent",
@@ -1117,6 +1107,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "israeli-bank-scrapers",
+          "description": "Provide scrapers for all major Israeli banks and credit card companies",
+          "url": "https://github.com/eshaham/israeli-bank-scrapers",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 4,
+          "issueComments": 1
         },
         {
           "repoName": "OpenHands",
@@ -1195,16 +1195,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2135,
-    "totalPRs": 354,
-    "totalIssues": 223,
-    "totalPRComments": 938,
-    "totalIssueComments": 1606,
+    "totalCommits": 2133,
+    "totalPRs": 356,
+    "totalIssues": 224,
+    "totalPRComments": 939,
+    "totalIssueComments": 1607,
     "totalRepos": 72,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-01 to 2025-11-28",
+    "analysisTimeframe": "2025-06-02 to 2025-11-29",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
