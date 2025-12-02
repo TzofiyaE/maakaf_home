@@ -333,18 +333,18 @@
           "commits": 322,
           "pullRequests": 129,
           "issues": 25,
-          "prComments": 790,
-          "issueComments": 907
+          "prComments": 792,
+          "issueComments": 902
         },
         {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
-          "commits": 11,
+          "commits": 10,
           "pullRequests": 4,
           "issues": 11,
           "prComments": 8,
-          "issueComments": 62
+          "issueComments": 61
         },
         {
           "repoName": "scylla-ccm",
@@ -353,8 +353,8 @@
           "commits": 6,
           "pullRequests": 4,
           "issues": 0,
-          "prComments": 6,
-          "issueComments": 20
+          "prComments": 7,
+          "issueComments": 26
         },
         {
           "repoName": "scylla-cqlsh",
@@ -374,17 +374,7 @@
           "pullRequests": 2,
           "issues": 10,
           "prComments": 7,
-          "issueComments": 172
-        },
-        {
-          "repoName": "scylla-bench",
-          "description": null,
-          "url": "https://github.com/scylladb/scylla-bench",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 5,
-          "issueComments": 4
+          "issueComments": 170
         },
         {
           "repoName": "cassandra-stress",
@@ -395,6 +385,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "scylla-bench",
+          "description": null,
+          "url": "https://github.com/scylladb/scylla-bench",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 5,
+          "issueComments": 4
         },
         {
           "repoName": "scylla-monitoring",
@@ -414,7 +414,7 @@
           "pullRequests": 2,
           "issues": 0,
           "prComments": 1,
-          "issueComments": 4
+          "issueComments": 5
         },
         {
           "repoName": "scylla-machine-image",
@@ -428,11 +428,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 359,
+        "totalCommits": 358,
         "totalPRs": 150,
         "totalIssues": 46,
-        "totalPRComments": 822,
-        "totalIssueComments": 1187
+        "totalPRComments": 825,
+        "totalIssueComments": 1186
       }
     },
     {
@@ -445,8 +445,8 @@
         "company": "Applitools",
         "blog": "noam-gaash.co.il",
         "twitterUsername": null,
-        "publicRepos": 40,
-        "followers": 31,
+        "publicRepos": 41,
+        "followers": 32,
         "following": 50,
         "accountType": "User",
         "createdAt": "2015-02-22T11:19:54.000Z"
@@ -456,19 +456,19 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 87,
-          "pullRequests": 17,
-          "issues": 15,
-          "prComments": 58,
-          "issueComments": 85
+          "commits": 90,
+          "pullRequests": 19,
+          "issues": 14,
+          "prComments": 56,
+          "issueComments": 84
         }
       ],
       "summary": {
-        "totalCommits": 87,
-        "totalPRs": 17,
-        "totalIssues": 15,
-        "totalPRComments": 58,
-        "totalIssueComments": 85
+        "totalCommits": 90,
+        "totalPRs": 19,
+        "totalIssues": 14,
+        "totalPRComments": 56,
+        "totalIssueComments": 84
       }
     },
     {
@@ -518,7 +518,7 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 459,
-        "followers": 2312,
+        "followers": 2313,
         "following": 1105,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
@@ -528,9 +528,9 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 143,
-          "pullRequests": 26,
-          "issues": 17,
+          "commits": 141,
+          "pullRequests": 25,
+          "issues": 15,
           "prComments": 5,
           "issueComments": 28
         },
@@ -540,7 +540,7 @@
           "url": "https://github.com/lirantal/npq",
           "commits": 178,
           "pullRequests": 31,
-          "issues": 22,
+          "issues": 23,
           "prComments": 18,
           "issueComments": 68
         },
@@ -736,9 +736,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 435,
-        "totalPRs": 73,
-        "totalIssues": 49,
+        "totalCommits": 433,
+        "totalPRs": 72,
+        "totalIssues": 48,
         "totalPRComments": 28,
         "totalIssueComments": 137
       }
@@ -789,7 +789,7 @@
         "company": null,
         "blog": "",
         "twitterUsername": null,
-        "publicRepos": 9,
+        "publicRepos": 10,
         "followers": 0,
         "following": 5,
         "accountType": "User",
@@ -946,7 +946,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 234,
+          "commits": 230,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -961,16 +961,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
-        },
-        {
-          "repoName": "mdbooks.code-maven.com",
-          "description": "Collection of Public mdBooks",
-          "url": "https://github.com/szabgab/mdbooks.code-maven.com",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
         },
         {
           "repoName": "netns-proxy",
@@ -1013,6 +1003,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "mdbooks.code-maven.com",
+          "description": "Collection of Public mdBooks",
+          "url": "https://github.com/szabgab/mdbooks.code-maven.com",
+          "commits": 18,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "tatuin",
           "description": "Tatuin (Task Aggregator TUI for N providers)",
           "url": "https://github.com/panter-dsd/tatuin",
@@ -1033,24 +1033,24 @@
           "issueComments": 0
         },
         {
-          "repoName": "perlweekly",
-          "description": "A free, once a week e-mail round-up of hand-picked news and articles about Perl",
-          "url": "https://github.com/szabgab/perlweekly",
-          "commits": 4,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
           "repoName": "OSDC-Code-Maven.github.io",
           "description": "Open Source Development Courses",
           "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
-          "commits": 1,
+          "commits": 2,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "perlweekly",
+          "description": "A free, once a week e-mail round-up of hand-picked news and articles about Perl",
+          "url": "https://github.com/szabgab/perlweekly",
+          "commits": 20,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
         },
         {
           "repoName": "ladino-diksionaryo-data",
@@ -1064,7 +1064,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 388,
+        "totalCommits": 400,
         "totalPRs": 21,
         "totalIssues": 27,
         "totalPRComments": 3,
@@ -1109,6 +1109,16 @@
           "issueComments": 2
         },
         {
+          "repoName": "BcsStudent",
+          "description": "My blog, mainly about programming, in Hebrew",
+          "url": "https://github.com/baruchiro/BcsStudent",
+          "commits": 2,
+          "pullRequests": 2,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "paperless-mcp",
           "description": "An MCP (Model Context Protocol) server for interacting with a Paperless-NGX API server. This server provides tools for managing documents, tags, correspondents, and document types in your Paperless-NGX instance.",
           "url": "https://github.com/baruchiro/paperless-mcp",
@@ -1117,16 +1127,6 @@
           "issues": 0,
           "prComments": 1,
           "issueComments": 2
-        },
-        {
-          "repoName": "BcsStudent",
-          "description": "My blog, mainly about programming, in Hebrew",
-          "url": "https://github.com/baruchiro/BcsStudent",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
         },
         {
           "repoName": "posthog",
@@ -1141,7 +1141,7 @@
       ],
       "summary": {
         "totalCommits": 5,
-        "totalPRs": 2,
+        "totalPRs": 3,
         "totalIssues": 1,
         "totalPRComments": 6,
         "totalIssueComments": 5
@@ -1205,16 +1205,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2106,
-    "totalPRs": 356,
-    "totalIssues": 217,
-    "totalPRComments": 932,
-    "totalIssueComments": 1609,
+    "totalCommits": 2118,
+    "totalPRs": 358,
+    "totalIssues": 215,
+    "totalPRComments": 933,
+    "totalIssueComments": 1607,
     "totalRepos": 73,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-04 to 2025-12-01",
+    "analysisTimeframe": "2025-06-05 to 2025-12-02",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
