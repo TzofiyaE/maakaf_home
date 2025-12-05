@@ -31,21 +31,11 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 161,
+          "commits": 156,
           "pullRequests": 3,
-          "issues": 17,
+          "issues": 16,
           "prComments": 0,
-          "issueComments": 33
-        },
-        {
-          "repoName": "os-practice",
-          "description": null,
-          "url": "https://github.com/UrielOfir/os-practice",
-          "commits": 9,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
+          "issueComments": 32
         },
         {
           "repoName": "maakaf_home_backend",
@@ -88,16 +78,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "maakaf-temp",
-          "description": "A website for the Isreli open-source community- Ma'akaf",
-          "url": "https://github.com/Maakaf/maakaf-temp",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "docsy",
           "description": "Hugo theme for open source documentation",
           "url": "https://github.com/google/docsy",
@@ -106,6 +86,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
+        },
+        {
+          "repoName": "os-practice",
+          "description": null,
+          "url": "https://github.com/UrielOfir/os-practice",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -136,14 +126,24 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "todoist-export",
+          "description": "Backup tool for Todoist",
+          "url": "https://github.com/darekkay/todoist-export",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 230,
+        "totalCommits": 216,
         "totalPRs": 17,
         "totalIssues": 33,
         "totalPRComments": 0,
-        "totalIssueComments": 81
+        "totalIssueComments": 79
       }
     },
     {
@@ -164,16 +164,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
-          "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "os-practice",
           "description": null,
           "url": "https://github.com/UrielOfir/os-practice",
@@ -192,6 +182,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         }
       ],
       "summary": {
@@ -220,16 +220,6 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 3,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
@@ -238,6 +228,16 @@
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 3,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -269,7 +269,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 457,
+          "commits": 460,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 12,
@@ -277,7 +277,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 457,
+        "totalCommits": 460,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 12,
@@ -305,11 +305,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 336,
-          "pullRequests": 129,
+          "commits": 351,
+          "pullRequests": 136,
           "issues": 26,
-          "prComments": 819,
-          "issueComments": 910
+          "prComments": 840,
+          "issueComments": 918
         },
         {
           "repoName": "argus",
@@ -395,7 +395,7 @@
           "repoName": "scylla-machine-image",
           "description": null,
           "url": "https://github.com/scylladb/scylla-machine-image",
-          "commits": 0,
+          "commits": 2,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 6,
@@ -403,11 +403,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 369,
-        "totalPRs": 150,
+        "totalCommits": 386,
+        "totalPRs": 157,
         "totalIssues": 45,
-        "totalPRComments": 862,
-        "totalIssueComments": 1195
+        "totalPRComments": 883,
+        "totalIssueComments": 1203
       }
     },
     {
@@ -500,16 +500,6 @@
       },
       "repos": [
         {
-          "repoName": "ls-mcp",
-          "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
-          "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 128,
-          "pullRequests": 22,
-          "issues": 14,
-          "prComments": 5,
-          "issueComments": 18
-        },
-        {
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
@@ -518,6 +508,16 @@
           "issues": 23,
           "prComments": 18,
           "issueComments": 68
+        },
+        {
+          "repoName": "ls-mcp",
+          "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
+          "url": "https://github.com/lirantal/ls-mcp",
+          "commits": 119,
+          "pullRequests": 22,
+          "issues": 13,
+          "prComments": 5,
+          "issueComments": 17
         },
         {
           "repoName": "mcp-server-nodejs-api-docs",
@@ -711,11 +711,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 420,
+        "totalCommits": 411,
         "totalPRs": 69,
-        "totalIssues": 47,
+        "totalIssues": 46,
         "totalPRComments": 28,
-        "totalIssueComments": 127
+        "totalIssueComments": 126
       }
     },
     {
@@ -811,7 +811,7 @@
         "blog": "https://szabgab.com/",
         "twitterUsername": null,
         "publicRepos": 1058,
-        "followers": 660,
+        "followers": 661,
         "following": 16,
         "accountType": "User",
         "createdAt": "2009-01-23T19:05:27.000Z"
@@ -823,7 +823,7 @@
           "url": "https://github.com/szabgab/rust-digger",
           "commits": 50,
           "pullRequests": 0,
-          "issues": 17,
+          "issues": 16,
           "prComments": 0,
           "issueComments": 16
         },
@@ -1008,20 +1008,20 @@
           "issueComments": 0
         },
         {
-          "repoName": "perlweekly",
-          "description": "A free, once a week e-mail round-up of hand-picked news and articles about Perl",
-          "url": "https://github.com/szabgab/perlweekly",
-          "commits": 22,
+          "repoName": "ladino-diksionaryo-data",
+          "description": "Las palavras, los egzempios del diksionaryo",
+          "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
+          "commits": 0,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
         },
         {
-          "repoName": "ladino-diksionaryo-data",
-          "description": "Las palavras, los egzempios del diksionaryo",
-          "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
-          "commits": 0,
+          "repoName": "perlweekly",
+          "description": "A free, once a week e-mail round-up of hand-picked news and articles about Perl",
+          "url": "https://github.com/szabgab/perlweekly",
+          "commits": 22,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1036,12 +1036,22 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "golem-openapi-client-generator",
+          "description": "Client generator for golem projects",
+          "url": "https://github.com/golemcloud/golem-openapi-client-generator",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 403,
-        "totalPRs": 21,
-        "totalIssues": 27,
+        "totalCommits": 405,
+        "totalPRs": 22,
+        "totalIssues": 26,
         "totalPRComments": 3,
         "totalIssueComments": 52
       }
@@ -1111,14 +1121,14 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 13,
-          "issueComments": 3
+          "issueComments": 4
         },
         {
           "repoName": "BcsStudent",
           "description": "My blog, mainly about programming, in Hebrew",
           "url": "https://github.com/baruchiro/BcsStudent",
-          "commits": 22,
-          "pullRequests": 2,
+          "commits": 23,
+          "pullRequests": 3,
           "issues": 1,
           "prComments": 1,
           "issueComments": 0
@@ -1175,11 +1185,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 48,
-        "totalPRs": 9,
+        "totalCommits": 49,
+        "totalPRs": 10,
         "totalIssues": 3,
         "totalPRComments": 38,
-        "totalIssueComments": 22
+        "totalIssueComments": 23
       }
     },
     {
@@ -1231,15 +1241,15 @@
   ],
   "globalSummary": {
     "totalCommits": 2166,
-    "totalPRs": 360,
-    "totalIssues": 214,
-    "totalPRComments": 1002,
-    "totalIssueComments": 1625,
-    "totalRepos": 79,
+    "totalPRs": 369,
+    "totalIssues": 212,
+    "totalPRComments": 1023,
+    "totalIssueComments": 1631,
+    "totalRepos": 80,
     "successfulUsers": 13,
     "failedUsers": 0,
     "totalUsers": 13,
-    "analysisTimeframe": "2025-06-07 to 2025-12-04",
+    "analysisTimeframe": "2025-06-08 to 2025-12-05",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
