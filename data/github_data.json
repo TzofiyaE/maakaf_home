@@ -286,6 +286,82 @@
     },
     {
       "user": {
+        "username": "Tamir198",
+        "displayName": "Tamir Abutbul",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/34707669?v=4",
+        "bio": null,
+        "location": null,
+        "company": null,
+        "blog": "https://www.linkedin.com/in/tamir-abutbul/",
+        "twitterUsername": null,
+        "publicRepos": 71,
+        "followers": 37,
+        "following": 14,
+        "accountType": "User",
+        "createdAt": "2017-12-20T09:01:52.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "Broken-Link-Checker",
+          "description": null,
+          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Checker",
+          "commits": 14,
+          "pullRequests": 6,
+          "issues": 8,
+          "prComments": 5,
+          "issueComments": 25
+        },
+        {
+          "repoName": "inspector",
+          "description": "Visual inspector for MCP server - Postman for MCP",
+          "url": "https://github.com/MCPJam/inspector",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 3
+        },
+        {
+          "repoName": "Broken-Link-Website",
+          "description": "No more broken links in old unmaintained README",
+          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
+          "commits": 115,
+          "pullRequests": 19,
+          "issues": 62,
+          "prComments": 344,
+          "issueComments": 314
+        },
+        {
+          "repoName": "Hacktoberfest-25-Projects",
+          "description": "A curated list of open source projects participating in Hacktoberfest 2025. Quickly find repositories to contribute to with easy project descriptions and links.",
+          "url": "https://github.com/MasterAffan/Hacktoberfest-25-Projects",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "awesome-opensource-israel",
+          "description": "A curated list of Israeli-made projects, events, and individuals",
+          "url": "https://github.com/lirantal/awesome-opensource-israel",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        }
+      ],
+      "summary": {
+        "totalCommits": 134,
+        "totalPRs": 28,
+        "totalIssues": 71,
+        "totalPRComments": 349,
+        "totalIssueComments": 342
+      }
+    },
+    {
+      "user": {
         "username": "fruch",
         "displayName": "Israel Fruchter",
         "avatarUrl": "https://avatars.githubusercontent.com/u/340979?v=4",
@@ -1240,15 +1316,15 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2147,
-    "totalPRs": 366,
-    "totalIssues": 210,
-    "totalPRComments": 1018,
-    "totalIssueComments": 1607,
-    "totalRepos": 80,
-    "successfulUsers": 13,
+    "totalCommits": 2281,
+    "totalPRs": 394,
+    "totalIssues": 281,
+    "totalPRComments": 1367,
+    "totalIssueComments": 1949,
+    "totalRepos": 84,
+    "successfulUsers": 14,
     "failedUsers": 0,
-    "totalUsers": 13,
+    "totalUsers": 14,
     "analysisTimeframe": "2025-06-09 to 2025-12-06",
     "minForkCountFilter": "3"
   },
