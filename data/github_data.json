@@ -31,7 +31,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 156,
+          "commits": 151,
           "pullRequests": 3,
           "issues": 16,
           "prComments": 0,
@@ -78,16 +78,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "docsy",
-          "description": "Hugo theme for open source documentation",
-          "url": "https://github.com/google/docsy",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
           "repoName": "os-practice",
           "description": null,
           "url": "https://github.com/UrielOfir/os-practice",
@@ -96,6 +86,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "docsy",
+          "description": "Hugo theme for open source documentation",
+          "url": "https://github.com/google/docsy",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -139,11 +139,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 216,
+        "totalCommits": 211,
         "totalPRs": 17,
         "totalIssues": 33,
         "totalPRComments": 0,
-        "totalIssueComments": 79
+        "totalIssueComments": 78
       }
     },
     {
@@ -269,7 +269,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 460,
+          "commits": 457,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 12,
@@ -277,7 +277,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 460,
+        "totalCommits": 457,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 12,
@@ -305,11 +305,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 351,
-          "pullRequests": 136,
+          "commits": 339,
+          "pullRequests": 132,
           "issues": 26,
-          "prComments": 840,
-          "issueComments": 918
+          "prComments": 837,
+          "issueComments": 901
         },
         {
           "repoName": "argus",
@@ -319,17 +319,17 @@
           "pullRequests": 3,
           "issues": 9,
           "prComments": 6,
-          "issueComments": 57
+          "issueComments": 55
         },
         {
           "repoName": "scylla-ccm",
           "description": "Cassandra Cluster Manager, modified for Scylla",
           "url": "https://github.com/scylladb/scylla-ccm",
-          "commits": 6,
-          "pullRequests": 4,
+          "commits": 5,
+          "pullRequests": 3,
           "issues": 0,
           "prComments": 11,
-          "issueComments": 31
+          "issueComments": 30
         },
         {
           "repoName": "scylla-cqlsh",
@@ -347,7 +347,7 @@
           "url": "https://github.com/scylladb/scylladb",
           "commits": 2,
           "pullRequests": 2,
-          "issues": 10,
+          "issues": 9,
           "prComments": 7,
           "issueComments": 169
         },
@@ -403,11 +403,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 386,
-        "totalPRs": 157,
-        "totalIssues": 45,
-        "totalPRComments": 883,
-        "totalIssueComments": 1203
+        "totalCommits": 373,
+        "totalPRs": 152,
+        "totalIssues": 44,
+        "totalPRComments": 880,
+        "totalIssueComments": 1183
       }
     },
     {
@@ -421,7 +421,7 @@
         "blog": "noam-gaash.co.il",
         "twitterUsername": null,
         "publicRepos": 41,
-        "followers": 32,
+        "followers": 33,
         "following": 50,
         "accountType": "User",
         "createdAt": "2015-02-22T11:19:54.000Z"
@@ -435,7 +435,7 @@
           "pullRequests": 19,
           "issues": 14,
           "prComments": 56,
-          "issueComments": 82
+          "issueComments": 79
         }
       ],
       "summary": {
@@ -443,7 +443,7 @@
         "totalPRs": 19,
         "totalIssues": 14,
         "totalPRComments": 56,
-        "totalIssueComments": 82
+        "totalIssueComments": 79
       }
     },
     {
@@ -493,31 +493,31 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 459,
-        "followers": 2316,
-        "following": 1105,
+        "followers": 2317,
+        "following": 1106,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
       },
       "repos": [
         {
-          "repoName": "npq",
-          "description": "safely install npm packages by auditing them pre-install stage",
-          "url": "https://github.com/lirantal/npq",
-          "commits": 178,
-          "pullRequests": 31,
-          "issues": 23,
-          "prComments": 18,
-          "issueComments": 68
-        },
-        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 119,
+          "commits": 116,
           "pullRequests": 22,
-          "issues": 13,
+          "issues": 12,
           "prComments": 5,
-          "issueComments": 17
+          "issueComments": 16
+        },
+        {
+          "repoName": "npq",
+          "description": "safely install npm packages by auditing them pre-install stage",
+          "url": "https://github.com/lirantal/npq",
+          "commits": 179,
+          "pullRequests": 32,
+          "issues": 23,
+          "prComments": 18,
+          "issueComments": 68
         },
         {
           "repoName": "mcp-server-nodejs-api-docs",
@@ -607,7 +607,7 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 15
+          "issueComments": 16
         },
         {
           "repoName": "create-node-lib",
@@ -711,9 +711,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 411,
-        "totalPRs": 69,
-        "totalIssues": 46,
+        "totalCommits": 409,
+        "totalPRs": 70,
+        "totalIssues": 45,
         "totalPRComments": 28,
         "totalIssueComments": 126
       }
@@ -1008,16 +1008,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "ladino-diksionaryo-data",
-          "description": "Las palavras, los egzempios del diksionaryo",
-          "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
           "repoName": "perlweekly",
           "description": "A free, once a week e-mail round-up of hand-picked news and articles about Perl",
           "url": "https://github.com/szabgab/perlweekly",
@@ -1028,10 +1018,20 @@
           "issueComments": 3
         },
         {
+          "repoName": "ladino-diksionaryo-data",
+          "description": "Las palavras, los egzempios del diksionaryo",
+          "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
+        },
+        {
           "repoName": "OSDC-Code-Maven.github.io",
           "description": "Open Source Development Courses",
           "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
-          "commits": 3,
+          "commits": 6,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1049,7 +1049,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 405,
+        "totalCommits": 408,
         "totalPRs": 22,
         "totalIssues": 26,
         "totalPRComments": 3,
@@ -1067,32 +1067,12 @@
         "blog": "https://baruchiro.com/",
         "twitterUsername": "baruchiro",
         "publicRepos": 162,
-        "followers": 73,
+        "followers": 74,
         "following": 12,
         "accountType": "User",
         "createdAt": "2016-03-06T13:55:11.000Z"
       },
       "repos": [
-        {
-          "repoName": "israeli-bank-scrapers",
-          "description": "Provide scrapers for all major Israeli banks and credit card companies",
-          "url": "https://github.com/eshaham/israeli-bank-scrapers",
-          "commits": 6,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 19,
-          "issueComments": 11
-        },
-        {
-          "repoName": "moneyman",
-          "description": "Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)",
-          "url": "https://github.com/daniel-hauser/moneyman",
-          "commits": 10,
-          "pullRequests": 2,
-          "issues": 1,
-          "prComments": 3,
-          "issueComments": 1
-        },
         {
           "repoName": "inspector",
           "description": "Visual testing tool for MCP servers",
@@ -1114,14 +1094,24 @@
           "issueComments": 1
         },
         {
+          "repoName": "moneyman",
+          "description": "Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)",
+          "url": "https://github.com/daniel-hauser/moneyman",
+          "commits": 7,
+          "pullRequests": 2,
+          "issues": 1,
+          "prComments": 1,
+          "issueComments": 0
+        },
+        {
           "repoName": "caspion",
           "description": "Automated budget tracking from Israeli financial institutions",
           "url": "https://github.com/brafdlog/caspion",
-          "commits": 2,
-          "pullRequests": 0,
+          "commits": 6,
+          "pullRequests": 1,
           "issues": 0,
           "prComments": 13,
-          "issueComments": 4
+          "issueComments": 5
         },
         {
           "repoName": "BcsStudent",
@@ -1132,6 +1122,16 @@
           "issues": 1,
           "prComments": 1,
           "issueComments": 0
+        },
+        {
+          "repoName": "israeli-bank-scrapers",
+          "description": "Provide scrapers for all major Israeli banks and credit card companies",
+          "url": "https://github.com/eshaham/israeli-bank-scrapers",
+          "commits": 6,
+          "pullRequests": 2,
+          "issues": 0,
+          "prComments": 19,
+          "issueComments": 11
         },
         {
           "repoName": "n8n-docs",
@@ -1185,10 +1185,10 @@
         }
       ],
       "summary": {
-        "totalCommits": 49,
-        "totalPRs": 10,
+        "totalCommits": 50,
+        "totalPRs": 11,
         "totalIssues": 3,
-        "totalPRComments": 38,
+        "totalPRComments": 36,
         "totalIssueComments": 23
       }
     },
@@ -1240,16 +1240,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2166,
-    "totalPRs": 369,
-    "totalIssues": 212,
-    "totalPRComments": 1023,
-    "totalIssueComments": 1631,
+    "totalCommits": 2147,
+    "totalPRs": 366,
+    "totalIssues": 210,
+    "totalPRComments": 1018,
+    "totalIssueComments": 1607,
     "totalRepos": 80,
     "successfulUsers": 13,
     "failedUsers": 0,
     "totalUsers": 13,
-    "analysisTimeframe": "2025-06-08 to 2025-12-05",
+    "analysisTimeframe": "2025-06-09 to 2025-12-06",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
