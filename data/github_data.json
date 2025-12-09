@@ -91,7 +91,7 @@
           "pullRequests": 3,
           "issues": 15,
           "prComments": 0,
-          "issueComments": 32
+          "issueComments": 31
         },
         {
           "repoName": "maakaf_home_backend",
@@ -199,7 +199,7 @@
         "totalPRs": 17,
         "totalIssues": 32,
         "totalPRComments": 0,
-        "totalIssueComments": 77
+        "totalIssueComments": 76
       }
     },
     {
@@ -269,7 +269,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 452,
+          "commits": 459,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 12,
@@ -277,7 +277,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 452,
+        "totalCommits": 459,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 12,
@@ -360,13 +360,23 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "calculator_ex_2025",
+          "description": null,
+          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 102,
+          "issueComments": 0
         }
       ],
       "summary": {
         "totalCommits": 134,
         "totalPRs": 28,
         "totalIssues": 72,
-        "totalPRComments": 373,
+        "totalPRComments": 475,
         "totalIssueComments": 342
       }
     },
@@ -391,21 +401,21 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 322,
-          "pullRequests": 130,
+          "commits": 305,
+          "pullRequests": 127,
           "issues": 25,
-          "prComments": 808,
-          "issueComments": 866
+          "prComments": 804,
+          "issueComments": 872
         },
         {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
-          "commits": 5,
+          "commits": 6,
           "pullRequests": 2,
-          "issues": 9,
-          "prComments": 4,
-          "issueComments": 54
+          "issues": 8,
+          "prComments": 5,
+          "issueComments": 52
         },
         {
           "repoName": "scylla-cqlsh",
@@ -435,7 +445,7 @@
           "pullRequests": 2,
           "issues": 9,
           "prComments": 7,
-          "issueComments": 169
+          "issueComments": 167
         },
         {
           "repoName": "scylla-bench",
@@ -484,16 +494,16 @@
           "commits": 2,
           "pullRequests": 3,
           "issues": 0,
-          "prComments": 6,
+          "prComments": 9,
           "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 352,
-        "totalPRs": 150,
-        "totalIssues": 43,
+        "totalCommits": 336,
+        "totalPRs": 147,
+        "totalIssues": 42,
         "totalPRComments": 849,
-        "totalIssueComments": 1144
+        "totalIssueComments": 1146
       }
     },
     {
@@ -521,7 +531,7 @@
           "pullRequests": 19,
           "issues": 14,
           "prComments": 54,
-          "issueComments": 78
+          "issueComments": 77
         }
       ],
       "summary": {
@@ -529,7 +539,7 @@
         "totalPRs": 19,
         "totalIssues": 14,
         "totalPRComments": 54,
-        "totalIssueComments": 78
+        "totalIssueComments": 77
       }
     },
     {
@@ -579,7 +589,7 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 461,
-        "followers": 2319,
+        "followers": 2320,
         "following": 1107,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
@@ -606,16 +616,6 @@
           "issueComments": 68
         },
         {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "mastra",
           "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
           "url": "https://github.com/mastra-ai/mastra",
@@ -624,6 +624,16 @@
           "issues": 3,
           "prComments": 0,
           "issueComments": 8
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "npm-security-best-practices",
@@ -897,7 +907,7 @@
         "blog": "https://szabgab.com/",
         "twitterUsername": null,
         "publicRepos": 1058,
-        "followers": 662,
+        "followers": 663,
         "following": 16,
         "accountType": "User",
         "createdAt": "2009-01-23T19:05:27.000Z"
@@ -907,11 +917,11 @@
           "repoName": "rust-digger",
           "description": null,
           "url": "https://github.com/szabgab/rust-digger",
-          "commits": 48,
+          "commits": 43,
           "pullRequests": 0,
-          "issues": 11,
+          "issues": 9,
           "prComments": 0,
-          "issueComments": 13
+          "issueComments": 10
         },
         {
           "repoName": "mdBook",
@@ -932,16 +942,6 @@
           "issues": 3,
           "prComments": 3,
           "issueComments": 5
-        },
-        {
-          "repoName": "yara-x",
-          "description": "A rewrite of YARA in Rust.",
-          "url": "https://github.com/VirusTotal/yara-x",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
         },
         {
           "repoName": "maps",
@@ -997,7 +997,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 230,
+          "commits": 228,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1022,16 +1022,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
-        },
-        {
-          "repoName": "fablore",
-          "description": "A Flesh and Blood Lore Book Website",
-          "url": "https://github.com/nathaneastwood/fablore",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
         },
         {
           "repoName": "wayland-clipboard-listener",
@@ -1067,11 +1057,11 @@
           "repoName": "perlweekly",
           "description": "A free, once a week e-mail round-up of hand-picked news and articles about Perl",
           "url": "https://github.com/szabgab/perlweekly",
-          "commits": 22,
+          "commits": 25,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 3
+          "issueComments": 4
         },
         {
           "repoName": "ladino-diksionaryo-data",
@@ -1105,11 +1095,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 396,
-        "totalPRs": 17,
-        "totalIssues": 21,
+        "totalCommits": 389,
+        "totalPRs": 16,
+        "totalIssues": 19,
         "totalPRComments": 3,
-        "totalIssueComments": 50
+        "totalIssueComments": 48
       }
     },
     {
@@ -1296,16 +1286,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2245,
-    "totalPRs": 389,
-    "totalIssues": 275,
-    "totalPRComments": 1358,
-    "totalIssueComments": 1906,
-    "totalRepos": 82,
+    "totalCommits": 2229,
+    "totalPRs": 385,
+    "totalIssues": 272,
+    "totalPRComments": 1460,
+    "totalIssueComments": 1904,
+    "totalRepos": 81,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-11 to 2025-12-08",
+    "analysisTimeframe": "2025-06-12 to 2025-12-09",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
