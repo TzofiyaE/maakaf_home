@@ -18,6 +18,16 @@
       },
       "repos": [
         {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
           "repoName": "os-practice",
           "description": null,
           "url": "https://github.com/UrielOfir/os-practice",
@@ -36,16 +46,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
-        },
-        {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
-          "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
         }
       ],
       "summary": {
@@ -212,23 +212,13 @@
         "company": null,
         "blog": "",
         "twitterUsername": null,
-        "publicRepos": 14,
+        "publicRepos": 15,
         "followers": 0,
         "following": 0,
         "accountType": "User",
         "createdAt": "2017-11-01T11:58:42.000Z"
       },
       "repos": [
-        {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 3,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
         {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
@@ -238,6 +228,16 @@
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 3,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -269,7 +269,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 459,
+          "commits": 463,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 12,
@@ -277,7 +277,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 459,
+        "totalCommits": 463,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 12,
@@ -328,7 +328,7 @@
           "commits": 115,
           "pullRequests": 19,
           "issues": 62,
-          "prComments": 368,
+          "prComments": 381,
           "issueComments": 314
         },
         {
@@ -352,16 +352,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "cors",
-          "description": "Go net/http configurable handler to handle CORS requests",
-          "url": "https://github.com/rs/cors",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "calculator_ex_2025",
           "description": null,
           "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
@@ -370,13 +360,23 @@
           "issues": 0,
           "prComments": 102,
           "issueComments": 0
+        },
+        {
+          "repoName": "cors",
+          "description": "Go net/http configurable handler to handle CORS requests",
+          "url": "https://github.com/rs/cors",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
         "totalCommits": 134,
         "totalPRs": 28,
         "totalIssues": 72,
-        "totalPRComments": 475,
+        "totalPRComments": 488,
         "totalIssueComments": 342
       }
     },
@@ -402,20 +402,20 @@
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
           "commits": 305,
-          "pullRequests": 127,
+          "pullRequests": 126,
           "issues": 25,
-          "prComments": 804,
-          "issueComments": 872
+          "prComments": 797,
+          "issueComments": 878
         },
         {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
-          "commits": 6,
+          "commits": 4,
           "pullRequests": 2,
           "issues": 8,
           "prComments": 5,
-          "issueComments": 52
+          "issueComments": 48
         },
         {
           "repoName": "scylla-cqlsh",
@@ -435,7 +435,7 @@
           "pullRequests": 2,
           "issues": 0,
           "prComments": 11,
-          "issueComments": 27
+          "issueComments": 26
         },
         {
           "repoName": "scylladb",
@@ -491,10 +491,10 @@
           "repoName": "scylla-machine-image",
           "description": null,
           "url": "https://github.com/scylladb/scylla-machine-image",
-          "commits": 2,
-          "pullRequests": 3,
+          "commits": 4,
+          "pullRequests": 4,
           "issues": 0,
-          "prComments": 9,
+          "prComments": 10,
           "issueComments": 1
         }
       ],
@@ -502,8 +502,8 @@
         "totalCommits": 336,
         "totalPRs": 147,
         "totalIssues": 42,
-        "totalPRComments": 849,
-        "totalIssueComments": 1146
+        "totalPRComments": 843,
+        "totalIssueComments": 1147
       }
     },
     {
@@ -599,7 +599,7 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 116,
+          "commits": 112,
           "pullRequests": 22,
           "issues": 12,
           "prComments": 5,
@@ -616,16 +616,6 @@
           "issueComments": 68
         },
         {
-          "repoName": "mastra",
-          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
-          "url": "https://github.com/mastra-ai/mastra",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 3,
-          "prComments": 0,
-          "issueComments": 8
-        },
-        {
           "repoName": "mcp-server-nodejs-api-docs",
           "description": "MCP Server for Node.js API documentation",
           "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
@@ -634,6 +624,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 4
+        },
+        {
+          "repoName": "mastra",
+          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
+          "url": "https://github.com/mastra-ai/mastra",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 3,
+          "prComments": 0,
+          "issueComments": 8
         },
         {
           "repoName": "npm-security-best-practices",
@@ -716,20 +716,20 @@
           "issueComments": 1
         },
         {
-          "repoName": "mcp-server-npm-goof",
-          "description": "An MCP server for NPM JavaScript Package Management tools",
-          "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
-          "commits": 11,
+          "repoName": "nodejs-cli-apps-best-practices",
+          "description": "The largest Node.js CLI Apps best practices list ✨",
+          "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
+          "commits": 2,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         },
         {
-          "repoName": "nodejs-cli-apps-best-practices",
-          "description": "The largest Node.js CLI Apps best practices list ✨",
-          "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
-          "commits": 2,
+          "repoName": "mcp-server-npm-goof",
+          "description": "An MCP server for NPM JavaScript Package Management tools",
+          "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
+          "commits": 10,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -807,7 +807,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 411,
+        "totalCommits": 406,
         "totalPRs": 72,
         "totalIssues": 45,
         "totalPRComments": 28,
@@ -917,7 +917,7 @@
           "repoName": "rust-digger",
           "description": null,
           "url": "https://github.com/szabgab/rust-digger",
-          "commits": 43,
+          "commits": 40,
           "pullRequests": 0,
           "issues": 9,
           "prComments": 0,
@@ -1095,7 +1095,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 389,
+        "totalCommits": 386,
         "totalPRs": 16,
         "totalIssues": 19,
         "totalPRComments": 3,
@@ -1286,16 +1286,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2229,
+    "totalCommits": 2225,
     "totalPRs": 385,
     "totalIssues": 272,
-    "totalPRComments": 1460,
-    "totalIssueComments": 1904,
+    "totalPRComments": 1467,
+    "totalIssueComments": 1905,
     "totalRepos": 81,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-12 to 2025-12-09",
+    "analysisTimeframe": "2025-06-13 to 2025-12-10",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
