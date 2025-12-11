@@ -18,16 +18,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
-          "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "os-practice",
           "description": null,
           "url": "https://github.com/UrielOfir/os-practice",
@@ -46,6 +36,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         }
       ],
       "summary": {
@@ -269,7 +269,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 463,
+          "commits": 470,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 12,
@@ -277,7 +277,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 463,
+        "totalCommits": 470,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 12,
@@ -328,7 +328,7 @@
           "commits": 115,
           "pullRequests": 19,
           "issues": 62,
-          "prComments": 381,
+          "prComments": 382,
           "issueComments": 314
         },
         {
@@ -376,7 +376,7 @@
         "totalCommits": 134,
         "totalPRs": 28,
         "totalIssues": 72,
-        "totalPRComments": 488,
+        "totalPRComments": 489,
         "totalIssueComments": 342
       }
     },
@@ -401,11 +401,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 305,
+          "commits": 308,
           "pullRequests": 126,
           "issues": 25,
-          "prComments": 797,
-          "issueComments": 878
+          "prComments": 802,
+          "issueComments": 886
         },
         {
           "repoName": "argus",
@@ -421,11 +421,11 @@
           "repoName": "scylla-cqlsh",
           "description": "A fork of the cqlsh code",
           "url": "https://github.com/scylladb/scylla-cqlsh",
-          "commits": 12,
+          "commits": 15,
           "pullRequests": 6,
-          "issues": 0,
-          "prComments": 5,
-          "issueComments": 17
+          "issues": 4,
+          "prComments": 17,
+          "issueComments": 19
         },
         {
           "repoName": "scylla-ccm",
@@ -433,19 +433,19 @@
           "url": "https://github.com/scylladb/scylla-ccm",
           "commits": 3,
           "pullRequests": 2,
-          "issues": 0,
-          "prComments": 11,
-          "issueComments": 26
+          "issues": 1,
+          "prComments": 12,
+          "issueComments": 30
         },
         {
           "repoName": "scylladb",
           "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
           "url": "https://github.com/scylladb/scylladb",
           "commits": 2,
-          "pullRequests": 2,
+          "pullRequests": 3,
           "issues": 9,
           "prComments": 7,
-          "issueComments": 167
+          "issueComments": 170
         },
         {
           "repoName": "scylla-bench",
@@ -494,16 +494,16 @@
           "commits": 4,
           "pullRequests": 4,
           "issues": 0,
-          "prComments": 10,
+          "prComments": 12,
           "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 336,
-        "totalPRs": 147,
-        "totalIssues": 42,
-        "totalPRComments": 843,
-        "totalIssueComments": 1147
+        "totalCommits": 342,
+        "totalPRs": 148,
+        "totalIssues": 47,
+        "totalPRComments": 863,
+        "totalIssueComments": 1164
       }
     },
     {
@@ -531,7 +531,7 @@
           "pullRequests": 19,
           "issues": 14,
           "prComments": 54,
-          "issueComments": 77
+          "issueComments": 76
         }
       ],
       "summary": {
@@ -539,7 +539,7 @@
         "totalPRs": 19,
         "totalIssues": 14,
         "totalPRComments": 54,
-        "totalIssueComments": 77
+        "totalIssueComments": 76
       }
     },
     {
@@ -589,7 +589,7 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 461,
-        "followers": 2320,
+        "followers": 2322,
         "following": 1107,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
@@ -603,7 +603,7 @@
           "pullRequests": 22,
           "issues": 12,
           "prComments": 5,
-          "issueComments": 16
+          "issueComments": 15
         },
         {
           "repoName": "npq",
@@ -616,16 +616,6 @@
           "issueComments": 68
         },
         {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "mastra",
           "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
           "url": "https://github.com/mastra-ai/mastra",
@@ -634,6 +624,16 @@
           "issues": 3,
           "prComments": 0,
           "issueComments": 8
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "npm-security-best-practices",
@@ -811,7 +811,7 @@
         "totalPRs": 72,
         "totalIssues": 45,
         "totalPRComments": 28,
-        "totalIssueComments": 126
+        "totalIssueComments": 125
       }
     },
     {
@@ -1163,7 +1163,7 @@
           "repoName": "BcsStudent",
           "description": "My blog, mainly about programming, in Hebrew",
           "url": "https://github.com/baruchiro/BcsStudent",
-          "commits": 23,
+          "commits": 21,
           "pullRequests": 3,
           "issues": 1,
           "prComments": 1,
@@ -1231,7 +1231,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 50,
+        "totalCommits": 48,
         "totalPRs": 11,
         "totalIssues": 3,
         "totalPRComments": 36,
@@ -1286,16 +1286,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2225,
-    "totalPRs": 385,
-    "totalIssues": 272,
-    "totalPRComments": 1467,
-    "totalIssueComments": 1905,
+    "totalCommits": 2236,
+    "totalPRs": 386,
+    "totalIssues": 277,
+    "totalPRComments": 1488,
+    "totalIssueComments": 1920,
     "totalRepos": 81,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-13 to 2025-12-10",
+    "analysisTimeframe": "2025-06-14 to 2025-12-11",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
