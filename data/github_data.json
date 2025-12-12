@@ -87,7 +87,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 150,
+          "commits": 148,
           "pullRequests": 3,
           "issues": 15,
           "prComments": 0,
@@ -195,7 +195,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 211,
+        "totalCommits": 209,
         "totalPRs": 17,
         "totalIssues": 32,
         "totalPRComments": 0,
@@ -269,7 +269,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 470,
+          "commits": 471,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 12,
@@ -277,7 +277,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 470,
+        "totalCommits": 471,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 12,
@@ -362,6 +362,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "Festival-lineup",
+          "description": "Task practice - conditional render, Props, useState",
+          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 17,
+          "issueComments": 0
+        },
+        {
           "repoName": "cors",
           "description": "Go net/http configurable handler to handle CORS requests",
           "url": "https://github.com/rs/cors",
@@ -376,7 +386,7 @@
         "totalCommits": 134,
         "totalPRs": 28,
         "totalIssues": 72,
-        "totalPRComments": 489,
+        "totalPRComments": 506,
         "totalIssueComments": 342
       }
     },
@@ -404,8 +414,8 @@
           "commits": 308,
           "pullRequests": 126,
           "issues": 25,
-          "prComments": 802,
-          "issueComments": 886
+          "prComments": 804,
+          "issueComments": 892
         },
         {
           "repoName": "argus",
@@ -445,7 +455,7 @@
           "pullRequests": 3,
           "issues": 9,
           "prComments": 7,
-          "issueComments": 170
+          "issueComments": 171
         },
         {
           "repoName": "scylla-bench",
@@ -502,8 +512,8 @@
         "totalCommits": 342,
         "totalPRs": 148,
         "totalIssues": 47,
-        "totalPRComments": 863,
-        "totalIssueComments": 1164
+        "totalPRComments": 865,
+        "totalIssueComments": 1171
       }
     },
     {
@@ -589,7 +599,7 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 461,
-        "followers": 2322,
+        "followers": 2324,
         "following": 1107,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
@@ -603,7 +613,7 @@
           "pullRequests": 22,
           "issues": 12,
           "prComments": 5,
-          "issueComments": 15
+          "issueComments": 13
         },
         {
           "repoName": "npq",
@@ -616,16 +626,6 @@
           "issueComments": 68
         },
         {
-          "repoName": "mastra",
-          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
-          "url": "https://github.com/mastra-ai/mastra",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 3,
-          "prComments": 0,
-          "issueComments": 8
-        },
-        {
           "repoName": "mcp-server-nodejs-api-docs",
           "description": "MCP Server for Node.js API documentation",
           "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
@@ -634,6 +634,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 4
+        },
+        {
+          "repoName": "mastra",
+          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
+          "url": "https://github.com/mastra-ai/mastra",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 3,
+          "prComments": 0,
+          "issueComments": 8
         },
         {
           "repoName": "npm-security-best-practices",
@@ -811,7 +821,7 @@
         "totalPRs": 72,
         "totalIssues": 45,
         "totalPRComments": 28,
-        "totalIssueComments": 125
+        "totalIssueComments": 123
       }
     },
     {
@@ -907,7 +917,7 @@
         "blog": "https://szabgab.com/",
         "twitterUsername": null,
         "publicRepos": 1058,
-        "followers": 663,
+        "followers": 662,
         "following": 16,
         "accountType": "User",
         "createdAt": "2009-01-23T19:05:27.000Z"
@@ -917,9 +927,9 @@
           "repoName": "rust-digger",
           "description": null,
           "url": "https://github.com/szabgab/rust-digger",
-          "commits": 40,
+          "commits": 36,
           "pullRequests": 0,
-          "issues": 9,
+          "issues": 8,
           "prComments": 0,
           "issueComments": 10
         },
@@ -1095,9 +1105,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 386,
+        "totalCommits": 382,
         "totalPRs": 16,
-        "totalIssues": 19,
+        "totalIssues": 18,
         "totalPRComments": 3,
         "totalIssueComments": 48
       }
@@ -1113,7 +1123,7 @@
         "blog": "https://baruchiro.com/",
         "twitterUsername": "baruchiro",
         "publicRepos": 162,
-        "followers": 74,
+        "followers": 73,
         "following": 12,
         "accountType": "User",
         "createdAt": "2016-03-06T13:55:11.000Z"
@@ -1286,16 +1296,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2236,
+    "totalCommits": 2231,
     "totalPRs": 386,
-    "totalIssues": 277,
-    "totalPRComments": 1488,
-    "totalIssueComments": 1920,
-    "totalRepos": 81,
+    "totalIssues": 276,
+    "totalPRComments": 1507,
+    "totalIssueComments": 1925,
+    "totalRepos": 82,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-14 to 2025-12-11",
+    "analysisTimeframe": "2025-06-15 to 2025-12-12",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
