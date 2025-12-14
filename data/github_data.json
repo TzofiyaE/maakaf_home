@@ -89,7 +89,7 @@
           "url": "https://github.com/Maakaf/maakaf_home",
           "commits": 147,
           "pullRequests": 3,
-          "issues": 15,
+          "issues": 14,
           "prComments": 0,
           "issueComments": 31
         },
@@ -197,7 +197,7 @@
       "summary": {
         "totalCommits": 208,
         "totalPRs": 17,
-        "totalIssues": 32,
+        "totalIssues": 31,
         "totalPRComments": 0,
         "totalIssueComments": 76
       }
@@ -352,16 +352,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "calculator_ex_2025",
-          "description": null,
-          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 102,
-          "issueComments": 0
-        },
-        {
           "repoName": "Festival-lineup",
           "description": "Task practice - conditional render, Props, useState",
           "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
@@ -390,12 +380,42 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "calculator_ex_2025",
+          "description": null,
+          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 102,
+          "issueComments": 0
+        },
+        {
+          "repoName": "open-bus-map-search",
+          "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
+          "url": "https://github.com/hasadna/open-bus-map-search",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "TheCyberHub",
+          "description": "Welcome to TheCyberHUB, a community-driven platform for hackers, cybersecurity enthusiasts, and IT professionals. Our platform provides a variety of free resources, including Capture The Flag (CTF) challenges, courses, blogs, forums, and much more.",
+          "url": "https://github.com/th3cyb3rhub/TheCyberHub",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
         "totalCommits": 134,
         "totalPRs": 28,
-        "totalIssues": 73,
+        "totalIssues": 75,
         "totalPRComments": 509,
         "totalIssueComments": 342
       }
@@ -431,11 +451,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 305,
+          "commits": 304,
           "pullRequests": 121,
           "issues": 23,
-          "prComments": 799,
-          "issueComments": 887
+          "prComments": 782,
+          "issueComments": 881
         },
         {
           "repoName": "scylla-cqlsh",
@@ -455,7 +475,7 @@
           "pullRequests": 2,
           "issues": 1,
           "prComments": 12,
-          "issueComments": 30
+          "issueComments": 29
         },
         {
           "repoName": "scylladb",
@@ -465,7 +485,7 @@
           "pullRequests": 3,
           "issues": 9,
           "prComments": 7,
-          "issueComments": 166
+          "issueComments": 165
         },
         {
           "repoName": "scylla-bench",
@@ -519,11 +539,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 339,
+        "totalCommits": 338,
         "totalPRs": 143,
         "totalIssues": 45,
-        "totalPRComments": 860,
-        "totalIssueComments": 1161
+        "totalPRComments": 843,
+        "totalIssueComments": 1153
       }
     },
     {
@@ -551,7 +571,7 @@
           "pullRequests": 19,
           "issues": 14,
           "prComments": 54,
-          "issueComments": 76
+          "issueComments": 75
         }
       ],
       "summary": {
@@ -559,7 +579,7 @@
         "totalPRs": 19,
         "totalIssues": 14,
         "totalPRComments": 54,
-        "totalIssueComments": 76
+        "totalIssueComments": 75
       }
     },
     {
@@ -574,7 +594,7 @@
         "twitterUsername": null,
         "publicRepos": 18,
         "followers": 9,
-        "following": 25,
+        "following": 26,
         "accountType": "User",
         "createdAt": "2023-05-06T21:59:34.000Z"
       },
@@ -609,7 +629,7 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 461,
-        "followers": 2323,
+        "followers": 2324,
         "following": 1108,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
@@ -636,16 +656,6 @@
           "issueComments": 68
         },
         {
-          "repoName": "mastra",
-          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
-          "url": "https://github.com/mastra-ai/mastra",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 3,
-          "prComments": 0,
-          "issueComments": 8
-        },
-        {
           "repoName": "mcp-server-nodejs-api-docs",
           "description": "MCP Server for Node.js API documentation",
           "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
@@ -654,6 +664,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 4
+        },
+        {
+          "repoName": "mastra",
+          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
+          "url": "https://github.com/mastra-ai/mastra",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 3,
+          "prComments": 0,
+          "issueComments": 8
         },
         {
           "repoName": "npm-security-best-practices",
@@ -749,7 +769,7 @@
           "repoName": "mcp-server-npm-goof",
           "description": "An MCP server for NPM JavaScript Package Management tools",
           "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
-          "commits": 10,
+          "commits": 9,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -827,7 +847,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 408,
+        "totalCommits": 407,
         "totalPRs": 73,
         "totalIssues": 45,
         "totalPRComments": 28,
@@ -937,9 +957,9 @@
           "repoName": "rust-digger",
           "description": null,
           "url": "https://github.com/szabgab/rust-digger",
-          "commits": 23,
+          "commits": 18,
           "pullRequests": 0,
-          "issues": 6,
+          "issues": 5,
           "prComments": 0,
           "issueComments": 6
         },
@@ -968,7 +988,7 @@
           "description": "Data for this-week-in-rust.org",
           "url": "https://github.com/rust-lang/this-week-in-rust",
           "commits": 1,
-          "pullRequests": 2,
+          "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
@@ -1022,16 +1042,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
-        },
-        {
-          "repoName": "wayland-clipboard-listener",
-          "description": null,
-          "url": "https://github.com/Decodetalkers/wayland-clipboard-listener",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
         },
         {
           "repoName": "maps",
@@ -1105,9 +1115,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 371,
-        "totalPRs": 14,
-        "totalIssues": 16,
+        "totalCommits": 365,
+        "totalPRs": 12,
+        "totalIssues": 15,
         "totalPRComments": 3,
         "totalIssueComments": 46
       }
@@ -1269,11 +1279,11 @@
           "repoName": "DataGenerator",
           "description": "A C++-based open-source project for generating diverse and customizable datasets. DataGenerator aims to provide developers and data scientists with flexible tools to create synthetic data for testing, machine learning, and development purposes. Contributions and feedback are welcome!",
           "url": "https://github.com/DevLev-OpenSource/DataGenerator",
-          "commits": 20,
-          "pullRequests": 3,
-          "issues": 2,
+          "commits": 11,
+          "pullRequests": 2,
+          "issues": 0,
           "prComments": 0,
-          "issueComments": 5
+          "issueComments": 2
         },
         {
           "repoName": "maakaf_home",
@@ -1287,25 +1297,25 @@
         }
       ],
       "summary": {
-        "totalCommits": 22,
-        "totalPRs": 5,
-        "totalIssues": 2,
+        "totalCommits": 13,
+        "totalPRs": 4,
+        "totalIssues": 0,
         "totalPRComments": 0,
-        "totalIssueComments": 7
+        "totalIssueComments": 4
       }
     }
   ],
   "globalSummary": {
-    "totalCommits": 2217,
-    "totalPRs": 380,
-    "totalIssues": 254,
-    "totalPRComments": 1505,
-    "totalIssueComments": 1912,
+    "totalCommits": 2200,
+    "totalPRs": 377,
+    "totalIssues": 252,
+    "totalPRComments": 1488,
+    "totalIssueComments": 1900,
     "totalRepos": 82,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-16 to 2025-12-13",
+    "analysisTimeframe": "2025-06-17 to 2025-12-14",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
