@@ -269,7 +269,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 472,
+          "commits": 474,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 12,
@@ -277,7 +277,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 472,
+        "totalCommits": 474,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 12,
@@ -328,8 +328,8 @@
           "commits": 115,
           "pullRequests": 19,
           "issues": 62,
-          "prComments": 382,
-          "issueComments": 314
+          "prComments": 385,
+          "issueComments": 317
         },
         {
           "repoName": "Hacktoberfest-25-Projects",
@@ -352,29 +352,9 @@
           "issueComments": 0
         },
         {
-          "repoName": "Festival-lineup",
-          "description": "Task practice - conditional render, Props, useState",
-          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 20,
-          "issueComments": 0
-        },
-        {
           "repoName": "cors",
           "description": "Go net/http configurable handler to handle CORS requests",
           "url": "https://github.com/rs/cors",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "snaps-registry",
-          "description": "A registry containing metadata about verified and blocked Snaps.",
-          "url": "https://github.com/MetaMask/snaps-registry",
           "commits": 0,
           "pullRequests": 0,
           "issues": 1,
@@ -389,6 +369,26 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 102,
+          "issueComments": 0
+        },
+        {
+          "repoName": "Festival-lineup",
+          "description": "Task practice - conditional render, Props, useState",
+          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 20,
+          "issueComments": 0
+        },
+        {
+          "repoName": "snaps-registry",
+          "description": "A registry containing metadata about verified and blocked Snaps.",
+          "url": "https://github.com/MetaMask/snaps-registry",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
           "issueComments": 0
         },
         {
@@ -416,8 +416,8 @@
         "totalCommits": 134,
         "totalPRs": 28,
         "totalIssues": 75,
-        "totalPRComments": 509,
-        "totalIssueComments": 342
+        "totalPRComments": 512,
+        "totalIssueComments": 345
       }
     },
     {
@@ -430,7 +430,7 @@
         "company": "@scylladb",
         "blog": "http://fruch.github.io/",
         "twitterUsername": null,
-        "publicRepos": 129,
+        "publicRepos": 130,
         "followers": 26,
         "following": 16,
         "accountType": "User",
@@ -451,11 +451,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 304,
-          "pullRequests": 121,
+          "commits": 302,
+          "pullRequests": 118,
           "issues": 23,
-          "prComments": 782,
-          "issueComments": 881
+          "prComments": 774,
+          "issueComments": 871
         },
         {
           "repoName": "scylla-cqlsh",
@@ -475,7 +475,7 @@
           "pullRequests": 2,
           "issues": 1,
           "prComments": 12,
-          "issueComments": 29
+          "issueComments": 30
         },
         {
           "repoName": "scylladb",
@@ -485,7 +485,7 @@
           "pullRequests": 3,
           "issues": 9,
           "prComments": 7,
-          "issueComments": 165
+          "issueComments": 169
         },
         {
           "repoName": "scylla-bench",
@@ -525,25 +525,25 @@
           "pullRequests": 2,
           "issues": 0,
           "prComments": 3,
-          "issueComments": 6
+          "issueComments": 7
         },
         {
           "repoName": "scylla-machine-image",
           "description": null,
           "url": "https://github.com/scylladb/scylla-machine-image",
           "commits": 4,
-          "pullRequests": 4,
+          "pullRequests": 5,
           "issues": 0,
           "prComments": 12,
           "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 338,
-        "totalPRs": 143,
+        "totalCommits": 336,
+        "totalPRs": 141,
         "totalIssues": 45,
-        "totalPRComments": 843,
-        "totalIssueComments": 1153
+        "totalPRComments": 835,
+        "totalIssueComments": 1149
       }
     },
     {
@@ -570,16 +570,16 @@
           "commits": 90,
           "pullRequests": 19,
           "issues": 14,
-          "prComments": 54,
-          "issueComments": 75
+          "prComments": 52,
+          "issueComments": 72
         }
       ],
       "summary": {
         "totalCommits": 90,
         "totalPRs": 19,
         "totalIssues": 14,
-        "totalPRComments": 54,
-        "totalIssueComments": 75
+        "totalPRComments": 52,
+        "totalIssueComments": 72
       }
     },
     {
@@ -630,7 +630,7 @@
         "twitterUsername": "liran_tal",
         "publicRepos": 461,
         "followers": 2324,
-        "following": 1108,
+        "following": 1109,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
       },
@@ -656,16 +656,6 @@
           "issueComments": 68
         },
         {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "mastra",
           "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
           "url": "https://github.com/mastra-ai/mastra",
@@ -674,6 +664,16 @@
           "issues": 3,
           "prComments": 0,
           "issueComments": 8
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "npm-security-best-practices",
@@ -947,7 +947,7 @@
         "blog": "https://szabgab.com/",
         "twitterUsername": null,
         "publicRepos": 1058,
-        "followers": 662,
+        "followers": 663,
         "following": 16,
         "accountType": "User",
         "createdAt": "2009-01-23T19:05:27.000Z"
@@ -991,7 +991,7 @@
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 1
+          "issueComments": 0
         },
         {
           "repoName": "xml2json",
@@ -1017,7 +1017,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 228,
+          "commits": 222,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1042,16 +1042,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
-        },
-        {
-          "repoName": "maps",
-          "description": "Inspect, compare and align multiple grid maps in an intuitive & fast GUI",
-          "url": "https://github.com/MichaelGrupp/maps",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
         },
         {
           "repoName": "mdbooks.code-maven.com",
@@ -1115,11 +1105,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 365,
+        "totalCommits": 358,
         "totalPRs": 12,
         "totalIssues": 15,
         "totalPRComments": 3,
-        "totalIssueComments": 46
+        "totalIssueComments": 45
       }
     },
     {
@@ -1306,16 +1296,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2200,
-    "totalPRs": 377,
+    "totalCommits": 2193,
+    "totalPRs": 375,
     "totalIssues": 252,
-    "totalPRComments": 1488,
-    "totalIssueComments": 1900,
-    "totalRepos": 82,
+    "totalPRComments": 1481,
+    "totalIssueComments": 1895,
+    "totalRepos": 81,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-17 to 2025-12-14",
+    "analysisTimeframe": "2025-06-18 to 2025-12-15",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
