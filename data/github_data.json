@@ -18,6 +18,16 @@
       },
       "repos": [
         {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
           "repoName": "os-practice",
           "description": null,
           "url": "https://github.com/UrielOfir/os-practice",
@@ -36,16 +46,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
-        },
-        {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
-          "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
         }
       ],
       "summary": {
@@ -220,16 +220,6 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 3,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
@@ -238,6 +228,16 @@
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 3,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -269,18 +269,18 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 474,
+          "commits": 479,
           "pullRequests": 11,
           "issues": 11,
-          "prComments": 12,
+          "prComments": 13,
           "issueComments": 33
         }
       ],
       "summary": {
-        "totalCommits": 474,
+        "totalCommits": 479,
         "totalPRs": 11,
         "totalIssues": 11,
-        "totalPRComments": 12,
+        "totalPRComments": 13,
         "totalIssueComments": 33
       }
     },
@@ -352,16 +352,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "cors",
-          "description": "Go net/http configurable handler to handle CORS requests",
-          "url": "https://github.com/rs/cors",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "calculator_ex_2025",
           "description": null,
           "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
@@ -369,6 +359,16 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 102,
+          "issueComments": 0
+        },
+        {
+          "repoName": "cors",
+          "description": "Go net/http configurable handler to handle CORS requests",
+          "url": "https://github.com/rs/cors",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
           "issueComments": 0
         },
         {
@@ -445,17 +445,17 @@
           "pullRequests": 2,
           "issues": 8,
           "prComments": 5,
-          "issueComments": 48
+          "issueComments": 47
         },
         {
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 302,
-          "pullRequests": 118,
+          "commits": 293,
+          "pullRequests": 115,
           "issues": 23,
-          "prComments": 774,
-          "issueComments": 871
+          "prComments": 776,
+          "issueComments": 867
         },
         {
           "repoName": "scylla-cqlsh",
@@ -504,8 +504,8 @@
           "commits": 2,
           "pullRequests": 1,
           "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
+          "prComments": 1,
+          "issueComments": 9
         },
         {
           "repoName": "scylla-monitoring",
@@ -539,11 +539,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 336,
-        "totalPRs": 141,
+        "totalCommits": 327,
+        "totalPRs": 138,
         "totalIssues": 45,
-        "totalPRComments": 835,
-        "totalIssueComments": 1149
+        "totalPRComments": 838,
+        "totalIssueComments": 1153
       }
     },
     {
@@ -571,7 +571,7 @@
           "pullRequests": 19,
           "issues": 14,
           "prComments": 52,
-          "issueComments": 72
+          "issueComments": 70
         }
       ],
       "summary": {
@@ -579,7 +579,7 @@
         "totalPRs": 19,
         "totalIssues": 14,
         "totalPRComments": 52,
-        "totalIssueComments": 72
+        "totalIssueComments": 70
       }
     },
     {
@@ -594,7 +594,7 @@
         "twitterUsername": null,
         "publicRepos": 18,
         "followers": 9,
-        "following": 26,
+        "following": 27,
         "accountType": "User",
         "createdAt": "2023-05-06T21:59:34.000Z"
       },
@@ -629,7 +629,7 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 461,
-        "followers": 2324,
+        "followers": 2326,
         "following": 1109,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
@@ -656,16 +656,6 @@
           "issueComments": 68
         },
         {
-          "repoName": "mastra",
-          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
-          "url": "https://github.com/mastra-ai/mastra",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 3,
-          "prComments": 0,
-          "issueComments": 8
-        },
-        {
           "repoName": "mcp-server-nodejs-api-docs",
           "description": "MCP Server for Node.js API documentation",
           "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
@@ -674,6 +664,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 4
+        },
+        {
+          "repoName": "mastra",
+          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
+          "url": "https://github.com/mastra-ai/mastra",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 3,
+          "prComments": 0,
+          "issueComments": 8
         },
         {
           "repoName": "npm-security-best-practices",
@@ -957,7 +957,7 @@
           "repoName": "rust-digger",
           "description": null,
           "url": "https://github.com/szabgab/rust-digger",
-          "commits": 18,
+          "commits": 16,
           "pullRequests": 0,
           "issues": 5,
           "prComments": 0,
@@ -984,16 +984,6 @@
           "issueComments": 5
         },
         {
-          "repoName": "this-week-in-rust",
-          "description": "Data for this-week-in-rust.org",
-          "url": "https://github.com/rust-lang/this-week-in-rust",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "xml2json",
           "description": "CLI tool to convert XML into JSON",
           "url": "https://github.com/janstarke/xml2json",
@@ -1014,26 +1004,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "rust.code-maven.com",
-          "description": "Rust version of the Code Maven web site",
-          "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 222,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
-          "repoName": "code-maven.com",
-          "description": "The content of the Code-Maven site",
-          "url": "https://github.com/szabgab/code-maven.com",
-          "commits": 53,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "awesome-lists",
           "description": "The awesome list of all the awesome lists",
           "url": "https://github.com/szabgab/awesome-lists",
@@ -1044,10 +1014,30 @@
           "issueComments": 1
         },
         {
+          "repoName": "rust.code-maven.com",
+          "description": "Rust version of the Code Maven web site",
+          "url": "https://github.com/szabgab/rust.code-maven.com",
+          "commits": 202,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
           "repoName": "mdbooks.code-maven.com",
           "description": "Collection of Public mdBooks",
           "url": "https://github.com/szabgab/mdbooks.code-maven.com",
           "commits": 15,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "code-maven.com",
+          "description": "The content of the Code-Maven site",
+          "url": "https://github.com/szabgab/code-maven.com",
+          "commits": 53,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1067,11 +1057,11 @@
           "repoName": "perlweekly",
           "description": "A free, once a week e-mail round-up of hand-picked news and articles about Perl",
           "url": "https://github.com/szabgab/perlweekly",
-          "commits": 25,
+          "commits": 28,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 5
+          "issueComments": 7
         },
         {
           "repoName": "ladino-diksionaryo-data",
@@ -1102,14 +1092,24 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "dim",
+          "description": "Native Wayland screen dimming tool",
+          "url": "https://github.com/marcelohdez/dim",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 358,
+        "totalCommits": 340,
         "totalPRs": 12,
         "totalIssues": 15,
         "totalPRComments": 3,
-        "totalIssueComments": 45
+        "totalIssueComments": 44
       }
     },
     {
@@ -1269,8 +1269,8 @@
           "repoName": "DataGenerator",
           "description": "A C++-based open-source project for generating diverse and customizable datasets. DataGenerator aims to provide developers and data scientists with flexible tools to create synthetic data for testing, machine learning, and development purposes. Contributions and feedback are welcome!",
           "url": "https://github.com/DevLev-OpenSource/DataGenerator",
-          "commits": 11,
-          "pullRequests": 2,
+          "commits": 5,
+          "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
@@ -1287,8 +1287,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 13,
-        "totalPRs": 4,
+        "totalCommits": 7,
+        "totalPRs": 2,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 4
@@ -1296,16 +1296,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2193,
-    "totalPRs": 375,
+    "totalCommits": 2165,
+    "totalPRs": 370,
     "totalIssues": 252,
-    "totalPRComments": 1481,
-    "totalIssueComments": 1895,
+    "totalPRComments": 1485,
+    "totalIssueComments": 1896,
     "totalRepos": 81,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-18 to 2025-12-15",
+    "analysisTimeframe": "2025-06-19 to 2025-12-16",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
