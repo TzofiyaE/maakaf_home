@@ -18,16 +18,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
-          "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "os-practice",
           "description": null,
           "url": "https://github.com/UrielOfir/os-practice",
@@ -46,6 +36,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         }
       ],
       "summary": {
@@ -87,11 +87,11 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 147,
+          "commits": 145,
           "pullRequests": 3,
           "issues": 14,
           "prComments": 0,
-          "issueComments": 31
+          "issueComments": 30
         },
         {
           "repoName": "maakaf_home_backend",
@@ -195,11 +195,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 208,
+        "totalCommits": 206,
         "totalPRs": 17,
         "totalIssues": 31,
         "totalPRComments": 0,
-        "totalIssueComments": 76
+        "totalIssueComments": 75
       }
     },
     {
@@ -220,16 +220,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 59,
-          "pullRequests": 28,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 1
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -238,6 +228,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 59,
+          "pullRequests": 28,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 1
         }
       ],
       "summary": {
@@ -269,7 +269,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 485,
+          "commits": 483,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 13,
@@ -277,7 +277,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 485,
+        "totalCommits": 483,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 13,
@@ -302,16 +302,6 @@
       },
       "repos": [
         {
-          "repoName": "Broken-Link-Website",
-          "description": "No more broken links in old unmaintained README",
-          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 115,
-          "pullRequests": 19,
-          "issues": 62,
-          "prComments": 385,
-          "issueComments": 317
-        },
-        {
           "repoName": "Broken-Link-Checker",
           "description": null,
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Checker",
@@ -330,6 +320,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "Broken-Link-Website",
+          "description": "No more broken links in old unmaintained README",
+          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
+          "commits": 115,
+          "pullRequests": 19,
+          "issues": 63,
+          "prComments": 395,
+          "issueComments": 318
         },
         {
           "repoName": "Hacktoberfest-25-Projects",
@@ -362,16 +362,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "calculator_ex_2025",
-          "description": null,
-          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 102,
-          "issueComments": 0
-        },
-        {
           "repoName": "Festival-lineup",
           "description": "Task practice - conditional render, Props, useState",
           "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
@@ -389,6 +379,16 @@
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "calculator_ex_2025",
+          "description": null,
+          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 102,
           "issueComments": 0
         },
         {
@@ -410,14 +410,34 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "podman",
+          "description": "Podman: A tool for managing OCI containers and pods.",
+          "url": "https://github.com/containers/podman",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "podman-desktop",
+          "description": "Podman Desktop is the best free and open source tool to work with Containers and Kubernetes for developers. Get an intuitive and user-friendly interface to effortlessly build, manage, and deploy containers and Kubernetes — all from your desktop.",
+          "url": "https://github.com/podman-desktop/podman-desktop",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
         "totalCommits": 134,
         "totalPRs": 28,
-        "totalIssues": 75,
-        "totalPRComments": 530,
-        "totalIssueComments": 345
+        "totalIssues": 78,
+        "totalPRComments": 540,
+        "totalIssueComments": 346
       }
     },
     {
@@ -454,7 +474,7 @@
           "commits": 284,
           "pullRequests": 113,
           "issues": 24,
-          "prComments": 772,
+          "prComments": 773,
           "issueComments": 863
         },
         {
@@ -485,7 +505,7 @@
           "pullRequests": 3,
           "issues": 9,
           "prComments": 7,
-          "issueComments": 170
+          "issueComments": 175
         },
         {
           "repoName": "scylla-bench",
@@ -534,7 +554,7 @@
           "commits": 14,
           "pullRequests": 5,
           "issues": 0,
-          "prComments": 13,
+          "prComments": 14,
           "issueComments": 1
         }
       ],
@@ -542,8 +562,8 @@
         "totalCommits": 330,
         "totalPRs": 136,
         "totalIssues": 46,
-        "totalPRComments": 835,
-        "totalIssueComments": 1155
+        "totalPRComments": 837,
+        "totalIssueComments": 1160
       }
     },
     {
@@ -629,7 +649,7 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 461,
-        "followers": 2325,
+        "followers": 2326,
         "following": 1109,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
@@ -639,31 +659,21 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 112,
-          "pullRequests": 22,
+          "commits": 109,
+          "pullRequests": 21,
           "issues": 12,
           "prComments": 5,
-          "issueComments": 13
+          "issueComments": 12
         },
         {
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 183,
-          "pullRequests": 35,
+          "commits": 181,
+          "pullRequests": 34,
           "issues": 23,
           "prComments": 18,
           "issueComments": 68
-        },
-        {
-          "repoName": "mastra",
-          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
-          "url": "https://github.com/mastra-ai/mastra",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 3,
-          "prComments": 0,
-          "issueComments": 8
         },
         {
           "repoName": "mcp-server-nodejs-api-docs",
@@ -674,6 +684,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 4
+        },
+        {
+          "repoName": "mastra",
+          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
+          "url": "https://github.com/mastra-ai/mastra",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 3,
+          "prComments": 0,
+          "issueComments": 8
         },
         {
           "repoName": "npm-security-best-practices",
@@ -847,11 +867,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 406,
-        "totalPRs": 73,
+        "totalCommits": 401,
+        "totalPRs": 71,
         "totalIssues": 45,
         "totalPRComments": 28,
-        "totalIssueComments": 122
+        "totalIssueComments": 121
       }
     },
     {
@@ -947,7 +967,7 @@
         "blog": "https://szabgab.com/",
         "twitterUsername": null,
         "publicRepos": 1058,
-        "followers": 663,
+        "followers": 664,
         "following": 16,
         "accountType": "User",
         "createdAt": "2009-01-23T19:05:27.000Z"
@@ -1037,7 +1057,7 @@
           "repoName": "code-maven.com",
           "description": "The content of the Code-Maven site",
           "url": "https://github.com/szabgab/code-maven.com",
-          "commits": 53,
+          "commits": 56,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1105,7 +1125,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 333,
+        "totalCommits": 336,
         "totalPRs": 12,
         "totalIssues": 13,
         "totalPRComments": 3,
@@ -1296,16 +1316,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2165,
-    "totalPRs": 367,
-    "totalIssues": 250,
-    "totalPRComments": 1499,
-    "totalIssueComments": 1893,
-    "totalRepos": 81,
+    "totalCommits": 2159,
+    "totalPRs": 365,
+    "totalIssues": 253,
+    "totalPRComments": 1511,
+    "totalIssueComments": 1897,
+    "totalRepos": 83,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-20 to 2025-12-17",
+    "analysisTimeframe": "2025-06-21 to 2025-12-18",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
