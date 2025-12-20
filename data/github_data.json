@@ -87,7 +87,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 138,
+          "commits": 137,
           "pullRequests": 3,
           "issues": 13,
           "prComments": 0,
@@ -185,7 +185,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 199,
+        "totalCommits": 198,
         "totalPRs": 17,
         "totalIssues": 30,
         "totalPRComments": 0,
@@ -259,7 +259,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 500,
+          "commits": 496,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 13,
@@ -267,7 +267,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 500,
+        "totalCommits": 496,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 13,
@@ -292,6 +292,26 @@
       },
       "repos": [
         {
+          "repoName": "AndroidAnimationExercise",
+          "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
+          "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "Broken-Link-Website",
+          "description": "No more broken links in old unmaintained README",
+          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
+          "commits": 115,
+          "pullRequests": 19,
+          "issues": 63,
+          "prComments": 408,
+          "issueComments": 318
+        },
+        {
           "repoName": "Broken-Link-Checker",
           "description": null,
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Checker",
@@ -310,16 +330,6 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 3
-        },
-        {
-          "repoName": "Broken-Link-Website",
-          "description": "No more broken links in old unmaintained README",
-          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 115,
-          "pullRequests": 19,
-          "issues": 63,
-          "prComments": 395,
-          "issueComments": 318
         },
         {
           "repoName": "Hacktoberfest-25-Projects",
@@ -342,13 +352,13 @@
           "issueComments": 0
         },
         {
-          "repoName": "Festival-lineup",
-          "description": "Task practice - conditional render, Props, useState",
-          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
+          "repoName": "snaps-registry",
+          "description": "A registry containing metadata about verified and blocked Snaps.",
+          "url": "https://github.com/MetaMask/snaps-registry",
           "commits": 0,
           "pullRequests": 0,
-          "issues": 0,
-          "prComments": 38,
+          "issues": 1,
+          "prComments": 0,
           "issueComments": 0
         },
         {
@@ -362,13 +372,13 @@
           "issueComments": 0
         },
         {
-          "repoName": "snaps-registry",
-          "description": "A registry containing metadata about verified and blocked Snaps.",
-          "url": "https://github.com/MetaMask/snaps-registry",
+          "repoName": "Festival-lineup",
+          "description": "Task practice - conditional render, Props, useState",
+          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
           "commits": 0,
           "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
+          "issues": 0,
+          "prComments": 38,
           "issueComments": 0
         },
         {
@@ -425,8 +435,8 @@
       "summary": {
         "totalCommits": 134,
         "totalPRs": 28,
-        "totalIssues": 78,
-        "totalPRComments": 540,
+        "totalIssues": 79,
+        "totalPRComments": 553,
         "totalIssueComments": 346
       }
     },
@@ -441,7 +451,7 @@
         "blog": "http://fruch.github.io/",
         "twitterUsername": null,
         "publicRepos": 130,
-        "followers": 26,
+        "followers": 28,
         "following": 16,
         "accountType": "User",
         "createdAt": "2010-07-22T15:53:52.000Z"
@@ -461,11 +471,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 291,
-          "pullRequests": 114,
+          "commits": 287,
+          "pullRequests": 112,
           "issues": 24,
-          "prComments": 776,
-          "issueComments": 876
+          "prComments": 767,
+          "issueComments": 867
         },
         {
           "repoName": "scylla-cqlsh",
@@ -495,7 +505,7 @@
           "pullRequests": 3,
           "issues": 9,
           "prComments": 7,
-          "issueComments": 178
+          "issueComments": 176
         },
         {
           "repoName": "scylla-bench",
@@ -508,16 +518,6 @@
           "issueComments": 4
         },
         {
-          "repoName": "cassandra-stress",
-          "description": null,
-          "url": "https://github.com/scylladb/cassandra-stress",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 1,
-          "issueComments": 12
-        },
-        {
           "repoName": "scylla-machine-image",
           "description": null,
           "url": "https://github.com/scylladb/scylla-machine-image",
@@ -526,6 +526,16 @@
           "issues": 0,
           "prComments": 14,
           "issueComments": 3
+        },
+        {
+          "repoName": "cassandra-stress",
+          "description": null,
+          "url": "https://github.com/scylladb/cassandra-stress",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 1,
+          "issueComments": 12
         },
         {
           "repoName": "scylla-monitoring",
@@ -549,11 +559,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 337,
-        "totalPRs": 137,
+        "totalCommits": 333,
+        "totalPRs": 135,
         "totalIssues": 46,
-        "totalPRComments": 840,
-        "totalIssueComments": 1178
+        "totalPRComments": 831,
+        "totalIssueComments": 1167
       }
     },
     {
@@ -639,22 +649,12 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 461,
-        "followers": 2326,
+        "followers": 2327,
         "following": 1109,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
       },
       "repos": [
-        {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
         {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
@@ -674,6 +674,16 @@
           "issues": 23,
           "prComments": 18,
           "issueComments": 68
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -974,24 +984,44 @@
           "issueComments": 0
         },
         {
+          "repoName": "OSDC-Code-Maven.github.io",
+          "description": "Open Source Development Courses",
+          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
+          "commits": 13,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "perlmaven.com",
+          "description": "The source files of the Perl Maven articles",
+          "url": "https://github.com/szabgab/perlmaven.com",
+          "commits": 5,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "CPAN-Digger",
+          "description": "CPAN Digger to analyze CPAN modules and other Perl-based applications",
+          "url": "https://github.com/szabgab/CPAN-Digger",
+          "commits": 2,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "rust-digger",
           "description": null,
           "url": "https://github.com/szabgab/rust-digger",
           "commits": 7,
           "pullRequests": 0,
-          "issues": 3,
+          "issues": 2,
           "prComments": 0,
-          "issueComments": 2
-        },
-        {
-          "repoName": "mdBook",
-          "description": "Create book from markdown files. Like Gitbook but implemented in Rust",
-          "url": "https://github.com/rust-lang/mdBook",
-          "commits": 5,
-          "pullRequests": 5,
-          "issues": 7,
-          "prComments": 0,
-          "issueComments": 18
+          "issueComments": 0
         },
         {
           "repoName": "anndata",
@@ -1002,6 +1032,16 @@
           "issues": 3,
           "prComments": 3,
           "issueComments": 5
+        },
+        {
+          "repoName": "mdBook",
+          "description": "Create book from markdown files. Like Gitbook but implemented in Rust",
+          "url": "https://github.com/rust-lang/mdBook",
+          "commits": 5,
+          "pullRequests": 5,
+          "issues": 6,
+          "prComments": 0,
+          "issueComments": 18
         },
         {
           "repoName": "xml2json",
@@ -1084,16 +1124,6 @@
           "issueComments": 6
         },
         {
-          "repoName": "OSDC-Code-Maven.github.io",
-          "description": "Open Source Development Courses",
-          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
-          "commits": 11,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "golem-openapi-client-generator",
           "description": "Client generator for golem projects",
           "url": "https://github.com/golemcloud/golem-openapi-client-generator",
@@ -1115,11 +1145,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 337,
+        "totalCommits": 346,
         "totalPRs": 12,
-        "totalIssues": 13,
+        "totalIssues": 11,
         "totalPRComments": 3,
-        "totalIssueComments": 40
+        "totalIssueComments": 38
       }
     },
     {
@@ -1276,21 +1306,21 @@
       },
       "repos": [
         {
-          "repoName": "DataGenerator",
-          "description": "A C++-based open-source project for generating diverse and customizable datasets. DataGenerator aims to provide developers and data scientists with flexible tools to create synthetic data for testing, machine learning, and development purposes. Contributions and feedback are welcome!",
-          "url": "https://github.com/DevLev-OpenSource/DataGenerator",
-          "commits": 5,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
           "commits": 2,
           "pullRequests": 2,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        },
+        {
+          "repoName": "DataGenerator",
+          "description": "A C++-based open-source project for generating diverse and customizable datasets. DataGenerator aims to provide developers and data scientists with flexible tools to create synthetic data for testing, machine learning, and development purposes. Contributions and feedback are welcome!",
+          "url": "https://github.com/DevLev-OpenSource/DataGenerator",
+          "commits": 5,
+          "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
@@ -1307,15 +1337,15 @@
   ],
   "globalSummary": {
     "totalCommits": 2173,
-    "totalPRs": 364,
-    "totalIssues": 252,
-    "totalPRComments": 1514,
-    "totalIssueComments": 1912,
-    "totalRepos": 82,
+    "totalPRs": 362,
+    "totalIssues": 251,
+    "totalPRComments": 1518,
+    "totalIssueComments": 1899,
+    "totalRepos": 85,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-22 to 2025-12-19",
+    "analysisTimeframe": "2025-06-23 to 2025-12-20",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
