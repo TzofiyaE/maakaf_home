@@ -18,6 +18,16 @@
       },
       "repos": [
         {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
           "repoName": "os-practice",
           "description": null,
           "url": "https://github.com/UrielOfir/os-practice",
@@ -36,16 +46,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
-        },
-        {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
-          "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
         }
       ],
       "summary": {
@@ -84,24 +84,24 @@
           "issueComments": 32
         },
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 134,
-          "pullRequests": 3,
-          "issues": 13,
-          "prComments": 0,
-          "issueComments": 30
-        },
-        {
           "repoName": "maakaf_home_backend",
           "description": null,
           "url": "https://github.com/Maakaf/maakaf_home_backend",
-          "commits": 27,
+          "commits": 24,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 130,
+          "pullRequests": 3,
+          "issues": 2,
+          "prComments": 0,
+          "issueComments": 27
         },
         {
           "repoName": "cobol-programming-course",
@@ -185,11 +185,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 195,
+        "totalCommits": 188,
         "totalPRs": 17,
-        "totalIssues": 30,
+        "totalIssues": 19,
         "totalPRComments": 0,
-        "totalIssueComments": 74
+        "totalIssueComments": 71
       }
     },
     {
@@ -210,16 +210,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 59,
-          "pullRequests": 28,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 1
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -228,6 +218,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 59,
+          "pullRequests": 28,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 1
         }
       ],
       "summary": {
@@ -259,19 +259,19 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 495,
+          "commits": 514,
           "pullRequests": 11,
           "issues": 11,
-          "prComments": 22,
-          "issueComments": 33
+          "prComments": 29,
+          "issueComments": 34
         }
       ],
       "summary": {
-        "totalCommits": 495,
+        "totalCommits": 514,
         "totalPRs": 11,
         "totalIssues": 11,
-        "totalPRComments": 22,
-        "totalIssueComments": 33
+        "totalPRComments": 29,
+        "totalIssueComments": 34
       }
     },
     {
@@ -352,13 +352,13 @@
           "issueComments": 0
         },
         {
-          "repoName": "cors",
-          "description": "Go net/http configurable handler to handle CORS requests",
-          "url": "https://github.com/rs/cors",
+          "repoName": "Festival-lineup",
+          "description": "Task practice - conditional render, Props, useState",
+          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
           "commits": 0,
           "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
+          "issues": 0,
+          "prComments": 38,
           "issueComments": 0
         },
         {
@@ -372,13 +372,13 @@
           "issueComments": 0
         },
         {
-          "repoName": "Festival-lineup",
-          "description": "Task practice - conditional render, Props, useState",
-          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
+          "repoName": "cors",
+          "description": "Go net/http configurable handler to handle CORS requests",
+          "url": "https://github.com/rs/cors",
           "commits": 0,
           "pullRequests": 0,
-          "issues": 0,
-          "prComments": 38,
+          "issues": 1,
+          "prComments": 0,
           "issueComments": 0
         },
         {
@@ -458,6 +458,16 @@
       },
       "repos": [
         {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 280,
+          "pullRequests": 108,
+          "issues": 24,
+          "prComments": 753,
+          "issueComments": 846
+        },
+        {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
@@ -466,16 +476,6 @@
           "issues": 8,
           "prComments": 5,
           "issueComments": 46
-        },
-        {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 283,
-          "pullRequests": 110,
-          "issues": 24,
-          "prComments": 761,
-          "issueComments": 856
         },
         {
           "repoName": "scylla-cqlsh",
@@ -505,7 +505,7 @@
           "pullRequests": 2,
           "issues": 1,
           "prComments": 12,
-          "issueComments": 28
+          "issueComments": 27
         },
         {
           "repoName": "scylla-bench",
@@ -559,11 +559,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 329,
-        "totalPRs": 133,
+        "totalCommits": 326,
+        "totalPRs": 131,
         "totalIssues": 46,
-        "totalPRComments": 829,
-        "totalIssueComments": 1155
+        "totalPRComments": 821,
+        "totalIssueComments": 1144
       }
     },
     {
@@ -590,7 +590,7 @@
           "commits": 89,
           "pullRequests": 18,
           "issues": 13,
-          "prComments": 49,
+          "prComments": 48,
           "issueComments": 66
         }
       ],
@@ -598,7 +598,7 @@
         "totalCommits": 89,
         "totalPRs": 18,
         "totalIssues": 13,
-        "totalPRComments": 49,
+        "totalPRComments": 48,
         "totalIssueComments": 66
       }
     },
@@ -649,22 +649,12 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 461,
-        "followers": 2328,
+        "followers": 2331,
         "following": 1109,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
       },
       "repos": [
-        {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
         {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
@@ -679,11 +669,21 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 170,
-          "pullRequests": 31,
+          "commits": 166,
+          "pullRequests": 30,
           "issues": 21,
           "prComments": 18,
           "issueComments": 65
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -867,8 +867,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 390,
-        "totalPRs": 68,
+        "totalCommits": 386,
+        "totalPRs": 67,
         "totalIssues": 43,
         "totalPRComments": 28,
         "totalIssueComments": 118
@@ -1014,6 +1014,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "rust.org.il",
+          "description": "Rust in Israel",
+          "url": "https://github.com/szabgab/rust.org.il",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "rust-digger",
           "description": null,
           "url": "https://github.com/szabgab/rust-digger",
@@ -1044,16 +1054,6 @@
           "issueComments": 18
         },
         {
-          "repoName": "xml2json",
-          "description": "CLI tool to convert XML into JSON",
-          "url": "https://github.com/janstarke/xml2json",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "sql",
           "description": "SQL data primitives. Use it to generate SQL queries, auto-generate SQL migrations, and more.",
           "url": "https://github.com/kurtbuilds/sql",
@@ -1077,7 +1077,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 202,
+          "commits": 201,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1145,8 +1145,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 346,
-        "totalPRs": 12,
+        "totalCommits": 345,
+        "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 3,
         "totalIssueComments": 38
@@ -1306,21 +1306,21 @@
       },
       "repos": [
         {
-          "repoName": "DataGenerator",
-          "description": "A C++-based open-source project for generating diverse and customizable datasets. DataGenerator aims to provide developers and data scientists with flexible tools to create synthetic data for testing, machine learning, and development purposes. Contributions and feedback are welcome!",
-          "url": "https://github.com/DevLev-OpenSource/DataGenerator",
-          "commits": 5,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
           "commits": 2,
           "pullRequests": 2,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        },
+        {
+          "repoName": "DataGenerator",
+          "description": "A C++-based open-source project for generating diverse and customizable datasets. DataGenerator aims to provide developers and data scientists with flexible tools to create synthetic data for testing, machine learning, and development purposes. Contributions and feedback are welcome!",
+          "url": "https://github.com/DevLev-OpenSource/DataGenerator",
+          "commits": 5,
+          "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
@@ -1336,16 +1336,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2158,
-    "totalPRs": 359,
-    "totalIssues": 249,
-    "totalPRComments": 1523,
-    "totalIssueComments": 1883,
+    "totalCommits": 2162,
+    "totalPRs": 355,
+    "totalIssues": 238,
+    "totalPRComments": 1521,
+    "totalIssueComments": 1870,
     "totalRepos": 85,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-24 to 2025-12-21",
+    "analysisTimeframe": "2025-06-25 to 2025-12-22",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
