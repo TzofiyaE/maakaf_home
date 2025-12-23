@@ -259,7 +259,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 514,
+          "commits": 512,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -267,7 +267,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 514,
+        "totalCommits": 512,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -292,16 +292,6 @@
       },
       "repos": [
         {
-          "repoName": "Broken-Link-Website",
-          "description": "No more broken links in old unmaintained README",
-          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 115,
-          "pullRequests": 19,
-          "issues": 63,
-          "prComments": 408,
-          "issueComments": 318
-        },
-        {
           "repoName": "AndroidAnimationExercise",
           "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
           "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
@@ -310,6 +300,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "Broken-Link-Website",
+          "description": "No more broken links in old unmaintained README",
+          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
+          "commits": 115,
+          "pullRequests": 19,
+          "issues": 63,
+          "prComments": 408,
+          "issueComments": 318
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -352,6 +352,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "calculator_ex_2025",
+          "description": null,
+          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 102,
+          "issueComments": 0
+        },
+        {
           "repoName": "Festival-lineup",
           "description": "Task practice - conditional render, Props, useState",
           "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
@@ -379,16 +389,6 @@
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "calculator_ex_2025",
-          "description": null,
-          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 102,
           "issueComments": 0
         },
         {
@@ -458,16 +458,6 @@
       },
       "repos": [
         {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 280,
-          "pullRequests": 108,
-          "issues": 24,
-          "prComments": 753,
-          "issueComments": 846
-        },
-        {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
@@ -475,7 +465,17 @@
           "pullRequests": 2,
           "issues": 8,
           "prComments": 5,
-          "issueComments": 46
+          "issueComments": 44
+        },
+        {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 277,
+          "pullRequests": 105,
+          "issues": 24,
+          "prComments": 734,
+          "issueComments": 841
         },
         {
           "repoName": "scylla-cqlsh",
@@ -495,7 +495,7 @@
           "pullRequests": 3,
           "issues": 9,
           "prComments": 7,
-          "issueComments": 175
+          "issueComments": 174
         },
         {
           "repoName": "scylla-ccm",
@@ -559,11 +559,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 326,
-        "totalPRs": 131,
+        "totalCommits": 323,
+        "totalPRs": 128,
         "totalIssues": 46,
-        "totalPRComments": 821,
-        "totalIssueComments": 1144
+        "totalPRComments": 802,
+        "totalIssueComments": 1136
       }
     },
     {
@@ -587,19 +587,19 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 89,
+          "commits": 88,
           "pullRequests": 18,
           "issues": 13,
-          "prComments": 48,
-          "issueComments": 66
+          "prComments": 47,
+          "issueComments": 65
         }
       ],
       "summary": {
-        "totalCommits": 89,
+        "totalCommits": 88,
         "totalPRs": 18,
         "totalIssues": 13,
-        "totalPRComments": 48,
-        "totalIssueComments": 66
+        "totalPRComments": 47,
+        "totalIssueComments": 65
       }
     },
     {
@@ -656,6 +656,16 @@
       },
       "repos": [
         {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
+        },
+        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -674,16 +684,6 @@
           "issues": 21,
           "prComments": 18,
           "issueComments": 65
-        },
-        {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -1027,7 +1027,7 @@
           "repoName": "rust-digger",
           "description": null,
           "url": "https://github.com/szabgab/rust-digger",
-          "commits": 7,
+          "commits": 4,
           "pullRequests": 0,
           "issues": 2,
           "prComments": 0,
@@ -1074,16 +1074,6 @@
           "issueComments": 1
         },
         {
-          "repoName": "rust.code-maven.com",
-          "description": "Rust version of the Code Maven web site",
-          "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 201,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "mdbooks.code-maven.com",
           "description": "Collection of Public mdBooks",
           "url": "https://github.com/szabgab/mdbooks.code-maven.com",
@@ -1092,6 +1082,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "rust.code-maven.com",
+          "description": "Rust version of the Code Maven web site",
+          "url": "https://github.com/szabgab/rust.code-maven.com",
+          "commits": 200,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         },
         {
           "repoName": "Perl-Maven",
@@ -1145,7 +1145,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 345,
+        "totalCommits": 341,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 3,
@@ -1306,21 +1306,21 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 2,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
           "repoName": "DataGenerator",
           "description": "A C++-based open-source project for generating diverse and customizable datasets. DataGenerator aims to provide developers and data scientists with flexible tools to create synthetic data for testing, machine learning, and development purposes. Contributions and feedback are welcome!",
           "url": "https://github.com/DevLev-OpenSource/DataGenerator",
           "commits": 5,
           "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 2,
+          "pullRequests": 2,
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
@@ -1336,16 +1336,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2162,
-    "totalPRs": 355,
+    "totalCommits": 2152,
+    "totalPRs": 352,
     "totalIssues": 238,
-    "totalPRComments": 1521,
-    "totalIssueComments": 1870,
+    "totalPRComments": 1501,
+    "totalIssueComments": 1861,
     "totalRepos": 85,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-25 to 2025-12-22",
+    "analysisTimeframe": "2025-06-26 to 2025-12-23",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
