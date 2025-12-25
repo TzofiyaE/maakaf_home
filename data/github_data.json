@@ -84,16 +84,6 @@
           "issueComments": 32
         },
         {
-          "repoName": "maakaf_home_backend",
-          "description": null,
-          "url": "https://github.com/Maakaf/maakaf_home_backend",
-          "commits": 19,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -102,6 +92,16 @@
           "issues": 2,
           "prComments": 0,
           "issueComments": 25
+        },
+        {
+          "repoName": "maakaf_home_backend",
+          "description": null,
+          "url": "https://github.com/Maakaf/maakaf_home_backend",
+          "commits": 16,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
         },
         {
           "repoName": "cobol-programming-course",
@@ -185,7 +185,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 180,
+        "totalCommits": 177,
         "totalPRs": 17,
         "totalIssues": 19,
         "totalPRComments": 0,
@@ -259,7 +259,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 508,
+          "commits": 506,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -267,7 +267,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 508,
+        "totalCommits": 506,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -292,16 +292,6 @@
       },
       "repos": [
         {
-          "repoName": "AndroidAnimationExercise",
-          "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
-          "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
@@ -310,6 +300,16 @@
           "issues": 63,
           "prComments": 408,
           "issueComments": 318
+        },
+        {
+          "repoName": "AndroidAnimationExercise",
+          "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
+          "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -352,16 +352,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "Festival-lineup",
-          "description": "Task practice - conditional render, Props, useState",
-          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 38,
-          "issueComments": 0
-        },
-        {
           "repoName": "calculator_ex_2025",
           "description": null,
           "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
@@ -389,6 +379,16 @@
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "Festival-lineup",
+          "description": "Task practice - conditional render, Props, useState",
+          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 38,
           "issueComments": 0
         },
         {
@@ -475,7 +475,7 @@
           "pullRequests": 103,
           "issues": 24,
           "prComments": 706,
-          "issueComments": 827
+          "issueComments": 824
         },
         {
           "repoName": "scylla-cqlsh",
@@ -563,7 +563,7 @@
         "totalPRs": 126,
         "totalIssues": 46,
         "totalPRComments": 774,
-        "totalIssueComments": 1122
+        "totalIssueComments": 1119
       }
     },
     {
@@ -591,7 +591,7 @@
           "pullRequests": 18,
           "issues": 13,
           "prComments": 47,
-          "issueComments": 65
+          "issueComments": 64
         }
       ],
       "summary": {
@@ -599,7 +599,7 @@
         "totalPRs": 18,
         "totalIssues": 13,
         "totalPRComments": 47,
-        "totalIssueComments": 65
+        "totalIssueComments": 64
       }
     },
     {
@@ -656,6 +656,16 @@
       },
       "repos": [
         {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
+        },
+        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -669,21 +679,11 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 160,
+          "commits": 149,
           "pullRequests": 30,
           "issues": 21,
           "prComments": 18,
           "issueComments": 65
-        },
-        {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -763,7 +763,7 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 14
+          "issueComments": 11
         },
         {
           "repoName": "create-node-lib",
@@ -867,11 +867,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 380,
+        "totalCommits": 369,
         "totalPRs": 67,
         "totalIssues": 43,
         "totalPRComments": 28,
-        "totalIssueComments": 117
+        "totalIssueComments": 114
       }
     },
     {
@@ -1336,16 +1336,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2118,
+    "totalCommits": 2102,
     "totalPRs": 350,
     "totalIssues": 237,
     "totalPRComments": 1473,
-    "totalIssueComments": 1844,
+    "totalIssueComments": 1837,
     "totalRepos": 85,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-06-27 to 2025-12-24",
+    "analysisTimeframe": "2025-06-28 to 2025-12-25",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
