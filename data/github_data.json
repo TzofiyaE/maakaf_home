@@ -292,16 +292,6 @@
       },
       "repos": [
         {
-          "repoName": "Broken-Link-Website",
-          "description": "No more broken links in old unmaintained README",
-          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 115,
-          "pullRequests": 19,
-          "issues": 63,
-          "prComments": 408,
-          "issueComments": 318
-        },
-        {
           "repoName": "AndroidAnimationExercise",
           "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
           "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
@@ -310,6 +300,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "Broken-Link-Website",
+          "description": "No more broken links in old unmaintained README",
+          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
+          "commits": 115,
+          "pullRequests": 19,
+          "issues": 63,
+          "prComments": 408,
+          "issueComments": 318
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -352,16 +352,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "calculator_ex_2025",
-          "description": null,
-          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 102,
-          "issueComments": 0
-        },
-        {
           "repoName": "cors",
           "description": "Go net/http configurable handler to handle CORS requests",
           "url": "https://github.com/rs/cors",
@@ -369,6 +359,16 @@
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "calculator_ex_2025",
+          "description": null,
+          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 102,
           "issueComments": 0
         },
         {
@@ -984,20 +984,20 @@
           "issueComments": 0
         },
         {
-          "repoName": "perlmaven.com",
-          "description": "The source files of the Perl Maven articles",
-          "url": "https://github.com/szabgab/perlmaven.com",
-          "commits": 5,
+          "repoName": "OSDC-Code-Maven.github.io",
+          "description": "Open Source Development Courses",
+          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
+          "commits": 13,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         },
         {
-          "repoName": "OSDC-Code-Maven.github.io",
-          "description": "Open Source Development Courses",
-          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
-          "commits": 13,
+          "repoName": "perlmaven.com",
+          "description": "The source files of the Perl Maven articles",
+          "url": "https://github.com/szabgab/perlmaven.com",
+          "commits": 5,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
