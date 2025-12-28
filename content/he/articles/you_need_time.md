@@ -1,7 +1,7 @@
 ---
 type: "docs"
 title: "למה קשה למצוא פרוייקט קוד פתוח לתרום לו?"
-slug: "be-proactive"
+slug: "you-need-time"
 linkTitle: "למה קשה למצוא פרוייקט קוד פתוח לתרום לו?"
 description: "זה באמת קשה כי בימינו קוד פתוח זה כבר לא הנוסטלגיה של פעם."
 weight: 50
