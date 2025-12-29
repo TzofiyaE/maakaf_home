@@ -18,16 +18,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
-          "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "os-practice",
           "description": null,
           "url": "https://github.com/UrielOfir/os-practice",
@@ -46,6 +36,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         }
       ],
       "summary": {
@@ -84,16 +84,6 @@
           "issueComments": 32
         },
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 126,
-          "pullRequests": 3,
-          "issues": 2,
-          "prComments": 0,
-          "issueComments": 25
-        },
-        {
           "repoName": "maakaf_home_backend",
           "description": null,
           "url": "https://github.com/Maakaf/maakaf_home_backend",
@@ -102,6 +92,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 125,
+          "pullRequests": 3,
+          "issues": 2,
+          "prComments": 0,
+          "issueComments": 25
         },
         {
           "repoName": "cobol-programming-course",
@@ -185,7 +185,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 176,
+        "totalCommits": 175,
         "totalPRs": 17,
         "totalIssues": 19,
         "totalPRComments": 0,
@@ -352,16 +352,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "cors",
-          "description": "Go net/http configurable handler to handle CORS requests",
-          "url": "https://github.com/rs/cors",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "snaps-registry",
           "description": "A registry containing metadata about verified and blocked Snaps.",
           "url": "https://github.com/MetaMask/snaps-registry",
@@ -379,6 +369,16 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 38,
+          "issueComments": 0
+        },
+        {
+          "repoName": "cors",
+          "description": "Go net/http configurable handler to handle CORS requests",
+          "url": "https://github.com/rs/cors",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
           "issueComments": 0
         },
         {
@@ -471,11 +471,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 258,
-          "pullRequests": 101,
+          "commits": 255,
+          "pullRequests": 100,
           "issues": 23,
           "prComments": 696,
-          "issueComments": 797
+          "issueComments": 791
         },
         {
           "repoName": "scylla-cqlsh",
@@ -496,6 +496,16 @@
           "issues": 8,
           "prComments": 7,
           "issueComments": 171
+        },
+        {
+          "repoName": "scylla-machine-image",
+          "description": null,
+          "url": "https://github.com/scylladb/scylla-machine-image",
+          "commits": 14,
+          "pullRequests": 5,
+          "issues": 0,
+          "prComments": 18,
+          "issueComments": 6
         },
         {
           "repoName": "scylla-ccm",
@@ -528,16 +538,6 @@
           "issueComments": 12
         },
         {
-          "repoName": "scylla-machine-image",
-          "description": null,
-          "url": "https://github.com/scylladb/scylla-machine-image",
-          "commits": 14,
-          "pullRequests": 5,
-          "issues": 0,
-          "prComments": 18,
-          "issueComments": 6
-        },
-        {
           "repoName": "scylla-monitoring",
           "description": "Simple monitoring of Scylla with Grafana",
           "url": "https://github.com/scylladb/scylla-monitoring",
@@ -559,11 +559,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 304,
-        "totalPRs": 124,
+        "totalCommits": 301,
+        "totalPRs": 123,
         "totalIssues": 44,
         "totalPRComments": 764,
-        "totalIssueComments": 1089
+        "totalIssueComments": 1083
       }
     },
     {
@@ -591,7 +591,7 @@
           "pullRequests": 18,
           "issues": 13,
           "prComments": 45,
-          "issueComments": 62
+          "issueComments": 61
         }
       ],
       "summary": {
@@ -599,7 +599,7 @@
         "totalPRs": 18,
         "totalIssues": 13,
         "totalPRComments": 45,
-        "totalIssueComments": 62
+        "totalIssueComments": 61
       }
     },
     {
@@ -656,16 +656,6 @@
       },
       "repos": [
         {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -679,11 +669,21 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 121,
+          "commits": 108,
           "pullRequests": 30,
-          "issues": 18,
+          "issues": 13,
           "prComments": 18,
-          "issueComments": 65
+          "issueComments": 58
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -779,7 +779,7 @@
           "repoName": "nodejs-cli-apps-best-practices",
           "description": "The largest Node.js CLI Apps best practices list ✨",
           "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
-          "commits": 2,
+          "commits": 1,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -867,11 +867,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 341,
+        "totalCommits": 327,
         "totalPRs": 67,
-        "totalIssues": 40,
+        "totalIssues": 35,
         "totalPRComments": 28,
-        "totalIssueComments": 114
+        "totalIssueComments": 107
       }
     },
     {
@@ -984,20 +984,20 @@
           "issueComments": 0
         },
         {
-          "repoName": "perlmaven.com",
-          "description": "The source files of the Perl Maven articles",
-          "url": "https://github.com/szabgab/perlmaven.com",
-          "commits": 5,
+          "repoName": "OSDC-Code-Maven.github.io",
+          "description": "Open Source Development Courses",
+          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
+          "commits": 13,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         },
         {
-          "repoName": "OSDC-Code-Maven.github.io",
-          "description": "Open Source Development Courses",
-          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
-          "commits": 13,
+          "repoName": "perlmaven.com",
+          "description": "The source files of the Perl Maven articles",
+          "url": "https://github.com/szabgab/perlmaven.com",
+          "commits": 5,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1051,7 +1051,7 @@
           "pullRequests": 4,
           "issues": 5,
           "prComments": 0,
-          "issueComments": 13
+          "issueComments": 11
         },
         {
           "repoName": "sql",
@@ -1077,7 +1077,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 199,
+          "commits": 196,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1145,11 +1145,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 338,
+        "totalCommits": 335,
         "totalPRs": 10,
         "totalIssues": 9,
         "totalPRComments": 3,
-        "totalIssueComments": 33
+        "totalIssueComments": 31
       }
     },
     {
@@ -1177,7 +1177,7 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 2
+          "issueComments": 1
         },
         {
           "repoName": "moneyman",
@@ -1275,7 +1275,7 @@
         "totalPRs": 9,
         "totalIssues": 3,
         "totalPRComments": 35,
-        "totalIssueComments": 22
+        "totalIssueComments": 21
       }
     },
     {
@@ -1316,16 +1316,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2051,
-    "totalPRs": 345,
-    "totalIssues": 231,
+    "totalCommits": 2030,
+    "totalPRs": 344,
+    "totalIssues": 226,
     "totalPRComments": 1460,
-    "totalIssueComments": 1797,
+    "totalIssueComments": 1780,
     "totalRepos": 83,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-01 to 2025-12-28",
+    "analysisTimeframe": "2025-07-02 to 2025-12-29",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
