@@ -210,16 +210,6 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 3,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
@@ -228,6 +218,16 @@
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 3,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -292,16 +292,6 @@
       },
       "repos": [
         {
-          "repoName": "Broken-Link-Website",
-          "description": "No more broken links in old unmaintained README",
-          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 115,
-          "pullRequests": 19,
-          "issues": 63,
-          "prComments": 408,
-          "issueComments": 318
-        },
-        {
           "repoName": "AndroidAnimationExercise",
           "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
           "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
@@ -310,6 +300,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "Broken-Link-Website",
+          "description": "No more broken links in old unmaintained README",
+          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
+          "commits": 115,
+          "pullRequests": 19,
+          "issues": 63,
+          "prComments": 408,
+          "issueComments": 318
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -362,6 +362,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "cors",
+          "description": "Go net/http configurable handler to handle CORS requests",
+          "url": "https://github.com/rs/cors",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "Festival-lineup",
           "description": "Task practice - conditional render, Props, useState",
           "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
@@ -379,16 +389,6 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 102,
-          "issueComments": 0
-        },
-        {
-          "repoName": "cors",
-          "description": "Go net/http configurable handler to handle CORS requests",
-          "url": "https://github.com/rs/cors",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
           "issueComments": 0
         },
         {
@@ -481,11 +481,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 254,
+          "commits": 246,
           "pullRequests": 99,
           "issues": 23,
-          "prComments": 690,
-          "issueComments": 789
+          "prComments": 689,
+          "issueComments": 787
         },
         {
           "repoName": "scylladb",
@@ -559,11 +559,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 300,
+        "totalCommits": 292,
         "totalPRs": 122,
         "totalIssues": 44,
-        "totalPRComments": 758,
-        "totalIssueComments": 1081
+        "totalPRComments": 757,
+        "totalIssueComments": 1079
       }
     },
     {
@@ -656,16 +656,6 @@
       },
       "repos": [
         {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -679,11 +669,21 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 95,
+          "commits": 92,
           "pullRequests": 30,
           "issues": 13,
           "prComments": 18,
-          "issueComments": 49
+          "issueComments": 47
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -867,11 +867,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 314,
+        "totalCommits": 311,
         "totalPRs": 67,
         "totalIssues": 35,
         "totalPRComments": 28,
-        "totalIssueComments": 98
+        "totalIssueComments": 96
       }
     },
     {
@@ -1077,7 +1077,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 196,
+          "commits": 191,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1145,7 +1145,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 335,
+        "totalCommits": 330,
         "totalPRs": 10,
         "totalIssues": 9,
         "totalPRComments": 3,
@@ -1173,9 +1173,9 @@
           "repoName": "moneyman",
           "description": "Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)",
           "url": "https://github.com/daniel-hauser/moneyman",
-          "commits": 7,
-          "pullRequests": 2,
-          "issues": 1,
+          "commits": 6,
+          "pullRequests": 1,
+          "issues": 0,
           "prComments": 1,
           "issueComments": 0
         },
@@ -1261,9 +1261,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 44,
-        "totalPRs": 9,
-        "totalIssues": 3,
+        "totalCommits": 43,
+        "totalPRs": 8,
+        "totalIssues": 2,
         "totalPRComments": 35,
         "totalIssueComments": 20
       }
@@ -1306,16 +1306,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 2011,
-    "totalPRs": 343,
-    "totalIssues": 226,
-    "totalPRComments": 1454,
-    "totalIssueComments": 1768,
+    "totalCommits": 1994,
+    "totalPRs": 342,
+    "totalIssues": 225,
+    "totalPRComments": 1453,
+    "totalIssueComments": 1764,
     "totalRepos": 82,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-03 to 2025-12-30",
+    "analysisTimeframe": "2025-07-04 to 2025-12-31",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
