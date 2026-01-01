@@ -18,16 +18,6 @@
       },
       "repos": [
         {
-          "repoName": "os-practice",
-          "description": null,
-          "url": "https://github.com/UrielOfir/os-practice",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 2,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -50,8 +40,8 @@
       ],
       "summary": {
         "totalCommits": 27,
-        "totalPRs": 13,
-        "totalIssues": 2,
+        "totalPRs": 12,
+        "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 4
       }
@@ -352,16 +342,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "snaps-registry",
-          "description": "A registry containing metadata about verified and blocked Snaps.",
-          "url": "https://github.com/MetaMask/snaps-registry",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "cors",
           "description": "Go net/http configurable handler to handle CORS requests",
           "url": "https://github.com/rs/cors",
@@ -389,6 +369,16 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 102,
+          "issueComments": 0
+        },
+        {
+          "repoName": "snaps-registry",
+          "description": "A registry containing metadata about verified and blocked Snaps.",
+          "url": "https://github.com/MetaMask/snaps-registry",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
           "issueComments": 0
         },
         {
@@ -458,6 +448,16 @@
       },
       "repos": [
         {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 246,
+          "pullRequests": 99,
+          "issues": 23,
+          "prComments": 689,
+          "issueComments": 787
+        },
+        {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
@@ -476,16 +476,6 @@
           "issues": 4,
           "prComments": 17,
           "issueComments": 19
-        },
-        {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 246,
-          "pullRequests": 99,
-          "issues": 23,
-          "prComments": 689,
-          "issueComments": 787
         },
         {
           "repoName": "scylladb",
@@ -656,6 +646,16 @@
       },
       "repos": [
         {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
+        },
+        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -669,21 +669,11 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 92,
+          "commits": 89,
           "pullRequests": 30,
-          "issues": 13,
+          "issues": 11,
           "prComments": 18,
-          "issueComments": 47
-        },
-        {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
+          "issueComments": 46
         },
         {
           "repoName": "mastra",
@@ -867,11 +857,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 311,
+        "totalCommits": 308,
         "totalPRs": 67,
-        "totalIssues": 35,
+        "totalIssues": 33,
         "totalPRComments": 28,
-        "totalIssueComments": 96
+        "totalIssueComments": 95
       }
     },
     {
@@ -1306,16 +1296,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1994,
-    "totalPRs": 342,
-    "totalIssues": 225,
+    "totalCommits": 1991,
+    "totalPRs": 341,
+    "totalIssues": 221,
     "totalPRComments": 1453,
-    "totalIssueComments": 1764,
+    "totalIssueComments": 1763,
     "totalRepos": 82,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-04 to 2025-12-31",
+    "analysisTimeframe": "2025-07-05 to 2026-01-01",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
