@@ -18,16 +18,6 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
@@ -36,6 +26,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 0,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
         }
       ],
       "summary": {
@@ -77,7 +77,7 @@
           "repoName": "maakaf_home_backend",
           "description": null,
           "url": "https://github.com/Maakaf/maakaf_home_backend",
-          "commits": 16,
+          "commits": 11,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -87,11 +87,11 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 125,
-          "pullRequests": 3,
+          "commits": 114,
+          "pullRequests": 2,
           "issues": 2,
           "prComments": 0,
-          "issueComments": 25
+          "issueComments": 24
         },
         {
           "repoName": "cobol-programming-course",
@@ -108,10 +108,10 @@
           "description": "An example documentation site using the Docsy Hugo theme",
           "url": "https://github.com/google/docsy-example",
           "commits": 0,
-          "pullRequests": 2,
+          "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 2
+          "issueComments": 1
         },
         {
           "repoName": "hugo",
@@ -175,11 +175,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 175,
-        "totalPRs": 17,
+        "totalCommits": 159,
+        "totalPRs": 15,
         "totalIssues": 19,
         "totalPRComments": 0,
-        "totalIssueComments": 69
+        "totalIssueComments": 67
       }
     },
     {
@@ -282,16 +282,6 @@
       },
       "repos": [
         {
-          "repoName": "AndroidAnimationExercise",
-          "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
-          "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
@@ -300,6 +290,16 @@
           "issues": 63,
           "prComments": 408,
           "issueComments": 318
+        },
+        {
+          "repoName": "AndroidAnimationExercise",
+          "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
+          "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -362,16 +362,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "calculator_ex_2025",
-          "description": null,
-          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 102,
-          "issueComments": 0
-        },
-        {
           "repoName": "snaps-registry",
           "description": "A registry containing metadata about verified and blocked Snaps.",
           "url": "https://github.com/MetaMask/snaps-registry",
@@ -379,6 +369,16 @@
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "calculator_ex_2025",
+          "description": null,
+          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 102,
           "issueComments": 0
         },
         {
@@ -448,16 +448,6 @@
       },
       "repos": [
         {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 246,
-          "pullRequests": 99,
-          "issues": 23,
-          "prComments": 689,
-          "issueComments": 787
-        },
-        {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
@@ -476,6 +466,16 @@
           "issues": 4,
           "prComments": 17,
           "issueComments": 19
+        },
+        {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 246,
+          "pullRequests": 99,
+          "issues": 23,
+          "prComments": 689,
+          "issueComments": 787
         },
         {
           "repoName": "scylladb",
@@ -498,6 +498,16 @@
           "issueComments": 27
         },
         {
+          "repoName": "scylla-machine-image",
+          "description": null,
+          "url": "https://github.com/scylladb/scylla-machine-image",
+          "commits": 14,
+          "pullRequests": 5,
+          "issues": 0,
+          "prComments": 18,
+          "issueComments": 6
+        },
+        {
           "repoName": "scylla-bench",
           "description": null,
           "url": "https://github.com/scylladb/scylla-bench",
@@ -516,16 +526,6 @@
           "issues": 0,
           "prComments": 1,
           "issueComments": 12
-        },
-        {
-          "repoName": "scylla-machine-image",
-          "description": null,
-          "url": "https://github.com/scylladb/scylla-machine-image",
-          "commits": 14,
-          "pullRequests": 5,
-          "issues": 0,
-          "prComments": 18,
-          "issueComments": 6
         },
         {
           "repoName": "scylla-monitoring",
@@ -646,16 +646,6 @@
       },
       "repos": [
         {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -674,6 +664,16 @@
           "issues": 11,
           "prComments": 18,
           "issueComments": 46
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -1296,16 +1296,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1991,
-    "totalPRs": 341,
+    "totalCommits": 1975,
+    "totalPRs": 339,
     "totalIssues": 221,
     "totalPRComments": 1453,
-    "totalIssueComments": 1763,
+    "totalIssueComments": 1761,
     "totalRepos": 82,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-05 to 2026-01-01",
+    "analysisTimeframe": "2025-07-06 to 2026-01-02",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
