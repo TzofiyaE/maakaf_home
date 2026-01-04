@@ -18,16 +18,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
-          "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -36,6 +26,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         }
       ],
       "summary": {
@@ -200,16 +200,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 59,
-          "pullRequests": 28,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 1
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -218,6 +208,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 59,
+          "pullRequests": 28,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 1
         }
       ],
       "summary": {
@@ -249,7 +249,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 494,
+          "commits": 492,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -257,7 +257,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 494,
+        "totalCommits": 492,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -282,16 +282,6 @@
       },
       "repos": [
         {
-          "repoName": "Broken-Link-Website",
-          "description": "No more broken links in old unmaintained README",
-          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 115,
-          "pullRequests": 19,
-          "issues": 63,
-          "prComments": 408,
-          "issueComments": 318
-        },
-        {
           "repoName": "AndroidAnimationExercise",
           "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
           "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
@@ -300,6 +290,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "Broken-Link-Website",
+          "description": "No more broken links in old unmaintained README",
+          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
+          "commits": 115,
+          "pullRequests": 19,
+          "issues": 63,
+          "prComments": 408,
+          "issueComments": 318
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -362,16 +362,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "Festival-lineup",
-          "description": "Task practice - conditional render, Props, useState",
-          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 38,
-          "issueComments": 0
-        },
-        {
           "repoName": "cors",
           "description": "Go net/http configurable handler to handle CORS requests",
           "url": "https://github.com/rs/cors",
@@ -379,6 +369,16 @@
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "Festival-lineup",
+          "description": "Task practice - conditional render, Props, useState",
+          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 38,
           "issueComments": 0
         },
         {
@@ -455,17 +455,7 @@
           "pullRequests": 2,
           "issues": 8,
           "prComments": 5,
-          "issueComments": 44
-        },
-        {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 246,
-          "pullRequests": 99,
-          "issues": 22,
-          "prComments": 688,
-          "issueComments": 787
+          "issueComments": 43
         },
         {
           "repoName": "scylla-cqlsh",
@@ -478,6 +468,16 @@
           "issueComments": 19
         },
         {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 242,
+          "pullRequests": 98,
+          "issues": 22,
+          "prComments": 682,
+          "issueComments": 782
+        },
+        {
           "repoName": "scylladb",
           "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
           "url": "https://github.com/scylladb/scylladb",
@@ -485,7 +485,7 @@
           "pullRequests": 3,
           "issues": 8,
           "prComments": 7,
-          "issueComments": 169
+          "issueComments": 168
         },
         {
           "repoName": "scylla-ccm",
@@ -549,11 +549,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 292,
-        "totalPRs": 122,
+        "totalCommits": 288,
+        "totalPRs": 121,
         "totalIssues": 43,
-        "totalPRComments": 756,
-        "totalIssueComments": 1077
+        "totalPRComments": 750,
+        "totalIssueComments": 1070
       }
     },
     {
@@ -581,7 +581,7 @@
           "pullRequests": 18,
           "issues": 13,
           "prComments": 45,
-          "issueComments": 61
+          "issueComments": 60
         }
       ],
       "summary": {
@@ -589,7 +589,7 @@
         "totalPRs": 18,
         "totalIssues": 13,
         "totalPRComments": 45,
-        "totalIssueComments": 61
+        "totalIssueComments": 60
       }
     },
     {
@@ -646,16 +646,6 @@
       },
       "repos": [
         {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -669,11 +659,21 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 87,
+          "commits": 78,
           "pullRequests": 30,
-          "issues": 11,
+          "issues": 9,
           "prComments": 18,
-          "issueComments": 44
+          "issueComments": 43
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -857,11 +857,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 306,
+        "totalCommits": 297,
         "totalPRs": 67,
-        "totalIssues": 32,
+        "totalIssues": 30,
         "totalPRComments": 28,
-        "totalIssueComments": 92
+        "totalIssueComments": 91
       }
     },
     {
@@ -1296,16 +1296,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1967,
-    "totalPRs": 339,
-    "totalIssues": 218,
-    "totalPRComments": 1451,
-    "totalIssueComments": 1756,
+    "totalCommits": 1952,
+    "totalPRs": 338,
+    "totalIssues": 216,
+    "totalPRComments": 1445,
+    "totalIssueComments": 1747,
     "totalRepos": 82,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-07 to 2026-01-03",
+    "analysisTimeframe": "2025-07-08 to 2026-01-04",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
