@@ -91,7 +91,7 @@
           "pullRequests": 2,
           "issues": 2,
           "prComments": 0,
-          "issueComments": 24
+          "issueComments": 23
         },
         {
           "repoName": "cobol-programming-course",
@@ -179,7 +179,7 @@
         "totalPRs": 15,
         "totalIssues": 19,
         "totalPRComments": 0,
-        "totalIssueComments": 67
+        "totalIssueComments": 66
       }
     },
     {
@@ -200,16 +200,6 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 3,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
@@ -218,6 +208,16 @@
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 3,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -249,7 +249,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 492,
+          "commits": 488,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -257,7 +257,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 492,
+        "totalCommits": 488,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -342,16 +342,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "snaps-registry",
-          "description": "A registry containing metadata about verified and blocked Snaps.",
-          "url": "https://github.com/MetaMask/snaps-registry",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "calculator_ex_2025",
           "description": null,
           "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
@@ -359,6 +349,16 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 102,
+          "issueComments": 0
+        },
+        {
+          "repoName": "Festival-lineup",
+          "description": "Task practice - conditional render, Props, useState",
+          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 38,
           "issueComments": 0
         },
         {
@@ -372,13 +372,13 @@
           "issueComments": 0
         },
         {
-          "repoName": "Festival-lineup",
-          "description": "Task practice - conditional render, Props, useState",
-          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
+          "repoName": "snaps-registry",
+          "description": "A registry containing metadata about verified and blocked Snaps.",
+          "url": "https://github.com/MetaMask/snaps-registry",
           "commits": 0,
           "pullRequests": 0,
-          "issues": 0,
-          "prComments": 38,
+          "issues": 1,
+          "prComments": 0,
           "issueComments": 0
         },
         {
@@ -471,11 +471,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 242,
+          "commits": 241,
           "pullRequests": 98,
           "issues": 22,
-          "prComments": 682,
-          "issueComments": 782
+          "prComments": 681,
+          "issueComments": 777
         },
         {
           "repoName": "scylladb",
@@ -485,7 +485,7 @@
           "pullRequests": 3,
           "issues": 8,
           "prComments": 7,
-          "issueComments": 168
+          "issueComments": 165
         },
         {
           "repoName": "scylla-ccm",
@@ -549,11 +549,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 288,
+        "totalCommits": 287,
         "totalPRs": 121,
         "totalIssues": 43,
-        "totalPRComments": 750,
-        "totalIssueComments": 1070
+        "totalPRComments": 749,
+        "totalIssueComments": 1062
       }
     },
     {
@@ -646,6 +646,16 @@
       },
       "repos": [
         {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
+        },
+        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -664,16 +674,6 @@
           "issues": 9,
           "prComments": 18,
           "issueComments": 43
-        },
-        {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -974,20 +974,20 @@
           "issueComments": 0
         },
         {
-          "repoName": "OSDC-Code-Maven.github.io",
-          "description": "Open Source Development Courses",
-          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
-          "commits": 13,
+          "repoName": "perlmaven.com",
+          "description": "The source files of the Perl Maven articles",
+          "url": "https://github.com/szabgab/perlmaven.com",
+          "commits": 5,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         },
         {
-          "repoName": "perlmaven.com",
-          "description": "The source files of the Perl Maven articles",
-          "url": "https://github.com/szabgab/perlmaven.com",
-          "commits": 5,
+          "repoName": "OSDC-Code-Maven.github.io",
+          "description": "Open Source Development Courses",
+          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
+          "commits": 13,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1054,26 +1054,6 @@
           "issueComments": 1
         },
         {
-          "repoName": "mdbooks.code-maven.com",
-          "description": "Collection of Public mdBooks",
-          "url": "https://github.com/szabgab/mdbooks.code-maven.com",
-          "commits": 14,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "rust-digger",
-          "description": null,
-          "url": "https://github.com/szabgab/rust-digger",
-          "commits": 4,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
@@ -1082,6 +1062,26 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "rust-digger",
+          "description": null,
+          "url": "https://github.com/szabgab/rust-digger",
+          "commits": 3,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "mdbooks.code-maven.com",
+          "description": "Collection of Public mdBooks",
+          "url": "https://github.com/szabgab/mdbooks.code-maven.com",
+          "commits": 11,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "Perl-Maven",
@@ -1135,7 +1135,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 326,
+        "totalCommits": 322,
         "totalPRs": 10,
         "totalIssues": 8,
         "totalPRComments": 3,
@@ -1296,16 +1296,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1952,
+    "totalCommits": 1943,
     "totalPRs": 338,
     "totalIssues": 216,
-    "totalPRComments": 1445,
-    "totalIssueComments": 1747,
+    "totalPRComments": 1444,
+    "totalIssueComments": 1738,
     "totalRepos": 82,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-08 to 2026-01-04",
+    "analysisTimeframe": "2025-07-09 to 2026-01-05",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
