@@ -91,7 +91,7 @@
           "pullRequests": 2,
           "issues": 2,
           "prComments": 0,
-          "issueComments": 23
+          "issueComments": 22
         },
         {
           "repoName": "cobol-programming-course",
@@ -179,7 +179,7 @@
         "totalPRs": 15,
         "totalIssues": 19,
         "totalPRComments": 0,
-        "totalIssueComments": 66
+        "totalIssueComments": 65
       }
     },
     {
@@ -249,7 +249,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 487,
+          "commits": 485,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -257,7 +257,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 487,
+        "totalCommits": 485,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -282,16 +282,6 @@
       },
       "repos": [
         {
-          "repoName": "AndroidAnimationExercise",
-          "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
-          "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
@@ -300,6 +290,16 @@
           "issues": 63,
           "prComments": 408,
           "issueComments": 318
+        },
+        {
+          "repoName": "AndroidAnimationExercise",
+          "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
+          "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -342,16 +342,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "calculator_ex_2025",
-          "description": null,
-          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 102,
-          "issueComments": 0
-        },
-        {
           "repoName": "cors",
           "description": "Go net/http configurable handler to handle CORS requests",
           "url": "https://github.com/rs/cors",
@@ -379,6 +369,16 @@
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "calculator_ex_2025",
+          "description": null,
+          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 102,
           "issueComments": 0
         },
         {
@@ -455,7 +455,7 @@
           "pullRequests": 2,
           "issues": 6,
           "prComments": 5,
-          "issueComments": 43
+          "issueComments": 42
         },
         {
           "repoName": "scylla-cqlsh",
@@ -471,11 +471,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 241,
-          "pullRequests": 98,
-          "issues": 22,
+          "commits": 238,
+          "pullRequests": 97,
+          "issues": 21,
           "prComments": 681,
-          "issueComments": 768
+          "issueComments": 762
         },
         {
           "repoName": "scylladb",
@@ -483,9 +483,9 @@
           "url": "https://github.com/scylladb/scylladb",
           "commits": 2,
           "pullRequests": 3,
-          "issues": 8,
+          "issues": 7,
           "prComments": 7,
-          "issueComments": 161
+          "issueComments": 153
         },
         {
           "repoName": "scylla-ccm",
@@ -508,16 +508,6 @@
           "issueComments": 4
         },
         {
-          "repoName": "scylla-machine-image",
-          "description": null,
-          "url": "https://github.com/scylladb/scylla-machine-image",
-          "commits": 14,
-          "pullRequests": 5,
-          "issues": 0,
-          "prComments": 18,
-          "issueComments": 6
-        },
-        {
           "repoName": "cassandra-stress",
           "description": null,
           "url": "https://github.com/scylladb/cassandra-stress",
@@ -526,6 +516,16 @@
           "issues": 0,
           "prComments": 1,
           "issueComments": 12
+        },
+        {
+          "repoName": "scylla-machine-image",
+          "description": null,
+          "url": "https://github.com/scylladb/scylla-machine-image",
+          "commits": 14,
+          "pullRequests": 5,
+          "issues": 0,
+          "prComments": 18,
+          "issueComments": 6
         },
         {
           "repoName": "scylla-monitoring",
@@ -549,11 +549,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 287,
-        "totalPRs": 121,
-        "totalIssues": 41,
+        "totalCommits": 284,
+        "totalPRs": 120,
+        "totalIssues": 39,
         "totalPRComments": 749,
-        "totalIssueComments": 1049
+        "totalIssueComments": 1034
       }
     },
     {
@@ -646,6 +646,16 @@
       },
       "repos": [
         {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
+        },
+        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -659,21 +669,11 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 78,
-          "pullRequests": 30,
+          "commits": 76,
+          "pullRequests": 29,
           "issues": 9,
-          "prComments": 18,
+          "prComments": 17,
           "issueComments": 43
-        },
-        {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -857,10 +857,10 @@
         }
       ],
       "summary": {
-        "totalCommits": 297,
-        "totalPRs": 67,
+        "totalCommits": 295,
+        "totalPRs": 66,
         "totalIssues": 30,
-        "totalPRComments": 28,
+        "totalPRComments": 27,
         "totalIssueComments": 91
       }
     },
@@ -1296,16 +1296,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1942,
-    "totalPRs": 338,
-    "totalIssues": 213,
-    "totalPRComments": 1444,
-    "totalIssueComments": 1725,
+    "totalCommits": 1935,
+    "totalPRs": 336,
+    "totalIssues": 211,
+    "totalPRComments": 1443,
+    "totalIssueComments": 1709,
     "totalRepos": 82,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-10 to 2026-01-06",
+    "analysisTimeframe": "2025-07-11 to 2026-01-07",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
