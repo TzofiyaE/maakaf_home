@@ -87,11 +87,11 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 114,
+          "commits": 113,
           "pullRequests": 2,
-          "issues": 2,
+          "issues": 0,
           "prComments": 0,
-          "issueComments": 22
+          "issueComments": 20
         },
         {
           "repoName": "cobol-programming-course",
@@ -175,11 +175,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 159,
+        "totalCommits": 158,
         "totalPRs": 15,
-        "totalIssues": 19,
+        "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 65
+        "totalIssueComments": 63
       }
     },
     {
@@ -200,16 +200,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 59,
-          "pullRequests": 28,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 1
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -218,6 +208,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 59,
+          "pullRequests": 28,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 1
         }
       ],
       "summary": {
@@ -342,6 +342,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "calculator_ex_2025",
+          "description": null,
+          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 102,
+          "issueComments": 0
+        },
+        {
           "repoName": "cors",
           "description": "Go net/http configurable handler to handle CORS requests",
           "url": "https://github.com/rs/cors",
@@ -369,16 +379,6 @@
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "calculator_ex_2025",
-          "description": null,
-          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 102,
           "issueComments": 0
         },
         {
@@ -448,6 +448,16 @@
       },
       "repos": [
         {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 238,
+          "pullRequests": 97,
+          "issues": 21,
+          "prComments": 678,
+          "issueComments": 759
+        },
+        {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
@@ -466,16 +476,6 @@
           "issues": 4,
           "prComments": 17,
           "issueComments": 19
-        },
-        {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 238,
-          "pullRequests": 97,
-          "issues": 21,
-          "prComments": 681,
-          "issueComments": 762
         },
         {
           "repoName": "scylladb",
@@ -552,8 +552,8 @@
         "totalCommits": 284,
         "totalPRs": 120,
         "totalIssues": 39,
-        "totalPRComments": 749,
-        "totalIssueComments": 1034
+        "totalPRComments": 746,
+        "totalIssueComments": 1031
       }
     },
     {
@@ -577,19 +577,19 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 88,
-          "pullRequests": 18,
+          "commits": 86,
+          "pullRequests": 17,
           "issues": 12,
           "prComments": 45,
-          "issueComments": 60
+          "issueComments": 59
         }
       ],
       "summary": {
-        "totalCommits": 88,
-        "totalPRs": 18,
+        "totalCommits": 86,
+        "totalPRs": 17,
         "totalIssues": 12,
         "totalPRComments": 45,
-        "totalIssueComments": 60
+        "totalIssueComments": 59
       }
     },
     {
@@ -646,22 +646,12 @@
       },
       "repos": [
         {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
           "commits": 109,
           "pullRequests": 21,
-          "issues": 11,
+          "issues": 10,
           "prComments": 5,
           "issueComments": 11
         },
@@ -674,6 +664,16 @@
           "issues": 9,
           "prComments": 17,
           "issueComments": 43
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 9,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -857,9 +857,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 295,
+        "totalCommits": 285,
         "totalPRs": 66,
-        "totalIssues": 30,
+        "totalIssues": 29,
         "totalPRComments": 27,
         "totalIssueComments": 91
       }
@@ -1296,16 +1296,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1935,
-    "totalPRs": 336,
-    "totalIssues": 211,
-    "totalPRComments": 1443,
-    "totalIssueComments": 1709,
+    "totalCommits": 1922,
+    "totalPRs": 335,
+    "totalIssues": 208,
+    "totalPRComments": 1440,
+    "totalIssueComments": 1703,
     "totalRepos": 82,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-11 to 2026-01-07",
+    "analysisTimeframe": "2025-07-12 to 2026-01-08",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
