@@ -282,16 +282,6 @@
       },
       "repos": [
         {
-          "repoName": "AndroidAnimationExercise",
-          "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
-          "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
@@ -300,6 +290,16 @@
           "issues": 63,
           "prComments": 408,
           "issueComments": 318
+        },
+        {
+          "repoName": "AndroidAnimationExercise",
+          "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
+          "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -342,26 +342,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "snaps-registry",
-          "description": "A registry containing metadata about verified and blocked Snaps.",
-          "url": "https://github.com/MetaMask/snaps-registry",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "calculator_ex_2025",
-          "description": null,
-          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 102,
-          "issueComments": 0
-        },
-        {
           "repoName": "Festival-lineup",
           "description": "Task practice - conditional render, Props, useState",
           "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
@@ -379,6 +359,26 @@
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "snaps-registry",
+          "description": "A registry containing metadata about verified and blocked Snaps.",
+          "url": "https://github.com/MetaMask/snaps-registry",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "calculator_ex_2025",
+          "description": null,
+          "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 102,
           "issueComments": 0
         },
         {
@@ -458,16 +458,6 @@
           "issueComments": 42
         },
         {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 228,
-          "pullRequests": 96,
-          "issues": 20,
-          "prComments": 668,
-          "issueComments": 751
-        },
-        {
           "repoName": "scylla-cqlsh",
           "description": "A fork of the cqlsh code",
           "url": "https://github.com/scylladb/scylla-cqlsh",
@@ -476,6 +466,16 @@
           "issues": 4,
           "prComments": 17,
           "issueComments": 19
+        },
+        {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 228,
+          "pullRequests": 96,
+          "issues": 20,
+          "prComments": 668,
+          "issueComments": 751
         },
         {
           "repoName": "scylladb",
@@ -646,6 +646,16 @@
       },
       "repos": [
         {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 9,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
+        },
+        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -664,16 +674,6 @@
           "issues": 8,
           "prComments": 17,
           "issueComments": 43
-        },
-        {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 9,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
         },
         {
           "repoName": "mastra",
