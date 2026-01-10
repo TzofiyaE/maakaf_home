@@ -18,16 +18,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
-          "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -36,6 +26,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         }
       ],
       "summary": {
@@ -77,7 +77,7 @@
           "repoName": "maakaf_home_backend",
           "description": null,
           "url": "https://github.com/Maakaf/maakaf_home_backend",
-          "commits": 9,
+          "commits": 7,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -91,7 +91,7 @@
           "pullRequests": 2,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 19
+          "issueComments": 18
         },
         {
           "repoName": "cobol-programming-course",
@@ -175,11 +175,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 156,
+        "totalCommits": 154,
         "totalPRs": 15,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 62
+        "totalIssueComments": 61
       }
     },
     {
@@ -200,16 +200,6 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 3,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
@@ -218,6 +208,16 @@
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 3,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -249,7 +249,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 485,
+          "commits": 474,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -257,7 +257,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 485,
+        "totalCommits": 474,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -342,6 +342,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "snaps-registry",
+          "description": "A registry containing metadata about verified and blocked Snaps.",
+          "url": "https://github.com/MetaMask/snaps-registry",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "calculator_ex_2025",
           "description": null,
           "url": "https://github.com/ColmanDevClubORG/calculator_ex_2025",
@@ -365,16 +375,6 @@
           "repoName": "cors",
           "description": "Go net/http configurable handler to handle CORS requests",
           "url": "https://github.com/rs/cors",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "snaps-registry",
-          "description": "A registry containing metadata about verified and blocked Snaps.",
-          "url": "https://github.com/MetaMask/snaps-registry",
           "commits": 0,
           "pullRequests": 0,
           "issues": 1,
@@ -458,6 +458,16 @@
           "issueComments": 42
         },
         {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 228,
+          "pullRequests": 96,
+          "issues": 20,
+          "prComments": 668,
+          "issueComments": 751
+        },
+        {
           "repoName": "scylla-cqlsh",
           "description": "A fork of the cqlsh code",
           "url": "https://github.com/scylladb/scylla-cqlsh",
@@ -468,16 +478,6 @@
           "issueComments": 19
         },
         {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 238,
-          "pullRequests": 97,
-          "issues": 21,
-          "prComments": 678,
-          "issueComments": 759
-        },
-        {
           "repoName": "scylladb",
           "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
           "url": "https://github.com/scylladb/scylladb",
@@ -485,7 +485,7 @@
           "pullRequests": 3,
           "issues": 7,
           "prComments": 7,
-          "issueComments": 153
+          "issueComments": 146
         },
         {
           "repoName": "scylla-ccm",
@@ -549,11 +549,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 284,
-        "totalPRs": 120,
-        "totalIssues": 39,
-        "totalPRComments": 746,
-        "totalIssueComments": 1031
+        "totalCommits": 274,
+        "totalPRs": 119,
+        "totalIssues": 38,
+        "totalPRComments": 736,
+        "totalIssueComments": 1016
       }
     },
     {
@@ -577,18 +577,18 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 82,
+          "commits": 81,
           "pullRequests": 16,
-          "issues": 12,
-          "prComments": 39,
+          "issues": 10,
+          "prComments": 38,
           "issueComments": 58
         }
       ],
       "summary": {
-        "totalCommits": 82,
+        "totalCommits": 81,
         "totalPRs": 16,
-        "totalIssues": 12,
-        "totalPRComments": 39,
+        "totalIssues": 10,
+        "totalPRComments": 38,
         "totalIssueComments": 58
       }
     },
@@ -646,21 +646,11 @@
       },
       "repos": [
         {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 9,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 109,
-          "pullRequests": 21,
+          "commits": 105,
+          "pullRequests": 20,
           "issues": 10,
           "prComments": 5,
           "issueComments": 11
@@ -671,9 +661,19 @@
           "url": "https://github.com/lirantal/npq",
           "commits": 76,
           "pullRequests": 29,
-          "issues": 9,
+          "issues": 8,
           "prComments": 17,
           "issueComments": 43
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 9,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -706,16 +706,6 @@
           "issueComments": 5
         },
         {
-          "repoName": "agents",
-          "description": "Qodo Commands Playbooks. Customize Qodo Command for your specific use case!",
-          "url": "https://github.com/qodo-ai/agents",
-          "commits": 6,
-          "pullRequests": 4,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "is-website-vulnerable",
           "description": "finds publicly known security vulnerabilities in a website's frontend JavaScript libraries",
           "url": "https://github.com/lirantal/is-website-vulnerable",
@@ -744,6 +734,16 @@
           "issues": 0,
           "prComments": 4,
           "issueComments": 0
+        },
+        {
+          "repoName": "agents",
+          "description": "Qodo Commands Playbooks. Customize Qodo Command for your specific use case!",
+          "url": "https://github.com/qodo-ai/agents",
+          "commits": 5,
+          "pullRequests": 3,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         },
         {
           "repoName": "daloradius",
@@ -857,11 +857,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 284,
-        "totalPRs": 65,
-        "totalIssues": 29,
+        "totalCommits": 279,
+        "totalPRs": 63,
+        "totalIssues": 28,
         "totalPRComments": 27,
-        "totalIssueComments": 91
+        "totalIssueComments": 88
       }
     },
     {
@@ -1296,16 +1296,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1915,
-    "totalPRs": 333,
-    "totalIssues": 208,
-    "totalPRComments": 1434,
-    "totalIssueComments": 1701,
+    "totalCommits": 1886,
+    "totalPRs": 330,
+    "totalIssues": 204,
+    "totalPRComments": 1423,
+    "totalIssueComments": 1682,
     "totalRepos": 82,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-13 to 2026-01-09",
+    "analysisTimeframe": "2025-07-14 to 2026-01-10",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
