@@ -74,16 +74,6 @@
           "issueComments": 32
         },
         {
-          "repoName": "maakaf_home_backend",
-          "description": null,
-          "url": "https://github.com/Maakaf/maakaf_home_backend",
-          "commits": 7,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -112,6 +102,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home_backend",
+          "description": null,
+          "url": "https://github.com/Maakaf/maakaf_home_backend",
+          "commits": 0,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
         },
         {
           "repoName": "hugo",
@@ -175,7 +175,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 154,
+        "totalCommits": 147,
         "totalPRs": 15,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -200,16 +200,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 59,
-          "pullRequests": 28,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 1
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -218,6 +208,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 59,
+          "pullRequests": 28,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 1
         }
       ],
       "summary": {
@@ -249,7 +249,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 474,
+          "commits": 471,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -257,7 +257,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 474,
+        "totalCommits": 471,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -342,13 +342,13 @@
           "issueComments": 0
         },
         {
-          "repoName": "Festival-lineup",
-          "description": "Task practice - conditional render, Props, useState",
-          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
+          "repoName": "snaps-registry",
+          "description": "A registry containing metadata about verified and blocked Snaps.",
+          "url": "https://github.com/MetaMask/snaps-registry",
           "commits": 0,
           "pullRequests": 0,
-          "issues": 0,
-          "prComments": 38,
+          "issues": 1,
+          "prComments": 0,
           "issueComments": 0
         },
         {
@@ -362,13 +362,13 @@
           "issueComments": 0
         },
         {
-          "repoName": "snaps-registry",
-          "description": "A registry containing metadata about verified and blocked Snaps.",
-          "url": "https://github.com/MetaMask/snaps-registry",
+          "repoName": "Festival-lineup",
+          "description": "Task practice - conditional render, Props, useState",
+          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
           "commits": 0,
           "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
+          "issues": 0,
+          "prComments": 38,
           "issueComments": 0
         },
         {
@@ -448,6 +448,16 @@
       },
       "repos": [
         {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 228,
+          "pullRequests": 96,
+          "issues": 20,
+          "prComments": 663,
+          "issueComments": 742
+        },
+        {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
@@ -468,16 +478,6 @@
           "issueComments": 19
         },
         {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 228,
-          "pullRequests": 96,
-          "issues": 20,
-          "prComments": 668,
-          "issueComments": 751
-        },
-        {
           "repoName": "scylladb",
           "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
           "url": "https://github.com/scylladb/scylladb",
@@ -485,7 +485,7 @@
           "pullRequests": 3,
           "issues": 7,
           "prComments": 7,
-          "issueComments": 146
+          "issueComments": 138
         },
         {
           "repoName": "scylla-ccm",
@@ -552,8 +552,8 @@
         "totalCommits": 274,
         "totalPRs": 119,
         "totalIssues": 38,
-        "totalPRComments": 736,
-        "totalIssueComments": 1016
+        "totalPRComments": 731,
+        "totalIssueComments": 999
       }
     },
     {
@@ -577,19 +577,19 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 81,
+          "commits": 80,
           "pullRequests": 16,
           "issues": 10,
           "prComments": 38,
-          "issueComments": 58
+          "issueComments": 57
         }
       ],
       "summary": {
-        "totalCommits": 81,
+        "totalCommits": 80,
         "totalPRs": 16,
         "totalIssues": 10,
         "totalPRComments": 38,
-        "totalIssueComments": 58
+        "totalIssueComments": 57
       }
     },
     {
@@ -646,16 +646,6 @@
       },
       "repos": [
         {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 9,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -674,6 +664,16 @@
           "issues": 8,
           "prComments": 17,
           "issueComments": 43
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 9,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "mastra",
@@ -759,7 +759,7 @@
           "repoName": "create-node-lib",
           "description": "Scaffold a batteries-included Node.js library project with docs, tests, semantic releases and more",
           "url": "https://github.com/lirantal/create-node-lib",
-          "commits": 11,
+          "commits": 10,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -857,7 +857,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 279,
+        "totalCommits": 278,
         "totalPRs": 63,
         "totalIssues": 28,
         "totalPRComments": 27,
@@ -974,20 +974,20 @@
           "issueComments": 0
         },
         {
-          "repoName": "OSDC-Code-Maven.github.io",
-          "description": "Open Source Development Courses",
-          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
-          "commits": 13,
+          "repoName": "perlmaven.com",
+          "description": "The source files of the Perl Maven articles",
+          "url": "https://github.com/szabgab/perlmaven.com",
+          "commits": 5,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         },
         {
-          "repoName": "perlmaven.com",
-          "description": "The source files of the Perl Maven articles",
-          "url": "https://github.com/szabgab/perlmaven.com",
-          "commits": 5,
+          "repoName": "OSDC-Code-Maven.github.io",
+          "description": "Open Source Development Courses",
+          "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
+          "commits": 13,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1296,16 +1296,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1886,
+    "totalCommits": 1874,
     "totalPRs": 330,
     "totalIssues": 204,
-    "totalPRComments": 1423,
-    "totalIssueComments": 1682,
+    "totalPRComments": 1418,
+    "totalIssueComments": 1664,
     "totalRepos": 82,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-14 to 2026-01-10",
+    "analysisTimeframe": "2025-07-15 to 2026-01-11",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
