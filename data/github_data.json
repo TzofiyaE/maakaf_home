@@ -25,7 +25,7 @@
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 3
+          "issueComments": 2
         },
         {
           "repoName": "friends-activity-backend",
@@ -43,7 +43,7 @@
         "totalPRs": 12,
         "totalIssues": 0,
         "totalPRComments": 0,
-        "totalIssueComments": 4
+        "totalIssueComments": 3
       }
     },
     {
@@ -74,16 +74,6 @@
           "issueComments": 32
         },
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 113,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 18
-        },
-        {
           "repoName": "cobol-programming-course",
           "description": "Training materials and labs for a \"Getting Started\" level course on COBOL",
           "url": "https://github.com/openmainframeproject/cobol-programming-course",
@@ -102,6 +92,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 112,
+          "pullRequests": 2,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 18
         },
         {
           "repoName": "maakaf_home_backend",
@@ -175,7 +175,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 147,
+        "totalCommits": 146,
         "totalPRs": 15,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -452,10 +452,10 @@
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
           "commits": 228,
-          "pullRequests": 96,
+          "pullRequests": 94,
           "issues": 20,
-          "prComments": 663,
-          "issueComments": 742
+          "prComments": 662,
+          "issueComments": 731
         },
         {
           "repoName": "argus",
@@ -485,7 +485,7 @@
           "pullRequests": 3,
           "issues": 7,
           "prComments": 7,
-          "issueComments": 138
+          "issueComments": 136
         },
         {
           "repoName": "scylla-ccm",
@@ -550,10 +550,10 @@
       ],
       "summary": {
         "totalCommits": 274,
-        "totalPRs": 119,
+        "totalPRs": 117,
         "totalIssues": 38,
-        "totalPRComments": 731,
-        "totalIssueComments": 999
+        "totalPRComments": 730,
+        "totalIssueComments": 986
       }
     },
     {
@@ -581,7 +581,7 @@
           "pullRequests": 16,
           "issues": 10,
           "prComments": 38,
-          "issueComments": 57
+          "issueComments": 56
         }
       ],
       "summary": {
@@ -589,7 +589,7 @@
         "totalPRs": 16,
         "totalIssues": 10,
         "totalPRComments": 38,
-        "totalIssueComments": 57
+        "totalIssueComments": 56
       }
     },
     {
@@ -766,16 +766,6 @@
           "issueComments": 1
         },
         {
-          "repoName": "nodejs-cli-apps-best-practices",
-          "description": "The largest Node.js CLI Apps best practices list ✨",
-          "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "mcp-server-npm-goof",
           "description": "An MCP server for NPM JavaScript Package Management tools",
           "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
@@ -857,7 +847,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 278,
+        "totalCommits": 277,
         "totalPRs": 63,
         "totalIssues": 28,
         "totalPRComments": 27,
@@ -1296,16 +1286,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1874,
-    "totalPRs": 330,
+    "totalCommits": 1872,
+    "totalPRs": 328,
     "totalIssues": 204,
-    "totalPRComments": 1418,
-    "totalIssueComments": 1664,
-    "totalRepos": 82,
+    "totalPRComments": 1417,
+    "totalIssueComments": 1649,
+    "totalRepos": 81,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-15 to 2026-01-11",
+    "analysisTimeframe": "2025-07-16 to 2026-01-12",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
