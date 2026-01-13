@@ -454,8 +454,8 @@
           "commits": 228,
           "pullRequests": 94,
           "issues": 20,
-          "prComments": 662,
-          "issueComments": 731
+          "prComments": 632,
+          "issueComments": 723
         },
         {
           "repoName": "argus",
@@ -485,7 +485,7 @@
           "pullRequests": 3,
           "issues": 7,
           "prComments": 7,
-          "issueComments": 136
+          "issueComments": 135
         },
         {
           "repoName": "scylla-ccm",
@@ -552,8 +552,8 @@
         "totalCommits": 274,
         "totalPRs": 117,
         "totalIssues": 38,
-        "totalPRComments": 730,
-        "totalIssueComments": 986
+        "totalPRComments": 700,
+        "totalIssueComments": 977
       }
     },
     {
@@ -580,7 +580,7 @@
           "commits": 80,
           "pullRequests": 16,
           "issues": 10,
-          "prComments": 38,
+          "prComments": 36,
           "issueComments": 56
         }
       ],
@@ -588,7 +588,7 @@
         "totalCommits": 80,
         "totalPRs": 16,
         "totalIssues": 10,
-        "totalPRComments": 38,
+        "totalPRComments": 36,
         "totalIssueComments": 56
       }
     },
@@ -1289,13 +1289,13 @@
     "totalCommits": 1872,
     "totalPRs": 328,
     "totalIssues": 204,
-    "totalPRComments": 1417,
-    "totalIssueComments": 1649,
+    "totalPRComments": 1385,
+    "totalIssueComments": 1640,
     "totalRepos": 81,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-16 to 2026-01-12",
+    "analysisTimeframe": "2025-07-17 to 2026-01-13",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
