@@ -451,11 +451,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 228,
-          "pullRequests": 94,
+          "commits": 225,
+          "pullRequests": 93,
           "issues": 20,
-          "prComments": 632,
-          "issueComments": 723
+          "prComments": 568,
+          "issueComments": 708
         },
         {
           "repoName": "argus",
@@ -549,11 +549,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 274,
-        "totalPRs": 117,
+        "totalCommits": 271,
+        "totalPRs": 116,
         "totalIssues": 38,
-        "totalPRComments": 700,
-        "totalIssueComments": 977
+        "totalPRComments": 636,
+        "totalIssueComments": 962
       }
     },
     {
@@ -581,7 +581,7 @@
           "pullRequests": 16,
           "issues": 10,
           "prComments": 36,
-          "issueComments": 56
+          "issueComments": 55
         }
       ],
       "summary": {
@@ -589,7 +589,7 @@
         "totalPRs": 16,
         "totalIssues": 10,
         "totalPRComments": 36,
-        "totalIssueComments": 56
+        "totalIssueComments": 55
       }
     },
     {
@@ -1047,7 +1047,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 187,
+          "commits": 179,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1125,7 +1125,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 322,
+        "totalCommits": 314,
         "totalPRs": 10,
         "totalIssues": 8,
         "totalPRComments": 3,
@@ -1156,7 +1156,7 @@
           "commits": 6,
           "pullRequests": 1,
           "issues": 0,
-          "prComments": 13,
+          "prComments": 9,
           "issueComments": 5
         },
         {
@@ -1244,7 +1244,7 @@
         "totalCommits": 41,
         "totalPRs": 8,
         "totalIssues": 2,
-        "totalPRComments": 34,
+        "totalPRComments": 30,
         "totalIssueComments": 20
       }
     },
@@ -1286,16 +1286,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1872,
-    "totalPRs": 328,
+    "totalCommits": 1861,
+    "totalPRs": 327,
     "totalIssues": 204,
-    "totalPRComments": 1385,
-    "totalIssueComments": 1640,
+    "totalPRComments": 1317,
+    "totalIssueComments": 1624,
     "totalRepos": 81,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-17 to 2026-01-13",
+    "analysisTimeframe": "2025-07-18 to 2026-01-14",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
