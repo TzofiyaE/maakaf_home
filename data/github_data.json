@@ -97,7 +97,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 112,
+          "commits": 111,
           "pullRequests": 2,
           "issues": 0,
           "prComments": 0,
@@ -175,7 +175,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 146,
+        "totalCommits": 145,
         "totalPRs": 15,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -649,11 +649,11 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 105,
-          "pullRequests": 20,
-          "issues": 10,
-          "prComments": 5,
-          "issueComments": 11
+          "commits": 92,
+          "pullRequests": 17,
+          "issues": 9,
+          "prComments": 1,
+          "issueComments": 10
         },
         {
           "repoName": "npq",
@@ -669,11 +669,11 @@
           "repoName": "mcp-server-nodejs-api-docs",
           "description": "MCP Server for Node.js API documentation",
           "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 9,
+          "commits": 6,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
-          "issueComments": 4
+          "issueComments": 3
         },
         {
           "repoName": "mastra",
@@ -847,11 +847,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 277,
-        "totalPRs": 63,
-        "totalIssues": 28,
-        "totalPRComments": 27,
-        "totalIssueComments": 88
+        "totalCommits": 261,
+        "totalPRs": 60,
+        "totalIssues": 27,
+        "totalPRComments": 23,
+        "totalIssueComments": 86
       }
     },
     {
@@ -1047,7 +1047,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 179,
+          "commits": 154,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1125,7 +1125,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 314,
+        "totalCommits": 289,
         "totalPRs": 10,
         "totalIssues": 8,
         "totalPRComments": 3,
@@ -1286,16 +1286,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1861,
-    "totalPRs": 327,
-    "totalIssues": 204,
-    "totalPRComments": 1317,
-    "totalIssueComments": 1624,
+    "totalCommits": 1819,
+    "totalPRs": 324,
+    "totalIssues": 203,
+    "totalPRComments": 1313,
+    "totalIssueComments": 1622,
     "totalRepos": 81,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-18 to 2026-01-14",
+    "analysisTimeframe": "2025-07-19 to 2026-01-15",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
