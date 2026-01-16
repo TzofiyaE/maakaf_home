@@ -84,36 +84,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "docsy-example",
-          "description": "An example documentation site using the Docsy Hugo theme",
-          "url": "https://github.com/google/docsy-example",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 111,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 18
-        },
-        {
-          "repoName": "maakaf_home_backend",
-          "description": null,
-          "url": "https://github.com/Maakaf/maakaf_home_backend",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
           "repoName": "hugo",
           "description": "The world’s fastest framework for building websites.",
           "url": "https://github.com/gohugoio/hugo",
@@ -124,10 +94,30 @@
           "issueComments": 0
         },
         {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 94,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 17
+        },
+        {
           "repoName": "awesome-opensource-israel",
           "description": "A curated list of Israeli-made projects, events, and individuals",
           "url": "https://github.com/lirantal/awesome-opensource-israel",
           "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
+        },
+        {
+          "repoName": "maakaf_home_backend",
+          "description": null,
+          "url": "https://github.com/Maakaf/maakaf_home_backend",
+          "commits": 0,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -175,11 +165,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 145,
-        "totalPRs": 15,
+        "totalCommits": 128,
+        "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 61
+        "totalIssueComments": 59
       }
     },
     {
@@ -305,11 +295,11 @@
           "repoName": "Broken-Link-Checker",
           "description": null,
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Checker",
-          "commits": 14,
-          "pullRequests": 6,
-          "issues": 8,
+          "commits": 5,
+          "pullRequests": 2,
+          "issues": 3,
           "prComments": 5,
-          "issueComments": 25
+          "issueComments": 21
         },
         {
           "repoName": "inspector",
@@ -423,11 +413,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 134,
-        "totalPRs": 28,
-        "totalIssues": 79,
+        "totalCommits": 125,
+        "totalPRs": 24,
+        "totalIssues": 74,
         "totalPRComments": 553,
-        "totalIssueComments": 346
+        "totalIssueComments": 342
       }
     },
     {
@@ -579,7 +569,7 @@
           "url": "https://github.com/hasadna/open-bus-map-search",
           "commits": 80,
           "pullRequests": 16,
-          "issues": 10,
+          "issues": 9,
           "prComments": 36,
           "issueComments": 55
         }
@@ -587,7 +577,7 @@
       "summary": {
         "totalCommits": 80,
         "totalPRs": 16,
-        "totalIssues": 10,
+        "totalIssues": 9,
         "totalPRComments": 36,
         "totalIssueComments": 55
       }
@@ -652,7 +642,7 @@
           "commits": 92,
           "pullRequests": 17,
           "issues": 9,
-          "prComments": 1,
+          "prComments": 0,
           "issueComments": 10
         },
         {
@@ -850,7 +840,7 @@
         "totalCommits": 261,
         "totalPRs": 60,
         "totalIssues": 27,
-        "totalPRComments": 23,
+        "totalPRComments": 22,
         "totalIssueComments": 86
       }
     },
@@ -1047,7 +1037,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 154,
+          "commits": 134,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1125,7 +1115,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 289,
+        "totalCommits": 269,
         "totalPRs": 10,
         "totalIssues": 8,
         "totalPRComments": 3,
@@ -1286,16 +1276,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1819,
-    "totalPRs": 324,
-    "totalIssues": 203,
-    "totalPRComments": 1313,
-    "totalIssueComments": 1622,
-    "totalRepos": 81,
+    "totalCommits": 1773,
+    "totalPRs": 317,
+    "totalIssues": 197,
+    "totalPRComments": 1312,
+    "totalIssueComments": 1616,
+    "totalRepos": 80,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-19 to 2026-01-15",
+    "analysisTimeframe": "2025-07-20 to 2026-01-16",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
