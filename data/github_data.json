@@ -298,8 +298,8 @@
           "commits": 5,
           "pullRequests": 2,
           "issues": 3,
-          "prComments": 5,
-          "issueComments": 21
+          "prComments": 3,
+          "issueComments": 19
         },
         {
           "repoName": "inspector",
@@ -416,8 +416,8 @@
         "totalCommits": 125,
         "totalPRs": 24,
         "totalIssues": 74,
-        "totalPRComments": 553,
-        "totalIssueComments": 342
+        "totalPRComments": 551,
+        "totalIssueComments": 340
       }
     },
     {
@@ -441,11 +441,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 225,
-          "pullRequests": 93,
+          "commits": 222,
+          "pullRequests": 89,
           "issues": 20,
-          "prComments": 568,
-          "issueComments": 708
+          "prComments": 567,
+          "issueComments": 695
         },
         {
           "repoName": "argus",
@@ -473,9 +473,9 @@
           "url": "https://github.com/scylladb/scylladb",
           "commits": 2,
           "pullRequests": 3,
-          "issues": 7,
+          "issues": 5,
           "prComments": 7,
-          "issueComments": 135
+          "issueComments": 132
         },
         {
           "repoName": "scylla-ccm",
@@ -539,11 +539,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 271,
-        "totalPRs": 116,
-        "totalIssues": 38,
-        "totalPRComments": 636,
-        "totalIssueComments": 962
+        "totalCommits": 268,
+        "totalPRs": 112,
+        "totalIssues": 36,
+        "totalPRComments": 635,
+        "totalIssueComments": 946
       }
     },
     {
@@ -649,8 +649,8 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 76,
-          "pullRequests": 29,
+          "commits": 71,
+          "pullRequests": 28,
           "issues": 8,
           "prComments": 17,
           "issueComments": 43
@@ -837,8 +837,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 261,
-        "totalPRs": 60,
+        "totalCommits": 256,
+        "totalPRs": 59,
         "totalIssues": 27,
         "totalPRComments": 22,
         "totalIssueComments": 86
@@ -1037,7 +1037,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 134,
+          "commits": 120,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1115,7 +1115,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 269,
+        "totalCommits": 255,
         "totalPRs": 10,
         "totalIssues": 8,
         "totalPRComments": 3,
@@ -1146,8 +1146,8 @@
           "commits": 6,
           "pullRequests": 1,
           "issues": 0,
-          "prComments": 9,
-          "issueComments": 5
+          "prComments": 6,
+          "issueComments": 4
         },
         {
           "repoName": "BcsStudent",
@@ -1234,8 +1234,8 @@
         "totalCommits": 41,
         "totalPRs": 8,
         "totalIssues": 2,
-        "totalPRComments": 30,
-        "totalIssueComments": 20
+        "totalPRComments": 27,
+        "totalIssueComments": 19
       }
     },
     {
@@ -1276,16 +1276,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1773,
-    "totalPRs": 317,
-    "totalIssues": 197,
-    "totalPRComments": 1312,
-    "totalIssueComments": 1616,
+    "totalCommits": 1751,
+    "totalPRs": 312,
+    "totalIssues": 195,
+    "totalPRComments": 1306,
+    "totalIssueComments": 1597,
     "totalRepos": 80,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-20 to 2026-01-16",
+    "analysisTimeframe": "2025-07-21 to 2026-01-17",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
