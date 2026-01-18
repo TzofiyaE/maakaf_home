@@ -298,7 +298,7 @@
           "commits": 5,
           "pullRequests": 2,
           "issues": 3,
-          "prComments": 3,
+          "prComments": 1,
           "issueComments": 19
         },
         {
@@ -416,7 +416,7 @@
         "totalCommits": 125,
         "totalPRs": 24,
         "totalIssues": 74,
-        "totalPRComments": 551,
+        "totalPRComments": 549,
         "totalIssueComments": 340
       }
     },
@@ -441,11 +441,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 222,
-          "pullRequests": 89,
+          "commits": 212,
+          "pullRequests": 88,
           "issues": 20,
-          "prComments": 567,
-          "issueComments": 695
+          "prComments": 562,
+          "issueComments": 671
         },
         {
           "repoName": "argus",
@@ -475,7 +475,7 @@
           "pullRequests": 3,
           "issues": 5,
           "prComments": 7,
-          "issueComments": 132
+          "issueComments": 129
         },
         {
           "repoName": "scylla-ccm",
@@ -539,11 +539,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 268,
-        "totalPRs": 112,
+        "totalCommits": 258,
+        "totalPRs": 111,
         "totalIssues": 36,
-        "totalPRComments": 635,
-        "totalIssueComments": 946
+        "totalPRComments": 630,
+        "totalIssueComments": 919
       }
     },
     {
@@ -571,7 +571,7 @@
           "pullRequests": 16,
           "issues": 9,
           "prComments": 36,
-          "issueComments": 55
+          "issueComments": 50
         }
       ],
       "summary": {
@@ -579,7 +579,7 @@
         "totalPRs": 16,
         "totalIssues": 9,
         "totalPRComments": 36,
-        "totalIssueComments": 55
+        "totalIssueComments": 50
       }
     },
     {
@@ -1037,7 +1037,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 120,
+          "commits": 110,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1115,7 +1115,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 255,
+        "totalCommits": 245,
         "totalPRs": 10,
         "totalIssues": 8,
         "totalPRComments": 3,
@@ -1276,16 +1276,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1751,
-    "totalPRs": 312,
+    "totalCommits": 1731,
+    "totalPRs": 311,
     "totalIssues": 195,
-    "totalPRComments": 1306,
-    "totalIssueComments": 1597,
+    "totalPRComments": 1299,
+    "totalIssueComments": 1565,
     "totalRepos": 80,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-21 to 2026-01-17",
+    "analysisTimeframe": "2025-07-22 to 2026-01-18",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
