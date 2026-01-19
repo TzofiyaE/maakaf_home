@@ -65,66 +65,21 @@
       Community Summary Section
     ========================= -->
     {{ $users := .Site.Data.github_data.users }}
-    {{ if .Params.pageConfig.showCommunityStats | default true }}
     {{ $globalSummary := .Site.Data.github_data.globalSummary }}
     
-    <div class="community-summary my-3">
-      <strong>{{ .Params.labels.communitySummaryTitle | default "Community Summary:" }}</strong><br>
-      {{ .Params.labels.contributors | default "Contributors" }}: {{ $globalSummary.totalUsers }} |
-      {{ .Params.labels.projects | default "Projects" }}: {{ $globalSummary.totalRepos }} |
-      {{ .Params.labels.commits | default "Commits" }}: {{ $globalSummary.totalCommits }} |
-      {{ .Params.labels.prs | default "PRs" }}: {{ $globalSummary.totalPRs }} |
-      {{ .Params.labels.issues | default "Issues" }}: {{ $globalSummary.totalIssues }} |
-      {{ .Params.labels.prComments | default "PR Comments" }}: {{ $globalSummary.totalPRComments }} |
-      {{ .Params.labels.issueComments | default "Issue Comments" }}: {{ $globalSummary.totalIssueComments }}
-      <br><small class="text-muted">{{ .Params.labels.analysisPeriod | default "Analysis period" }}: {{ $globalSummary.analysisTimeframe }} | {{ .Params.labels.minForkFilter | default "Min fork filter" }}: {{ $globalSummary.minForkCountFilter }}</small>
-    </div>
-
-    
-   
- <!-- =========
-  Charts
-========= -->
-
-<script id="globalSummaryData" type="application/json">
-  {
-    "totalRepos": {{ $globalSummary.totalRepos }},
-    "totalCommits": {{ $globalSummary.totalCommits }},
-    "totalPRs": {{ $globalSummary.totalPRs }},
-    "totalIssues": {{ $globalSummary.totalIssues }},
-    "totalPRComments": {{ $globalSummary.totalPRComments }},
-    "totalIssueComments": {{ $globalSummary.totalIssueComments }}
-  }
-</script>
-
-<script id="usersData" type="application/json">
-  {{ $users | jsonify | safeJS }}
-</script>
-
-
-<div class="community-charts my-4">
-  <div class="chart-card">
-    <h5 class="chart-title">סה״כ פעילות בקהילה</h5>
-    <canvas id="communityTotalsChart"></canvas>
+    {{ if .Params.pageConfig.showCommunityStats | default true }}
+  <div class="community-summary my-3">
+    <strong>{{ .Params.labels.communitySummaryTitle | default "Community Summary:" }}</strong><br>
+    {{ .Params.labels.contributors | default "Contributors" }}: {{ $globalSummary.totalUsers }} |
+    {{ .Params.labels.projects | default "Projects" }}: {{ $globalSummary.totalRepos }} |
+    {{ .Params.labels.commits | default "Commits" }}: {{ $globalSummary.totalCommits }} |
+    {{ .Params.labels.prs | default "PRs" }}: {{ $globalSummary.totalPRs }} |
+    {{ .Params.labels.issues | default "Issues" }}: {{ $globalSummary.totalIssues }} |
+    {{ .Params.labels.prComments | default "PR Comments" }}: {{ $globalSummary.totalPRComments }} |
+    {{ .Params.labels.issueComments | default "Issue Comments" }}: {{ $globalSummary.totalIssueComments }}
+    <br><small class="text-muted">{{ .Params.labels.analysisPeriod | default "Analysis period" }}: {{ $globalSummary.analysisTimeframe }} | {{ .Params.labels.minForkFilter | default "Min fork filter" }}: {{ $globalSummary.minForkCountFilter }}</small>
   </div>
-
-  <div class="chart-card">
-    <h5 class="chart-title">Top 10 לפי Pull Requests</h5>
-    <canvas id="topPRsChart"></canvas>
-  </div>
-
-  <div class="chart-card">
-    <h5 class="chart-title">Top 10 לפי Commits</h5>
-    <canvas id="topCommitsChart"></canvas>
-  </div>
-  
-</div>
-
-
-
-   
-    {{ end }}
-     
+{{ end }}
 
     <!-- ===================
       Contributors Table
@@ -210,6 +165,43 @@
         </tbody>
       </table>
     </div>
+<!-- =========
+  Charts
+========= -->
+
+<script id="globalSummaryData" type="application/json">
+  {
+    "totalRepos": {{ $globalSummary.totalRepos }},
+    "totalCommits": {{ $globalSummary.totalCommits }},
+    "totalPRs": {{ $globalSummary.totalPRs }},
+    "totalIssues": {{ $globalSummary.totalIssues }},
+    "totalPRComments": {{ $globalSummary.totalPRComments }},
+    "totalIssueComments": {{ $globalSummary.totalIssueComments }}
+  }
+</script>
+
+<script id="usersData" type="application/json">
+  {{ $users | jsonify | safeJS }}
+</script>
+
+<div class="community-charts my-4">
+  <div class="chart-card">
+    <h5 class="chart-title">סה״כ פעילות בקהילה</h5>
+    <canvas id="communityTotalsChart"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h5 class="chart-title">Top 10 לפי Pull Requests</h5>
+    <canvas id="topPRsChart"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h5 class="chart-title">Top 10 לפי Commits</h5>
+    <canvas id="topCommitsChart"></canvas>
+  </div>
+  
+</div>
+
 
     <p class="last-updated mb-5">
       {{ .Params.labels.lastUpdated | default "Last updated" }}: {{ dateFormat (.Params.lastUpdatedFormat | default "2006-01-02 15:04:05") now }}{{ if .Params.showDataGenerationDate | default true }} | 
