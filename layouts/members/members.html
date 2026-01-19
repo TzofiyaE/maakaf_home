@@ -64,6 +64,7 @@
     <!-- ========================
       Community Summary Section
     ========================= -->
+    {{ $users := .Site.Data.github_data.users }}
     {{ if .Params.pageConfig.showCommunityStats | default true }}
     {{ $globalSummary := .Site.Data.github_data.globalSummary }}
     
@@ -78,7 +79,52 @@
       {{ .Params.labels.issueComments | default "Issue Comments" }}: {{ $globalSummary.totalIssueComments }}
       <br><small class="text-muted">{{ .Params.labels.analysisPeriod | default "Analysis period" }}: {{ $globalSummary.analysisTimeframe }} | {{ .Params.labels.minForkFilter | default "Min fork filter" }}: {{ $globalSummary.minForkCountFilter }}</small>
     </div>
+
+    
+   
+ <!-- =========
+  Charts
+========= -->
+
+<script id="globalSummaryData" type="application/json">
+  {
+    "totalRepos": {{ $globalSummary.totalRepos }},
+    "totalCommits": {{ $globalSummary.totalCommits }},
+    "totalPRs": {{ $globalSummary.totalPRs }},
+    "totalIssues": {{ $globalSummary.totalIssues }},
+    "totalPRComments": {{ $globalSummary.totalPRComments }},
+    "totalIssueComments": {{ $globalSummary.totalIssueComments }}
+  }
+</script>
+
+<script id="usersData" type="application/json">
+  {{ $users | jsonify | safeJS }}
+</script>
+
+
+<div class="community-charts my-4">
+  <div class="chart-card">
+    <h5 class="chart-title">סה״כ פעילות בקהילה</h5>
+    <canvas id="communityTotalsChart"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h5 class="chart-title">Top 10 לפי Pull Requests</h5>
+    <canvas id="topPRsChart"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h5 class="chart-title">Top 10 לפי Commits</h5>
+    <canvas id="topCommitsChart"></canvas>
+  </div>
+  
+</div>
+
+
+
+   
     {{ end }}
+     
 
     <!-- ===================
       Contributors Table
@@ -267,4 +313,136 @@
     });
   }
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof Chart === 'undefined') return;
+
+    const textColor =
+      getComputedStyle(document.documentElement).getPropertyValue('--text-color').trim() || '#ddd';
+
+    const valueLabels = {
+      id: 'valueLabels',
+      afterDatasetsDraw(chart) {
+        const { ctx } = chart;
+        ctx.save();
+        ctx.fillStyle = textColor;
+        ctx.font = '12px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+
+        const meta = chart.getDatasetMeta(0);
+        meta.data.forEach((bar, i) => {
+          const v = chart.data.datasets[0].data[i];
+          ctx.fillText(String(v), bar.x, bar.y - 4);
+        });
+
+        ctx.restore();
+      }
+    };
+
+    // ===== 1) Totals chart =====
+    const rawTotals = document.getElementById('globalSummaryData')?.textContent;
+    if (rawTotals) {
+      let s = null;
+      try { s = JSON.parse(rawTotals); } catch {}
+
+      const totalsCanvas = document.getElementById('communityTotalsChart');
+      if (s && totalsCanvas) {
+        const labels = ['Projects','Commits','PRs','Issues','PR Comments','Issue Comments'];
+        const values = [
+          Number(s.totalRepos) || 0,
+          Number(s.totalCommits) || 0,
+          Number(s.totalPRs) || 0,
+          Number(s.totalIssues) || 0,
+          Number(s.totalPRComments) || 0,
+          Number(s.totalIssueComments) || 0,
+        ];
+
+        new Chart(totalsCanvas, {
+          type: 'bar',
+          data: { labels, datasets: [{ data: values, barThickness: 26, maxBarThickness: 30 }] },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false }, tooltip: { enabled: true } },
+            scales: {
+              x: { ticks: { color: textColor, maxRotation: 0, autoSkip: false } },
+              y: { beginAtZero: true, ticks: { color: textColor } }
+            }
+          },
+          plugins: [valueLabels]
+        });
+      }
+    }
+
+    // ===== 2) Parse users once =====
+    const rawUsers = document.getElementById('usersData')?.textContent;
+    if (!rawUsers) return;
+
+    let users = null;
+    try { users = JSON.parse(rawUsers); } catch {}
+    if (!Array.isArray(users) || users.length === 0) return;
+
+    const rows = users.map(u => ({
+      username: u?.user?.username || 'unknown',
+      prs: Number(u?.summary?.totalPRs) || 0,
+      commits: Number(u?.summary?.totalCommits) || 0,
+    }));
+
+    // ===== 3) Top 10 PRs chart =====
+    const topPRs = [...rows].sort((a, b) => b.prs - a.prs).slice(0, 10);
+    const topPRsCanvas = document.getElementById('topPRsChart');
+
+    if (topPRsCanvas) {
+      new Chart(topPRsCanvas, {
+        type: 'bar',
+        data: {
+          labels: topPRs.map(x => x.username),
+          datasets: [{ data: topPRs.map(x => x.prs), barThickness: 18, maxBarThickness: 22 }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          indexAxis: 'y',
+          plugins: { legend: { display: false }, tooltip: { enabled: true } },
+          scales: {
+            x: { beginAtZero: true, ticks: { color: textColor } },
+            y: { ticks: { color: textColor, autoSkip: false } }
+          }
+        },
+        plugins: [valueLabels]
+      });
+    }
+
+    // ===== 4) Top 10 Commits chart =====
+    const topCommits = [...rows].sort((a, b) => b.commits - a.commits).slice(0, 10);
+    const topCommitsCanvas = document.getElementById('topCommitsChart');
+
+    if (topCommitsCanvas) {
+      new Chart(topCommitsCanvas, {
+        type: 'bar',
+        data: {
+          labels: topCommits.map(x => x.username),
+          datasets: [{ data: topCommits.map(x => x.commits), barThickness: 18, maxBarThickness: 22 }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          indexAxis: 'y',
+          plugins: { legend: { display: false }, tooltip: { enabled: true } },
+          scales: {
+            x: { beginAtZero: true, ticks: { color: textColor } },
+            y: { ticks: { color: textColor, autoSkip: false } }
+          }
+        },
+        plugins: [valueLabels]
+      });
+    }
+  });
+</script>
+
+
+
 {{ end }}
