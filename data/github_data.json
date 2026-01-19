@@ -121,7 +121,7 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 3
+          "issueComments": 2
         },
         {
           "repoName": "site",
@@ -169,7 +169,7 @@
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 59
+        "totalIssueComments": 58
       }
     },
     {
@@ -297,9 +297,9 @@
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Checker",
           "commits": 5,
           "pullRequests": 2,
-          "issues": 3,
+          "issues": 2,
           "prComments": 1,
-          "issueComments": 19
+          "issueComments": 17
         },
         {
           "repoName": "inspector",
@@ -415,9 +415,9 @@
       "summary": {
         "totalCommits": 125,
         "totalPRs": 24,
-        "totalIssues": 74,
+        "totalIssues": 73,
         "totalPRComments": 549,
-        "totalIssueComments": 340
+        "totalIssueComments": 338
       }
     },
     {
@@ -444,8 +444,8 @@
           "commits": 212,
           "pullRequests": 88,
           "issues": 20,
-          "prComments": 562,
-          "issueComments": 671
+          "prComments": 561,
+          "issueComments": 665
         },
         {
           "repoName": "argus",
@@ -475,7 +475,7 @@
           "pullRequests": 3,
           "issues": 5,
           "prComments": 7,
-          "issueComments": 129
+          "issueComments": 128
         },
         {
           "repoName": "scylla-ccm",
@@ -542,8 +542,8 @@
         "totalCommits": 258,
         "totalPRs": 111,
         "totalIssues": 36,
-        "totalPRComments": 630,
-        "totalIssueComments": 919
+        "totalPRComments": 629,
+        "totalIssueComments": 912
       }
     },
     {
@@ -1008,10 +1008,10 @@
           "description": "Create book from markdown files. Like Gitbook but implemented in Rust",
           "url": "https://github.com/rust-lang/mdBook",
           "commits": 4,
-          "pullRequests": 4,
-          "issues": 5,
+          "pullRequests": 3,
+          "issues": 2,
           "prComments": 0,
-          "issueComments": 11
+          "issueComments": 9
         },
         {
           "repoName": "sql",
@@ -1037,7 +1037,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 110,
+          "commits": 102,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1115,11 +1115,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 245,
-        "totalPRs": 10,
-        "totalIssues": 8,
+        "totalCommits": 237,
+        "totalPRs": 9,
+        "totalIssues": 5,
         "totalPRComments": 3,
-        "totalIssueComments": 31
+        "totalIssueComments": 29
       }
     },
     {
@@ -1276,16 +1276,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1731,
-    "totalPRs": 311,
-    "totalIssues": 195,
-    "totalPRComments": 1299,
-    "totalIssueComments": 1565,
+    "totalCommits": 1723,
+    "totalPRs": 310,
+    "totalIssues": 191,
+    "totalPRComments": 1298,
+    "totalIssueComments": 1553,
     "totalRepos": 80,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-22 to 2026-01-18",
+    "analysisTimeframe": "2025-07-23 to 2026-01-19",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
