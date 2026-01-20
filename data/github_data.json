@@ -97,7 +97,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 94,
+          "commits": 92,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -121,7 +121,7 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 2
+          "issueComments": 1
         },
         {
           "repoName": "site",
@@ -165,11 +165,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 128,
+        "totalCommits": 126,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 58
+        "totalIssueComments": 57
       }
     },
     {
@@ -297,9 +297,9 @@
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Checker",
           "commits": 5,
           "pullRequests": 2,
-          "issues": 2,
+          "issues": 1,
           "prComments": 1,
-          "issueComments": 17
+          "issueComments": 13
         },
         {
           "repoName": "inspector",
@@ -415,9 +415,9 @@
       "summary": {
         "totalCommits": 125,
         "totalPRs": 24,
-        "totalIssues": 73,
+        "totalIssues": 72,
         "totalPRComments": 549,
-        "totalIssueComments": 338
+        "totalIssueComments": 334
       }
     },
     {
@@ -441,11 +441,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 212,
-          "pullRequests": 88,
+          "commits": 210,
+          "pullRequests": 86,
           "issues": 20,
-          "prComments": 561,
-          "issueComments": 665
+          "prComments": 558,
+          "issueComments": 659
         },
         {
           "repoName": "argus",
@@ -475,7 +475,7 @@
           "pullRequests": 3,
           "issues": 5,
           "prComments": 7,
-          "issueComments": 128
+          "issueComments": 127
         },
         {
           "repoName": "scylla-ccm",
@@ -539,11 +539,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 258,
-        "totalPRs": 111,
+        "totalCommits": 256,
+        "totalPRs": 109,
         "totalIssues": 36,
-        "totalPRComments": 629,
-        "totalIssueComments": 912
+        "totalPRComments": 626,
+        "totalIssueComments": 905
       }
     },
     {
@@ -743,7 +743,7 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 11
+          "issueComments": 10
         },
         {
           "repoName": "create-node-lib",
@@ -841,7 +841,7 @@
         "totalPRs": 59,
         "totalIssues": 27,
         "totalPRComments": 22,
-        "totalIssueComments": 86
+        "totalIssueComments": 85
       }
     },
     {
@@ -1009,7 +1009,7 @@
           "url": "https://github.com/rust-lang/mdBook",
           "commits": 4,
           "pullRequests": 3,
-          "issues": 2,
+          "issues": 1,
           "prComments": 0,
           "issueComments": 9
         },
@@ -1037,7 +1037,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 102,
+          "commits": 99,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1115,9 +1115,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 237,
+        "totalCommits": 234,
         "totalPRs": 9,
-        "totalIssues": 5,
+        "totalIssues": 4,
         "totalPRComments": 3,
         "totalIssueComments": 29
       }
@@ -1276,16 +1276,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1723,
-    "totalPRs": 310,
-    "totalIssues": 191,
-    "totalPRComments": 1298,
-    "totalIssueComments": 1553,
+    "totalCommits": 1716,
+    "totalPRs": 308,
+    "totalIssues": 189,
+    "totalPRComments": 1295,
+    "totalIssueComments": 1540,
     "totalRepos": 80,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-23 to 2026-01-19",
+    "analysisTimeframe": "2025-07-24 to 2026-01-20",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
