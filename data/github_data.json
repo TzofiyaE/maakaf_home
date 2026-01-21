@@ -101,7 +101,7 @@
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 17
+          "issueComments": 16
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -112,16 +112,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
-        },
-        {
-          "repoName": "maakaf_home_backend",
-          "description": null,
-          "url": "https://github.com/Maakaf/maakaf_home_backend",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
         },
         {
           "repoName": "site",
@@ -169,7 +159,7 @@
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 57
+        "totalIssueComments": 55
       }
     },
     {
@@ -275,7 +265,7 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 115,
+          "commits": 114,
           "pullRequests": 19,
           "issues": 63,
           "prComments": 408,
@@ -413,7 +403,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 125,
+        "totalCommits": 124,
         "totalPRs": 24,
         "totalIssues": 72,
         "totalPRComments": 549,
@@ -441,11 +431,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 210,
-          "pullRequests": 86,
+          "commits": 205,
+          "pullRequests": 82,
           "issues": 20,
-          "prComments": 558,
-          "issueComments": 659
+          "prComments": 555,
+          "issueComments": 647
         },
         {
           "repoName": "argus",
@@ -518,16 +508,6 @@
           "issueComments": 6
         },
         {
-          "repoName": "scylla-monitoring",
-          "description": "Simple monitoring of Scylla with Grafana",
-          "url": "https://github.com/scylladb/scylla-monitoring",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "gemini",
           "description": "Test data integrity by comparing against an Oracle running in parallel",
           "url": "https://github.com/scylladb/gemini",
@@ -539,11 +519,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 256,
-        "totalPRs": 109,
+        "totalCommits": 250,
+        "totalPRs": 104,
         "totalIssues": 36,
-        "totalPRComments": 626,
-        "totalIssueComments": 905
+        "totalPRComments": 623,
+        "totalIssueComments": 893
       }
     },
     {
@@ -1037,7 +1017,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 99,
+          "commits": 94,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1115,7 +1095,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 234,
+        "totalCommits": 229,
         "totalPRs": 9,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1276,16 +1256,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1716,
-    "totalPRs": 308,
+    "totalCommits": 1704,
+    "totalPRs": 303,
     "totalIssues": 189,
-    "totalPRComments": 1295,
-    "totalIssueComments": 1540,
-    "totalRepos": 80,
+    "totalPRComments": 1292,
+    "totalIssueComments": 1526,
+    "totalRepos": 78,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-24 to 2026-01-20",
+    "analysisTimeframe": "2025-07-25 to 2026-01-21",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
