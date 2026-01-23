@@ -97,11 +97,11 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 92,
+          "commits": 87,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 16
+          "issueComments": 13
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -155,11 +155,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 126,
+        "totalCommits": 121,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 55
+        "totalIssueComments": 52
       }
     },
     {
@@ -435,7 +435,7 @@
           "pullRequests": 82,
           "issues": 20,
           "prComments": 555,
-          "issueComments": 647
+          "issueComments": 646
         },
         {
           "repoName": "argus",
@@ -523,7 +523,7 @@
         "totalPRs": 104,
         "totalIssues": 36,
         "totalPRComments": 623,
-        "totalIssueComments": 893
+        "totalIssueComments": 892
       }
     },
     {
@@ -987,7 +987,7 @@
           "repoName": "mdBook",
           "description": "Create book from markdown files. Like Gitbook but implemented in Rust",
           "url": "https://github.com/rust-lang/mdBook",
-          "commits": 4,
+          "commits": 3,
           "pullRequests": 3,
           "issues": 1,
           "prComments": 0,
@@ -1095,7 +1095,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 229,
+        "totalCommits": 228,
         "totalPRs": 9,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1256,16 +1256,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1704,
+    "totalCommits": 1698,
     "totalPRs": 303,
     "totalIssues": 188,
     "totalPRComments": 1289,
-    "totalIssueComments": 1523,
+    "totalIssueComments": 1519,
     "totalRepos": 78,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-26 to 2026-01-22",
+    "analysisTimeframe": "2025-07-27 to 2026-01-23",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
