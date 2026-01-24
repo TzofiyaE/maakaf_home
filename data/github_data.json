@@ -299,7 +299,7 @@
           "pullRequests": 2,
           "issues": 0,
           "prComments": 1,
-          "issueComments": 13
+          "issueComments": 12
         },
         {
           "repoName": "Hacktoberfest-25-Projects",
@@ -407,7 +407,7 @@
         "totalPRs": 24,
         "totalIssues": 71,
         "totalPRComments": 549,
-        "totalIssueComments": 334
+        "totalIssueComments": 333
       }
     },
     {
@@ -431,11 +431,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 205,
-          "pullRequests": 82,
+          "commits": 203,
+          "pullRequests": 81,
           "issues": 20,
-          "prComments": 555,
-          "issueComments": 646
+          "prComments": 543,
+          "issueComments": 642
         },
         {
           "repoName": "argus",
@@ -463,7 +463,7 @@
           "url": "https://github.com/scylladb/scylladb",
           "commits": 2,
           "pullRequests": 3,
-          "issues": 5,
+          "issues": 4,
           "prComments": 7,
           "issueComments": 127
         },
@@ -519,11 +519,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 250,
-        "totalPRs": 104,
-        "totalIssues": 36,
-        "totalPRComments": 623,
-        "totalIssueComments": 892
+        "totalCommits": 248,
+        "totalPRs": 103,
+        "totalIssues": 35,
+        "totalPRComments": 611,
+        "totalIssueComments": 888
       }
     },
     {
@@ -550,7 +550,7 @@
           "commits": 80,
           "pullRequests": 16,
           "issues": 9,
-          "prComments": 33,
+          "prComments": 30,
           "issueComments": 50
         }
       ],
@@ -558,7 +558,7 @@
         "totalCommits": 80,
         "totalPRs": 16,
         "totalIssues": 9,
-        "totalPRComments": 33,
+        "totalPRComments": 30,
         "totalIssueComments": 50
       }
     },
@@ -619,7 +619,7 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 92,
+          "commits": 90,
           "pullRequests": 17,
           "issues": 9,
           "prComments": 0,
@@ -629,8 +629,8 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 71,
-          "pullRequests": 28,
+          "commits": 69,
+          "pullRequests": 27,
           "issues": 8,
           "prComments": 17,
           "issueComments": 43
@@ -639,7 +639,7 @@
           "repoName": "mcp-server-nodejs-api-docs",
           "description": "MCP Server for Node.js API documentation",
           "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 6,
+          "commits": 4,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
@@ -674,16 +674,6 @@
           "issues": 2,
           "prComments": 0,
           "issueComments": 5
-        },
-        {
-          "repoName": "is-website-vulnerable",
-          "description": "finds publicly known security vulnerabilities in a website's frontend JavaScript libraries",
-          "url": "https://github.com/lirantal/is-website-vulnerable",
-          "commits": 3,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
         },
         {
           "repoName": "mcp-scan",
@@ -724,6 +714,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 10
+        },
+        {
+          "repoName": "is-website-vulnerable",
+          "description": "finds publicly known security vulnerabilities in a website's frontend JavaScript libraries",
+          "url": "https://github.com/lirantal/is-website-vulnerable",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         },
         {
           "repoName": "create-node-lib",
@@ -817,8 +817,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 256,
-        "totalPRs": 59,
+        "totalCommits": 248,
+        "totalPRs": 57,
         "totalIssues": 27,
         "totalPRComments": 22,
         "totalIssueComments": 85
@@ -1120,16 +1120,6 @@
       },
       "repos": [
         {
-          "repoName": "caspion",
-          "description": "Automated budget tracking from Israeli financial institutions",
-          "url": "https://github.com/brafdlog/caspion",
-          "commits": 6,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 6,
-          "issueComments": 4
-        },
-        {
           "repoName": "BcsStudent",
           "description": "My blog, mainly about programming, in Hebrew",
           "url": "https://github.com/baruchiro/BcsStudent",
@@ -1158,6 +1148,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "caspion",
+          "description": "Automated budget tracking from Israeli financial institutions",
+          "url": "https://github.com/brafdlog/caspion",
+          "commits": 6,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 6,
+          "issueComments": 3
         },
         {
           "repoName": "translations",
@@ -1215,7 +1215,7 @@
         "totalPRs": 8,
         "totalIssues": 2,
         "totalPRComments": 27,
-        "totalIssueComments": 19
+        "totalIssueComments": 18
       }
     },
     {
@@ -1256,16 +1256,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1698,
-    "totalPRs": 303,
-    "totalIssues": 188,
-    "totalPRComments": 1289,
-    "totalIssueComments": 1519,
+    "totalCommits": 1688,
+    "totalPRs": 300,
+    "totalIssues": 187,
+    "totalPRComments": 1274,
+    "totalIssueComments": 1513,
     "totalRepos": 78,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-27 to 2026-01-23",
+    "analysisTimeframe": "2025-07-28 to 2026-01-24",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
