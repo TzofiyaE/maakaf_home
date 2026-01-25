@@ -102,7 +102,7 @@ body > div {
 
 .community-charts{
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* תמיד 3 בשורה */
+  grid-template-columns: repeat(2, 1fr); /* תמיד 3 בשורה */
   gap: 16px;
   align-items: stretch;
 }
