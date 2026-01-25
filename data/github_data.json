@@ -229,7 +229,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 471,
+          "commits": 467,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -237,7 +237,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 471,
+        "totalCommits": 467,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -434,8 +434,8 @@
           "commits": 203,
           "pullRequests": 81,
           "issues": 20,
-          "prComments": 543,
-          "issueComments": 642
+          "prComments": 537,
+          "issueComments": 639
         },
         {
           "repoName": "argus",
@@ -522,8 +522,8 @@
         "totalCommits": 248,
         "totalPRs": 103,
         "totalIssues": 35,
-        "totalPRComments": 611,
-        "totalIssueComments": 888
+        "totalPRComments": 605,
+        "totalIssueComments": 885
       }
     },
     {
@@ -629,7 +629,7 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 69,
+          "commits": 68,
           "pullRequests": 27,
           "issues": 8,
           "prComments": 17,
@@ -639,11 +639,11 @@
           "repoName": "mcp-server-nodejs-api-docs",
           "description": "MCP Server for Node.js API documentation",
           "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 4,
+          "commits": 0,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
-          "issueComments": 3
+          "issueComments": 1
         },
         {
           "repoName": "mastra",
@@ -719,7 +719,7 @@
           "repoName": "is-website-vulnerable",
           "description": "finds publicly known security vulnerabilities in a website's frontend JavaScript libraries",
           "url": "https://github.com/lirantal/is-website-vulnerable",
-          "commits": 1,
+          "commits": 0,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -817,11 +817,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 248,
+        "totalCommits": 242,
         "totalPRs": 57,
         "totalIssues": 27,
         "totalPRComments": 22,
-        "totalIssueComments": 85
+        "totalIssueComments": 83
       }
     },
     {
@@ -1256,16 +1256,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1688,
+    "totalCommits": 1678,
     "totalPRs": 300,
     "totalIssues": 187,
-    "totalPRComments": 1274,
-    "totalIssueComments": 1513,
+    "totalPRComments": 1268,
+    "totalIssueComments": 1508,
     "totalRepos": 78,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-28 to 2026-01-24",
+    "analysisTimeframe": "2025-07-29 to 2026-01-25",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
