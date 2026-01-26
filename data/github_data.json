@@ -97,7 +97,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 87,
+          "commits": 86,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -155,7 +155,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 121,
+        "totalCommits": 120,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -229,7 +229,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 467,
+          "commits": 460,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -237,7 +237,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 467,
+        "totalCommits": 460,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -265,7 +265,7 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 114,
+          "commits": 112,
           "pullRequests": 19,
           "issues": 63,
           "prComments": 408,
@@ -403,7 +403,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 124,
+        "totalCommits": 122,
         "totalPRs": 24,
         "totalIssues": 71,
         "totalPRComments": 549,
@@ -431,11 +431,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 203,
+          "commits": 202,
           "pullRequests": 81,
           "issues": 20,
-          "prComments": 537,
-          "issueComments": 639
+          "prComments": 526,
+          "issueComments": 625
         },
         {
           "repoName": "argus",
@@ -445,17 +445,17 @@
           "pullRequests": 2,
           "issues": 6,
           "prComments": 5,
-          "issueComments": 42
+          "issueComments": 41
         },
         {
           "repoName": "scylla-cqlsh",
           "description": "A fork of the cqlsh code",
           "url": "https://github.com/scylladb/scylla-cqlsh",
           "commits": 15,
-          "pullRequests": 6,
+          "pullRequests": 5,
           "issues": 4,
           "prComments": 17,
-          "issueComments": 19
+          "issueComments": 18
         },
         {
           "repoName": "scylladb",
@@ -465,7 +465,7 @@
           "pullRequests": 3,
           "issues": 4,
           "prComments": 7,
-          "issueComments": 127
+          "issueComments": 126
         },
         {
           "repoName": "scylla-ccm",
@@ -519,11 +519,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 248,
-        "totalPRs": 103,
+        "totalCommits": 247,
+        "totalPRs": 102,
         "totalIssues": 35,
-        "totalPRComments": 605,
-        "totalIssueComments": 885
+        "totalPRComments": 594,
+        "totalIssueComments": 868
       }
     },
     {
@@ -736,16 +736,6 @@
           "issueComments": 1
         },
         {
-          "repoName": "mcp-server-npm-goof",
-          "description": "An MCP server for NPM JavaScript Package Management tools",
-          "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
-          "commits": 8,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "user-docs",
           "description": "Gitbook documentation repo.",
           "url": "https://github.com/snyk/user-docs",
@@ -770,6 +760,16 @@
           "description": "A demo repo showcasing Snyk's IAC offering for terraform",
           "url": "https://github.com/snyk-labs/terraform-goof",
           "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "mcp-server-npm-goof",
+          "description": "An MCP server for NPM JavaScript Package Management tools",
+          "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
+          "commits": 5,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -817,7 +817,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 242,
+        "totalCommits": 239,
         "totalPRs": 57,
         "totalIssues": 27,
         "totalPRComments": 22,
@@ -1136,18 +1136,8 @@
           "commits": 6,
           "pullRequests": 2,
           "issues": 0,
-          "prComments": 19,
+          "prComments": 18,
           "issueComments": 11
-        },
-        {
-          "repoName": "n8n",
-          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-          "url": "https://github.com/n8n-io/n8n",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
         },
         {
           "repoName": "caspion",
@@ -1214,8 +1204,8 @@
         "totalCommits": 41,
         "totalPRs": 8,
         "totalIssues": 2,
-        "totalPRComments": 27,
-        "totalIssueComments": 18
+        "totalPRComments": 26,
+        "totalIssueComments": 17
       }
     },
     {
@@ -1256,16 +1246,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1678,
-    "totalPRs": 300,
+    "totalCommits": 1664,
+    "totalPRs": 299,
     "totalIssues": 187,
-    "totalPRComments": 1268,
-    "totalIssueComments": 1508,
-    "totalRepos": 78,
+    "totalPRComments": 1256,
+    "totalIssueComments": 1490,
+    "totalRepos": 77,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-29 to 2026-01-25",
+    "analysisTimeframe": "2025-07-30 to 2026-01-26",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
