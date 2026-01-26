@@ -100,6 +100,51 @@ body > div {
   flex-shrink: 0;
 }
 
+.community-charts{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* תמיד 2 בשורה */
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* אותו מראה בדיוק, בלי max-width שמפרק */
+.chart-card{
+  height: 260px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 12px;
+  margin-bottom: 0;
+  min-width: 0; /* קריטי כדי למנוע גלילה/שבירה בגלל תוכן */
+}
+
+.chart-card canvas{
+  width: 100% !important;
+  height: calc(100% - 28px) !important;
+}
+
+
+/* אם יש לך KPI card ואת רוצה לשמור אותו קטן */
+.kpi-card{
+  /* אם את לא משתמשת בו כרגע אפשר למחוק, אבל לא מפריע */
+  min-width: 180px;
+}
+
+/* רספונסיבי */
+@media (max-width: 1200px){
+  .community-charts{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 768px){
+  .community-charts{ grid-template-columns: 1fr; }
+}
+
+.chart-title{
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
 /* ========================
    Responsive
 ========================= */
