@@ -97,7 +97,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 86,
+          "commits": 84,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -155,7 +155,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 120,
+        "totalCommits": 118,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -229,7 +229,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 460,
+          "commits": 459,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -237,7 +237,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 460,
+        "totalCommits": 459,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -434,8 +434,8 @@
           "commits": 202,
           "pullRequests": 81,
           "issues": 20,
-          "prComments": 526,
-          "issueComments": 625
+          "prComments": 515,
+          "issueComments": 619
         },
         {
           "repoName": "argus",
@@ -445,16 +445,16 @@
           "pullRequests": 2,
           "issues": 6,
           "prComments": 5,
-          "issueComments": 41
+          "issueComments": 38
         },
         {
           "repoName": "scylla-cqlsh",
           "description": "A fork of the cqlsh code",
           "url": "https://github.com/scylladb/scylla-cqlsh",
-          "commits": 15,
+          "commits": 13,
           "pullRequests": 5,
           "issues": 4,
-          "prComments": 17,
+          "prComments": 14,
           "issueComments": 18
         },
         {
@@ -519,11 +519,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 247,
+        "totalCommits": 245,
         "totalPRs": 102,
         "totalIssues": 35,
-        "totalPRComments": 594,
-        "totalIssueComments": 868
+        "totalPRComments": 580,
+        "totalIssueComments": 859
       }
     },
     {
@@ -1246,16 +1246,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1664,
+    "totalCommits": 1659,
     "totalPRs": 299,
     "totalIssues": 187,
-    "totalPRComments": 1256,
-    "totalIssueComments": 1490,
+    "totalPRComments": 1242,
+    "totalIssueComments": 1481,
     "totalRepos": 77,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-30 to 2026-01-26",
+    "analysisTimeframe": "2025-07-31 to 2026-01-27",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
