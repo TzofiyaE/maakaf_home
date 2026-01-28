@@ -97,7 +97,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 84,
+          "commits": 83,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -155,7 +155,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 118,
+        "totalCommits": 117,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -432,10 +432,10 @@
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
           "commits": 202,
-          "pullRequests": 81,
+          "pullRequests": 80,
           "issues": 20,
-          "prComments": 515,
-          "issueComments": 619
+          "prComments": 509,
+          "issueComments": 609
         },
         {
           "repoName": "argus",
@@ -445,7 +445,7 @@
           "pullRequests": 2,
           "issues": 6,
           "prComments": 5,
-          "issueComments": 38
+          "issueComments": 37
         },
         {
           "repoName": "scylla-cqlsh",
@@ -465,7 +465,7 @@
           "pullRequests": 3,
           "issues": 4,
           "prComments": 7,
-          "issueComments": 126
+          "issueComments": 122
         },
         {
           "repoName": "scylla-ccm",
@@ -520,10 +520,10 @@
       ],
       "summary": {
         "totalCommits": 245,
-        "totalPRs": 102,
+        "totalPRs": 101,
         "totalIssues": 35,
-        "totalPRComments": 580,
-        "totalIssueComments": 859
+        "totalPRComments": 574,
+        "totalIssueComments": 844
       }
     },
     {
@@ -649,8 +649,8 @@
           "repoName": "mastra",
           "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
           "url": "https://github.com/mastra-ai/mastra",
-          "commits": 1,
-          "pullRequests": 1,
+          "commits": 0,
+          "pullRequests": 0,
           "issues": 3,
           "prComments": 0,
           "issueComments": 8
@@ -817,8 +817,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 239,
-        "totalPRs": 57,
+        "totalCommits": 238,
+        "totalPRs": 56,
         "totalIssues": 27,
         "totalPRComments": 22,
         "totalIssueComments": 83
@@ -1246,16 +1246,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1659,
-    "totalPRs": 299,
+    "totalCommits": 1657,
+    "totalPRs": 297,
     "totalIssues": 187,
-    "totalPRComments": 1242,
-    "totalIssueComments": 1481,
+    "totalPRComments": 1236,
+    "totalIssueComments": 1466,
     "totalRepos": 77,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-07-31 to 2026-01-27",
+    "analysisTimeframe": "2025-08-01 to 2026-01-28",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
