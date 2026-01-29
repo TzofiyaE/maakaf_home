@@ -97,7 +97,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 83,
+          "commits": 82,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -155,7 +155,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 117,
+        "totalCommits": 116,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -435,7 +435,7 @@
           "pullRequests": 80,
           "issues": 20,
           "prComments": 509,
-          "issueComments": 609
+          "issueComments": 608
         },
         {
           "repoName": "argus",
@@ -523,7 +523,7 @@
         "totalPRs": 101,
         "totalIssues": 35,
         "totalPRComments": 574,
-        "totalIssueComments": 844
+        "totalIssueComments": 843
       }
     },
     {
@@ -1150,16 +1150,6 @@
           "issueComments": 3
         },
         {
-          "repoName": "translations",
-          "description": "Translations for actualbudget/actual",
-          "url": "https://github.com/actualbudget/translations",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "moneyman",
           "description": "Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)",
           "url": "https://github.com/daniel-hauser/moneyman",
@@ -1201,7 +1191,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 41,
+        "totalCommits": 40,
         "totalPRs": 8,
         "totalIssues": 2,
         "totalPRComments": 26,
@@ -1246,16 +1236,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1657,
+    "totalCommits": 1655,
     "totalPRs": 297,
     "totalIssues": 187,
     "totalPRComments": 1236,
-    "totalIssueComments": 1466,
-    "totalRepos": 77,
+    "totalIssueComments": 1465,
+    "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-01 to 2026-01-28",
+    "analysisTimeframe": "2025-08-02 to 2026-01-29",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
