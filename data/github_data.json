@@ -97,7 +97,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 82,
+          "commits": 76,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -155,7 +155,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 116,
+        "totalCommits": 110,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -629,11 +629,11 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 68,
-          "pullRequests": 27,
+          "commits": 64,
+          "pullRequests": 26,
           "issues": 8,
           "prComments": 17,
-          "issueComments": 43
+          "issueComments": 42
         },
         {
           "repoName": "mcp-server-nodejs-api-docs",
@@ -817,11 +817,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 238,
-        "totalPRs": 56,
+        "totalCommits": 234,
+        "totalPRs": 55,
         "totalIssues": 27,
         "totalPRComments": 22,
-        "totalIssueComments": 83
+        "totalIssueComments": 82
       }
     },
     {
@@ -1017,7 +1017,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 94,
+          "commits": 92,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1095,7 +1095,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 228,
+        "totalCommits": 226,
         "totalPRs": 9,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1236,16 +1236,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1655,
-    "totalPRs": 297,
+    "totalCommits": 1643,
+    "totalPRs": 296,
     "totalIssues": 187,
     "totalPRComments": 1236,
-    "totalIssueComments": 1465,
+    "totalIssueComments": 1464,
     "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-02 to 2026-01-29",
+    "analysisTimeframe": "2025-08-03 to 2026-01-30",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
