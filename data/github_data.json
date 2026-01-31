@@ -229,7 +229,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 459,
+          "commits": 457,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -237,7 +237,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 459,
+        "totalCommits": 457,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -434,8 +434,8 @@
           "commits": 202,
           "pullRequests": 80,
           "issues": 20,
-          "prComments": 509,
-          "issueComments": 608
+          "prComments": 508,
+          "issueComments": 607
         },
         {
           "repoName": "argus",
@@ -522,8 +522,8 @@
         "totalCommits": 245,
         "totalPRs": 101,
         "totalIssues": 35,
-        "totalPRComments": 574,
-        "totalIssueComments": 843
+        "totalPRComments": 573,
+        "totalIssueComments": 842
       }
     },
     {
@@ -626,16 +626,6 @@
           "issueComments": 10
         },
         {
-          "repoName": "npq",
-          "description": "safely install npm packages by auditing them pre-install stage",
-          "url": "https://github.com/lirantal/npq",
-          "commits": 64,
-          "pullRequests": 26,
-          "issues": 8,
-          "prComments": 17,
-          "issueComments": 42
-        },
-        {
           "repoName": "mcp-server-nodejs-api-docs",
           "description": "MCP Server for Node.js API documentation",
           "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
@@ -644,6 +634,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "npq",
+          "description": "safely install npm packages by auditing them pre-install stage",
+          "url": "https://github.com/lirantal/npq",
+          "commits": 56,
+          "pullRequests": 23,
+          "issues": 7,
+          "prComments": 10,
+          "issueComments": 23
         },
         {
           "repoName": "mastra",
@@ -817,11 +817,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 234,
-        "totalPRs": 55,
-        "totalIssues": 27,
-        "totalPRComments": 22,
-        "totalIssueComments": 82
+        "totalCommits": 226,
+        "totalPRs": 52,
+        "totalIssues": 26,
+        "totalPRComments": 15,
+        "totalIssueComments": 63
       }
     },
     {
@@ -927,7 +927,7 @@
           "repoName": "code-maven.com",
           "description": "The content of the Code-Maven site",
           "url": "https://github.com/szabgab/code-maven.com",
-          "commits": 59,
+          "commits": 57,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1095,7 +1095,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 226,
+        "totalCommits": 224,
         "totalPRs": 9,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1133,11 +1133,11 @@
           "repoName": "israeli-bank-scrapers",
           "description": "Provide scrapers for all major Israeli banks and credit card companies",
           "url": "https://github.com/eshaham/israeli-bank-scrapers",
-          "commits": 6,
-          "pullRequests": 2,
+          "commits": 5,
+          "pullRequests": 1,
           "issues": 0,
-          "prComments": 18,
-          "issueComments": 11
+          "prComments": 16,
+          "issueComments": 8
         },
         {
           "repoName": "caspion",
@@ -1191,11 +1191,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 40,
-        "totalPRs": 8,
+        "totalCommits": 39,
+        "totalPRs": 7,
         "totalIssues": 2,
-        "totalPRComments": 26,
-        "totalIssueComments": 17
+        "totalPRComments": 24,
+        "totalIssueComments": 14
       }
     },
     {
@@ -1236,16 +1236,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1643,
-    "totalPRs": 296,
-    "totalIssues": 187,
-    "totalPRComments": 1236,
-    "totalIssueComments": 1464,
+    "totalCommits": 1630,
+    "totalPRs": 292,
+    "totalIssues": 186,
+    "totalPRComments": 1226,
+    "totalIssueComments": 1441,
     "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-03 to 2026-01-30",
+    "analysisTimeframe": "2025-08-04 to 2026-01-31",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
