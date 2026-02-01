@@ -97,11 +97,11 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 76,
+          "commits": 75,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 13
+          "issueComments": 12
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -155,11 +155,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 110,
+        "totalCommits": 109,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 52
+        "totalIssueComments": 51
       }
     },
     {
@@ -180,16 +180,6 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 3,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
@@ -198,12 +188,22 @@
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 62,
-        "totalPRs": 31,
-        "totalIssues": 1,
+        "totalCommits": 60,
+        "totalPRs": 29,
+        "totalIssues": 0,
         "totalPRComments": 3,
         "totalIssueComments": 1
       }
@@ -265,7 +265,7 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 112,
+          "commits": 111,
           "pullRequests": 19,
           "issues": 63,
           "prComments": 408,
@@ -403,7 +403,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 122,
+        "totalCommits": 121,
         "totalPRs": 24,
         "totalIssues": 71,
         "totalPRComments": 549,
@@ -432,10 +432,10 @@
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
           "commits": 202,
-          "pullRequests": 80,
+          "pullRequests": 79,
           "issues": 20,
-          "prComments": 508,
-          "issueComments": 607
+          "prComments": 504,
+          "issueComments": 601
         },
         {
           "repoName": "argus",
@@ -520,10 +520,10 @@
       ],
       "summary": {
         "totalCommits": 245,
-        "totalPRs": 101,
+        "totalPRs": 100,
         "totalIssues": 35,
-        "totalPRComments": 573,
-        "totalIssueComments": 842
+        "totalPRComments": 569,
+        "totalIssueComments": 836
       }
     },
     {
@@ -547,19 +547,19 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 80,
-          "pullRequests": 16,
+          "commits": 78,
+          "pullRequests": 15,
           "issues": 9,
           "prComments": 30,
-          "issueComments": 50
+          "issueComments": 49
         }
       ],
       "summary": {
-        "totalCommits": 80,
-        "totalPRs": 16,
+        "totalCommits": 78,
+        "totalPRs": 15,
         "totalIssues": 9,
         "totalPRComments": 30,
-        "totalIssueComments": 50
+        "totalIssueComments": 49
       }
     },
     {
@@ -639,11 +639,11 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 56,
+          "commits": 53,
           "pullRequests": 23,
           "issues": 7,
           "prComments": 10,
-          "issueComments": 23
+          "issueComments": 22
         },
         {
           "repoName": "mastra",
@@ -729,7 +729,7 @@
           "repoName": "create-node-lib",
           "description": "Scaffold a batteries-included Node.js library project with docs, tests, semantic releases and more",
           "url": "https://github.com/lirantal/create-node-lib",
-          "commits": 10,
+          "commits": 9,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -817,11 +817,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 226,
+        "totalCommits": 222,
         "totalPRs": 52,
         "totalIssues": 26,
         "totalPRComments": 15,
-        "totalIssueComments": 63
+        "totalIssueComments": 62
       }
     },
     {
@@ -927,7 +927,7 @@
           "repoName": "code-maven.com",
           "description": "The content of the Code-Maven site",
           "url": "https://github.com/szabgab/code-maven.com",
-          "commits": 57,
+          "commits": 56,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1095,7 +1095,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 224,
+        "totalCommits": 223,
         "totalPRs": 9,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1136,7 +1136,7 @@
           "commits": 5,
           "pullRequests": 1,
           "issues": 0,
-          "prComments": 16,
+          "prComments": 13,
           "issueComments": 8
         },
         {
@@ -1194,7 +1194,7 @@
         "totalCommits": 39,
         "totalPRs": 7,
         "totalIssues": 2,
-        "totalPRComments": 24,
+        "totalPRComments": 21,
         "totalIssueComments": 14
       }
     },
@@ -1236,16 +1236,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1630,
-    "totalPRs": 292,
-    "totalIssues": 186,
-    "totalPRComments": 1226,
-    "totalIssueComments": 1441,
+    "totalCommits": 1619,
+    "totalPRs": 288,
+    "totalIssues": 185,
+    "totalPRComments": 1219,
+    "totalIssueComments": 1432,
     "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-04 to 2026-01-31",
+    "analysisTimeframe": "2025-08-05 to 2026-02-01",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
