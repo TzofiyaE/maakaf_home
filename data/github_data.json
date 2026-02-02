@@ -97,11 +97,11 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 75,
+          "commits": 72,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 12
+          "issueComments": 11
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -155,11 +155,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 109,
+        "totalCommits": 106,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 51
+        "totalIssueComments": 50
       }
     },
     {
@@ -229,7 +229,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 457,
+          "commits": 453,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -237,7 +237,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 457,
+        "totalCommits": 453,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -266,7 +266,7 @@
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
           "commits": 111,
-          "pullRequests": 19,
+          "pullRequests": 18,
           "issues": 63,
           "prComments": 408,
           "issueComments": 318
@@ -404,7 +404,7 @@
       ],
       "summary": {
         "totalCommits": 121,
-        "totalPRs": 24,
+        "totalPRs": 23,
         "totalIssues": 71,
         "totalPRComments": 549,
         "totalIssueComments": 333
@@ -431,11 +431,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 202,
-          "pullRequests": 79,
+          "commits": 198,
+          "pullRequests": 78,
           "issues": 20,
-          "prComments": 504,
-          "issueComments": 601
+          "prComments": 495,
+          "issueComments": 595
         },
         {
           "repoName": "argus",
@@ -443,19 +443,9 @@
           "url": "https://github.com/scylladb/argus",
           "commits": 4,
           "pullRequests": 2,
-          "issues": 6,
+          "issues": 5,
           "prComments": 5,
           "issueComments": 37
-        },
-        {
-          "repoName": "scylla-cqlsh",
-          "description": "A fork of the cqlsh code",
-          "url": "https://github.com/scylladb/scylla-cqlsh",
-          "commits": 13,
-          "pullRequests": 5,
-          "issues": 4,
-          "prComments": 14,
-          "issueComments": 18
         },
         {
           "repoName": "scylladb",
@@ -465,7 +455,7 @@
           "pullRequests": 3,
           "issues": 4,
           "prComments": 7,
-          "issueComments": 122
+          "issueComments": 121
         },
         {
           "repoName": "scylla-ccm",
@@ -508,6 +498,16 @@
           "issueComments": 6
         },
         {
+          "repoName": "scylla-cqlsh",
+          "description": "A fork of the cqlsh code",
+          "url": "https://github.com/scylladb/scylla-cqlsh",
+          "commits": 11,
+          "pullRequests": 4,
+          "issues": 4,
+          "prComments": 14,
+          "issueComments": 16
+        },
+        {
           "repoName": "gemini",
           "description": "Test data integrity by comparing against an Oracle running in parallel",
           "url": "https://github.com/scylladb/gemini",
@@ -519,11 +519,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 245,
-        "totalPRs": 100,
-        "totalIssues": 35,
-        "totalPRComments": 569,
-        "totalIssueComments": 836
+        "totalCommits": 239,
+        "totalPRs": 98,
+        "totalIssues": 34,
+        "totalPRComments": 560,
+        "totalIssueComments": 827
       }
     },
     {
@@ -550,7 +550,7 @@
           "commits": 78,
           "pullRequests": 15,
           "issues": 9,
-          "prComments": 30,
+          "prComments": 29,
           "issueComments": 49
         }
       ],
@@ -558,7 +558,7 @@
         "totalCommits": 78,
         "totalPRs": 15,
         "totalIssues": 9,
-        "totalPRComments": 30,
+        "totalPRComments": 29,
         "totalIssueComments": 49
       }
     },
@@ -624,16 +624,6 @@
           "issues": 9,
           "prComments": 0,
           "issueComments": 10
-        },
-        {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 1
         },
         {
           "repoName": "npq",
@@ -719,6 +709,16 @@
           "repoName": "is-website-vulnerable",
           "description": "finds publicly known security vulnerabilities in a website's frontend JavaScript libraries",
           "url": "https://github.com/lirantal/is-website-vulnerable",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
           "commits": 0,
           "pullRequests": 0,
           "issues": 0,
@@ -819,7 +819,7 @@
       "summary": {
         "totalCommits": 222,
         "totalPRs": 52,
-        "totalIssues": 26,
+        "totalIssues": 25,
         "totalPRComments": 15,
         "totalIssueComments": 62
       }
@@ -1236,16 +1236,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1619,
-    "totalPRs": 288,
-    "totalIssues": 185,
-    "totalPRComments": 1219,
-    "totalIssueComments": 1432,
+    "totalCommits": 1606,
+    "totalPRs": 285,
+    "totalIssues": 183,
+    "totalPRComments": 1209,
+    "totalIssueComments": 1422,
     "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-05 to 2026-02-01",
+    "analysisTimeframe": "2025-08-06 to 2026-02-02",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
