@@ -229,7 +229,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 453,
+          "commits": 451,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -237,7 +237,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 453,
+        "totalCommits": 451,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -431,11 +431,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 195,
-          "pullRequests": 76,
+          "commits": 185,
+          "pullRequests": 75,
           "issues": 20,
-          "prComments": 485,
-          "issueComments": 585
+          "prComments": 475,
+          "issueComments": 560
         },
         {
           "repoName": "argus",
@@ -445,7 +445,7 @@
           "pullRequests": 2,
           "issues": 5,
           "prComments": 5,
-          "issueComments": 37
+          "issueComments": 36
         },
         {
           "repoName": "scylladb",
@@ -519,11 +519,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 234,
-        "totalPRs": 96,
+        "totalCommits": 224,
+        "totalPRs": 95,
         "totalIssues": 34,
-        "totalPRComments": 550,
-        "totalIssueComments": 816
+        "totalPRComments": 540,
+        "totalIssueComments": 790
       }
     },
     {
@@ -619,11 +619,11 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 90,
+          "commits": 80,
           "pullRequests": 17,
-          "issues": 9,
+          "issues": 8,
           "prComments": 0,
-          "issueComments": 10
+          "issueComments": 7
         },
         {
           "repoName": "npq",
@@ -817,11 +817,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 222,
+        "totalCommits": 212,
         "totalPRs": 52,
-        "totalIssues": 25,
+        "totalIssues": 24,
         "totalPRComments": 15,
-        "totalIssueComments": 62
+        "totalIssueComments": 59
       }
     },
     {
@@ -1017,7 +1017,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 90,
+          "commits": 87,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1095,7 +1095,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 221,
+        "totalCommits": 218,
         "totalPRs": 9,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1123,7 +1123,7 @@
           "repoName": "BcsStudent",
           "description": "My blog, mainly about programming, in Hebrew",
           "url": "https://github.com/baruchiro/BcsStudent",
-          "commits": 21,
+          "commits": 17,
           "pullRequests": 3,
           "issues": 1,
           "prComments": 1,
@@ -1133,11 +1133,11 @@
           "repoName": "israeli-bank-scrapers",
           "description": "Provide scrapers for all major Israeli banks and credit card companies",
           "url": "https://github.com/eshaham/israeli-bank-scrapers",
-          "commits": 5,
+          "commits": 2,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 13,
-          "issueComments": 8
+          "issueComments": 7
         },
         {
           "repoName": "caspion",
@@ -1153,8 +1153,8 @@
           "repoName": "moneyman",
           "description": "Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)",
           "url": "https://github.com/daniel-hauser/moneyman",
-          "commits": 4,
-          "pullRequests": 1,
+          "commits": 3,
+          "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
@@ -1191,11 +1191,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 39,
-        "totalPRs": 7,
+        "totalCommits": 31,
+        "totalPRs": 6,
         "totalIssues": 2,
         "totalPRComments": 21,
-        "totalIssueComments": 14
+        "totalIssueComments": 13
       }
     },
     {
@@ -1236,16 +1236,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1594,
-    "totalPRs": 283,
-    "totalIssues": 183,
-    "totalPRComments": 1199,
-    "totalIssueComments": 1411,
+    "totalCommits": 1561,
+    "totalPRs": 281,
+    "totalIssues": 182,
+    "totalPRComments": 1189,
+    "totalIssueComments": 1381,
     "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-07 to 2026-02-03",
+    "analysisTimeframe": "2025-08-08 to 2026-02-04",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
