@@ -505,7 +505,7 @@
           "pullRequests": 4,
           "issues": 4,
           "prComments": 14,
-          "issueComments": 16
+          "issueComments": 14
         },
         {
           "repoName": "gemini",
@@ -523,7 +523,7 @@
         "totalPRs": 95,
         "totalIssues": 34,
         "totalPRComments": 540,
-        "totalIssueComments": 790
+        "totalIssueComments": 788
       }
     },
     {
@@ -547,19 +547,19 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 78,
-          "pullRequests": 15,
+          "commits": 68,
+          "pullRequests": 13,
           "issues": 9,
-          "prComments": 29,
-          "issueComments": 49
+          "prComments": 28,
+          "issueComments": 47
         }
       ],
       "summary": {
-        "totalCommits": 78,
-        "totalPRs": 15,
+        "totalCommits": 68,
+        "totalPRs": 13,
         "totalIssues": 9,
-        "totalPRComments": 29,
-        "totalIssueComments": 49
+        "totalPRComments": 28,
+        "totalIssueComments": 47
       }
     },
     {
@@ -630,7 +630,7 @@
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
           "commits": 53,
-          "pullRequests": 23,
+          "pullRequests": 22,
           "issues": 7,
           "prComments": 10,
           "issueComments": 22
@@ -818,7 +818,7 @@
       ],
       "summary": {
         "totalCommits": 211,
-        "totalPRs": 52,
+        "totalPRs": 51,
         "totalIssues": 24,
         "totalPRComments": 15,
         "totalIssueComments": 58
@@ -1236,16 +1236,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1559,
-    "totalPRs": 281,
+    "totalCommits": 1549,
+    "totalPRs": 278,
     "totalIssues": 182,
-    "totalPRComments": 1189,
-    "totalIssueComments": 1380,
+    "totalPRComments": 1188,
+    "totalIssueComments": 1376,
     "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-09 to 2026-02-05",
+    "analysisTimeframe": "2025-08-10 to 2026-02-06",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
