@@ -431,11 +431,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 185,
-          "pullRequests": 75,
+          "commits": 182,
+          "pullRequests": 73,
           "issues": 20,
-          "prComments": 475,
-          "issueComments": 560
+          "prComments": 470,
+          "issueComments": 551
         },
         {
           "repoName": "argus",
@@ -452,7 +452,7 @@
           "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
           "url": "https://github.com/scylladb/scylladb",
           "commits": 2,
-          "pullRequests": 3,
+          "pullRequests": 2,
           "issues": 4,
           "prComments": 7,
           "issueComments": 120
@@ -505,7 +505,7 @@
           "pullRequests": 4,
           "issues": 4,
           "prComments": 14,
-          "issueComments": 14
+          "issueComments": 13
         },
         {
           "repoName": "gemini",
@@ -519,11 +519,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 224,
-        "totalPRs": 95,
+        "totalCommits": 221,
+        "totalPRs": 92,
         "totalIssues": 34,
-        "totalPRComments": 540,
-        "totalIssueComments": 788
+        "totalPRComments": 535,
+        "totalIssueComments": 778
       }
     },
     {
@@ -550,7 +550,7 @@
           "commits": 68,
           "pullRequests": 13,
           "issues": 9,
-          "prComments": 28,
+          "prComments": 24,
           "issueComments": 47
         }
       ],
@@ -558,7 +558,7 @@
         "totalCommits": 68,
         "totalPRs": 13,
         "totalIssues": 9,
-        "totalPRComments": 28,
+        "totalPRComments": 24,
         "totalIssueComments": 47
       }
     },
@@ -629,7 +629,7 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 53,
+          "commits": 52,
           "pullRequests": 22,
           "issues": 7,
           "prComments": 10,
@@ -817,7 +817,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 211,
+        "totalCommits": 210,
         "totalPRs": 51,
         "totalIssues": 24,
         "totalPRComments": 15,
@@ -1153,7 +1153,7 @@
           "repoName": "moneyman",
           "description": "Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)",
           "url": "https://github.com/daniel-hauser/moneyman",
-          "commits": 3,
+          "commits": 2,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1191,7 +1191,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 30,
+        "totalCommits": 29,
         "totalPRs": 6,
         "totalIssues": 2,
         "totalPRComments": 21,
@@ -1236,16 +1236,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1549,
-    "totalPRs": 278,
+    "totalCommits": 1544,
+    "totalPRs": 275,
     "totalIssues": 182,
-    "totalPRComments": 1188,
-    "totalIssueComments": 1376,
+    "totalPRComments": 1179,
+    "totalIssueComments": 1366,
     "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-10 to 2026-02-06",
+    "analysisTimeframe": "2025-08-11 to 2026-02-07",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
