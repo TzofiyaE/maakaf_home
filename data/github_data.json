@@ -97,7 +97,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 67,
+          "commits": 65,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -155,7 +155,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 101,
+        "totalCommits": 99,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -431,11 +431,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 182,
-          "pullRequests": 73,
-          "issues": 20,
-          "prComments": 470,
-          "issueComments": 551
+          "commits": 180,
+          "pullRequests": 72,
+          "issues": 19,
+          "prComments": 468,
+          "issueComments": 545
         },
         {
           "repoName": "argus",
@@ -451,11 +451,11 @@
           "repoName": "scylladb",
           "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
           "url": "https://github.com/scylladb/scylladb",
-          "commits": 2,
+          "commits": 1,
           "pullRequests": 2,
           "issues": 4,
           "prComments": 7,
-          "issueComments": 120
+          "issueComments": 119
         },
         {
           "repoName": "scylla-ccm",
@@ -519,11 +519,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 221,
-        "totalPRs": 92,
-        "totalIssues": 34,
-        "totalPRComments": 535,
-        "totalIssueComments": 778
+        "totalCommits": 218,
+        "totalPRs": 91,
+        "totalIssues": 33,
+        "totalPRComments": 533,
+        "totalIssueComments": 771
       }
     },
     {
@@ -1143,7 +1143,7 @@
           "repoName": "caspion",
           "description": "Automated budget tracking from Israeli financial institutions",
           "url": "https://github.com/brafdlog/caspion",
-          "commits": 5,
+          "commits": 4,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 6,
@@ -1191,7 +1191,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 29,
+        "totalCommits": 28,
         "totalPRs": 6,
         "totalIssues": 2,
         "totalPRComments": 21,
@@ -1236,16 +1236,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1544,
-    "totalPRs": 275,
-    "totalIssues": 182,
-    "totalPRComments": 1179,
-    "totalIssueComments": 1366,
+    "totalCommits": 1538,
+    "totalPRs": 274,
+    "totalIssues": 181,
+    "totalPRComments": 1177,
+    "totalIssueComments": 1359,
     "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-11 to 2026-02-07",
+    "analysisTimeframe": "2025-08-12 to 2026-02-08",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
