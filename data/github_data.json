@@ -25,7 +25,7 @@
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 2
+          "issueComments": 1
         },
         {
           "repoName": "friends-activity-backend",
@@ -43,7 +43,7 @@
         "totalPRs": 12,
         "totalIssues": 0,
         "totalPRComments": 0,
-        "totalIssueComments": 3
+        "totalIssueComments": 2
       }
     },
     {
@@ -431,11 +431,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 180,
+          "commits": 178,
           "pullRequests": 72,
           "issues": 19,
-          "prComments": 468,
-          "issueComments": 545
+          "prComments": 457,
+          "issueComments": 534
         },
         {
           "repoName": "argus",
@@ -445,7 +445,7 @@
           "pullRequests": 2,
           "issues": 5,
           "prComments": 5,
-          "issueComments": 36
+          "issueComments": 34
         },
         {
           "repoName": "scylladb",
@@ -519,11 +519,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 218,
+        "totalCommits": 216,
         "totalPRs": 91,
         "totalIssues": 33,
-        "totalPRComments": 533,
-        "totalIssueComments": 771
+        "totalPRComments": 522,
+        "totalIssueComments": 758
       }
     },
     {
@@ -549,7 +549,7 @@
           "url": "https://github.com/hasadna/open-bus-map-search",
           "commits": 68,
           "pullRequests": 13,
-          "issues": 9,
+          "issues": 8,
           "prComments": 24,
           "issueComments": 47
         }
@@ -557,7 +557,7 @@
       "summary": {
         "totalCommits": 68,
         "totalPRs": 13,
-        "totalIssues": 9,
+        "totalIssues": 8,
         "totalPRComments": 24,
         "totalIssueComments": 47
       }
@@ -736,16 +736,6 @@
           "issueComments": 1
         },
         {
-          "repoName": "user-docs",
-          "description": "Gitbook documentation repo.",
-          "url": "https://github.com/snyk/user-docs",
-          "commits": 3,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "llm-ai-security-demo",
           "description": null,
           "url": "https://github.com/lirantal/llm-ai-security-demo",
@@ -760,6 +750,16 @@
           "description": "A demo repo showcasing Snyk's IAC offering for terraform",
           "url": "https://github.com/snyk-labs/terraform-goof",
           "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "user-docs",
+          "description": "Gitbook documentation repo.",
+          "url": "https://github.com/snyk/user-docs",
+          "commits": 2,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -817,7 +817,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 210,
+        "totalCommits": 209,
         "totalPRs": 51,
         "totalIssues": 24,
         "totalPRComments": 15,
@@ -1236,16 +1236,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1538,
+    "totalCommits": 1535,
     "totalPRs": 274,
-    "totalIssues": 181,
-    "totalPRComments": 1177,
-    "totalIssueComments": 1359,
+    "totalIssues": 180,
+    "totalPRComments": 1166,
+    "totalIssueComments": 1345,
     "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-12 to 2026-02-08",
+    "analysisTimeframe": "2025-08-13 to 2026-02-09",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
