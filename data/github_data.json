@@ -18,16 +18,6 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
@@ -36,11 +26,21 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         }
       ],
       "summary": {
         "totalCommits": 27,
-        "totalPRs": 12,
+        "totalPRs": 11,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 2
@@ -431,11 +431,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 175,
-          "pullRequests": 69,
+          "commits": 173,
+          "pullRequests": 68,
           "issues": 19,
-          "prComments": 456,
-          "issueComments": 528
+          "prComments": 451,
+          "issueComments": 524
         },
         {
           "repoName": "argus",
@@ -443,9 +443,9 @@
           "url": "https://github.com/scylladb/argus",
           "commits": 4,
           "pullRequests": 2,
-          "issues": 5,
+          "issues": 4,
           "prComments": 5,
-          "issueComments": 34
+          "issueComments": 33
         },
         {
           "repoName": "scylladb",
@@ -455,7 +455,7 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 7,
-          "issueComments": 118
+          "issueComments": 116
         },
         {
           "repoName": "scylla-ccm",
@@ -519,11 +519,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 213,
-        "totalPRs": 88,
-        "totalIssues": 33,
-        "totalPRComments": 521,
-        "totalIssueComments": 751
+        "totalCommits": 211,
+        "totalPRs": 87,
+        "totalIssues": 32,
+        "totalPRComments": 516,
+        "totalIssueComments": 744
       }
     },
     {
@@ -550,7 +550,7 @@
           "commits": 66,
           "pullRequests": 11,
           "issues": 8,
-          "prComments": 23,
+          "prComments": 22,
           "issueComments": 46
         }
       ],
@@ -558,7 +558,7 @@
         "totalCommits": 66,
         "totalPRs": 11,
         "totalIssues": 8,
-        "totalPRComments": 23,
+        "totalPRComments": 22,
         "totalIssueComments": 46
       }
     },
@@ -1236,16 +1236,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1530,
-    "totalPRs": 269,
-    "totalIssues": 178,
-    "totalPRComments": 1164,
-    "totalIssueComments": 1336,
+    "totalCommits": 1528,
+    "totalPRs": 267,
+    "totalIssues": 177,
+    "totalPRComments": 1158,
+    "totalIssueComments": 1329,
     "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-14 to 2026-02-10",
+    "analysisTimeframe": "2025-08-15 to 2026-02-11",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
