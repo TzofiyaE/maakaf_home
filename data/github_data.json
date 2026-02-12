@@ -229,7 +229,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 451,
+          "commits": 446,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -237,7 +237,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 451,
+        "totalCommits": 446,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -435,7 +435,7 @@
           "pullRequests": 68,
           "issues": 19,
           "prComments": 451,
-          "issueComments": 524
+          "issueComments": 523
         },
         {
           "repoName": "argus",
@@ -523,7 +523,7 @@
         "totalPRs": 87,
         "totalIssues": 32,
         "totalPRComments": 516,
-        "totalIssueComments": 744
+        "totalIssueComments": 743
       }
     },
     {
@@ -621,7 +621,7 @@
           "url": "https://github.com/lirantal/ls-mcp",
           "commits": 80,
           "pullRequests": 17,
-          "issues": 7,
+          "issues": 6,
           "prComments": 0,
           "issueComments": 7
         },
@@ -703,7 +703,7 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 9
+          "issueComments": 8
         },
         {
           "repoName": "is-website-vulnerable",
@@ -819,9 +819,9 @@
       "summary": {
         "totalCommits": 209,
         "totalPRs": 51,
-        "totalIssues": 23,
+        "totalIssues": 22,
         "totalPRComments": 15,
-        "totalIssueComments": 58
+        "totalIssueComments": 57
       }
     },
     {
@@ -1017,7 +1017,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 87,
+          "commits": 86,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1095,7 +1095,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 218,
+        "totalCommits": 217,
         "totalPRs": 9,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1236,16 +1236,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1528,
+    "totalCommits": 1522,
     "totalPRs": 267,
-    "totalIssues": 177,
+    "totalIssues": 176,
     "totalPRComments": 1158,
-    "totalIssueComments": 1329,
+    "totalIssueComments": 1327,
     "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-15 to 2026-02-11",
+    "analysisTimeframe": "2025-08-16 to 2026-02-12",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
