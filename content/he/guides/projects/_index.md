@@ -84,7 +84,7 @@ AutoKitteh הוא המקום המושלם למפתחים שרוצים ללמוד
 **קישורים חשובים:**
 - <a href="https://github.com/qelos-io/qelos" target="_blank">ריפו בגיטהאב</a>
 - <a href="https://docs.qelos.io/" target="_blank">דוקומנטציה מפורטת</a>
-- <a href="https://discord.gg/qelos" target="_blank">קהילה ב-Discord</a>
+- <a href="https://discord.gg/8D6TMdzZYJ" target="_blank">קהילה ב-Discord</a>
 - <a href="https://qelos.io/about" target="_blank">על הפרויקט והחזון</a>
 
 {{< alert >}}
