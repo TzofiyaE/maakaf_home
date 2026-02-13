@@ -729,7 +729,7 @@
           "repoName": "create-node-lib",
           "description": "Scaffold a batteries-included Node.js library project with docs, tests, semantic releases and more",
           "url": "https://github.com/lirantal/create-node-lib",
-          "commits": 9,
+          "commits": 0,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -817,7 +817,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 209,
+        "totalCommits": 200,
         "totalPRs": 51,
         "totalIssues": 22,
         "totalPRComments": 15,
@@ -1236,7 +1236,7 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1522,
+    "totalCommits": 1513,
     "totalPRs": 267,
     "totalIssues": 176,
     "totalPRComments": 1158,
@@ -1245,7 +1245,7 @@
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-16 to 2026-02-12",
+    "analysisTimeframe": "2025-08-17 to 2026-02-13",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
