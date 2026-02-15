@@ -21,7 +21,7 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
+          "commits": 26,
           "pullRequests": 11,
           "issues": 0,
           "prComments": 0,
@@ -29,7 +29,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 27,
+        "totalCommits": 26,
         "totalPRs": 11,
         "totalIssues": 0,
         "totalPRComments": 0,
@@ -425,7 +425,7 @@
           "pullRequests": 65,
           "issues": 19,
           "prComments": 451,
-          "issueComments": 517
+          "issueComments": 516
         },
         {
           "repoName": "argus",
@@ -445,7 +445,7 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 7,
-          "issueComments": 116
+          "issueComments": 115
         },
         {
           "repoName": "scylla-ccm",
@@ -513,7 +513,7 @@
         "totalPRs": 84,
         "totalIssues": 32,
         "totalPRComments": 516,
-        "totalIssueComments": 737
+        "totalIssueComments": 735
       }
     },
     {
@@ -540,7 +540,7 @@
           "commits": 66,
           "pullRequests": 11,
           "issues": 8,
-          "prComments": 22,
+          "prComments": 20,
           "issueComments": 46
         }
       ],
@@ -548,7 +548,7 @@
         "totalCommits": 66,
         "totalPRs": 11,
         "totalIssues": 8,
-        "totalPRComments": 22,
+        "totalPRComments": 20,
         "totalIssueComments": 46
       }
     },
@@ -726,16 +726,6 @@
           "issueComments": 1
         },
         {
-          "repoName": "llm-ai-security-demo",
-          "description": null,
-          "url": "https://github.com/lirantal/llm-ai-security-demo",
-          "commits": 4,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "terraform-goof",
           "description": "A demo repo showcasing Snyk's IAC offering for terraform",
           "url": "https://github.com/snyk-labs/terraform-goof",
@@ -750,6 +740,16 @@
           "description": "Gitbook documentation repo.",
           "url": "https://github.com/snyk/user-docs",
           "commits": 2,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "llm-ai-security-demo",
+          "description": null,
+          "url": "https://github.com/lirantal/llm-ai-security-demo",
+          "commits": 1,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -807,7 +807,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 200,
+        "totalCommits": 197,
         "totalPRs": 51,
         "totalIssues": 22,
         "totalPRComments": 15,
@@ -1226,16 +1226,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1509,
+    "totalCommits": 1505,
     "totalPRs": 264,
     "totalIssues": 176,
-    "totalPRComments": 1158,
-    "totalIssueComments": 1319,
+    "totalPRComments": 1156,
+    "totalIssueComments": 1317,
     "totalRepos": 76,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-18 to 2026-02-14",
+    "analysisTimeframe": "2025-08-19 to 2026-02-15",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
