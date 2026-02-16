@@ -21,7 +21,7 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 26,
+          "commits": 25,
           "pullRequests": 11,
           "issues": 0,
           "prComments": 0,
@@ -29,7 +29,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 26,
+        "totalCommits": 25,
         "totalPRs": 11,
         "totalIssues": 0,
         "totalPRComments": 0,
@@ -91,7 +91,7 @@
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 10
+          "issueComments": 9
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -149,7 +149,7 @@
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 49
+        "totalIssueComments": 48
       }
     },
     {
@@ -173,8 +173,8 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 59,
-          "pullRequests": 28,
+          "commits": 57,
+          "pullRequests": 27,
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
@@ -191,8 +191,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 60,
-        "totalPRs": 29,
+        "totalCommits": 58,
+        "totalPRs": 28,
         "totalIssues": 0,
         "totalPRComments": 3,
         "totalIssueComments": 1
@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 445,
+          "commits": 440,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 445,
+        "totalCommits": 440,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -270,16 +270,6 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
-        },
-        {
-          "repoName": "inspector",
-          "description": "Visual inspector for MCP server - Postman for MCP",
-          "url": "https://github.com/MCPJam/inspector",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 3
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -393,11 +383,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 121,
-        "totalPRs": 23,
-        "totalIssues": 71,
+        "totalCommits": 119,
+        "totalPRs": 22,
+        "totalIssues": 70,
         "totalPRComments": 549,
-        "totalIssueComments": 333
+        "totalIssueComments": 330
       }
     },
     {
@@ -537,7 +527,7 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 66,
+          "commits": 65,
           "pullRequests": 11,
           "issues": 8,
           "prComments": 20,
@@ -545,7 +535,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 66,
+        "totalCommits": 65,
         "totalPRs": 11,
         "totalIssues": 8,
         "totalPRComments": 20,
@@ -726,16 +716,6 @@
           "issueComments": 1
         },
         {
-          "repoName": "terraform-goof",
-          "description": "A demo repo showcasing Snyk's IAC offering for terraform",
-          "url": "https://github.com/snyk-labs/terraform-goof",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "user-docs",
           "description": "Gitbook documentation repo.",
           "url": "https://github.com/snyk/user-docs",
@@ -807,7 +787,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 197,
+        "totalCommits": 196,
         "totalPRs": 51,
         "totalIssues": 22,
         "totalPRComments": 15,
@@ -1007,7 +987,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 86,
+          "commits": 81,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1085,7 +1065,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 217,
+        "totalCommits": 212,
         "totalPRs": 9,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1226,16 +1206,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1505,
-    "totalPRs": 264,
-    "totalIssues": 176,
+    "totalCommits": 1488,
+    "totalPRs": 262,
+    "totalIssues": 175,
     "totalPRComments": 1156,
-    "totalIssueComments": 1317,
-    "totalRepos": 76,
+    "totalIssueComments": 1313,
+    "totalRepos": 74,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-19 to 2026-02-15",
+    "analysisTimeframe": "2025-08-20 to 2026-02-16",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
