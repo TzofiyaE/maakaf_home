@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 440,
+          "commits": 437,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 440,
+        "totalCommits": 437,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -411,7 +411,7 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 171,
+          "commits": 169,
           "pullRequests": 65,
           "issues": 19,
           "prComments": 451,
@@ -499,7 +499,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 209,
+        "totalCommits": 207,
         "totalPRs": 84,
         "totalIssues": 32,
         "totalPRComments": 516,
@@ -646,31 +646,21 @@
           "issueComments": 5
         },
         {
-          "repoName": "mcp-scan",
-          "description": "Constrain, log and scan your MCP connections for security vulnerabilities.",
-          "url": "https://github.com/invariantlabs-ai/mcp-scan",
-          "commits": 4,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "snyk-ls",
-          "description": "Language Server used by IDEs as Snyk Backend for Frontends",
-          "url": "https://github.com/snyk/snyk-ls",
-          "commits": 6,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 4,
-          "issueComments": 0
-        },
-        {
           "repoName": "agents",
           "description": "Qodo Commands Playbooks. Customize Qodo Command for your specific use case!",
           "url": "https://github.com/qodo-ai/agents",
           "commits": 5,
           "pullRequests": 3,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "mcp-scan",
+          "description": "Constrain, log and scan your MCP connections for security vulnerabilities.",
+          "url": "https://github.com/invariantlabs-ai/mcp-scan",
+          "commits": 3,
+          "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
@@ -787,10 +777,10 @@
         }
       ],
       "summary": {
-        "totalCommits": 196,
-        "totalPRs": 51,
+        "totalCommits": 189,
+        "totalPRs": 48,
         "totalIssues": 22,
-        "totalPRComments": 15,
+        "totalPRComments": 11,
         "totalIssueComments": 57
       }
     },
@@ -1206,16 +1196,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1488,
-    "totalPRs": 262,
+    "totalCommits": 1476,
+    "totalPRs": 259,
     "totalIssues": 175,
-    "totalPRComments": 1156,
+    "totalPRComments": 1152,
     "totalIssueComments": 1313,
-    "totalRepos": 74,
+    "totalRepos": 73,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-20 to 2026-02-16",
+    "analysisTimeframe": "2025-08-21 to 2026-02-17",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
