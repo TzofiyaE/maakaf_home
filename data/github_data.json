@@ -21,19 +21,19 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 25,
+          "commits": 23,
           "pullRequests": 11,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 1
+          "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 25,
+        "totalCommits": 23,
         "totalPRs": 11,
         "totalIssues": 0,
         "totalPRComments": 0,
-        "totalIssueComments": 1
+        "totalIssueComments": 0
       }
     },
     {
@@ -94,16 +94,6 @@
           "issueComments": 9
         },
         {
-          "repoName": "awesome-opensource-israel",
-          "description": "A curated list of Israeli-made projects, events, and individuals",
-          "url": "https://github.com/lirantal/awesome-opensource-israel",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
           "repoName": "site",
           "description": "Public Website for the Developer Relations Foundation.",
           "url": "https://github.com/DevRel-Foundation/site",
@@ -112,6 +102,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "awesome-opensource-israel",
+          "description": "A curated list of Israeli-made projects, events, and individuals",
+          "url": "https://github.com/lirantal/awesome-opensource-israel",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
         },
         {
           "repoName": "os-practice",
@@ -145,7 +145,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 98,
+        "totalCommits": 97,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -173,8 +173,8 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 57,
-          "pullRequests": 27,
+          "commits": 56,
+          "pullRequests": 26,
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
@@ -191,8 +191,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 58,
-        "totalPRs": 28,
+        "totalCommits": 57,
+        "totalPRs": 27,
         "totalIssues": 0,
         "totalPRComments": 3,
         "totalIssueComments": 1
@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 437,
+          "commits": 423,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 437,
+        "totalCommits": 423,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -527,7 +527,7 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 65,
+          "commits": 62,
           "pullRequests": 11,
           "issues": 8,
           "prComments": 20,
@@ -535,7 +535,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 65,
+        "totalCommits": 62,
         "totalPRs": 11,
         "totalIssues": 8,
         "totalPRComments": 20,
@@ -599,8 +599,8 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 80,
-          "pullRequests": 17,
+          "commits": 65,
+          "pullRequests": 15,
           "issues": 6,
           "prComments": 0,
           "issueComments": 7
@@ -777,8 +777,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 189,
-        "totalPRs": 48,
+        "totalCommits": 174,
+        "totalPRs": 46,
         "totalIssues": 22,
         "totalPRComments": 11,
         "totalIssueComments": 57
@@ -1113,7 +1113,7 @@
           "repoName": "moneyman",
           "description": "Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)",
           "url": "https://github.com/daniel-hauser/moneyman",
-          "commits": 2,
+          "commits": 1,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1151,7 +1151,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 28,
+        "totalCommits": 27,
         "totalPRs": 6,
         "totalIssues": 1,
         "totalPRComments": 21,
@@ -1196,16 +1196,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1476,
-    "totalPRs": 259,
+    "totalCommits": 1439,
+    "totalPRs": 256,
     "totalIssues": 175,
     "totalPRComments": 1152,
-    "totalIssueComments": 1313,
+    "totalIssueComments": 1312,
     "totalRepos": 73,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-21 to 2026-02-17",
+    "analysisTimeframe": "2025-08-22 to 2026-02-18",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
