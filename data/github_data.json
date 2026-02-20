@@ -21,7 +21,7 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 22,
+          "commits": 21,
           "pullRequests": 11,
           "issues": 0,
           "prComments": 0,
@@ -29,7 +29,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 22,
+        "totalCommits": 21,
         "totalPRs": 11,
         "totalIssues": 0,
         "totalPRComments": 0,
@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 416,
+          "commits": 400,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 416,
+        "totalCommits": 400,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -599,11 +599,11 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 60,
-          "pullRequests": 15,
-          "issues": 6,
+          "commits": 41,
+          "pullRequests": 11,
+          "issues": 5,
           "prComments": 0,
-          "issueComments": 6
+          "issueComments": 4
         },
         {
           "repoName": "npq",
@@ -777,11 +777,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 168,
-        "totalPRs": 46,
-        "totalIssues": 22,
+        "totalCommits": 149,
+        "totalPRs": 42,
+        "totalIssues": 21,
         "totalPRComments": 11,
-        "totalIssueComments": 56
+        "totalIssueComments": 54
       }
     },
     {
@@ -1196,16 +1196,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1425,
-    "totalPRs": 256,
-    "totalIssues": 175,
+    "totalCommits": 1389,
+    "totalPRs": 252,
+    "totalIssues": 174,
     "totalPRComments": 1152,
-    "totalIssueComments": 1311,
+    "totalIssueComments": 1309,
     "totalRepos": 73,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-23 to 2026-02-19",
+    "analysisTimeframe": "2025-08-24 to 2026-02-20",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
