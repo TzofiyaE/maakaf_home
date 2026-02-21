@@ -173,8 +173,8 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 56,
-          "pullRequests": 26,
+          "commits": 55,
+          "pullRequests": 25,
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
@@ -191,8 +191,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 57,
-        "totalPRs": 27,
+        "totalCommits": 56,
+        "totalPRs": 26,
         "totalIssues": 0,
         "totalPRComments": 3,
         "totalIssueComments": 1
@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 400,
+          "commits": 395,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 400,
+        "totalCommits": 395,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -530,7 +530,7 @@
           "commits": 62,
           "pullRequests": 11,
           "issues": 8,
-          "prComments": 20,
+          "prComments": 17,
           "issueComments": 46
         }
       ],
@@ -538,7 +538,7 @@
         "totalCommits": 62,
         "totalPRs": 11,
         "totalIssues": 8,
-        "totalPRComments": 20,
+        "totalPRComments": 17,
         "totalIssueComments": 46
       }
     },
@@ -947,8 +947,8 @@
           "repoName": "mdBook",
           "description": "Create book from markdown files. Like Gitbook but implemented in Rust",
           "url": "https://github.com/rust-lang/mdBook",
-          "commits": 3,
-          "pullRequests": 3,
+          "commits": 0,
+          "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
           "issueComments": 6
@@ -1055,8 +1055,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 212,
-        "totalPRs": 9,
+        "totalCommits": 209,
+        "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
         "totalIssueComments": 26
@@ -1196,16 +1196,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1389,
-    "totalPRs": 252,
+    "totalCommits": 1380,
+    "totalPRs": 248,
     "totalIssues": 174,
-    "totalPRComments": 1152,
+    "totalPRComments": 1149,
     "totalIssueComments": 1309,
     "totalRepos": 73,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-24 to 2026-02-20",
+    "analysisTimeframe": "2025-08-25 to 2026-02-21",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
