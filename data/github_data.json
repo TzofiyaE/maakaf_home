@@ -21,7 +21,7 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 21,
+          "commits": 20,
           "pullRequests": 11,
           "issues": 0,
           "prComments": 0,
@@ -29,7 +29,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 21,
+        "totalCommits": 20,
         "totalPRs": 11,
         "totalIssues": 0,
         "totalPRComments": 0,
@@ -173,7 +173,7 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 55,
+          "commits": 54,
           "pullRequests": 25,
           "issues": 0,
           "prComments": 3,
@@ -191,7 +191,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 56,
+        "totalCommits": 55,
         "totalPRs": 26,
         "totalIssues": 0,
         "totalPRComments": 3,
@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 395,
+          "commits": 388,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 395,
+        "totalCommits": 388,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -530,7 +530,7 @@
           "commits": 62,
           "pullRequests": 11,
           "issues": 8,
-          "prComments": 17,
+          "prComments": 15,
           "issueComments": 46
         }
       ],
@@ -538,7 +538,7 @@
         "totalCommits": 62,
         "totalPRs": 11,
         "totalIssues": 8,
-        "totalPRComments": 17,
+        "totalPRComments": 15,
         "totalIssueComments": 46
       }
     },
@@ -1196,16 +1196,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1380,
+    "totalCommits": 1371,
     "totalPRs": 248,
     "totalIssues": 174,
-    "totalPRComments": 1149,
+    "totalPRComments": 1147,
     "totalIssueComments": 1309,
     "totalRepos": 73,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-25 to 2026-02-21",
+    "analysisTimeframe": "2025-08-26 to 2026-02-22",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
