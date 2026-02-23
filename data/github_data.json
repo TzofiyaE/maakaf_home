@@ -21,16 +21,16 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 20,
-          "pullRequests": 11,
+          "commits": 19,
+          "pullRequests": 10,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 20,
-        "totalPRs": 11,
+        "totalCommits": 19,
+        "totalPRs": 10,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 0
@@ -173,8 +173,8 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 54,
-          "pullRequests": 25,
+          "commits": 52,
+          "pullRequests": 24,
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
@@ -191,8 +191,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 55,
-        "totalPRs": 26,
+        "totalCommits": 53,
+        "totalPRs": 25,
         "totalIssues": 0,
         "totalPRComments": 3,
         "totalIssueComments": 1
@@ -531,7 +531,7 @@
           "pullRequests": 11,
           "issues": 8,
           "prComments": 15,
-          "issueComments": 46
+          "issueComments": 45
         }
       ],
       "summary": {
@@ -539,7 +539,7 @@
         "totalPRs": 11,
         "totalIssues": 8,
         "totalPRComments": 15,
-        "totalIssueComments": 46
+        "totalIssueComments": 45
       }
     },
     {
@@ -609,9 +609,9 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 52,
-          "pullRequests": 22,
-          "issues": 7,
+          "commits": 46,
+          "pullRequests": 20,
+          "issues": 5,
           "prComments": 10,
           "issueComments": 22
         },
@@ -726,16 +726,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "mcp-server-npm-goof",
-          "description": "An MCP server for NPM JavaScript Package Management tools",
-          "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
-          "commits": 5,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "www-project-mcp-top-10",
           "description": "OWASP Foundation web repository",
           "url": "https://github.com/OWASP/www-project-mcp-top-10",
@@ -777,9 +767,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 149,
-        "totalPRs": 42,
-        "totalIssues": 21,
+        "totalCommits": 138,
+        "totalPRs": 40,
+        "totalIssues": 19,
         "totalPRComments": 11,
         "totalIssueComments": 54
       }
@@ -974,16 +964,6 @@
           "issueComments": 1
         },
         {
-          "repoName": "rust.code-maven.com",
-          "description": "Rust version of the Code Maven web site",
-          "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 81,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "rust-digger",
           "description": null,
           "url": "https://github.com/szabgab/rust-digger",
@@ -992,6 +972,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "rust.code-maven.com",
+          "description": "Rust version of the Code Maven web site",
+          "url": "https://github.com/szabgab/rust.code-maven.com",
+          "commits": 80,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         },
         {
           "repoName": "mdbooks.code-maven.com",
@@ -1055,7 +1045,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 209,
+        "totalCommits": 208,
         "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1097,7 +1087,7 @@
           "pullRequests": 1,
           "issues": 0,
           "prComments": 13,
-          "issueComments": 6
+          "issueComments": 5
         },
         {
           "repoName": "caspion",
@@ -1155,7 +1145,7 @@
         "totalPRs": 6,
         "totalIssues": 1,
         "totalPRComments": 21,
-        "totalIssueComments": 12
+        "totalIssueComments": 11
       }
     },
     {
@@ -1196,16 +1186,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1371,
-    "totalPRs": 248,
-    "totalIssues": 174,
+    "totalCommits": 1356,
+    "totalPRs": 244,
+    "totalIssues": 172,
     "totalPRComments": 1147,
-    "totalIssueComments": 1309,
-    "totalRepos": 73,
+    "totalIssueComments": 1307,
+    "totalRepos": 72,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-26 to 2026-02-22",
+    "analysisTimeframe": "2025-08-27 to 2026-02-23",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
