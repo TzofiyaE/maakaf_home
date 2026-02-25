@@ -21,16 +21,16 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 19,
-          "pullRequests": 10,
+          "commits": 18,
+          "pullRequests": 9,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 19,
-        "totalPRs": 10,
+        "totalCommits": 18,
+        "totalPRs": 9,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 0
@@ -173,8 +173,8 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 52,
-          "pullRequests": 24,
+          "commits": 49,
+          "pullRequests": 22,
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
@@ -191,8 +191,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 53,
-        "totalPRs": 25,
+        "totalCommits": 50,
+        "totalPRs": 23,
         "totalIssues": 0,
         "totalPRComments": 3,
         "totalIssueComments": 1
@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 388,
+          "commits": 380,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 388,
+        "totalCommits": 380,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -411,11 +411,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 169,
-          "pullRequests": 65,
-          "issues": 19,
-          "prComments": 451,
-          "issueComments": 516
+          "commits": 167,
+          "pullRequests": 64,
+          "issues": 18,
+          "prComments": 440,
+          "issueComments": 499
         },
         {
           "repoName": "argus",
@@ -435,7 +435,7 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 7,
-          "issueComments": 115
+          "issueComments": 112
         },
         {
           "repoName": "scylla-ccm",
@@ -499,11 +499,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 207,
-        "totalPRs": 84,
-        "totalIssues": 32,
-        "totalPRComments": 516,
-        "totalIssueComments": 735
+        "totalCommits": 205,
+        "totalPRs": 83,
+        "totalIssues": 31,
+        "totalPRComments": 505,
+        "totalIssueComments": 715
       }
     },
     {
@@ -609,11 +609,11 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 46,
-          "pullRequests": 20,
+          "commits": 33,
+          "pullRequests": 17,
           "issues": 5,
           "prComments": 10,
-          "issueComments": 22
+          "issueComments": 20
         },
         {
           "repoName": "mastra",
@@ -767,11 +767,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 138,
-        "totalPRs": 40,
+        "totalCommits": 125,
+        "totalPRs": 37,
         "totalIssues": 19,
         "totalPRComments": 11,
-        "totalIssueComments": 54
+        "totalIssueComments": 52
       }
     },
     {
@@ -1186,16 +1186,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1356,
-    "totalPRs": 244,
-    "totalIssues": 172,
-    "totalPRComments": 1147,
-    "totalIssueComments": 1307,
+    "totalCommits": 1329,
+    "totalPRs": 237,
+    "totalIssues": 171,
+    "totalPRComments": 1136,
+    "totalIssueComments": 1285,
     "totalRepos": 72,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-27 to 2026-02-23",
+    "analysisTimeframe": "2025-08-29 to 2026-02-25",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
