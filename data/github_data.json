@@ -967,7 +967,7 @@
           "repoName": "rust-digger",
           "description": null,
           "url": "https://github.com/szabgab/rust-digger",
-          "commits": 3,
+          "commits": 1,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1045,7 +1045,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 208,
+        "totalCommits": 206,
         "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1186,7 +1186,7 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1329,
+    "totalCommits": 1327,
     "totalPRs": 237,
     "totalIssues": 171,
     "totalPRComments": 1136,
@@ -1195,7 +1195,7 @@
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-29 to 2026-02-25",
+    "analysisTimeframe": "2025-08-30 to 2026-02-26",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
