@@ -87,7 +87,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 64,
+          "commits": 62,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -145,7 +145,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 97,
+        "totalCommits": 95,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -606,16 +606,6 @@
           "issueComments": 4
         },
         {
-          "repoName": "npq",
-          "description": "safely install npm packages by auditing them pre-install stage",
-          "url": "https://github.com/lirantal/npq",
-          "commits": 33,
-          "pullRequests": 17,
-          "issues": 5,
-          "prComments": 10,
-          "issueComments": 20
-        },
-        {
           "repoName": "mastra",
           "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
           "url": "https://github.com/mastra-ai/mastra",
@@ -624,6 +614,16 @@
           "issues": 3,
           "prComments": 0,
           "issueComments": 8
+        },
+        {
+          "repoName": "npq",
+          "description": "safely install npm packages by auditing them pre-install stage",
+          "url": "https://github.com/lirantal/npq",
+          "commits": 25,
+          "pullRequests": 14,
+          "issues": 3,
+          "prComments": 10,
+          "issueComments": 20
         },
         {
           "repoName": "npm-security-best-practices",
@@ -649,8 +649,8 @@
           "repoName": "agents",
           "description": "Qodo Commands Playbooks. Customize Qodo Command for your specific use case!",
           "url": "https://github.com/qodo-ai/agents",
-          "commits": 5,
-          "pullRequests": 3,
+          "commits": 1,
+          "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
@@ -767,9 +767,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 125,
-        "totalPRs": 37,
-        "totalIssues": 19,
+        "totalCommits": 113,
+        "totalPRs": 32,
+        "totalIssues": 17,
         "totalPRComments": 11,
         "totalIssueComments": 52
       }
@@ -964,16 +964,6 @@
           "issueComments": 1
         },
         {
-          "repoName": "rust-digger",
-          "description": null,
-          "url": "https://github.com/szabgab/rust-digger",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
@@ -1045,7 +1035,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 206,
+        "totalCommits": 205,
         "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1186,16 +1176,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1327,
-    "totalPRs": 237,
-    "totalIssues": 171,
+    "totalCommits": 1312,
+    "totalPRs": 232,
+    "totalIssues": 169,
     "totalPRComments": 1136,
     "totalIssueComments": 1285,
-    "totalRepos": 72,
+    "totalRepos": 71,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-30 to 2026-02-26",
+    "analysisTimeframe": "2025-08-31 to 2026-02-27",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
