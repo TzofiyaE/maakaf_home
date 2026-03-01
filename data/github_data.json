@@ -21,16 +21,16 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 18,
-          "pullRequests": 9,
+          "commits": 16,
+          "pullRequests": 7,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 18,
-        "totalPRs": 9,
+        "totalCommits": 16,
+        "totalPRs": 7,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 0
@@ -173,8 +173,8 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 49,
-          "pullRequests": 22,
+          "commits": 44,
+          "pullRequests": 21,
           "issues": 0,
           "prComments": 3,
           "issueComments": 1
@@ -191,8 +191,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 50,
-        "totalPRs": 23,
+        "totalCommits": 45,
+        "totalPRs": 22,
         "totalIssues": 0,
         "totalPRComments": 3,
         "totalIssueComments": 1
@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 380,
+          "commits": 376,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 380,
+        "totalCommits": 376,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -411,11 +411,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 167,
-          "pullRequests": 64,
+          "commits": 162,
+          "pullRequests": 61,
           "issues": 18,
-          "prComments": 440,
-          "issueComments": 499
+          "prComments": 431,
+          "issueComments": 490
         },
         {
           "repoName": "argus",
@@ -435,7 +435,7 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 7,
-          "issueComments": 112
+          "issueComments": 111
         },
         {
           "repoName": "scylla-ccm",
@@ -499,11 +499,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 205,
-        "totalPRs": 83,
+        "totalCommits": 200,
+        "totalPRs": 80,
         "totalIssues": 31,
-        "totalPRComments": 505,
-        "totalIssueComments": 715
+        "totalPRComments": 496,
+        "totalIssueComments": 705
       }
     },
     {
@@ -606,16 +606,6 @@
           "issueComments": 4
         },
         {
-          "repoName": "mastra",
-          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
-          "url": "https://github.com/mastra-ai/mastra",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 3,
-          "prComments": 0,
-          "issueComments": 8
-        },
-        {
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
@@ -634,6 +624,16 @@
           "issues": 1,
           "prComments": 1,
           "issueComments": 2
+        },
+        {
+          "repoName": "mastra",
+          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
+          "url": "https://github.com/mastra-ai/mastra",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 2,
+          "prComments": 0,
+          "issueComments": 8
         },
         {
           "repoName": "anti-trojan-source",
@@ -666,16 +666,6 @@
           "issueComments": 1
         },
         {
-          "repoName": "daloradius",
-          "description": "daloRADIUS is an advanced RADIUS web management application for managing hotspots and general-purpose ISP deployments. It features user management, graphical reporting, accounting, a billing engine, and integrates with OpenStreetMap for geolocation. The system is based on FreeRADIUS with which it shares access to the backend database.",
-          "url": "https://github.com/lirantal/daloradius",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 8
-        },
-        {
           "repoName": "is-website-vulnerable",
           "description": "finds publicly known security vulnerabilities in a website's frontend JavaScript libraries",
           "url": "https://github.com/lirantal/is-website-vulnerable",
@@ -694,6 +684,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "daloradius",
+          "description": "daloRADIUS is an advanced RADIUS web management application for managing hotspots and general-purpose ISP deployments. It features user management, graphical reporting, accounting, a billing engine, and integrates with OpenStreetMap for geolocation. The system is based on FreeRADIUS with which it shares access to the backend database.",
+          "url": "https://github.com/lirantal/daloradius",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 7
         },
         {
           "repoName": "create-node-lib",
@@ -769,9 +769,9 @@
       "summary": {
         "totalCommits": 113,
         "totalPRs": 32,
-        "totalIssues": 17,
+        "totalIssues": 16,
         "totalPRComments": 11,
-        "totalIssueComments": 52
+        "totalIssueComments": 51
       }
     },
     {
@@ -877,7 +877,7 @@
           "repoName": "code-maven.com",
           "description": "The content of the Code-Maven site",
           "url": "https://github.com/szabgab/code-maven.com",
-          "commits": 56,
+          "commits": 30,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -941,7 +941,7 @@
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
-          "issueComments": 6
+          "issueComments": 4
         },
         {
           "repoName": "sql",
@@ -967,7 +967,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 80,
+          "commits": 79,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1035,11 +1035,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 205,
+        "totalCommits": 178,
         "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
-        "totalIssueComments": 26
+        "totalIssueComments": 24
       }
     },
     {
@@ -1070,16 +1070,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "israeli-bank-scrapers",
-          "description": "Provide scrapers for all major Israeli banks and credit card companies",
-          "url": "https://github.com/eshaham/israeli-bank-scrapers",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 13,
-          "issueComments": 5
-        },
-        {
           "repoName": "caspion",
           "description": "Automated budget tracking from Israeli financial institutions",
           "url": "https://github.com/brafdlog/caspion",
@@ -1088,6 +1078,16 @@
           "issues": 0,
           "prComments": 6,
           "issueComments": 3
+        },
+        {
+          "repoName": "israeli-bank-scrapers",
+          "description": "Provide scrapers for all major Israeli banks and credit card companies",
+          "url": "https://github.com/eshaham/israeli-bank-scrapers",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 13,
+          "issueComments": 4
         },
         {
           "repoName": "moneyman",
@@ -1135,7 +1135,7 @@
         "totalPRs": 6,
         "totalIssues": 1,
         "totalPRComments": 21,
-        "totalIssueComments": 11
+        "totalIssueComments": 10
       }
     },
     {
@@ -1176,16 +1176,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1312,
-    "totalPRs": 232,
-    "totalIssues": 169,
-    "totalPRComments": 1136,
-    "totalIssueComments": 1285,
+    "totalCommits": 1269,
+    "totalPRs": 226,
+    "totalIssues": 168,
+    "totalPRComments": 1127,
+    "totalIssueComments": 1271,
     "totalRepos": 71,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-08-31 to 2026-02-27",
+    "analysisTimeframe": "2025-09-02 to 2026-03-01",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
