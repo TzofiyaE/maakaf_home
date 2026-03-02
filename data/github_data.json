@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 376,
+          "commits": 362,
           "pullRequests": 11,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 376,
+        "totalCommits": 362,
         "totalPRs": 11,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -252,16 +252,6 @@
       },
       "repos": [
         {
-          "repoName": "Broken-Link-Website",
-          "description": "No more broken links in old unmaintained README",
-          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 111,
-          "pullRequests": 18,
-          "issues": 63,
-          "prComments": 408,
-          "issueComments": 318
-        },
-        {
           "repoName": "AndroidAnimationExercise",
           "description": "Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享",
           "url": "https://github.com/REBOOTERS/AndroidAnimationExercise",
@@ -270,6 +260,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "Broken-Link-Website",
+          "description": "No more broken links in old unmaintained README",
+          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
+          "commits": 111,
+          "pullRequests": 18,
+          "issues": 63,
+          "prComments": 408,
+          "issueComments": 318
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -302,16 +302,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "snaps-registry",
-          "description": "A registry containing metadata about verified and blocked Snaps.",
-          "url": "https://github.com/MetaMask/snaps-registry",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "cors",
           "description": "Go net/http configurable handler to handle CORS requests",
           "url": "https://github.com/rs/cors",
@@ -319,16 +309,6 @@
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "Festival-lineup",
-          "description": "Task practice - conditional render, Props, useState",
-          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 38,
           "issueComments": 0
         },
         {
@@ -342,19 +322,19 @@
           "issueComments": 0
         },
         {
-          "repoName": "open-bus-map-search",
-          "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
-          "url": "https://github.com/hasadna/open-bus-map-search",
+          "repoName": "Festival-lineup",
+          "description": "Task practice - conditional render, Props, useState",
+          "url": "https://github.com/ColmanDevClubORG/Festival-lineup",
           "commits": 0,
           "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
+          "issues": 0,
+          "prComments": 38,
           "issueComments": 0
         },
         {
-          "repoName": "TheCyberHub",
-          "description": "Welcome to TheCyberHUB, a community-driven platform for hackers, cybersecurity enthusiasts, and IT professionals. Our platform provides a variety of free resources, including Capture The Flag (CTF) challenges, courses, blogs, forums, and much more.",
-          "url": "https://github.com/th3cyb3rhub/TheCyberHub",
+          "repoName": "snaps-registry",
+          "description": "A registry containing metadata about verified and blocked Snaps.",
+          "url": "https://github.com/MetaMask/snaps-registry",
           "commits": 0,
           "pullRequests": 0,
           "issues": 1,
@@ -375,6 +355,26 @@
           "repoName": "podman-desktop",
           "description": "Podman Desktop is the best free and open source tool to work with Containers and Kubernetes for developers. Get an intuitive and user-friendly interface to effortlessly build, manage, and deploy containers and Kubernetes — all from your desktop.",
           "url": "https://github.com/podman-desktop/podman-desktop",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "open-bus-map-search",
+          "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
+          "url": "https://github.com/hasadna/open-bus-map-search",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "TheCyberHub",
+          "description": "Welcome to TheCyberHUB, a community-driven platform for hackers, cybersecurity enthusiasts, and IT professionals. Our platform provides a variety of free resources, including Capture The Flag (CTF) challenges, courses, blogs, forums, and much more.",
+          "url": "https://github.com/th3cyb3rhub/TheCyberHub",
           "commits": 0,
           "pullRequests": 0,
           "issues": 1,
@@ -408,16 +408,6 @@
       },
       "repos": [
         {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 162,
-          "pullRequests": 61,
-          "issues": 18,
-          "prComments": 431,
-          "issueComments": 490
-        },
-        {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
@@ -428,6 +418,16 @@
           "issueComments": 33
         },
         {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 149,
+          "pullRequests": 59,
+          "issues": 18,
+          "prComments": 426,
+          "issueComments": 476
+        },
+        {
           "repoName": "scylladb",
           "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
           "url": "https://github.com/scylladb/scylladb",
@@ -435,7 +435,7 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 7,
-          "issueComments": 111
+          "issueComments": 108
         },
         {
           "repoName": "scylla-ccm",
@@ -448,16 +448,6 @@
           "issueComments": 27
         },
         {
-          "repoName": "scylla-bench",
-          "description": null,
-          "url": "https://github.com/scylladb/scylla-bench",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 5,
-          "issueComments": 4
-        },
-        {
           "repoName": "cassandra-stress",
           "description": null,
           "url": "https://github.com/scylladb/cassandra-stress",
@@ -466,6 +456,16 @@
           "issues": 0,
           "prComments": 1,
           "issueComments": 12
+        },
+        {
+          "repoName": "scylla-bench",
+          "description": null,
+          "url": "https://github.com/scylladb/scylla-bench",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 5,
+          "issueComments": 4
         },
         {
           "repoName": "scylla-machine-image",
@@ -499,11 +499,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 200,
-        "totalPRs": 80,
+        "totalCommits": 187,
+        "totalPRs": 78,
         "totalIssues": 31,
-        "totalPRComments": 496,
-        "totalIssueComments": 705
+        "totalPRComments": 491,
+        "totalIssueComments": 688
       }
     },
     {
@@ -596,6 +596,16 @@
       },
       "repos": [
         {
+          "repoName": "npq",
+          "description": "safely install npm packages by auditing them pre-install stage",
+          "url": "https://github.com/lirantal/npq",
+          "commits": 23,
+          "pullRequests": 13,
+          "issues": 2,
+          "prComments": 10,
+          "issueComments": 14
+        },
+        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -604,16 +614,6 @@
           "issues": 5,
           "prComments": 0,
           "issueComments": 4
-        },
-        {
-          "repoName": "npq",
-          "description": "safely install npm packages by auditing them pre-install stage",
-          "url": "https://github.com/lirantal/npq",
-          "commits": 25,
-          "pullRequests": 14,
-          "issues": 3,
-          "prComments": 10,
-          "issueComments": 20
         },
         {
           "repoName": "npm-security-best-practices",
@@ -767,11 +767,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 113,
-        "totalPRs": 32,
-        "totalIssues": 16,
+        "totalCommits": 111,
+        "totalPRs": 31,
+        "totalIssues": 15,
         "totalPRComments": 11,
-        "totalIssueComments": 51
+        "totalIssueComments": 45
       }
     },
     {
@@ -877,17 +877,7 @@
           "repoName": "code-maven.com",
           "description": "The content of the Code-Maven site",
           "url": "https://github.com/szabgab/code-maven.com",
-          "commits": 30,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "perlmaven.com",
-          "description": "The source files of the Perl Maven articles",
-          "url": "https://github.com/szabgab/perlmaven.com",
-          "commits": 5,
+          "commits": 27,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -898,6 +888,16 @@
           "description": "Open Source Development Courses",
           "url": "https://github.com/OSDC-Code-Maven/OSDC-Code-Maven.github.io",
           "commits": 13,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "perlmaven.com",
+          "description": "The source files of the Perl Maven articles",
+          "url": "https://github.com/szabgab/perlmaven.com",
+          "commits": 5,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -924,16 +924,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "anndata",
-          "description": "Annotated data.",
-          "url": "https://github.com/scverse/anndata",
-          "commits": 2,
-          "pullRequests": 4,
-          "issues": 3,
-          "prComments": 3,
-          "issueComments": 5
-        },
-        {
           "repoName": "mdBook",
           "description": "Create book from markdown files. Like Gitbook but implemented in Rust",
           "url": "https://github.com/rust-lang/mdBook",
@@ -942,6 +932,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 4
+        },
+        {
+          "repoName": "anndata",
+          "description": "Annotated data.",
+          "url": "https://github.com/scverse/anndata",
+          "commits": 2,
+          "pullRequests": 4,
+          "issues": 3,
+          "prComments": 3,
+          "issueComments": 5
         },
         {
           "repoName": "sql",
@@ -994,16 +994,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "perlweekly",
-          "description": "A free, once a week e-mail round-up of hand-picked news and articles about Perl",
-          "url": "https://github.com/szabgab/perlweekly",
-          "commits": 28,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 7
-        },
-        {
           "repoName": "ladino-diksionaryo-data",
           "description": "Las palavras, los egzempios del diksionaryo",
           "url": "https://github.com/kantoniko/ladino-diksionaryo-data",
@@ -1012,6 +1002,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 6
+        },
+        {
+          "repoName": "perlweekly",
+          "description": "A free, once a week e-mail round-up of hand-picked news and articles about Perl",
+          "url": "https://github.com/szabgab/perlweekly",
+          "commits": 28,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 7
         },
         {
           "repoName": "golem-openapi-client-generator",
@@ -1035,7 +1035,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 178,
+        "totalCommits": 175,
         "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1176,16 +1176,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1269,
-    "totalPRs": 226,
-    "totalIssues": 168,
-    "totalPRComments": 1127,
-    "totalIssueComments": 1271,
+    "totalCommits": 1237,
+    "totalPRs": 223,
+    "totalIssues": 167,
+    "totalPRComments": 1122,
+    "totalIssueComments": 1248,
     "totalRepos": 71,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-02 to 2026-03-01",
+    "analysisTimeframe": "2025-09-03 to 2026-03-02",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
