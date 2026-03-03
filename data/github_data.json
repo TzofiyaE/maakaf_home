@@ -422,10 +422,10 @@
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
           "commits": 149,
-          "pullRequests": 59,
+          "pullRequests": 58,
           "issues": 18,
-          "prComments": 426,
-          "issueComments": 476
+          "prComments": 417,
+          "issueComments": 468
         },
         {
           "repoName": "scylladb",
@@ -435,7 +435,7 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 7,
-          "issueComments": 108
+          "issueComments": 107
         },
         {
           "repoName": "scylla-ccm",
@@ -500,10 +500,10 @@
       ],
       "summary": {
         "totalCommits": 187,
-        "totalPRs": 78,
+        "totalPRs": 77,
         "totalIssues": 31,
-        "totalPRComments": 491,
-        "totalIssueComments": 688
+        "totalPRComments": 482,
+        "totalIssueComments": 679
       }
     },
     {
@@ -603,7 +603,7 @@
           "pullRequests": 13,
           "issues": 2,
           "prComments": 10,
-          "issueComments": 14
+          "issueComments": 13
         },
         {
           "repoName": "ls-mcp",
@@ -771,7 +771,7 @@
         "totalPRs": 31,
         "totalIssues": 15,
         "totalPRComments": 11,
-        "totalIssueComments": 45
+        "totalIssueComments": 44
       }
     },
     {
@@ -877,7 +877,7 @@
           "repoName": "code-maven.com",
           "description": "The content of the Code-Maven site",
           "url": "https://github.com/szabgab/code-maven.com",
-          "commits": 27,
+          "commits": 21,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -967,7 +967,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 79,
+          "commits": 78,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1035,7 +1035,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 175,
+        "totalCommits": 168,
         "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1176,16 +1176,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1237,
-    "totalPRs": 223,
+    "totalCommits": 1230,
+    "totalPRs": 222,
     "totalIssues": 167,
-    "totalPRComments": 1122,
-    "totalIssueComments": 1248,
+    "totalPRComments": 1113,
+    "totalIssueComments": 1238,
     "totalRepos": 71,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-03 to 2026-03-02",
+    "analysisTimeframe": "2025-09-04 to 2026-03-03",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
