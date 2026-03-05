@@ -21,16 +21,16 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 16,
-          "pullRequests": 7,
+          "commits": 14,
+          "pullRequests": 6,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 16,
-        "totalPRs": 7,
+        "totalCommits": 14,
+        "totalPRs": 6,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 0
@@ -219,16 +219,16 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 362,
-          "pullRequests": 11,
+          "commits": 355,
+          "pullRequests": 10,
           "issues": 11,
           "prComments": 29,
           "issueComments": 34
         }
       ],
       "summary": {
-        "totalCommits": 362,
-        "totalPRs": 11,
+        "totalCommits": 355,
+        "totalPRs": 10,
         "totalIssues": 11,
         "totalPRComments": 29,
         "totalIssueComments": 34
@@ -415,17 +415,17 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 5,
-          "issueComments": 33
+          "issueComments": 32
         },
         {
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 149,
+          "commits": 147,
           "pullRequests": 58,
-          "issues": 18,
-          "prComments": 417,
-          "issueComments": 468
+          "issues": 17,
+          "prComments": 415,
+          "issueComments": 463
         },
         {
           "repoName": "scylladb",
@@ -434,8 +434,8 @@
           "commits": 1,
           "pullRequests": 2,
           "issues": 4,
-          "prComments": 7,
-          "issueComments": 107
+          "prComments": 5,
+          "issueComments": 104
         },
         {
           "repoName": "scylla-ccm",
@@ -499,11 +499,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 187,
+        "totalCommits": 185,
         "totalPRs": 77,
-        "totalIssues": 31,
-        "totalPRComments": 482,
-        "totalIssueComments": 679
+        "totalIssues": 30,
+        "totalPRComments": 478,
+        "totalIssueComments": 670
       }
     },
     {
@@ -602,7 +602,7 @@
           "commits": 23,
           "pullRequests": 13,
           "issues": 2,
-          "prComments": 10,
+          "prComments": 8,
           "issueComments": 13
         },
         {
@@ -633,7 +633,7 @@
           "pullRequests": 0,
           "issues": 2,
           "prComments": 0,
-          "issueComments": 8
+          "issueComments": 7
         },
         {
           "repoName": "anti-trojan-source",
@@ -663,17 +663,7 @@
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "is-website-vulnerable",
-          "description": "finds publicly known security vulnerabilities in a website's frontend JavaScript libraries",
-          "url": "https://github.com/lirantal/is-website-vulnerable",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
+          "issueComments": 0
         },
         {
           "repoName": "mcp-server-nodejs-api-docs",
@@ -706,19 +696,19 @@
           "issueComments": 1
         },
         {
-          "repoName": "user-docs",
-          "description": "Gitbook documentation repo.",
-          "url": "https://github.com/snyk/user-docs",
-          "commits": 2,
+          "repoName": "llm-ai-security-demo",
+          "description": null,
+          "url": "https://github.com/lirantal/llm-ai-security-demo",
+          "commits": 1,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         },
         {
-          "repoName": "llm-ai-security-demo",
-          "description": null,
-          "url": "https://github.com/lirantal/llm-ai-security-demo",
+          "repoName": "user-docs",
+          "description": "Gitbook documentation repo.",
+          "url": "https://github.com/snyk/user-docs",
           "commits": 1,
           "pullRequests": 0,
           "issues": 0,
@@ -767,11 +757,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 111,
+        "totalCommits": 110,
         "totalPRs": 31,
         "totalIssues": 15,
-        "totalPRComments": 11,
-        "totalIssueComments": 44
+        "totalPRComments": 9,
+        "totalIssueComments": 41
       }
     },
     {
@@ -877,7 +867,7 @@
           "repoName": "code-maven.com",
           "description": "The content of the Code-Maven site",
           "url": "https://github.com/szabgab/code-maven.com",
-          "commits": 21,
+          "commits": 19,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -1035,7 +1025,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 168,
+        "totalCommits": 166,
         "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1176,16 +1166,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1230,
-    "totalPRs": 222,
-    "totalIssues": 167,
-    "totalPRComments": 1113,
-    "totalIssueComments": 1238,
-    "totalRepos": 71,
+    "totalCommits": 1216,
+    "totalPRs": 220,
+    "totalIssues": 166,
+    "totalPRComments": 1107,
+    "totalIssueComments": 1226,
+    "totalRepos": 70,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-04 to 2026-03-03",
+    "analysisTimeframe": "2025-09-06 to 2026-03-05",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
