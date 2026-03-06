@@ -87,11 +87,11 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 62,
+          "commits": 58,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 9
+          "issueComments": 7
         },
         {
           "repoName": "site",
@@ -145,11 +145,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 95,
+        "totalCommits": 91,
         "totalPRs": 12,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 48
+        "totalIssueComments": 46
       }
     },
     {
@@ -176,7 +176,7 @@
           "commits": 44,
           "pullRequests": 21,
           "issues": 0,
-          "prComments": 3,
+          "prComments": 0,
           "issueComments": 1
         },
         {
@@ -194,7 +194,7 @@
         "totalCommits": 45,
         "totalPRs": 22,
         "totalIssues": 0,
-        "totalPRComments": 3,
+        "totalPRComments": 0,
         "totalIssueComments": 1
       }
     },
@@ -599,11 +599,11 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 23,
+          "commits": 22,
           "pullRequests": 13,
           "issues": 2,
-          "prComments": 8,
-          "issueComments": 13
+          "prComments": 0,
+          "issueComments": 12
         },
         {
           "repoName": "ls-mcp",
@@ -757,11 +757,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 110,
+        "totalCommits": 109,
         "totalPRs": 31,
         "totalIssues": 15,
-        "totalPRComments": 9,
-        "totalIssueComments": 41
+        "totalPRComments": 1,
+        "totalIssueComments": 40
       }
     },
     {
@@ -1166,16 +1166,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1216,
+    "totalCommits": 1211,
     "totalPRs": 220,
     "totalIssues": 166,
-    "totalPRComments": 1107,
-    "totalIssueComments": 1226,
+    "totalPRComments": 1096,
+    "totalIssueComments": 1223,
     "totalRepos": 70,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-06 to 2026-03-05",
+    "analysisTimeframe": "2025-09-07 to 2026-03-06",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
