@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 355,
+          "commits": 351,
           "pullRequests": 10,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 355,
+        "totalCommits": 351,
         "totalPRs": 10,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -421,11 +421,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 147,
+          "commits": 144,
           "pullRequests": 58,
           "issues": 17,
-          "prComments": 415,
-          "issueComments": 463
+          "prComments": 411,
+          "issueComments": 459
         },
         {
           "repoName": "scylladb",
@@ -435,7 +435,7 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 5,
-          "issueComments": 104
+          "issueComments": 100
         },
         {
           "repoName": "scylla-ccm",
@@ -499,11 +499,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 185,
+        "totalCommits": 182,
         "totalPRs": 77,
         "totalIssues": 30,
-        "totalPRComments": 478,
-        "totalIssueComments": 670
+        "totalPRComments": 474,
+        "totalIssueComments": 662
       }
     },
     {
@@ -1166,16 +1166,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1211,
+    "totalCommits": 1204,
     "totalPRs": 220,
     "totalIssues": 166,
-    "totalPRComments": 1096,
-    "totalIssueComments": 1223,
+    "totalPRComments": 1092,
+    "totalIssueComments": 1215,
     "totalRepos": 70,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-07 to 2026-03-06",
+    "analysisTimeframe": "2025-09-08 to 2026-03-07",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
