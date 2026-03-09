@@ -87,7 +87,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 58,
+          "commits": 57,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -145,7 +145,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 91,
+        "totalCommits": 90,
         "totalPRs": 11,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -173,7 +173,7 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 44,
+          "commits": 43,
           "pullRequests": 21,
           "issues": 0,
           "prComments": 0,
@@ -191,7 +191,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 45,
+        "totalCommits": 44,
         "totalPRs": 22,
         "totalIssues": 0,
         "totalPRComments": 0,
@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 346,
+          "commits": 328,
           "pullRequests": 10,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 346,
+        "totalCommits": 328,
         "totalPRs": 10,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -425,7 +425,7 @@
           "pullRequests": 58,
           "issues": 17,
           "prComments": 409,
-          "issueComments": 455
+          "issueComments": 453
         },
         {
           "repoName": "scylladb",
@@ -503,7 +503,7 @@
         "totalPRs": 77,
         "totalIssues": 30,
         "totalPRComments": 472,
-        "totalIssueComments": 657
+        "totalIssueComments": 655
       }
     },
     {
@@ -528,7 +528,7 @@
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
           "commits": 61,
-          "pullRequests": 10,
+          "pullRequests": 9,
           "issues": 8,
           "prComments": 15,
           "issueComments": 45
@@ -536,7 +536,7 @@
       ],
       "summary": {
         "totalCommits": 61,
-        "totalPRs": 10,
+        "totalPRs": 9,
         "totalIssues": 8,
         "totalPRComments": 15,
         "totalIssueComments": 45
@@ -599,11 +599,11 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 22,
-          "pullRequests": 13,
+          "commits": 20,
+          "pullRequests": 12,
           "issues": 2,
           "prComments": 0,
-          "issueComments": 12
+          "issueComments": 10
         },
         {
           "repoName": "ls-mcp",
@@ -757,11 +757,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 109,
-        "totalPRs": 31,
+        "totalCommits": 107,
+        "totalPRs": 30,
         "totalIssues": 15,
         "totalPRComments": 1,
-        "totalIssueComments": 40
+        "totalIssueComments": 38
       }
     },
     {
@@ -1166,16 +1166,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1198,
-    "totalPRs": 218,
+    "totalCommits": 1176,
+    "totalPRs": 216,
     "totalIssues": 166,
     "totalPRComments": 1090,
-    "totalIssueComments": 1210,
+    "totalIssueComments": 1206,
     "totalRepos": 70,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-09 to 2026-03-08",
+    "analysisTimeframe": "2025-09-10 to 2026-03-09",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
