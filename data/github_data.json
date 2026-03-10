@@ -87,7 +87,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 57,
+          "commits": 56,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -145,7 +145,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 90,
+        "totalCommits": 89,
         "totalPRs": 11,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -170,16 +170,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 43,
-          "pullRequests": 21,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -188,11 +178,21 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 40,
+          "pullRequests": 19,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 44,
-        "totalPRs": 22,
+        "totalCommits": 41,
+        "totalPRs": 20,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 1
@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 328,
+          "commits": 327,
           "pullRequests": 10,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 328,
+        "totalCommits": 327,
         "totalPRs": 10,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -425,7 +425,7 @@
           "pullRequests": 58,
           "issues": 17,
           "prComments": 409,
-          "issueComments": 453
+          "issueComments": 451
         },
         {
           "repoName": "scylladb",
@@ -503,7 +503,7 @@
         "totalPRs": 77,
         "totalIssues": 30,
         "totalPRComments": 472,
-        "totalIssueComments": 655
+        "totalIssueComments": 653
       }
     },
     {
@@ -944,16 +944,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "awesome-lists",
-          "description": "The awesome list of all the awesome lists",
-          "url": "https://github.com/szabgab/awesome-lists",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
@@ -1025,11 +1015,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 166,
+        "totalCommits": 165,
         "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
-        "totalIssueComments": 24
+        "totalIssueComments": 23
       }
     },
     {
@@ -1166,16 +1156,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1176,
-    "totalPRs": 216,
+    "totalCommits": 1170,
+    "totalPRs": 214,
     "totalIssues": 166,
     "totalPRComments": 1090,
-    "totalIssueComments": 1206,
-    "totalRepos": 70,
+    "totalIssueComments": 1203,
+    "totalRepos": 69,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-10 to 2026-03-09",
+    "analysisTimeframe": "2025-09-11 to 2026-03-10",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
