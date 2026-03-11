@@ -21,16 +21,16 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 14,
-          "pullRequests": 6,
+          "commits": 12,
+          "pullRequests": 5,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 14,
-        "totalPRs": 6,
+        "totalCommits": 12,
+        "totalPRs": 5,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 0
@@ -183,7 +183,7 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 40,
+          "commits": 38,
           "pullRequests": 19,
           "issues": 0,
           "prComments": 0,
@@ -191,7 +191,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 41,
+        "totalCommits": 39,
         "totalPRs": 20,
         "totalIssues": 0,
         "totalPRComments": 0,
@@ -219,7 +219,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 327,
+          "commits": 326,
           "pullRequests": 10,
           "issues": 11,
           "prComments": 29,
@@ -227,7 +227,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 327,
+        "totalCommits": 326,
         "totalPRs": 10,
         "totalIssues": 11,
         "totalPRComments": 29,
@@ -408,24 +408,14 @@
       },
       "repos": [
         {
-          "repoName": "argus",
-          "description": null,
-          "url": "https://github.com/scylladb/argus",
-          "commits": 4,
-          "pullRequests": 2,
-          "issues": 4,
-          "prComments": 5,
-          "issueComments": 32
-        },
-        {
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
           "commits": 144,
           "pullRequests": 58,
           "issues": 17,
-          "prComments": 409,
-          "issueComments": 451
+          "prComments": 406,
+          "issueComments": 446
         },
         {
           "repoName": "scylladb",
@@ -435,7 +425,17 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 5,
-          "issueComments": 99
+          "issueComments": 98
+        },
+        {
+          "repoName": "argus",
+          "description": null,
+          "url": "https://github.com/scylladb/argus",
+          "commits": 4,
+          "pullRequests": 2,
+          "issues": 3,
+          "prComments": 5,
+          "issueComments": 29
         },
         {
           "repoName": "scylla-ccm",
@@ -501,9 +501,9 @@
       "summary": {
         "totalCommits": 182,
         "totalPRs": 77,
-        "totalIssues": 30,
-        "totalPRComments": 472,
-        "totalIssueComments": 653
+        "totalIssues": 29,
+        "totalPRComments": 469,
+        "totalIssueComments": 644
       }
     },
     {
@@ -1156,16 +1156,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1170,
-    "totalPRs": 214,
-    "totalIssues": 166,
-    "totalPRComments": 1090,
-    "totalIssueComments": 1203,
+    "totalCommits": 1165,
+    "totalPRs": 213,
+    "totalIssues": 165,
+    "totalPRComments": 1087,
+    "totalIssueComments": 1194,
     "totalRepos": 69,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-11 to 2026-03-10",
+    "analysisTimeframe": "2025-09-12 to 2026-03-11",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
