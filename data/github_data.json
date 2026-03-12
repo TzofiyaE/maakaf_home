@@ -183,7 +183,7 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 38,
+          "commits": 34,
           "pullRequests": 19,
           "issues": 0,
           "prComments": 0,
@@ -191,7 +191,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 39,
+        "totalCommits": 35,
         "totalPRs": 20,
         "totalIssues": 0,
         "totalPRComments": 0,
@@ -1156,7 +1156,7 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1165,
+    "totalCommits": 1161,
     "totalPRs": 213,
     "totalIssues": 165,
     "totalPRComments": 1087,
@@ -1165,7 +1165,7 @@
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-12 to 2026-03-11",
+    "analysisTimeframe": "2025-09-13 to 2026-03-12",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
