@@ -57,8 +57,8 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 33,
-          "pullRequests": 9,
+          "commits": 32,
+          "pullRequests": 8,
           "issues": 15,
           "prComments": 0,
           "issueComments": 32
@@ -70,16 +70,6 @@
           "commits": 0,
           "pullRequests": 0,
           "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "hugo",
-          "description": "The world’s fastest framework for building websites.",
-          "url": "https://github.com/gohugoio/hugo",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
           "prComments": 0,
           "issueComments": 0
         },
@@ -145,8 +135,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 89,
-        "totalPRs": 11,
+        "totalCommits": 88,
+        "totalPRs": 9,
         "totalIssues": 17,
         "totalPRComments": 0,
         "totalIssueComments": 46
@@ -666,16 +656,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "daloradius",
           "description": "daloRADIUS is an advanced RADIUS web management application for managing hotspots and general-purpose ISP deployments. It features user management, graphical reporting, accounting, a billing engine, and integrates with OpenStreetMap for geolocation. The system is based on FreeRADIUS with which it shares access to the backend database.",
           "url": "https://github.com/lirantal/daloradius",
@@ -761,7 +741,7 @@
         "totalPRs": 30,
         "totalIssues": 15,
         "totalPRComments": 1,
-        "totalIssueComments": 38
+        "totalIssueComments": 37
       }
     },
     {
@@ -1156,16 +1136,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1161,
-    "totalPRs": 213,
+    "totalCommits": 1160,
+    "totalPRs": 211,
     "totalIssues": 165,
     "totalPRComments": 1087,
-    "totalIssueComments": 1194,
-    "totalRepos": 69,
+    "totalIssueComments": 1193,
+    "totalRepos": 67,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-13 to 2026-03-12",
+    "analysisTimeframe": "2025-09-14 to 2026-03-13",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
