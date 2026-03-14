@@ -209,17 +209,17 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 326,
+          "commits": 323,
           "pullRequests": 10,
-          "issues": 11,
+          "issues": 10,
           "prComments": 29,
           "issueComments": 34
         }
       ],
       "summary": {
-        "totalCommits": 326,
+        "totalCommits": 323,
         "totalPRs": 10,
-        "totalIssues": 11,
+        "totalIssues": 10,
         "totalPRComments": 29,
         "totalIssueComments": 34
       }
@@ -401,11 +401,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 144,
-          "pullRequests": 58,
+          "commits": 140,
+          "pullRequests": 56,
           "issues": 17,
-          "prComments": 406,
-          "issueComments": 446
+          "prComments": 404,
+          "issueComments": 439
         },
         {
           "repoName": "scylladb",
@@ -435,7 +435,7 @@
           "pullRequests": 2,
           "issues": 1,
           "prComments": 12,
-          "issueComments": 27
+          "issueComments": 26
         },
         {
           "repoName": "cassandra-stress",
@@ -489,11 +489,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 182,
-        "totalPRs": 77,
+        "totalCommits": 178,
+        "totalPRs": 75,
         "totalIssues": 29,
-        "totalPRComments": 469,
-        "totalIssueComments": 644
+        "totalPRComments": 467,
+        "totalIssueComments": 636
       }
     },
     {
@@ -901,7 +901,7 @@
           "pullRequests": 0,
           "issues": 1,
           "prComments": 0,
-          "issueComments": 4
+          "issueComments": 3
         },
         {
           "repoName": "anndata",
@@ -999,7 +999,7 @@
         "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
-        "totalIssueComments": 23
+        "totalIssueComments": 22
       }
     },
     {
@@ -1136,16 +1136,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1160,
-    "totalPRs": 211,
-    "totalIssues": 165,
-    "totalPRComments": 1087,
-    "totalIssueComments": 1193,
+    "totalCommits": 1153,
+    "totalPRs": 209,
+    "totalIssues": 164,
+    "totalPRComments": 1085,
+    "totalIssueComments": 1184,
     "totalRepos": 67,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-14 to 2026-03-13",
+    "analysisTimeframe": "2025-09-15 to 2026-03-14",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
