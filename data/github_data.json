@@ -209,17 +209,17 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 323,
-          "pullRequests": 10,
-          "issues": 10,
+          "commits": 313,
+          "pullRequests": 8,
+          "issues": 9,
           "prComments": 29,
           "issueComments": 34
         }
       ],
       "summary": {
-        "totalCommits": 323,
-        "totalPRs": 10,
-        "totalIssues": 10,
+        "totalCommits": 313,
+        "totalPRs": 8,
+        "totalIssues": 9,
         "totalPRComments": 29,
         "totalIssueComments": 34
       }
@@ -255,11 +255,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 111,
-          "pullRequests": 18,
-          "issues": 63,
+          "commits": 109,
+          "pullRequests": 17,
+          "issues": 62,
           "prComments": 408,
-          "issueComments": 318
+          "issueComments": 317
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -373,11 +373,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 119,
-        "totalPRs": 22,
-        "totalIssues": 70,
+        "totalCommits": 117,
+        "totalPRs": 21,
+        "totalIssues": 69,
         "totalPRComments": 549,
-        "totalIssueComments": 330
+        "totalIssueComments": 329
       }
     },
     {
@@ -401,11 +401,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 140,
-          "pullRequests": 56,
+          "commits": 137,
+          "pullRequests": 55,
           "issues": 17,
-          "prComments": 404,
-          "issueComments": 439
+          "prComments": 400,
+          "issueComments": 435
         },
         {
           "repoName": "scylladb",
@@ -415,7 +415,7 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 5,
-          "issueComments": 98
+          "issueComments": 97
         },
         {
           "repoName": "argus",
@@ -423,7 +423,7 @@
           "url": "https://github.com/scylladb/argus",
           "commits": 4,
           "pullRequests": 2,
-          "issues": 3,
+          "issues": 2,
           "prComments": 5,
           "issueComments": 29
         },
@@ -489,11 +489,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 178,
-        "totalPRs": 75,
-        "totalIssues": 29,
-        "totalPRComments": 467,
-        "totalIssueComments": 636
+        "totalCommits": 175,
+        "totalPRs": 74,
+        "totalIssues": 28,
+        "totalPRComments": 463,
+        "totalIssueComments": 631
       }
     },
     {
@@ -517,7 +517,7 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 61,
+          "commits": 57,
           "pullRequests": 9,
           "issues": 8,
           "prComments": 15,
@@ -525,7 +525,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 61,
+        "totalCommits": 57,
         "totalPRs": 9,
         "totalIssues": 8,
         "totalPRComments": 15,
@@ -927,7 +927,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 78,
+          "commits": 77,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -995,7 +995,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 165,
+        "totalCommits": 164,
         "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1136,16 +1136,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1153,
-    "totalPRs": 209,
-    "totalIssues": 164,
-    "totalPRComments": 1085,
-    "totalIssueComments": 1184,
+    "totalCommits": 1133,
+    "totalPRs": 205,
+    "totalIssues": 161,
+    "totalPRComments": 1081,
+    "totalIssueComments": 1178,
     "totalRepos": 67,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-15 to 2026-03-14",
+    "analysisTimeframe": "2025-09-16 to 2026-03-15",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
