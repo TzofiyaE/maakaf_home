@@ -163,16 +163,16 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 28,
-          "pullRequests": 17,
+          "commits": 26,
+          "pullRequests": 16,
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 28,
-        "totalPRs": 17,
+        "totalCommits": 26,
+        "totalPRs": 16,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 1
@@ -199,7 +199,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 305,
+          "commits": 304,
           "pullRequests": 8,
           "issues": 9,
           "prComments": 29,
@@ -207,7 +207,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 305,
+        "totalCommits": 304,
         "totalPRs": 8,
         "totalIssues": 9,
         "totalPRComments": 29,
@@ -391,11 +391,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 118,
-          "pullRequests": 53,
+          "commits": 115,
+          "pullRequests": 52,
           "issues": 16,
-          "prComments": 377,
-          "issueComments": 412
+          "prComments": 363,
+          "issueComments": 405
         },
         {
           "repoName": "scylladb",
@@ -405,7 +405,7 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 5,
-          "issueComments": 96
+          "issueComments": 94
         },
         {
           "repoName": "argus",
@@ -479,11 +479,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 156,
-        "totalPRs": 72,
+        "totalCommits": 153,
+        "totalPRs": 71,
         "totalIssues": 27,
-        "totalPRComments": 440,
-        "totalIssueComments": 606
+        "totalPRComments": 426,
+        "totalIssueComments": 597
       }
     },
     {
@@ -633,7 +633,7 @@
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 1
+          "issueComments": 0
         },
         {
           "repoName": "mcp-scan",
@@ -731,7 +731,7 @@
         "totalPRs": 30,
         "totalIssues": 15,
         "totalPRComments": 1,
-        "totalIssueComments": 37
+        "totalIssueComments": 36
       }
     },
     {
@@ -917,7 +917,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 52,
+          "commits": 46,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -985,7 +985,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 139,
+        "totalCommits": 133,
         "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1126,16 +1126,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1064,
-    "totalPRs": 199,
+    "totalCommits": 1052,
+    "totalPRs": 197,
     "totalIssues": 160,
-    "totalPRComments": 1057,
-    "totalIssueComments": 1153,
+    "totalPRComments": 1043,
+    "totalIssueComments": 1143,
     "totalRepos": 67,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-18 to 2026-03-17",
+    "analysisTimeframe": "2025-09-19 to 2026-03-18",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
