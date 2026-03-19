@@ -199,7 +199,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 304,
+          "commits": 303,
           "pullRequests": 8,
           "issues": 9,
           "prComments": 29,
@@ -207,7 +207,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 304,
+        "totalCommits": 303,
         "totalPRs": 8,
         "totalIssues": 9,
         "totalPRComments": 29,
@@ -245,11 +245,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 109,
-          "pullRequests": 17,
+          "commits": 104,
+          "pullRequests": 16,
           "issues": 62,
           "prComments": 408,
-          "issueComments": 317
+          "issueComments": 316
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -259,7 +259,7 @@
           "pullRequests": 2,
           "issues": 0,
           "prComments": 1,
-          "issueComments": 12
+          "issueComments": 11
         },
         {
           "repoName": "Hacktoberfest-25-Projects",
@@ -363,11 +363,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 117,
-        "totalPRs": 21,
+        "totalCommits": 112,
+        "totalPRs": 20,
         "totalIssues": 69,
         "totalPRComments": 549,
-        "totalIssueComments": 329
+        "totalIssueComments": 327
       }
     },
     {
@@ -653,7 +653,7 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 7
+          "issueComments": 6
         },
         {
           "repoName": "create-node-lib",
@@ -731,7 +731,7 @@
         "totalPRs": 30,
         "totalIssues": 15,
         "totalPRComments": 1,
-        "totalIssueComments": 36
+        "totalIssueComments": 35
       }
     },
     {
@@ -917,7 +917,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 46,
+          "commits": 40,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -985,7 +985,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 133,
+        "totalCommits": 127,
         "totalPRs": 6,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1126,16 +1126,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1052,
-    "totalPRs": 197,
+    "totalCommits": 1040,
+    "totalPRs": 196,
     "totalIssues": 160,
     "totalPRComments": 1043,
-    "totalIssueComments": 1143,
+    "totalIssueComments": 1140,
     "totalRepos": 67,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-19 to 2026-03-18",
+    "analysisTimeframe": "2025-09-20 to 2026-03-19",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
