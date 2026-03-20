@@ -21,7 +21,7 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 10,
+          "commits": 7,
           "pullRequests": 4,
           "issues": 0,
           "prComments": 0,
@@ -29,7 +29,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 10,
+        "totalCommits": 7,
         "totalPRs": 4,
         "totalIssues": 0,
         "totalPRComments": 0,
@@ -77,7 +77,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 51,
+          "commits": 41,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -135,7 +135,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 83,
+        "totalCommits": 73,
         "totalPRs": 9,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -163,16 +163,16 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 26,
-          "pullRequests": 16,
+          "commits": 24,
+          "pullRequests": 15,
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 26,
-        "totalPRs": 16,
+        "totalCommits": 24,
+        "totalPRs": 15,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 1
@@ -247,7 +247,7 @@
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
           "commits": 104,
           "pullRequests": 16,
-          "issues": 62,
+          "issues": 61,
           "prComments": 408,
           "issueComments": 316
         },
@@ -259,7 +259,7 @@
           "pullRequests": 2,
           "issues": 0,
           "prComments": 1,
-          "issueComments": 11
+          "issueComments": 10
         },
         {
           "repoName": "Hacktoberfest-25-Projects",
@@ -365,9 +365,9 @@
       "summary": {
         "totalCommits": 112,
         "totalPRs": 20,
-        "totalIssues": 69,
+        "totalIssues": 68,
         "totalPRComments": 549,
-        "totalIssueComments": 327
+        "totalIssueComments": 326
       }
     },
     {
@@ -653,7 +653,7 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 6
+          "issueComments": 4
         },
         {
           "repoName": "create-node-lib",
@@ -731,7 +731,7 @@
         "totalPRs": 30,
         "totalIssues": 15,
         "totalPRComments": 1,
-        "totalIssueComments": 35
+        "totalIssueComments": 33
       }
     },
     {
@@ -904,24 +904,24 @@
           "issueComments": 5
         },
         {
-          "repoName": "sql",
-          "description": "SQL data primitives. Use it to generate SQL queries, auto-generate SQL migrations, and more.",
-          "url": "https://github.com/kurtbuilds/sql",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 40,
+          "commits": 37,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "sql",
+          "description": "SQL data primitives. Use it to generate SQL queries, auto-generate SQL migrations, and more.",
+          "url": "https://github.com/kurtbuilds/sql",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "mdbooks.code-maven.com",
@@ -977,16 +977,16 @@
           "repoName": "dim",
           "description": "Native Wayland screen dimming tool",
           "url": "https://github.com/marcelohdez/dim",
-          "commits": 2,
-          "pullRequests": 1,
+          "commits": 1,
+          "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 127,
-        "totalPRs": 6,
+        "totalCommits": 122,
+        "totalPRs": 4,
         "totalIssues": 4,
         "totalPRComments": 3,
         "totalIssueComments": 22
@@ -1126,16 +1126,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1040,
-    "totalPRs": 196,
-    "totalIssues": 160,
+    "totalCommits": 1020,
+    "totalPRs": 193,
+    "totalIssues": 159,
     "totalPRComments": 1043,
-    "totalIssueComments": 1140,
+    "totalIssueComments": 1137,
     "totalRepos": 67,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-20 to 2026-03-19",
+    "analysisTimeframe": "2025-09-21 to 2026-03-20",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
