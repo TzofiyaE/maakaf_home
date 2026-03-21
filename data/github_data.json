@@ -199,7 +199,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 303,
+          "commits": 295,
           "pullRequests": 8,
           "issues": 9,
           "prComments": 29,
@@ -207,7 +207,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 303,
+        "totalCommits": 295,
         "totalPRs": 8,
         "totalIssues": 9,
         "totalPRComments": 29,
@@ -247,7 +247,7 @@
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
           "commits": 104,
           "pullRequests": 16,
-          "issues": 61,
+          "issues": 60,
           "prComments": 408,
           "issueComments": 316
         },
@@ -365,7 +365,7 @@
       "summary": {
         "totalCommits": 112,
         "totalPRs": 20,
-        "totalIssues": 68,
+        "totalIssues": 67,
         "totalPRComments": 549,
         "totalIssueComments": 326
       }
@@ -391,21 +391,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 115,
-          "pullRequests": 52,
+          "commits": 112,
+          "pullRequests": 50,
           "issues": 16,
-          "prComments": 363,
-          "issueComments": 405
-        },
-        {
-          "repoName": "scylladb",
-          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
-          "url": "https://github.com/scylladb/scylladb",
-          "commits": 1,
-          "pullRequests": 2,
-          "issues": 4,
-          "prComments": 5,
-          "issueComments": 94
+          "prComments": 361,
+          "issueComments": 403
         },
         {
           "repoName": "argus",
@@ -416,6 +406,16 @@
           "issues": 2,
           "prComments": 5,
           "issueComments": 28
+        },
+        {
+          "repoName": "scylladb",
+          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
+          "url": "https://github.com/scylladb/scylladb",
+          "commits": 1,
+          "pullRequests": 2,
+          "issues": 4,
+          "prComments": 5,
+          "issueComments": 86
         },
         {
           "repoName": "scylla-ccm",
@@ -479,11 +479,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 153,
-        "totalPRs": 71,
+        "totalCommits": 150,
+        "totalPRs": 69,
         "totalIssues": 27,
-        "totalPRComments": 426,
-        "totalIssueComments": 597
+        "totalPRComments": 424,
+        "totalIssueComments": 587
       }
     },
     {
@@ -576,22 +576,12 @@
       },
       "repos": [
         {
-          "repoName": "npq",
-          "description": "safely install npm packages by auditing them pre-install stage",
-          "url": "https://github.com/lirantal/npq",
-          "commits": 20,
-          "pullRequests": 12,
-          "issues": 2,
-          "prComments": 0,
-          "issueComments": 10
-        },
-        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
           "commits": 41,
           "pullRequests": 11,
-          "issues": 5,
+          "issues": 4,
           "prComments": 0,
           "issueComments": 4
         },
@@ -636,6 +626,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "npq",
+          "description": "safely install npm packages by auditing them pre-install stage",
+          "url": "https://github.com/lirantal/npq",
+          "commits": 20,
+          "pullRequests": 12,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 10
+        },
+        {
           "repoName": "mcp-scan",
           "description": "Constrain, log and scan your MCP connections for security vulnerabilities.",
           "url": "https://github.com/invariantlabs-ai/mcp-scan",
@@ -646,16 +646,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "daloradius",
-          "description": "daloRADIUS is an advanced RADIUS web management application for managing hotspots and general-purpose ISP deployments. It features user management, graphical reporting, accounting, a billing engine, and integrates with OpenStreetMap for geolocation. The system is based on FreeRADIUS with which it shares access to the backend database.",
-          "url": "https://github.com/lirantal/daloradius",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "create-node-lib",
           "description": "Scaffold a batteries-included Node.js library project with docs, tests, semantic releases and more",
           "url": "https://github.com/lirantal/create-node-lib",
@@ -664,6 +654,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "daloradius",
+          "description": "daloRADIUS is an advanced RADIUS web management application for managing hotspots and general-purpose ISP deployments. It features user management, graphical reporting, accounting, a billing engine, and integrates with OpenStreetMap for geolocation. The system is based on FreeRADIUS with which it shares access to the backend database.",
+          "url": "https://github.com/lirantal/daloradius",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
         },
         {
           "repoName": "llm-ai-security-demo",
@@ -729,9 +729,9 @@
       "summary": {
         "totalCommits": 107,
         "totalPRs": 30,
-        "totalIssues": 15,
+        "totalIssues": 13,
         "totalPRComments": 1,
-        "totalIssueComments": 33
+        "totalIssueComments": 31
       }
     },
     {
@@ -904,16 +904,6 @@
           "issueComments": 5
         },
         {
-          "repoName": "rust.code-maven.com",
-          "description": "Rust version of the Code Maven web site",
-          "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 37,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "sql",
           "description": "SQL data primitives. Use it to generate SQL queries, auto-generate SQL migrations, and more.",
           "url": "https://github.com/kurtbuilds/sql",
@@ -922,6 +912,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "rust.code-maven.com",
+          "description": "Rust version of the Code Maven web site",
+          "url": "https://github.com/szabgab/rust.code-maven.com",
+          "commits": 32,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         },
         {
           "repoName": "mdbooks.code-maven.com",
@@ -985,7 +985,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 122,
+        "totalCommits": 117,
         "totalPRs": 4,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1126,16 +1126,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1020,
-    "totalPRs": 193,
-    "totalIssues": 159,
-    "totalPRComments": 1043,
-    "totalIssueComments": 1137,
+    "totalCommits": 1004,
+    "totalPRs": 191,
+    "totalIssues": 156,
+    "totalPRComments": 1041,
+    "totalIssueComments": 1125,
     "totalRepos": 67,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-21 to 2026-03-20",
+    "analysisTimeframe": "2025-09-22 to 2026-03-21",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
