@@ -77,11 +77,11 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 41,
+          "commits": 40,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 7
+          "issueComments": 6
         },
         {
           "repoName": "site",
@@ -135,11 +135,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 73,
+        "totalCommits": 72,
         "totalPRs": 9,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 46
+        "totalIssueComments": 45
       }
     },
     {
@@ -249,7 +249,7 @@
           "pullRequests": 16,
           "issues": 60,
           "prComments": 408,
-          "issueComments": 316
+          "issueComments": 315
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -367,7 +367,7 @@
         "totalPRs": 20,
         "totalIssues": 67,
         "totalPRComments": 549,
-        "totalIssueComments": 326
+        "totalIssueComments": 325
       }
     },
     {
@@ -391,7 +391,7 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 112,
+          "commits": 111,
           "pullRequests": 50,
           "issues": 16,
           "prComments": 361,
@@ -479,7 +479,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 150,
+        "totalCommits": 149,
         "totalPRs": 69,
         "totalIssues": 27,
         "totalPRComments": 424,
@@ -510,7 +510,7 @@
           "commits": 54,
           "pullRequests": 9,
           "issues": 8,
-          "prComments": 14,
+          "prComments": 13,
           "issueComments": 45
         }
       ],
@@ -518,7 +518,7 @@
         "totalCommits": 54,
         "totalPRs": 9,
         "totalIssues": 8,
-        "totalPRComments": 14,
+        "totalPRComments": 13,
         "totalIssueComments": 45
       }
     },
@@ -904,16 +904,6 @@
           "issueComments": 5
         },
         {
-          "repoName": "sql",
-          "description": "SQL data primitives. Use it to generate SQL queries, auto-generate SQL migrations, and more.",
-          "url": "https://github.com/kurtbuilds/sql",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
@@ -985,7 +975,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 117,
+        "totalCommits": 116,
         "totalPRs": 4,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1126,16 +1116,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1004,
+    "totalCommits": 1001,
     "totalPRs": 191,
     "totalIssues": 156,
-    "totalPRComments": 1041,
-    "totalIssueComments": 1125,
-    "totalRepos": 67,
+    "totalPRComments": 1040,
+    "totalIssueComments": 1123,
+    "totalRepos": 66,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-22 to 2026-03-21",
+    "analysisTimeframe": "2025-09-23 to 2026-03-22",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
