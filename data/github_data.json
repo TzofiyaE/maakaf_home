@@ -77,7 +77,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 40,
+          "commits": 38,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -125,7 +125,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 72,
+        "totalCommits": 70,
         "totalPRs": 9,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -235,11 +235,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 102,
+          "commits": 100,
           "pullRequests": 16,
-          "issues": 58,
-          "prComments": 395,
-          "issueComments": 312
+          "issues": 56,
+          "prComments": 384,
+          "issueComments": 310
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -353,11 +353,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 110,
+        "totalCommits": 108,
         "totalPRs": 20,
-        "totalIssues": 65,
-        "totalPRComments": 536,
-        "totalIssueComments": 322
+        "totalIssues": 63,
+        "totalPRComments": 525,
+        "totalIssueComments": 320
       }
     },
     {
@@ -497,19 +497,19 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 46,
+          "commits": 43,
           "pullRequests": 7,
           "issues": 8,
-          "prComments": 13,
-          "issueComments": 42
+          "prComments": 12,
+          "issueComments": 37
         }
       ],
       "summary": {
-        "totalCommits": 46,
+        "totalCommits": 43,
         "totalPRs": 7,
         "totalIssues": 8,
-        "totalPRComments": 13,
-        "totalIssueComments": 42
+        "totalPRComments": 12,
+        "totalIssueComments": 37
       }
     },
     {
@@ -593,7 +593,7 @@
           "pullRequests": 0,
           "issues": 2,
           "prComments": 0,
-          "issueComments": 7
+          "issueComments": 6
         },
         {
           "repoName": "anti-trojan-source",
@@ -711,7 +711,7 @@
         "totalPRs": 30,
         "totalIssues": 13,
         "totalPRComments": 1,
-        "totalIssueComments": 31
+        "totalIssueComments": 30
       }
     },
     {
@@ -887,7 +887,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 32,
+          "commits": 30,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -955,7 +955,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 116,
+        "totalCommits": 114,
         "totalPRs": 4,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1096,16 +1096,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 984,
+    "totalCommits": 975,
     "totalPRs": 186,
-    "totalIssues": 154,
-    "totalPRComments": 1027,
-    "totalIssueComments": 1116,
+    "totalIssues": 152,
+    "totalPRComments": 1015,
+    "totalIssueComments": 1108,
     "totalRepos": 64,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-24 to 2026-03-23",
+    "analysisTimeframe": "2025-09-25 to 2026-03-24",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
