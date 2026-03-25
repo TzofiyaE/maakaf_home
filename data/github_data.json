@@ -189,7 +189,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 295,
+          "commits": 290,
           "pullRequests": 8,
           "issues": 9,
           "prComments": 29,
@@ -197,7 +197,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 295,
+        "totalCommits": 290,
         "totalPRs": 8,
         "totalIssues": 9,
         "totalPRComments": 29,
@@ -237,9 +237,9 @@
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
           "commits": 100,
           "pullRequests": 16,
-          "issues": 56,
+          "issues": 55,
           "prComments": 384,
-          "issueComments": 310
+          "issueComments": 307
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -355,9 +355,9 @@
       "summary": {
         "totalCommits": 108,
         "totalPRs": 20,
-        "totalIssues": 63,
+        "totalIssues": 62,
         "totalPRComments": 525,
-        "totalIssueComments": 320
+        "totalIssueComments": 317
       }
     },
     {
@@ -381,11 +381,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 111,
-          "pullRequests": 50,
+          "commits": 107,
+          "pullRequests": 48,
           "issues": 16,
-          "prComments": 361,
-          "issueComments": 403
+          "prComments": 358,
+          "issueComments": 400
         },
         {
           "repoName": "argus",
@@ -405,7 +405,7 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 5,
-          "issueComments": 86
+          "issueComments": 82
         },
         {
           "repoName": "scylla-ccm",
@@ -469,11 +469,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 149,
-        "totalPRs": 69,
+        "totalCommits": 145,
+        "totalPRs": 67,
         "totalIssues": 27,
-        "totalPRComments": 424,
-        "totalIssueComments": 587
+        "totalPRComments": 421,
+        "totalIssueComments": 580
       }
     },
     {
@@ -606,16 +606,6 @@
           "issueComments": 5
         },
         {
-          "repoName": "agents",
-          "description": "Qodo Commands Playbooks. Customize Qodo Command for your specific use case!",
-          "url": "https://github.com/qodo-ai/agents",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
@@ -707,8 +697,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 106,
-        "totalPRs": 30,
+        "totalCommits": 105,
+        "totalPRs": 29,
         "totalIssues": 13,
         "totalPRComments": 1,
         "totalIssueComments": 30
@@ -887,7 +877,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 30,
+          "commits": 26,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -955,7 +945,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 114,
+        "totalCommits": 110,
         "totalPRs": 4,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1096,16 +1086,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 975,
-    "totalPRs": 186,
-    "totalIssues": 152,
-    "totalPRComments": 1015,
-    "totalIssueComments": 1108,
-    "totalRepos": 64,
+    "totalCommits": 961,
+    "totalPRs": 183,
+    "totalIssues": 151,
+    "totalPRComments": 1012,
+    "totalIssueComments": 1098,
+    "totalRepos": 63,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-25 to 2026-03-24",
+    "analysisTimeframe": "2025-09-26 to 2026-03-25",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
