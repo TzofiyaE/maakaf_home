@@ -235,11 +235,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 100,
+          "commits": 98,
           "pullRequests": 16,
-          "issues": 55,
-          "prComments": 384,
-          "issueComments": 307
+          "issues": 54,
+          "prComments": 376,
+          "issueComments": 300
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -353,11 +353,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 108,
+        "totalCommits": 106,
         "totalPRs": 20,
-        "totalIssues": 62,
-        "totalPRComments": 525,
-        "totalIssueComments": 317
+        "totalIssues": 61,
+        "totalPRComments": 517,
+        "totalIssueComments": 310
       }
     },
     {
@@ -569,9 +569,9 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 41,
-          "pullRequests": 11,
-          "issues": 4,
+          "commits": 37,
+          "pullRequests": 9,
+          "issues": 3,
           "prComments": 0,
           "issueComments": 4
         },
@@ -697,9 +697,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 105,
-        "totalPRs": 29,
-        "totalIssues": 13,
+        "totalCommits": 101,
+        "totalPRs": 27,
+        "totalIssues": 12,
         "totalPRComments": 1,
         "totalIssueComments": 30
       }
@@ -877,7 +877,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 26,
+          "commits": 18,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -945,7 +945,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 110,
+        "totalCommits": 102,
         "totalPRs": 4,
         "totalIssues": 4,
         "totalPRComments": 3,
@@ -1086,16 +1086,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 961,
-    "totalPRs": 183,
-    "totalIssues": 151,
-    "totalPRComments": 1012,
-    "totalIssueComments": 1098,
+    "totalCommits": 947,
+    "totalPRs": 181,
+    "totalIssues": 149,
+    "totalPRComments": 1004,
+    "totalIssueComments": 1091,
     "totalRepos": 63,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-26 to 2026-03-25",
+    "analysisTimeframe": "2025-09-27 to 2026-03-26",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
