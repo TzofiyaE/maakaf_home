@@ -235,11 +235,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 98,
+          "commits": 96,
           "pullRequests": 16,
-          "issues": 54,
+          "issues": 49,
           "prComments": 376,
-          "issueComments": 300
+          "issueComments": 292
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -353,11 +353,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 106,
+        "totalCommits": 104,
         "totalPRs": 20,
-        "totalIssues": 61,
+        "totalIssues": 56,
         "totalPRComments": 517,
-        "totalIssueComments": 310
+        "totalIssueComments": 302
       }
     },
     {
@@ -569,8 +569,8 @@
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 37,
-          "pullRequests": 9,
+          "commits": 34,
+          "pullRequests": 8,
           "issues": 3,
           "prComments": 0,
           "issueComments": 4
@@ -697,8 +697,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 101,
-        "totalPRs": 27,
+        "totalCommits": 98,
+        "totalPRs": 26,
         "totalIssues": 12,
         "totalPRComments": 1,
         "totalIssueComments": 30
@@ -1086,16 +1086,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 947,
-    "totalPRs": 181,
-    "totalIssues": 149,
+    "totalCommits": 942,
+    "totalPRs": 180,
+    "totalIssues": 144,
     "totalPRComments": 1004,
-    "totalIssueComments": 1091,
+    "totalIssueComments": 1083,
     "totalRepos": 63,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-27 to 2026-03-26",
+    "analysisTimeframe": "2025-09-28 to 2026-03-27",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
