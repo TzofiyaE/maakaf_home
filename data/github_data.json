@@ -16,21 +16,10 @@
         "accountType": "User",
         "createdAt": "2025-07-04T17:09:24.000Z"
       },
-      "repos": [
-        {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        }
-      ],
+      "repos": [],
       "summary": {
-        "totalCommits": 1,
-        "totalPRs": 1,
+        "totalCommits": 0,
+        "totalPRs": 0,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 0
@@ -77,7 +66,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 38,
+          "commits": 36,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -125,7 +114,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 70,
+        "totalCommits": 68,
         "totalPRs": 9,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -153,16 +142,16 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 19,
-          "pullRequests": 13,
+          "commits": 17,
+          "pullRequests": 12,
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 19,
-        "totalPRs": 13,
+        "totalCommits": 17,
+        "totalPRs": 12,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 1
@@ -189,19 +178,19 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 285,
+          "commits": 281,
           "pullRequests": 8,
-          "issues": 7,
-          "prComments": 29,
-          "issueComments": 27
+          "issues": 2,
+          "prComments": 28,
+          "issueComments": 23
         }
       ],
       "summary": {
-        "totalCommits": 285,
+        "totalCommits": 281,
         "totalPRs": 8,
-        "totalIssues": 7,
-        "totalPRComments": 29,
-        "totalIssueComments": 27
+        "totalIssues": 2,
+        "totalPRComments": 28,
+        "totalIssueComments": 23
       }
     },
     {
@@ -235,11 +224,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 91,
-          "pullRequests": 15,
+          "commits": 80,
+          "pullRequests": 10,
           "issues": 45,
-          "prComments": 368,
-          "issueComments": 279
+          "prComments": 367,
+          "issueComments": 271
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -353,11 +342,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 99,
-        "totalPRs": 19,
+        "totalCommits": 88,
+        "totalPRs": 14,
         "totalIssues": 52,
-        "totalPRComments": 509,
-        "totalIssueComments": 289
+        "totalPRComments": 508,
+        "totalIssueComments": 281
       }
     },
     {
@@ -385,7 +374,7 @@
           "pullRequests": 48,
           "issues": 16,
           "prComments": 355,
-          "issueComments": 393
+          "issueComments": 391
         },
         {
           "repoName": "argus",
@@ -473,7 +462,7 @@
         "totalPRs": 67,
         "totalIssues": 25,
         "totalPRComments": 418,
-        "totalIssueComments": 567
+        "totalIssueComments": 565
       }
     },
     {
@@ -593,7 +582,7 @@
           "pullRequests": 0,
           "issues": 2,
           "prComments": 0,
-          "issueComments": 6
+          "issueComments": 5
         },
         {
           "repoName": "anti-trojan-source",
@@ -624,16 +613,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
-        },
-        {
-          "repoName": "create-node-lib",
-          "description": "Scaffold a batteries-included Node.js library project with docs, tests, semantic releases and more",
-          "url": "https://github.com/lirantal/create-node-lib",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
         },
         {
           "repoName": "daloradius",
@@ -701,7 +680,7 @@
         "totalPRs": 26,
         "totalIssues": 12,
         "totalPRComments": 1,
-        "totalIssueComments": 30
+        "totalIssueComments": 28
       }
     },
     {
@@ -1000,16 +979,6 @@
           "issueComments": 2
         },
         {
-          "repoName": "moneyman",
-          "description": "Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)",
-          "url": "https://github.com/daniel-hauser/moneyman",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "OpenHands",
           "description": "🙌 OpenHands: Code Less, Make More",
           "url": "https://github.com/OpenHands/OpenHands",
@@ -1041,7 +1010,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 27,
+        "totalCommits": 26,
         "totalPRs": 6,
         "totalIssues": 1,
         "totalPRComments": 21,
@@ -1086,16 +1055,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 923,
-    "totalPRs": 177,
-    "totalIssues": 136,
-    "totalPRComments": 993,
-    "totalIssueComments": 1049,
-    "totalRepos": 63,
+    "totalCommits": 902,
+    "totalPRs": 170,
+    "totalIssues": 131,
+    "totalPRComments": 991,
+    "totalIssueComments": 1033,
+    "totalRepos": 61,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-09-30 to 2026-03-29",
+    "analysisTimeframe": "2025-10-01 to 2026-03-30",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
