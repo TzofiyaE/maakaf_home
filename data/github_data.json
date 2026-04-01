@@ -142,16 +142,16 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 17,
-          "pullRequests": 12,
+          "commits": 16,
+          "pullRequests": 11,
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 17,
-        "totalPRs": 12,
+        "totalCommits": 16,
+        "totalPRs": 11,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 1
@@ -224,11 +224,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 67,
-          "pullRequests": 7,
+          "commits": 62,
+          "pullRequests": 6,
           "issues": 45,
-          "prComments": 367,
-          "issueComments": 264
+          "prComments": 365,
+          "issueComments": 260
         },
         {
           "repoName": "Broken-Link-Checker",
@@ -238,7 +238,7 @@
           "pullRequests": 1,
           "issues": 0,
           "prComments": 1,
-          "issueComments": 5
+          "issueComments": 4
         },
         {
           "repoName": "Hacktoberfest-25-Projects",
@@ -342,11 +342,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 73,
-        "totalPRs": 10,
+        "totalCommits": 68,
+        "totalPRs": 9,
         "totalIssues": 52,
-        "totalPRComments": 508,
-        "totalIssueComments": 269
+        "totalPRComments": 506,
+        "totalIssueComments": 264
       }
     },
     {
@@ -555,20 +555,10 @@
       },
       "repos": [
         {
-          "repoName": "ls-mcp",
-          "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
-          "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 22,
-          "pullRequests": 4,
-          "issues": 3,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
           "repoName": "npm-security-best-practices",
           "description": "Collection of npm package manager Security Best Practices",
           "url": "https://github.com/lirantal/npm-security-best-practices",
-          "commits": 24,
+          "commits": 3,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 1,
@@ -613,6 +603,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "ls-mcp",
+          "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
+          "url": "https://github.com/lirantal/ls-mcp",
+          "commits": 22,
+          "pullRequests": 4,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "daloradius",
@@ -676,9 +676,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 86,
+        "totalCommits": 65,
         "totalPRs": 22,
-        "totalIssues": 12,
+        "totalIssues": 10,
         "totalPRComments": 1,
         "totalIssueComments": 28
       }
@@ -1055,16 +1055,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 875,
-    "totalPRs": 162,
-    "totalIssues": 131,
-    "totalPRComments": 986,
-    "totalIssueComments": 1017,
+    "totalCommits": 848,
+    "totalPRs": 160,
+    "totalIssues": 129,
+    "totalPRComments": 984,
+    "totalIssueComments": 1012,
     "totalRepos": 61,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-02 to 2026-03-31",
+    "analysisTimeframe": "2025-10-03 to 2026-04-01",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
