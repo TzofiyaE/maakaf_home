@@ -182,7 +182,7 @@
           "pullRequests": 8,
           "issues": 2,
           "prComments": 20,
-          "issueComments": 14
+          "issueComments": 12
         }
       ],
       "summary": {
@@ -190,7 +190,7 @@
         "totalPRs": 8,
         "totalIssues": 2,
         "totalPRComments": 20,
-        "totalIssueComments": 14
+        "totalIssueComments": 12
       }
     },
     {
@@ -224,11 +224,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 56,
-          "pullRequests": 5,
-          "issues": 41,
-          "prComments": 361,
-          "issueComments": 253
+          "commits": 50,
+          "pullRequests": 4,
+          "issues": 36,
+          "prComments": 360,
+          "issueComments": 224
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -332,11 +332,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 58,
-        "totalPRs": 6,
-        "totalIssues": 48,
-        "totalPRComments": 501,
-        "totalIssueComments": 254
+        "totalCommits": 52,
+        "totalPRs": 5,
+        "totalIssues": 43,
+        "totalPRComments": 500,
+        "totalIssueComments": 225
       }
     },
     {
@@ -548,7 +548,7 @@
           "repoName": "npm-security-best-practices",
           "description": "Collection of npm package manager Security Best Practices",
           "url": "https://github.com/lirantal/npm-security-best-practices",
-          "commits": 3,
+          "commits": 2,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 1,
@@ -666,7 +666,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 65,
+        "totalCommits": 64,
         "totalPRs": 22,
         "totalIssues": 10,
         "totalPRComments": 1,
@@ -1045,16 +1045,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 837,
-    "totalPRs": 157,
-    "totalIssues": 124,
-    "totalPRComments": 973,
-    "totalIssueComments": 995,
+    "totalCommits": 830,
+    "totalPRs": 156,
+    "totalIssues": 119,
+    "totalPRComments": 972,
+    "totalIssueComments": 964,
     "totalRepos": 60,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-04 to 2026-04-02",
+    "analysisTimeframe": "2025-10-05 to 2026-04-03",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
