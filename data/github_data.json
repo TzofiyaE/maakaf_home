@@ -142,16 +142,16 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 16,
-          "pullRequests": 11,
+          "commits": 14,
+          "pullRequests": 10,
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 16,
-        "totalPRs": 11,
+        "totalCommits": 14,
+        "totalPRs": 10,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 1
@@ -178,19 +178,19 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 281,
-          "pullRequests": 8,
+          "commits": 268,
+          "pullRequests": 6,
           "issues": 2,
-          "prComments": 20,
-          "issueComments": 12
+          "prComments": 19,
+          "issueComments": 11
         }
       ],
       "summary": {
-        "totalCommits": 281,
-        "totalPRs": 8,
+        "totalCommits": 268,
+        "totalPRs": 6,
         "totalIssues": 2,
-        "totalPRComments": 20,
-        "totalIssueComments": 12
+        "totalPRComments": 19,
+        "totalIssueComments": 11
       }
     },
     {
@@ -224,11 +224,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 50,
-          "pullRequests": 4,
-          "issues": 36,
-          "prComments": 360,
-          "issueComments": 224
+          "commits": 46,
+          "pullRequests": 3,
+          "issues": 35,
+          "prComments": 349,
+          "issueComments": 207
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -239,16 +239,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
-        },
-        {
-          "repoName": "Broken-Link-Checker",
-          "description": null,
-          "url": "https://github.com/Deadlink-Hunter/Broken-Link-Checker",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
         },
         {
           "repoName": "cors",
@@ -332,11 +322,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 52,
-        "totalPRs": 5,
-        "totalIssues": 43,
-        "totalPRComments": 500,
-        "totalIssueComments": 225
+        "totalCommits": 48,
+        "totalPRs": 4,
+        "totalIssues": 42,
+        "totalPRComments": 489,
+        "totalIssueComments": 207
       }
     },
     {
@@ -545,16 +535,6 @@
       },
       "repos": [
         {
-          "repoName": "npm-security-best-practices",
-          "description": "Collection of npm package manager Security Best Practices",
-          "url": "https://github.com/lirantal/npm-security-best-practices",
-          "commits": 2,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 1,
-          "issueComments": 2
-        },
-        {
           "repoName": "mastra",
           "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
           "url": "https://github.com/mastra-ai/mastra",
@@ -593,6 +573,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "npm-security-best-practices",
+          "description": "Collection of npm package manager Security Best Practices",
+          "url": "https://github.com/lirantal/npm-security-best-practices",
+          "commits": 2,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 1,
+          "issueComments": 2
         },
         {
           "repoName": "ls-mcp",
@@ -668,7 +658,7 @@
       "summary": {
         "totalCommits": 64,
         "totalPRs": 22,
-        "totalIssues": 10,
+        "totalIssues": 9,
         "totalPRComments": 1,
         "totalIssueComments": 28
       }
@@ -1045,16 +1035,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 830,
-    "totalPRs": 156,
-    "totalIssues": 119,
-    "totalPRComments": 972,
-    "totalIssueComments": 964,
-    "totalRepos": 60,
+    "totalCommits": 811,
+    "totalPRs": 152,
+    "totalIssues": 117,
+    "totalPRComments": 960,
+    "totalIssueComments": 945,
+    "totalRepos": 59,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-05 to 2026-04-03",
+    "analysisTimeframe": "2025-10-06 to 2026-04-04",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
