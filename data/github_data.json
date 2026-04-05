@@ -46,7 +46,7 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 32,
+          "commits": 31,
           "pullRequests": 8,
           "issues": 15,
           "prComments": 0,
@@ -66,7 +66,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 36,
+          "commits": 33,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -114,7 +114,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 68,
+        "totalCommits": 64,
         "totalPRs": 9,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -224,11 +224,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 46,
-          "pullRequests": 3,
-          "issues": 35,
-          "prComments": 349,
-          "issueComments": 207
+          "commits": 43,
+          "pullRequests": 2,
+          "issues": 32,
+          "prComments": 340,
+          "issueComments": 191
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -322,11 +322,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 48,
-        "totalPRs": 4,
-        "totalIssues": 42,
-        "totalPRComments": 489,
-        "totalIssueComments": 207
+        "totalCommits": 45,
+        "totalPRs": 3,
+        "totalIssues": 39,
+        "totalPRComments": 480,
+        "totalIssueComments": 191
       }
     },
     {
@@ -575,16 +575,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "npm-security-best-practices",
-          "description": "Collection of npm package manager Security Best Practices",
-          "url": "https://github.com/lirantal/npm-security-best-practices",
-          "commits": 2,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 1,
-          "issueComments": 2
-        },
-        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -603,6 +593,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
+        },
+        {
+          "repoName": "npm-security-best-practices",
+          "description": "Collection of npm package manager Security Best Practices",
+          "url": "https://github.com/lirantal/npm-security-best-practices",
+          "commits": 2,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         },
         {
           "repoName": "user-docs",
@@ -659,8 +659,8 @@
         "totalCommits": 64,
         "totalPRs": 22,
         "totalIssues": 9,
-        "totalPRComments": 1,
-        "totalIssueComments": 28
+        "totalPRComments": 0,
+        "totalIssueComments": 27
       }
     },
     {
@@ -1035,16 +1035,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 811,
-    "totalPRs": 152,
-    "totalIssues": 117,
-    "totalPRComments": 960,
-    "totalIssueComments": 945,
+    "totalCommits": 804,
+    "totalPRs": 151,
+    "totalIssues": 114,
+    "totalPRComments": 950,
+    "totalIssueComments": 928,
     "totalRepos": 59,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-06 to 2026-04-04",
+    "analysisTimeframe": "2025-10-07 to 2026-04-05",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
