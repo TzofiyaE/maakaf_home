@@ -46,7 +46,7 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 31,
+          "commits": 30,
           "pullRequests": 8,
           "issues": 15,
           "prComments": 0,
@@ -114,7 +114,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 64,
+        "totalCommits": 63,
         "totalPRs": 9,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -224,11 +224,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 43,
-          "pullRequests": 2,
-          "issues": 32,
-          "prComments": 340,
-          "issueComments": 191
+          "commits": 35,
+          "pullRequests": 1,
+          "issues": 29,
+          "prComments": 330,
+          "issueComments": 164
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -322,11 +322,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 45,
-        "totalPRs": 3,
-        "totalIssues": 39,
-        "totalPRComments": 480,
-        "totalIssueComments": 191
+        "totalCommits": 37,
+        "totalPRs": 2,
+        "totalIssues": 36,
+        "totalPRComments": 470,
+        "totalIssueComments": 164
       }
     },
     {
@@ -615,16 +615,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "www-project-mcp-top-10",
-          "description": "OWASP Foundation web repository",
-          "url": "https://github.com/OWASP/www-project-mcp-top-10",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "enhanced-postgres-mcp-server",
           "description": null,
           "url": "https://github.com/GarethCott/enhanced-postgres-mcp-server",
@@ -656,7 +646,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 64,
+        "totalCommits": 63,
         "totalPRs": 22,
         "totalIssues": 9,
         "totalPRComments": 0,
@@ -1035,16 +1025,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 804,
-    "totalPRs": 151,
-    "totalIssues": 114,
-    "totalPRComments": 950,
-    "totalIssueComments": 928,
-    "totalRepos": 59,
+    "totalCommits": 794,
+    "totalPRs": 150,
+    "totalIssues": 111,
+    "totalPRComments": 940,
+    "totalIssueComments": 901,
+    "totalRepos": 58,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-07 to 2026-04-05",
+    "analysisTimeframe": "2025-10-08 to 2026-04-06",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
