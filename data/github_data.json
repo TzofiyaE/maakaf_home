@@ -224,11 +224,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 35,
+          "commits": 34,
           "pullRequests": 1,
-          "issues": 29,
-          "prComments": 322,
-          "issueComments": 160
+          "issues": 26,
+          "prComments": 303,
+          "issueComments": 156
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -322,11 +322,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 37,
+        "totalCommits": 36,
         "totalPRs": 2,
-        "totalIssues": 36,
-        "totalPRComments": 462,
-        "totalIssueComments": 160
+        "totalIssues": 33,
+        "totalPRComments": 443,
+        "totalIssueComments": 156
       }
     },
     {
@@ -595,16 +595,6 @@
           "issueComments": 2
         },
         {
-          "repoName": "npm-security-best-practices",
-          "description": "Collection of npm package manager Security Best Practices",
-          "url": "https://github.com/lirantal/npm-security-best-practices",
-          "commits": 2,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "user-docs",
           "description": "Gitbook documentation repo.",
           "url": "https://github.com/snyk/user-docs",
@@ -635,6 +625,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "npm-security-best-practices",
+          "description": "Collection of npm package manager Security Best Practices",
+          "url": "https://github.com/lirantal/npm-security-best-practices",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
           "repoName": "vscode-docs",
           "description": "Public documentation for Visual Studio Code",
           "url": "https://github.com/microsoft/vscode-docs",
@@ -646,7 +646,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 63,
+        "totalCommits": 62,
         "totalPRs": 22,
         "totalIssues": 9,
         "totalPRComments": 0,
@@ -1025,16 +1025,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 786,
+    "totalCommits": 784,
     "totalPRs": 146,
-    "totalIssues": 111,
-    "totalPRComments": 932,
-    "totalIssueComments": 897,
+    "totalIssues": 108,
+    "totalPRComments": 913,
+    "totalIssueComments": 893,
     "totalRepos": 58,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-09 to 2026-04-07",
+    "analysisTimeframe": "2025-10-10 to 2026-04-08",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
