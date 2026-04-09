@@ -181,16 +181,16 @@
           "commits": 268,
           "pullRequests": 6,
           "issues": 2,
-          "prComments": 19,
-          "issueComments": 11
+          "prComments": 18,
+          "issueComments": 6
         }
       ],
       "summary": {
         "totalCommits": 268,
         "totalPRs": 6,
         "totalIssues": 2,
-        "totalPRComments": 19,
-        "totalIssueComments": 11
+        "totalPRComments": 18,
+        "totalIssueComments": 6
       }
     },
     {
@@ -224,11 +224,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 34,
+          "commits": 32,
           "pullRequests": 1,
-          "issues": 26,
-          "prComments": 303,
-          "issueComments": 156
+          "issues": 24,
+          "prComments": 281,
+          "issueComments": 134
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -322,11 +322,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 36,
+        "totalCommits": 34,
         "totalPRs": 2,
-        "totalIssues": 33,
-        "totalPRComments": 443,
-        "totalIssueComments": 156
+        "totalIssues": 31,
+        "totalPRComments": 421,
+        "totalIssueComments": 134
       }
     },
     {
@@ -466,17 +466,17 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 42,
+          "commits": 41,
           "pullRequests": 7,
-          "issues": 7,
+          "issues": 3,
           "prComments": 9,
           "issueComments": 35
         }
       ],
       "summary": {
-        "totalCommits": 42,
+        "totalCommits": 41,
         "totalPRs": 7,
-        "totalIssues": 7,
+        "totalIssues": 3,
         "totalPRComments": 9,
         "totalIssueComments": 35
       }
@@ -555,16 +555,6 @@
           "issueComments": 5
         },
         {
-          "repoName": "npq",
-          "description": "safely install npm packages by auditing them pre-install stage",
-          "url": "https://github.com/lirantal/npq",
-          "commits": 20,
-          "pullRequests": 12,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 10
-        },
-        {
           "repoName": "mcp-scan",
           "description": "Constrain, log and scan your MCP connections for security vulnerabilities.",
           "url": "https://github.com/invariantlabs-ai/mcp-scan",
@@ -575,14 +565,14 @@
           "issueComments": 0
         },
         {
-          "repoName": "ls-mcp",
-          "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
-          "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 22,
-          "pullRequests": 4,
+          "repoName": "npq",
+          "description": "safely install npm packages by auditing them pre-install stage",
+          "url": "https://github.com/lirantal/npq",
+          "commits": 18,
+          "pullRequests": 11,
           "issues": 1,
           "prComments": 0,
-          "issueComments": 4
+          "issueComments": 9
         },
         {
           "repoName": "daloradius",
@@ -603,6 +593,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "ls-mcp",
+          "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
+          "url": "https://github.com/lirantal/ls-mcp",
+          "commits": 20,
+          "pullRequests": 4,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 3
         },
         {
           "repoName": "enhanced-postgres-mcp-server",
@@ -646,11 +646,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 62,
-        "totalPRs": 22,
+        "totalCommits": 58,
+        "totalPRs": 21,
         "totalIssues": 9,
         "totalPRComments": 0,
-        "totalIssueComments": 27
+        "totalIssueComments": 25
       }
     },
     {
@@ -1025,16 +1025,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 784,
-    "totalPRs": 146,
-    "totalIssues": 108,
-    "totalPRComments": 913,
-    "totalIssueComments": 893,
+    "totalCommits": 777,
+    "totalPRs": 145,
+    "totalIssues": 102,
+    "totalPRComments": 890,
+    "totalIssueComments": 864,
     "totalRepos": 58,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-10 to 2026-04-08",
+    "analysisTimeframe": "2025-10-11 to 2026-04-09",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
