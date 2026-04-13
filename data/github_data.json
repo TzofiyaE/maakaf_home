@@ -224,11 +224,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 26,
+          "commits": 22,
           "pullRequests": 1,
-          "issues": 21,
-          "prComments": 256,
-          "issueComments": 114
+          "issues": 16,
+          "prComments": 253,
+          "issueComments": 102
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -322,11 +322,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 28,
+        "totalCommits": 24,
         "totalPRs": 2,
-        "totalIssues": 28,
-        "totalPRComments": 396,
-        "totalIssueComments": 114
+        "totalIssues": 23,
+        "totalPRComments": 393,
+        "totalIssueComments": 102
       }
     },
     {
@@ -823,20 +823,20 @@
           "issueComments": 3
         },
         {
-          "repoName": "rust.code-maven.com",
-          "description": "Rust version of the Code Maven web site",
-          "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 16,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "mdbooks.code-maven.com",
           "description": "Collection of Public mdBooks",
           "url": "https://github.com/szabgab/mdbooks.code-maven.com",
-          "commits": 11,
+          "commits": 2,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "rust.code-maven.com",
+          "description": "Rust version of the Code Maven web site",
+          "url": "https://github.com/szabgab/rust.code-maven.com",
+          "commits": 9,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -894,11 +894,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 100,
+        "totalCommits": 84,
         "totalPRs": 4,
         "totalIssues": 3,
         "totalPRComments": 3,
-        "totalIssueComments": 22
+        "totalIssueComments": 21
       }
     },
     {
@@ -1025,16 +1025,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 768,
+    "totalCommits": 748,
     "totalPRs": 144,
-    "totalIssues": 98,
-    "totalPRComments": 856,
-    "totalIssueComments": 833,
+    "totalIssues": 93,
+    "totalPRComments": 853,
+    "totalIssueComments": 820,
     "totalRepos": 58,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-14 to 2026-04-12",
+    "analysisTimeframe": "2025-10-15 to 2026-04-13",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
