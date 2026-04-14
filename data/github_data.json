@@ -142,16 +142,16 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 7,
-          "pullRequests": 6,
+          "commits": 2,
+          "pullRequests": 2,
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 7,
-        "totalPRs": 6,
+        "totalCommits": 2,
+        "totalPRs": 2,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 1
@@ -178,16 +178,16 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 267,
-          "pullRequests": 6,
+          "commits": 264,
+          "pullRequests": 5,
           "issues": 2,
           "prComments": 18,
           "issueComments": 4
         }
       ],
       "summary": {
-        "totalCommits": 267,
-        "totalPRs": 6,
+        "totalCommits": 264,
+        "totalPRs": 5,
         "totalIssues": 2,
         "totalPRComments": 18,
         "totalIssueComments": 4
@@ -224,11 +224,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 22,
+          "commits": 20,
           "pullRequests": 1,
           "issues": 16,
-          "prComments": 253,
-          "issueComments": 102
+          "prComments": 248,
+          "issueComments": 93
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -322,11 +322,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 24,
+        "totalCommits": 22,
         "totalPRs": 2,
         "totalIssues": 23,
-        "totalPRComments": 393,
-        "totalIssueComments": 102
+        "totalPRComments": 388,
+        "totalIssueComments": 93
       }
     },
     {
@@ -350,21 +350,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 105,
-          "pullRequests": 47,
+          "commits": 103,
+          "pullRequests": 44,
           "issues": 16,
-          "prComments": 346,
-          "issueComments": 388
-        },
-        {
-          "repoName": "argus",
-          "description": null,
-          "url": "https://github.com/scylladb/argus",
-          "commits": 4,
-          "pullRequests": 2,
-          "issues": 1,
-          "prComments": 5,
-          "issueComments": 26
+          "prComments": 332,
+          "issueComments": 371
         },
         {
           "repoName": "scylladb",
@@ -372,9 +362,9 @@
           "url": "https://github.com/scylladb/scylladb",
           "commits": 1,
           "pullRequests": 2,
-          "issues": 3,
+          "issues": 2,
           "prComments": 5,
-          "issueComments": 73
+          "issueComments": 71
         },
         {
           "repoName": "scylla-ccm",
@@ -405,6 +395,16 @@
           "issues": 0,
           "prComments": 5,
           "issueComments": 4
+        },
+        {
+          "repoName": "argus",
+          "description": null,
+          "url": "https://github.com/scylladb/argus",
+          "commits": 4,
+          "pullRequests": 2,
+          "issues": 1,
+          "prComments": 5,
+          "issueComments": 23
         },
         {
           "repoName": "scylla-machine-image",
@@ -438,11 +438,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 143,
-        "totalPRs": 66,
-        "totalIssues": 25,
-        "totalPRComments": 409,
-        "totalIssueComments": 557
+        "totalCommits": 141,
+        "totalPRs": 63,
+        "totalIssues": 24,
+        "totalPRComments": 395,
+        "totalIssueComments": 535
       }
     },
     {
@@ -813,20 +813,20 @@
           "issueComments": 5
         },
         {
-          "repoName": "mdBook",
-          "description": "Create book from markdown files. Like Gitbook but implemented in Rust",
-          "url": "https://github.com/rust-lang/mdBook",
-          "commits": 0,
+          "repoName": "Perl-Maven",
+          "description": "The source code of the Perl Maven website",
+          "url": "https://github.com/szabgab/Perl-Maven",
+          "commits": 1,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 3
+          "issueComments": 0
         },
         {
           "repoName": "mdbooks.code-maven.com",
           "description": "Collection of Public mdBooks",
           "url": "https://github.com/szabgab/mdbooks.code-maven.com",
-          "commits": 2,
+          "commits": 1,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -836,17 +836,7 @@
           "repoName": "rust.code-maven.com",
           "description": "Rust version of the Code Maven web site",
           "url": "https://github.com/szabgab/rust.code-maven.com",
-          "commits": 9,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "Perl-Maven",
-          "description": "The source code of the Perl Maven website",
-          "url": "https://github.com/szabgab/Perl-Maven",
-          "commits": 1,
+          "commits": 8,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -894,11 +884,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 84,
+        "totalCommits": 82,
         "totalPRs": 4,
         "totalIssues": 3,
         "totalPRComments": 3,
-        "totalIssueComments": 21
+        "totalIssueComments": 18
       }
     },
     {
@@ -1025,16 +1015,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 748,
-    "totalPRs": 144,
-    "totalIssues": 93,
-    "totalPRComments": 853,
-    "totalIssueComments": 820,
-    "totalRepos": 58,
+    "totalCommits": 734,
+    "totalPRs": 136,
+    "totalIssues": 92,
+    "totalPRComments": 834,
+    "totalIssueComments": 786,
+    "totalRepos": 57,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-15 to 2026-04-13",
+    "analysisTimeframe": "2025-10-16 to 2026-04-14",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
