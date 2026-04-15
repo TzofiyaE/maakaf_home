@@ -66,7 +66,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 30,
+          "commits": 29,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -114,7 +114,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 60,
+        "totalCommits": 59,
         "totalPRs": 9,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -226,9 +226,9 @@
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
           "commits": 20,
           "pullRequests": 1,
-          "issues": 16,
-          "prComments": 248,
-          "issueComments": 93
+          "issues": 11,
+          "prComments": 225,
+          "issueComments": 74
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -324,9 +324,9 @@
       "summary": {
         "totalCommits": 22,
         "totalPRs": 2,
-        "totalIssues": 23,
-        "totalPRComments": 388,
-        "totalIssueComments": 93
+        "totalIssues": 18,
+        "totalPRComments": 365,
+        "totalIssueComments": 74
       }
     },
     {
@@ -350,11 +350,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 103,
+          "commits": 97,
           "pullRequests": 44,
           "issues": 16,
-          "prComments": 332,
-          "issueComments": 371
+          "prComments": 321,
+          "issueComments": 357
         },
         {
           "repoName": "scylladb",
@@ -364,7 +364,7 @@
           "pullRequests": 2,
           "issues": 2,
           "prComments": 5,
-          "issueComments": 71
+          "issueComments": 63
         },
         {
           "repoName": "scylla-ccm",
@@ -374,7 +374,7 @@
           "pullRequests": 2,
           "issues": 1,
           "prComments": 12,
-          "issueComments": 26
+          "issueComments": 25
         },
         {
           "repoName": "cassandra-stress",
@@ -438,11 +438,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 141,
+        "totalCommits": 135,
         "totalPRs": 63,
         "totalIssues": 24,
-        "totalPRComments": 395,
-        "totalIssueComments": 535
+        "totalPRComments": 384,
+        "totalIssueComments": 512
       }
     },
     {
@@ -535,16 +535,6 @@
       },
       "repos": [
         {
-          "repoName": "mastra",
-          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
-          "url": "https://github.com/mastra-ai/mastra",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 2,
-          "prComments": 0,
-          "issueComments": 5
-        },
-        {
           "repoName": "anti-trojan-source",
           "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
           "url": "https://github.com/lirantal/anti-trojan-source",
@@ -572,17 +562,17 @@
           "pullRequests": 11,
           "issues": 1,
           "prComments": 0,
-          "issueComments": 9
+          "issueComments": 7
         },
         {
-          "repoName": "daloradius",
-          "description": "daloRADIUS is an advanced RADIUS web management application for managing hotspots and general-purpose ISP deployments. It features user management, graphical reporting, accounting, a billing engine, and integrates with OpenStreetMap for geolocation. The system is based on FreeRADIUS with which it shares access to the backend database.",
-          "url": "https://github.com/lirantal/daloradius",
+          "repoName": "mastra",
+          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
+          "url": "https://github.com/mastra-ai/mastra",
           "commits": 0,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 2
+          "issueComments": 5
         },
         {
           "repoName": "user-docs",
@@ -643,14 +633,24 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "daloradius",
+          "description": "daloRADIUS is an advanced RADIUS web management application for managing hotspots and general-purpose ISP deployments. It features user management, graphical reporting, accounting, a billing engine, and integrates with OpenStreetMap for geolocation. The system is based on FreeRADIUS with which it shares access to the backend database.",
+          "url": "https://github.com/lirantal/daloradius",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         }
       ],
       "summary": {
         "totalCommits": 58,
         "totalPRs": 21,
-        "totalIssues": 9,
+        "totalIssues": 7,
         "totalPRComments": 0,
-        "totalIssueComments": 25
+        "totalIssueComments": 22
       }
     },
     {
@@ -1015,16 +1015,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 734,
+    "totalCommits": 727,
     "totalPRs": 136,
-    "totalIssues": 92,
-    "totalPRComments": 834,
-    "totalIssueComments": 786,
+    "totalIssues": 85,
+    "totalPRComments": 800,
+    "totalIssueComments": 741,
     "totalRepos": 57,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-16 to 2026-04-14",
+    "analysisTimeframe": "2025-10-17 to 2026-04-15",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
