@@ -224,11 +224,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 20,
+          "commits": 14,
           "pullRequests": 1,
-          "issues": 11,
-          "prComments": 225,
-          "issueComments": 74
+          "issues": 8,
+          "prComments": 216,
+          "issueComments": 60
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -322,11 +322,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 22,
+        "totalCommits": 16,
         "totalPRs": 2,
-        "totalIssues": 18,
-        "totalPRComments": 365,
-        "totalIssueComments": 74
+        "totalIssues": 15,
+        "totalPRComments": 356,
+        "totalIssueComments": 60
       }
     },
     {
@@ -575,16 +575,6 @@
           "issueComments": 5
         },
         {
-          "repoName": "user-docs",
-          "description": "Gitbook documentation repo.",
-          "url": "https://github.com/snyk/user-docs",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -646,7 +636,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 58,
+        "totalCommits": 57,
         "totalPRs": 21,
         "totalIssues": 7,
         "totalPRComments": 0,
@@ -1015,16 +1005,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 727,
+    "totalCommits": 720,
     "totalPRs": 136,
-    "totalIssues": 85,
-    "totalPRComments": 800,
-    "totalIssueComments": 741,
-    "totalRepos": 57,
+    "totalIssues": 82,
+    "totalPRComments": 791,
+    "totalIssueComments": 727,
+    "totalRepos": 56,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-17 to 2026-04-15",
+    "analysisTimeframe": "2025-10-18 to 2026-04-16",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
