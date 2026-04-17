@@ -224,11 +224,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 14,
+          "commits": 11,
           "pullRequests": 1,
           "issues": 8,
-          "prComments": 216,
-          "issueComments": 60
+          "prComments": 209,
+          "issueComments": 58
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -322,11 +322,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 16,
+        "totalCommits": 13,
         "totalPRs": 2,
         "totalIssues": 15,
-        "totalPRComments": 356,
-        "totalIssueComments": 60
+        "totalPRComments": 349,
+        "totalIssueComments": 58
       }
     },
     {
@@ -1005,16 +1005,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 720,
+    "totalCommits": 717,
     "totalPRs": 136,
     "totalIssues": 82,
-    "totalPRComments": 791,
-    "totalIssueComments": 727,
+    "totalPRComments": 784,
+    "totalIssueComments": 725,
     "totalRepos": 56,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-18 to 2026-04-16",
+    "analysisTimeframe": "2025-10-19 to 2026-04-17",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
