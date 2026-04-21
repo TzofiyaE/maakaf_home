@@ -73,16 +73,6 @@
           "issueComments": 6
         },
         {
-          "repoName": "os-practice",
-          "description": null,
-          "url": "https://github.com/UrielOfir/os-practice",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
           "repoName": "maakaf-website",
           "description": "The official website of 'Maakaf' community",
           "url": "https://github.com/Maakaf/maakaf-website",
@@ -118,7 +108,7 @@
         "totalPRs": 9,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 43
+        "totalIssueComments": 41
       }
     },
     {
@@ -178,16 +168,16 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 253,
-          "pullRequests": 3,
+          "commits": 245,
+          "pullRequests": 0,
           "issues": 1,
           "prComments": 18,
           "issueComments": 4
         }
       ],
       "summary": {
-        "totalCommits": 253,
-        "totalPRs": 3,
+        "totalCommits": 245,
+        "totalPRs": 0,
         "totalIssues": 1,
         "totalPRComments": 18,
         "totalIssueComments": 4
@@ -224,11 +214,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 8,
+          "commits": 5,
           "pullRequests": 1,
           "issues": 8,
           "prComments": 172,
-          "issueComments": 45
+          "issueComments": 39
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -322,11 +312,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 10,
+        "totalCommits": 7,
         "totalPRs": 2,
         "totalIssues": 15,
         "totalPRComments": 312,
-        "totalIssueComments": 45
+        "totalIssueComments": 39
       }
     },
     {
@@ -353,8 +343,8 @@
           "commits": 94,
           "pullRequests": 42,
           "issues": 15,
-          "prComments": 311,
-          "issueComments": 334
+          "prComments": 309,
+          "issueComments": 327
         },
         {
           "repoName": "scylladb",
@@ -362,9 +352,9 @@
           "url": "https://github.com/scylladb/scylladb",
           "commits": 0,
           "pullRequests": 1,
-          "issues": 2,
+          "issues": 1,
           "prComments": 2,
-          "issueComments": 54
+          "issueComments": 51
         },
         {
           "repoName": "scylla-ccm",
@@ -440,9 +430,9 @@
       "summary": {
         "totalCommits": 127,
         "totalPRs": 58,
-        "totalIssues": 23,
-        "totalPRComments": 370,
-        "totalIssueComments": 474
+        "totalIssues": 22,
+        "totalPRComments": 368,
+        "totalIssueComments": 464
       }
     },
     {
@@ -470,7 +460,7 @@
           "pullRequests": 7,
           "issues": 3,
           "prComments": 9,
-          "issueComments": 34
+          "issueComments": 32
         }
       ],
       "summary": {
@@ -478,7 +468,7 @@
         "totalPRs": 7,
         "totalIssues": 3,
         "totalPRComments": 9,
-        "totalIssueComments": 34
+        "totalIssueComments": 32
       }
     },
     {
@@ -995,16 +985,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 687,
-    "totalPRs": 128,
-    "totalIssues": 80,
-    "totalPRComments": 733,
-    "totalIssueComments": 668,
-    "totalRepos": 55,
+    "totalCommits": 676,
+    "totalPRs": 125,
+    "totalIssues": 79,
+    "totalPRComments": 731,
+    "totalIssueComments": 648,
+    "totalRepos": 54,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-22 to 2026-04-20",
+    "analysisTimeframe": "2025-10-23 to 2026-04-21",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
