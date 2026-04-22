@@ -66,7 +66,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 28,
+          "commits": 27,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -104,7 +104,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 58,
+        "totalCommits": 57,
         "totalPRs": 9,
         "totalIssues": 17,
         "totalPRComments": 0,
@@ -168,7 +168,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 245,
+          "commits": 242,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 18,
@@ -176,7 +176,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 245,
+        "totalCommits": 242,
         "totalPRs": 0,
         "totalIssues": 1,
         "totalPRComments": 18,
@@ -216,7 +216,7 @@
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
           "commits": 5,
           "pullRequests": 1,
-          "issues": 8,
+          "issues": 7,
           "prComments": 172,
           "issueComments": 39
         },
@@ -314,7 +314,7 @@
       "summary": {
         "totalCommits": 7,
         "totalPRs": 2,
-        "totalIssues": 15,
+        "totalIssues": 14,
         "totalPRComments": 312,
         "totalIssueComments": 39
       }
@@ -340,11 +340,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 94,
-          "pullRequests": 42,
+          "commits": 93,
+          "pullRequests": 41,
           "issues": 15,
-          "prComments": 309,
-          "issueComments": 327
+          "prComments": 303,
+          "issueComments": 316
         },
         {
           "repoName": "scylladb",
@@ -354,7 +354,7 @@
           "pullRequests": 1,
           "issues": 1,
           "prComments": 2,
-          "issueComments": 51
+          "issueComments": 50
         },
         {
           "repoName": "scylla-ccm",
@@ -414,7 +414,7 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 14,
-          "issueComments": 9
+          "issueComments": 8
         },
         {
           "repoName": "gemini",
@@ -428,11 +428,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 127,
-        "totalPRs": 58,
+        "totalCommits": 126,
+        "totalPRs": 57,
         "totalIssues": 22,
-        "totalPRComments": 368,
-        "totalIssueComments": 464
+        "totalPRComments": 362,
+        "totalIssueComments": 451
       }
     },
     {
@@ -892,11 +892,11 @@
           "repoName": "israeli-bank-scrapers",
           "description": "Provide scrapers for all major Israeli banks and credit card companies",
           "url": "https://github.com/eshaham/israeli-bank-scrapers",
-          "commits": 2,
-          "pullRequests": 1,
+          "commits": 0,
+          "pullRequests": 0,
           "issues": 0,
           "prComments": 13,
-          "issueComments": 4
+          "issueComments": 3
         },
         {
           "repoName": "caspion",
@@ -940,11 +940,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 26,
-        "totalPRs": 6,
+        "totalCommits": 24,
+        "totalPRs": 5,
         "totalIssues": 1,
         "totalPRComments": 21,
-        "totalIssueComments": 9
+        "totalIssueComments": 8
       }
     },
     {
@@ -985,16 +985,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 676,
-    "totalPRs": 125,
-    "totalIssues": 79,
-    "totalPRComments": 731,
-    "totalIssueComments": 648,
+    "totalCommits": 669,
+    "totalPRs": 123,
+    "totalIssues": 78,
+    "totalPRComments": 725,
+    "totalIssueComments": 634,
     "totalRepos": 54,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-23 to 2026-04-21",
+    "analysisTimeframe": "2025-10-24 to 2026-04-22",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
