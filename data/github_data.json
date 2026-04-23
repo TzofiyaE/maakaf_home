@@ -214,11 +214,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 5,
-          "pullRequests": 1,
+          "commits": 2,
+          "pullRequests": 0,
           "issues": 7,
-          "prComments": 172,
-          "issueComments": 39
+          "prComments": 171,
+          "issueComments": 37
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -312,11 +312,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 7,
-        "totalPRs": 2,
+        "totalCommits": 4,
+        "totalPRs": 1,
         "totalIssues": 14,
-        "totalPRComments": 312,
-        "totalIssueComments": 39
+        "totalPRComments": 311,
+        "totalIssueComments": 37
       }
     },
     {
@@ -342,9 +342,9 @@
           "url": "https://github.com/scylladb/scylla-cluster-tests",
           "commits": 93,
           "pullRequests": 41,
-          "issues": 15,
-          "prComments": 303,
-          "issueComments": 316
+          "issues": 14,
+          "prComments": 302,
+          "issueComments": 314
         },
         {
           "repoName": "scylladb",
@@ -354,7 +354,7 @@
           "pullRequests": 1,
           "issues": 1,
           "prComments": 2,
-          "issueComments": 50
+          "issueComments": 49
         },
         {
           "repoName": "scylla-ccm",
@@ -430,9 +430,9 @@
       "summary": {
         "totalCommits": 126,
         "totalPRs": 57,
-        "totalIssues": 22,
-        "totalPRComments": 362,
-        "totalIssueComments": 451
+        "totalIssues": 21,
+        "totalPRComments": 361,
+        "totalIssueComments": 448
       }
     },
     {
@@ -985,16 +985,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 669,
-    "totalPRs": 123,
-    "totalIssues": 78,
-    "totalPRComments": 725,
-    "totalIssueComments": 634,
+    "totalCommits": 666,
+    "totalPRs": 122,
+    "totalIssues": 77,
+    "totalPRComments": 723,
+    "totalIssueComments": 629,
     "totalRepos": 54,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-24 to 2026-04-22",
+    "analysisTimeframe": "2025-10-25 to 2026-04-23",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
