@@ -47,8 +47,8 @@
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
           "commits": 30,
-          "pullRequests": 8,
-          "issues": 15,
+          "pullRequests": 7,
+          "issues": 13,
           "prComments": 0,
           "issueComments": 32
         },
@@ -66,7 +66,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 27,
+          "commits": 12,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -104,9 +104,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 57,
-        "totalPRs": 9,
-        "totalIssues": 17,
+        "totalCommits": 42,
+        "totalPRs": 8,
+        "totalIssues": 15,
         "totalPRComments": 0,
         "totalIssueComments": 41
       }
@@ -216,9 +216,9 @@
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
           "commits": 2,
           "pullRequests": 0,
-          "issues": 7,
-          "prComments": 171,
-          "issueComments": 37
+          "issues": 6,
+          "prComments": 166,
+          "issueComments": 30
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -314,9 +314,9 @@
       "summary": {
         "totalCommits": 4,
         "totalPRs": 1,
-        "totalIssues": 14,
-        "totalPRComments": 311,
-        "totalIssueComments": 37
+        "totalIssues": 13,
+        "totalPRComments": 306,
+        "totalIssueComments": 30
       }
     },
     {
@@ -777,10 +777,10 @@
           "description": "Annotated data.",
           "url": "https://github.com/scverse/anndata",
           "commits": 2,
-          "pullRequests": 4,
-          "issues": 3,
-          "prComments": 3,
-          "issueComments": 5
+          "pullRequests": 3,
+          "issues": 2,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "Perl-Maven",
@@ -855,10 +855,10 @@
       ],
       "summary": {
         "totalCommits": 76,
-        "totalPRs": 4,
-        "totalIssues": 3,
-        "totalPRComments": 3,
-        "totalIssueComments": 18
+        "totalPRs": 3,
+        "totalIssues": 2,
+        "totalPRComments": 0,
+        "totalIssueComments": 17
       }
     },
     {
@@ -985,16 +985,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 666,
-    "totalPRs": 122,
-    "totalIssues": 77,
-    "totalPRComments": 723,
-    "totalIssueComments": 629,
+    "totalCommits": 651,
+    "totalPRs": 120,
+    "totalIssues": 73,
+    "totalPRComments": 715,
+    "totalIssueComments": 621,
     "totalRepos": 54,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-25 to 2026-04-23",
+    "analysisTimeframe": "2025-10-26 to 2026-04-24",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
