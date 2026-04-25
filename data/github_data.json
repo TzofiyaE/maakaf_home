@@ -46,11 +46,11 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 30,
+          "commits": 28,
           "pullRequests": 7,
           "issues": 13,
           "prComments": 0,
-          "issueComments": 32
+          "issueComments": 27
         },
         {
           "repoName": "cobol-programming-course",
@@ -66,7 +66,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 12,
+          "commits": 11,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -104,11 +104,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 42,
+        "totalCommits": 39,
         "totalPRs": 8,
         "totalIssues": 15,
         "totalPRComments": 0,
-        "totalIssueComments": 41
+        "totalIssueComments": 36
       }
     },
     {
@@ -168,7 +168,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 242,
+          "commits": 239,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 18,
@@ -176,7 +176,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 242,
+        "totalCommits": 239,
         "totalPRs": 0,
         "totalIssues": 1,
         "totalPRComments": 18,
@@ -340,11 +340,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 93,
-          "pullRequests": 41,
-          "issues": 14,
-          "prComments": 302,
-          "issueComments": 314
+          "commits": 89,
+          "pullRequests": 40,
+          "issues": 12,
+          "prComments": 296,
+          "issueComments": 310
         },
         {
           "repoName": "scylladb",
@@ -428,11 +428,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 126,
-        "totalPRs": 57,
-        "totalIssues": 21,
-        "totalPRComments": 361,
-        "totalIssueComments": 448
+        "totalCommits": 122,
+        "totalPRs": 56,
+        "totalIssues": 19,
+        "totalPRComments": 355,
+        "totalIssueComments": 444
       }
     },
     {
@@ -644,19 +644,19 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 6,
-          "pullRequests": 10,
-          "issues": 9,
+          "commits": 4,
+          "pullRequests": 8,
+          "issues": 6,
           "prComments": 0,
-          "issueComments": 15
+          "issueComments": 12
         }
       ],
       "summary": {
-        "totalCommits": 6,
-        "totalPRs": 10,
-        "totalIssues": 9,
+        "totalCommits": 4,
+        "totalPRs": 8,
+        "totalIssues": 6,
         "totalPRComments": 0,
-        "totalIssueComments": 15
+        "totalIssueComments": 12
       }
     },
     {
@@ -776,8 +776,8 @@
           "repoName": "anndata",
           "description": "Annotated data.",
           "url": "https://github.com/scverse/anndata",
-          "commits": 2,
-          "pullRequests": 3,
+          "commits": 1,
+          "pullRequests": 1,
           "issues": 2,
           "prComments": 0,
           "issueComments": 4
@@ -854,8 +854,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 76,
-        "totalPRs": 3,
+        "totalCommits": 75,
+        "totalPRs": 1,
         "totalIssues": 2,
         "totalPRComments": 0,
         "totalIssueComments": 17
@@ -985,16 +985,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 651,
-    "totalPRs": 120,
-    "totalIssues": 73,
-    "totalPRComments": 715,
-    "totalIssueComments": 621,
+    "totalCommits": 638,
+    "totalPRs": 115,
+    "totalIssues": 68,
+    "totalPRComments": 709,
+    "totalIssueComments": 609,
     "totalRepos": 54,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-26 to 2026-04-24",
+    "analysisTimeframe": "2025-10-27 to 2026-04-25",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
