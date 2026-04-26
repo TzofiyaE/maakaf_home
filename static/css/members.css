@@ -1,12 +1,27 @@
 /* Light Theme */
 html.light {
-  --bg-color: #ffffff;
+  --bg-color: #f4f6f8;
   --text-color: #111111;
   --border-color: #cccccc;
   --row-alt-color: #f9f9f9;
   --thead-bg-color: #f2f2f2;
   --link-color: #007bff;
   --link-hover: #0056b3;
+  --chart-section-bg: #e9eef3;
+  --chart-text-color: #111827;
+  --chart-value-color: #000000;
+  --chart-surface: #ffffff;
+  --chart-border-color: rgba(51, 65, 85, 0.1);
+  --chart-shadow: 0 18px 34px rgba(51, 65, 85, 0.09);
+  --chart-grid-color: rgba(100, 116, 139, 0.18);
+  --chart-muted-text: rgba(31, 41, 55, 0.82);
+  --chart-tooltip-bg: rgba(15, 23, 42, 0.96);
+  --chart-font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  --chart-link-color: #ffffff;
+  --chart-link-hover-color: #000000;
+  --chart-frame-highlight: rgba(255, 255, 255, 0.6);
+  --chart-panel-bg: #f7f9fb;
+  --chart-panel-shadow: 0 14px 24px rgba(100, 116, 139, 0.12);
 }
 
 /* Dark Theme */
@@ -18,6 +33,21 @@ html.dark {
   --thead-bg-color: #2a2a2a;
   --link-color: #66b1ff;
   --link-hover: #99ccff;
+  --chart-section-bg: #111827;
+  --chart-text-color: #e5edf6;
+  --chart-value-color: #f8fafc;
+  --chart-surface: #192231;
+  --chart-border-color: rgba(148, 163, 184, 0.18);
+  --chart-shadow: 0 20px 42px rgba(2, 6, 23, 0.38);
+  --chart-grid-color: rgba(148, 163, 184, 0.14);
+  --chart-muted-text: rgba(203, 213, 225, 0.72);
+  --chart-tooltip-bg: rgba(2, 6, 23, 0.96);
+  --chart-font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  --chart-link-color: #bcc9d6;
+  --chart-link-hover-color: #f8fafc;
+  --chart-frame-highlight: rgba(255, 255, 255, 0.04);
+  --chart-panel-bg: #212c3d;
+  --chart-panel-shadow: 0 18px 30px rgba(2, 6, 23, 0.28);
 }
 
 /* Apply CSS Variables */
@@ -100,26 +130,101 @@ body > div {
   flex-shrink: 0;
 }
 
-.community-charts{
+.community-charts {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* תמיד 2 בשורה */
-  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
   align-items: stretch;
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border-radius: 30px;
+  background: var(--chart-section-bg);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
-/* אותו מראה בדיוק, בלי max-width שמפרק */
-.chart-card{
-  height: 260px;
-  padding: 12px 14px;
-  border: 1px solid rgba(255,255,255,.12);
-  border-radius: 12px;
+.chart-card {
+  position: relative;
+  isolation: isolate;
+  min-height: 420px;
+  padding: 1.3rem 1.3rem 1.15rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 28px;
   margin-bottom: 0;
-  min-width: 0; /* קריטי כדי למנוע גלילה/שבירה בגלל תוכן */
+  min-width: 0;
+  overflow: hidden;
+  background: var(--chart-surface);
+  box-shadow:
+    inset 0 1px 0 var(--chart-frame-highlight),
+    inset 0 0 0 1px rgba(148, 163, 184, 0.08),
+    var(--chart-shadow);
+  backdrop-filter: blur(14px);
 }
 
-.chart-card canvas{
+.chart-card::before {
+  display: none;
+}
+
+.community-charts .chart-card:first-child {
+  background: var(--chart-surface);
+}
+
+.community-charts .chart-card:last-child {
+  background: var(--chart-surface);
+}
+
+.chart-card > .chart-title {
+  display: none;
+}
+
+.chart-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.45rem;
+}
+
+.chart-title {
+  margin: 0;
+  font-size: clamp(1rem, 1.6vw, 1.22rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--chart-text-color);
+}
+
+.chart-subtitle {
+  margin: 0 0 1rem;
+  max-width: 42ch;
+  color: var(--chart-muted-text);
+  font-size: 0.84rem;
+  line-height: 1.4;
+}
+
+.chart-canvas-panel {
+  position: relative;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 22px;
+  padding: 1rem 1rem 0.95rem;
+  background: var(--chart-panel-bg);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+    var(--chart-panel-shadow);
+}
+
+.chart-canvas-panel::before {
+  display: none;
+}
+
+.chart-canvas-wrap {
+  position: relative;
+  height: 300px;
+}
+
+.chart-card canvas {
   width: 100% !important;
-  height: calc(100% - 28px) !important;
+  height: 100% !important;
 }
 
 
@@ -148,6 +253,42 @@ body > div {
 /* ========================
    Responsive
 ========================= */
+.chart-title {
+  margin: 0;
+  font-size: clamp(1rem, 1.6vw, 1.22rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-color);
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .community-charts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .community-charts {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-card {
+    min-height: 390px;
+    padding: 1rem;
+    border-radius: 24px;
+  }
+
+  .chart-card-header {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .chart-canvas-wrap {
+    height: 260px;
+  }
+}
+
 @media (max-width: 600px) {
   #contributorsTable th,
   #contributorsTable td {
@@ -158,6 +299,18 @@ body > div {
   .avatar {
     width: 32px;
     height: 32px;
+  }
+
+  .community-charts {
+    gap: 16px;
+  }
+
+  .chart-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .chart-canvas-wrap {
+    height: 240px;
   }
 }
 

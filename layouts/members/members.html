@@ -190,14 +190,28 @@
     <canvas id="communityTotalsChart"></canvas>
   </div> -->
 
-  <div class="chart-card">
-    <h5 class="chart-title">Top 10 לפי Pull Requests</h5>
-    <canvas id="topPRsChart"></canvas>
+  <div class="chart-card chart-card-prs">
+    <div class="chart-card-header">
+      <h5 class="chart-title">Top 10 by Pull Requests</h5>
+    </div>
+    <p class="chart-subtitle">Leading contributors by most pull requests</p>
+    <div class="chart-canvas-panel">
+      <div class="chart-canvas-wrap">
+        <canvas id="topPRsChart"></canvas>
+      </div>
+    </div>
   </div>
 
-  <div class="chart-card">
-    <h5 class="chart-title">Top 10 לפי Commits</h5>
-    <canvas id="topCommitsChart"></canvas>
+  <div class="chart-card chart-card-commits">
+     <div class="chart-card-header">
+      <h5 class="chart-title">Top 10 by Commits</h5>
+    </div>
+    <p class="chart-subtitle">Leading contributors by most commits</p>
+    <div class="chart-canvas-panel">
+      <div class="chart-canvas-wrap">
+        <canvas id="topCommitsChart"></canvas>
+      </div>
+    </div>
   </div>
   
 </div>
@@ -311,28 +325,200 @@
   document.addEventListener('DOMContentLoaded', function () {
     if (typeof Chart === 'undefined') return;
 
-    const textColor =
-      getComputedStyle(document.documentElement).getPropertyValue('--text-color').trim() || '#ddd';
+    const rootStyles = getComputedStyle(document.documentElement);
+    const textColor = rootStyles.getPropertyValue('--chart-text-color').trim() || '#ddd';
+    const valueColor = rootStyles.getPropertyValue('--chart-value-color').trim() || textColor;
+    const mutedTextColor = rootStyles.getPropertyValue('--chart-muted-text').trim() || 'rgba(127, 140, 160, 0.88)';
+    const gridColor = rootStyles.getPropertyValue('--chart-grid-color').trim() || 'rgba(148, 163, 184, 0.2)';
+    const tooltipBg = rootStyles.getPropertyValue('--chart-tooltip-bg').trim() || '#0f172a';
+    const borderColor = rootStyles.getPropertyValue('--chart-border-color').trim() || 'rgba(255,255,255,0.14)';
+    const fontFamily = rootStyles.getPropertyValue('--chart-font-family').trim() || "'Segoe UI', sans-serif";
+    const linkColor = rootStyles.getPropertyValue('--chart-link-color').trim() || '#2563eb';
+    const linkHoverColor = rootStyles.getPropertyValue('--chart-link-hover-color').trim() || '#1d4ed8';
 
     const valueLabels = {
       id: 'valueLabels',
       afterDatasetsDraw(chart) {
         const { ctx } = chart;
+        const dataset = chart.data.datasets[0];
+        if (!dataset) return;
         ctx.save();
-        ctx.fillStyle = textColor;
-        ctx.font = '12px sans-serif';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'bottom';
+        ctx.fillStyle = valueColor;
+        ctx.font = `600 12px ${fontFamily}`;
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'middle';
 
         const meta = chart.getDatasetMeta(0);
-        meta.data.forEach((bar, i) => {
-          const v = chart.data.datasets[0].data[i];
-          ctx.fillText(String(v), bar.x, bar.y - 4);
+        meta.data.forEach((bar, index) => {
+          const v = dataset.data[index];
+          if (bar?.x != null && bar?.y != null) {
+            ctx.fillText(String(v), bar.x + 10, bar.y);
+          }
         });
 
         ctx.restore();
       }
     };
+
+    const interactiveYAxisLabels = {
+      id: 'interactiveYAxisLabels',
+      afterDraw(chart) {
+        const yScale = chart.scales?.y;
+        const labels = chart.data?.labels || [];
+        if (!yScale || !labels.length) return;
+
+        const { ctx, chartArea } = chart;
+        const x = chartArea.left - 14;
+        const hoveredIndex = Number.isInteger(chart.$hoveredLabelIndex) ? chart.$hoveredLabelIndex : null;
+        const hitRegions = [];
+
+        ctx.save();
+        ctx.font = `600 12px ${fontFamily}`;
+        ctx.textAlign = 'right';
+        ctx.textBaseline = 'middle';
+
+        labels.forEach((label, index) => {
+          const y = yScale.getPixelForTick(index);
+          const width = ctx.measureText(label).width;
+          const isHovered = hoveredIndex === index;
+
+          ctx.fillStyle = isHovered ? linkHoverColor : linkColor;
+          ctx.fillText(label, x, y);
+
+          hitRegions.push({
+            index,
+            left: x - width - 4,
+            right: x + 4,
+            top: y - 12,
+            bottom: y + 12
+          });
+        });
+
+        chart.$labelHitRegions = hitRegions;
+        ctx.restore();
+      },
+      afterEvent(chart, args) {
+        const evt = args.event;
+        if (!evt) return;
+
+        const hitRegions = chart.$labelHitRegions || [];
+        const hoveredLabel = hitRegions.find(region =>
+          evt.x >= region.left &&
+          evt.x <= region.right &&
+          evt.y >= region.top &&
+          evt.y <= region.bottom
+        );
+
+        const activeBars = chart.getElementsAtEventForMode(
+          evt.native || evt,
+          'nearest',
+          { intersect: true },
+          false
+        );
+
+        const hoveredBarIndex = activeBars.length ? activeBars[0].index : null;
+        const nextHoverIndex = hoveredLabel ? hoveredLabel.index : null;
+        const clickIndex = hoveredLabel ? hoveredLabel.index : hoveredBarIndex;
+        const nextActiveElements = hoveredLabel
+          ? []
+          : activeBars.map(bar => ({ datasetIndex: bar.datasetIndex, index: bar.index }));
+
+        if (chart.$hoveredLabelIndex !== nextHoverIndex) {
+          chart.$hoveredLabelIndex = nextHoverIndex;
+          args.changed = true;
+        }
+
+        const currentActiveElements = chart.getActiveElements();
+        const activeElementsChanged =
+          currentActiveElements.length !== nextActiveElements.length ||
+          currentActiveElements.some((item, index) =>
+            item.datasetIndex !== nextActiveElements[index]?.datasetIndex ||
+            item.index !== nextActiveElements[index]?.index
+          );
+
+        if (activeElementsChanged) {
+          chart.setActiveElements(nextActiveElements);
+
+          if (chart.tooltip) {
+            chart.tooltip.setActiveElements(nextActiveElements, { x: evt.x, y: evt.y });
+          }
+
+          args.changed = true;
+        }
+
+        if (chart.canvas) {
+          chart.canvas.style.cursor = clickIndex !== null && clickIndex !== undefined ? 'pointer' : 'default';
+        }
+
+        if (evt.type === 'click' && clickIndex !== null && clickIndex !== undefined) {
+          const url = chart.$githubUrls?.[clickIndex];
+          if (url) {
+            window.open(url, '_blank', 'noopener');
+          }
+        }
+      }
+    };
+
+    Chart.defaults.color = textColor;
+    Chart.defaults.font.family = fontFamily;
+    Chart.defaults.borderColor = borderColor;
+
+    const buildHorizontalBarOptions = () => ({
+      responsive: true,
+      maintainAspectRatio: false,
+      indexAxis: 'y',
+      animation: {
+        duration: 900,
+        easing: 'easeOutQuart'
+      },
+      layout: {
+        padding: { top: 8, right: 42, bottom: 4, left: 6 }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          enabled: true,
+          backgroundColor: tooltipBg,
+          titleColor: '#f8fafc',
+          bodyColor: '#e2e8f0',
+          borderColor: borderColor,
+          borderWidth: 1,
+          padding: 12,
+          displayColors: false
+        }
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          grace: '8%',
+          grid: {
+            color: gridColor,
+            drawBorder: false
+          },
+          ticks: {
+            color: mutedTextColor,
+            precision: 0,
+            padding: 10
+          }
+        },
+        y: {
+          grid: {
+            display: false,
+            drawBorder: false
+          },
+          ticks: {
+            color: 'rgba(0, 0, 0, 0)',
+            autoSkip: false,
+            crossAlign: 'far',
+            padding: 10,
+            font: {
+              size: 12,
+              weight: '600'
+            }
+          }
+        }
+      }
+    });
 
     // ===== 1) Totals chart =====
     const rawTotals = document.getElementById('globalSummaryData')?.textContent;
@@ -379,6 +565,7 @@
 
     const rows = users.map(u => ({
       username: u?.user?.username || 'unknown',
+      githubUrl: u?.user?.username ? `https://github.com/${u.user.username}` : '',
       prs: Number(u?.summary?.totalPRs) || 0,
       commits: Number(u?.summary?.totalCommits) || 0,
     }));
@@ -388,24 +575,26 @@
     const topPRsCanvas = document.getElementById('topPRsChart');
 
     if (topPRsCanvas) {
-      new Chart(topPRsCanvas, {
+      const chart = new Chart(topPRsCanvas, {
         type: 'bar',
         data: {
           labels: topPRs.map(x => x.username),
-          datasets: [{ data: topPRs.map(x => x.prs), barThickness: 18, maxBarThickness: 22 }]
+          datasets: [{
+            data: topPRs.map(x => x.prs),
+            label: 'Pull Requests',
+            backgroundColor: '#64748b',
+            borderRadius: 999,
+            borderSkipped: false,
+            barThickness: 22,
+            maxBarThickness: 26,
+            categoryPercentage: 0.72
+          }]
         },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          indexAxis: 'y',
-          plugins: { legend: { display: false }, tooltip: { enabled: true } },
-          scales: {
-            x: { beginAtZero: true, ticks: { color: textColor } },
-            y: { ticks: { color: textColor, autoSkip: false } }
-          }
-        },
-        plugins: [valueLabels]
+        options: buildHorizontalBarOptions(),
+        plugins: [interactiveYAxisLabels, valueLabels]
       });
+
+      chart.$githubUrls = topPRs.map(x => x.githubUrl);
     }
 
     // ===== 4) Top 10 Commits chart =====
@@ -413,24 +602,26 @@
     const topCommitsCanvas = document.getElementById('topCommitsChart');
 
     if (topCommitsCanvas) {
-      new Chart(topCommitsCanvas, {
+      const chart = new Chart(topCommitsCanvas, {
         type: 'bar',
         data: {
           labels: topCommits.map(x => x.username),
-          datasets: [{ data: topCommits.map(x => x.commits), barThickness: 18, maxBarThickness: 22 }]
+          datasets: [{
+            data: topCommits.map(x => x.commits),
+            label: 'Commits',
+            backgroundColor: '#36506b',
+            borderRadius: 999,
+            borderSkipped: false,
+            barThickness: 22,
+            maxBarThickness: 26,
+            categoryPercentage: 0.72
+          }]
         },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          indexAxis: 'y',
-          plugins: { legend: { display: false }, tooltip: { enabled: true } },
-          scales: {
-            x: { beginAtZero: true, ticks: { color: textColor } },
-            y: { ticks: { color: textColor, autoSkip: false } }
-          }
-        },
-        plugins: [valueLabels]
+        options: buildHorizontalBarOptions(),
+        plugins: [interactiveYAxisLabels, valueLabels]
       });
+
+      chart.$githubUrls = topCommits.map(x => x.githubUrl);
     }
   });
 </script>
