@@ -46,11 +46,11 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 28,
+          "commits": 27,
           "pullRequests": 7,
           "issues": 13,
           "prComments": 0,
-          "issueComments": 27
+          "issueComments": 25
         },
         {
           "repoName": "cobol-programming-course",
@@ -104,11 +104,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 39,
+        "totalCommits": 38,
         "totalPRs": 8,
         "totalIssues": 15,
         "totalPRComments": 0,
-        "totalIssueComments": 36
+        "totalIssueComments": 34
       }
     },
     {
@@ -168,7 +168,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 239,
+          "commits": 238,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 18,
@@ -176,7 +176,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 239,
+        "totalCommits": 238,
         "totalPRs": 0,
         "totalIssues": 1,
         "totalPRComments": 18,
@@ -214,11 +214,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 2,
+          "commits": 1,
           "pullRequests": 0,
           "issues": 6,
-          "prComments": 166,
-          "issueComments": 30
+          "prComments": 164,
+          "issueComments": 28
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -312,11 +312,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 4,
+        "totalCommits": 3,
         "totalPRs": 1,
         "totalIssues": 13,
-        "totalPRComments": 306,
-        "totalIssueComments": 30
+        "totalPRComments": 304,
+        "totalIssueComments": 28
       }
     },
     {
@@ -340,21 +340,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 89,
-          "pullRequests": 40,
+          "commits": 88,
+          "pullRequests": 39,
           "issues": 12,
-          "prComments": 296,
-          "issueComments": 310
-        },
-        {
-          "repoName": "scylladb",
-          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
-          "url": "https://github.com/scylladb/scylladb",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 1,
-          "prComments": 2,
-          "issueComments": 49
+          "prComments": 281,
+          "issueComments": 305
         },
         {
           "repoName": "scylla-ccm",
@@ -397,6 +387,16 @@
           "issueComments": 22
         },
         {
+          "repoName": "scylladb",
+          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
+          "url": "https://github.com/scylladb/scylladb",
+          "commits": 0,
+          "pullRequests": 1,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 48
+        },
+        {
           "repoName": "scylla-machine-image",
           "description": null,
           "url": "https://github.com/scylladb/scylla-machine-image",
@@ -428,11 +428,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 122,
-        "totalPRs": 56,
+        "totalCommits": 121,
+        "totalPRs": 55,
         "totalIssues": 19,
-        "totalPRComments": 355,
-        "totalIssueComments": 444
+        "totalPRComments": 338,
+        "totalIssueComments": 438
       }
     },
     {
@@ -644,19 +644,19 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 4,
-          "pullRequests": 8,
-          "issues": 6,
+          "commits": 3,
+          "pullRequests": 7,
+          "issues": 5,
           "prComments": 0,
-          "issueComments": 12
+          "issueComments": 10
         }
       ],
       "summary": {
-        "totalCommits": 4,
-        "totalPRs": 8,
-        "totalIssues": 6,
+        "totalCommits": 3,
+        "totalPRs": 7,
+        "totalIssues": 5,
         "totalPRComments": 0,
-        "totalIssueComments": 12
+        "totalIssueComments": 10
       }
     },
     {
@@ -780,7 +780,7 @@
           "pullRequests": 1,
           "issues": 2,
           "prComments": 0,
-          "issueComments": 4
+          "issueComments": 3
         },
         {
           "repoName": "Perl-Maven",
@@ -858,7 +858,7 @@
         "totalPRs": 1,
         "totalIssues": 2,
         "totalPRComments": 0,
-        "totalIssueComments": 17
+        "totalIssueComments": 16
       }
     },
     {
@@ -985,16 +985,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 638,
-    "totalPRs": 115,
-    "totalIssues": 68,
-    "totalPRComments": 709,
-    "totalIssueComments": 609,
+    "totalCommits": 633,
+    "totalPRs": 113,
+    "totalIssues": 67,
+    "totalPRComments": 690,
+    "totalIssueComments": 596,
     "totalRepos": 54,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-27 to 2026-04-25",
+    "analysisTimeframe": "2025-10-28 to 2026-04-26",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
