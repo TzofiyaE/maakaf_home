@@ -46,7 +46,7 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
+          "commits": 26,
           "pullRequests": 7,
           "issues": 13,
           "prComments": 0,
@@ -66,7 +66,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 11,
+          "commits": 10,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -104,7 +104,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 38,
+        "totalCommits": 36,
         "totalPRs": 8,
         "totalIssues": 15,
         "totalPRComments": 0,
@@ -216,7 +216,7 @@
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
           "commits": 1,
           "pullRequests": 0,
-          "issues": 6,
+          "issues": 5,
           "prComments": 164,
           "issueComments": 28
         },
@@ -314,7 +314,7 @@
       "summary": {
         "totalCommits": 3,
         "totalPRs": 1,
-        "totalIssues": 13,
+        "totalIssues": 12,
         "totalPRComments": 304,
         "totalIssueComments": 28
       }
@@ -340,11 +340,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 88,
+          "commits": 86,
           "pullRequests": 39,
-          "issues": 12,
-          "prComments": 281,
-          "issueComments": 305
+          "issues": 10,
+          "prComments": 274,
+          "issueComments": 279
         },
         {
           "repoName": "scylla-ccm",
@@ -383,7 +383,7 @@
           "commits": 4,
           "pullRequests": 2,
           "issues": 1,
-          "prComments": 4,
+          "prComments": 3,
           "issueComments": 22
         },
         {
@@ -428,11 +428,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 121,
+        "totalCommits": 119,
         "totalPRs": 55,
-        "totalIssues": 19,
-        "totalPRComments": 338,
-        "totalIssueComments": 438
+        "totalIssues": 17,
+        "totalPRComments": 330,
+        "totalIssueComments": 412
       }
     },
     {
@@ -459,16 +459,16 @@
           "commits": 41,
           "pullRequests": 7,
           "issues": 3,
-          "prComments": 9,
-          "issueComments": 32
+          "prComments": 7,
+          "issueComments": 31
         }
       ],
       "summary": {
         "totalCommits": 41,
         "totalPRs": 7,
         "totalIssues": 3,
-        "totalPRComments": 9,
-        "totalIssueComments": 32
+        "totalPRComments": 7,
+        "totalIssueComments": 31
       }
     },
     {
@@ -545,16 +545,6 @@
           "issueComments": 7
         },
         {
-          "repoName": "ls-mcp",
-          "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
-          "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 20,
-          "pullRequests": 4,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
           "repoName": "mcp-scan",
           "description": "Constrain, log and scan your MCP connections for security vulnerabilities.",
           "url": "https://github.com/invariantlabs-ai/mcp-scan",
@@ -563,6 +553,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "ls-mcp",
+          "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
+          "url": "https://github.com/lirantal/ls-mcp",
+          "commits": 17,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 3
         },
         {
           "repoName": "enhanced-postgres-mcp-server",
@@ -616,8 +616,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 56,
-        "totalPRs": 20,
+        "totalCommits": 53,
+        "totalPRs": 19,
         "totalIssues": 7,
         "totalPRComments": 0,
         "totalIssueComments": 17
@@ -644,19 +644,19 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 3,
-          "pullRequests": 7,
+          "commits": 2,
+          "pullRequests": 6,
           "issues": 5,
           "prComments": 0,
-          "issueComments": 10
+          "issueComments": 9
         }
       ],
       "summary": {
-        "totalCommits": 3,
-        "totalPRs": 7,
+        "totalCommits": 2,
+        "totalPRs": 6,
         "totalIssues": 5,
         "totalPRComments": 0,
-        "totalIssueComments": 10
+        "totalIssueComments": 9
       }
     },
     {
@@ -985,16 +985,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 633,
-    "totalPRs": 113,
-    "totalIssues": 67,
-    "totalPRComments": 690,
-    "totalIssueComments": 596,
+    "totalCommits": 625,
+    "totalPRs": 111,
+    "totalIssues": 64,
+    "totalPRComments": 680,
+    "totalIssueComments": 568,
     "totalRepos": 54,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-28 to 2026-04-26",
+    "analysisTimeframe": "2025-10-29 to 2026-04-27",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
