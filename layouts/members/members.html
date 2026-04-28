@@ -110,7 +110,7 @@
           </tr>
         </thead>
         <tbody>
-          {{ range .Site.Data.github_data.users }}
+          {{ range sort .Site.Data.github_data.users "summary.totalCommits" "desc" }}
             <tr>
               <td>
                 <div class="username-cell d-flex align-items-center gap-2">
@@ -149,6 +149,24 @@
                         <li>
                           <a href="{{ .url }}" target="_blank">{{ .repoName }}</a>
                           {{ if .description }} – {{ .description }}{{ end }}
+                          {{ if .primaryLanguage }}
+                            <span class="lang-badge ms-2" title="Primary language">
+                              <span class="lang-dot" style="background:{{ .primaryLanguageColor | default "#888" }}"></span>{{ .primaryLanguage }}
+                            </span>
+                          {{ end }}
+                          {{ if and .stargazerCount (gt .stargazerCount 0) }}
+                            <span class="ms-2" title="Stars">★ {{ .stargazerCount }}</span>
+                          {{ end }}
+                          {{ if .licenseName }}
+                            <span class="ms-2 text-muted" title="License">📜 {{ .licenseName }}</span>
+                          {{ end }}
+                          {{ if .topics }}
+                            <div class="topic-pills mt-1">
+                              {{ range .topics }}
+                                <span class="topic-pill">{{ . }}</span>
+                              {{ end }}
+                            </div>
+                          {{ end }}
                           <br><small class="text-muted">
                             {{ $.Params.labels.projectDetailsLabels.commits | default "C" }}:{{ .commits }} | {{ $.Params.labels.projectDetailsLabels.pullRequests | default "PR" }}:{{ .pullRequests }} | {{ $.Params.labels.projectDetailsLabels.issues | default "I" }}:{{ .issues }} | {{ $.Params.labels.projectDetailsLabels.prComments | default "PRC" }}:{{ .prComments }} | {{ $.Params.labels.projectDetailsLabels.issueComments | default "IC" }}:{{ .issueComments }}
                           </small>
@@ -227,12 +245,10 @@
       });
     });
     
-    // Sort by commits (column 1) descending by default
     const commitsHeader = document.querySelector('.sortable[data-column="1"]');
     if (commitsHeader) {
-      // Set to 'asc' so the next sort will be 'desc'
-      currentSort = { column: '1', direction: 'asc' };
-      sortTable('1', 'number', commitsHeader);
+      currentSort = { column: '1', direction: 'desc' };
+      commitsHeader.classList.add('sort-desc');
     }
   });
 

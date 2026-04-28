@@ -56,12 +56,13 @@ async function getConfig(): Promise<Config> {
     const configFile = await fs.readFile(configPath, 'utf-8');
     const jsonConfig = JSON.parse(configFile);
 
-    if (!jsonConfig.apiUrl) throw new Error('apiUrl is required in config.json');
+    const apiUrl = process.env.API_URL || jsonConfig.apiUrl;
+    if (!apiUrl) throw new Error('apiUrl is required (set API_URL env var or apiUrl in config.json)');
     if (!Array.isArray(jsonConfig.usernames) || jsonConfig.usernames.length === 0)
       throw new Error('usernames array is required and must not be empty in config.json');
 
     return {
-      apiUrl: jsonConfig.apiUrl,
+      apiUrl,
       usernames: jsonConfig.usernames,
       outputDir: jsonConfig.outputDir || 'data',
       outputFile: jsonConfig.outputFile || 'github_data.json',
