@@ -46,11 +46,11 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 26,
+          "commits": 24,
           "pullRequests": 7,
           "issues": 13,
           "prComments": 0,
-          "issueComments": 25
+          "issueComments": 22
         },
         {
           "repoName": "cobol-programming-course",
@@ -104,11 +104,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 36,
+        "totalCommits": 34,
         "totalPRs": 8,
         "totalIssues": 15,
         "totalPRComments": 0,
-        "totalIssueComments": 34
+        "totalIssueComments": 31
       }
     },
     {
@@ -214,11 +214,11 @@
           "repoName": "Broken-Link-Website",
           "description": "No more broken links in old unmaintained README",
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
-          "commits": 1,
+          "commits": 0,
           "pullRequests": 0,
           "issues": 5,
-          "prComments": 164,
-          "issueComments": 28
+          "prComments": 151,
+          "issueComments": 27
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -312,11 +312,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 3,
+        "totalCommits": 2,
         "totalPRs": 1,
         "totalIssues": 12,
-        "totalPRComments": 304,
-        "totalIssueComments": 28
+        "totalPRComments": 291,
+        "totalIssueComments": 27
       }
     },
     {
@@ -340,11 +340,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 86,
-          "pullRequests": 39,
-          "issues": 10,
-          "prComments": 274,
-          "issueComments": 279
+          "commits": 82,
+          "pullRequests": 38,
+          "issues": 8,
+          "prComments": 268,
+          "issueComments": 273
         },
         {
           "repoName": "scylla-ccm",
@@ -392,9 +392,9 @@
           "url": "https://github.com/scylladb/scylladb",
           "commits": 0,
           "pullRequests": 1,
-          "issues": 1,
+          "issues": 0,
           "prComments": 0,
-          "issueComments": 48
+          "issueComments": 46
         },
         {
           "repoName": "scylla-machine-image",
@@ -414,7 +414,7 @@
           "pullRequests": 2,
           "issues": 4,
           "prComments": 14,
-          "issueComments": 8
+          "issueComments": 3
         },
         {
           "repoName": "gemini",
@@ -428,11 +428,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 119,
-        "totalPRs": 55,
-        "totalIssues": 17,
-        "totalPRComments": 330,
-        "totalIssueComments": 412
+        "totalCommits": 115,
+        "totalPRs": 54,
+        "totalIssues": 14,
+        "totalPRComments": 324,
+        "totalIssueComments": 399
       }
     },
     {
@@ -459,16 +459,16 @@
           "commits": 41,
           "pullRequests": 7,
           "issues": 3,
-          "prComments": 7,
-          "issueComments": 31
+          "prComments": 6,
+          "issueComments": 30
         }
       ],
       "summary": {
         "totalCommits": 41,
         "totalPRs": 7,
         "totalIssues": 3,
-        "totalPRComments": 7,
-        "totalIssueComments": 31
+        "totalPRComments": 6,
+        "totalIssueComments": 30
       }
     },
     {
@@ -532,7 +532,7 @@
           "pullRequests": 5,
           "issues": 2,
           "prComments": 0,
-          "issueComments": 5
+          "issueComments": 3
         },
         {
           "repoName": "npq",
@@ -620,7 +620,7 @@
         "totalPRs": 19,
         "totalIssues": 7,
         "totalPRComments": 0,
-        "totalIssueComments": 17
+        "totalIssueComments": 15
       }
     },
     {
@@ -644,19 +644,19 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 2,
-          "pullRequests": 6,
-          "issues": 5,
+          "commits": 0,
+          "pullRequests": 4,
+          "issues": 3,
           "prComments": 0,
-          "issueComments": 9
+          "issueComments": 7
         }
       ],
       "summary": {
-        "totalCommits": 2,
-        "totalPRs": 6,
-        "totalIssues": 5,
+        "totalCommits": 0,
+        "totalPRs": 4,
+        "totalIssues": 3,
         "totalPRComments": 0,
-        "totalIssueComments": 9
+        "totalIssueComments": 7
       }
     },
     {
@@ -780,7 +780,7 @@
           "pullRequests": 1,
           "issues": 2,
           "prComments": 0,
-          "issueComments": 3
+          "issueComments": 2
         },
         {
           "repoName": "Perl-Maven",
@@ -858,7 +858,7 @@
         "totalPRs": 1,
         "totalIssues": 2,
         "totalPRComments": 0,
-        "totalIssueComments": 16
+        "totalIssueComments": 15
       }
     },
     {
@@ -985,16 +985,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 625,
-    "totalPRs": 111,
-    "totalIssues": 64,
-    "totalPRComments": 680,
-    "totalIssueComments": 568,
+    "totalCommits": 616,
+    "totalPRs": 108,
+    "totalIssues": 59,
+    "totalPRComments": 660,
+    "totalIssueComments": 545,
     "totalRepos": 54,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-29 to 2026-04-27",
+    "analysisTimeframe": "2025-10-30 to 2026-04-28",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
