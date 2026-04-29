@@ -46,11 +46,11 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 24,
+          "commits": 23,
           "pullRequests": 7,
           "issues": 13,
           "prComments": 0,
-          "issueComments": 22
+          "issueComments": 20
         },
         {
           "repoName": "cobol-programming-course",
@@ -104,11 +104,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 34,
+        "totalCommits": 33,
         "totalPRs": 8,
         "totalIssues": 15,
         "totalPRComments": 0,
-        "totalIssueComments": 31
+        "totalIssueComments": 29
       }
     },
     {
@@ -168,7 +168,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 238,
+          "commits": 235,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 18,
@@ -176,7 +176,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 238,
+        "totalCommits": 235,
         "totalPRs": 0,
         "totalIssues": 1,
         "totalPRComments": 18,
@@ -217,8 +217,8 @@
           "commits": 0,
           "pullRequests": 0,
           "issues": 5,
-          "prComments": 151,
-          "issueComments": 27
+          "prComments": 150,
+          "issueComments": 25
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -315,8 +315,8 @@
         "totalCommits": 2,
         "totalPRs": 1,
         "totalIssues": 12,
-        "totalPRComments": 291,
-        "totalIssueComments": 27
+        "totalPRComments": 290,
+        "totalIssueComments": 25
       }
     },
     {
@@ -340,11 +340,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 82,
-          "pullRequests": 38,
-          "issues": 8,
-          "prComments": 268,
-          "issueComments": 273
+          "commits": 81,
+          "pullRequests": 37,
+          "issues": 7,
+          "prComments": 264,
+          "issueComments": 249
         },
         {
           "repoName": "scylla-ccm",
@@ -382,9 +382,9 @@
           "url": "https://github.com/scylladb/argus",
           "commits": 4,
           "pullRequests": 2,
-          "issues": 1,
+          "issues": 0,
           "prComments": 3,
-          "issueComments": 22
+          "issueComments": 21
         },
         {
           "repoName": "scylladb",
@@ -428,11 +428,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 115,
-        "totalPRs": 54,
-        "totalIssues": 14,
-        "totalPRComments": 324,
-        "totalIssueComments": 399
+        "totalCommits": 114,
+        "totalPRs": 53,
+        "totalIssues": 12,
+        "totalPRComments": 320,
+        "totalIssueComments": 374
       }
     },
     {
@@ -460,7 +460,7 @@
           "pullRequests": 7,
           "issues": 3,
           "prComments": 6,
-          "issueComments": 30
+          "issueComments": 28
         }
       ],
       "summary": {
@@ -468,7 +468,7 @@
         "totalPRs": 7,
         "totalIssues": 3,
         "totalPRComments": 6,
-        "totalIssueComments": 30
+        "totalIssueComments": 28
       }
     },
     {
@@ -528,8 +528,8 @@
           "repoName": "anti-trojan-source",
           "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
           "url": "https://github.com/lirantal/anti-trojan-source",
-          "commits": 16,
-          "pullRequests": 5,
+          "commits": 8,
+          "pullRequests": 2,
           "issues": 2,
           "prComments": 0,
           "issueComments": 3
@@ -538,21 +538,11 @@
           "repoName": "npq",
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
-          "commits": 18,
-          "pullRequests": 11,
+          "commits": 16,
+          "pullRequests": 10,
           "issues": 1,
           "prComments": 0,
           "issueComments": 7
-        },
-        {
-          "repoName": "mcp-scan",
-          "description": "Constrain, log and scan your MCP connections for security vulnerabilities.",
-          "url": "https://github.com/invariantlabs-ai/mcp-scan",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
         },
         {
           "repoName": "ls-mcp",
@@ -616,8 +606,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 53,
-        "totalPRs": 19,
+        "totalCommits": 42,
+        "totalPRs": 15,
         "totalIssues": 7,
         "totalPRComments": 0,
         "totalIssueComments": 15
@@ -646,7 +636,7 @@
           "url": "https://github.com/Maakaf/friends-activity-backend",
           "commits": 0,
           "pullRequests": 4,
-          "issues": 3,
+          "issues": 2,
           "prComments": 0,
           "issueComments": 7
         }
@@ -654,7 +644,7 @@
       "summary": {
         "totalCommits": 0,
         "totalPRs": 4,
-        "totalIssues": 3,
+        "totalIssues": 2,
         "totalPRComments": 0,
         "totalIssueComments": 7
       }
@@ -985,16 +975,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 616,
-    "totalPRs": 108,
-    "totalIssues": 59,
-    "totalPRComments": 660,
-    "totalIssueComments": 545,
-    "totalRepos": 54,
+    "totalCommits": 600,
+    "totalPRs": 103,
+    "totalIssues": 56,
+    "totalPRComments": 655,
+    "totalIssueComments": 514,
+    "totalRepos": 53,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-30 to 2026-04-28",
+    "analysisTimeframe": "2025-10-31 to 2026-04-29",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
