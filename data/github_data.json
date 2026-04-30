@@ -48,7 +48,7 @@
           "url": "https://github.com/Maakaf/friends-activity-backend",
           "commits": 23,
           "pullRequests": 7,
-          "issues": 13,
+          "issues": 6,
           "prComments": 0,
           "issueComments": 20
         },
@@ -106,7 +106,7 @@
       "summary": {
         "totalCommits": 33,
         "totalPRs": 8,
-        "totalIssues": 15,
+        "totalIssues": 8,
         "totalPRComments": 0,
         "totalIssueComments": 29
       }
@@ -216,9 +216,9 @@
           "url": "https://github.com/Deadlink-Hunter/Broken-Link-Website",
           "commits": 0,
           "pullRequests": 0,
-          "issues": 5,
-          "prComments": 150,
-          "issueComments": 25
+          "issues": 3,
+          "prComments": 127,
+          "issueComments": 20
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -314,9 +314,9 @@
       "summary": {
         "totalCommits": 2,
         "totalPRs": 1,
-        "totalIssues": 12,
-        "totalPRComments": 290,
-        "totalIssueComments": 25
+        "totalIssues": 10,
+        "totalPRComments": 267,
+        "totalIssueComments": 20
       }
     },
     {
@@ -344,7 +344,7 @@
           "pullRequests": 37,
           "issues": 7,
           "prComments": 264,
-          "issueComments": 249
+          "issueComments": 248
         },
         {
           "repoName": "scylla-ccm",
@@ -432,7 +432,7 @@
         "totalPRs": 53,
         "totalIssues": 12,
         "totalPRComments": 320,
-        "totalIssueComments": 374
+        "totalIssueComments": 373
       }
     },
     {
@@ -458,7 +458,7 @@
           "url": "https://github.com/hasadna/open-bus-map-search",
           "commits": 41,
           "pullRequests": 7,
-          "issues": 3,
+          "issues": 2,
           "prComments": 6,
           "issueComments": 28
         }
@@ -466,7 +466,7 @@
       "summary": {
         "totalCommits": 41,
         "totalPRs": 7,
-        "totalIssues": 3,
+        "totalIssues": 2,
         "totalPRComments": 6,
         "totalIssueComments": 28
       }
@@ -528,21 +528,11 @@
           "repoName": "anti-trojan-source",
           "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
           "url": "https://github.com/lirantal/anti-trojan-source",
-          "commits": 8,
-          "pullRequests": 2,
+          "commits": 6,
+          "pullRequests": 1,
           "issues": 2,
           "prComments": 0,
           "issueComments": 3
-        },
-        {
-          "repoName": "npq",
-          "description": "safely install npm packages by auditing them pre-install stage",
-          "url": "https://github.com/lirantal/npq",
-          "commits": 16,
-          "pullRequests": 10,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 7
         },
         {
           "repoName": "ls-mcp",
@@ -553,6 +543,16 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "npq",
+          "description": "safely install npm packages by auditing them pre-install stage",
+          "url": "https://github.com/lirantal/npq",
+          "commits": 16,
+          "pullRequests": 8,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 7
         },
         {
           "repoName": "enhanced-postgres-mcp-server",
@@ -606,8 +606,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 42,
-        "totalPRs": 15,
+        "totalCommits": 40,
+        "totalPRs": 12,
         "totalIssues": 7,
         "totalPRComments": 0,
         "totalIssueComments": 15
@@ -716,7 +716,7 @@
           "repoName": "code-maven.com",
           "description": "The content of the Code-Maven site",
           "url": "https://github.com/szabgab/code-maven.com",
-          "commits": 13,
+          "commits": 12,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -770,17 +770,7 @@
           "pullRequests": 1,
           "issues": 2,
           "prComments": 0,
-          "issueComments": 2
-        },
-        {
-          "repoName": "Perl-Maven",
-          "description": "The source code of the Perl Maven website",
-          "url": "https://github.com/szabgab/Perl-Maven",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
+          "issueComments": 1
         },
         {
           "repoName": "mdbooks.code-maven.com",
@@ -844,11 +834,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 75,
+        "totalCommits": 73,
         "totalPRs": 1,
         "totalIssues": 2,
         "totalPRComments": 0,
-        "totalIssueComments": 15
+        "totalIssueComments": 14
       }
     },
     {
@@ -975,16 +965,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 600,
-    "totalPRs": 103,
-    "totalIssues": 56,
-    "totalPRComments": 655,
-    "totalIssueComments": 514,
-    "totalRepos": 53,
+    "totalCommits": 596,
+    "totalPRs": 100,
+    "totalIssues": 46,
+    "totalPRComments": 632,
+    "totalIssueComments": 507,
+    "totalRepos": 52,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-10-31 to 2026-04-29",
+    "analysisTimeframe": "2025-11-01 to 2026-04-30",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
