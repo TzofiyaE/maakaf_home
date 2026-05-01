@@ -5,10 +5,8 @@ import * as path from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Configuration interface
 interface Config {
   apiUrl: string;
-  usernames: string[];
   outputDir: string;
   outputFile: string;
   requestTimeout: number;
@@ -18,14 +16,10 @@ interface Config {
   apiToken?: string;
 }
 
-// API Response type
 interface ApiResponse {
   [key: string]: unknown;
 }
 
-/**
- * Logger utility that respects the LOG_LEVEL setting
- */
 class Logger {
   private levels = { debug: 0, info: 1, warn: 2, error: 3 };
   constructor(private logLevel: Config['logLevel']) {}
@@ -47,9 +41,6 @@ class Logger {
   }
 }
 
-/**
- * Get configuration strictly from config.json
- */
 async function getConfig(): Promise<Config> {
   const configPath = path.join(__dirname, 'config.json');
   try {
@@ -58,12 +49,9 @@ async function getConfig(): Promise<Config> {
 
     const apiUrl = process.env.API_URL || jsonConfig.apiUrl;
     if (!apiUrl) throw new Error('apiUrl is required (set API_URL env var or apiUrl in config.json)');
-    if (!Array.isArray(jsonConfig.usernames) || jsonConfig.usernames.length === 0)
-      throw new Error('usernames array is required and must not be empty in config.json');
 
     return {
       apiUrl,
-      usernames: jsonConfig.usernames,
       outputDir: jsonConfig.outputDir || 'data',
       outputFile: jsonConfig.outputFile || 'github_data.json',
       requestTimeout: parseInt(jsonConfig.requestTimeout, 10) || 60000,
@@ -96,7 +84,6 @@ function isRetryableError(error: Error): boolean {
 }
 
 async function fetchUserData(config: Config, logger: Logger): Promise<ApiResponse> {
-  const postData = JSON.stringify({ users: config.usernames });
   let lastError: Error | null = null;
 
   for (let attempt = 1; attempt <= config.maxRetries + 1; attempt++) {
@@ -110,25 +97,20 @@ async function fetchUserData(config: Config, logger: Logger): Promise<ApiRespons
     const timeoutId = setTimeout(() => controller.abort(), config.requestTimeout);
 
     try {
-      if (!isRetry) logger.info(`Fetching data for users: ${config.usernames.join(', ')}`);
-      
-      logger.debug(`Requesting: ${config.apiUrl}`);
-      logger.debug(`Payload: ${postData}`);
+      if (!isRetry) logger.info(`Fetching data from ${config.apiUrl}`);
 
       const headers: HeadersInit = {
         'Accept': '*/*',
-        'Content-Type': 'application/json',
         'User-Agent': 'Maakaf-Home-Data-Fetcher/1.0'
       };
 
       if (config.apiToken) {
-        headers['Authorization'] = `Bearer ${config.apiToken}`;
+        headers['X-API-Key'] = config.apiToken;
       }
 
       const response = await fetch(config.apiUrl, {
-        method: 'POST',
+        method: 'GET',
         headers,
-        body: postData,
         signal: controller.signal
       });
 
@@ -166,13 +148,6 @@ async function main(): Promise<void> {
 
     await fs.mkdir(config.outputDir, { recursive: true });
     const data = await fetchUserData(config, logger);
-
-    // Check for missing users
-    const returnedUsernames = (data as any).users.map((u: any) => u.user.username);
-    const missingUsers = config.usernames.filter(u => !returnedUsernames.includes(u));
-    if (missingUsers.length > 0) {
-      logger.warn(`No data returned for the following usernames: ${missingUsers.join(', ')}`);
-    }
 
     await fs.writeFile(outFile, JSON.stringify(data, null, 2), 'utf8');
     logger.success(`Data successfully saved to ${outFile}`);
