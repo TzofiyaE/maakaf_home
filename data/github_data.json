@@ -48,9 +48,9 @@
           "url": "https://github.com/Maakaf/friends-activity-backend",
           "commits": 23,
           "pullRequests": 7,
-          "issues": 6,
+          "issues": 5,
           "prComments": 0,
-          "issueComments": 20
+          "issueComments": 19
         },
         {
           "repoName": "cobol-programming-course",
@@ -66,7 +66,7 @@
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 10,
+          "commits": 9,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
@@ -104,11 +104,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 33,
+        "totalCommits": 32,
         "totalPRs": 8,
-        "totalIssues": 8,
+        "totalIssues": 7,
         "totalPRComments": 0,
-        "totalIssueComments": 29
+        "totalIssueComments": 28
       }
     },
     {
@@ -217,7 +217,7 @@
           "commits": 0,
           "pullRequests": 0,
           "issues": 3,
-          "prComments": 127,
+          "prComments": 123,
           "issueComments": 20
         },
         {
@@ -315,7 +315,7 @@
         "totalCommits": 2,
         "totalPRs": 1,
         "totalIssues": 10,
-        "totalPRComments": 267,
+        "totalPRComments": 263,
         "totalIssueComments": 20
       }
     },
@@ -528,8 +528,8 @@
           "repoName": "anti-trojan-source",
           "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
           "url": "https://github.com/lirantal/anti-trojan-source",
-          "commits": 6,
-          "pullRequests": 1,
+          "commits": 4,
+          "pullRequests": 0,
           "issues": 2,
           "prComments": 0,
           "issueComments": 3
@@ -606,8 +606,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 40,
-        "totalPRs": 12,
+        "totalCommits": 38,
+        "totalPRs": 11,
         "totalIssues": 7,
         "totalPRComments": 0,
         "totalIssueComments": 15
@@ -965,16 +965,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 596,
-    "totalPRs": 100,
-    "totalIssues": 46,
-    "totalPRComments": 632,
-    "totalIssueComments": 507,
+    "totalCommits": 593,
+    "totalPRs": 99,
+    "totalIssues": 45,
+    "totalPRComments": 628,
+    "totalIssueComments": 506,
     "totalRepos": 52,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-11-01 to 2026-04-30",
+    "analysisTimeframe": "2025-11-02 to 2026-05-01",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
