@@ -50,7 +50,7 @@
           "pullRequests": 7,
           "issues": 5,
           "prComments": 0,
-          "issueComments": 17
+          "issueComments": 15
         },
         {
           "repoName": "cobol-programming-course",
@@ -108,7 +108,7 @@
         "totalPRs": 8,
         "totalIssues": 7,
         "totalPRComments": 0,
-        "totalIssueComments": 25
+        "totalIssueComments": 23
       }
     },
     {
@@ -136,7 +136,7 @@
           "pullRequests": 2,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 1
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -144,7 +144,7 @@
         "totalPRs": 2,
         "totalIssues": 0,
         "totalPRComments": 0,
-        "totalIssueComments": 1
+        "totalIssueComments": 0
       }
     },
     {
@@ -168,7 +168,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 234,
+          "commits": 232,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 18,
@@ -176,7 +176,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 234,
+        "totalCommits": 232,
         "totalPRs": 0,
         "totalIssues": 1,
         "totalPRComments": 18,
@@ -217,8 +217,8 @@
           "commits": 0,
           "pullRequests": 0,
           "issues": 2,
-          "prComments": 119,
-          "issueComments": 17
+          "prComments": 113,
+          "issueComments": 16
         },
         {
           "repoName": "awesome-opensource-israel",
@@ -315,8 +315,8 @@
         "totalCommits": 2,
         "totalPRs": 1,
         "totalIssues": 9,
-        "totalPRComments": 259,
-        "totalIssueComments": 17
+        "totalPRComments": 253,
+        "totalIssueComments": 16
       }
     },
     {
@@ -343,8 +343,8 @@
           "commits": 81,
           "pullRequests": 37,
           "issues": 7,
-          "prComments": 264,
-          "issueComments": 246
+          "prComments": 261,
+          "issueComments": 240
         },
         {
           "repoName": "scylla-ccm",
@@ -431,8 +431,8 @@
         "totalCommits": 114,
         "totalPRs": 53,
         "totalIssues": 12,
-        "totalPRComments": 320,
-        "totalIssueComments": 371
+        "totalPRComments": 317,
+        "totalIssueComments": 365
       }
     },
     {
@@ -457,18 +457,18 @@
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
           "commits": 41,
-          "pullRequests": 7,
+          "pullRequests": 6,
           "issues": 2,
           "prComments": 6,
-          "issueComments": 25
+          "issueComments": 23
         }
       ],
       "summary": {
         "totalCommits": 41,
-        "totalPRs": 7,
+        "totalPRs": 6,
         "totalIssues": 2,
         "totalPRComments": 6,
-        "totalIssueComments": 25
+        "totalIssueComments": 23
       }
     },
     {
@@ -528,9 +528,9 @@
           "repoName": "anti-trojan-source",
           "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
           "url": "https://github.com/lirantal/anti-trojan-source",
-          "commits": 4,
+          "commits": 2,
           "pullRequests": 0,
-          "issues": 2,
+          "issues": 1,
           "prComments": 0,
           "issueComments": 0
         },
@@ -606,9 +606,9 @@
         }
       ],
       "summary": {
-        "totalCommits": 38,
+        "totalCommits": 36,
         "totalPRs": 11,
-        "totalIssues": 7,
+        "totalIssues": 6,
         "totalPRComments": 0,
         "totalIssueComments": 12
       }
@@ -635,18 +635,18 @@
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
           "commits": 0,
-          "pullRequests": 2,
-          "issues": 1,
+          "pullRequests": 1,
+          "issues": 0,
           "prComments": 0,
-          "issueComments": 7
+          "issueComments": 2
         }
       ],
       "summary": {
         "totalCommits": 0,
-        "totalPRs": 2,
-        "totalIssues": 1,
+        "totalPRs": 1,
+        "totalIssues": 0,
         "totalPRComments": 0,
-        "totalIssueComments": 7
+        "totalIssueComments": 2
       }
     },
     {
@@ -965,16 +965,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 589,
-    "totalPRs": 96,
-    "totalIssues": 43,
-    "totalPRComments": 621,
-    "totalIssueComments": 492,
+    "totalCommits": 585,
+    "totalPRs": 94,
+    "totalIssues": 41,
+    "totalPRComments": 612,
+    "totalIssueComments": 475,
     "totalRepos": 52,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-11-03 to 2026-05-02",
+    "analysisTimeframe": "2025-11-04 to 2026-05-03",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
