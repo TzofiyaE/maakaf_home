@@ -50,7 +50,7 @@
           "pullRequests": 7,
           "issues": 5,
           "prComments": 0,
-          "issueComments": 15
+          "issueComments": 14
         },
         {
           "repoName": "cobol-programming-course",
@@ -70,7 +70,7 @@
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 5
+          "issueComments": 4
         },
         {
           "repoName": "maakaf-website",
@@ -108,7 +108,7 @@
         "totalPRs": 8,
         "totalIssues": 7,
         "totalPRComments": 0,
-        "totalIssueComments": 23
+        "totalIssueComments": 21
       }
     },
     {
@@ -132,16 +132,16 @@
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 2,
-          "pullRequests": 2,
+          "commits": 0,
+          "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 2,
-        "totalPRs": 2,
+        "totalCommits": 0,
+        "totalPRs": 1,
         "totalIssues": 0,
         "totalPRComments": 0,
         "totalIssueComments": 0
@@ -168,19 +168,19 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 232,
+          "commits": 225,
           "pullRequests": 0,
           "issues": 1,
           "prComments": 18,
-          "issueComments": 4
+          "issueComments": 3
         }
       ],
       "summary": {
-        "totalCommits": 232,
+        "totalCommits": 225,
         "totalPRs": 0,
         "totalIssues": 1,
         "totalPRComments": 18,
-        "totalIssueComments": 4
+        "totalIssueComments": 3
       }
     },
     {
@@ -217,7 +217,7 @@
           "commits": 0,
           "pullRequests": 0,
           "issues": 2,
-          "prComments": 113,
+          "prComments": 112,
           "issueComments": 16
         },
         {
@@ -315,7 +315,7 @@
         "totalCommits": 2,
         "totalPRs": 1,
         "totalIssues": 9,
-        "totalPRComments": 253,
+        "totalPRComments": 252,
         "totalIssueComments": 16
       }
     },
@@ -344,7 +344,7 @@
           "pullRequests": 37,
           "issues": 7,
           "prComments": 261,
-          "issueComments": 240
+          "issueComments": 236
         },
         {
           "repoName": "scylla-ccm",
@@ -432,7 +432,7 @@
         "totalPRs": 53,
         "totalIssues": 12,
         "totalPRComments": 317,
-        "totalIssueComments": 365
+        "totalIssueComments": 361
       }
     },
     {
@@ -456,19 +456,19 @@
           "repoName": "open-bus-map-search",
           "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
           "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 41,
-          "pullRequests": 6,
-          "issues": 2,
-          "prComments": 6,
-          "issueComments": 23
+          "commits": 39,
+          "pullRequests": 5,
+          "issues": 1,
+          "prComments": 5,
+          "issueComments": 20
         }
       ],
       "summary": {
-        "totalCommits": 41,
-        "totalPRs": 6,
-        "totalIssues": 2,
-        "totalPRComments": 6,
-        "totalIssueComments": 23
+        "totalCommits": 39,
+        "totalPRs": 5,
+        "totalIssues": 1,
+        "totalPRComments": 5,
+        "totalIssueComments": 20
       }
     },
     {
@@ -952,7 +952,7 @@
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 2
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -960,21 +960,21 @@
         "totalPRs": 1,
         "totalIssues": 0,
         "totalPRComments": 0,
-        "totalIssueComments": 2
+        "totalIssueComments": 0
       }
     }
   ],
   "globalSummary": {
-    "totalCommits": 585,
-    "totalPRs": 94,
-    "totalIssues": 41,
-    "totalPRComments": 612,
-    "totalIssueComments": 475,
+    "totalCommits": 574,
+    "totalPRs": 92,
+    "totalIssues": 40,
+    "totalPRComments": 610,
+    "totalIssueComments": 463,
     "totalRepos": 52,
     "successfulUsers": 14,
     "failedUsers": 0,
     "totalUsers": 14,
-    "analysisTimeframe": "2025-11-04 to 2026-05-03",
+    "analysisTimeframe": "2025-11-05 to 2026-05-04",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
