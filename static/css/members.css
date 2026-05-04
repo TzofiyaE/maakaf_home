@@ -69,6 +69,48 @@ body > div {
   color: var(--text-color);
 }
 
+.stats-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+  align-items: center;
+}
+.stat-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid rgba(11, 86, 245, 0.3);
+  border-radius: 999px;
+  background: rgba(11, 86, 245, 0.04);
+  font-size: 0.9rem;
+  transition: background 0.15s ease;
+}
+.stat-card:hover {
+  background: rgba(11, 86, 245, 0.1);
+}
+.stat-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+.stat-num {
+  font-weight: 600;
+  color: #0b56f5;
+}
+.stat-label {
+  color: var(--text-color);
+  opacity: 0.7;
+}
+html.dark .stat-card {
+  background: rgba(102, 177, 255, 0.06);
+  border-color: rgba(102, 177, 255, 0.3);
+}
+html.dark .stat-num {
+  color: #66b1ff;
+}
+
+
 /* ========================
    Table Styling
 ========================= */
@@ -118,6 +160,46 @@ body > div {
 .project-list a:hover {
   color: var(--link-hover);
   text-decoration: underline;
+}
+
+/* ========================
+   Repository metadata badges
+========================= */
+.lang-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.lang-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.topic-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.topic-pill {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  background: rgba(56, 139, 253, 0.15);
+  color: var(--link-color, #58a6ff);
+  border-radius: 12px;
+  white-space: nowrap;
 }
 
 /* ========================
@@ -401,4 +483,213 @@ html.dark .sortable.sort-desc .sort-indicator::after {
 .how-to-add-profile[open] .collapse-text,
 .how-to-add-profile[open] .collapse-icon {
   display: inline !important;
+}
+
+.activity-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: all 0.15s ease;
+}
+.activity-btn:hover {
+  background: rgba(56, 139, 253, 0.15);
+  border-color: var(--link-color, #58a6ff);
+}
+
+#repoLeaderboardPagination {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 16px auto !important;
+}
+button.pagination-btn {
+  background-color: transparent;
+  border: 1px solid #0b56f5 !important;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgba(0, 123, 255, 0.85);
+  transition: all 0.15s ease;
+  min-width: 40px;
+  outline: none;
+}
+button.pagination-btn:hover:not(:disabled):not(.active) {
+  background-color: rgba(0, 123, 255, 0.08);
+  border-color: rgba(0, 123, 255, 0.55) !important;
+  color: rgba(0, 123, 255, 1);
+}
+button.pagination-btn.active {
+  background-color: rgba(0, 123, 255, 0.75);
+  border-color: rgba(0, 123, 255, 0.75) !important;
+  color: #ffffff !important;
+  cursor: default;
+}
+button.pagination-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+html.dark button.pagination-btn.active {
+  color: #0d1117 !important;
+}
+
+.contributor-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contributor-count {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  min-width: 18px;
+}
+.contributor-stack {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+}
+.contributor-stack a {
+  display: inline-block;
+  margin-left: -6px;
+  transition: transform 0.15s ease;
+}
+.contributor-stack a:first-child {
+  margin-left: 0;
+}
+.contributor-stack a:hover {
+  transform: translateY(-2px);
+  z-index: 2;
+  position: relative;
+}
+.contributor-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--bg-color, #ffffff);
+  display: block;
+}
+
+.activity-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+.activity-modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.activity-modal-content {
+  position: relative;
+  z-index: 2;
+  direction: ltr;
+  text-align: left;
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 24px 52px 24px 28px;
+  max-width: 95vw;
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+html.dark .activity-modal-content {
+  background: #1e1e1e;
+  color: #eeeeee;
+  border-color: #444444;
+}
+.activity-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text-color);
+}
+.activity-modal-title {
+  margin: 0 0 4px 0;
+}
+.activity-modal-summary {
+  margin: 0 0 16px 0;
+  font-size: 0.9rem;
+}
+
+.activity-modal-content {
+  min-width: 1100px;
+}
+.activity-trend-wrap {
+  display: flex;
+  width: 100%;
+  height: 320px;
+  margin-top: 8px;
+}
+
+.activity-trend-wrap canvas {
+  flex: 1;
+  min-width: 0;
+}
+
+.community-graph-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--border-color, #d0d7de);
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--text-color, #333);
+  margin-bottom: 12px;
+}
+
+.community-graph-btn:hover {
+  background: var(--hover-bg, rgba(0,0,0,0.04));
+}
+
+.activity-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.activity-modal-header select {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color, #d0d7de);
+  background: var(--bg-color, #fff);
+  color: var(--text-color, #333);
+  font-size: 0.85rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+html.dark .activity-modal-header select {
+  border-color: #444;
+  background: #2d2d2d;
+  color: #e0e0e0;
 }
