@@ -53,10 +53,13 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/github_data.json
           git commit -m "chore: update GitHub data [skip ci]"
-          # Rebase onto latest main in case it moved (e.g. a PR merged while
-          # this workflow was running) so the push isn't rejected.
+          # Rebase onto latest main in case it moved (e.g. a PR merged or
+          # another fetch run finished while this one was running).
           # --autostash sidesteps unstaged dependency installs (package-lock).
-          git pull --rebase --autostash origin main
+          # -Xtheirs auto-resolves conflicts on data/github_data.json by
+          # keeping our freshly-generated data (this workflow IS the source
+          # of truth for that file).
+          git pull --rebase --autostash -Xtheirs origin main
           git push
 
       - name: Trigger Netlify Deploy
