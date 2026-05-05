@@ -103,11 +103,11 @@
   <p class="text-muted small mt-2">{{ .Params.labels.analysisPeriod | default "Analysis period" }}: {{ $globalSummary.analysisTimeframe }} · {{ .Params.labels.minForkFilter | default "Min fork filter" }}: {{ $globalSummary.minForkCountFilter }}</p>
 {{ end }}
 
-{{ if .Site.Data.github_data.dailyTotals }}
+{{ if .Site.Data.github_data.communityRolling }}
 <button type="button" class="community-graph-btn" id="communityGraphBtn">
   Show community activity graph 📊
 </button>
-<script id="communityTimelineData" type="application/json">{{ .Site.Data.github_data.dailyTotals | jsonify | safeJS }}</script>
+<script id="communityRollingData" type="application/json">{{ .Site.Data.github_data.communityRolling | jsonify | safeJS }}</script>
 
 <div id="communityGraphModal" class="activity-modal" style="display:none;">
   <div class="activity-modal-backdrop"></div>
@@ -115,15 +115,11 @@
     <button type="button" class="activity-modal-close" id="communityGraphClose" aria-label="Close">×</button>
     <div class="activity-modal-header">
       <div>
-        <h3 class="activity-modal-title">Community activity — last 6 months</h3>
+        <h3 class="activity-modal-title">Community activity — rolling 6-month window</h3>
+        <p class="activity-modal-summary text-muted">Each point shows total OSS activity in the 6 months ending on that date.</p>
       </div>
-      <select id="communityChartSelect">
-        <option value="cumulative">Weekly cumulative</option>
-        <option value="daily">Daily activity</option>
-      </select>
     </div>
-    <div id="communityCumulativeWrap" class="activity-trend-wrap"><canvas id="communityTimelineCumulativeChart"></canvas></div>
-    <div id="communityDailyWrap" class="activity-trend-wrap" style="display:none;"><canvas id="communityTimelineChart"></canvas></div>
+    <div id="communityRollingWrap" class="activity-trend-wrap"><canvas id="communityRollingChart"></canvas></div>
   </div>
 </div>
 {{ end }}
@@ -189,7 +185,7 @@
               <td>{{ .summary.totalPRComments }}</td>
               <td>{{ .summary.totalIssueComments }}</td>
               <td>
-                {{ if .dailyContributions }}
+                {{ if .rollingActivity }}
                   <button type="button" class="activity-btn" data-username="{{ .user.username }}" title="Show activity">📊</button>
                 {{ else }}
                   —
@@ -383,13 +379,8 @@
         <h3 class="activity-modal-title"></h3>
         <p class="activity-modal-summary text-muted"></p>
       </div>
-      <select id="activityChartSelect">
-        <option value="cumulative">Weekly cumulative</option>
-        <option value="daily">Daily activity</option>
-      </select>
     </div>
-    <div id="activityCumulativeWrap" class="activity-trend-wrap"><canvas id="activityCumulativeChart"></canvas></div>
-    <div id="activityTrendWrap" class="activity-trend-wrap" style="display:none;"><canvas id="activityTrendChart"></canvas></div>
+    <div id="activityRollingWrap" class="activity-trend-wrap"><canvas id="activityRollingChart"></canvas></div>
   </div>
 </div>
 
@@ -466,9 +457,9 @@
     rows.forEach(row => tbody.appendChild(row));
   }
 
-  // Community-wide activity graph modal
+  // Community-wide rolling-window activity graph modal
   document.addEventListener('DOMContentLoaded', function () {
-    const raw = document.getElementById('communityTimelineData')?.textContent;
+    const raw = document.getElementById('communityRollingData')?.textContent;
     if (!raw || typeof Chart === 'undefined') return;
     let data;
     try { data = JSON.parse(raw); } catch { return; }
@@ -479,47 +470,45 @@
     const openBtn = document.getElementById('communityGraphBtn');
     const closeBtn = document.getElementById('communityGraphClose');
     const backdrop = modal?.querySelector('.activity-modal-backdrop');
-    const chartSelect = document.getElementById('communityChartSelect');
-    const dailyWrap = document.getElementById('communityDailyWrap');
-    const cumulativeWrap = document.getElementById('communityCumulativeWrap');
-    let chartsRendered = false;
+    let chartRendered = false;
 
-    function renderCharts() {
+    function renderChart() {
       const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color').trim() || '#333';
-      const cumulativeCanvas = document.getElementById('communityTimelineCumulativeChart');
-      if (cumulativeCanvas) {
-        const weekTotals = new Map();
-        const windowStartMs = data.length ? new Date(data[0].date + 'T00:00:00Z').getTime() : 0;
-        for (const d of data) {
-          const dayOffset = Math.floor((new Date(d.date + 'T00:00:00Z').getTime() - windowStartMs) / 86400000);
-          weekTotals.set(Math.floor(dayOffset / 7), (weekTotals.get(Math.floor(dayOffset / 7)) || 0) + (d.count || 0));
-        }
-        const weeks = [...weekTotals.keys()].sort((a, b) => a - b);
-        let running = 0;
-        new Chart(cumulativeCanvas, {
-          type: 'line',
-          data: { labels: weeks.map(w => fmtDate(new Date(windowStartMs + w * 7 * 86400000).toISOString().slice(0, 10))), datasets: [{ label: 'Cumulative contributions', data: weeks.map(w => { running += weekTotals.get(w); return running; }), borderColor: '#0b56f5', backgroundColor: 'rgba(11,86,245,0.10)', fill: true, tension: 0.3, pointRadius: 2, pointHoverRadius: 5 }] },
-          options: { responsive: true, maintainAspectRatio: false, animation: false, plugins: { legend: { display: false }, tooltip: { enabled: true } }, scales: { x: { ticks: { color: textColor, maxRotation: 0, autoSkip: true, maxTicksLimit: 6 } }, y: { beginAtZero: true, ticks: { color: textColor, precision: 0 } } } },
-        });
-      }
-      const dailyCanvas = document.getElementById('communityTimelineChart');
-      if (dailyCanvas) {
-        new Chart(dailyCanvas, {
-          type: 'line',
-          data: { labels: data.map(d => fmtDate(d.date)), datasets: [{ label: 'Total contributions', data: data.map(d => d.count || 0), borderColor: '#0b56f5', backgroundColor: 'rgba(11,86,245,0.15)', fill: true, tension: 0.25, pointRadius: 0, pointHoverRadius: 4 }] },
-          options: { responsive: true, maintainAspectRatio: false, animation: false, plugins: { legend: { display: false }, tooltip: { enabled: true } }, scales: { x: { ticks: { color: textColor, maxRotation: 0, autoSkip: true, maxTicksLimit: 8 } }, y: { beginAtZero: true, ticks: { color: textColor, precision: 0 } } } },
-        });
-      }
+      const canvas = document.getElementById('communityRollingChart');
+      if (!canvas) return;
+      new Chart(canvas, {
+        type: 'line',
+        data: {
+          labels: data.map(d => fmtDate(d.date)),
+          datasets: [{
+            label: 'Rolling 6-month total',
+            data: data.map(d => d.total || 0),
+            borderColor: '#0b56f5',
+            backgroundColor: 'rgba(11,86,245,0.10)',
+            fill: true,
+            tension: 0.3,
+            pointRadius: 0,
+            pointHoverRadius: 5,
+          }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          animation: false,
+          plugins: { legend: { display: false }, tooltip: { enabled: true } },
+          scales: {
+            x: { ticks: { color: textColor, maxRotation: 0, autoSkip: true, maxTicksLimit: 8 } },
+            y: { beginAtZero: true, ticks: { color: textColor, precision: 0 } },
+          },
+        },
+      });
     }
 
     function openModal() {
-      chartSelect.value = 'cumulative';
-      cumulativeWrap.style.display = '';
-      dailyWrap.style.display = 'none';
       modal.style.display = 'flex';
-      if (!chartsRendered) {
-        chartsRendered = true;
-        requestAnimationFrame(() => renderCharts());
+      if (!chartRendered) {
+        chartRendered = true;
+        requestAnimationFrame(() => renderChart());
       }
     }
     function closeModal() { modal.style.display = 'none'; }
@@ -527,11 +516,6 @@
     openBtn?.addEventListener('click', openModal);
     closeBtn?.addEventListener('click', closeModal);
     backdrop?.addEventListener('click', closeModal);
-    chartSelect?.addEventListener('change', () => {
-      const v = chartSelect.value;
-      cumulativeWrap.style.display = v === 'cumulative' ? '' : 'none';
-      dailyWrap.style.display = v === 'daily' ? '' : 'none';
-    });
   });
 
   // Repo leaderboard pagination + sorting
@@ -983,123 +967,38 @@
     const summaryEl = modal.querySelector('.activity-modal-summary');
     const closeBtn = modal.querySelector('.activity-modal-close');
     const backdrop = modal.querySelector('.activity-modal-backdrop');
-    const chartSelect = document.getElementById('activityChartSelect');
-    const cumulativeWrap = document.getElementById('activityCumulativeWrap');
-    const trendWrap = document.getElementById('activityTrendWrap');
 
-    let trendChart = null;
-    let cumulativeChart = null;
+    let rollingChart = null;
 
-    chartSelect.addEventListener('change', () => {
-      const v = chartSelect.value;
-      cumulativeWrap.style.display = v === 'cumulative' ? '' : 'none';
-      trendWrap.style.display = v === 'daily' ? '' : 'none';
-    });
+    function renderRollingChart(user) {
+      const points = user.rollingActivity || [];
+      titleEl.textContent = (user.user.displayName || user.user.username) + ' — rolling 6-month window';
+      const latest = points.length ? points[points.length - 1].total : 0;
+      summaryEl.textContent = 'Each point shows total OSS activity in the 6 months ending on that date. Latest: ' + latest + '.';
 
-    function renderHeatmap(user) {
-      const today = new Date();
-      today.setUTCHours(0, 0, 0, 0);
-      const cutoff = new Date(today);
-      cutoff.setUTCDate(cutoff.getUTCDate() - 180);
-
-      const countByDate = new Map();
-      for (const d of (user.dailyContributions || [])) {
-        countByDate.set(d.date, d.count);
-      }
-
-      const days = [];
-      for (let dt = new Date(cutoff); dt <= today; dt.setUTCDate(dt.getUTCDate() + 1)) {
-        const dateStr = dt.toISOString().slice(0, 10);
-        days.push({ date: dateStr, count: countByDate.get(dateStr) || 0 });
-      }
-
-      const total = days.reduce((s, d) => s + (d.count || 0), 0);
-      const max = days.reduce((m, d) => Math.max(m, d.count || 0), 0);
-      const nonZero = days.filter(d => d.count > 0).length;
-
-      titleEl.textContent = (user.user.displayName || user.user.username) + ' — last 6 months';
-      summaryEl.textContent = total + ' contributions across ' + nonZero + ' active days (peak: ' + max + ')';
-
-      chartSelect.value = 'cumulative';
-      cumulativeWrap.style.display = '';
-      trendWrap.style.display = 'none';
-
-      renderTrendChart(days);
-      renderCumulativeChart(days);
-    }
-
-    function renderCumulativeChart(days) {
-      const canvas = document.getElementById('activityCumulativeChart');
+      const canvas = document.getElementById('activityRollingChart');
       if (!canvas || typeof Chart === 'undefined') return;
-      if (cumulativeChart) { cumulativeChart.destroy(); cumulativeChart = null; }
+      if (rollingChart) { rollingChart.destroy(); rollingChart = null; }
 
-      const weekTotals = new Map();
-      const windowStartMs = days.length ? new Date(days[0].date + 'T00:00:00Z').getTime() : 0;
-      for (const d of days) {
-        const dayOffset = Math.floor((new Date(d.date + 'T00:00:00Z').getTime() - windowStartMs) / 86400000);
-        const weekIndex = Math.floor(dayOffset / 7);
-        weekTotals.set(weekIndex, (weekTotals.get(weekIndex) || 0) + (d.count || 0));
-      }
-      const weeks = [...weekTotals.keys()].sort((a, b) => a - b);
-      let running = 0;
-      const labels = weeks.map(w => fmtDate(new Date(windowStartMs + w * 7 * 86400000).toISOString().slice(0, 10)));
-      const values = weeks.map(w => { running += weekTotals.get(w); return running; });
+      const labels = points.map(p => fmtDate(p.date));
+      const values = points.map(p => p.total || 0);
 
       const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color').trim() || '#333';
       const lineColor = getComputedStyle(document.documentElement).getPropertyValue('--link-color').trim() || '#2da44e';
 
-      cumulativeChart = new Chart(canvas, {
+      rollingChart = new Chart(canvas, {
         type: 'line',
         data: {
           labels,
           datasets: [{
-            label: 'Cumulative contributions',
+            label: 'Rolling 6-month total',
             data: values,
             borderColor: lineColor,
             backgroundColor: lineColor + '22',
             fill: true,
             tension: 0.3,
-            pointRadius: 2,
+            pointRadius: 0,
             pointHoverRadius: 5,
-          }],
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          animation: false,
-          plugins: { legend: { display: false }, tooltip: { enabled: true } },
-          scales: {
-            x: { ticks: { color: textColor, maxRotation: 0, autoSkip: true, maxTicksLimit: 6 } },
-            y: { beginAtZero: true, ticks: { color: textColor, precision: 0 } },
-          },
-        },
-      });
-    }
-
-    function renderTrendChart(days) {
-      const labels = days.map(d => d.date);
-      const values = days.map(d => d.count || 0);
-
-      const canvas = document.getElementById('activityTrendChart');
-      if (!canvas || typeof Chart === 'undefined') return;
-      if (trendChart) { trendChart.destroy(); trendChart = null; }
-
-      const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color').trim() || '#333';
-      const lineColor = getComputedStyle(document.documentElement).getPropertyValue('--link-color').trim() || '#2da44e';
-
-      trendChart = new Chart(canvas, {
-        type: 'line',
-        data: {
-          labels,
-          datasets: [{
-            label: 'Contributions',
-            data: values,
-            borderColor: lineColor,
-            backgroundColor: lineColor + '33',
-            fill: true,
-            tension: 0.2,
-            pointRadius: 1,
-            pointHoverRadius: 4,
           }],
         },
         options: {
@@ -1119,7 +1018,7 @@
       const u = usersByLogin.get(login);
       if (!u) return;
       modal.style.display = 'flex';
-      requestAnimationFrame(() => renderHeatmap(u));
+      requestAnimationFrame(() => renderRollingChart(u));
     }
     function close() {
       modal.style.display = 'none';
