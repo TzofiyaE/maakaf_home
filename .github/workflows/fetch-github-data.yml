@@ -53,6 +53,9 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/github_data.json
           git commit -m "chore: update GitHub data [skip ci]"
+          # Rebase onto latest main in case it moved (e.g. a PR merged while
+          # this workflow was running) so the push isn't rejected.
+          git pull --rebase origin main
           git push
 
       - name: Trigger Netlify Deploy
