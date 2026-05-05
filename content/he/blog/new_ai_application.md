@@ -3,7 +3,7 @@ title: "בניתי מערכת חכמה לחיפוש מידע עם AI – על נ
 slug: "ai-crime-data-analysis"
 date: 2025-07-26
 description: "פרויקט חדש שמדגים איך אפשר להשתמש ב-AI כדי להפוך טקסט חופשי לשאילתות SQL חכמות שמחזירות מידע אמיתי מתוך מאגרי נתונים ממשלתיים"
-tags: ["קוד פתוח", "AI", "SDK AI", "Generartive UI"]
+tags: ["קוד פתוח", "AI", "SDK AI", "Generative UI"]
 categories: ["פיתוח", "עדכוני פרויקט"]
 author: "קובי קרסנוב"
 ---
