@@ -28,7 +28,7 @@ howToAddProfile:
   instructions: |
     יש לך פרופיל בגיטהאב ורוצה שהתרומות שלך יופיעו בטבלה? הנה איך לעשות זאת:
     
-    1. **ליצור Pull Request** - ולהוסיף את שם המשתמש שלך ל<a href="https://github.com/Maakaf/maakaf_home/blob/main/config.json" target="_blank">קובץ הקונפיגורציה</a> (במערך `usernames` - להוסיף את שם המשתמש שלך בתוך גרשיים עם פסיק)
+    1. **ליצור Pull Request** - ולהוסיף את שם המשתמש שלך לקובץ <a href="https://github.com/Maakaf/friends-activity-backend/blob/main/users.json" target="_blank">users.json</a> (להוסיף את שם המשתמש שלך בתוך גרשיים עם פסיק)
     2. **לחכות לאישור ה-Pull Request שלך** - כאשר זה יקרה הנתונים שלך יצורפו לטבלה
   expandButtonText: 'הצג הוראות מלאות'
   collapseButtonText: 'הסתר הוראות'
