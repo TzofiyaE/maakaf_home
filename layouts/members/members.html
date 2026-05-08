@@ -240,7 +240,15 @@
 ====================== -->
 {{ if .Site.Data.github_data.repoLeaderboard }}
 <h3 class="mt-5 mb-3">Top Maakaf Repos (last 180 days)</h3>
-<p class="text-muted small" id="repoLeaderboardStatus">Showing repos {{ len .Site.Data.github_data.repoLeaderboard }} total.</p>
+<div class="d-flex flex-wrap align-items-center gap-3 mb-2">
+  <div>
+    <label for="repoLangFilter" class="form-label mb-1 small text-muted">Filter by language:</label>
+    <select id="repoLangFilter" class="form-select form-select-sm" style="min-width: 180px;">
+      <option value="">All languages</option>
+    </select>
+  </div>
+  <p class="text-muted small mb-0 align-self-end" id="repoLeaderboardStatus">Showing repos {{ len .Site.Data.github_data.repoLeaderboard }} total.</p>
+</div>
 <div class="table-container mb-4">
   <table id="repoLeaderboardTable" class="table table-bordered text-reset w-100">
     <thead>
@@ -259,7 +267,7 @@
     </thead>
     <tbody>
       {{ range .Site.Data.github_data.repoLeaderboard }}
-        <tr class="repo-leaderboard-row" data-pr-reviews="{{ .prReviews | default 0 }}">
+        <tr class="repo-leaderboard-row" data-pr-reviews="{{ .prReviews | default 0 }}" data-lang="{{ .primaryLanguage | default "" }}">
           <td>
             <a href="{{ .url }}" target="_blank" class="text-decoration-none">
               <strong>{{ .repoName }}</strong>
@@ -518,15 +526,27 @@
     backdrop?.addEventListener('click', closeModal);
   });
 
-  // Repo leaderboard pagination + sorting
+  // Repo leaderboard pagination + sorting + language filter
   document.addEventListener('DOMContentLoaded', function () {
     const PAGE_SIZE = 25;
     const tbody = document.querySelector('#repoLeaderboardTable tbody');
-    let rows = Array.from(document.querySelectorAll('.repo-leaderboard-row'));
+    const allRows = Array.from(document.querySelectorAll('.repo-leaderboard-row'));
+    let rows = allRows.slice();
     const status = document.getElementById('repoLeaderboardStatus');
     const nav = document.getElementById('repoLeaderboardPagination');
     const sortableHeaders = document.querySelectorAll('#repoLeaderboardTable .sortable');
-    if (!rows.length || !status || !nav || !tbody) return;
+    const langFilter = document.getElementById('repoLangFilter');
+    if (!allRows.length || !status || !nav || !tbody) return;
+
+    if (langFilter) {
+      const langs = [...new Set(allRows.map((r) => r.dataset.lang).filter(Boolean))].sort();
+      for (const l of langs) {
+        const opt = document.createElement('option');
+        opt.value = l;
+        opt.textContent = l;
+        langFilter.appendChild(opt);
+      }
+    }
 
     let page = 1;
     let sortColumn = null;
@@ -621,6 +641,18 @@
         render();
       });
     });
+
+    if (langFilter) {
+      langFilter.addEventListener('change', () => {
+        const v = langFilter.value;
+        rows = v ? allRows.filter((r) => r.dataset.lang === v) : allRows.slice();
+        tbody.innerHTML = '';
+        rows.forEach((r) => tbody.appendChild(r));
+        applySort();
+        page = 1;
+        render();
+      });
+    }
 
     render();
   });
