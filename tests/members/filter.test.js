@@ -4,6 +4,7 @@ import test from 'node:test';
 import {
   buildGitHubMetricUrl,
   classifyRepo,
+  collapseMemberState,
   filterRepos,
   getRepoOwner,
   normalizeMembersViewMode,
@@ -125,4 +126,21 @@ test('defaults the members page to the legacy table view', () => {
   assert.equal(normalizeMembersViewMode('legacy'), 'legacy');
   assert.equal(normalizeMembersViewMode('modern'), 'modern');
   assert.equal(normalizeMembersViewMode('unknown'), 'legacy');
+});
+
+test('collapses selected member without changing active filters', () => {
+  assert.deepEqual(
+    collapseMemberState({
+      selectedUsername: 'EtanHey',
+      visibility: 'non-personal',
+      metric: 'pullRequests',
+      language: 'TypeScript',
+    }),
+    {
+      selectedUsername: '',
+      visibility: 'non-personal',
+      metric: 'pullRequests',
+      language: 'TypeScript',
+    },
+  );
 });

@@ -88,6 +88,13 @@ export function selectMemberState(currentState, nextUsername) {
   };
 }
 
+export function collapseMemberState(currentState) {
+  return {
+    ...currentState,
+    selectedUsername: '',
+  };
+}
+
 export function normalizeMembersViewMode(mode = 'legacy') {
   return mode === 'modern' ? 'modern' : 'legacy';
 }

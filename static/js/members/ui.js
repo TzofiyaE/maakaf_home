@@ -1,6 +1,7 @@
 import {
   buildGitHubMetricUrl,
   classifyRepo,
+  collapseMemberState,
   filterRepos,
   METRIC_KEYS,
   metricValue,
@@ -128,6 +129,19 @@ function setSelectedCard(username) {
   });
 }
 
+function clearInlineDetails() {
+  document.querySelectorAll('[data-member-inline-detail]').forEach((inlineDetail) => {
+    inlineDetail.innerHTML = '';
+  });
+}
+
+function collapseSelectedMember() {
+  setSelectedCard('');
+  clearInlineDetails();
+  const detail = byId('memberDetail');
+  if (detail) detail.innerHTML = '<div class="member-detail-empty">בחרו חבר או חברה כדי לראות תרומות קוד פתוח.</div>';
+}
+
 function renderLanguageChips(member, summary) {
   const languages = summary.languages;
   if (!languages.length) return '';
@@ -167,6 +181,9 @@ function renderMetricFilters(member) {
 
 function detailMarkup(member, summary, visibleRepos) {
   return `
+    <div class="member-detail-toolbar">
+      <button type="button" class="member-detail-close" data-member-collapse aria-label="סגירת כרטיס">סגור</button>
+    </div>
     <div class="member-detail-header">
       <img src="${escapeHtml(member.user.avatarUrl)}" alt="${escapeHtml(member.user.username)}" class="member-detail-avatar" />
       <div>
@@ -198,6 +215,11 @@ function detailMarkup(member, summary, visibleRepos) {
 function renderDetail(users) {
   const detail = byId('memberDetail');
   if (!detail) return;
+
+  if (!state.selectedUsername) {
+    collapseSelectedMember();
+    return;
+  }
 
   const member = findUser(users, state.selectedUsername) || users[0];
   if (!member) return;
@@ -286,6 +308,12 @@ function wireCards(users) {
 
 function wireDetail(users) {
   byId('membersDashboard')?.addEventListener('click', (event) => {
+    if (event.target.closest('[data-member-collapse]')) {
+      Object.assign(state, collapseMemberState(state));
+      collapseSelectedMember();
+      return;
+    }
+
     const metricButton = event.target.closest('[data-detail-metric]');
     if (metricButton) {
       const metric = metricButton.getAttribute('data-detail-metric');
