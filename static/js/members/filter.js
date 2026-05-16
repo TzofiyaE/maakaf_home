@@ -95,6 +95,18 @@ export function collapseMemberState(currentState) {
   };
 }
 
+export function selectMemberMetricState(currentState, nextUsername, metric) {
+  const previousUsername = String(currentState?.selectedUsername || '');
+  const selectedUsername = String(nextUsername || '');
+  const memberChanged = selectedUsername.toLowerCase() !== previousUsername.toLowerCase();
+  const nextState = selectMemberState(currentState, selectedUsername);
+
+  return {
+    ...nextState,
+    metric: memberChanged ? metric : (nextState.metric === metric ? '' : metric),
+  };
+}
+
 export function normalizeMembersViewMode(mode = 'legacy') {
   return mode === 'modern' ? 'modern' : 'legacy';
 }

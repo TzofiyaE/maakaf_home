@@ -6,6 +6,7 @@ import {
   METRIC_KEYS,
   metricValue,
   normalizeMembersViewMode,
+  selectMemberMetricState,
   selectMemberState,
   summarizeRepos,
 } from './filter.js';
@@ -298,9 +299,11 @@ function closeOssModal() {
 function wireCards(users) {
   document.querySelectorAll('[data-member-select]').forEach((control) => {
     control.addEventListener('click', () => {
-      Object.assign(state, selectMemberState(state, control.getAttribute('data-member-select') || state.selectedUsername));
+      const username = control.getAttribute('data-member-select') || state.selectedUsername;
       const metric = control.getAttribute('data-member-metric');
-      if (metric) state.metric = state.metric === metric ? '' : metric;
+      Object.assign(state, metric
+        ? selectMemberMetricState(state, username, metric)
+        : selectMemberState(state, username));
       renderDetail(users);
     });
   });

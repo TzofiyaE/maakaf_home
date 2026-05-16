@@ -8,6 +8,7 @@ import {
   filterRepos,
   getRepoOwner,
   normalizeMembersViewMode,
+  selectMemberMetricState,
   selectMemberState,
   summarizeRepos,
 } from '../../static/js/members/filter.js';
@@ -142,5 +143,25 @@ test('collapses selected member without changing active filters', () => {
       metric: 'pullRequests',
       language: 'TypeScript',
     },
+  );
+});
+
+test('keeps clicked metric active when switching members from a metric chip', () => {
+  assert.deepEqual(
+    selectMemberMetricState(
+      { selectedUsername: 'EtanHey', visibility: 'all', metric: 'pullRequests', language: 'TypeScript' },
+      'szabgab',
+      'pullRequests',
+    ),
+    { selectedUsername: 'szabgab', visibility: 'all', metric: 'pullRequests', language: '' },
+  );
+
+  assert.deepEqual(
+    selectMemberMetricState(
+      { selectedUsername: 'EtanHey', visibility: 'all', metric: 'pullRequests', language: 'TypeScript' },
+      'EtanHey',
+      'pullRequests',
+    ),
+    { selectedUsername: 'EtanHey', visibility: 'all', metric: '', language: 'TypeScript' },
   );
 });

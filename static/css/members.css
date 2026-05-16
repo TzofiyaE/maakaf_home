@@ -148,10 +148,8 @@ html.dark .stat-num {
   color: #ffffff;
 }
 
-.members-dashboard {
-  display: none;
-  margin: 10px 0 32px;
-  padding: 12px !important;
+.members-dashboard,
+.oss-modal {
   --member-bg: #121212;
   --member-surface: #1f2429;
   --member-surface-soft: #242a30;
@@ -166,6 +164,12 @@ html.dark .stat-num {
   --member-accent-soft: rgba(63, 125, 216, 0.16);
   --member-success: #78c083;
   --member-warning: #d6b45d;
+}
+
+.members-dashboard {
+  display: none;
+  margin: 10px 0 32px;
+  padding: 12px !important;
   border: 1px solid var(--member-border);
   border-radius: 4px;
   background: var(--member-bg);
@@ -704,10 +708,17 @@ html.dark .oss-modal .activity-modal-summary {
   padding: 1px 8px;
   font-size: 0.75rem;
   line-height: 1.5;
+  background: rgba(56, 139, 253, 0.15);
+  color: var(--link-color, #58a6ff);
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.members-dashboard .topic-pill,
+.oss-modal .topic-pill {
   background: rgba(143, 177, 214, 0.12);
   color: var(--member-link, #8fb1d6);
   border-radius: 4px;
-  white-space: nowrap;
 }
 
 /* ========================
@@ -1401,7 +1412,7 @@ html.dark .activity-modal-header select {
 
   .oss-modal-header {
     position: sticky;
-    top: -56px;
+    top: 0;
     z-index: 3;
     padding: 0 48px 12px 0;
     background: inherit;
