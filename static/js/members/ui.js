@@ -9,11 +9,11 @@ import {
 } from './filter.js';
 
 const METRIC_LABELS = {
-  commits: 'C',
-  pullRequests: 'PR',
-  issues: 'I',
-  prComments: 'PRC',
-  issueComments: 'IC',
+  commits: 'Commits',
+  pullRequests: 'PRs',
+  issues: 'Issues',
+  prComments: 'PR comments',
+  issueComments: 'Issue comments',
 };
 
 const METRIC_TITLES = {
@@ -76,10 +76,10 @@ function sortRepos(repos) {
   });
 }
 
-function repoStatsMarkup(repo) {
+function repoStatsMarkup(repo, member) {
   return METRIC_KEYS.map((metric) => {
     const value = metricValue(repo, metric);
-    const href = buildGitHubMetricUrl(repo, metric);
+    const href = buildGitHubMetricUrl(repo, metric, member);
     return `
       <a class="member-stat-button repo-stat-link" href="${escapeHtml(href)}" target="_blank" rel="noopener" title="${escapeHtml(METRIC_TITLES[metric])}">
         <span>${METRIC_LABELS[metric]}</span><strong>${value}</strong>
@@ -115,7 +115,7 @@ function repoCardMarkup(repo, member) {
       </div>
       ${topics}
       <div class="member-stat-grid" aria-label="Repository metrics">
-        ${repoStatsMarkup(repo)}
+        ${repoStatsMarkup(repo, member)}
       </div>
     </article>
   `;
@@ -164,24 +164,8 @@ function renderMetricFilters(member) {
   `;
 }
 
-function renderDetail(users) {
-  const detail = byId('memberDetail');
-  if (!detail) return;
-
-  const member = findUser(users, state.selectedUsername) || users[0];
-  if (!member) return;
-  state.selectedUsername = member.user.username;
-  setSelectedCard(member.user.username);
-
-  const repos = Array.isArray(member.repos) ? member.repos : [];
-  const summary = summarizeRepos(repos, member);
-  const visibleRepos = sortRepos(filterRepos(repos, member, {
-    visibility: state.visibility,
-    metric: state.metric,
-    language: state.language,
-  }));
-
-  detail.innerHTML = `
+function detailMarkup(member, summary, visibleRepos) {
+  return `
     <div class="member-detail-header">
       <img src="${escapeHtml(member.user.avatarUrl)}" alt="${escapeHtml(member.user.username)}" class="member-detail-avatar" />
       <div>
@@ -208,6 +192,30 @@ function renderDetail(users) {
         : '<p class="member-detail-empty">No repos match the current filters.</p>'}
     </div>
   `;
+}
+
+function renderDetail(users) {
+  const detail = byId('memberDetail');
+  if (!detail) return;
+
+  const member = findUser(users, state.selectedUsername) || users[0];
+  if (!member) return;
+  state.selectedUsername = member.user.username;
+  setSelectedCard(member.user.username);
+
+  const repos = Array.isArray(member.repos) ? member.repos : [];
+  const summary = summarizeRepos(repos, member);
+  const visibleRepos = sortRepos(filterRepos(repos, member, {
+    visibility: state.visibility,
+    metric: state.metric,
+    language: state.language,
+  }));
+  const markup = detailMarkup(member, summary, visibleRepos);
+
+  detail.innerHTML = markup;
+  document.querySelectorAll('[data-member-inline-detail]').forEach((inlineDetail) => {
+    inlineDetail.innerHTML = inlineDetail.getAttribute('data-member-inline-detail') === member.user.username ? markup : '';
+  });
 }
 
 function groupPrRepos(member) {
@@ -276,8 +284,7 @@ function wireCards(users) {
 }
 
 function wireDetail(users) {
-  const detail = byId('memberDetail');
-  detail?.addEventListener('click', (event) => {
+  byId('membersDashboard')?.addEventListener('click', (event) => {
     const metricButton = event.target.closest('[data-detail-metric]');
     if (metricButton) {
       const metric = metricButton.getAttribute('data-detail-metric');

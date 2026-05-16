@@ -65,16 +65,24 @@ test('filters Etan personal repos out of the non-personal view', () => {
 
 test('builds GitHub metric URLs for clickable stats', () => {
   assert.equal(
-    buildGitHubMetricUrl(repos[1], 'pullRequests'),
-    'https://github.com/pingdotgg/t3code/pulls?q=is%3Apr',
+    buildGitHubMetricUrl(repos[1], 'pullRequests', etan),
+    'https://github.com/pingdotgg/t3code/pulls?q=is%3Apr+author%3AEtanHey',
   );
   assert.equal(
-    buildGitHubMetricUrl(repos[1], 'issues'),
-    'https://github.com/pingdotgg/t3code/issues?q=is%3Aissue',
+    buildGitHubMetricUrl(repos[1], 'issues', etan),
+    'https://github.com/pingdotgg/t3code/issues?q=is%3Aissue+author%3AEtanHey',
   );
   assert.equal(
-    buildGitHubMetricUrl(repos[1], 'commits'),
-    'https://github.com/pingdotgg/t3code/commits',
+    buildGitHubMetricUrl(repos[1], 'prComments', etan),
+    'https://github.com/pingdotgg/t3code/pulls?q=is%3Apr+commenter%3AEtanHey',
+  );
+  assert.equal(
+    buildGitHubMetricUrl(repos[1], 'issueComments', etan),
+    'https://github.com/pingdotgg/t3code/issues?q=is%3Aissue+commenter%3AEtanHey',
+  );
+  assert.equal(
+    buildGitHubMetricUrl(repos[1], 'commits', etan),
+    'https://github.com/pingdotgg/t3code/commits?author=EtanHey',
   );
 });
 

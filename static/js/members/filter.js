@@ -1,9 +1,9 @@
 const METRIC_PATHS = {
   commits: 'commits',
-  pullRequests: 'pulls?q=is%3Apr',
-  issues: 'issues?q=is%3Aissue',
-  prComments: 'pulls?q=is%3Apr',
-  issueComments: 'issues?q=is%3Aissue',
+  pullRequests: 'pulls',
+  issues: 'issues',
+  prComments: 'pulls',
+  issueComments: 'issues',
 };
 
 const METRIC_KEYS = ['commits', 'pullRequests', 'issues', 'prComments', 'issueComments'];
@@ -54,10 +54,26 @@ export function filterRepos(repos, member, filters = {}) {
   });
 }
 
-export function buildGitHubMetricUrl(repo, metric) {
+function issueSearchQuery(metric, username) {
+  const encodedUsername = encodeURIComponent(username);
+  if (metric === 'pullRequests') return `is%3Apr+author%3A${encodedUsername}`;
+  if (metric === 'issues') return `is%3Aissue+author%3A${encodedUsername}`;
+  if (metric === 'prComments') return `is%3Apr+commenter%3A${encodedUsername}`;
+  if (metric === 'issueComments') return `is%3Aissue+commenter%3A${encodedUsername}`;
+  return '';
+}
+
+export function buildGitHubMetricUrl(repo, metric, member) {
   const base = String(repo?.url || '').replace(/\/+$/, '');
   const path = METRIC_PATHS[metric] || '';
-  return path ? `${base}/${path}` : base;
+  const username = getMemberUsername(member);
+  if (!path) return base;
+  if (metric === 'commits') {
+    return username ? `${base}/${path}?author=${encodeURIComponent(username)}` : `${base}/${path}`;
+  }
+
+  const query = issueSearchQuery(metric, username);
+  return query ? `${base}/${path}?q=${query}` : `${base}/${path}`;
 }
 
 export function selectMemberState(currentState, nextUsername) {

@@ -163,25 +163,26 @@
 
               <div class="member-summary" aria-label="Activity summary">
                 <button type="button" class="member-stat-button" data-member-select="{{ $member.user.username }}" data-member-metric="commits" title="Commits">
-                  <span>C</span><strong>{{ $summary.totalCommits }}</strong>
+                  <span>Commits</span><strong>{{ $summary.totalCommits }}</strong>
                 </button>
                 <button type="button" class="member-stat-button" data-member-select="{{ $member.user.username }}" data-member-metric="pullRequests" title="Pull requests">
-                  <span>PR</span><strong>{{ $summary.totalPRs }}</strong>
+                  <span>PRs</span><strong>{{ $summary.totalPRs }}</strong>
                 </button>
                 <button type="button" class="member-stat-button" data-member-select="{{ $member.user.username }}" data-member-metric="issues" title="Issues">
-                  <span>I</span><strong>{{ $summary.totalIssues }}</strong>
+                  <span>Issues</span><strong>{{ $summary.totalIssues }}</strong>
                 </button>
                 <button type="button" class="member-stat-button" data-member-select="{{ $member.user.username }}" data-member-metric="prComments" title="PR comments">
-                  <span>PRC</span><strong>{{ $summary.totalPRComments }}</strong>
+                  <span>PR comments</span><strong>{{ $summary.totalPRComments }}</strong>
                 </button>
                 <button type="button" class="member-stat-button" data-member-select="{{ $member.user.username }}" data-member-metric="issueComments" title="Issue comments">
-                  <span>IC</span><strong>{{ $summary.totalIssueComments }}</strong>
+                  <span>Issue comments</span><strong>{{ $summary.totalIssueComments }}</strong>
                 </button>
               </div>
 
               <button type="button" class="member-oss-button" data-oss-open="{{ $member.user.username }}">
                 Open Source PRs
               </button>
+              <div class="member-card-detail" data-member-inline-detail="{{ $member.user.username }}"></div>
             </article>
           {{ end }}
         </div>
