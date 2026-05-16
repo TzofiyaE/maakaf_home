@@ -60,6 +60,18 @@ export function buildGitHubMetricUrl(repo, metric) {
   return path ? `${base}/${path}` : base;
 }
 
+export function selectMemberState(currentState, nextUsername) {
+  const selectedUsername = String(nextUsername || '');
+  const previousUsername = String(currentState?.selectedUsername || '');
+  const memberChanged = selectedUsername.toLowerCase() !== previousUsername.toLowerCase();
+
+  return {
+    ...currentState,
+    selectedUsername,
+    language: memberChanged ? '' : (currentState?.language || ''),
+  };
+}
+
 export function summarizeRepos(repos, member) {
   const summary = {
     personal: 0,

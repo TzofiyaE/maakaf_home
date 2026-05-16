@@ -4,6 +4,7 @@ import {
   filterRepos,
   METRIC_KEYS,
   metricValue,
+  selectMemberState,
   summarizeRepos,
 } from './filter.js';
 
@@ -266,7 +267,7 @@ function closeOssModal() {
 function wireCards(users) {
   document.querySelectorAll('[data-member-select]').forEach((control) => {
     control.addEventListener('click', () => {
-      state.selectedUsername = control.getAttribute('data-member-select') || state.selectedUsername;
+      Object.assign(state, selectMemberState(state, control.getAttribute('data-member-select') || state.selectedUsername));
       const metric = control.getAttribute('data-member-metric');
       if (metric) state.metric = state.metric === metric ? '' : metric;
       renderDetail(users);

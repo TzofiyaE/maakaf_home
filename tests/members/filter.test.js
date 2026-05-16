@@ -6,6 +6,7 @@ import {
   classifyRepo,
   filterRepos,
   getRepoOwner,
+  selectMemberState,
   summarizeRepos,
 } from '../../static/js/members/filter.js';
 
@@ -90,4 +91,22 @@ test('summarizes personal and non-personal repo totals separately', () => {
       issueComments: 5,
     },
   });
+});
+
+test('clears stale language filter when selecting a different member', () => {
+  assert.deepEqual(
+    selectMemberState(
+      { selectedUsername: 'EtanHey', visibility: 'all', metric: 'pullRequests', language: 'Python' },
+      'UrielOfir',
+    ),
+    { selectedUsername: 'UrielOfir', visibility: 'all', metric: 'pullRequests', language: '' },
+  );
+
+  assert.deepEqual(
+    selectMemberState(
+      { selectedUsername: 'EtanHey', visibility: 'all', metric: 'pullRequests', language: 'Python' },
+      'EtanHey',
+    ),
+    { selectedUsername: 'EtanHey', visibility: 'all', metric: 'pullRequests', language: 'Python' },
+  );
 });
