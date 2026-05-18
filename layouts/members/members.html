@@ -52,7 +52,7 @@
       Search Controls (Simplified)
     ========================= -->
     {{ if .Params.pageConfig.showSearch | default true }}
-    <div class="d-flex flex-wrap gap-3 align-items-end mb-4">
+    <div class="d-flex flex-wrap gap-3 align-items-end mb-4 legacy-member-search">
       <div>
         <label for="searchInput" class="form-label mb-1">{{ .Params.searchConfig.label | default "Search by name, username, or bio:" }}</label>
         <input type="text" class="form-control text-reset" id="searchInput" onkeyup="filterTable()" placeholder="{{ .Params.searchConfig.placeholder | default "Type to search..." }}" />
@@ -124,10 +124,102 @@
 </div>
 {{ end }}
 
+    <div class="members-view-switch" dir="rtl" aria-label="בחירת תצוגת חברים">
+      <button type="button" class="members-view-button is-active" data-members-view="legacy" aria-pressed="true">
+        תצוגת טבלה
+      </button>
+      <button type="button" class="members-view-button" data-members-view="modern" aria-pressed="false">
+        תצוגה מודרנית
+      </button>
+    </div>
+
+    <!-- ========================
+      Members Dashboard
+    ========================= -->
+    <section class="members-dashboard" id="membersDashboard" aria-label="Members open source dashboard">
+      <div class="members-controls" dir="rtl">
+        <div class="members-search">
+          <label for="memberSearchInput" class="form-label mb-1">חיפוש חברים ופרויקטים</label>
+          <input type="search" class="form-control text-reset" id="memberSearchInput" placeholder="שם, משתמש גיטהאב, שפה או פרויקט" autocomplete="off" />
+        </div>
+        <label class="members-filter-toggle">
+          <input type="checkbox" id="nonPersonalOnlyToggle" />
+          <span>הצג רק קוד פתוח לא אישי</span>
+        </label>
+      </div>
+
+      <div class="members-layout">
+        <div class="members-list" id="membersList" aria-label="Contributor list">
+          {{ range $index, $member := sort .Site.Data.github_data.users "summary.totalCommits" "desc" }}
+            {{ $summary := $member.summary }}
+            <article
+              class="member-card{{ if eq $index 0 }} is-active{{ end }}"
+              data-username="{{ $member.user.username }}"
+              data-search="{{ printf "%s %s %s %s" ($member.user.displayName | default $member.user.username) $member.user.username ($member.user.bio | default "") ($member.user.company | default "") | plainify }}"
+            >
+              <button type="button" class="member-card-main" data-member-select="{{ $member.user.username }}" aria-label="Select {{ $member.user.username }}">
+                <img src="{{ $member.user.avatarUrl }}" alt="{{ $member.user.username }}" class="member-card-avatar" />
+                <span class="member-card-copy">
+                  <strong>{{ $member.user.displayName | default $member.user.username }}</strong>
+                  <span>@{{ $member.user.username }}</span>
+                  {{ if $member.user.bio }}
+                    <small>{{ $member.user.bio }}</small>
+                  {{ else if $member.user.location }}
+                    <small>{{ $member.user.location }}</small>
+                  {{ end }}
+                </span>
+              </button>
+
+              <div class="member-summary" aria-label="Activity summary">
+                <button type="button" class="member-stat-button" data-member-select="{{ $member.user.username }}" data-member-metric="commits" title="Commits">
+                  <span>Commits</span><strong>{{ $summary.totalCommits }}</strong>
+                </button>
+                <button type="button" class="member-stat-button" data-member-select="{{ $member.user.username }}" data-member-metric="pullRequests" title="Pull requests">
+                  <span>PRs</span><strong>{{ $summary.totalPRs }}</strong>
+                </button>
+                <button type="button" class="member-stat-button" data-member-select="{{ $member.user.username }}" data-member-metric="issues" title="Issues">
+                  <span>Issues</span><strong>{{ $summary.totalIssues }}</strong>
+                </button>
+                <button type="button" class="member-stat-button" data-member-select="{{ $member.user.username }}" data-member-metric="prComments" title="PR comments">
+                  <span>PR comments</span><strong>{{ $summary.totalPRComments }}</strong>
+                </button>
+                <button type="button" class="member-stat-button" data-member-select="{{ $member.user.username }}" data-member-metric="issueComments" title="Issue comments">
+                  <span>Issue comments</span><strong>{{ $summary.totalIssueComments }}</strong>
+                </button>
+              </div>
+
+              <button type="button" class="member-oss-button" data-oss-open="{{ $member.user.username }}">
+                Open Source PRs
+              </button>
+              <div class="member-card-detail" data-member-inline-detail="{{ $member.user.username }}"></div>
+            </article>
+          {{ end }}
+        </div>
+
+        <aside class="member-detail" id="memberDetail" aria-live="polite">
+          <div class="member-detail-empty">בחרו חבר או חברה כדי לראות תרומות קוד פתוח.</div>
+        </aside>
+      </div>
+    </section>
+
+    <div id="ossModal" class="activity-modal oss-modal" style="display:none;" aria-hidden="true">
+      <div class="activity-modal-backdrop" data-oss-close></div>
+      <div class="activity-modal-content oss-modal-content" role="dialog" aria-modal="true" aria-labelledby="ossModalTitle">
+        <button type="button" class="activity-modal-close" data-oss-close aria-label="Close">×</button>
+        <div class="activity-modal-header oss-modal-header">
+          <div>
+            <h3 class="activity-modal-title" id="ossModalTitle">Open Source PRs</h3>
+            <p class="activity-modal-summary text-muted" id="ossModalSummary"></p>
+          </div>
+        </div>
+        <div id="ossModalBody" class="oss-modal-body"></div>
+      </div>
+    </div>
+
     <!-- ===================
       Contributors Table
     ====================== -->
-    <div class="table-container mb-4">
+    <div class="table-container mb-4 legacy-members-table">
       <table id="contributorsTable" class="table table-bordered text-reset w-100">
         <thead>
           <tr>
@@ -337,6 +429,7 @@
 <script id="usersData" type="application/json">
   {{ $users | jsonify | safeJS }}
 </script>
+<script type="module" src="/js/members/ui.js"></script>
 
 <div class="community-charts my-4">
   <!-- <div class="chart-card">

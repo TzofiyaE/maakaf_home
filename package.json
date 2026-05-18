@@ -31,7 +31,7 @@
     "postbuild:production": "npm run _check:links",
     "prebuild": "npx tsx fetch-data.ts",
     "serve": "npm run _serve",
-    "test": "npm run check:links",
+    "test": "node --test tests/members/filter.test.js && npm run _check:links",
     "update:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest",
     "update:hugo": "npm install --save-dev --save-exact hugo-extended@latest",
     "update:pkgs": "npx npm-check-updates -u"
