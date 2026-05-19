@@ -19,7 +19,7 @@ author: "קובי קרסנוב"
 3. "רשימה של קטגוריות של עבירות"
 4. "רשימה של כל העבירות אשר שייכות לקטגוריית עבירות כלפי הרכוש"
 
-🔗 **מאגר הנתונים:** <a href="https://data.gov.il/dataset/crime_records_data" target="_blank">אתר המידע הממשלתי data.gov - נתוני פשיעה</a>  
+🔗 **מאגר הנתונים:** <a href="https://data.gov.il/he/datasets/israel-police/crime_records_data" target="_blank">אתר המידע הממשלתי data.gov - נתוני פשיעה</a>  
 
 ## איך זה עובד?
 
