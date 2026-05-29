@@ -42,6 +42,7 @@ linkTitle: 'פרוייקט המנטורים'
     <tr><td>יובל קשטן</td><td>באריכטקטורה של מערכות מבוזרות, פיתוח תשתיות, עזרה עם קוברניטיס, פיתוח קונטרולרים לקוברניטיס, סיסטם ועוד. </td><td><a href="https://red.ht/meetyuval" target="_blank">📅</a></td><td><a href="https://www.linkedin.com/in/yuvalkashtan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td></tr>
     <tr><td>יואב צ׳רנוברודה</td><td>מנטורינג בתהליך חיפוש עבודה, סיוע בפרויקט אישי, יעוץ בארכיטקטורת מערכת ושימוש בענן בסביבת AWS, פייתון</td><td><a href="https://wa.me/972545610833?text=Hi,%20I%20would%20like%20us%20to%20meet%20for%20mentoring%20by%20Ma'akaf%20community" target="_blank">📅</a></td><td><a href="https://www.linkedin.com/in/yoav-chernobroda-1b6854/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td></tr>
     <tr><td>דניס בורשצבסקי</td><td>project architecture, full stack development, react, react-native, node, mongo, sql, aws, css, html, code review</td><td><a href="https://calendly.com/dennisborsh/30min" target="_blank">📅</a></td><td><a href="https://www.linkedin.com/in/dennis-borshchevski-64000113/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td></tr>
+    <tr><td>ניב יצחקי</td><td>ייעוץ להתפתחות מקצועית ולמציאת עבודה בבקאנד</td><td><a href="https://schedule.fillout.com/t/g66jAaoebrus" target="_blank">📅</a></td><td><a href="https://www.linkedin.com/in/nivitzhaky/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></tr>
   </tbody>
 </table>
 
