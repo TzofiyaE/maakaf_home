@@ -49,6 +49,11 @@
   "optionalDependencies": {
     "npm-check-updates": "^22.0.1"
   },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead"
+  ],
   "private": true,
   "prettier": {
     "proseWrap": "always",
