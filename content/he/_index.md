@@ -1,11 +1,12 @@
 ---
-title: "דף הבית"
-slug: "home"
-linkTitle: "בית"
+title: 'דף הבית'
+slug: 'home'
+linkTitle: 'בית'
 weight: 1
 ---
 
-{{< blocks/cover title="👋 ברוכים הבאים למעקף!" color="primary" height="full" >}}
+{{< blocks/cover title="ברוכים הבאים למעקף!" color="primary" height="full" >}}
+
 <div class="mx-auto">
   <p class="lead">קהילת הקוד הפתוח של ישראל – המקום שבו כל אחד ואחת יכולים להתחבר, ללמוד, ולתרום לעולם הקוד הפתוח.</p>
   <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://chat.whatsapp.com/LTZKuKyKw7DHppVrDXWv8h" target="_blank">📰 עדכוני מעקף בוואטסאפ</a>
@@ -21,15 +22,13 @@ weight: 1
 {{< /blocks/cover >}}
 
 {{% blocks/section color="white" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="קהילה תומכת" %}}
-הקהילה שלנו חמה, תומכת, ומזמינה – כל שאלה מתקבלת בברכה!
-{{% /blocks/feature %}}
-{{% blocks/feature icon="fa-graduation-cap" title="הדרכות ומדריכים" %}}
-צפו ב<a href="https://www.youtube.com/@maakaf-os" target="_blank">ערוץ היוטיוב שלנו</a> או קראו מדריכים באתר.
-{{% /blocks/feature %}}
+{{% blocks/feature icon="fa-lightbulb" title="קהילה תומכת" %}} הקהילה שלנו חמה,
+תומכת, ומזמינה – כל שאלה מתקבלת בברכה! {{% /blocks/feature %}}
+{{% blocks/feature icon="fa-graduation-cap" title="הדרכות ומדריכים" %}} צפו
+ב<a href="https://www.youtube.com/@maakaf-os" target="_blank">ערוץ היוטיוב
+שלנו</a> או קראו מדריכים באתר. {{% /blocks/feature %}}
 {{% blocks/feature icon="fa-hands-helping" title="מנטורינג אישי" url="/he/guides/mentors" %}}
-מנטורים מנוסים ילוו אתכם בצעדים הראשונים.
-{{% /blocks/feature %}}
+מנטורים מנוסים ילוו אתכם בצעדים הראשונים. {{% /blocks/feature %}}
 {{% /blocks/section %}}
 
 <div class="d-flex justify-content-center flex-wrap">
@@ -51,6 +50,6 @@ weight: 1
 {{< /cardpane >}}
 </div>
 
-{{% alert title="הצטרפו אלינו!" color="info" %}}
-הקהילה שלנו פתוחה לכולם – כל שאלה, רעיון או תרומה מתקבלים בברכה! להרשמה לקהילה ולקבלת גישה לקבוצות הווטסאפ, מלאו את <a href="/he/register" target="_blank">טופס ההרשמה</a>.
-{{% /alert %}}
+{{% alert title="הצטרפו אלינו!" color="info" %}} הקהילה שלנו פתוחה לכולם – כל
+שאלה, רעיון או תרומה מתקבלים בברכה! להרשמה לקהילה ולקבלת גישה לקבוצות הווטסאפ,
+מלאו את <a href="/he/register" target="_blank">טופס ההרשמה</a>. {{% /alert %}}
