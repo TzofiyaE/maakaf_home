@@ -1,20 +1,60 @@
 /* General reset */
-html, body {
+html,
+body,
+main {
   margin: 0;
   padding: 0;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
   box-sizing: border-box;
+
+  /* Ensure white background */
+}
+
+.-bg-primary,
+header>nav,
+.td-overlay--dark::after,
+.navbar-bg-onscroll,
+.navbar-brand__name,
+.navbar-nav .nav-link {
+  background-color: #FAFAFA !important;
+  color: #000 !important;
 }
 
 /* Ensure all elements respect box-sizing */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
+}
+
+/* Override primary color to white */
+.bg-primary {
+  background-color: #ffffff !important;
+  color: #111111;
+}
+
+.bg-primary a {
+  color: #007bff;
+}
+
+/* Cover block styling */
+.td-cover-block.bg-primary {
+  background-color: #ffffff !important;
+}
+
+.td-cover-block.bg-primary h1,
+.td-cover-block.bg-primary h2,
+.td-cover-block.bg-primary h3,
+.td-cover-block.bg-primary p {
+  color: #111111;
 }
 
 /* RTL-specific adjustments */
 html[dir="rtl"] {
+
   .container,
   .container-fluid {
     overflow: visible; // fixed for lang and brightness menus to be visible
