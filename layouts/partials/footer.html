@@ -1,0 +1,69 @@
+{{- $isHebrew := eq .Site.Language.Lang "he" -}}
+{{- $home := "/" | relLangURL -}}
+{{- $about := "/about/" | relLangURL -}}
+{{- $projects := "/guides/projects/" | relLangURL -}}
+{{- $mentors := "/guides/mentors/" | relLangURL -}}
+{{- $members := "/members/" | relLangURL -}}
+{{- $blog := "/blog/" | relLangURL -}}
+{{- $logo := resources.Get "icons/footer-logo.png" -}}
+{{- $whatsapp := index .Site.Params.links.user 0 -}}
+{{- $discord := index .Site.Params.links.user 1 -}}
+{{- $github := index .Site.Params.links.developer 0 -}}
+{{- $youtube := index .Site.Params.links.developer 1 -}}
+{{- $meetup := index .Site.Params.links.developer 2 -}}
+
+<footer class="maakaf-footer d-print-none" dir="{{ if $isHebrew }}rtl{{ else }}ltr{{ end }}">
+  <div class="maakaf-footer__container">
+    <div class="maakaf-footer__content">
+      <section class="maakaf-footer__brand" aria-label="{{ if $isHebrew }}אודות מעקף{{ else }}About Maakaf{{ end }}">
+        {{ with $logo }}
+          <img class="maakaf-footer__logo" src="{{ .RelPermalink }}" width="139" height="40" alt="{{ if $isHebrew }}מעקף{{ else }}Maakaf{{ end }}">
+        {{ end }}
+        <p>
+          {{ if $isHebrew }}
+            המקום שבו מפתחים ומפתחות מתחברים, לומדים ותורמים לעולם הקוד הפתוח.
+          {{ else }}
+            A place where developers connect, learn, and contribute to open source.
+          {{ end }}
+        </p>
+        <nav class="maakaf-footer__socials" aria-label="{{ if $isHebrew }}רשתות חברתיות{{ else }}Social media{{ end }}">
+          <a href="{{ $youtube.url }}" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="{{ $meetup.url }}" target="_blank" rel="noopener noreferrer" aria-label="Meetup"><i class="fa-brands fa-meetup"></i></a>
+          <a href="{{ $discord.url }}" target="_blank" rel="noopener noreferrer" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+          <a href="{{ $whatsapp.url }}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="{{ $github.url }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </nav>
+      </section>
+
+      <nav class="maakaf-footer__column" aria-label="{{ if $isHebrew }}ניווט תחתון{{ else }}Footer navigation{{ end }}">
+        <h2>{{ if $isHebrew }}ניווט{{ else }}Navigation{{ end }}</h2>
+        <ul>
+          <li><a href="{{ $home }}">{{ if $isHebrew }}דף הבית{{ else }}Home{{ end }}</a></li>
+          <li><a href="{{ $about }}">{{ if $isHebrew }}אודות{{ else }}About{{ end }}</a></li>
+          <li><a href="{{ $projects }}">{{ if $isHebrew }}פרויקטים{{ else }}Projects{{ end }}</a></li>
+          <li><a href="{{ $mentors }}">{{ if $isHebrew }}מנטורים{{ else }}Mentors{{ end }}</a></li>
+          <li><a href="{{ $members }}">{{ if $isHebrew }}חברי הקהילה{{ else }}Community members{{ end }}</a></li>
+          <li><a href="{{ $blog }}">{{ if $isHebrew }}בלוג{{ else }}Blog{{ end }}</a></li>
+        </ul>
+      </nav>
+
+      <nav class="maakaf-footer__column maakaf-footer__community" aria-label="{{ if $isHebrew }}קישורי קהילה{{ else }}Community links{{ end }}">
+        <h2>{{ if $isHebrew }}קהילה{{ else }}Community{{ end }}</h2>
+        <ul>
+          <li><a href="{{ $whatsapp.url }}" target="_blank" rel="noopener noreferrer">{{ if $isHebrew }}הצטרפות ל-WhatsApp{{ else }}Join WhatsApp{{ end }} <span aria-hidden="true">↖</span></a></li>
+          <li><a href="{{ $discord.url }}" target="_blank" rel="noopener noreferrer">{{ if $isHebrew }}הצטרפות ל-Discord{{ else }}Join Discord{{ end }} <span aria-hidden="true">↖</span></a></li>
+          <li><a href="{{ $youtube.url }}" target="_blank" rel="noopener noreferrer">{{ if $isHebrew }}ערוץ YouTube{{ else }}YouTube channel{{ end }} <span aria-hidden="true">↖</span></a></li>
+          <li><a href="{{ $meetup.url }}" target="_blank" rel="noopener noreferrer">{{ if $isHebrew }}אירועי MeetUp{{ else }}Meetup events{{ end }} <span aria-hidden="true">↖</span></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="maakaf-footer__bottom">
+      <p>© {{ now.Year }} {{ if $isHebrew }}מעקף – קהילת הקוד הפתוח של ישראל{{ else }}Maakaf – Israel's open source community{{ end }}</p>
+      <p class="maakaf-footer__credit">
+        <span aria-hidden="true">💙</span>
+        {{ if $isHebrew }}נבנה באהבה ע"י הקהילה{{ else }}Built with love by the community{{ end }}
+      </p>
+    </div>
+  </div>
+</footer>
