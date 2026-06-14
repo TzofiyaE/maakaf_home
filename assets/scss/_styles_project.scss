@@ -40,6 +40,19 @@ header>nav,
   color: #007bff;
 }
 
+.maakaf-navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+}
+
+.maakaf-navbar-brand img {
+  display: block;
+  width: 139px;
+  height: 40px;
+  object-fit: contain;
+}
+
 /* Cover block styling */
 .td-cover-block.bg-primary {
   background-color: #ffffff !important;
