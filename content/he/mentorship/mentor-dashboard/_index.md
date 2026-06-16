@@ -10,7 +10,10 @@ weight: 60
 
 <div id="mdash-content">
 
-בקשות שהתקבלו:
+<div class="d-flex align-items-center gap-2 mb-3" dir="rtl">
+  <span>בקשות שהתקבלו:</span>
+  <a href="/he/mentorship/profile/" class="btn btn-outline-secondary btn-sm">עריכת פרופיל</a>
+</div>
 
 <div id="mdash-cards" class="row gy-3 mt-1"></div>
 

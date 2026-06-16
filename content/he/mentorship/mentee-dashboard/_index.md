@@ -10,7 +10,10 @@ weight: 50
 
 <div id="dash-content">
 
-הבקשות שלי:
+<div class="d-flex align-items-center gap-2 mb-3" dir="rtl">
+  <span>הבקשות שלי:</span>
+  <a href="/he/mentorship/profile/" class="btn btn-outline-secondary btn-sm">עריכת פרופיל</a>
+</div>
 
 <div id="dash-cards" class="row gy-3 mt-1"></div>
 
