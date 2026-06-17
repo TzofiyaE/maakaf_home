@@ -65,7 +65,7 @@ weight: 20
 <div class="card">
 <div class="card-body">
 <h3 class="card-title">הרשמה כמנטור/ית</h3>
-<p class="text-info small">כל הפרטים שתספקו יופיעו באתר, למעט כתובת האימייל שלכם</p>
+<div class="alert alert-info">כל הפרטים שתספקו יופיעו באתר, למעט כתובת האימייל שלכם</div>
 <p class="text-muted small">שדות המסומנים ב-<span class="text-danger">*</span> הם שדות חובה.</p>
 <div id="mentor-message" class="alert d-none" role="alert"></div>
 <form id="mentor-register-form">
