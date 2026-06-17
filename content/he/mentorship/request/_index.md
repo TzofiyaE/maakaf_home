@@ -24,7 +24,22 @@ weight: 40
     <label class="form-label">תיאור קצר</label>
     <textarea id="req-description" class="form-control" rows="4" placeholder="ספרו בכמה מילים מה הייתם רוצים לקבל מהשיחה"></textarea>
   </div>
-  <button id="req-submit" type="button" class="btn btn-primary">שליחת בקשה</button>
+
+  <div class="card mb-3 border-info">
+    <div class="card-header bg-info bg-opacity-10 fw-bold">הפרופיל שלך — המנטור/ית יוכל/תוכל לצפות בפרטים אלו</div>
+    <div id="req-profile-preview" class="card-body">
+      <div class="text-muted small">טוען פרטי פרופיל...</div>
+    </div>
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="req-consent">
+    <label class="form-check-label" for="req-consent">
+      אני מאשר/ת שהמנטור/ית יוכל/תוכל לצפות בפרטי הפרופיל שלי
+    </label>
+  </div>
+
+  <button id="req-submit" type="button" class="btn btn-primary" disabled>שליחת בקשה</button>
 </div>
 </div>
 

@@ -37,6 +37,8 @@ function actionButtons(req) {
   }
 }
 
+const LEVEL_MAP = { beginner: 'מתחיל/ה', intermediate: 'בינוני/ת', advanced: 'מתקדם/ת' };
+
 function renderCard(req) {
   const meta  = STATUS_META[req.status] ?? { label: req.status, color: 'light', dark: true };
   const badge = `<span class="badge bg-${meta.color}${meta.dark ? ' text-dark' : ''}">${meta.label}</span>`;
@@ -65,7 +67,11 @@ function renderCard(req) {
             <small class="text-muted">${formatDate(req.createdAt)}</small>
           </div>
           <h6 class="card-title mb-1">${req.topic}</h6>
-          <p class="text-muted small mb-0">מנטי: <strong>${req.menteeName ?? '—'}</strong></p>
+          <p class="text-muted small mb-1">מנטי: <strong>${req.menteeName ?? '—'}</strong>
+            <button class="btn btn-link btn-sm p-0 ms-2 toggle-mentee-profile"
+              data-req-id="${req.id}" data-mentee-id="${req.menteeId}">פרטי פרופיל ▼</button>
+          </p>
+          <div id="mentee-profile-${req.id}" class="border rounded p-2 mb-2 bg-light small" hidden></div>
           ${description}
           <div class="mt-auto">${actionButtons(req)}</div>
         </div>
@@ -75,6 +81,53 @@ function renderCard(req) {
 }
 
 const pendingAction = {};
+const profileCache = {};
+
+function renderProfileRows(profile) {
+  const rows = [
+    ['שם מלא', profile.fullName],
+    ['אימייל', profile.email],
+    ['רמת ניסיון', profile.experienceLevel ? (LEVEL_MAP[profile.experienceLevel] ?? profile.experienceLevel) : null],
+    ['תחומי עניין', profile.interests?.length ? profile.interests.join(', ') : null],
+    ['מטרות', profile.goals],
+  ].filter(([, v]) => v);
+  return rows.map(([label, value]) =>
+    `<div class="row mb-1"><div class="col-4 text-muted fw-bold">${label}</div><div class="col-8">${value}</div></div>`
+  ).join('');
+}
+
+function bindMenteeProfiles() {
+  cards.querySelectorAll('.toggle-mentee-profile').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const { reqId, menteeId } = btn.dataset;
+      const panel = document.getElementById(`mentee-profile-${reqId}`);
+
+      if (!panel.hidden) {
+        panel.hidden = true;
+        btn.textContent = 'פרטי פרופיל ▼';
+        return;
+      }
+
+      if (profileCache[menteeId]) {
+        panel.innerHTML = renderProfileRows(profileCache[menteeId]);
+        panel.hidden = false;
+        btn.textContent = 'פרטי פרופיל ▲';
+        return;
+      }
+
+      btn.textContent = 'טוען...';
+      const { ok, data } = await authedFetch(`/mentees/${menteeId}`);
+      if (ok) {
+        profileCache[menteeId] = data;
+        panel.innerHTML = renderProfileRows(data);
+      } else {
+        panel.innerHTML = '<span class="text-danger">לא ניתן לטעון את הפרופיל.</span>';
+      }
+      panel.hidden = false;
+      btn.textContent = 'פרטי פרופיל ▲';
+    });
+  });
+}
 
 function bindActions() {
   cards.querySelectorAll('[data-action]').forEach(btn => {
@@ -138,6 +191,7 @@ async function load() {
   emptyMsg.hidden = true;
   cards.innerHTML = mine.map(renderCard).join('');
   bindActions();
+  bindMenteeProfiles();
 }
 
 const session = getSession();

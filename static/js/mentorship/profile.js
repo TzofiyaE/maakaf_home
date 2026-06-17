@@ -1,5 +1,6 @@
 import { getSession, apiFetch, authedFetch } from './api.js';
 import { showFormMessage } from './errors.js';
+import { showToast } from './toast.js';
 
 const statusDiv  = document.getElementById('profile-status');
 const contentDiv = document.getElementById('profile-content');
@@ -78,7 +79,7 @@ async function initMentor() {
     submitBtn.disabled = false;
 
     if (saveOk) {
-      window.location.href = '/he/mentorship/mentor-dashboard/';
+      showToast('השינויים נשמרו בהצלחה', () => { window.location.href = '/he/mentorship/mentor-dashboard/'; });
     } else {
       showFormMessage(messageEl, saveData?.error ?? 'שגיאה בשמירת הפרופיל. אנא נסה/י שוב.', true);
     }
@@ -123,7 +124,7 @@ async function initMentee() {
     submitBtn.disabled = false;
 
     if (saveOk) {
-      window.location.href = '/he/mentorship/dashboard/';
+      showToast('השינויים נשמרו בהצלחה', () => { window.location.href = '/he/mentorship/dashboard/'; });
     } else {
       showFormMessage(messageEl, saveData?.error ?? 'שגיאה בשמירת הפרופיל. אנא נסה/י שוב.', true);
     }
