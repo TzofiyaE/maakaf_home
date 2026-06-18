@@ -1,0 +1,94 @@
+{{/* Figma hero: node 314:4073 */ -}}
+{{ $blockID := printf "td-cover-block-%d" .Ordinal -}}
+{{ $whatsapp := index .Site.Params.links.user 0 -}}
+{{ $about := "/about/" | relLangURL -}}
+
+<section
+  id="{{ $blockID }}"
+  class="maakaf-hero td-cover-block td-cover-block--height-auto js-td-cover -bg-primary"
+  aria-label="{{ if eq .Site.Language.Lang "he" }}קהילת הקוד הפתוח של ישראל{{ else }}Israel's open source community{{ end }}"
+>
+  <div class="maakaf-hero__inner">
+    <div class="maakaf-hero__content">
+      <h1 class="maakaf-hero__headline">
+        <span class="maakaf-hero__headline-primary">
+          {{ if eq .Site.Language.Lang "he" }}קהילת הקוד הפתוח{{ else }}The open source community{{ end }}
+        </span>
+        <span class="maakaf-hero__headline-secondary">
+          {{ if eq .Site.Language.Lang "he" }}של ישראל{{ else }}of Israel{{ end }}
+        </span>
+      </h1>
+      <p class="maakaf-hero__subtitle">
+        {{ if eq .Site.Language.Lang "he" }}
+          המקום שבו כל אחד ואחת יכולים להתחבר, ללמוד, ולתרום לעולם הקוד הפתוח
+        {{ else }}
+          A place where everyone can connect, learn, and contribute to open source
+        {{ end }}
+      </p>
+    </div>
+
+    <div class="maakaf-hero__actions">
+      <a class="maakaf-hero__btn maakaf-hero__btn--secondary" href="{{ $about }}">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        <span>{{ if eq .Site.Language.Lang "he" }}למידע נוסף{{ else }}Learn more{{ end }}</span>
+      </a>
+      {{ with $whatsapp -}}
+      <a
+        class="maakaf-hero__btn maakaf-hero__btn--whatsapp"
+        href="{{ .url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span>
+          {{ if eq $.Site.Language.Lang "he" }}הצטרפות לקהילה ב WhatsApp{{ else }}Join us on WhatsApp{{ end }}
+        </span>
+      </a>
+      {{ end -}}
+    </div>
+
+    <div class="maakaf-hero__cards">
+      <article class="maakaf-hero__card">
+        <img
+          class="maakaf-hero__card-icon"
+          src="/images/Donations-Code-Icon.svg"
+          width="28"
+          height="28"
+          alt=""
+          aria-hidden="true"
+        >
+        <p class="maakaf-hero__card-value">+1,000</p>
+        <p class="maakaf-hero__card-label">
+          {{ if eq .Site.Language.Lang "he" }}תרומות קוד{{ else }}Code contributions{{ end }}
+        </p>
+      </article>
+      <article class="maakaf-hero__card">
+        <img
+          class="maakaf-hero__card-icon"
+          src="/images/Active-Projects-Icon.svg"
+          width="28"
+          height="28"
+          alt=""
+          aria-hidden="true"
+        >
+        <p class="maakaf-hero__card-value">+10</p>
+        <p class="maakaf-hero__card-label">
+          {{ if eq .Site.Language.Lang "he" }}פרויקטים פעילים{{ else }}Active projects{{ end }}
+        </p>
+      </article>
+      <article class="maakaf-hero__card">
+        <img
+          class="maakaf-hero__card-icon"
+          src="/images/developer-Icon.svg"
+          width="28"
+          height="28"
+          alt=""
+          aria-hidden="true"
+        >
+        <p class="maakaf-hero__card-value">+1,000</p>
+        <p class="maakaf-hero__card-label">
+          {{ if eq .Site.Language.Lang "he" }}מפתחים בקהילה{{ else }}Community developers{{ end }}
+        </p>
+      </article>
+    </div>
+  </div>
+</section>

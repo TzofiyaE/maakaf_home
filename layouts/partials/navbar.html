@@ -1,62 +1,79 @@
 {{ $cover := and
-    (.HasShortcode "blocks/cover")
+    (or (.HasShortcode "blocks/cover") (.HasShortcode "maakaf-hero"))
     (not .Site.Params.ui.navbar_translucent_over_cover_disable)
 -}}
 {{ $baseURL := urls.Parse $.Site.Params.Baseurl -}}
 {{ $logo := resources.Get "icons/footer-logo.png" -}}
+{{ $whatsapp := index .Site.Params.links.user 0 -}}
+{{ $isHebrew := eq .Site.Language.Lang "he" -}}
 
-<nav class="td-navbar js-navbar-scroll
-            {{- if $cover }} td-navbar-cover {{- end }}" data-bs-theme="dark">
-<div class="container-fluid flex-column flex-md-row">
-  <a class="navbar-brand maakaf-navbar-brand" href="{{ .Site.Home.RelPermalink }}">
-    {{ with $logo -}}
-      <img src="{{ .RelPermalink }}" width="139" height="40" alt="{{ $.Site.Title }}">
-    {{ end -}}
-  </a>
-  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
-    <ul class="navbar-nav">
-      {{ $p := . -}}
-      {{ range .Site.Menus.main -}}
-      <li class="nav-item">
-        {{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) -}}
-        {{ $href := "" -}}
-        {{ with .Page -}}
-          {{ $active = or $active ( $.IsDescendant .) -}}
-          {{ $href = .RelPermalink -}}
-        {{ else -}}
-          {{ $href = .URL | relLangURL -}}
-        {{ end -}}
-        {{ $isExternal := ne $baseURL.Host (urls.Parse .URL).Host -}}
-        <a
-          class="nav-link {{- if $active }} active {{- end }}"
-          href="{{ $href }}"
-          {{- if $isExternal }} target="_blank" rel="noopener" {{- end -}}
-        >
+<nav class="td-navbar js-navbar-scroll maakaf-navbar
+            {{- if $cover }} td-navbar-cover {{- end }}">
+  <div class="maakaf-navbar__container">
+    <a class="navbar-brand maakaf-navbar-brand" href="{{ .Site.Home.RelPermalink }}">
+      {{ with $logo -}}
+        <img src="{{ .RelPermalink }}" width="139" height="40" alt="{{ $.Site.Title }}">
+      {{ end -}}
+    </a>
+
+    <div class="maakaf-navbar__nav td-navbar-nav-scroll" id="main_navbar">
+      <ul class="navbar-nav maakaf-navbar__links">
+        {{ $p := . -}}
+        {{ range .Site.Menus.main -}}
+        <li class="nav-item">
+          {{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) -}}
+          {{ $href := "" -}}
+          {{ with .Page -}}
+            {{ $active = or $active ( $.IsDescendant .) -}}
+            {{ $href = .RelPermalink -}}
+          {{ else -}}
+            {{ $href = .URL | relLangURL -}}
+          {{ end -}}
+          {{ $isExternal := ne $baseURL.Host (urls.Parse .URL).Host -}}
+          <a
+            class="nav-link maakaf-navbar__link{{- if $active }} active {{- end }}"
+            href="{{ $href }}"
+            {{- if $isExternal }} target="_blank" rel="noopener" {{- end -}}
+          >
             {{- .Pre -}}
             <span>{{ .Name }}</span>
             {{- .Post -}}
-        </a>
-      </li>
+          </a>
+        </li>
+        {{ end -}}
+      </ul>
+    </div>
+
+    <div class="maakaf-navbar__actions">
+      <div class="maakaf-navbar__utilities">
+        {{ if .Site.Params.ui.showLightDarkModeMenu -}}
+        <div class="maakaf-navbar__utility maakaf-navbar__theme td-light-dark-menu">
+          {{ partial "theme-toggler" . }}
+        </div>
+        {{ end -}}
+        {{ if (gt (len .Site.Home.Translations) 0) -}}
+        <div class="maakaf-navbar__utility maakaf-navbar__lang">
+          {{ partial "navbar-lang-selector.html" . -}}
+        </div>
+        {{ end -}}
+        {{ if .Site.Params.versions -}}
+        <div class="maakaf-navbar__utility d-none d-lg-block">
+          {{ partial "navbar-version-selector.html" . -}}
+        </div>
+        {{ end -}}
+      </div>
+
+      {{ with $whatsapp -}}
+      <a
+        class="maakaf-navbar__cta"
+        href="{{ .url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        <span>{{ if $isHebrew }}הצטרפות לקהילה{{ else }}Join community{{ end }}</span>
+      </a>
       {{ end -}}
-      {{ if .Site.Params.versions -}}
-      <li class="nav-item dropdown d-none d-lg-block">
-        {{ partial "navbar-version-selector.html" . -}}
-      </li>
-      {{ end -}}
-      {{ if (gt (len .Site.Home.Translations) 0) -}}
-      <li class="nav-item dropdown d-none d-lg-block">
-        {{ partial "navbar-lang-selector.html" . -}}
-      </li>
-      {{ end -}}
-      {{ if .Site.Params.ui.showLightDarkModeMenu -}}
-      <li class="td-light-dark-menu nav-item dropdown">
-        {{ partial "theme-toggler" . }}
-      </li>
-      {{ end -}}
-    </ul>
+    </div>
   </div>
-  <div class="d-none d-lg-block">
-    {{ partial "search-input.html" . }}
-  </div>
-</div>
 </nav>

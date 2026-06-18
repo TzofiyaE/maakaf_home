@@ -1,0 +1,12 @@
+{{/* Figma navbar: short language code (HE / EN) */ -}}
+{{ $langPage := cond (gt (len .Translations) 0) . .Site.Home -}}
+<div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{- upper .Site.Language.Lang -}}
+  </a>
+  <ul class="dropdown-menu">
+    {{ range $langPage.Translations -}}
+    <li><a class="dropdown-item" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+    {{ end -}}
+  </ul>
+</div>

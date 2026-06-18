@@ -1,6 +1,6 @@
 ---
 type: 'members'
-title: 'פעילות חברי וחברות הקהילה'
+title: 'חברי הקהילה'
 linkTitle: 'חברים ופעילות'
 menu:
   main:

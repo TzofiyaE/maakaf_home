@@ -1,0 +1,222 @@
+{{/* Community members section — members page (full) or homepage preview */ -}}
+{{ $limit := .limit | default 8 -}}
+{{ $variant := .variant | default "in-hero" -}}
+{{ $showMoreLink := .showMoreLink | default (ne $variant "page") -}}
+{{ $isHe := eq .Site.Language.Lang "he" -}}
+{{ $membersURL := "/members/" | relLangURL -}}
+{{ $users := .Site.Data.github_data.users -}}
+{{ $globalSummary := .Site.Data.github_data.globalSummary -}}
+{{ $sorted := sort $users "summary.totalCommits" "desc" -}}
+{{ $page := .Page -}}
+
+<div id="community" class="maakaf-community{{ if eq $variant "page" }} maakaf-community--page{{ else }} maakaf-community--in-hero{{ end }}" aria-labelledby="maakaf-community-title">
+  <div class="maakaf-community__inner">
+    {{ if and $page $page.Params.developmentNotice.show }}
+    <div class="maakaf-community__notice" dir="rtl">
+      <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+      {{ $page.Params.developmentNotice.text }}
+    </div>
+    {{ end }}
+
+    <header class="maakaf-community__header">
+      {{ if eq $variant "page" }}
+      <h1 id="maakaf-community-title" class="maakaf-community__title">
+        {{ with $page }}{{ .Title }}{{ else }}{{ if $isHe }}חברי הקהילה{{ else }}Community Members{{ end }}{{ end }}
+      </h1>
+      {{ else }}
+      <h2 id="maakaf-community-title" class="maakaf-community__title">
+        {{ if $isHe }}חברי הקהילה{{ else }}Community Members{{ end }}
+      </h2>
+      {{ end }}
+      <p class="maakaf-community__subtitle">
+        {{ with $page }}
+          {{ .Params.description }}
+        {{ else }}
+          {{ if $isHe }}
+            בדף זה תוכלו לראות את רשימת התורמים והתורמות לקהילה, כולל מידע על תרומתם: קומיטים, בקשות משיכה, תגובות ומספר פרויקטים בהם השתתפו.
+          {{ else }}
+            See our community contributors and their open source activity: commits, pull requests, issues, and projects.
+          {{ end }}
+        {{ end }}
+      </p>
+      {{ if and $page $page.Params.tableInfo.show }}
+      <p class="maakaf-community__table-info">{{ $page.Params.tableInfo.text }}</p>
+      {{ end }}
+    </header>
+
+    <div class="maakaf-community__toolbar" dir="ltr">
+      <label class="visually-hidden" for="maakafCommunitySearch">
+        {{ if $isHe }}חיפוש לפי שם{{ else }}Search by name{{ end }}
+      </label>
+      <input
+        type="search"
+        id="maakafCommunitySearch"
+        class="maakaf-community__search"
+        placeholder="{{ if $isHe }}חיפוש לפי שם, משתמש או ביו...{{ else }}Search by name, username, or bio...{{ end }}"
+        autocomplete="off"
+      >
+    </div>
+
+    <div class="maakaf-community__table-wrap">
+      <table class="maakaf-community__table" id="maakafCommunityTable">
+        <thead>
+          <tr>
+            <th scope="col">{{ if $isHe }}משתמש{{ else }}User{{ end }}</th>
+            <th scope="col">{{ if $isHe }}קומיטים{{ else }}Commits{{ end }}</th>
+            <th scope="col">PRs</th>
+            <th scope="col">{{ if $isHe }}באגים{{ else }}Issues{{ end }}</th>
+            <th scope="col">{{ if $isHe }}תגובות PR{{ else }}PR Comments{{ end }}</th>
+            <th scope="col">{{ if $isHe }}תגובות Issue{{ else }}Issue Comments{{ end }}</th>
+            <th scope="col">{{ if $isHe }}פרויקטים{{ else }}Projects{{ end }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $i, $member := $sorted }}
+            {{ if or (not (gt $limit 0)) (lt $i $limit) }}
+            <tr data-search="{{ printf "%s %s %s" ($member.user.displayName | default $member.user.username) $member.user.username ($member.user.bio | default "") | plainify | lower }}">
+              <td>
+                <div class="maakaf-community__user">
+                  <img
+                    src="{{ $member.user.avatarUrl }}"
+                    alt="{{ $member.user.username }}"
+                    class="maakaf-community__avatar"
+                    width="40"
+                    height="40"
+                    loading="lazy"
+                  >
+                  <div class="maakaf-community__user-copy">
+                    <a
+                      href="https://github.com/{{ $member.user.username }}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="maakaf-community__user-name"
+                    >{{ $member.user.displayName | default $member.user.username }}</a>
+                    <span class="maakaf-community__user-handle">@{{ $member.user.username }}</span>
+                    {{ with $member.user.bio }}
+                      <span class="maakaf-community__user-bio">{{ . }}</span>
+                    {{ end }}
+                  </div>
+                </div>
+              </td>
+              <td>{{ $member.summary.totalCommits }}</td>
+              <td>{{ $member.summary.totalPRs }}</td>
+              <td>{{ $member.summary.totalIssues }}</td>
+              <td>{{ $member.summary.totalPRComments }}</td>
+              <td>{{ $member.summary.totalIssueComments }}</td>
+              <td>
+                {{ if gt (len $member.repos) 0 }}
+                  <details class="maakaf-community__projects">
+                    <summary>{{ len $member.repos }} {{ if $isHe }}פרויקטים{{ else }}projects{{ end }}</summary>
+                    <ul class="maakaf-community__project-list">
+                      {{ range $member.repos }}
+                        <li>
+                          <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .repoName }}</a>
+                          {{ if .description }} – {{ .description }}{{ end }}
+                          <small>
+                            {{ if $isHe }}קומיטים{{ else }}C{{ end }}:{{ .commits }}
+                            | PR:{{ .pullRequests }}
+                            | {{ if $isHe }}באגים{{ else }}I{{ end }}:{{ .issues }}
+                          </small>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  </details>
+                {{ else }}
+                  —
+                {{ end }}
+              </td>
+            </tr>
+            {{ end }}
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+
+    {{ with $globalSummary }}
+    <details class="maakaf-community__summary">
+      <summary class="maakaf-community__summary-toggle">
+        {{ if $isHe }}סיכום קהילה{{ else }}Community Summary{{ end }}
+      </summary>
+      <p class="maakaf-community__summary-stats">
+        <span>{{ .totalUsers }} {{ if $isHe }}תורמים{{ else }}Contributors{{ end }}</span>
+        <span aria-hidden="true">·</span>
+        <span>{{ .totalRepos }} {{ if $isHe }}פרויקטים{{ else }}Projects{{ end }}</span>
+        <span aria-hidden="true">·</span>
+        <span>{{ .totalCommits }} {{ if $isHe }}קומיטים{{ else }}Commits{{ end }}</span>
+        <span aria-hidden="true">·</span>
+        <span>{{ .totalPRs }} PRs</span>
+        <span aria-hidden="true">·</span>
+        <span>{{ .totalIssues }} {{ if $isHe }}באגים{{ else }}Issues{{ end }}</span>
+        <span aria-hidden="true">·</span>
+        <span>{{ add .totalPRComments .totalIssueComments }} {{ if $isHe }}תגובות{{ else }}Comments{{ end }}</span>
+      </p>
+      <p class="maakaf-community__summary-meta">
+        {{ if $isHe }}תקופת ניתוח{{ else }}Analysis period{{ end }}: {{ .analysisTimeframe }}
+        · {{ if $isHe }}מינימום פורקים{{ else }}Min fork filter{{ end }}: {{ .minForkCountFilter }}
+      </p>
+    </details>
+    {{ end }}
+
+    <div class="maakaf-community__cta-band">
+      <article class="maakaf-community__cta">
+        <h3 class="maakaf-community__cta-title">
+          {{ if $isHe }}רוצים להופיע כאן?{{ else }}Want to appear here?{{ end }}
+        </h3>
+        <ul class="maakaf-community__cta-steps">
+          {{ if $isHe }}
+            <li>צרו Pull Request והוסיפו את שם המשתמש שלכם לקובץ <code>users.json</code></li>
+            <li>המתינו לאישור ה-Pull Request</li>
+            <li>הנתונים שלכם יצורפו לטבלה באופן אוטומטי</li>
+          {{ else }}
+            <li>Open a Pull Request and add your username to <code>users.json</code></li>
+            <li>Wait for your PR to be approved</li>
+            <li>Your data will be added to the table automatically</li>
+          {{ end }}
+        </ul>
+        <a
+          class="maakaf-community__cta-btn"
+          href="https://github.com/Maakaf/friends-activity-backend/blob/main/users.json"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub</a>
+        <p class="maakaf-community__cta-footer">
+          <a href="mailto:urielofir@gmail.com">urielofir@gmail.com</a>
+        </p>
+      </article>
+    </div>
+
+    {{ if $showMoreLink }}
+    <p class="maakaf-community__more">
+      <a href="{{ $membersURL }}" class="maakaf-community__more-link">
+        {{ if $isHe }}לכל פעילות הקהילה{{ else }}View full community activity{{ end }}
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+      </a>
+    </p>
+    {{ end }}
+
+    {{ if $page }}
+    {{ if $page.Params.showDataGenerationDate | default true }}
+    <p class="maakaf-community__updated">
+      {{ $page.Params.labels.lastUpdated | default "Last updated" }}: {{ dateFormat ($page.Params.lastUpdatedFormat | default "2006-01-02 15:04:05") now }}
+      · {{ $page.Params.labels.dataGenerated | default "Data generated" }}: {{ $globalSummary.analysisTimeframe }}
+    </p>
+    {{ end }}
+    {{ end }}
+  </div>
+</div>
+
+<script>
+  (function () {
+    const input = document.getElementById('maakafCommunitySearch');
+    const table = document.getElementById('maakafCommunityTable');
+    if (!input || !table) return;
+
+    input.addEventListener('input', function () {
+      const query = input.value.trim().toLowerCase();
+      table.querySelectorAll('tbody tr').forEach(function (row) {
+        const haystack = row.getAttribute('data-search') || '';
+        row.hidden = query !== '' && !haystack.includes(query);
+      });
+    });
+  })();
+</script>

@@ -152,7 +152,7 @@ params:
   ui:
     # Set to true to disable breadcrumb navigation.
     breadcrumb_disable: false
-    # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
+    # Set to false if you don't want to display a logo (/assets/images/logo.svg) in the top navbar
     navbar_logo:  true
     # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
     navbar_translucent_over_cover_disable: false
@@ -210,6 +210,19 @@ params:
 module:
   # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
   # workspace: docsy.work
+  mounts:
+    - source: layouts
+      target: layouts
+    - source: static/images
+      target: static/images
+    - source: static/css
+      target: static/css
+    - source: static/js
+      target: static/js
+    - source: static/favicons
+      target: static/favicons
+    - source: assets/fonts
+      target: static/fonts
   hugoVersion:
     extended: true
     min: 0.146.0

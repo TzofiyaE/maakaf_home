@@ -1,4 +1,117 @@
 // Override Bootstrap defaults
-
 $container-padding-x: 0; // remove left/right padding inside containers
 $row-margin-x: 0; // remove negative margins from rows
+
+// ==========================================================================
+// 1. הגדרות הפונטים (מתוך לשונית font בפיגמה)
+// ==========================================================================
+$font-family-base: 'IBM Plex Sans Hebrew', sans-serif;
+$headings-font-family: 'IBM Plex Sans Hebrew', sans-serif;
+
+// ==========================================================================
+// 2. פלטת הצבעים הראשיים - Primary (מתוך לשונית primary בפיגמה)
+// ==========================================================================
+$blue-50:  #F0F8FE;
+$blue-100: #DEEEFB;
+$blue-200: #C5E2F8;
+$blue-300: #9DD0F3;
+$blue-400: #6EB6EC;
+$blue-500: #4C99E5;
+$blue-600: #377DD9;
+$blue-700: #2E69C7;
+$blue-900: #284980;
+$blue-950: #1D2E4E;
+
+// הגדרת משתנה הליבה הראשי של Bootstrap
+$primary: #2C57A5; // זה ה-default מהפיגמה שלך
+
+// ==========================================================================
+// 3. פלטת הצבעים המשניים - Secondary (מתוך לשונית secondary בפיגמה)
+// ==========================================================================
+$custom-sec-50:  #EFF8FF;
+$custom-sec-100: #DAEFFF;
+$custom-sec-200: #BEE5FF;
+$custom-sec-300: #91D6FF;
+$custom-sec-400: #5DBDFD;
+$custom-sec-500: #379FFA;
+$custom-sec-600: #2181EF;
+$custom-sec-700: #196ADC;
+$custom-sec-800: #1B55B2;
+$custom-sec-900: #1C4A8C;
+
+// הגדרת משתנה הליבה המשני של Bootstrap
+$secondary: #1A3766; // זה ה-default מהפיגמה שלך
+
+// ==========================================================================
+// 5. התאמות מיוחדות עבור רכיבי Docsy - הפיכת ה-Navbar ללבן נקי
+// ==========================================================================
+
+// 1. רקע הבר העליון והצבעים הכלליים שלו
+$td-navbar-bg-color: #ffffff; 
+$td-navbar-text-color: #1A3766; // הכחול הכהה מהפיגמה שלכם
+$td-navbar-link-color: #1A3766;
+$td-navbar-link-color-hover: #2C57A5; // כחול בהיר יותר במעבר עכבר
+
+// 2. הוספת צל עדין מתחת ל-Navbar (כמו בעיצוב הנקי של הפיגמה)
+$navbar-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+// ==========================================================================
+// 2. חיבור המשתנים לאלמנטים של האתר (תופס את כל העמודים אוטומטית)
+// ==========================================================================
+
+// אריזת כל האתר, התיעוד והעמודים הראשיים
+body, .td-main, main, .td-outer, .td-sidebar {
+    background-color: var(--bg-main) !important;
+    color: var(--text-main) !important;
+    transition: background-color 0.3s ease, color 0.3s ease; // מעבר חלק ויפה בין המצבים
+}
+
+// סרגל הניווט העליון (Navbar) בכל האתר — Docsy משתמש ב-.td-navbar
+html[data-bs-theme="light"], html:not([data-bs-theme="dark"]) {
+    .navbar,
+    .td-navbar:not(.maakaf-navbar) {
+        background-color: rgba(250, 250, 250, 0.85) !important;
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02) !important;
+        border-bottom: 1px solid var(--border-color) !important;
+    }
+}
+
+html[data-bs-theme="dark"] {
+    .navbar,
+    .td-navbar:not(.maakaf-navbar) {
+        background-color: var(--bg-navbar) !important;
+        border-bottom: 1px solid var(--border-color) !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+
+        .nav-link, .nav-item a, .navbar-brand, .navbar-title, .navbar-brand a {
+            color: var(--text-main) !important;
+        }
+
+        .nav-link:hover {
+            color: var(--text-muted) !important;
+        }
+    }
+}
+
+// כל התיבות, האלרטים, הכרטיסים והטבלאות בכל האתר
+.card, .bg-dark, .alert-info, .td-box, [class*="bg-opacity-"], div[style*="background-color"] {
+    background-color: var(--bg-card) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+// כותרות, פסקאות ותאים בכל עמודי התיעוד והמאמרים
+h1, h2, h3, h4, h5, h6, p, span, th, td, li, time {
+    color: var(--text-main) !important;
+}
+
+// שדות קלט, טפסים ושורות חיפוש בכל האתר
+input[type="text"], .form-control, .search-input {
+    background-color: var(--input-bg) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+// כפתור הווטסאפ — מעוצב דרך .maakaf-navbar__cta ב-_styles_project.scss
