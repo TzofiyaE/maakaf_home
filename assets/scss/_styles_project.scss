@@ -1,4 +1,143 @@
+// IBM Plex Sans Hebrew font
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@400;500;600;700&display=swap');
+
+// Birzia — local font files in assets/fonts/
+@font-face {
+  font-family: 'Birzia';
+  src: url('../fonts/Birzia-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Birzia';
+  src: url('../fonts/Birzia-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Birzia';
+  src: url('../fonts/Birzia-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Birzia';
+  src: url('../fonts/Birzia-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+$font-birzia: 'Birzia', sans-serif;
+
+// ==========================================================================
+// 1. Theme CSS variables, logo, and light/dark toggle icons
+// ==========================================================================
+
+html[data-bs-theme="light"],
+html:not([data-bs-theme="dark"]) {
+  --bg-main: #FAFAFA;
+  --bg-navbar: #FAFAFA;
+  --bg-card: #ffffff;
+  --text-main: #1A3766;
+  --text-muted: #6EB6EC;
+  --border-color: #FAFAFA;
+  --input-bg: #ffffff;
+
+  .navbar-brand:not(.maakaf-navbar-brand) {
+    background-image: url('/images/logo-light.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    width: 160px;
+    height: 40px;
+    display: block;
+    padding: 0 !important;
+    margin-left: 1.5rem !important;
+
+    img,
+    span {
+      display: none !important;
+    }
+  }
+
+  .td-light-dark-menu:not(.maakaf-navbar__theme) #bd-theme {
+    background-image: url('/images/sun-icon-light.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 24px !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+
+    svg {
+      display: none !important;
+    }
+  }
+}
+
+html[data-bs-theme="dark"] {
+  --bg-main: #1A1A1A;
+  --bg-navbar: #1A1A1A;
+  --bg-card: #1A1A1A;
+  --text-main: #EFF8FF;
+  --text-muted: #9DD0F3;
+  --border-color: #1A1A1A;
+  --input-bg: #1D2E4E;
+
+  .navbar-brand:not(.maakaf-navbar-brand) {
+    background-image: url('/images/logo-dark.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    width: 160px;
+    height: 40px;
+    display: block;
+    padding: 0 !important;
+    margin-left: 1.5rem !important;
+
+    img,
+    span {
+      display: none !important;
+    }
+  }
+
+  .td-light-dark-menu:not(.maakaf-navbar__theme) #bd-theme {
+    background-image: url('/images/sun-icon-dark.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 24px !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+
+    svg {
+      display: none !important;
+    }
+  }
+}
+
 /* General reset */
+:root {
+  --maakaf-navbar-height: 84px;
+}
+
 html,
 body,
 main {
@@ -7,75 +146,709 @@ main {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  /* Prevent horizontal scroll */
   box-sizing: border-box;
-
-  /* Ensure white background */
 }
 
-.-bg-primary,
-header>nav,
-.td-overlay--dark::after,
-.navbar-bg-onscroll,
-.navbar-brand__name,
-.navbar-nav .nav-link {
-  background-color: #FAFAFA !important;
-  color: #000 !important;
+body {
+  padding-top: var(--maakaf-navbar-height);
 }
 
-/* Ensure all elements respect box-sizing */
+html[data-bs-theme="light"],
+html:not([data-bs-theme="dark"]) {
+  .-bg-primary,
+  header>nav:not(.maakaf-navbar),
+  .td-overlay--dark::after,
+  .navbar-bg-onscroll:not(.maakaf-navbar),
+  .navbar-brand__name,
+  .navbar-nav:not(.maakaf-navbar__links) .nav-link {
+    background-color: #FAFAFA !important;
+    color: #000 !important;
+  }
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-/* Override primary color to white */
-.bg-primary {
-  background-color: #ffffff !important;
-  color: #111111;
+html[data-bs-theme="light"],
+html:not([data-bs-theme="dark"]) {
+  .bg-primary {
+    background-color: #ffffff !important;
+    color: #111111;
+  }
+
+  .bg-primary a {
+    color: #007bff;
+  }
+
+  .td-cover-block.bg-primary {
+    background-color: #ffffff !important;
+  }
+
+  .td-cover-block.bg-primary:not(.maakaf-hero) h1,
+  .td-cover-block.bg-primary:not(.maakaf-hero) h2,
+  .td-cover-block.bg-primary:not(.maakaf-hero) h3,
+  .td-cover-block.bg-primary:not(.maakaf-hero) p {
+    color: #111111;
+  }
 }
 
-.bg-primary a {
-  color: #007bff;
+/* Figma navbar: node 436:4409 */
+.maakaf-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(
+    100.24deg,
+    rgba(255, 255, 255, 0.56) 7.53%,
+    rgba(255, 255, 255, 0.35) 96.49%
+  );
+  background-color: rgba(250, 250, 250, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  font-family: $font-birzia;
+  font-weight: 500;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+
+  &.navbar-bg-onscroll,
+  &.navbar-bg-onscroll--fade {
+    background-color: rgba(250, 250, 250, 0.96);
+    border-bottom-color: rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  &.td-navbar-cover {
+    background-color: transparent;
+    box-shadow: none;
+
+    &.navbar-bg-onscroll,
+    &.navbar-bg-onscroll--fade {
+      background-color: rgba(250, 250, 250, 0.96);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  .td-navbar-nav-scroll {
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
+
+  &.td-navbar {
+    min-height: 0;
+    margin: 0;
+  }
+
+  .navbar-nav {
+    padding-top: 0;
+    white-space: nowrap;
+  }
+
+  .nav-link {
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-weight: 400;
+  }
+
+  .dropdown {
+    min-width: 0;
+  }
+}
+
+.maakaf-navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 44px;
+  margin: 0 auto;
+  padding: 0 80px;
 }
 
 .maakaf-navbar-brand {
   display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  background-image: none !important;
+
+  img {
+    display: block !important;
+    width: 139px;
+    height: 40px;
+  }
+}
+
+.maakaf-navbar__nav {
+  flex: 0 0 auto;
+  min-width: 0;
+  overflow: visible;
+}
+
+.maakaf-navbar__links {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .nav-item {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.maakaf-navbar__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 8px;
+  color: #1a1a1a !important;
+  background-color: transparent !important;
+  font-family: $font-birzia;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease, background-color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: #2c57a5 !important;
+    background-color: rgba(44, 87, 165, 0.08) !important;
+  }
+
+  &.active {
+    color: #1a3766 !important;
+    font-weight: 700;
+  }
+}
+
+.maakaf-navbar__actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.maakaf-navbar__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 24px;
+  border: 1px solid #48c95f;
+  border-radius: 999px;
+  background-color: #48c95f;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  color: #fff !important;
+  font-family: IBM Plex Sans Hebrew, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+
+  i {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  span {
+    color: #fff !important;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: #3eb854;
+    border-color: #3eb854;
+    color: #fff !important;
+    text-decoration: none;
+
+    span {
+      color: #fff !important;
+    }
+  }
+}
+
+.maakaf-navbar__utilities {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.maakaf-navbar__utility {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 8px;
+}
+
+.maakaf-navbar__lang .nav-link,
+.maakaf-navbar__lang .dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  color: #1a1a1a !important;
+  font-family: IBM Plex Sans Hebrew, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+
+  &::after {
+    display: none;
+  }
+}
+
+.maakaf-navbar__theme {
   padding: 0;
 }
 
-.maakaf-navbar-brand img {
+.maakaf-navbar__theme-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  box-shadow: none;
+  color: inherit;
+  line-height: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: rgba(44, 87, 165, 0.08);
+    outline: none;
+  }
+
+  .theme-icon-active {
+    display: none !important;
+  }
+}
+
+.maakaf-navbar__theme-icon {
   display: block;
-  width: 139px;
-  height: 40px;
-  object-fit: contain;
+  width: 20px;
+  height: 20px;
 }
 
-/* Cover block styling */
-.td-cover-block.bg-primary {
-  background-color: #ffffff !important;
+html[data-bs-theme="light"],
+html:not([data-bs-theme="dark"]) {
+  .maakaf-navbar__theme-icon--dark {
+    display: none;
+  }
 }
 
-.td-cover-block.bg-primary h1,
-.td-cover-block.bg-primary h2,
-.td-cover-block.bg-primary h3,
-.td-cover-block.bg-primary p {
-  color: #111111;
+html[data-bs-theme="dark"] {
+  .maakaf-navbar__theme-icon--light {
+    display: none;
+  }
+
+  .maakaf-navbar__theme-btn {
+    &:hover,
+    &:focus-visible {
+      background-color: rgba(157, 208, 243, 0.1);
+    }
+  }
+}
+
+html[data-bs-theme="dark"] {
+  .maakaf-navbar {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(26, 26, 26, 0.92);
+    background-image: linear-gradient(
+      100.24deg,
+      rgba(26, 26, 26, 0.92) 7.53%,
+      rgba(26, 26, 26, 0.78) 96.49%
+    );
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+    &.navbar-bg-onscroll,
+    &.navbar-bg-onscroll--fade {
+      background-color: rgba(26, 26, 26, 0.98);
+      border-bottom-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    }
+
+    &.td-navbar-cover {
+      background-color: transparent;
+      box-shadow: none;
+
+      &.navbar-bg-onscroll,
+      &.navbar-bg-onscroll--fade {
+        background-color: rgba(26, 26, 26, 0.98);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+      }
+    }
+  }
+
+  .maakaf-navbar__link {
+    color: #eff8ff !important;
+
+    &:hover,
+    &:focus-visible {
+      color: #9dd0f3 !important;
+      background-color: rgba(157, 208, 243, 0.1) !important;
+    }
+
+    &.active {
+      color: #fff !important;
+    }
+  }
+
+  .maakaf-navbar__lang .nav-link,
+  .maakaf-navbar__lang .dropdown-toggle {
+    color: #eff8ff !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  :root {
+    --maakaf-navbar-height: 124px;
+  }
+
+  .maakaf-navbar__container {
+    padding: 0 32px;
+  }
+
+  .maakaf-navbar__nav {
+    order: 3;
+    flex: 1 1 100%;
+  }
+
+  .maakaf-navbar__links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --maakaf-navbar-height: 124px;
+  }
+
+  .maakaf-navbar {
+    padding: 12px 0;
+  }
+
+  .maakaf-navbar__container {
+    flex-wrap: wrap;
+    padding: 0 24px;
+    row-gap: 12px;
+  }
+
+  .maakaf-navbar__cta span {
+    display: none;
+  }
+
+  .maakaf-navbar__cta {
+    width: 44px;
+    padding: 0;
+  }
 }
 
 /* RTL-specific adjustments */
 html[dir="rtl"] {
-
   .container,
   .container-fluid {
-    overflow: visible; // fixed for lang and brightness menus to be visible
+    overflow: visible;
   }
 
   .row {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+/* Figma hero: node 314:4073 */
+.maakaf-hero {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fafafa !important;
+  background-image: none !important;
+  color: #1a1a1a;
+
+  &.td-cover-block {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: auto;
+  }
+}
+
+.maakaf-hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 80px;
+}
+
+.maakaf-hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  text-align: center;
+}
+
+.maakaf-hero__headline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  margin: 0;
+  font-family: $font-birzia;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 88px;
+}
+
+.maakaf-hero__headline-primary {
+  display: block;
+  color: #2c57a5 !important;
+}
+
+.maakaf-hero__headline-secondary {
+  display: block;
+  color: #1a1a1a !important;
+}
+
+.maakaf-hero__subtitle {
+  width: 100%;
+  margin: 0;
+  color: #1a1a1a !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.maakaf-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.maakaf-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 56px;
+  padding: 16px 32px;
+  border-radius: 999px;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+
+  span {
+    color: inherit !important;
+  }
+}
+
+.maakaf-hero__btn--secondary {
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #2c57a5 !important;
+
+  i {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: #2c57a5;
+    color: #2c57a5 !important;
+    text-decoration: none;
+  }
+}
+
+.maakaf-hero__btn--whatsapp {
+  border: 1px solid #48c95f;
+  background: #48c95f;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  color: #fff !important;
+
+  &:hover,
+  &:focus-visible {
+    background: #3eb854;
+    border-color: #3eb854;
+    color: #fff !important;
+    text-decoration: none;
+  }
+}
+
+.maakaf-hero__cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 894px;
+}
+
+.maakaf-hero__card {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-width: 200px;
+  margin: 0;
+  padding: 20px 40px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.maakaf-hero__card-icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.maakaf-hero__card-value {
+  margin: 0;
+  color: #1a1a1a !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.maakaf-hero__card-label {
+  margin: 0;
+  color: #404040 !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .maakaf-hero__inner {
+    padding: 80px 32px;
+    gap: 40px;
+  }
+
+  .maakaf-hero__headline {
+    font-size: 56px;
+    line-height: 68px;
+  }
+
+  .maakaf-hero__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .maakaf-hero__cards {
+    max-width: 100%;
+  }
+
+  .maakaf-hero__card {
+    flex: 1 1 calc(50% - 16px);
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .maakaf-hero__inner {
+    padding: 64px 24px;
+    gap: 32px;
+  }
+
+  .maakaf-hero__headline {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .maakaf-hero__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .maakaf-hero__actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .maakaf-hero__btn {
+    width: 100%;
+    max-width: 360px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .maakaf-hero__cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .maakaf-hero__card {
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+    padding: 20px 24px;
   }
 }
 
@@ -261,3 +1034,847 @@ html[dir="rtl"] {
     gap: 16px;
   }
 }
+
+/* Community members preview — homepage section */
+.maakaf-community--in-hero {
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  background: #fff;
+
+  .maakaf-community__inner {
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
+}
+
+.maakaf-community--page {
+  width: 100%;
+  background: #fafafa;
+
+  .maakaf-community__inner {
+    gap: 32px;
+    padding: 48px 80px 80px;
+  }
+
+  .maakaf-community__cta-band {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+.maakaf-community__notice {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: #fff;
+  color: #404040 !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: start;
+
+  i {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #2c57a5;
+  }
+}
+
+.maakaf-community__table-info,
+.maakaf-community__updated {
+  max-width: 720px;
+  margin: 0;
+  color: #404040 !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.maakaf-community__updated {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.maakaf-community {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #e6e6e6;
+  background: #fff;
+  color: #1a1a1a;
+}
+
+.maakaf-community__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+.maakaf-community__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.maakaf-community__title {
+  margin: 0;
+  color: #1a1a1a !important;
+  font-family: $font-birzia;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 56px;
+}
+
+.maakaf-community__subtitle {
+  max-width: 720px;
+  margin: 0;
+  color: #404040 !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.maakaf-community__toolbar {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.maakaf-community__search {
+  width: 100%;
+  max-width: 320px;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &::placeholder {
+    color: #404040;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #2c57a5;
+    box-shadow: 0 0 0 3px rgba(44, 87, 165, 0.12);
+  }
+}
+
+.maakaf-community__table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.maakaf-community__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.maakaf-community__table thead th {
+  padding: 12px 16px;
+  border: none;
+  background: #1a1a1a;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: start;
+  white-space: nowrap;
+}
+
+.maakaf-community__table tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e6e6e6;
+  color: #1a1a1a !important;
+  vertical-align: top;
+}
+
+.maakaf-community__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.maakaf-community__user {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 200px;
+}
+
+.maakaf-community__avatar {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.maakaf-community__user-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.maakaf-community__user-name {
+  color: #1a1a1a !important;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: #2c57a5 !important;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.maakaf-community__user-handle,
+.maakaf-community__user-bio {
+  color: #404040 !important;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.maakaf-community__projects {
+  summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #2c57a5;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::after {
+      content: "▾";
+      font-size: 12px;
+      line-height: 1;
+      transition: transform 0.2s ease;
+    }
+  }
+
+  &[open] summary::after {
+    transform: rotate(180deg);
+  }
+}
+
+.maakaf-community__project-list {
+  margin: 8px 0 0;
+  padding: 0 0 0 20px;
+  list-style: disc;
+
+  li {
+    margin-bottom: 8px;
+    color: #404040 !important;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  a {
+    color: #2c57a5 !important;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+
+  small {
+    display: block;
+    margin-top: 2px;
+    color: #404040 !important;
+    font-size: 11px;
+  }
+}
+
+.maakaf-community__project-more {
+  list-style: none;
+  margin-right: -20px;
+  font-style: italic;
+}
+
+.maakaf-community__summary {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.maakaf-community__summary-toggle {
+  color: #1a1a1a !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  cursor: pointer;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::after {
+    content: " ▾";
+    font-size: 12px;
+    color: #404040;
+  }
+}
+
+.maakaf-community__summary[open] .maakaf-community__summary-toggle::after {
+  content: " ▴";
+}
+
+.maakaf-community__summary-stats,
+.maakaf-community__summary-meta {
+  margin: 12px 0 0;
+  color: #404040 !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.maakaf-community__summary-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.maakaf-community__summary-meta {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.maakaf-community__cta-band {
+  width: 100%;
+  padding: 48px 0;
+  background: #fafafa;
+}
+
+.maakaf-community__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 48px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 8px 24px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.maakaf-community__cta-title {
+  margin: 0;
+  color: #1a1a1a !important;
+  font-family: $font-birzia;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.maakaf-community__cta-steps {
+  margin: 0;
+  padding: 0 24px;
+  color: #404040 !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: start;
+
+  li {
+    margin-bottom: 8px;
+    color: #404040 !important;
+  }
+
+  code {
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: #fafafa;
+    color: #1a1a1a !important;
+    font-size: 14px;
+  }
+}
+
+.maakaf-community__cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  min-height: 44px;
+  padding: 12px 32px;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #fff !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: #2c57a5;
+    border-color: #2c57a5;
+    color: #fff !important;
+    text-decoration: none;
+  }
+}
+
+.maakaf-community__cta-footer {
+  margin: 0;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+
+  a {
+    color: #404040 !important;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      color: #2c57a5 !important;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+}
+
+.maakaf-community__more {
+  margin: 0;
+  text-align: center;
+}
+
+.maakaf-community__more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #2c57a5 !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: #1a3766 !important;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+html[data-bs-theme="dark"] {
+  .maakaf-community {
+    background: #1a1a1a;
+    color: #eff8ff;
+  }
+
+  .maakaf-community__title {
+    color: #eff8ff !important;
+  }
+
+  .maakaf-community__subtitle,
+  .maakaf-community__user-handle,
+  .maakaf-community__user-bio,
+  .maakaf-community__summary-stats,
+  .maakaf-community__summary-meta,
+  .maakaf-community__cta-steps li {
+    color: #9dd0f3 !important;
+  }
+
+  .maakaf-community__search {
+    border-color: #1d2e4e;
+    background: #1d2e4e;
+    color: #eff8ff;
+
+    &::placeholder {
+      color: #9dd0f3;
+    }
+
+    &:focus {
+      border-color: #6eb6ec;
+      box-shadow: 0 0 0 3px rgba(110, 182, 236, 0.15);
+    }
+  }
+
+  .maakaf-community__table-wrap,
+  .maakaf-community__summary,
+  .maakaf-community__cta {
+    border-color: #1d2e4e;
+    background: #1d2e4e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .maakaf-community__table thead th {
+    background: #eff8ff;
+    color: #1a1a1a !important;
+  }
+
+  .maakaf-community__table tbody td {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+    color: #eff8ff !important;
+  }
+
+  .maakaf-community__user-name {
+    color: #eff8ff !important;
+
+    &:hover,
+    &:focus-visible {
+      color: #9dd0f3 !important;
+    }
+  }
+
+  .maakaf-community__projects summary,
+  .maakaf-community__project-list a,
+  .maakaf-community__more-link {
+    color: #9dd0f3 !important;
+
+    &:hover,
+    &:focus-visible {
+      color: #eff8ff !important;
+    }
+  }
+
+  .maakaf-community__project-list li,
+  .maakaf-community__project-list small {
+    color: #9dd0f3 !important;
+  }
+
+  .maakaf-community__summary-toggle {
+    color: #eff8ff !important;
+  }
+
+  .maakaf-community__cta-band {
+    background: #1a1a1a;
+  }
+
+  .maakaf-community__cta-title {
+    color: #eff8ff !important;
+  }
+
+  .maakaf-community__cta-steps code {
+    background: #1a1a1a;
+    color: #eff8ff !important;
+  }
+
+  .maakaf-community__cta-btn {
+    border-color: #eff8ff;
+    background: #eff8ff;
+    color: #1a1a1a !important;
+
+    &:hover,
+    &:focus-visible {
+      background: #9dd0f3;
+      border-color: #9dd0f3;
+      color: #1a1a1a !important;
+    }
+  }
+
+  .maakaf-community__cta-footer a {
+    color: #9dd0f3 !important;
+
+    &:hover,
+    &:focus-visible {
+      color: #eff8ff !important;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .maakaf-community__inner {
+    padding: 64px 32px;
+    gap: 24px;
+  }
+
+  .maakaf-community__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .maakaf-community__inner {
+    padding: 48px 24px;
+    gap: 20px;
+  }
+
+  .maakaf-community__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .maakaf-community__subtitle {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .maakaf-community__search {
+    max-width: 100%;
+  }
+
+  .maakaf-community__cta {
+    padding: 32px 24px;
+  }
+
+  .maakaf-community__cta-steps {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+}
+
+/* Repo leaderboard — projects table */
+.maakaf-repos {
+  width: 100%;
+  padding-top: 16px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.maakaf-repos__title {
+  margin: 0 0 24px;
+  color: #1a1a1a !important;
+  font-family: $font-birzia;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+}
+
+.maakaf-repos__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.maakaf-repos__filter-label {
+  display: block;
+  margin-bottom: 4px;
+  color: #404040 !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.maakaf-repos__filter-select {
+  min-width: 180px;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 14px;
+}
+
+.maakaf-repos__status {
+  margin: 0;
+  color: #404040 !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.maakaf-repos__table-wrap {
+  overflow-x: auto;
+}
+
+.maakaf-repos__table .sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.maakaf-repos__table .sort-asc .sort-indicator::after {
+  content: " ↑";
+}
+
+.maakaf-repos__table .sort-desc .sort-indicator::after {
+  content: " ↓";
+}
+
+.maakaf-repos__topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.maakaf-repos__topic {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(44, 87, 165, 0.08);
+  color: #2c57a5 !important;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.maakaf-repos__lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.maakaf-repos__lang-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.maakaf-repos__contributors {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.maakaf-repos__contributor-count {
+  font-weight: 600;
+}
+
+.maakaf-repos__contributor-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.maakaf-repos__contributor-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.maakaf-repos__pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.maakaf-repos__page-btn {
+  min-height: 36px;
+  padding: 6px 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:hover:not(:disabled) {
+    border-color: #2c57a5;
+    color: #2c57a5;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &.is-active {
+    border-color: #1a1a1a;
+    background: #1a1a1a;
+    color: #fff;
+  }
+}
+
+.maakaf-repos__page-dots {
+  color: #404040;
+  font-size: 14px;
+}
+
+html[data-bs-theme="dark"] {
+  .maakaf-repos {
+    border-top-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .maakaf-repos__title {
+    color: #eff8ff !important;
+  }
+
+  .maakaf-repos__filter-label,
+  .maakaf-repos__status,
+  .maakaf-repos__page-dots {
+    color: #9dd0f3 !important;
+  }
+
+  .maakaf-repos__filter-select,
+  .maakaf-repos__page-btn {
+    border-color: #1d2e4e;
+    background: #1d2e4e;
+    color: #eff8ff;
+  }
+
+  .maakaf-repos__page-btn.is-active {
+    border-color: #eff8ff;
+    background: #eff8ff;
+    color: #1a1a1a;
+  }
+
+  .maakaf-repos__topic {
+    background: rgba(157, 208, 243, 0.12);
+    color: #9dd0f3 !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .maakaf-repos__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+

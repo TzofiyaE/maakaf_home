@@ -1,0 +1,247 @@
+{{/* Repo leaderboard — projects table */ -}}
+{{ if .Site.Data.github_data.repoLeaderboard }}
+<section class="maakaf-repos" aria-labelledby="maakaf-repos-title">
+  <h2 id="maakaf-repos-title" class="maakaf-repos__title">
+    {{ if eq .Site.Language.Lang "he" }}פרויקטים מובילים (180 יום אחרונים){{ else }}Top Maakaf Repos (last 180 days){{ end }}
+  </h2>
+
+  <div class="maakaf-repos__controls">
+    <label for="repoLangFilter" class="maakaf-repos__filter-label">
+      {{ if eq .Site.Language.Lang "he" }}סינון לפי שפה:{{ else }}Filter by language:{{ end }}
+    </label>
+    <select id="repoLangFilter" class="maakaf-repos__filter-select">
+      <option value="">{{ if eq .Site.Language.Lang "he" }}כל השפות{{ else }}All languages{{ end }}</option>
+    </select>
+    <p class="maakaf-repos__status" id="repoLeaderboardStatus">
+      {{ if eq .Site.Language.Lang "he" }}מציג {{ len .Site.Data.github_data.repoLeaderboard }} פרויקטים{{ else }}Showing {{ len .Site.Data.github_data.repoLeaderboard }} repos total{{ end }}.
+    </p>
+  </div>
+
+  <div class="maakaf-community__table-wrap maakaf-repos__table-wrap">
+    <table id="repoLeaderboardTable" class="maakaf-community__table maakaf-repos__table">
+      <thead>
+        <tr>
+          <th class="sortable" data-repo-col="0" data-repo-type="text">
+            {{ if eq .Site.Language.Lang "he" }}פרויקט{{ else }}Repo{{ end }}
+            <span class="sort-indicator"></span>
+          </th>
+          <th class="sortable" data-repo-col="1" data-repo-type="text">
+            {{ if eq .Site.Language.Lang "he" }}שפה{{ else }}Lang{{ end }}
+            <span class="sort-indicator"></span>
+          </th>
+          <th class="sortable" data-repo-col="2" data-repo-type="number">
+            Stars <span class="sort-indicator"></span>
+          </th>
+          <th class="sortable" data-repo-col="3" data-repo-type="text">
+            {{ if eq .Site.Language.Lang "he" }}רישיון{{ else }}License{{ end }}
+            <span class="sort-indicator"></span>
+          </th>
+          <th class="sortable" data-repo-col="4" data-repo-type="number">
+            {{ if eq .Site.Language.Lang "he" }}קומיטים{{ else }}Commits{{ end }}
+            <span class="sort-indicator"></span>
+          </th>
+          <th class="sortable" data-repo-col="5" data-repo-type="number">
+            PRs <span class="sort-indicator"></span>
+          </th>
+          <th class="sortable" data-repo-col="6" data-repo-type="number">
+            {{ if eq .Site.Language.Lang "he" }}באגים{{ else }}Issues{{ end }}
+            <span class="sort-indicator"></span>
+          </th>
+          <th class="sortable" data-repo-col="7" data-repo-type="number">
+            {{ if eq .Site.Language.Lang "he" }}תגובות PR{{ else }}PR Comments{{ end }}
+            <span class="sort-indicator"></span>
+          </th>
+          <th class="sortable" data-repo-col="8" data-repo-type="number">
+            {{ if eq .Site.Language.Lang "he" }}תגובות Issue{{ else }}Issue Comments{{ end }}
+            <span class="sort-indicator"></span>
+          </th>
+          <th class="sortable" data-repo-col="9" data-repo-type="number">
+            {{ if eq .Site.Language.Lang "he" }}תורמים{{ else }}Contributors{{ end }}
+            <span class="sort-indicator"></span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range .Site.Data.github_data.repoLeaderboard }}
+          <tr class="repo-leaderboard-row" data-pr-reviews="{{ .prReviews | default 0 }}" data-lang="{{ .primaryLanguage | default "" }}">
+            <td>
+              <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="maakaf-community__user-name">
+                <strong>{{ .repoName }}</strong>
+              </a>
+              {{ if .description }}
+                <small class="maakaf-community__user-bio d-block">{{ .description }}</small>
+              {{ end }}
+              {{ if .topics }}
+                <div class="maakaf-repos__topics">
+                  {{ range .topics }}
+                    <span class="maakaf-repos__topic">{{ . }}</span>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </td>
+            <td>
+              {{ if .primaryLanguage }}
+                <span class="maakaf-repos__lang">
+                  <span class="maakaf-repos__lang-dot" style="background:{{ .primaryLanguageColor | default "#888" }}"></span>{{ .primaryLanguage }}
+                </span>
+              {{ else }}
+                —
+              {{ end }}
+            </td>
+            <td>{{ if gt .stargazerCount 0 }}★ {{ .stargazerCount }}{{ else }}—{{ end }}</td>
+            <td>{{ .licenseName | default "—" }}</td>
+            <td>{{ .commits }}</td>
+            <td>{{ .pullRequests }}</td>
+            <td>{{ .issues }}</td>
+            <td>{{ .prComments }}</td>
+            <td>{{ .issueComments }}</td>
+            <td>
+              <div class="maakaf-repos__contributors">
+                <span class="maakaf-repos__contributor-count">{{ .contributors }}</span>
+                <div class="maakaf-repos__contributor-stack">
+                  {{ range .contributorList }}
+                    <a href="https://github.com/{{ .login }}" target="_blank" rel="noopener noreferrer" title="{{ .login }}">
+                      <img src="{{ .avatarUrl }}" alt="{{ .login }}" class="maakaf-repos__contributor-avatar" width="28" height="28" loading="lazy" />
+                    </a>
+                  {{ end }}
+                </div>
+              </div>
+            </td>
+          </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+
+  <nav id="repoLeaderboardPagination" class="maakaf-repos__pagination" aria-label="Projects pagination"></nav>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const PAGE_SIZE = 25;
+    const tbody = document.querySelector('#repoLeaderboardTable tbody');
+    const allRows = Array.from(document.querySelectorAll('.repo-leaderboard-row'));
+    let rows = allRows.slice();
+    const status = document.getElementById('repoLeaderboardStatus');
+    const nav = document.getElementById('repoLeaderboardPagination');
+    const sortableHeaders = document.querySelectorAll('#repoLeaderboardTable .sortable');
+    const langFilter = document.getElementById('repoLangFilter');
+    if (!allRows.length || !status || !nav || !tbody) return;
+
+    if (langFilter) {
+      const langs = [...new Set(allRows.map((r) => r.dataset.lang).filter(Boolean))].sort();
+      for (const l of langs) {
+        const opt = document.createElement('option');
+        opt.value = l;
+        opt.textContent = l;
+        langFilter.appendChild(opt);
+      }
+    }
+
+    let page = 1;
+    let sortColumn = null;
+    let sortDirection = 'desc';
+
+    function totalActivity(row) {
+      const visible = [4, 5, 6, 7, 8].reduce((s, idx) => s + (parseInt(row.cells[idx].textContent.trim()) || 0), 0);
+      return visible + (parseInt(row.dataset.prReviews) || 0);
+    }
+
+    function cellValue(row, column, type) {
+      const td = row.cells[column];
+      if (type === 'number') {
+        const n = parseInt(td.textContent.replace(/[^\d-]/g, ''));
+        return isNaN(n) ? 0 : n;
+      }
+      const strong = td.querySelector('strong');
+      return (strong ? strong.textContent : td.textContent).trim().toLowerCase();
+    }
+
+    function applySort() {
+      if (sortColumn === null) return;
+      const type = sortableHeaders[sortColumn].getAttribute('data-repo-type');
+      rows.sort((a, b) => {
+        const vA = cellValue(a, sortColumn, type);
+        const vB = cellValue(b, sortColumn, type);
+        let cmp;
+        if (type === 'text') cmp = String(vA).localeCompare(String(vB));
+        else cmp = vA - vB;
+        if (cmp === 0) cmp = totalActivity(b) - totalActivity(a);
+        return sortDirection === 'desc' ? -cmp : cmp;
+      });
+      tbody.innerHTML = '';
+      rows.forEach((r) => tbody.appendChild(r));
+    }
+
+    function render() {
+      const totalPages = Math.max(1, Math.ceil(rows.length / PAGE_SIZE));
+      if (page > totalPages) page = totalPages;
+      const start = (page - 1) * PAGE_SIZE;
+      const end = start + PAGE_SIZE;
+      rows.forEach((r, i) => {
+        r.style.display = i >= start && i < end ? '' : 'none';
+      });
+      status.textContent = 'Showing ' + (start + 1) + '–' + Math.min(end, rows.length) + ' of ' + rows.length + ' repos.';
+      nav.innerHTML = '';
+
+      const mkBtn = (label, targetPage, disabled, current) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'maakaf-repos__page-btn' + (current ? ' is-active' : '');
+        b.textContent = label;
+        b.disabled = !!disabled;
+        if (!disabled && !current) {
+          b.addEventListener('click', () => { page = targetPage; render(); });
+        }
+        return b;
+      };
+
+      nav.appendChild(mkBtn('« Prev', page - 1, page === 1, false));
+      const pageSet = new Set([1, totalPages, page, page - 1, page + 1]);
+      const sorted = [...pageSet].filter(n => n >= 1 && n <= totalPages).sort((a, b) => a - b);
+      let last = 0;
+      for (const n of sorted) {
+        if (last && n - last > 1) {
+          const dots = document.createElement('span');
+          dots.textContent = '…';
+          dots.className = 'maakaf-repos__page-dots';
+          nav.appendChild(dots);
+        }
+        nav.appendChild(mkBtn(String(n), n, false, n === page));
+        last = n;
+      }
+      nav.appendChild(mkBtn('Next »', page + 1, page === totalPages, false));
+    }
+
+    sortableHeaders.forEach((header, idx) => {
+      header.addEventListener('click', function () {
+        if (sortColumn === idx) {
+          sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+        } else {
+          sortColumn = idx;
+          sortDirection = header.getAttribute('data-repo-type') === 'number' ? 'desc' : 'asc';
+        }
+        sortableHeaders.forEach((h) => h.classList.remove('sort-asc', 'sort-desc'));
+        header.classList.add(sortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+        applySort();
+        page = 1;
+        render();
+      });
+    });
+
+    if (langFilter) {
+      langFilter.addEventListener('change', () => {
+        const v = langFilter.value;
+        rows = v ? allRows.filter((r) => r.dataset.lang === v) : allRows.slice();
+        tbody.innerHTML = '';
+        rows.forEach((r) => tbody.appendChild(r));
+        applySort();
+        page = 1;
+        render();
+      });
+    }
+
+    render();
+  });
+</script>
+{{ end }}
