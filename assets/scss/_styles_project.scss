@@ -1668,19 +1668,81 @@ html[data-bs-theme="dark"] {
 }
 
 /* Repo leaderboard — projects table */
+.maakaf-repos--home {
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  background: #fff;
+
+  .maakaf-repos__inner {
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
+}
+
+.maakaf-repos--page {
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  background: #fafafa;
+
+  .maakaf-repos__inner {
+    gap: 32px;
+    padding: 48px 80px 80px;
+  }
+}
+
+.maakaf-repos__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.maakaf-repos__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  text-align: center;
+}
+
 .maakaf-repos {
   width: 100%;
   padding-top: 16px;
   border-top: 1px solid #e6e6e6;
 }
 
+.maakaf-repos__subtitle {
+  max-width: 720px;
+  margin: 0;
+  color: #404040 !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.maakaf-repos__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+
 .maakaf-repos__title {
-  margin: 0 0 24px;
+  margin: 0;
   color: #1a1a1a !important;
   font-family: $font-birzia;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 40px;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 56px;
   text-align: center;
 }
 
@@ -1703,15 +1765,25 @@ html[data-bs-theme="dark"] {
 }
 
 .maakaf-repos__filter-select {
-  min-width: 180px;
-  min-height: 40px;
-  padding: 8px 12px;
+  width: 100%;
+  max-width: 320px;
+  min-height: 44px;
+  padding: 10px 16px;
   border: 1px solid #e6e6e6;
   border-radius: 8px;
   background: #fff;
   color: #1a1a1a;
   font-family: "IBM Plex Sans Hebrew", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:focus {
+    outline: none;
+    border-color: #2c57a5;
+    box-shadow: 0 0 0 3px rgba(44, 87, 165, 0.12);
+  }
 }
 
 .maakaf-repos__status {
@@ -1837,6 +1909,16 @@ html[data-bs-theme="dark"] {
 }
 
 html[data-bs-theme="dark"] {
+  .maakaf-repos--home,
+  .maakaf-repos--page {
+    background: #1a1a1a;
+    border-top-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .maakaf-repos__subtitle {
+    color: #9dd0f3 !important;
+  }
+
   .maakaf-repos {
     border-top-color: rgba(255, 255, 255, 0.08);
   }
@@ -1871,10 +1953,40 @@ html[data-bs-theme="dark"] {
 }
 
 @media (max-width: 991.98px) {
+  .maakaf-repos__inner {
+    padding: 64px 32px;
+    gap: 24px;
+  }
+
   .maakaf-repos__title {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 
+@media (max-width: 575.98px) {
+  .maakaf-repos__inner {
+    padding: 48px 24px;
+    gap: 20px;
+  }
+
+  .maakaf-repos__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .maakaf-repos__subtitle {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .maakaf-repos__filter-select {
+    max-width: 100%;
+  }
+
+  .maakaf-repos__toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
 

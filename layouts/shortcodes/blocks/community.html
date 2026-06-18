@@ -1,3 +1,7 @@
 {{ $_hugo_config := `{ "version": 1 }` -}}
-{{ $limit := .Get "limit" | default "8" -}}
-{{ partial "maakaf-community.html" (dict "Site" .Site "limit" ($limit | int)) }}
+{{ $limit := 8 -}}
+{{ with .Get "limit" -}}
+  {{ $limit = . | int -}}
+{{ end -}}
+{{ $variant := .Get "variant" | default "in-hero" -}}
+{{ partial "maakaf-community.html" (dict "Site" .Site "limit" $limit "variant" $variant) }}
