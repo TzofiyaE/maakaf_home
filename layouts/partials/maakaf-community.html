@@ -70,6 +70,7 @@
             <th scope="col">{{ if $isHe }}באגים{{ else }}Issues{{ end }}</th>
             <th scope="col">{{ if $isHe }}תגובות PR{{ else }}PR Comments{{ end }}</th>
             <th scope="col">{{ if $isHe }}תגובות Issue{{ else }}Issue Comments{{ end }}</th>
+            <th scope="col">{{ if $isHe }}פעילות{{ else }}Activity{{ end }}</th>
             <th scope="col">{{ if $isHe }}פרויקטים{{ else }}Projects{{ end }}</th>
           </tr>
         </thead>
@@ -106,6 +107,19 @@
               <td>{{ $member.summary.totalIssues }}</td>
               <td>{{ $member.summary.totalPRComments }}</td>
               <td>{{ $member.summary.totalIssueComments }}</td>
+              <td>
+                {{ if $member.rollingActivity }}
+                  <button
+                    type="button"
+                    class="maakaf-community__activity-btn activity-btn"
+                    data-username="{{ $member.user.username }}"
+                    title="{{ if $isHe }}הצג גרף פעילות{{ else }}Show activity graph{{ end }}"
+                    aria-label="{{ if $isHe }}הצג גרף פעילות עבור {{ $member.user.username }}{{ else }}Show activity graph for {{ $member.user.username }}{{ end }}"
+                  >📊</button>
+                {{ else }}
+                  —
+                {{ end }}
+              </td>
               <td>
                 {{ if gt (len $member.repos) 0 }}
                   <details class="maakaf-community__projects">
@@ -208,18 +222,135 @@
   </div>
 </div>
 
+<div id="activityModal" class="activity-modal" style="display:none;" aria-hidden="true">
+  <div class="activity-modal-backdrop"></div>
+  <div class="activity-modal-content" role="dialog" aria-modal="true" aria-labelledby="activityModalTitle">
+    <button type="button" class="activity-modal-close" aria-label="{{ if $isHe }}סגור{{ else }}Close{{ end }}">×</button>
+    <div class="activity-modal-header">
+      <div>
+        <h3 class="activity-modal-title" id="activityModalTitle"></h3>
+        <p class="activity-modal-summary"></p>
+      </div>
+    </div>
+    <div id="activityRollingWrap" class="activity-trend-wrap"><canvas id="activityRollingChart"></canvas></div>
+  </div>
+</div>
+
+<script id="maakafCommunityUsersData" type="application/json">{{ $users | jsonify | safeJS }}</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
 <script>
-  (function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const input = document.getElementById('maakafCommunitySearch');
     const table = document.getElementById('maakafCommunityTable');
-    if (!input || !table) return;
-
-    input.addEventListener('input', function () {
-      const query = input.value.trim().toLowerCase();
-      table.querySelectorAll('tbody tr').forEach(function (row) {
-        const haystack = row.getAttribute('data-search') || '';
-        row.hidden = query !== '' && !haystack.includes(query);
+    if (input && table) {
+      input.addEventListener('input', function () {
+        const query = input.value.trim().toLowerCase();
+        table.querySelectorAll('tbody tr').forEach(function (row) {
+          const haystack = row.getAttribute('data-search') || '';
+          row.hidden = query !== '' && !haystack.includes(query);
+        });
       });
+    }
+
+    const isHe = {{ if $isHe }}true{{ else }}false{{ end }};
+    const rawUsers = document.getElementById('maakafCommunityUsersData')?.textContent;
+    const modal = document.getElementById('activityModal');
+    if (!rawUsers || !modal) return;
+
+    let users = [];
+    try {
+      users = JSON.parse(rawUsers);
+      if (typeof users === 'string') users = JSON.parse(users);
+    } catch (err) {
+      console.error('Failed to parse community users data', err);
+      return;
+    }
+    if (!Array.isArray(users) || !users.length) return;
+
+    const usersByLogin = new Map(users.map((u) => [u?.user?.username, u]));
+    const titleEl = modal.querySelector('.activity-modal-title');
+    const summaryEl = modal.querySelector('.activity-modal-summary');
+    const closeBtn = modal.querySelector('.activity-modal-close');
+    const backdrop = modal.querySelector('.activity-modal-backdrop');
+    let rollingChart = null;
+
+    const fmtDate = (s) => {
+      const [y, m, d] = s.split('-');
+      return `${d}/${m}/${y}`;
+    };
+
+    function renderRollingChart(user) {
+      const points = user.rollingActivity || [];
+      const name = user.user.displayName || user.user.username;
+      titleEl.textContent = isHe
+        ? `${name} — חלון פעילות של 6 חודשים`
+        : `${name} — rolling 6-month window`;
+      const latest = points.length ? points[points.length - 1].total : 0;
+      summaryEl.textContent = isHe
+        ? `כל נקודה מציגה את סך הפעילות בקוד פתוח ב-6 החודשים שהסתיימו בתאריך זה. עדכני: ${latest}.`
+        : `Each point shows total OSS activity in the 6 months ending on that date. Latest: ${latest}.`;
+
+      const canvas = document.getElementById('activityRollingChart');
+      if (!canvas || typeof Chart === 'undefined') return;
+      if (rollingChart) {
+        rollingChart.destroy();
+        rollingChart = null;
+      }
+
+      rollingChart = new Chart(canvas, {
+        type: 'line',
+        data: {
+          labels: points.map((p) => fmtDate(p.date)),
+          datasets: [{
+            label: isHe ? 'סה״כ פעילות' : 'Rolling 6-month total',
+            data: points.map((p) => p.total || 0),
+            borderColor: '#2c57a5',
+            backgroundColor: 'rgba(44, 87, 165, 0.12)',
+            fill: true,
+            tension: 0.3,
+            pointRadius: 0,
+            pointHoverRadius: 5,
+          }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          animation: false,
+          plugins: { legend: { display: false }, tooltip: { enabled: true } },
+          scales: {
+            x: {
+              ticks: { color: '#404040', maxRotation: 0, autoSkip: true, maxTicksLimit: 8 },
+            },
+            y: {
+              beginAtZero: true,
+              ticks: { color: '#404040', precision: 0 },
+            },
+          },
+        },
+      });
+    }
+
+    function open(login) {
+      const user = usersByLogin.get(login);
+      if (!user) return;
+      modal.style.display = 'flex';
+      modal.setAttribute('aria-hidden', 'false');
+      requestAnimationFrame(() => renderRollingChart(user));
+    }
+
+    function close() {
+      modal.style.display = 'none';
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    document.querySelectorAll('.activity-btn').forEach((btn) => {
+      btn.addEventListener('click', () => open(btn.getAttribute('data-username')));
     });
-  })();
+    closeBtn.addEventListener('click', close);
+    backdrop.addEventListener('click', close);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') close();
+    });
+  });
 </script>
