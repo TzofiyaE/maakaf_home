@@ -9,6 +9,8 @@ weight: 1
 <!-- -->
 {{< /blocks/cover >}}
 
+{{< blocks/repos >}}
+
 {{% blocks/section color="white" type="row" %}}
 {{% blocks/feature icon="fa-lightbulb" title="קהילה תומכת" %}} הקהילה שלנו חמה,
 תומכת, ומזמינה – כל שאלה מתקבלת בברכה! {{% /blocks/feature %}}
