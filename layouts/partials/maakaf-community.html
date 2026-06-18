@@ -1,5 +1,8 @@
 {{/* Community members section — members page (full) or homepage preview */ -}}
-{{ $limit := .limit | default 8 -}}
+{{ $limit := 8 -}}
+{{ if isset . "limit" -}}
+  {{ $limit = .limit -}}
+{{ end -}}
 {{ $variant := .variant | default "in-hero" -}}
 {{ $showMoreLink := .showMoreLink | default (ne $variant "page") -}}
 {{ $isHe := eq .Site.Language.Lang "he" -}}
