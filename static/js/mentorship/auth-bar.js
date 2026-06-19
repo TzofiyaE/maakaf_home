@@ -17,6 +17,7 @@ if (session) {
     if (content) content.prepend(bar);
 
     document.getElementById('auth-bar-logout').addEventListener('click', () => {
+      if (!confirm('האם אתם בטוחים שברצונכם להתנתק?')) return;
       clearSession();
       window.location.href = '/he/mentorship/login/';
     });
