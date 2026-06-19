@@ -9,6 +9,10 @@ menu:
     identifier: mentorship
 ---
 
+<div class="alert alert-danger" dir="rtl" role="alert">
+  ⚙️ <strong>המערכת נמצאת בשלבי הרצה.</strong> אם נתקלתם בתקלה או שיש לכם הצעה לשיפור, נשמח לקבל את פנייתכם בכתובת: <a href="mailto:maakafsupport@gmail.com" class="alert-link">maakafsupport@gmail.com</a>.
+</div>
+
 <div id="cta-guest" class="row mb-5" dir="rtl">
   <div class="col-md-6 mb-3">
     <div class="card h-100">
