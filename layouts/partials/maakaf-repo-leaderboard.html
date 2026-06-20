@@ -33,46 +33,46 @@
       </p>
     </div>
 
-    <div class="maakaf-community__table-wrap maakaf-repos__table-wrap">
+    <div class="maakaf-community__table-wrap maakaf-repos__table-wrap" dir="ltr">
       <table id="repoLeaderboardTable" class="maakaf-community__table maakaf-repos__table">
         <thead>
           <tr>
             <th class="sortable" data-repo-col="0" data-repo-type="text">
-              {{ if $isHe }}פרויקט{{ else }}Repo{{ end }}
+              Repo
               <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-repo-col="1" data-repo-type="text">
-              {{ if $isHe }}שפה{{ else }}Lang{{ end }}
+              Lang
               <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-repo-col="2" data-repo-type="number">
               Stars <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-repo-col="3" data-repo-type="text">
-              {{ if $isHe }}רישיון{{ else }}License{{ end }}
+              License
               <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-repo-col="4" data-repo-type="number">
-              {{ if $isHe }}קומיטים{{ else }}Commits{{ end }}
+              Commits
               <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-repo-col="5" data-repo-type="number">
               PRs <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-repo-col="6" data-repo-type="number">
-              {{ if $isHe }}באגים{{ else }}Issues{{ end }}
+              Issues
               <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-repo-col="7" data-repo-type="number">
-              {{ if $isHe }}תגובות PR{{ else }}PR Comments{{ end }}
+              PR Comments
               <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-repo-col="8" data-repo-type="number">
-              {{ if $isHe }}תגובות Issue{{ else }}Issue Comments{{ end }}
+              Issue Comments
               <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-repo-col="9" data-repo-type="number">
-              {{ if $isHe }}תורמים{{ else }}Contributors{{ end }}
+              Contributors
               <span class="sort-indicator"></span>
             </th>
           </tr>
@@ -129,28 +129,29 @@
       </table>
     </div>
 
-    <nav id="repoLeaderboardPagination" class="maakaf-repos__pagination" aria-label="{{ if $isHe }}עימוד פרויקטים{{ else }}Projects pagination{{ end }}"></nav>
+    <div class="maakaf-table-load-more" id="repoLeaderboardLoadMoreWrap" hidden>
+      <button type="button" class="maakaf-table-load-more__btn" id="repoLeaderboardLoadMore">טען עוד</button>
+    </div>
   </div>
 </section>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const PAGE_SIZE = 25;
+    const INITIAL_SIZE = 5;
     const tbody = document.querySelector('#repoLeaderboardTable tbody');
     const allRows = Array.from(document.querySelectorAll('.repo-leaderboard-row'));
     let rows = allRows.slice();
     const status = document.getElementById('repoLeaderboardStatus');
-    const nav = document.getElementById('repoLeaderboardPagination');
+    const loadMoreWrap = document.getElementById('repoLeaderboardLoadMoreWrap');
+    const loadMoreBtn = document.getElementById('repoLeaderboardLoadMore');
     const sortableHeaders = document.querySelectorAll('#repoLeaderboardTable .sortable');
     const langFilter = document.getElementById('repoLangFilter');
-    if (!allRows.length || !status || !nav || !tbody) return;
+    if (!allRows.length || !status || !tbody) return;
 
     const labels = {
       showing: status.dataset.labelShowing || 'Showing',
       of: status.dataset.labelOf || 'of',
       repos: status.dataset.labelRepos || 'repos',
-      prev: status.dataset.labelPrev || 'Prev',
-      next: status.dataset.labelNext || 'Next',
     };
 
     if (langFilter) {
@@ -163,7 +164,7 @@
       }
     }
 
-    let page = 1;
+    let expanded = false;
     let sortColumn = null;
     let sortDirection = 'desc';
 
@@ -199,43 +200,21 @@
     }
 
     function render() {
-      const totalPages = Math.max(1, Math.ceil(rows.length / PAGE_SIZE));
-      if (page > totalPages) page = totalPages;
-      const start = (page - 1) * PAGE_SIZE;
-      const end = start + PAGE_SIZE;
       rows.forEach((r, i) => {
-        r.style.display = i >= start && i < end ? '' : 'none';
+        r.style.display = expanded || i < INITIAL_SIZE ? '' : 'none';
       });
-      status.textContent = labels.showing + ' ' + (start + 1) + '–' + Math.min(end, rows.length) + ' ' + labels.of + ' ' + rows.length + ' ' + labels.repos + '.';
-      nav.innerHTML = '';
-
-      const mkBtn = (label, targetPage, disabled, current) => {
-        const b = document.createElement('button');
-        b.type = 'button';
-        b.className = 'maakaf-repos__page-btn' + (current ? ' is-active' : '');
-        b.textContent = label;
-        b.disabled = !!disabled;
-        if (!disabled && !current) {
-          b.addEventListener('click', () => { page = targetPage; render(); });
-        }
-        return b;
-      };
-
-      nav.appendChild(mkBtn('« ' + labels.prev, page - 1, page === 1, false));
-      const pageSet = new Set([1, totalPages, page, page - 1, page + 1]);
-      const sorted = [...pageSet].filter((n) => n >= 1 && n <= totalPages).sort((a, b) => a - b);
-      let last = 0;
-      for (const n of sorted) {
-        if (last && n - last > 1) {
-          const dots = document.createElement('span');
-          dots.textContent = '…';
-          dots.className = 'maakaf-repos__page-dots';
-          nav.appendChild(dots);
-        }
-        nav.appendChild(mkBtn(String(n), n, false, n === page));
-        last = n;
+      const shown = expanded ? rows.length : Math.min(INITIAL_SIZE, rows.length);
+      status.textContent = labels.showing + ' ' + (shown > 0 ? '1–' + shown : '0') + ' ' + labels.of + ' ' + rows.length + ' ' + labels.repos + '.';
+      if (loadMoreWrap) {
+        loadMoreWrap.hidden = expanded || rows.length <= INITIAL_SIZE;
       }
-      nav.appendChild(mkBtn(labels.next + ' »', page + 1, page === totalPages, false));
+    }
+
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', function () {
+        expanded = true;
+        render();
+      });
     }
 
     sortableHeaders.forEach((header, idx) => {
@@ -249,7 +228,6 @@
         sortableHeaders.forEach((h) => h.classList.remove('sort-asc', 'sort-desc'));
         header.classList.add(sortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
         applySort();
-        page = 1;
         render();
       });
     });
@@ -261,7 +239,7 @@
         tbody.innerHTML = '';
         rows.forEach((r) => tbody.appendChild(r));
         applySort();
-        page = 1;
+        expanded = false;
         render();
       });
     }

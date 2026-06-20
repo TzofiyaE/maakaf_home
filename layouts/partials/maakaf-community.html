@@ -58,20 +58,25 @@
         placeholder="{{ if $isHe }}חיפוש לפי שם, משתמש או ביו...{{ else }}Search by name, username, or bio...{{ end }}"
         autocomplete="off"
       >
+      <button
+        type="button"
+        id="maakafCommunityActivityBtn"
+        class="maakaf-community__activity-window-btn"
+      >לצפיה בחלון הפעילות של הקהילה</button>
     </div>
 
-    <div class="maakaf-community__table-wrap">
+    <div class="maakaf-community__table-wrap" dir="ltr">
       <table class="maakaf-community__table" id="maakafCommunityTable">
         <thead>
           <tr>
-            <th scope="col">{{ if $isHe }}משתמש{{ else }}User{{ end }}</th>
-            <th scope="col">{{ if $isHe }}קומיטים{{ else }}Commits{{ end }}</th>
+            <th scope="col">User</th>
+            <th scope="col">Commits</th>
             <th scope="col">PRs</th>
-            <th scope="col">{{ if $isHe }}באגים{{ else }}Issues{{ end }}</th>
-            <th scope="col">{{ if $isHe }}תגובות PR{{ else }}PR Comments{{ end }}</th>
-            <th scope="col">{{ if $isHe }}תגובות Issue{{ else }}Issue Comments{{ end }}</th>
-            <th scope="col">{{ if $isHe }}פעילות{{ else }}Activity{{ end }}</th>
-            <th scope="col">{{ if $isHe }}פרויקטים{{ else }}Projects{{ end }}</th>
+            <th scope="col">Issues</th>
+            <th scope="col">PR Comments</th>
+            <th scope="col">Issue Comments</th>
+            <th scope="col">Activity</th>
+            <th scope="col">Projects</th>
           </tr>
         </thead>
         <tbody>
@@ -147,6 +152,10 @@
           {{ end }}
         </tbody>
       </table>
+    </div>
+
+    <div class="maakaf-table-load-more" id="maakafCommunityLoadMoreWrap" hidden>
+      <button type="button" class="maakaf-table-load-more__btn" id="maakafCommunityLoadMore">טען עוד</button>
     </div>
 
     {{ with $globalSummary }}
@@ -241,17 +250,66 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
+    const INITIAL_ROWS = 5;
     const input = document.getElementById('maakafCommunitySearch');
     const table = document.getElementById('maakafCommunityTable');
+    const loadMoreWrap = document.getElementById('maakafCommunityLoadMoreWrap');
+    const loadMoreBtn = document.getElementById('maakafCommunityLoadMore');
+    let communityExpanded = false;
+
+    function applyCommunityRowVisibility() {
+      if (!table) return;
+      const rows = Array.from(table.querySelectorAll('tbody tr'));
+      if (communityExpanded) {
+        rows.forEach((row) => row.classList.remove('maakaf-table-row--collapsed'));
+        if (loadMoreWrap) loadMoreWrap.hidden = true;
+        return;
+      }
+      let visibleCount = 0;
+      rows.forEach((row) => {
+        if (row.hidden) {
+          row.classList.remove('maakaf-table-row--collapsed');
+          return;
+        }
+        if (visibleCount >= INITIAL_ROWS) {
+          row.classList.add('maakaf-table-row--collapsed');
+        } else {
+          row.classList.remove('maakaf-table-row--collapsed');
+          visibleCount++;
+        }
+      });
+      if (loadMoreWrap) {
+        loadMoreWrap.hidden = rows.length <= INITIAL_ROWS;
+      }
+    }
+
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', function () {
+        communityExpanded = true;
+        applyCommunityRowVisibility();
+      });
+    }
+
     if (input && table) {
       input.addEventListener('input', function () {
         const query = input.value.trim().toLowerCase();
+        const searching = query !== '';
         table.querySelectorAll('tbody tr').forEach(function (row) {
           const haystack = row.getAttribute('data-search') || '';
-          row.hidden = query !== '' && !haystack.includes(query);
+          row.hidden = searching && !haystack.includes(query);
         });
+        if (searching) {
+          table.querySelectorAll('tbody tr').forEach(function (row) {
+            row.classList.remove('maakaf-table-row--collapsed');
+          });
+          if (loadMoreWrap) loadMoreWrap.hidden = true;
+        } else {
+          applyCommunityRowVisibility();
+        }
       });
     }
+
+    applyCommunityRowVisibility();
 
     const isHe = {{ if $isHe }}true{{ else }}false{{ end }};
     const rawUsers = document.getElementById('maakafCommunityUsersData')?.textContent;
@@ -280,16 +338,21 @@
       return `${d}/${m}/${y}`;
     };
 
-    function renderRollingChart(user) {
-      const points = user.rollingActivity || [];
-      const name = user.user.displayName || user.user.username;
-      titleEl.textContent = isHe
-        ? `${name} — חלון פעילות של 6 חודשים`
-        : `${name} — rolling 6-month window`;
-      const latest = points.length ? points[points.length - 1].total : 0;
-      summaryEl.textContent = isHe
-        ? `כל נקודה מציגה את סך הפעילות בקוד פתוח ב-6 החודשים שהסתיימו בתאריך זה. עדכני: ${latest}.`
-        : `Each point shows total OSS activity in the 6 months ending on that date. Latest: ${latest}.`;
+    function aggregateCommunityActivity(allUsers) {
+      const totalsByDate = new Map();
+      allUsers.forEach((user) => {
+        (user.rollingActivity || []).forEach((point) => {
+          totalsByDate.set(point.date, (totalsByDate.get(point.date) || 0) + (point.total || 0));
+        });
+      });
+      return [...totalsByDate.entries()]
+        .sort((a, b) => a[0].localeCompare(b[0]))
+        .map(([date, total]) => ({ date, total }));
+    }
+
+    function renderRollingChart(points, title, summary) {
+      titleEl.textContent = title;
+      summaryEl.textContent = summary;
 
       const canvas = document.getElementById('activityRollingChart');
       if (!canvas || typeof Chart === 'undefined') return;
@@ -334,9 +397,32 @@
     function open(login) {
       const user = usersByLogin.get(login);
       if (!user) return;
+      const points = user.rollingActivity || [];
+      const name = user.user.displayName || user.user.username;
+      const latest = points.length ? points[points.length - 1].total : 0;
       modal.style.display = 'flex';
       modal.setAttribute('aria-hidden', 'false');
-      requestAnimationFrame(() => renderRollingChart(user));
+      requestAnimationFrame(() => renderRollingChart(
+        points,
+        isHe ? `${name} — חלון פעילות של 6 חודשים` : `${name} — rolling 6-month window`,
+        isHe
+          ? `כל נקודה מציגה את סך הפעילות בקוד פתוח ב-6 החודשים שהסתיימו בתאריך זה. עדכני: ${latest}.`
+          : `Each point shows total OSS activity in the 6 months ending on that date. Latest: ${latest}.`
+      ));
+    }
+
+    function openCommunityActivity() {
+      const points = aggregateCommunityActivity(users);
+      const latest = points.length ? points[points.length - 1].total : 0;
+      modal.style.display = 'flex';
+      modal.setAttribute('aria-hidden', 'false');
+      requestAnimationFrame(() => renderRollingChart(
+        points,
+        'חלון פעילות של הקהילה - 6 חודשים',
+        isHe
+          ? `כל נקודה מציגה את סך הפעילות המשולבת של כל חברי הקהילה בקוד פתוח ב-6 החודשים שהסתיימו בתאריך זה. עדכני: ${latest}.`
+          : `Each point shows combined community OSS activity in the 6 months ending on that date. Latest: ${latest}.`
+      ));
     }
 
     function close() {
@@ -347,6 +433,7 @@
     document.querySelectorAll('.activity-btn').forEach((btn) => {
       btn.addEventListener('click', () => open(btn.getAttribute('data-username')));
     });
+    document.getElementById('maakafCommunityActivityBtn')?.addEventListener('click', openCommunityActivity);
     closeBtn.addEventListener('click', close);
     backdrop.addEventListener('click', close);
     document.addEventListener('keydown', (e) => {

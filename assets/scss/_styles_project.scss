@@ -1151,8 +1151,35 @@ html[dir="rtl"] {
 
 .maakaf-community__toolbar {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   width: 100%;
+}
+
+.maakaf-community__activity-window-btn {
+  flex-shrink: 0;
+  margin-inline-start: auto;
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 1px solid #2c57a5;
+  border-radius: 8px;
+  background: #2c57a5;
+  color: #fff !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: #1e4080;
+    border-color: #1e4080;
+    outline: none;
+  }
 }
 
 .maakaf-community__search {
@@ -1183,6 +1210,8 @@ html[dir="rtl"] {
 }
 
 .maakaf-community__table-wrap {
+  /*rtl:ignore*/
+  direction: ltr;
   width: 100%;
   overflow-x: auto;
   border: 1px solid #e6e6e6;
@@ -1192,6 +1221,8 @@ html[dir="rtl"] {
 }
 
 .maakaf-community__table {
+  /*rtl:ignore*/
+  direction: ltr;
   width: 100%;
   border-collapse: collapse;
   font-family: "IBM Plex Sans Hebrew", sans-serif;
@@ -1219,6 +1250,43 @@ html[dir="rtl"] {
 
 .maakaf-community__table tbody tr:last-child td {
   border-bottom: none;
+}
+
+.maakaf-community__table tbody tr.maakaf-table-row--collapsed {
+  display: none;
+}
+
+.maakaf-table-load-more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.maakaf-table-load-more__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  min-height: 44px;
+  padding: 12px 32px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    border-color: #2c57a5;
+    background: #fff;
+    color: #2c57a5;
+  }
 }
 
 .maakaf-community__user {
@@ -1639,6 +1707,19 @@ html[data-bs-theme="dark"] {
     }
   }
 
+  .maakaf-community__activity-window-btn {
+    border-color: #6eb6ec;
+    background: #2c57a5;
+    color: #eff8ff !important;
+
+    &:hover,
+    &:focus-visible {
+      border-color: #9dd0f3;
+      background: #1e4080;
+      color: #eff8ff !important;
+    }
+  }
+
   .maakaf-community__table-wrap,
   .maakaf-community__summary,
   .maakaf-community__cta {
@@ -1733,6 +1814,19 @@ html[data-bs-theme="dark"] {
     }
   }
 
+  .maakaf-table-load-more__btn {
+    border-color: #1d2e4e;
+    background: #1d2e4e;
+    color: #eff8ff;
+
+    &:hover,
+    &:focus-visible {
+      border-color: #6eb6ec;
+      background: rgba(110, 182, 236, 0.12);
+      color: #9dd0f3;
+    }
+  }
+
   .activity-modal-content {
     border-color: #1d2e4e;
     background: #1d2e4e;
@@ -1799,6 +1893,13 @@ html[data-bs-theme="dark"] {
 
   .maakaf-community__search {
     max-width: 100%;
+  }
+
+  .maakaf-community__activity-window-btn {
+    width: 100%;
+    margin-inline-start: 0;
+    white-space: normal;
+    text-align: center;
   }
 
   .maakaf-community__cta {
