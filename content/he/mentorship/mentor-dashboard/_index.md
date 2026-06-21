@@ -1,7 +1,7 @@
 ---
 type: "docs"
 title: "דשבורד מנטור"
-slug: "mentor-dashboard"
+url: "/he/mentorship/mentor-dashboard/"
 linkTitle: "דשבורד מנטור"
 weight: 60
 ---
