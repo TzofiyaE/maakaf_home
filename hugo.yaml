@@ -89,7 +89,7 @@ outputs:
 disableAliases: true
 
 params:
-  mentorshipApiBase: "http://localhost:3000"
+  mentorshipApiBase: "https://mentorsbackend-production.up.railway.app"
 
   taxonomy:
     # set taxonomyCloud = [] to hide taxonomy clouds
