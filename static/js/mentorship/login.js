@@ -9,6 +9,10 @@ const messageEl = document.getElementById('login-message');
 const forgotWrapper = document.getElementById('forgot-password-form-wrapper');
 const forgotForm = document.getElementById('forgot-password-form');
 const forgotMessageEl = document.getElementById('forgot-password-message');
+const verifyWrapper = document.getElementById('verify-email-wrapper');
+const verifyEmailDisplay = document.getElementById('verify-email-display');
+const verifyResendBtn = document.getElementById('verify-resend-btn');
+const verifyResendCountdown = document.getElementById('verify-resend-countdown');
 
 // Already logged in — redirect immediately
 const existing = getSession();
@@ -124,6 +128,49 @@ forgotForm.addEventListener('submit', async (e) => {
   }
 });
 
+let verifyResendTimer = null;
+
+function showVerifyEmailScreen(email) {
+  wrapper.classList.add('d-none');
+  verifyEmailDisplay.textContent = email;
+  verifyWrapper.classList.remove('d-none');
+  startVerifyResendCountdown();
+}
+
+function startVerifyResendCountdown() {
+  let seconds = 30;
+  verifyResendBtn.disabled = true;
+  verifyResendCountdown.textContent = `(${seconds}s)`;
+  verifyResendCountdown.classList.remove('d-none');
+  clearInterval(verifyResendTimer);
+  verifyResendTimer = setInterval(() => {
+    seconds--;
+    verifyResendCountdown.textContent = `(${seconds}s)`;
+    if (seconds <= 0) {
+      clearInterval(verifyResendTimer);
+      verifyResendBtn.disabled = false;
+      verifyResendCountdown.classList.add('d-none');
+    }
+  }, 1000);
+}
+
+verifyResendBtn.addEventListener('click', async () => {
+  const email = verifyEmailDisplay.textContent;
+  verifyResendBtn.disabled = true;
+  try {
+    await apiFetch('/auth/resend-verification', { method: 'POST', body: { email } });
+  } finally {
+    startVerifyResendCountdown();
+  }
+});
+
+document.getElementById('back-to-login-from-verify').addEventListener('click', (e) => {
+  e.preventDefault();
+  verifyWrapper.classList.add('d-none');
+  clearInterval(verifyResendTimer);
+  wrapper.classList.remove('d-none');
+});
+
 async function handleLoginSubmit(event) {
   event.preventDefault();
   const submitBtn = form.querySelector('button[type="submit"]');
@@ -138,7 +185,11 @@ async function handleLoginSubmit(event) {
     });
 
     if (!ok) {
-      showFormMessage(messageEl, describeAuthError(data.error), true);
+      if (data.error?.code === 'EMAIL_NOT_VERIFIED') {
+        showVerifyEmailScreen(email);
+      } else {
+        showFormMessage(messageEl, describeAuthError(data.error), true);
+      }
       return;
     }
 

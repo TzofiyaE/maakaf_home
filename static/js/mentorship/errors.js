@@ -23,6 +23,9 @@ const AUTH_ERROR_MESSAGES = {
   MISSING_EXPERTISE: 'יש למלא תחומי התמחות (שדה חובה).',
   MISSING_INTERESTS: 'יש למלא תחומי עניין (שדה חובה).',
 
+  // email verification
+  EMAIL_NOT_VERIFIED: 'יש לאמת את כתובת האימייל לפני ההתחברות. בדוק/י את תיבת הדואר שלך.',
+
   // admin-specific
   ADMIN_PENDING_APPROVAL: 'החשבון ממתין לאישור. פנה/י למנהל המערכת.',
 

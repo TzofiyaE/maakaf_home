@@ -63,7 +63,7 @@ async function handleMenteeSubmit(event) {
         window.location.href = '/he/mentorship/mentee-dashboard/';
       });
     } else {
-      showFormMessage(messageEl, `נרשמת בהצלחה, ${fullName}! ניתן להתחבר כעת.`, false);
+      showFormMessage(messageEl, `נרשמת בהצלחה, ${fullName}! נשלח אליך אימייל אימות — אנא לחץ/י על הקישור שבמייל לפני ההתחברות.`, false);
       form.reset();
     }
   } catch (err) {
@@ -134,7 +134,7 @@ async function handleMentorSubmit(event) {
         window.location.href = '/he/mentorship/mentor-dashboard/';
       });
     } else {
-      showFormMessage(messageEl, `נרשמת בהצלחה, ${fullName}! ניתן להתחבר כעת.`, false);
+      showFormMessage(messageEl, `נרשמת בהצלחה, ${fullName}! נשלח אליך אימייל אימות — אנא לחץ/י על הקישור שבמייל לפני ההתחברות.`, false);
       form.reset();
     }
   } catch (err) {
