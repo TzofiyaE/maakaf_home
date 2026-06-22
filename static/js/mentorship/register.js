@@ -2,6 +2,28 @@ import { apiFetch, saveSession, getSession } from './api.js';
 import { describeAuthError, showFormMessage } from './errors.js';
 import { showToast } from './toast.js';
 
+function startVerificationPolling(uid, credentials, messageEl, dashboardUrl) {
+  let attempts = 0;
+  const interval = setInterval(async () => {
+    if (++attempts > 100) { clearInterval(interval); return; }
+    const { ok, data } = await apiFetch(`/auth/verify-status/${uid}`).catch(() => ({ ok: false, data: {} }));
+    if (!ok || !data.verified) return;
+
+    clearInterval(interval);
+    const loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
+    credentials.email = '';
+    credentials.password = '';
+
+    if (loginResult.ok) {
+      saveSession(loginResult.data);
+      showFormMessage(messageEl, 'האימייל אומת בהצלחה! מעביר/ה לדשבורד...', false);
+      setTimeout(() => { window.location.href = dashboardUrl; }, 1500);
+    } else {
+      showFormMessage(messageEl, 'האימייל אומת! ניתן להתחבר כעת.', false);
+    }
+  }, 3000);
+}
+
 // Already logged in — redirect immediately
 const existing = getSession();
 if (existing) {
@@ -63,8 +85,10 @@ async function handleMenteeSubmit(event) {
         window.location.href = '/he/mentorship/mentee-dashboard/';
       });
     } else {
-      showFormMessage(messageEl, `נרשמת בהצלחה, ${fullName}! נשלח אליך אימייל אימות — אנא לחץ/י על הקישור שבמייל לפני ההתחברות.`, false);
+      showFormMessage(messageEl, `נרשמת בהצלחה, ${fullName}! נשלח אליך אימייל אימות — אנא לחץ/י על הקישור שבמייל.`, false);
+      const credentials = { email, password };
       form.reset();
+      startVerificationPolling(data.uid, credentials, messageEl, '/he/mentorship/mentee-dashboard/');
     }
   } catch (err) {
     showFormMessage(messageEl, describeAuthError(err), true);
@@ -134,8 +158,10 @@ async function handleMentorSubmit(event) {
         window.location.href = '/he/mentorship/mentor-dashboard/';
       });
     } else {
-      showFormMessage(messageEl, `נרשמת בהצלחה, ${fullName}! נשלח אליך אימייל אימות — אנא לחץ/י על הקישור שבמייל לפני ההתחברות.`, false);
+      showFormMessage(messageEl, `נרשמת בהצלחה, ${fullName}! נשלח אליך אימייל אימות — אנא לחץ/י על הקישור שבמייל.`, false);
+      const credentials = { email, password };
       form.reset();
+      startVerificationPolling(data.uid, credentials, messageEl, '/he/mentorship/mentor-dashboard/');
     }
   } catch (err) {
     showFormMessage(messageEl, describeAuthError(err), true);
