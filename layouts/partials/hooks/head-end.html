@@ -1,0 +1,4 @@
+<script>window.MENTORSHIP_API_BASE = "{{ .Site.Params.mentorshipApiBase }}";</script>
+{{ if hasPrefix .RelPermalink "/he/mentorship/" }}
+<script type="module" src="/js/mentorship/auth-bar.js"></script>
+{{ end }}

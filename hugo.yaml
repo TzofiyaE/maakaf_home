@@ -89,6 +89,8 @@ outputs:
 disableAliases: true
 
 params:
+  mentorshipApiBase: "https://mentorsbackend-production.up.railway.app"
+
   taxonomy:
     # set taxonomyCloud = [] to hide taxonomy clouds
     taxonomyCloud: [tags, categories]

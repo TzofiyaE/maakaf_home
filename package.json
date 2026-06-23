@@ -30,6 +30,7 @@
     "postbuild:preview": "npm run _check:links",
     "postbuild:production": "npm run _check:links",
     "prebuild": "npx tsx fetch-data.ts",
+    "dev": "npm run serve",
     "serve": "npm run _serve",
     "test": "node --test tests/members/filter.test.js && npm run _check:links",
     "update:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest",
@@ -37,7 +38,7 @@
     "update:pkgs": "npx npm-check-updates -u"
   },
   "devDependencies": {
-    "@types/node": "^25.0.3",
+    "@types/node": "^26.0.0",
     "autoprefixer": "^10.4.21",
     "cross-env": "^10.0.0",
     "hugo-extended": "0.160.1",
