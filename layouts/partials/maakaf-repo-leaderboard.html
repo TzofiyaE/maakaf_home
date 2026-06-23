@@ -37,49 +37,94 @@
       <table id="repoLeaderboardTable" class="maakaf-community__table maakaf-repos__table">
         <thead>
           <tr>
-            <th class="sortable" data-repo-col="0" data-repo-type="text">
+            <th scope="col" class="sortable" data-repo-col="0" data-repo-type="text" tabindex="0" role="columnheader" aria-sort="none">
               Repo
-              <span class="sort-indicator"></span>
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
             </th>
-            <th class="sortable" data-repo-col="1" data-repo-type="text">
+            <th scope="col" class="sortable" data-repo-col="1" data-repo-type="text" tabindex="0" role="columnheader" aria-sort="none">
               Lang
-              <span class="sort-indicator"></span>
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
             </th>
-            <th class="sortable" data-repo-col="2" data-repo-type="number">
-              Stars <span class="sort-indicator"></span>
+            <th scope="col" class="sortable" data-repo-col="2" data-repo-type="number" tabindex="0" role="columnheader" aria-sort="none">
+              Stars
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
             </th>
-            <th class="sortable" data-repo-col="3" data-repo-type="text">
+            <th scope="col" class="sortable" data-repo-col="3" data-repo-type="text" tabindex="0" role="columnheader" aria-sort="none">
               License
-              <span class="sort-indicator"></span>
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
             </th>
-            <th class="sortable" data-repo-col="4" data-repo-type="number">
+            <th scope="col" class="sortable" data-repo-col="4" data-repo-type="number" tabindex="0" role="columnheader" aria-sort="none">
               Commits
-              <span class="sort-indicator"></span>
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
             </th>
-            <th class="sortable" data-repo-col="5" data-repo-type="number">
-              PRs <span class="sort-indicator"></span>
+            <th scope="col" class="sortable" data-repo-col="5" data-repo-type="number" tabindex="0" role="columnheader" aria-sort="none">
+              PRs
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
             </th>
-            <th class="sortable" data-repo-col="6" data-repo-type="number">
+            <th scope="col" class="sortable" data-repo-col="6" data-repo-type="number" tabindex="0" role="columnheader" aria-sort="none">
               Issues
-              <span class="sort-indicator"></span>
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
             </th>
-            <th class="sortable" data-repo-col="7" data-repo-type="number">
+            <th scope="col" class="sortable" data-repo-col="7" data-repo-type="number" tabindex="0" role="columnheader" aria-sort="none">
               PR Comments
-              <span class="sort-indicator"></span>
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
             </th>
-            <th class="sortable" data-repo-col="8" data-repo-type="number">
+            <th scope="col" class="sortable" data-repo-col="8" data-repo-type="number" tabindex="0" role="columnheader" aria-sort="none">
               Issue Comments
-              <span class="sort-indicator"></span>
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
             </th>
-            <th class="sortable" data-repo-col="9" data-repo-type="number">
+            <th scope="col" class="sortable" data-repo-col="9" data-repo-type="number" tabindex="0" role="columnheader" aria-sort="none">
               Contributors
-              <span class="sort-indicator"></span>
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
             </th>
           </tr>
         </thead>
         <tbody>
           {{ range .Site.Data.github_data.repoLeaderboard }}
-            <tr class="repo-leaderboard-row" data-pr-reviews="{{ .prReviews | default 0 }}" data-lang="{{ .primaryLanguage | default "" }}">
+            <tr
+              class="repo-leaderboard-row"
+              data-pr-reviews="{{ .prReviews | default 0 }}"
+              data-lang="{{ .primaryLanguage | default "" }}"
+              data-repo-name="{{ .repoName }}"
+              data-license="{{ .licenseName | default "" }}"
+              data-stars="{{ .stargazerCount | default 0 }}"
+              data-commits="{{ .commits | default 0 }}"
+              data-prs="{{ .pullRequests | default 0 }}"
+              data-issues="{{ .issues | default 0 }}"
+              data-pr-comments="{{ .prComments | default 0 }}"
+              data-issue-comments="{{ .issueComments | default 0 }}"
+              data-contributors="{{ .contributors | default 0 }}"
+            >
               <td>
                 <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="maakaf-community__user-name">
                   <strong>{{ .repoName }}</strong>
@@ -129,29 +174,36 @@
       </table>
     </div>
 
-    <div class="maakaf-table-load-more" id="repoLeaderboardLoadMoreWrap" hidden>
-      <button type="button" class="maakaf-table-load-more__btn" id="repoLeaderboardLoadMore">טען עוד</button>
-    </div>
+    <nav
+      class="maakaf-table-pagination"
+      id="repoLeaderboardPagination"
+      aria-label="{{ if $isHe }}עימוד טבלת הפרויקטים{{ else }}Repository table pagination{{ end }}"
+      hidden
+    ></nav>
   </div>
 </section>
 
+<script src="{{ "js/maakaf-table-pagination.js" | relURL }}"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const INITIAL_SIZE = 5;
+    const PAGE_SIZE = 5;
     const tbody = document.querySelector('#repoLeaderboardTable tbody');
     const allRows = Array.from(document.querySelectorAll('.repo-leaderboard-row'));
     let rows = allRows.slice();
     const status = document.getElementById('repoLeaderboardStatus');
-    const loadMoreWrap = document.getElementById('repoLeaderboardLoadMoreWrap');
-    const loadMoreBtn = document.getElementById('repoLeaderboardLoadMore');
+    const paginationEl = document.getElementById('repoLeaderboardPagination');
     const sortableHeaders = document.querySelectorAll('#repoLeaderboardTable .sortable');
     const langFilter = document.getElementById('repoLangFilter');
     if (!allRows.length || !status || !tbody) return;
+
+    let currentPage = 1;
 
     const labels = {
       showing: status.dataset.labelShowing || 'Showing',
       of: status.dataset.labelOf || 'of',
       repos: status.dataset.labelRepos || 'repos',
+      prev: status.dataset.labelPrev || 'Prev',
+      next: status.dataset.labelNext || 'Next',
     };
 
     if (langFilter) {
@@ -164,71 +216,127 @@
       }
     }
 
-    let expanded = false;
     let sortColumn = null;
-    let sortDirection = 'desc';
+    let sortDirection = 'asc';
+
+    const NUMERIC_SORT_ATTR = {
+      2: 'stars',
+      4: 'commits',
+      5: 'prs',
+      6: 'issues',
+      7: 'prComments',
+      8: 'issueComments',
+      9: 'contributors',
+    };
+
+    const TEXT_SORT_ATTR = {
+      0: 'repoName',
+      1: 'lang',
+      3: 'license',
+    };
 
     function totalActivity(row) {
-      const visible = [4, 5, 6, 7, 8].reduce((s, idx) => s + (parseInt(row.cells[idx].textContent.trim(), 10) || 0), 0);
-      return visible + (parseInt(row.dataset.prReviews, 10) || 0);
+      return (
+        (parseInt(row.dataset.commits, 10) || 0) +
+        (parseInt(row.dataset.prs, 10) || 0) +
+        (parseInt(row.dataset.issues, 10) || 0) +
+        (parseInt(row.dataset.prComments, 10) || 0) +
+        (parseInt(row.dataset.issueComments, 10) || 0) +
+        (parseInt(row.dataset.prReviews, 10) || 0)
+      );
     }
 
-    function cellValue(row, column, type) {
-      const td = row.cells[column];
-      if (type === 'number') {
-        const n = parseInt(td.textContent.replace(/[^\d-]/g, ''), 10);
-        return Number.isNaN(n) ? 0 : n;
-      }
-      const strong = td.querySelector('strong');
-      return (strong ? strong.textContent : td.textContent).trim().toLowerCase();
+    function numericSortValue(row, column) {
+      const attr = NUMERIC_SORT_ATTR[column];
+      if (!attr) return 0;
+      return parseInt(row.dataset[attr], 10) || 0;
+    }
+
+    function textSortValue(row, column) {
+      const attr = TEXT_SORT_ATTR[column];
+      if (!attr) return '';
+      return (row.dataset[attr] || '').toLowerCase();
+    }
+
+    function setSortState(activeHeader, direction) {
+      sortableHeaders.forEach((h) => {
+        h.classList.remove('sort-asc', 'sort-desc');
+        h.setAttribute('aria-sort', 'none');
+      });
+      activeHeader.classList.add(direction === 'asc' ? 'sort-asc' : 'sort-desc');
+      activeHeader.setAttribute('aria-sort', direction === 'asc' ? 'ascending' : 'descending');
     }
 
     function applySort() {
       if (sortColumn === null) return;
-      const type = sortableHeaders[sortColumn].getAttribute('data-repo-type');
+      const header = document.querySelector('#repoLeaderboardTable .sortable[data-repo-col="' + sortColumn + '"]');
+      const type = header?.dataset.repoType || 'number';
       rows.sort((a, b) => {
-        const vA = cellValue(a, sortColumn, type);
-        const vB = cellValue(b, sortColumn, type);
         let cmp;
-        if (type === 'text') cmp = String(vA).localeCompare(String(vB));
-        else cmp = vA - vB;
-        if (cmp === 0) cmp = totalActivity(b) - totalActivity(a);
-        return sortDirection === 'desc' ? -cmp : cmp;
+        if (type === 'text') {
+          cmp = textSortValue(a, sortColumn).localeCompare(textSortValue(b, sortColumn));
+        } else {
+          cmp = numericSortValue(a, sortColumn) - numericSortValue(b, sortColumn);
+          if (cmp === 0) cmp = totalActivity(b) - totalActivity(a);
+        }
+        return sortDirection === 'asc' ? cmp : -cmp;
       });
       tbody.innerHTML = '';
       rows.forEach((r) => tbody.appendChild(r));
     }
 
+    function handleSort(header) {
+      const col = parseInt(header.dataset.repoCol, 10);
+      if (sortColumn === col) {
+        sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+      } else {
+        sortColumn = col;
+        sortDirection = 'asc';
+        currentPage = 1;
+      }
+      setSortState(header, sortDirection);
+      applySort();
+      render();
+    }
+
     function render() {
+      const totalPages = Math.max(1, Math.ceil(rows.length / PAGE_SIZE));
+      if (currentPage > totalPages) currentPage = totalPages;
+
+      const start = (currentPage - 1) * PAGE_SIZE;
+      const end = start + PAGE_SIZE;
+
       rows.forEach((r, i) => {
-        r.style.display = expanded || i < INITIAL_SIZE ? '' : 'none';
+        r.style.display = i >= start && i < end ? '' : 'none';
       });
-      const shown = expanded ? rows.length : Math.min(INITIAL_SIZE, rows.length);
-      status.textContent = labels.showing + ' ' + (shown > 0 ? '1–' + shown : '0') + ' ' + labels.of + ' ' + rows.length + ' ' + labels.repos + '.';
-      if (loadMoreWrap) {
-        loadMoreWrap.hidden = expanded || rows.length <= INITIAL_SIZE;
+
+      const shownStart = rows.length ? start + 1 : 0;
+      const shownEnd = Math.min(end, rows.length);
+      status.textContent = labels.showing + ' ' + (shownStart > 0 ? shownStart + '–' + shownEnd : '0') + ' ' + labels.of + ' ' + rows.length + ' ' + labels.repos + '.';
+
+      if (paginationEl && window.MaakafTablePagination) {
+        MaakafTablePagination.render(paginationEl, {
+          currentPage,
+          totalPages,
+          onPageChange(page) {
+            currentPage = page;
+            render();
+          },
+          labels: {
+            prev: '« ' + labels.prev,
+            next: labels.next + ' »',
+          },
+        });
       }
     }
 
-    if (loadMoreBtn) {
-      loadMoreBtn.addEventListener('click', function () {
-        expanded = true;
-        render();
-      });
-    }
-
-    sortableHeaders.forEach((header, idx) => {
-      header.addEventListener('click', function () {
-        if (sortColumn === idx) {
-          sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
-        } else {
-          sortColumn = idx;
-          sortDirection = header.getAttribute('data-repo-type') === 'number' ? 'desc' : 'asc';
+    sortableHeaders.forEach((header) => {
+      header.addEventListener('click', () => handleSort(header));
+      header.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          handleSort(header);
         }
-        sortableHeaders.forEach((h) => h.classList.remove('sort-asc', 'sort-desc'));
-        header.classList.add(sortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
-        applySort();
-        render();
       });
     });
 
@@ -239,7 +347,7 @@
         tbody.innerHTML = '';
         rows.forEach((r) => tbody.appendChild(r));
         applySort();
-        expanded = false;
+        currentPage = 1;
         render();
       });
     }

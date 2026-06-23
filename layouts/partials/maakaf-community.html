@@ -69,20 +69,71 @@
       <table class="maakaf-community__table" id="maakafCommunityTable">
         <thead>
           <tr>
-            <th scope="col">User</th>
-            <th scope="col">Commits</th>
-            <th scope="col">PRs</th>
-            <th scope="col">Issues</th>
-            <th scope="col">PR Comments</th>
-            <th scope="col">Issue Comments</th>
+            <th scope="col" class="sortable" data-community-col="0" data-community-type="text" tabindex="0" role="columnheader" aria-sort="none">
+              User
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
+            </th>
+            <th scope="col" class="sortable" data-community-col="1" data-community-type="number" tabindex="0" role="columnheader" aria-sort="none">
+              Commits
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
+            </th>
+            <th scope="col" class="sortable" data-community-col="2" data-community-type="number" tabindex="0" role="columnheader" aria-sort="none">
+              PRs
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
+            </th>
+            <th scope="col" class="sortable" data-community-col="3" data-community-type="number" tabindex="0" role="columnheader" aria-sort="none">
+              Issues
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
+            </th>
+            <th scope="col" class="sortable" data-community-col="4" data-community-type="number" tabindex="0" role="columnheader" aria-sort="none">
+              PR Comments
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
+            </th>
+            <th scope="col" class="sortable" data-community-col="5" data-community-type="number" tabindex="0" role="columnheader" aria-sort="none">
+              Issue Comments
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
+            </th>
             <th scope="col">Activity</th>
-            <th scope="col">Projects</th>
+            <th scope="col" class="sortable" data-community-col="7" data-community-type="number" tabindex="0" role="columnheader" aria-sort="none">
+              Projects
+              <span class="sort-indicator" aria-hidden="true">
+                <span class="sort-indicator__arrow sort-indicator__arrow--up"></span>
+                <span class="sort-indicator__arrow sort-indicator__arrow--down"></span>
+              </span>
+            </th>
           </tr>
         </thead>
         <tbody>
           {{ range $i, $member := $sorted }}
             {{ if or (not (gt $limit 0)) (lt $i $limit) }}
-            <tr data-search="{{ printf "%s %s %s" ($member.user.displayName | default $member.user.username) $member.user.username ($member.user.bio | default "") | plainify | lower }}">
+            <tr
+              data-search="{{ printf "%s %s %s" ($member.user.displayName | default $member.user.username) $member.user.username ($member.user.bio | default "") | plainify | lower }}"
+              data-user="{{ ($member.user.displayName | default $member.user.username) | plainify }}"
+              data-commits="{{ $member.summary.totalCommits }}"
+              data-prs="{{ $member.summary.totalPRs }}"
+              data-issues="{{ $member.summary.totalIssues }}"
+              data-pr-comments="{{ $member.summary.totalPRComments }}"
+              data-issue-comments="{{ $member.summary.totalIssueComments }}"
+              data-projects="{{ len $member.repos }}"
+            >
               <td>
                 <div class="maakaf-community__user">
                   <img
@@ -154,9 +205,12 @@
       </table>
     </div>
 
-    <div class="maakaf-table-load-more" id="maakafCommunityLoadMoreWrap" hidden>
-      <button type="button" class="maakaf-table-load-more__btn" id="maakafCommunityLoadMore">טען עוד</button>
-    </div>
+    <nav
+      class="maakaf-table-pagination"
+      id="maakafCommunityPagination"
+      aria-label="{{ if $isHe }}עימוד טבלת חברי הקהילה{{ else }}Community members table pagination{{ end }}"
+      hidden
+    ></nav>
 
     {{ with $globalSummary }}
     <details class="maakaf-community__summary">
@@ -252,66 +306,141 @@
 </div>
 
 <script id="maakafCommunityUsersData" type="application/json">{{ $users | jsonify | safeJS }}</script>
+<script src="{{ "js/maakaf-table-pagination.js" | relURL }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const INITIAL_ROWS = 5;
+    const PAGE_SIZE = 5;
     const input = document.getElementById('maakafCommunitySearch');
     const table = document.getElementById('maakafCommunityTable');
-    const loadMoreWrap = document.getElementById('maakafCommunityLoadMoreWrap');
-    const loadMoreBtn = document.getElementById('maakafCommunityLoadMore');
-    let communityExpanded = false;
+    const paginationEl = document.getElementById('maakafCommunityPagination');
+    const tbody = table?.querySelector('tbody');
+    const sortableHeaders = table ? table.querySelectorAll('.sortable') : [];
+    let currentPage = 1;
+    let sortColumn = null;
+    let sortDirection = 'asc';
+
+    const NUMERIC_SORT_ATTR = {
+      1: 'commits',
+      2: 'prs',
+      3: 'issues',
+      4: 'prComments',
+      5: 'issueComments',
+      7: 'projects',
+    };
+
+    const TEXT_SORT_ATTR = {
+      0: 'user',
+    };
+
+    function numericSortValue(row, col) {
+      const attr = NUMERIC_SORT_ATTR[col];
+      if (!attr) return 0;
+      return parseInt(row.dataset[attr], 10) || 0;
+    }
+
+    function textSortValue(row, col) {
+      const attr = TEXT_SORT_ATTR[col];
+      if (!attr) return '';
+      return (row.dataset[attr] || '').toLowerCase();
+    }
+
+    function applyCommunitySort() {
+      if (!tbody || sortColumn === null) return;
+      const header = table.querySelector('.sortable[data-community-col="' + sortColumn + '"]');
+      const type = header?.dataset.communityType || 'number';
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+      rows.sort((a, b) => {
+        let cmp;
+        if (type === 'text') {
+          cmp = textSortValue(a, sortColumn).localeCompare(textSortValue(b, sortColumn));
+        } else {
+          cmp = numericSortValue(a, sortColumn) - numericSortValue(b, sortColumn);
+        }
+        return sortDirection === 'asc' ? cmp : -cmp;
+      });
+      rows.forEach((row) => tbody.appendChild(row));
+    }
+
+    function setSortState(header, direction) {
+      sortableHeaders.forEach((h) => {
+        h.classList.remove('sort-asc', 'sort-desc');
+        h.setAttribute('aria-sort', 'none');
+      });
+      header.classList.add(direction === 'asc' ? 'sort-asc' : 'sort-desc');
+      header.setAttribute('aria-sort', direction === 'asc' ? 'ascending' : 'descending');
+    }
+
+    function handleSort(header) {
+      const col = parseInt(header.dataset.communityCol, 10);
+      if (sortColumn === col) {
+        sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+      } else {
+        sortColumn = col;
+        sortDirection = 'asc';
+      }
+      setSortState(header, sortDirection);
+      applyCommunitySort();
+      currentPage = 1;
+      applyCommunityRowVisibility();
+    }
+
+    sortableHeaders.forEach((header) => {
+      header.addEventListener('click', () => handleSort(header));
+      header.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          handleSort(header);
+        }
+      });
+    });
+
+    function getVisibleRows() {
+      if (!table) return [];
+      return Array.from(table.querySelectorAll('tbody tr')).filter((row) => !row.hidden);
+    }
 
     function applyCommunityRowVisibility() {
       if (!table) return;
-      const rows = Array.from(table.querySelectorAll('tbody tr'));
-      if (communityExpanded) {
-        rows.forEach((row) => row.classList.remove('maakaf-table-row--collapsed'));
-        if (loadMoreWrap) loadMoreWrap.hidden = true;
-        return;
-      }
-      let visibleCount = 0;
-      rows.forEach((row) => {
-        if (row.hidden) {
-          row.classList.remove('maakaf-table-row--collapsed');
-          return;
-        }
-        if (visibleCount >= INITIAL_ROWS) {
-          row.classList.add('maakaf-table-row--collapsed');
-        } else {
-          row.classList.remove('maakaf-table-row--collapsed');
-          visibleCount++;
-        }
-      });
-      if (loadMoreWrap) {
-        loadMoreWrap.hidden = rows.length <= INITIAL_ROWS;
-      }
-    }
+      const rows = getVisibleRows();
+      const totalPages = Math.max(1, Math.ceil(rows.length / PAGE_SIZE));
+      if (currentPage > totalPages) currentPage = totalPages;
 
-    if (loadMoreBtn) {
-      loadMoreBtn.addEventListener('click', function () {
-        communityExpanded = true;
-        applyCommunityRowVisibility();
+      rows.forEach((row, index) => {
+        const page = Math.floor(index / PAGE_SIZE) + 1;
+        row.classList.toggle('maakaf-table-row--collapsed', page !== currentPage);
       });
+
+      table.querySelectorAll('tbody tr[hidden]').forEach((row) => {
+        row.classList.remove('maakaf-table-row--collapsed');
+      });
+
+      if (paginationEl && window.MaakafTablePagination) {
+        MaakafTablePagination.render(paginationEl, {
+          currentPage,
+          totalPages,
+          onPageChange(page) {
+            currentPage = page;
+            applyCommunityRowVisibility();
+          },
+          labels: {
+            prev: '« {{ if $isHe }}הקודם{{ else }}Prev{{ end }}',
+            next: '{{ if $isHe }}הבא{{ else }}Next{{ end }} »',
+          },
+        });
+      }
     }
 
     if (input && table) {
       input.addEventListener('input', function () {
         const query = input.value.trim().toLowerCase();
-        const searching = query !== '';
         table.querySelectorAll('tbody tr').forEach(function (row) {
           const haystack = row.getAttribute('data-search') || '';
-          row.hidden = searching && !haystack.includes(query);
+          row.hidden = query !== '' && !haystack.includes(query);
         });
-        if (searching) {
-          table.querySelectorAll('tbody tr').forEach(function (row) {
-            row.classList.remove('maakaf-table-row--collapsed');
-          });
-          if (loadMoreWrap) loadMoreWrap.hidden = true;
-        } else {
-          applyCommunityRowVisibility();
-        }
+        currentPage = 1;
+        applyCommunityRowVisibility();
       });
     }
 
