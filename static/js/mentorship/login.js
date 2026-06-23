@@ -51,7 +51,6 @@ function showForgotForm() {
   forgotSent.classList.add('d-none');
   forgotWrapper.classList.remove('d-none');
   forgotForm.reset();
-  // Pre-fill email from login form if available
   const loginEmail = form.email.value.trim();
   if (loginEmail) document.getElementById('forgot-email-input').value = loginEmail;
   document.getElementById('forgot-email-input').focus();
@@ -60,8 +59,10 @@ function showForgotForm() {
 function showLoginForm() {
   forgotWrapper.classList.add('d-none');
   forgotSent.classList.add('d-none');
+  verifyWrapper.classList.add('d-none');
   wrapper.classList.remove('d-none');
   clearInterval(resendTimer);
+  stopVerifyPolling();
 }
 
 function showConfirmationScreen(email) {
@@ -128,13 +129,65 @@ forgotForm.addEventListener('submit', async (e) => {
   }
 });
 
-let verifyResendTimer = null;
+// ─── Email verification polling ───────────────────────────────────────────────
 
-function showVerifyEmailScreen(email) {
+let verifyResendTimer = null;
+let verifyPollInterval = null;
+let verifyOnVisible = null;
+
+function stopVerifyPolling() {
+  clearInterval(verifyPollInterval);
+  verifyPollInterval = null;
+  if (verifyOnVisible) {
+    document.removeEventListener('visibilitychange', verifyOnVisible);
+    verifyOnVisible = null;
+  }
+}
+
+function startVerifyPolling(uid, credentials) {
+  async function check() {
+    const { ok, data } = await apiFetch(`/auth/verify-status/${uid}`)
+      .catch(() => ({ ok: false, data: {} }));
+    if (!ok || !data.verified) return;
+
+    stopVerifyPolling();
+
+    // Retry once on EMAIL_NOT_VERIFIED to handle Firebase propagation delay
+    let loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
+    if (!loginResult.ok && loginResult.data?.error?.code === 'EMAIL_NOT_VERIFIED') {
+      await new Promise(r => setTimeout(r, 2000));
+      loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
+    }
+
+    credentials.email = '';
+    credentials.password = '';
+
+    if (loginResult.ok) {
+      saveSession(loginResult.data);
+      const dest = loginResult.data.role === 'mentor'
+        ? '/he/mentorship/mentor-dashboard/'
+        : '/he/mentorship/mentee-dashboard/';
+      showToast('האימייל אומת בהצלחה!', () => { window.location.href = dest; });
+    }
+  }
+
+  verifyPollInterval = setInterval(check, 3000);
+
+  verifyOnVisible = () => {
+    if (document.visibilityState === 'visible') check();
+  };
+  document.addEventListener('visibilitychange', verifyOnVisible);
+}
+
+function showVerifyEmailScreen(email, credentials, uid) {
   wrapper.classList.add('d-none');
   verifyEmailDisplay.textContent = email;
   verifyWrapper.classList.remove('d-none');
   startVerifyResendCountdown();
+
+  if (uid && credentials) {
+    startVerifyPolling(uid, credentials);
+  }
 }
 
 function startVerifyResendCountdown() {
@@ -168,8 +221,11 @@ document.getElementById('back-to-login-from-verify').addEventListener('click', (
   e.preventDefault();
   verifyWrapper.classList.add('d-none');
   clearInterval(verifyResendTimer);
+  stopVerifyPolling();
   wrapper.classList.remove('d-none');
 });
+
+// ─── Login ────────────────────────────────────────────────────────────────────
 
 async function handleLoginSubmit(event) {
   event.preventDefault();
@@ -186,7 +242,7 @@ async function handleLoginSubmit(event) {
 
     if (!ok) {
       if (data.error?.code === 'EMAIL_NOT_VERIFIED') {
-        showVerifyEmailScreen(email);
+        showVerifyEmailScreen(email, { email, password }, data.uid);
       } else {
         showFormMessage(messageEl, describeAuthError(data.error), true);
       }

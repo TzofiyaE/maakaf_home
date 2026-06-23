@@ -2,28 +2,97 @@ import { apiFetch, saveSession, getSession } from './api.js';
 import { describeAuthError, showFormMessage } from './errors.js';
 import { showToast, showBlockingMessage } from './toast.js';
 
+const PENDING_KEY = 'mentorship.pendingVerification';
+
 function startVerificationPolling(uid, credentials, dismissWaiting, dashboardUrl) {
   let attempts = 0;
-  const interval = setInterval(async () => {
-    if (++attempts > 100) { clearInterval(interval); return; }
-    const { ok, data } = await apiFetch(`/auth/verify-status/${uid}`).catch(() => ({ ok: false, data: {} }));
+
+  async function check() {
+    if (++attempts > 100) {
+      clearInterval(interval);
+      document.removeEventListener('visibilitychange', onVisible);
+      return;
+    }
+
+    const { ok, data } = await apiFetch(`/auth/verify-status/${uid}`)
+      .catch(() => ({ ok: false, data: {} }));
     if (!ok || !data.verified) return;
 
     clearInterval(interval);
-    const loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
-    credentials.email = '';
-    credentials.password = '';
+    document.removeEventListener('visibilitychange', onVisible);
+    sessionStorage.removeItem(PENDING_KEY);
 
-    dismissWaiting();
-
-    if (loginResult.ok) {
-      saveSession(loginResult.data);
-      showToast('האימייל אומת בהצלחה!', () => { window.location.href = dashboardUrl; });
-    } else {
-      showToast('האימייל אומת! ניתן להתחבר כעת.', () => {});
+    // No credentials means the page reloaded and we lost them — redirect to login
+    if (!credentials) {
+      dismissWaiting();
+      showToast('האימייל אומת בהצלחה! ניתן להתחבר כעת.', () => {
+        window.location.href = '/he/mentorship/login/';
+      });
+      return;
     }
-  }, 3000);
+
+    // With credentials: attempt auto-login, retry once if Firebase hasn't
+    // fully propagated the emailVerified state yet
+    try {
+      let loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
+      if (!loginResult.ok && loginResult.data?.error?.code === 'EMAIL_NOT_VERIFIED') {
+        await new Promise(r => setTimeout(r, 2000));
+        loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
+      }
+
+      credentials.email = '';
+      credentials.password = '';
+      dismissWaiting();
+
+      if (loginResult.ok) {
+        saveSession(loginResult.data);
+        showToast('האימייל אומת בהצלחה!', () => { window.location.href = dashboardUrl; });
+      } else {
+        showToast('האימייל אומת! ניתן להתחבר כעת.', () => {
+          window.location.href = '/he/mentorship/login/';
+        });
+      }
+    } catch {
+      credentials.email = '';
+      credentials.password = '';
+      dismissWaiting();
+      showToast('האימייל אומת! ניתן להתחבר כעת.', () => {
+        window.location.href = '/he/mentorship/login/';
+      });
+    }
+  }
+
+  const interval = setInterval(check, 3000);
+
+  // Trigger an immediate check when the user returns to this tab
+  // (e.g. after clicking the email link in a new tab)
+  function onVisible() {
+    if (document.visibilityState === 'visible') check();
+  }
+  document.addEventListener('visibilitychange', onVisible);
 }
+
+// On page load: recover from a same-tab navigation (user clicked the email link
+// in this tab, page reloaded, sessionStorage still holds the pending uid)
+(async function recoverPendingVerification() {
+  const uid = sessionStorage.getItem(PENDING_KEY);
+  if (!uid) return;
+
+  const { ok, data } = await apiFetch(`/auth/verify-status/${uid}`)
+    .catch(() => ({ ok: false, data: {} }));
+
+  if (ok && data.verified) {
+    sessionStorage.removeItem(PENDING_KEY);
+    showToast('האימייל אומת בהצלחה! ניתן להתחבר כעת.', () => {
+      window.location.href = '/he/mentorship/login/';
+    });
+    return;
+  }
+
+  // Not yet verified — restore the blocking overlay and resume polling
+  const dismiss = showBlockingMessage('ממתינים לאימות כתובת האימייל — אנא לחץ/י על הקישור שנשלח למייל שלך.');
+  startVerificationPolling(uid, null, dismiss, null);
+})();
 
 // Already logged in — redirect immediately
 const existing = getSession();
@@ -86,6 +155,7 @@ async function handleMenteeSubmit(event) {
         window.location.href = '/he/mentorship/mentee-dashboard/';
       });
     } else {
+      sessionStorage.setItem(PENDING_KEY, data.uid);
       const credentials = { email, password };
       form.reset();
       const dismissWaiting = showBlockingMessage(`נרשמת בהצלחה, ${fullName}! נשלח אליך אימייל אימות — אנא לחץ/י על הקישור שבמייל.`);
@@ -159,6 +229,7 @@ async function handleMentorSubmit(event) {
         window.location.href = '/he/mentorship/mentor-dashboard/';
       });
     } else {
+      sessionStorage.setItem(PENDING_KEY, data.uid);
       const credentials = { email, password };
       form.reset();
       const dismissWaiting = showBlockingMessage(`נרשמת בהצלחה, ${fullName}! נשלח אליך אימייל אימות — אנא לחץ/י על הקישור שבמייל.`);
