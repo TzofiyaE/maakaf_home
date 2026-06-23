@@ -23,11 +23,20 @@ const AUTH_ERROR_MESSAGES = {
   MISSING_EXPERTISE: 'יש למלא תחומי התמחות (שדה חובה).',
   MISSING_INTERESTS: 'יש למלא תחומי עניין (שדה חובה).',
 
+  // email verification
+  EMAIL_NOT_VERIFIED: 'יש לאמת את כתובת האימייל לפני ההתחברות. בדוק/י את תיבת הדואר שלך.',
+
+  // general API errors
+  NOT_FOUND: 'הפריט המבוקש לא נמצא.',
+  FORBIDDEN: 'אין לך הרשאה לבצע פעולה זו.',
+  INTERNAL_ERROR: 'אירעה שגיאה בשרת. אנא נסה/י שוב מאוחר יותר.',
+
   // admin-specific
   ADMIN_PENDING_APPROVAL: 'החשבון ממתין לאישור. פנה/י למנהל המערכת.',
 
-  // network failure
+  // network / timeout
   NETWORK_ERROR: 'לא ניתן להתחבר לשרת. ודא/י שהשרת פועל ונסה/י שוב.',
+  TIMEOUT: 'הבקשה ארכה יותר מדי זמן. אנא נסה/י שוב.',
 };
 
 export function getErrorMessage(code) {
@@ -39,7 +48,21 @@ export function describeAuthError(err) {
 }
 
 export function showFormMessage(el, text, isError) {
-  el.textContent = text;
-  el.classList.remove('d-none', 'alert-success', 'alert-danger');
-  el.classList.add(isError ? 'alert-danger' : 'alert-success');
+  el.classList.remove('d-none', 'alert-success', 'alert-danger', 'd-flex', 'align-items-center', 'gap-2');
+  el.classList.add('d-flex', 'align-items-center', 'gap-2', isError ? 'alert-danger' : 'alert-success');
+
+  const span = document.createElement('span');
+  span.className = 'flex-grow-1';
+  span.textContent = text;
+
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'btn-close flex-shrink-0';
+  btn.setAttribute('aria-label', 'סגור');
+  btn.addEventListener('click', () => {
+    el.classList.add('d-none');
+    el.classList.remove('d-flex', 'align-items-center', 'gap-2');
+  });
+
+  el.replaceChildren(span, btn);
 }

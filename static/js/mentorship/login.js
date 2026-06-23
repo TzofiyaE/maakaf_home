@@ -1,4 +1,4 @@
-import { apiFetch, saveSession, getSession } from './api.js';
+import { apiFetch, saveSession, getSession, dashboardUrl } from './api.js';
 import { describeAuthError, showFormMessage } from './errors.js';
 import { showToast } from './toast.js';
 
@@ -9,14 +9,16 @@ const messageEl = document.getElementById('login-message');
 const forgotWrapper = document.getElementById('forgot-password-form-wrapper');
 const forgotForm = document.getElementById('forgot-password-form');
 const forgotMessageEl = document.getElementById('forgot-password-message');
+const verifyWrapper = document.getElementById('verify-email-wrapper');
+const verifyEmailDisplay = document.getElementById('verify-email-display');
+const verifyResendBtn = document.getElementById('verify-resend-btn');
+const verifyResendCountdown = document.getElementById('verify-resend-countdown');
 
 // Already logged in — redirect immediately
 const existing = getSession();
 if (existing) {
   choice.hidden = true;
-  window.location.href = existing.role === 'mentor'
-    ? '/he/mentorship/mentor-dashboard/'
-    : '/he/mentorship/mentee-dashboard/';
+  window.location.href = dashboardUrl(existing.role);
 }
 
 function showForm() {
@@ -47,7 +49,6 @@ function showForgotForm() {
   forgotSent.classList.add('d-none');
   forgotWrapper.classList.remove('d-none');
   forgotForm.reset();
-  // Pre-fill email from login form if available
   const loginEmail = form.email.value.trim();
   if (loginEmail) document.getElementById('forgot-email-input').value = loginEmail;
   document.getElementById('forgot-email-input').focus();
@@ -56,8 +57,10 @@ function showForgotForm() {
 function showLoginForm() {
   forgotWrapper.classList.add('d-none');
   forgotSent.classList.add('d-none');
+  verifyWrapper.classList.add('d-none');
   wrapper.classList.remove('d-none');
   clearInterval(resendTimer);
+  stopVerifyPolling();
 }
 
 function showConfirmationScreen(email) {
@@ -124,6 +127,121 @@ forgotForm.addEventListener('submit', async (e) => {
   }
 });
 
+// ─── Email verification polling ───────────────────────────────────────────────
+
+let verifyResendTimer = null;
+let verifyPollInterval = null;
+let verifyOnVisible = null;
+
+function stopVerifyPolling() {
+  clearInterval(verifyPollInterval);
+  verifyPollInterval = null;
+  if (verifyOnVisible) {
+    document.removeEventListener('visibilitychange', verifyOnVisible);
+    verifyOnVisible = null;
+  }
+}
+
+function startVerifyPolling(uid, credentials) {
+  let attempts = 0;
+  let inProgress = false;
+
+  async function check() {
+    if (inProgress) return;
+    inProgress = true;
+
+    if (++attempts > 100) {
+      stopVerifyPolling();
+      inProgress = false;
+      return;
+    }
+
+    const { ok, data } = await apiFetch(`/auth/verify-status/${uid}`)
+      .catch(() => ({ ok: false, data: {} }));
+
+    if (!ok || !data.verified) {
+      inProgress = false;
+      return;
+    }
+
+    stopVerifyPolling();
+
+    let loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
+    if (!loginResult.ok && loginResult.data?.error?.code === 'EMAIL_NOT_VERIFIED') {
+      await new Promise(r => setTimeout(r, 2000));
+      loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
+    }
+
+    credentials.email = '';
+    credentials.password = '';
+
+    if (loginResult.ok) {
+      saveSession(loginResult.data);
+      const dest = dashboardUrl(loginResult.data.role);
+      showToast('האימייל אומת בהצלחה!', () => { window.location.href = dest; });
+    } else {
+      showToast('האימייל אומת! אנא נסה/י להתחבר שוב.', () => {
+        window.location.href = '/he/mentorship/login/';
+      });
+    }
+  }
+
+  verifyPollInterval = setInterval(check, 3000);
+
+  verifyOnVisible = () => {
+    if (document.visibilityState === 'visible') check();
+  };
+  document.addEventListener('visibilitychange', verifyOnVisible);
+}
+
+function showVerifyEmailScreen(email, credentials, uid) {
+  wrapper.classList.add('d-none');
+  verifyEmailDisplay.textContent = email;
+  verifyWrapper.classList.remove('d-none');
+  startVerifyResendCountdown();
+
+  if (uid && credentials) {
+    startVerifyPolling(uid, credentials);
+  }
+}
+
+function startVerifyResendCountdown() {
+  let seconds = 30;
+  verifyResendBtn.disabled = true;
+  verifyResendCountdown.textContent = `(${seconds}s)`;
+  verifyResendCountdown.classList.remove('d-none');
+  clearInterval(verifyResendTimer);
+  verifyResendTimer = setInterval(() => {
+    seconds--;
+    verifyResendCountdown.textContent = `(${seconds}s)`;
+    if (seconds <= 0) {
+      clearInterval(verifyResendTimer);
+      verifyResendBtn.disabled = false;
+      verifyResendCountdown.classList.add('d-none');
+    }
+  }, 1000);
+}
+
+verifyResendBtn.addEventListener('click', async () => {
+  const email = verifyEmailDisplay.textContent;
+  verifyResendBtn.disabled = true;
+  try {
+    await apiFetch('/auth/resend-verification', { method: 'POST', body: { email } });
+  } finally {
+    startVerifyResendCountdown();
+  }
+});
+
+document.getElementById('back-to-login-from-verify').addEventListener('click', (e) => {
+  e.preventDefault();
+  verifyWrapper.classList.add('d-none');
+  clearInterval(verifyResendTimer);
+  stopVerifyPolling();
+  wrapper.classList.remove('d-none');
+});
+
+// ─── Login ────────────────────────────────────────────────────────────────────
+
 async function handleLoginSubmit(event) {
   event.preventDefault();
   const submitBtn = form.querySelector('button[type="submit"]');
@@ -138,15 +256,17 @@ async function handleLoginSubmit(event) {
     });
 
     if (!ok) {
-      showFormMessage(messageEl, describeAuthError(data.error), true);
+      if (data.error?.code === 'EMAIL_NOT_VERIFIED') {
+        showVerifyEmailScreen(email, { email, password }, data.uid);
+      } else {
+        showFormMessage(messageEl, describeAuthError(data.error), true);
+      }
       return;
     }
 
     saveSession(data);
     form.hidden = true;
-    const dest = data.role === 'mentor'
-      ? '/he/mentorship/mentor-dashboard/'
-      : '/he/mentorship/mentee-dashboard/';
+    const dest = dashboardUrl(data.role);
     showToast(`התחברת בהצלחה כ-${data.fullName ?? data.email}`, () => {
       window.location.href = dest;
     });
