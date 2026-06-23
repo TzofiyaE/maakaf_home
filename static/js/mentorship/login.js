@@ -145,14 +145,29 @@ function stopVerifyPolling() {
 }
 
 function startVerifyPolling(uid, credentials) {
+  let attempts = 0;
+  let inProgress = false;
+
   async function check() {
+    if (inProgress) return;
+    inProgress = true;
+
+    if (++attempts > 100) {
+      stopVerifyPolling();
+      inProgress = false;
+      return;
+    }
+
     const { ok, data } = await apiFetch(`/auth/verify-status/${uid}`)
       .catch(() => ({ ok: false, data: {} }));
-    if (!ok || !data.verified) return;
+
+    if (!ok || !data.verified) {
+      inProgress = false;
+      return;
+    }
 
     stopVerifyPolling();
 
-    // Retry once on EMAIL_NOT_VERIFIED to handle Firebase propagation delay
     let loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
     if (!loginResult.ok && loginResult.data?.error?.code === 'EMAIL_NOT_VERIFIED') {
       await new Promise(r => setTimeout(r, 2000));
@@ -168,6 +183,10 @@ function startVerifyPolling(uid, credentials) {
         ? '/he/mentorship/mentor-dashboard/'
         : '/he/mentorship/mentee-dashboard/';
       showToast('האימייל אומת בהצלחה!', () => { window.location.href = dest; });
+    } else {
+      showToast('האימייל אומת! אנא נסה/י להתחבר שוב.', () => {
+        window.location.href = '/he/mentorship/login/';
+      });
     }
   }
 
