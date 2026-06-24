@@ -587,6 +587,205 @@ html[data-bs-theme="dark"] {
   }
 }
 
+/* Hide both Docsy sidebars on mentorship pages */
+body.no-sidebar .td-sidebar,
+body.no-sidebar .td-sidebar-toc {
+  display: none !important;
+}
+
+body.no-sidebar .td-main [role="main"] {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-inline-start: 0 !important;
+}
+
+body.no-sidebar .td-content > h1:first-child {
+  display: none;
+}
+
+body.no-sidebar .td-breadcrumbs {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 48px;
+
+  @media (max-width: 767.98px) {
+    padding: 0 16px;
+  }
+}
+
+body.no-sidebar .td-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px 64px;
+
+  @media (max-width: 767.98px) {
+    padding: 0 16px 48px;
+  }
+}
+
+/* ==========================================================================
+   Mentorship — shared components
+   ========================================================================== */
+
+/* Auth bar */
+.ms-auth-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 14px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #e6e6e6;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 14px;
+}
+
+.ms-auth-bar__greeting { color: #1a1a1a; }
+
+.ms-auth-bar__logout {
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  border-radius: 6px;
+  padding: 4px 14px;
+  font-size: 13px;
+  color: #404040;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+
+  &:hover { border-color: #2c57a5; color: #2c57a5; }
+}
+
+html[data-bs-theme="dark"] {
+  .ms-auth-bar { border-bottom-color: rgba(255, 255, 255, 0.1); }
+  .ms-auth-bar__greeting { color: #eff8ff; }
+  .ms-auth-bar__logout {
+    border-color: rgba(255, 255, 255, 0.15);
+    background: #1d2e4e;
+    color: #9dd0f3;
+    &:hover { border-color: #6eb6ec; color: #eff8ff; }
+  }
+}
+
+/* Page header (dashboards) */
+.ms-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.ms-page-header__title {
+  margin: 0;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+html[data-bs-theme="dark"] {
+  .ms-page-header { border-bottom-color: rgba(255, 255, 255, 0.1); }
+  .ms-page-header__title { color: #eff8ff; }
+}
+
+/* Avatar circle */
+.ms-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #2c57a5;
+  color: #fff;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.ms-avatar--lg {
+  width: 96px;
+  height: 96px;
+  font-size: 36px;
+}
+
+/* Role-choice cards (register page) */
+.ms-role-card {
+  cursor: pointer;
+  border: 2px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 28px 20px;
+  text-align: center;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+
+  &:hover {
+    border-color: #2c57a5;
+    box-shadow: 0 4px 16px rgba(44, 87, 165, 0.12);
+  }
+}
+
+.ms-role-card__icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.ms-role-card__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.ms-role-card__desc {
+  font-size: 13px;
+  color: #404040;
+  line-height: 1.55;
+  margin: 0;
+}
+
+html[data-bs-theme="dark"] {
+  .ms-role-card {
+    background: #1d2e4e;
+    border-color: rgba(255, 255, 255, 0.1);
+    &:hover { border-color: #6eb6ec; }
+  }
+  .ms-role-card__title { color: #eff8ff; }
+  .ms-role-card__desc { color: #9dd0f3; }
+}
+
+/* Mentor directory cards */
+.ms-mentor-card { border: 1px solid #e6e6e6 !important; }
+.ms-mentor-card:hover { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important; }
+
+/* Section dividers inside forms */
+.ms-form-section {
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 24px 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+html[data-bs-theme="dark"] .ms-form-section {
+  color: #9dd0f3;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
 /* RTL-specific adjustments */
 html[dir="rtl"] {
   .container,

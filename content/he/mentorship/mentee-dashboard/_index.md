@@ -10,20 +10,21 @@ weight: 50
 
 <div id="dash-content">
 
-<div class="mb-2" dir="rtl">
-  <a href="/he/mentorship/profile/" class="btn btn-outline-secondary btn-sm">צפיה בפרופיל שלך ועריכת הפרטים האישיים</a>
+<div class="ms-page-header" dir="rtl">
+  <h1 class="ms-page-header__title">הבקשות שלי</h1>
+  <div class="d-flex gap-2">
+    <a href="/he/mentorship/" class="btn btn-primary btn-sm">חיפוש מנטור</a>
+    <a href="/he/mentorship/profile/" class="btn btn-outline-secondary btn-sm">עריכת פרופיל</a>
+  </div>
 </div>
 
-<div class="mb-3" dir="rtl">
-  <span>הבקשות שלי:</span>
-</div>
+<div id="dash-cards" class="row gy-3"></div>
 
-<div id="dash-cards" class="row gy-3 mt-1"></div>
-
-<p id="dash-empty" hidden class="text-muted mt-3">
+<p id="dash-empty" hidden class="text-muted mt-4 text-center">
   עדיין לא שלחת בקשות מנטורינג. <a href="/he/mentorship/">חפש/י מנטור בספרייה</a>.
 </p>
 
 </div>
 
 <script type="module" src="/js/mentorship/dashboard.js"></script>
+</content>

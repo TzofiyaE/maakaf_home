@@ -6,22 +6,37 @@ linkTitle: "הרשמה"
 weight: 20
 ---
 
-
-<div id="register-choice" class="text-center my-4" dir="rtl">
-<p class="fs-5 mb-3">בחרו את סוג ההרשמה המתאים לכם:</p>
-<button type="button" class="btn btn-primary btn-lg me-2" id="choose-mentee">הרשמה כמנטי</button>
-<button type="button" class="btn btn-outline-primary btn-lg" id="choose-mentor">הרשמה כמנטור/ית</button>
+<div id="register-choice" dir="rtl">
+  <p class="text-muted mb-4 text-center">בחרו את סוג ההרשמה המתאים לכם:</p>
+  <div class="row g-3 mb-3">
+    <div class="col-md-6">
+      <div class="ms-role-card" id="choose-mentee" role="button" tabindex="0">
+        <span class="ms-role-card__icon">🎓</span>
+        <div class="ms-role-card__title">הרשמה כמנטי</div>
+        <p class="ms-role-card__desc">מחפשים מנטור שיעזור לכם להתפתח, לקבל כיוון ולהתחיל בקריירה בפיתוח.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="ms-role-card" id="choose-mentor" role="button" tabindex="0">
+        <span class="ms-role-card__icon">🧑‍💻</span>
+        <div class="ms-role-card__title">הרשמה כמנטור/ית</div>
+        <p class="ms-role-card__desc">יש לכם ניסיון בתעשייה ורוצים לתת לקהילה? פתחו את היומן שלכם לפניות.</p>
+      </div>
+    </div>
+  </div>
+  <p class="text-center text-muted small">כבר יש לכם חשבון? <a href="/he/mentorship/login/">כניסה למערכת</a></p>
 </div>
 
 <div id="mentee-form-wrapper" class="d-none" dir="rtl">
 <div class="row justify-content-center">
 <div class="col-md-7">
-<div class="card">
-<div class="card-body">
-<h3 class="card-title">הרשמה כמנטי</h3>
-<p class="text-muted small">שדות המסומנים ב-<span class="text-danger">*</span> הם שדות חובה.</p>
+<div class="card border-0 shadow-sm">
+<div class="card-body p-4">
+<h3 class="card-title mb-1">הרשמה כמנטי</h3>
+<p class="text-muted small mb-3">שדות המסומנים ב-<span class="text-danger">*</span> הם שדות חובה.</p>
 <div id="mentee-message" class="alert d-none" role="alert"></div>
 <form id="mentee-register-form">
+  <p class="ms-form-section">פרטי חשבון</p>
   <div class="mb-3">
     <label class="form-label">שם מלא <span class="text-danger">*</span></label>
     <input type="text" name="fullName" class="form-control" required>
@@ -34,6 +49,7 @@ weight: 20
     <label class="form-label">סיסמה <span class="text-danger">*</span></label>
     <input type="password" name="password" class="form-control" minlength="6" required>
   </div>
+  <p class="ms-form-section">פרטי פרופיל</p>
   <div class="mb-3">
     <label class="form-label">רמת ניסיון <span class="text-muted">(לא חובה)</span></label>
     <select name="experienceLevel" class="form-select">
@@ -45,13 +61,16 @@ weight: 20
   <div class="mb-3">
     <label class="form-label">תחומי עניין <span class="text-danger">*</span></label>
     <input type="text" name="interests" class="form-control" placeholder="לדוגמה: פיתוח Web, נתונים, אבטחה" required>
+    <div class="form-text">הפרד/י בפסיקים בין מספר תחומים.</div>
   </div>
-  <div class="mb-3">
+  <div class="mb-4">
     <label class="form-label">מטרות בתהליך המנטורינג <span class="text-muted">(לא חובה)</span></label>
     <textarea name="goals" class="form-control" rows="3" placeholder="לדוגמה: למצוא עבודה ראשונה בתחום"></textarea>
   </div>
-  <button type="submit" class="btn btn-primary">הרשמה כמנטי</button>
-  <button type="button" class="btn btn-link" id="back-from-mentee">חזרה לבחירה</button>
+  <div class="d-flex gap-2 align-items-center">
+    <button type="submit" class="btn btn-primary">הרשמה כמנטי</button>
+    <button type="button" class="btn btn-link text-muted" id="back-from-mentee">חזרה לבחירה</button>
+  </div>
 </form>
 </div>
 </div>
@@ -62,13 +81,14 @@ weight: 20
 <div id="mentor-form-wrapper" class="d-none" dir="rtl">
 <div class="row justify-content-center">
 <div class="col-md-7">
-<div class="card">
-<div class="card-body">
-<h3 class="card-title">הרשמה כמנטור/ית</h3>
-<div class="alert alert-info">כל הפרטים שתספקו יופיעו באתר, למעט כתובת האימייל שלכם</div>
-<p class="text-muted small">שדות המסומנים ב-<span class="text-danger">*</span> הם שדות חובה.</p>
+<div class="card border-0 shadow-sm">
+<div class="card-body p-4">
+<h3 class="card-title mb-1">הרשמה כמנטור/ית</h3>
+<div class="alert alert-info small py-2">כל הפרטים שתספקו יופיעו בספריית המנטורים, למעט כתובת האימייל.</div>
+<p class="text-muted small mb-3">שדות המסומנים ב-<span class="text-danger">*</span> הם שדות חובה.</p>
 <div id="mentor-message" class="alert d-none" role="alert"></div>
 <form id="mentor-register-form">
+  <p class="ms-form-section">פרטי חשבון</p>
   <div class="mb-3">
     <label class="form-label">שם מלא <span class="text-danger">*</span></label>
     <input type="text" name="fullName" class="form-control" required>
@@ -81,39 +101,48 @@ weight: 20
     <label class="form-label">סיסמה <span class="text-danger">*</span></label>
     <input type="password" name="password" class="form-control" minlength="6" required>
   </div>
-  <div class="mb-3">
-    <label class="form-label">תפקיד נוכחי <span class="text-muted">(לא חובה)</span></label>
-    <input type="text" name="currentRole" class="form-control" placeholder="לדוגמה: Backend Developer">
-  </div>
-  <div class="mb-3">
-    <label class="form-label">חברה <span class="text-muted">(לא חובה)</span></label>
-    <input type="text" name="company" class="form-control">
+  <p class="ms-form-section">פרטי פרופיל</p>
+  <div class="row g-3 mb-3">
+    <div class="col-sm-6">
+      <label class="form-label">תפקיד נוכחי <span class="text-muted">(לא חובה)</span></label>
+      <input type="text" name="currentRole" class="form-control" placeholder="לדוגמה: Backend Developer">
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">חברה <span class="text-muted">(לא חובה)</span></label>
+      <input type="text" name="company" class="form-control">
+    </div>
   </div>
   <div class="mb-3">
     <label class="form-label">תחומי התמחות <span class="text-danger">*</span></label>
     <input type="text" name="expertise" class="form-control" placeholder="לדוגמה: Python, AWS, מערכות מבוזרות" required>
+    <div class="form-text">הפרד/י בפסיקים בין מספר תחומים.</div>
   </div>
-  <div class="mb-3">
-    <label class="form-label">שנות ניסיון <span class="text-muted">(לא חובה)</span></label>
-    <input type="number" name="yearsExperience" class="form-control" min="0">
+  <div class="row g-3 mb-3">
+    <div class="col-sm-6">
+      <label class="form-label">שנות ניסיון <span class="text-muted">(לא חובה)</span></label>
+      <input type="number" name="yearsExperience" class="form-control" min="0">
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">זמינות</label>
+      <select name="availability" class="form-select">
+        <option value="available">פנוי/ה למנטורינג</option>
+        <option value="unavailable">לא פנוי/ה כרגע</option>
+      </select>
+    </div>
   </div>
+  <p class="ms-form-section">קישורים</p>
   <div class="mb-3">
-    <label class="form-label">זמינות <span class="text-muted">(לא חובה)</span></label>
-    <select name="availability" class="form-select">
-      <option value="available">פנוי/ה למנטורינג</option>
-      <option value="unavailable">לא פנוי/ה כרגע</option>
-    </select>
-  </div>
-  <div class="mb-3">
-    <label class="form-label">קישור לפרופיל LinkedIn <span class="text-danger">*</span></label>
+    <label class="form-label">פרופיל LinkedIn <span class="text-danger">*</span></label>
     <input type="url" name="linkedIn" class="form-control" placeholder="https://linkedin.com/in/yourprofile" required>
   </div>
-  <div class="mb-3">
+  <div class="mb-4">
     <label class="form-label">קישור לתיאום פגישה (Calendly או שווה ערך) <span class="text-danger">*</span></label>
     <input type="url" name="calendlyUrl" class="form-control" placeholder="https://calendly.com/yourname" required>
   </div>
-  <button type="submit" class="btn btn-primary">הרשמה כמנטור/ית</button>
-  <button type="button" class="btn btn-link" id="back-from-mentor">חזרה לבחירה</button>
+  <div class="d-flex gap-2 align-items-center">
+    <button type="submit" class="btn btn-primary">הרשמה כמנטור/ית</button>
+    <button type="button" class="btn btn-link text-muted" id="back-from-mentor">חזרה לבחירה</button>
+  </div>
 </form>
 </div>
 </div>
@@ -145,11 +174,24 @@ weight: 20
     menteeForm.classList.add('d-none');
   }
 
-  document.getElementById('choose-mentee').addEventListener('click', showMentee);
-  document.getElementById('choose-mentor').addEventListener('click', showMentor);
+  function bindCard(el, handler) {
+    el.addEventListener('click', handler);
+    el.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handler(); }
+    });
+  }
+
+  bindCard(document.getElementById('choose-mentee'), showMentee);
+  bindCard(document.getElementById('choose-mentor'), showMentor);
   document.getElementById('back-from-mentee').addEventListener('click', showChoice);
   document.getElementById('back-from-mentor').addEventListener('click', showChoice);
+
+  // Deep-link support: /register/#mentee or /register/#mentor
+  var hash = window.location.hash;
+  if (hash === '#mentee') showMentee();
+  else if (hash === '#mentor') showMentor();
 })();
 </script>
 
 <script type="module" src="/js/mentorship/register.js"></script>
+</content>

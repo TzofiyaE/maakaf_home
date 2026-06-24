@@ -4,12 +4,12 @@ const session = getSession();
 
 if (session) {
   const bar = document.createElement('div');
-  bar.className = 'alert alert-info d-flex align-items-center justify-content-between mb-3';
+  bar.className = 'ms-auth-bar';
   bar.dir = 'rtl';
   const firstName = session.fullName?.split(' ')[0] ?? session.email;
   bar.innerHTML = `
-    <span>שלום, <strong>${firstName}</strong></span>
-    <button id="auth-bar-logout" class="btn btn-sm btn-outline-secondary">התנתקות</button>
+    <span class="ms-auth-bar__greeting">שלום, <strong>${firstName}</strong></span>
+    <button id="auth-bar-logout" class="ms-auth-bar__logout">התנתקות</button>
   `;
 
   document.addEventListener('DOMContentLoaded', () => {

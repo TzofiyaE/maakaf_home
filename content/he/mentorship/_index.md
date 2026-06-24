@@ -3,35 +3,46 @@ type: 'docs'
 title: 'מנטורינג'
 slug: "mentorship"
 linkTitle: 'מנטורינג'
+body_class: "no-sidebar"
 menu:
   main:
     weight: 10
     identifier: mentorship
+cascade:
+  body_class: "no-sidebar"
 ---
 
-<div class="alert alert-danger" dir="rtl" role="alert">
-  ⚙️ <strong>המערכת נמצאת בשלבי הרצה.</strong> אם נתקלתם בתקלה או שיש לכם הצעה לשיפור, נשמח לקבל את פנייתכם בכתובת: <a href="mailto:maakafsupport@gmail.com" class="alert-link">maakafsupport@gmail.com</a>.
+<div class="alert alert-warning py-2 small" dir="rtl" role="alert">
+  ⚙️ המערכת נמצאת בשלבי הרצה. לתקלות או הצעות — <a href="mailto:maakafsupport@gmail.com" class="alert-link">maakafsupport@gmail.com</a>
 </div>
 
-<div id="cta-guest" class="row mb-5" dir="rtl">
-  <div class="col-md-6 mb-3">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">📝 הרשמה</h5>
-        <p class="card-text">הירשמו כמנטור/ית או כמנטי כדי להתחיל את התהליך.</p>
-        <a href="/he/mentorship/register/" class="btn btn-primary">להרשמה</a>
-      </div>
+<div class="text-center mb-5 mt-3" dir="rtl">
+  <h1 class="h2 fw-bold mb-2">תוכנית המנטורינג של מעקף</h1>
+  <p class="text-muted mb-0" style="max-width:560px;margin:0 auto;">מפתחים מנוסים מהתעשייה שפתחו את היומן שלהם — לייעוץ, code&nbsp;review, והכוונה לקריירה.</p>
+</div>
+
+<div id="cta-guest" dir="rtl">
+  <div class="row g-3 mb-3">
+    <div class="col-md-6">
+      <a href="/he/mentorship/register/#mentee" class="text-decoration-none">
+        <div class="ms-role-card">
+          <span class="ms-role-card__icon">🎓</span>
+          <div class="ms-role-card__title">אני מחפש/ת מנטור</div>
+          <p class="ms-role-card__desc">הירשמו כמנטי, עיינו בספרייה ושלחו בקשה למנטור/ית שמתאים/ת לכם.</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-6">
+      <a href="/he/mentorship/register/#mentor" class="text-decoration-none">
+        <div class="ms-role-card">
+          <span class="ms-role-card__icon">🧑‍💻</span>
+          <div class="ms-role-card__title">אני רוצה לחנוך</div>
+          <p class="ms-role-card__desc">הצטרפו כמנטור/ית, הגדירו את תחומי ההתמחות שלכם וקבלו בקשות מנטורינג.</p>
+        </div>
+      </a>
     </div>
   </div>
-  <div class="col-md-6 mb-3">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">🔑 התחברות</h5>
-        <p class="card-text">כבר נרשמתם? התחברו כדי לראות ולנהל את הבקשות שלכם.</p>
-        <a href="/he/mentorship/login/" class="btn btn-outline-primary">להתחברות</a>
-      </div>
-    </div>
-  </div>
+  <p class="text-center text-muted small mb-5">כבר יש לכם חשבון? <a href="/he/mentorship/login/">כניסה למערכת</a></p>
 </div>
 
 <div id="cta-user" hidden class="mb-5 text-center" dir="rtl">
@@ -40,18 +51,20 @@ menu:
 
 <hr class="mb-4">
 
-<h4 dir="rtl">ספריית מנטורים</h4>
+<div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2" dir="rtl">
+  <h2 class="h5 fw-bold mb-0">ספריית מנטורים</h2>
+</div>
 
-<div class="row mb-4" dir="rtl">
-  <div class="col-md-6 mb-2">
+<div class="row g-2 mb-4" dir="rtl">
+  <div class="col-md-6">
     <input id="dir-search" type="text" class="form-control" placeholder="חיפוש לפי שם, תחום או טכנולוגיה...">
   </div>
-  <div class="col-md-3 mb-2">
+  <div class="col-md-3">
     <select id="dir-topic" class="form-select">
       <option value="">תחום: הכל</option>
     </select>
   </div>
-  <div class="col-md-3 mb-2">
+  <div class="col-md-3">
     <select id="dir-avail" class="form-select">
       <option value="">זמינות: הכל</option>
       <option value="available">פנוי/ה למנטורינג</option>
@@ -64,3 +77,4 @@ menu:
 
 <script type="module" src="/js/mentorship/mentorship-home.js"></script>
 <script type="module" src="/js/mentorship/directory.js"></script>
+</content>

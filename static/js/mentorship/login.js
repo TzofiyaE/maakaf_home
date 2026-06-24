@@ -2,7 +2,6 @@ import { apiFetch, saveSession, getSession, dashboardUrl } from './api.js';
 import { describeAuthError, showFormMessage } from './errors.js';
 import { showToast } from './toast.js';
 
-const choice = document.getElementById('login-choice');
 const wrapper = document.getElementById('login-form-wrapper');
 const form = document.getElementById('login-form');
 const messageEl = document.getElementById('login-message');
@@ -17,41 +16,7 @@ const verifyResendCountdown = document.getElementById('verify-resend-countdown')
 // Already logged in — redirect immediately
 const existing = getSession();
 if (existing) {
-  choice.hidden = true;
   window.location.href = dashboardUrl(existing.role);
-}
-
-function showForm() {
-  choice.classList.add('d-none');
-  wrapper.classList.remove('d-none');
-}
-
-function showChoice() {
-  wrapper.classList.add('d-none');
-  choice.classList.remove('d-none');
-  messageEl.classList.add('d-none');
-  form.reset();
-}
-
-document.getElementById('choose-mentee').addEventListener('click', showForm);
-document.getElementById('choose-mentor').addEventListener('click', showForm);
-document.getElementById('back-from-login').addEventListener('click', showChoice);
-
-const forgotSent = document.getElementById('forgot-password-sent');
-const resetEmailDisplay = document.getElementById('reset-email-display');
-const resendBtn = document.getElementById('resend-btn');
-const resendCountdown = document.getElementById('resend-countdown');
-
-let resendTimer = null;
-
-function showForgotForm() {
-  wrapper.classList.add('d-none');
-  forgotSent.classList.add('d-none');
-  forgotWrapper.classList.remove('d-none');
-  forgotForm.reset();
-  const loginEmail = form.email.value.trim();
-  if (loginEmail) document.getElementById('forgot-email-input').value = loginEmail;
-  document.getElementById('forgot-email-input').focus();
 }
 
 function showLoginForm() {
@@ -63,12 +28,29 @@ function showLoginForm() {
   stopVerifyPolling();
 }
 
+function showForgotForm() {
+  wrapper.classList.add('d-none');
+  forgotSent.classList.add('d-none');
+  forgotWrapper.classList.remove('d-none');
+  forgotForm.reset();
+  const loginEmail = form.email.value.trim();
+  if (loginEmail) document.getElementById('forgot-email-input').value = loginEmail;
+  document.getElementById('forgot-email-input').focus();
+}
+
 function showConfirmationScreen(email) {
   forgotWrapper.classList.add('d-none');
   resetEmailDisplay.textContent = email;
   forgotSent.classList.remove('d-none');
   startResendCountdown();
 }
+
+const forgotSent = document.getElementById('forgot-password-sent');
+const resetEmailDisplay = document.getElementById('reset-email-display');
+const resendBtn = document.getElementById('resend-btn');
+const resendCountdown = document.getElementById('resend-countdown');
+
+let resendTimer = null;
 
 function startResendCountdown() {
   let seconds = 30;
@@ -96,7 +78,10 @@ document.getElementById('forgot-password-link').addEventListener('click', (e) =>
   showForgotForm();
 });
 
-document.getElementById('back-from-forgot').addEventListener('click', showLoginForm);
+document.getElementById('back-from-forgot').addEventListener('click', (e) => {
+  e.preventDefault();
+  showLoginForm();
+});
 document.getElementById('back-to-login-from-sent').addEventListener('click', (e) => {
   e.preventDefault();
   showLoginForm();
