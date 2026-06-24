@@ -2,7 +2,14 @@
 <section class="maakaf-about-content" aria-label="{{ if eq .Site.Language.Lang "he" }}אודות הקהילה{{ else }}About the community{{ end }}">
   <div class="maakaf-about-content__inner">
     <div class="maakaf-about-content__leader" dir="rtl">
-      <div class="maakaf-about-content__avatar" aria-hidden="true"></div>
+      <img
+        class="maakaf-about-content__avatar"
+        src="/images/urielProfile.png"
+        alt="{{ if eq .Site.Language.Lang "he" }}אוריאל אופיר{{ else }}Uriel Ofir{{ end }}"
+        width="96"
+        height="96"
+        loading="lazy"
+      >
       <div class="maakaf-about-content__leader-copy">
         <p class="maakaf-about-content__leader-text">
           {{ if eq .Site.Language.Lang "he" }}

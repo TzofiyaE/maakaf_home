@@ -1,16 +1,23 @@
 /**
  * Renders numbered pagination controls for Maakaf data tables.
  * @param {HTMLElement} container
- * @param {{ currentPage: number, totalPages: number, onPageChange: (page: number) => void, labels?: { prev?: string, next?: string } }} options
+ * @param {{ currentPage: number, totalPages: number, onPageChange: (page: number) => void, scrollTarget?: HTMLElement, labels?: { prev?: string, next?: string } }} options
  */
 window.MaakafTablePagination = {
   render(container, options) {
     if (!container) return;
 
-    const { currentPage, totalPages, onPageChange } = options;
+    const { currentPage, totalPages, onPageChange, scrollTarget } = options;
     const labels = {
       prev: options.labels?.prev || '« Prev',
       next: options.labels?.next || 'Next »',
+    };
+
+    const changePage = (page) => {
+      onPageChange(page);
+      if (scrollTarget) {
+        MaakafTablePagination.scrollToTable(scrollTarget);
+      }
     };
 
     if (totalPages <= 1) {
@@ -27,7 +34,7 @@ window.MaakafTablePagination = {
     prevBtn.className = 'maakaf-table-pagination__btn maakaf-table-pagination__btn--nav';
     prevBtn.textContent = labels.prev;
     prevBtn.disabled = currentPage <= 1;
-    prevBtn.addEventListener('click', () => onPageChange(currentPage - 1));
+    prevBtn.addEventListener('click', () => changePage(currentPage - 1));
     container.appendChild(prevBtn);
 
     this._pageRange(currentPage, totalPages).forEach((item) => {
@@ -48,7 +55,7 @@ window.MaakafTablePagination = {
       pageBtn.setAttribute('aria-label', 'Page ' + item);
       if (item === currentPage) pageBtn.setAttribute('aria-current', 'page');
       pageBtn.addEventListener('click', () => {
-        if (item !== currentPage) onPageChange(item);
+        if (item !== currentPage) changePage(item);
       });
       container.appendChild(pageBtn);
     });
@@ -58,7 +65,7 @@ window.MaakafTablePagination = {
     nextBtn.className = 'maakaf-table-pagination__btn maakaf-table-pagination__btn--nav';
     nextBtn.textContent = labels.next;
     nextBtn.disabled = currentPage >= totalPages;
-    nextBtn.addEventListener('click', () => onPageChange(currentPage + 1));
+    nextBtn.addEventListener('click', () => changePage(currentPage + 1));
     container.appendChild(nextBtn);
   },
 
@@ -83,5 +90,12 @@ window.MaakafTablePagination = {
     }
 
     return range;
+  },
+
+  /** Snap the table header row into view just below the fixed navbar. */
+  scrollToTable(target) {
+    if (!target) return;
+    const thead = target.querySelector?.('thead') || (target.tagName === 'THEAD' ? target : null);
+    (thead || target).scrollIntoView({ behavior: 'instant', block: 'start' });
   },
 };

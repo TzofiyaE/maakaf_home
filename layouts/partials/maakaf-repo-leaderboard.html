@@ -188,6 +188,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     const PAGE_SIZE = 5;
     const tbody = document.querySelector('#repoLeaderboardTable tbody');
+    const tableWrap = document.querySelector('#repoLeaderboardTable')?.closest('.maakaf-community__table-wrap');
     const allRows = Array.from(document.querySelectorAll('.repo-leaderboard-row'));
     let rows = allRows.slice();
     const status = document.getElementById('repoLeaderboardStatus');
@@ -318,6 +319,7 @@
         MaakafTablePagination.render(paginationEl, {
           currentPage,
           totalPages,
+          scrollTarget: tableWrap,
           onPageChange(page) {
             currentPage = page;
             render();

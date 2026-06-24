@@ -1225,7 +1225,7 @@ html[dir="rtl"] {
   width: 96px;
   height: 96px;
   border-radius: 0;
-  background: #d9d9d9;
+  object-fit: cover;
 }
 
 .maakaf-about-content__leader-copy {
@@ -1796,6 +1796,11 @@ html[dir="rtl"] {
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  scroll-margin-top: calc(var(--maakaf-navbar-height, 84px) + 24px);
+}
+
+.maakaf-community__table thead {
+  scroll-margin-top: calc(var(--maakaf-navbar-height, 84px) + 24px);
 }
 
 .maakaf-community__table {

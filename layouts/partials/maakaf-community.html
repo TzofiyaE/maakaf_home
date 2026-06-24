@@ -314,6 +314,7 @@
     const PAGE_SIZE = 5;
     const input = document.getElementById('maakafCommunitySearch');
     const table = document.getElementById('maakafCommunityTable');
+    const tableWrap = table?.closest('.maakaf-community__table-wrap');
     const paginationEl = document.getElementById('maakafCommunityPagination');
     const tbody = table?.querySelector('tbody');
     const sortableHeaders = table ? table.querySelectorAll('.sortable') : [];
@@ -420,6 +421,7 @@
         MaakafTablePagination.render(paginationEl, {
           currentPage,
           totalPages,
+          scrollTarget: tableWrap,
           onPageChange(page) {
             currentPage = page;
             applyCommunityRowVisibility();
