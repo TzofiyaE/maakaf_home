@@ -12,10 +12,6 @@ cascade:
   body_class: "no-sidebar"
 ---
 
-<div class="alert alert-warning py-2 small" dir="rtl" role="alert">
-  ⚙️ המערכת נמצאת בשלבי הרצה. לתקלות או הצעות — <a href="mailto:maakafsupport@gmail.com" class="alert-link">maakafsupport@gmail.com</a>
-</div>
-
 <div class="text-center mb-5 mt-3" dir="rtl">
   <h1 class="display-6 mb-2" style="font-weight: 900;">תוכנית המנטורינג של מעקף</h1>
   <p class="text-muted mb-0" style="max-width:640px;margin:0 auto;">פרויקט המנטורים הוא יוזמה קהילתית שמאפשרת למתכנתים בתחילת דרכם לקבל הכוונה, ידע וניסיון ממתכנתים מנוסים. בין אם אתם מחפשים עצה מקצועית, עזרה טכנית, הכנה לראיונות או הכוונה בקריירה – תוכלו לקבוע פגישת מנטורינג אישית עם אחד המנטורים בקהילה ולהפיק מהניסיון שלהם.</p>
