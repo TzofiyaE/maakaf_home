@@ -69,11 +69,18 @@ function render() {
     return;
   }
 
+  const NOTIF_DASHBOARD = {
+    new_request:      '/he/mentorship/mentor-dashboard/',
+    request_response: '/he/mentorship/mentee-dashboard/',
+  };
+
   listEl.innerHTML = notifications.map(n => {
     const icon = TYPE_ICON[n.type] ?? '🔔';
     const readClass = n.read ? 'notif-item--read' : '';
+    const base = NOTIF_DASHBOARD[n.type] ?? '/he/mentorship/';
+    const href = n.requestId ? `${base}#req-${n.requestId}` : base;
     return `
-      <li class="notif-item ${readClass}" data-id="${n.id}">
+      <li class="notif-item ${readClass}" data-id="${n.id}" data-href="${href}">
         <span class="notif-icon" aria-hidden="true">${icon}</span>
         <div class="notif-text">
           <div class="notif-title">${escapeHtml(n.title)}</div>
@@ -84,8 +91,14 @@ function render() {
       </li>`;
   }).join('');
 
-  listEl.querySelectorAll('.notif-item:not(.notif-item--read)').forEach(el => {
-    el.addEventListener('click', () => markRead(el.dataset.id), { once: true });
+  listEl.querySelectorAll('.notif-item').forEach(el => {
+    el.addEventListener('click', async () => {
+      if (!el.classList.contains('notif-item--read')) {
+        await markRead(el.dataset.id);
+      }
+      closeDropdown();
+      window.location.href = el.dataset.href;
+    }, { once: true });
   });
 }
 
@@ -326,8 +339,8 @@ function injectStyles() {
     }
     .notif-item:last-child { border-bottom: none; }
     .notif-item:hover { background: rgba(13,110,253,.05); }
-    .notif-item--read { opacity: 0.65; cursor: default; }
-    .notif-item--read:hover { background: transparent; }
+    .notif-item--read { opacity: 0.65; }
+    .notif-item--read:hover { background: rgba(13,110,253,.03); }
 
     .notif-icon {
       font-size: 18px;

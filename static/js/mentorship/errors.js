@@ -26,6 +26,9 @@ const AUTH_ERROR_MESSAGES = {
   // email verification
   EMAIL_NOT_VERIFIED: 'יש לאמת את כתובת האימייל לפני ההתחברות. בדוק/י את תיבת הדואר שלך.',
 
+  // request-specific errors
+  DUPLICATE_REQUEST: 'כבר שלחת בקשה פעילה למנטור/ית זה/זו. המתן/י לתגובה לפני שליחת בקשה חדשה.',
+
   // general API errors
   NOT_FOUND: 'הפריט המבוקש לא נמצא.',
   FORBIDDEN: 'אין לך הרשאה לבצע פעולה זו.',

@@ -11,7 +11,45 @@ const STATUS_META = {
   rejected:   { label: 'נדחתה',              color: 'danger',    dark: false },
   needs_info: { label: 'דורש פרטים נוספים', color: 'info',      dark: true  },
   completed:  { label: 'הושלמה',             color: 'secondary', dark: false },
+  canceled:   { label: 'בוטלה',              color: 'secondary', dark: false },
 };
+
+const STATUS_LABELS = Object.fromEntries(Object.entries(STATUS_META).map(([k, v]) => [k, v.label]));
+
+function formatDateTime(ts) {
+  if (!ts) return '—';
+  return new Date((ts._seconds ?? ts.seconds ?? 0) * 1000)
+    .toLocaleString('he-IL', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+}
+
+function renderTimeline(events) {
+  if (!events.length) return '<p class="text-muted small text-center py-2 mb-0">אין היסטוריה עדיין.</p>';
+  return events.map((ev, i) => {
+    const isMentor = ev.authorRole === 'mentor';
+    const label    = isMentor ? 'מנטור/ית' : 'מנטי';
+    const badgeCls = isMentor ? 'bg-primary' : 'bg-light text-dark border';
+    const borderTop = i > 0 ? 'border-top' : '';
+
+    const statusLine = ev.fromStatus
+      ? `<span class="text-muted">${STATUS_LABELS[ev.fromStatus] ?? ev.fromStatus} ← ${STATUS_LABELS[ev.toStatus] ?? ev.toStatus}</span>`
+      : `<span class="text-muted">בקשה נשלחה</span>`;
+
+    const content = ev.content
+      ? `<p class="mb-0 mt-1">${ev.content}</p>`
+      : '';
+
+    return `
+      <div class="px-3 py-2 ${borderTop}" dir="rtl">
+        <div class="d-flex justify-content-between align-items-center mb-1">
+          <span class="badge ${badgeCls}">${label}</span>
+          <small class="text-muted">${formatDateTime(ev.createdAt)}</small>
+        </div>
+        <div class="small">${statusLine}${content}</div>
+      </div>`;
+  }).join('');
+}
+
+const timelineCache = {};
 
 function formatDate(ts) {
   if (!ts) return '—';
@@ -44,7 +82,13 @@ function renderCard(req) {
   const badge = `<span class="badge bg-${meta.color}${meta.dark ? ' text-dark' : ''}">${meta.label}</span>`;
 
   const description = req.description
-    ? `<p class="card-text small text-muted mt-2 mb-0">${req.description}</p>`
+    ? `<p class="card-text small text-muted mt-2 mb-1">${req.description}</p>`
+    : '';
+
+  const menteeReplyBlock = req.menteeReply
+    ? `<div class="p-2 mt-2 rounded bg-light border-start border-3 border-primary small">
+         <span class="fw-semibold">תגובת המנטי:</span> ${req.menteeReply}
+       </div>`
     : '';
 
   const hasActions = req.status === 'pending' || req.status === 'approved';
@@ -59,8 +103,8 @@ function renderCard(req) {
     </div>` : '';
 
   return `
-    <div class="col-md-6">
-      <div class="card h-100 border-0 shadow-sm border-start border-4 border-${meta.color}" dir="rtl">
+    <div class="col-md-6" id="req-${req.id}">
+      <div class="card border-0 shadow-sm border-start border-4 border-${meta.color}" style="min-height:100%" dir="rtl">
         <div class="card-body d-flex flex-column">
           <div class="d-flex justify-content-between align-items-center mb-3">
             ${badge}
@@ -73,7 +117,14 @@ function renderCard(req) {
           </p>
           <div id="mentee-profile-${req.id}" class="border rounded p-2 mb-2 bg-light small" hidden></div>
           ${description}
-          <div class="mt-auto">${actionButtons(req)}</div>
+          ${menteeReplyBlock}
+          <div class="mt-auto">
+            ${actionButtons(req)}
+            <button class="btn btn-link btn-sm p-0 mt-2 toggle-timeline" data-id="${req.id}">היסטוריה ▼</button>
+          </div>
+        </div>
+        <div id="timeline-${req.id}" class="border-top" style="max-height:260px;overflow-y:auto;" hidden>
+          <div id="timeline-body-${req.id}"></div>
         </div>
         ${actionArea}
       </div>
@@ -149,7 +200,19 @@ function bindActions() {
   cards.querySelectorAll('.confirm-action').forEach(btn => {
     btn.addEventListener('click', async () => {
       const id = btn.dataset.id;
-      const mentorResponse = document.getElementById(`response-${id}`).value.trim() || null;
+      const action = pendingAction[id];
+      const responseEl = document.getElementById(`response-${id}`);
+      const mentorResponse = responseEl.value.trim() || null;
+
+      if (!mentorResponse && (action === 'rejected' || action === 'needs_info')) {
+        responseEl.classList.add('is-invalid');
+        responseEl.placeholder = action === 'rejected'
+          ? 'חובה לציין סיבת הדחייה'
+          : 'חובה לציין מה נדרש מהמנטי';
+        responseEl.focus();
+        return;
+      }
+      responseEl.classList.remove('is-invalid');
       btn.disabled = true;
 
       const { ok } = await authedFetch(`/requests/${id}`, {
@@ -163,6 +226,33 @@ function bindActions() {
         btn.disabled = false;
         statusDiv.innerHTML = '<div class="alert alert-danger">שגיאה בעדכון הבקשה. אנא נסה/י שוב.</div>';
       }
+    });
+  });
+}
+
+function bindTimelines() {
+  cards.querySelectorAll('.toggle-timeline').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const id = btn.dataset.id;
+      const panel = document.getElementById(`timeline-${id}`);
+      const body  = document.getElementById(`timeline-body-${id}`);
+
+      if (!panel.hidden) {
+        panel.hidden = true;
+        btn.textContent = 'היסטוריה ▼';
+        return;
+      }
+
+      btn.textContent = 'טוען...';
+
+      if (!timelineCache[id]) {
+        const { ok, data } = await authedFetch(`/requests/${id}/timeline`);
+        timelineCache[id] = ok ? data : [];
+      }
+
+      body.innerHTML = renderTimeline(timelineCache[id]);
+      panel.hidden = false;
+      btn.textContent = 'היסטוריה ▲';
     });
   });
 }
@@ -192,6 +282,13 @@ async function load() {
   cards.innerHTML = mine.map(renderCard).join('');
   bindActions();
   bindMenteeProfiles();
+  bindTimelines();
+
+  const hash = window.location.hash;
+  if (hash) {
+    const target = document.querySelector(hash);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
 }
 
 const session = getSession();
