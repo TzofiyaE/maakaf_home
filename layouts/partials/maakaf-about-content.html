@@ -1,5 +1,7 @@
 {{/* Figma about content: node 451:4872 */ -}}
 <section class="maakaf-about-content" aria-label="{{ if eq .Site.Language.Lang "he" }}אודות הקהילה{{ else }}About the community{{ end }}">
+  {{ partial "maakaf-about-links.html" . }}
+
   <div class="maakaf-about-content__inner">
     <div class="maakaf-about-content__leader" dir="rtl">
       <img

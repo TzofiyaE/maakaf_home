@@ -1,0 +1,72 @@
+{{/* Figma about links: node 531:25118 */ -}}
+{{ $whatsapp := index .Site.Params.links.user 0 -}}
+{{ $discord := index .Site.Params.links.user 1 -}}
+{{ $isHebrew := eq .Site.Language.Lang "he" -}}
+
+<section class="maakaf-about-links" aria-label="{{ if $isHebrew }}הצטרפות לקהילה{{ else }}Join the community{{ end }}">
+  <div class="maakaf-about-links__inner">
+    <div class="maakaf-about-links__cards">
+      <article class="maakaf-about-links__card" dir="rtl">
+        <div class="maakaf-about-links__card-content">
+          <div class="maakaf-about-links__card-head">
+            <div class="maakaf-about-links__icon maakaf-about-links__icon--discord">
+              <img src="/images/discord-icon.svg" width="36" height="28" alt="" aria-hidden="true">
+            </div>
+            <h2 class="maakaf-about-links__card-title">
+              {{ if $isHebrew }}הצטרפו לקהילה ב Discord{{ else }}Join the community on Discord{{ end }}
+            </h2>
+          </div>
+          <div class="maakaf-about-links__card-body">
+            {{ if $isHebrew }}
+              <p>אחת לשבועיים אנחנו נפגשים ב-Discord ל-Code Parties של קוד פתוח – מפגשי קהילה מלאים בקוד, למידה והיכרות עם אנשים חדשים</p>
+              <p>האירועים פתוחים לכולם – בין אם זה הצעד הראשון שלך ובין אם כבר תרמת לפרויקטי קוד פתוח</p>
+            {{ else }}
+              <p>Every two weeks we meet on Discord for open source Code Parties — community gatherings full of code, learning, and meeting new people.</p>
+              <p>The events are open to everyone, whether this is your first step or you already contribute to open source projects.</p>
+            {{ end }}
+          </div>
+        </div>
+        <a
+          class="maakaf-about-links__btn maakaf-about-links__btn--discord"
+          href="{{ $discord.url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-arrow-up-left" aria-hidden="true"></i>
+          <span>{{ if $isHebrew }}הצטרפות ל Discord{{ else }}Join Discord{{ end }}</span>
+        </a>
+      </article>
+
+      <article class="maakaf-about-links__card" dir="rtl">
+        <div class="maakaf-about-links__card-content">
+          <div class="maakaf-about-links__card-head">
+            <div class="maakaf-about-links__icon maakaf-about-links__icon--whatsapp">
+              <img src="/images/whatsapp-icon.svg" width="36" height="36" alt="" aria-hidden="true">
+            </div>
+            <h2 class="maakaf-about-links__card-title">
+              {{ if $isHebrew }}עדכוני מעקף בוואטסאפ{{ else }}Maakaf updates on WhatsApp{{ end }}
+            </h2>
+          </div>
+          <div class="maakaf-about-links__card-body">
+            {{ if $isHebrew }}
+              <p>קבוצת וואטסאפ שקטה לעדכונים בלבד – מקום נוח לקבל עדכונים שבועיים על פעילות הקהילה</p>
+              <p>הקבוצה מיועדת להודעות חד-כיווניות, ומטרתה לספק לחברים דרך ברורה לקבל מידע חיוני על ההתפתחויות והפעילויות של מעקף</p>
+            {{ else }}
+              <p>A quiet WhatsApp group for updates only — a convenient place to receive weekly updates on community activity.</p>
+              <p>The group is for one-way announcements, helping members stay informed about Maakaf developments and activities.</p>
+            {{ end }}
+          </div>
+        </div>
+        <a
+          class="maakaf-about-links__btn maakaf-about-links__btn--whatsapp"
+          href="{{ $whatsapp.url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-arrow-up-left" aria-hidden="true"></i>
+          <span>{{ if $isHebrew }}הצטרפות ל WhatsApp{{ else }}Join WhatsApp{{ end }}</span>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
