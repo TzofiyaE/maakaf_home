@@ -59,7 +59,7 @@ The site includes a full mentorship web app at `/he/mentorship/`. It is backed b
 | `/he/mentorship/mentee-dashboard/` | Mentee: view sent requests, cancel, complete, reply |
 | `/he/mentorship/request/` | Send a mentorship request to a specific mentor |
 | `/he/mentorship/profile/` | Edit mentor or mentee profile |
-| `/he/mentorship/admin/` | Admin statistics dashboard |
+| `/he/mentorship/admin/` | Admin dashboard: stats, full requests table, mentor and mentee lists |
 
 ### Frontend modules (`static/js/mentorship/`)
 
@@ -76,15 +76,26 @@ The site includes a full mentorship web app at `/he/mentorship/`. It is backed b
 | `dashboard.js` | Mentee: request cards, reply on needs_info, cancel/complete, conversation history |
 | `request.js` | Submit a mentorship request |
 | `profile.js` | Edit mentor or mentee profile |
-| `admin.js` | Admin stats |
+| `admin.js` | Admin dashboard: login, stat cards, requests table with stale-alert, mentors/mentees tabs |
 | `errors.js` | Hebrew error message map |
 | `toast.js` | Toast notification helper |
 
+### Session
+
+The session (ID token, refresh token, role, name) is stored in `localStorage` under the key
+`mentorship.session`. It persists across tabs, windows, and browser restarts until the user
+explicitly logs out. All session access goes through `getSession()` / `saveSession()` /
+`clearSession()` in `api.js`.
+
 ### Styling
 
-Mentorship-specific styles live in `assets/scss/_styles_project.scss` under the
-`/* Mentorship — shared components */` section. Key classes: `.ms-auth-bar`,
-`.ms-page-header`, `.ms-avatar`, `.ms-role-card`, `.ms-form-section`.
+Mentorship-specific styles live in `assets/scss/_styles_project.scss`. Key class families:
+
+| Prefix | Used for |
+| --- | --- |
+| `.ms-auth-bar`, `.ms-page-header`, `.ms-avatar`, `.ms-role-card`, `.ms-form-section` | Shared mentorship UI components |
+| `.ms-page-title` | Mentorship home page heading |
+| `.admin-stat`, `.admin-panel`, `.admin-filter-bar`, `.admin-auth-card`, `.admin-table` | Admin dashboard components |
 
 The `body_class: "no-sidebar"` front matter (cascaded from `content/he/mentorship/_index.md`)
 hides the Docsy docs sidebars and constrains content width on all mentorship pages.
