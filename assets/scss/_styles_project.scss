@@ -794,6 +794,171 @@ html[data-bs-theme="dark"] {
   .ms-role-card__desc { color: #9dd0f3; }
 }
 
+/* ==========================================================================
+   Admin dashboard
+   ========================================================================== */
+
+/* Stat cards */
+.admin-stat {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 20px 16px;
+  text-align: center;
+  height: 100%;
+}
+
+.admin-stat__value {
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: #1a3766;
+
+  &--warn    { color: #b45309; }
+  &--success { color: #198754; }
+}
+
+.admin-stat__label {
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 13px;
+  color: #6c757d;
+  margin-top: 6px;
+}
+
+/* Tab panel */
+.admin-panel {
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  background: #fff;
+  padding: 20px;
+}
+
+/* Filter bar above each table */
+.admin-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  .admin-filter-bar__search { width: 280px; max-width: 100%; }
+  .admin-filter-bar__select { width: 180px; max-width: 100%; }
+}
+
+/* Auth card */
+.admin-auth-card {
+  max-width: 420px;
+  margin: 24px auto 0;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+
+  &__title {
+    font-family: "IBM Plex Sans Hebrew", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a3766;
+    margin-bottom: 24px;
+  }
+
+  &__footer {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 13px;
+
+    a { color: #2c57a5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  }
+}
+
+html[data-bs-theme="dark"] {
+  .admin-stat {
+    background: #1d2e4e;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .admin-stat__value { color: #eff8ff; }
+  .admin-stat__value--warn { color: #fbbf24; }
+  .admin-stat__value--success { color: #34d399; }
+  .admin-stat__label { color: #9dd0f3; }
+
+  .admin-panel {
+    background: #1d2e4e;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .admin-auth-card {
+    background: #1d2e4e;
+    border-color: rgba(255, 255, 255, 0.1);
+    &__title { color: #eff8ff; }
+    &__footer a { color: #9dd0f3; }
+  }
+}
+
+/* Admin table */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 15px;
+  border: 1px solid #d8dce3;
+
+  thead tr {
+    background: #1a3766;
+  }
+
+  thead th {
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #fff;
+    white-space: nowrap;
+    border-left: 1px solid rgba(255,255,255,0.15);
+
+    &:last-child { border-left: none; }
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #edf0f4;
+    transition: background 0.1s ease;
+
+    &:last-child { border-bottom: none; }
+    &:hover { background: #f7f8fa; }
+    &.admin-table__row--stale { background: #fffbeb; }
+    &.admin-table__row--stale:hover { background: #fef3c7; }
+  }
+
+  tbody td {
+    padding: 12px 16px;
+    color: #2d3748;
+    vertical-align: middle;
+    border-left: 1px solid #edf0f4;
+
+    &:last-child { border-left: none; }
+  }
+
+  .admin-table__empty td {
+    text-align: center;
+    color: #9ca3af;
+    padding: 32px;
+    border-left: none;
+  }
+}
+
+html[data-bs-theme="dark"] {
+  .admin-table {
+    border-color: rgba(255,255,255,0.1);
+    thead tr { background: #0f2347; }
+    thead th { color: #eff8ff; border-left-color: rgba(255,255,255,0.12); }
+    tbody tr { border-bottom-color: rgba(255,255,255,0.06); }
+    tbody tr:hover { background: rgba(255,255,255,0.04); }
+    tbody td { color: #eff8ff; border-left-color: rgba(255,255,255,0.06); }
+    tbody tr.admin-table__row--stale { background: rgba(251,191,36,0.08); }
+  }
+}
+
 /* Mentor directory cards */
 .ms-mentor-card { border: 1px solid #e6e6e6 !important; }
 .ms-mentor-card:hover { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important; }

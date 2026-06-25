@@ -1,77 +1,57 @@
-import { apiFetch, authedFetch, getSession, saveSession } from './api.js';
+import { apiFetch, authedFetch, getSession, saveSession, clearSession } from './api.js';
 import { describeAuthError, showFormMessage } from './errors.js';
-import { showToast } from './toast.js';
 
-const authSection = document.getElementById('admin-auth-section');
-const statusDiv   = document.getElementById('admin-status');
-const contentDiv  = document.getElementById('admin-content');
+// ─── Constants ────────────────────────────────────────────────────────────────
 
-// --- choice buttons ---
-const choiceDiv    = document.getElementById('admin-choice');
-const registerWrap = document.getElementById('admin-register-wrapper');
-const loginWrap    = document.getElementById('admin-login-wrapper');
+const STATUS_LABELS = {
+  pending:    'בהמתנה',
+  approved:   'אושרה',
+  rejected:   'נדחתה',
+  needs_info: 'דורש פרטים נוספים',
+  completed:  'הושלמה',
+  canceled:   'בוטלה',
+};
 
-function showChoice() {
-  choiceDiv.classList.remove('d-none');
-  registerWrap.classList.add('d-none');
-  loginWrap.classList.add('d-none');
+const LEVEL_LABELS = {
+  beginner:     'מתחיל/ה',
+  intermediate: 'בינוני/ת',
+  advanced:     'מתקדם/ת',
+};
+
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+
+function fmt(ts) {
+  if (!ts) return '—';
+  return new Date((ts._seconds ?? ts.seconds ?? 0) * 1000).toLocaleDateString('he-IL');
 }
 
-document.getElementById('choose-register').addEventListener('click', () => {
-  choiceDiv.classList.add('d-none');
-  registerWrap.classList.remove('d-none');
-});
+function daysAgo(ts) {
+  if (!ts) return 0;
+  return Math.floor((Date.now() - (ts._seconds ?? ts.seconds ?? 0) * 1000) / 86400000);
+}
 
-document.getElementById('choose-login').addEventListener('click', () => {
-  choiceDiv.classList.add('d-none');
-  loginWrap.classList.remove('d-none');
-});
+function emptyRow(cols, msg = 'אין תוצאות.') {
+  return `<tr><td colspan="${cols}" class="text-center text-muted py-4">${msg}</td></tr>`;
+}
 
-document.getElementById('back-from-register').addEventListener('click', showChoice);
-document.getElementById('back-from-login').addEventListener('click', showChoice);
+// ─── View switching ───────────────────────────────────────────────────────────
 
-// --- register form ---
-const registerForm = document.getElementById('admin-register-form');
-const registerMsg  = document.getElementById('admin-register-msg');
+const authDiv = document.getElementById('admin-auth');
+const dashDiv = document.getElementById('admin-dashboard');
 
-registerForm.addEventListener('submit', async (e) => {
+function showAuth()      { authDiv.hidden = false; dashDiv.hidden = true; }
+function showDashboard() { authDiv.hidden = true;  dashDiv.hidden = false; }
+
+// ─── Auth: login ──────────────────────────────────────────────────────────────
+
+const authMsg = document.getElementById('admin-auth-msg');
+
+document.getElementById('admin-login-form').addEventListener('submit', async (e) => {
   e.preventDefault();
-  const fd = new FormData(registerForm);
-  const btn = document.getElementById('register-submit');
-  btn.disabled = true;
-
-  const { ok, data } = await apiFetch('/auth/register', {
-    method: 'POST',
-    body: {
-      role: 'admin',
-      fullName: fd.get('fullName'),
-      email: fd.get('email'),
-      password: fd.get('password'),
-    },
-  });
-
-  btn.disabled = false;
-
-  if (ok && data.pending) {
-    registerForm.hidden = true;
-    showFormMessage(registerMsg, 'החשבון נוצר בהצלחה. ממתין לאישור מנהל המערכת.', false);
-    registerMsg.classList.remove('d-none');
-    return;
-  }
-
-  showFormMessage(registerMsg, describeAuthError(data?.error), true);
-  registerMsg.classList.remove('d-none');
-});
-
-// --- login form ---
-const loginForm = document.getElementById('admin-login-form');
-const loginMsg  = document.getElementById('admin-login-msg');
-
-loginForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const fd = new FormData(loginForm);
   const btn = document.getElementById('login-submit');
+  const fd  = new FormData(e.target);
   btn.disabled = true;
+  authMsg.classList.add('d-none');
 
   const { ok, data } = await apiFetch('/auth/login', {
     method: 'POST',
@@ -80,74 +60,210 @@ loginForm.addEventListener('submit', async (e) => {
 
   btn.disabled = false;
 
-  if (!ok) {
-    showFormMessage(loginMsg, describeAuthError(data?.error), true);
-    loginMsg.classList.remove('d-none');
+  if (!ok || data.role !== 'admin') {
+    showFormMessage(authMsg, describeAuthError(data?.error) ?? 'שגיאה בכניסה.', true);
+    authMsg.classList.remove('d-none');
     return;
   }
-
-  if (data.role !== 'admin') {
-    showFormMessage(loginMsg, 'משתמש זה אינו מנהל המערכת.', true);
-    loginMsg.classList.remove('d-none');
-    return;
-  }
-
   if (!data.isAdmin) {
-    showFormMessage(loginMsg, 'החשבון ממתין לאישור. פנה/י למנהל המערכת.', true);
-    loginMsg.classList.remove('d-none');
+    showFormMessage(authMsg, 'החשבון ממתין לאישור מנהל המערכת.', true);
+    authMsg.classList.remove('d-none');
     return;
   }
 
   saveSession(data);
-  loginWrap.classList.add('d-none');
-  showToast(`התחברת בהצלחה כ-${data.fullName ?? data.email}`, () => {
-    authSection.hidden = true;
-    loadStats();
+  showDashboard();
+  loadAll();
+});
+
+// ─── Auth: register (hidden toggle) ──────────────────────────────────────────
+
+document.getElementById('show-register').addEventListener('click', (e) => {
+  e.preventDefault();
+  document.getElementById('admin-login-form').hidden   = true;
+  document.getElementById('register-toggle-wrap').hidden = true;
+  document.getElementById('admin-register-form').hidden  = false;
+  authMsg.classList.add('d-none');
+});
+
+document.getElementById('cancel-register').addEventListener('click', () => {
+  document.getElementById('admin-register-form').hidden  = true;
+  document.getElementById('admin-login-form').hidden   = false;
+  document.getElementById('register-toggle-wrap').hidden = false;
+  authMsg.classList.add('d-none');
+});
+
+document.getElementById('admin-register-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('register-submit');
+  const fd  = new FormData(e.target);
+  btn.disabled = true;
+
+  const { ok, data } = await apiFetch('/auth/register', {
+    method: 'POST',
+    body: { role: 'admin', fullName: fd.get('fullName'), email: fd.get('email'), password: fd.get('password') },
+  });
+
+  btn.disabled = false;
+
+  showFormMessage(
+    authMsg,
+    ok && data.pending ? 'החשבון נוצר. ממתין לאישור מנהל המערכת.' : describeAuthError(data?.error),
+    !(ok && data.pending)
+  );
+  authMsg.classList.remove('d-none');
+  if (ok && data.pending) e.target.reset();
+});
+
+// ─── Logout ───────────────────────────────────────────────────────────────────
+
+document.getElementById('admin-logout').addEventListener('click', () => {
+  clearSession();
+  showAuth();
+});
+
+// ─── Tabs ─────────────────────────────────────────────────────────────────────
+
+const TAB_IDS = ['tab-requests', 'tab-mentors', 'tab-mentees'];
+
+document.querySelectorAll('#admin-tabs .nav-link').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#admin-tabs .nav-link').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    TAB_IDS.forEach(id => { document.getElementById(id).hidden = (id !== btn.dataset.target); });
   });
 });
 
-// --- stats ---
-const STATUS_LABELS = {
-  pending:    'בהמתנה',
-  approved:   'אושרה',
-  rejected:   'נדחתה',
-  needs_info: 'דורש פרטים נוספים',
-  completed:  'הושלמה',
-};
+// ─── Requests ─────────────────────────────────────────────────────────────────
 
-async function loadStats() {
-  const { ok, status, data } = await authedFetch('/admin/stats');
+let allRequests = [];
 
-  if (!ok) {
-    contentDiv.hidden = true;
-    statusDiv.innerHTML = status === 403
-      ? '<div class="alert alert-danger">גישה מורשית למנהלי המערכת בלבד.</div>'
-      : '<div class="alert alert-danger">שגיאה בטעינת הנתונים.</div>';
-    return;
-  }
+function renderRequests() {
+  const tbody  = document.getElementById('admin-requests-tbody');
+  const alert  = document.getElementById('req-stale-alert');
+  const search = document.getElementById('req-search').value.trim().toLowerCase();
+  const status = document.getElementById('req-status-filter').value;
 
-  contentDiv.hidden = false;
-  document.getElementById('stat-mentors').textContent  = data.mentorCount;
-  document.getElementById('stat-mentees').textContent  = data.menteeCount;
-  document.getElementById('stat-requests').textContent = data.requestCount;
-  document.getElementById('stat-rate').textContent     = `${data.answeredRate}%`;
+  let rows = allRequests;
+  if (status) rows = rows.filter(r => r.status === status);
+  if (search) rows = rows.filter(r =>
+    [r.mentorName, r.menteeName, r.topic].some(f => f?.toLowerCase().includes(search))
+  );
 
-  const tbody = document.getElementById('admin-status-tbody');
-  tbody.innerHTML = Object.entries(data.requestsByStatus)
-    .map(([s, count]) => `
-      <tr>
-        <td>${STATUS_LABELS[s] ?? s}</td>
-        <td>${count}</td>
-      </tr>`)
-    .join('');
+  const stale = allRequests.filter(r =>
+    (r.status === 'pending' || r.status === 'needs_info') && daysAgo(r.createdAt) >= 5
+  ).length;
+  alert.textContent = stale > 0 ? `⚠️ ${stale} בקשות ממתינות מעל 5 ימים` : '';
+  alert.classList.toggle('d-none', stale === 0);
+
+  tbody.innerHTML = rows.length
+    ? rows.map(r => {
+        const days = daysAgo(r.createdAt);
+        const staleRow = (r.status === 'pending' || r.status === 'needs_info') && days >= 5;
+        return `<tr class="${staleRow ? 'admin-table__row--stale' : ''}">
+          <td>${r.mentorName ?? '—'}</td>
+          <td>${r.menteeName ?? '—'}</td>
+          <td>${r.topic ?? '—'}</td>
+          <td>${STATUS_LABELS[r.status] ?? r.status}</td>
+          <td>${fmt(r.createdAt)}</td>
+          <td>${days}</td>
+        </tr>`;
+      }).join('')
+    : emptyRow(6);
 }
 
-// --- initial load ---
-const session = getSession();
+// ─── Mentors ──────────────────────────────────────────────────────────────────
 
+let allMentors = [];
+
+function renderMentors() {
+  const tbody  = document.getElementById('admin-mentors-tbody');
+  const search = document.getElementById('mentor-search').value.trim().toLowerCase();
+  let rows = allMentors;
+  if (search) rows = rows.filter(m =>
+    [m.fullName, m.email, ...(m.expertise ?? [])].some(f => f?.toLowerCase().includes(search))
+  );
+  tbody.innerHTML = rows.length
+    ? rows.map(m => `<tr>
+        <td>${m.fullName ?? '—'}</td>
+        <td>${m.email ?? '—'}</td>
+        <td>${[m.currentRole, m.company ? `@ ${m.company}` : null].filter(Boolean).join(' ') || '—'}</td>
+        <td>${(m.expertise ?? []).join(', ') || '—'}</td>
+        <td>${m.availability === 'unavailable' ? 'לא פנוי/ה' : 'פנוי/ה'}</td>
+        <td>${fmt(m.createdAt)}</td>
+      </tr>`).join('')
+    : emptyRow(6);
+}
+
+// ─── Mentees ──────────────────────────────────────────────────────────────────
+
+let allMentees = [];
+
+function renderMentees() {
+  const tbody  = document.getElementById('admin-mentees-tbody');
+  const search = document.getElementById('mentee-search').value.trim().toLowerCase();
+  let rows = allMentees;
+  if (search) rows = rows.filter(m =>
+    [m.fullName, m.email, ...(m.interests ?? [])].some(f => f?.toLowerCase().includes(search))
+  );
+  tbody.innerHTML = rows.length
+    ? rows.map(m => `<tr>
+        <td>${m.fullName ?? '—'}</td>
+        <td>${m.email ?? '—'}</td>
+        <td>${LEVEL_LABELS[m.experienceLevel] ?? m.experienceLevel ?? '—'}</td>
+        <td>${(m.interests ?? []).join(', ') || '—'}</td>
+        <td>${m.goals ?? '—'}</td>
+        <td>${fmt(m.createdAt)}</td>
+      </tr>`).join('')
+    : emptyRow(6);
+}
+
+// ─── Load all ─────────────────────────────────────────────────────────────────
+
+async function loadAll() {
+  const [statsRes, requestsRes, mentorsRes, menteesRes] = await Promise.all([
+    authedFetch('/admin/stats'),
+    authedFetch('/admin/requests'),
+    authedFetch('/admin/users/mentors'),
+    authedFetch('/admin/users/mentees'),
+  ]);
+
+  if (statsRes.ok) {
+    const d = statsRes.data;
+    document.getElementById('stat-mentors').textContent  = d.mentorCount;
+    document.getElementById('stat-mentees').textContent  = d.menteeCount;
+    document.getElementById('stat-requests').textContent = d.requestCount;
+    document.getElementById('stat-open').textContent     =
+      (d.requestsByStatus.pending ?? 0) + (d.requestsByStatus.needs_info ?? 0);
+    document.getElementById('stat-rate').textContent     = `${d.answeredRate}%`;
+  }
+
+  if (requestsRes.ok) {
+    allRequests = requestsRes.data;
+    renderRequests();
+    document.getElementById('req-search').addEventListener('input', renderRequests);
+    document.getElementById('req-status-filter').addEventListener('change', renderRequests);
+  }
+
+  if (mentorsRes.ok) {
+    allMentors = mentorsRes.data;
+    renderMentors();
+    document.getElementById('mentor-search').addEventListener('input', renderMentors);
+  }
+
+  if (menteesRes.ok) {
+    allMentees = menteesRes.data;
+    renderMentees();
+    document.getElementById('mentee-search').addEventListener('input', renderMentees);
+  }
+}
+
+// ─── Init ─────────────────────────────────────────────────────────────────────
+
+const session = getSession();
 if (session?.role === 'admin' && session?.isAdmin === true) {
-  authSection.hidden = true;
-  loadStats();
+  showDashboard();
+  loadAll();
 } else {
-  contentDiv.hidden = true;
+  showAuth();
 }

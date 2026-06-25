@@ -6,22 +6,24 @@ linkTitle: "אדמין"
 weight: 70
 ---
 
-<p class="lead my-3" dir="rtl">דף זה מיועד למנהל הקהילה בלבד.</p>
-
-<div id="admin-auth-section" dir="rtl">
-
-<div id="admin-choice" class="mb-4">
-  <button type="button" class="btn btn-primary btn-lg me-2" id="choose-register">הרשם כמנהל</button>
-  <button type="button" class="btn btn-outline-primary btn-lg" id="choose-login">התחבר כמנהל</button>
-</div>
-
-<div id="admin-register-wrapper" class="row d-none">
-<div class="col-md-6">
-<div class="card">
-<div class="card-body">
-<h4 class="card-title">הרשמה כמנהל</h4>
-<div id="admin-register-msg" class="alert d-none" role="alert"></div>
-<form id="admin-register-form">
+<div id="admin-auth" dir="rtl">
+<div class="admin-auth-card">
+<h2 class="admin-auth-card__title">כניסה למערכת ניהול</h2>
+<div id="admin-auth-msg" class="alert d-none mb-3" role="alert"></div>
+<form id="admin-login-form">
+  <div class="mb-3">
+    <label class="form-label">אימייל</label>
+    <input type="email" name="email" class="form-control" required autofocus>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">סיסמה</label>
+    <input type="password" name="password" class="form-control" required>
+  </div>
+  <button type="submit" id="login-submit" class="btn btn-primary w-100">כניסה</button>
+</form>
+<form id="admin-register-form" hidden>
+  <hr class="my-4">
+  <p class="small text-muted mb-3">החשבון ייווצר במצב ממתין לאישור מנהל המערכת.</p>
   <div class="mb-3">
     <label class="form-label">שם מלא</label>
     <input type="text" name="fullName" class="form-control" required>
@@ -34,85 +36,142 @@ weight: 70
     <label class="form-label">סיסמה</label>
     <input type="password" name="password" class="form-control" minlength="6" required>
   </div>
-  <button type="submit" id="register-submit" class="btn btn-primary">הרשמה</button>
-  <button type="button" class="btn btn-link" id="back-from-register">חזרה</button>
+  <button type="submit" id="register-submit" class="btn btn-outline-primary w-100">רישום</button>
+  <button type="button" id="cancel-register" class="btn btn-link w-100 mt-1 small">ביטול</button>
 </form>
-</div>
-</div>
+<p class="admin-auth-card__footer" id="register-toggle-wrap">
+  <a href="#" id="show-register">רישום מנהל חדש</a>
+</p>
 </div>
 </div>
 
-<div id="admin-login-wrapper" class="row d-none">
-<div class="col-md-6">
-<div class="card">
-<div class="card-body">
-<h4 class="card-title">כניסה כמנהל</h4>
-<div id="admin-login-msg" class="alert d-none" role="alert"></div>
-<form id="admin-login-form">
-  <div class="mb-3">
-    <label class="form-label">אימייל</label>
-    <input type="email" name="email" class="form-control" required>
+<div id="admin-dashboard" hidden dir="rtl">
+<div class="ms-page-header">
+  <h1 class="ms-page-header__title">לוח בקרה</h1>
+  <button id="admin-logout" class="ms-auth-bar__logout">התנתקות</button>
+</div>
+<div class="row g-3 mb-4">
+  <div class="col-6 col-lg">
+    <div class="admin-stat">
+      <div class="admin-stat__value" id="stat-mentors">—</div>
+      <div class="admin-stat__label">מנטורים</div>
+    </div>
   </div>
-  <div class="mb-3">
-    <label class="form-label">סיסמה</label>
-    <input type="password" name="password" class="form-control" required>
+  <div class="col-6 col-lg">
+    <div class="admin-stat">
+      <div class="admin-stat__value" id="stat-mentees">—</div>
+      <div class="admin-stat__label">מנטים</div>
+    </div>
   </div>
-  <button type="submit" id="login-submit" class="btn btn-primary">כניסה</button>
-  <button type="button" class="btn btn-link" id="back-from-login">חזרה</button>
-</form>
+  <div class="col-6 col-lg">
+    <div class="admin-stat">
+      <div class="admin-stat__value" id="stat-requests">—</div>
+      <div class="admin-stat__label">סה״כ בקשות</div>
+    </div>
+  </div>
+  <div class="col-6 col-lg">
+    <div class="admin-stat">
+      <div class="admin-stat__value admin-stat__value--warn" id="stat-open">—</div>
+      <div class="admin-stat__label">ממתינות לטיפול</div>
+    </div>
+  </div>
+  <div class="col-6 col-lg">
+    <div class="admin-stat">
+      <div class="admin-stat__value admin-stat__value--success" id="stat-rate">—</div>
+      <div class="admin-stat__label">אחוז מענה</div>
+    </div>
+  </div>
 </div>
+<ul class="nav nav-tabs mb-0" id="admin-tabs">
+  <li class="nav-item">
+    <button class="nav-link active" data-target="tab-requests">בקשות</button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" data-target="tab-mentors">מנטורים</button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" data-target="tab-mentees">מנטים</button>
+  </li>
+</ul>
+<div class="admin-panel">
+  <div id="tab-requests">
+    <div class="admin-filter-bar">
+      <input type="text" id="req-search" class="form-control form-control-sm admin-filter-bar__search" placeholder="חיפוש לפי שם מנטור, מנטי או נושא...">
+      <select id="req-status-filter" class="form-select form-select-sm admin-filter-bar__select">
+        <option value="">כל הסטטוסים</option>
+        <option value="pending">בהמתנה</option>
+        <option value="needs_info">דורש פרטים</option>
+        <option value="approved">אושרה</option>
+        <option value="rejected">נדחתה</option>
+        <option value="completed">הושלמה</option>
+        <option value="canceled">בוטלה</option>
+      </select>
+      <span id="req-stale-alert" class="badge bg-warning text-dark d-none" style="margin-inline-start:auto"></span>
+    </div>
+    <div class="table-responsive">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>מנטור/ית</th>
+            <th>מנטי/ת</th>
+            <th>נושא</th>
+            <th>סטטוס</th>
+            <th>תאריך יצירה</th>
+            <th>ימים</th>
+          </tr>
+        </thead>
+        <tbody id="admin-requests-tbody">
+          <tr><td colspan="6" class="text-center text-muted py-4">טוען...</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small text-muted mt-2 mb-0">שורות מסומנות בצהוב = ממתינות מעל 5 ימים.</p>
+  </div>
+  <div id="tab-mentors" hidden>
+    <div class="admin-filter-bar">
+      <input type="text" id="mentor-search" class="form-control form-control-sm admin-filter-bar__search" placeholder="חיפוש לפי שם, אימייל או תחום...">
+    </div>
+    <div class="table-responsive">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>שם מלא</th>
+            <th>אימייל</th>
+            <th>תפקיד / חברה</th>
+            <th>תחומי התמחות</th>
+            <th>זמינות</th>
+            <th>הצטרפות</th>
+          </tr>
+        </thead>
+        <tbody id="admin-mentors-tbody">
+          <tr><td colspan="6" class="text-center text-muted py-4">טוען...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id="tab-mentees" hidden>
+    <div class="admin-filter-bar">
+      <input type="text" id="mentee-search" class="form-control form-control-sm admin-filter-bar__search" placeholder="חיפוש לפי שם, אימייל או תחום עניין...">
+    </div>
+    <div class="table-responsive">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>שם מלא</th>
+            <th>אימייל</th>
+            <th>רמת ניסיון</th>
+            <th>תחומי עניין</th>
+            <th>מטרות</th>
+            <th>הצטרפות</th>
+          </tr>
+        </thead>
+        <tbody id="admin-mentees-tbody">
+          <tr><td colspan="6" class="text-center text-muted py-4">טוען...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-
-</div>
-
-<hr class="my-4">
-
-<div id="admin-status"></div>
-
-<div id="admin-content" hidden>
-
-סטטיסטיקות כלליות:
-
-<div class="row text-center mb-4" dir="rtl">
-<div class="col-md-3 mb-3">
-  <div class="card"><div class="card-body">
-    <h2 id="stat-mentors">—</h2>
-    <p class="mb-0">מנטורים רשומים</p>
-  </div></div>
-</div>
-<div class="col-md-3 mb-3">
-  <div class="card"><div class="card-body">
-    <h2 id="stat-mentees">—</h2>
-    <p class="mb-0">מנטים רשומים</p>
-  </div></div>
-</div>
-<div class="col-md-3 mb-3">
-  <div class="card"><div class="card-body">
-    <h2 id="stat-requests">—</h2>
-    <p class="mb-0">בקשות מנטורינג</p>
-  </div></div>
-</div>
-<div class="col-md-3 mb-3">
-  <div class="card"><div class="card-body">
-    <h2 id="stat-rate">—</h2>
-    <p class="mb-0">אחוז בקשות שנענו</p>
-  </div></div>
-</div>
-</div>
-
-פילוח בקשות לפי סטטוס:
-
-<div class="table-responsive" dir="rtl">
-<table class="table table-striped">
-<thead>
-<tr><th>סטטוס</th><th>כמות</th></tr>
-</thead>
-<tbody id="admin-status-tbody"></tbody>
-</table>
-</div>
-
 </div>
 
 <script type="module" src="/js/mentorship/admin.js"></script>
