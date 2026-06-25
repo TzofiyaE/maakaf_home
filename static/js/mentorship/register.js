@@ -1,112 +1,102 @@
 import { apiFetch, saveSession, getSession, dashboardUrl } from './api.js';
-import { describeAuthError, showFormMessage } from './errors.js';
-import { showToast, showBlockingMessage } from './toast.js';
+import { describeAuthError, showFormMessage, getErrorMessage } from './errors.js';
+import { showToast, showErrorPopup } from './toast.js';
 
-const PENDING_KEY = 'mentorship.pendingVerification';
+// ─── Verification card (OTP) ──────────────────────────────────────────────────
 
-function startVerificationPolling(uid, credentials, dismissWaiting, dashboardUrl) {
-  let attempts = 0;
-  let inProgress = false;
+let activeFormWrapper = null;
 
-  async function check() {
-    if (inProgress) return;
-    inProgress = true;
+function showVerifyCard(email, uid, credentials, targetDashboardUrl) {
+  const card        = document.getElementById('verify-card');
+  const emailDisplay = document.getElementById('verify-email-display');
+  const codeInput   = document.getElementById('verify-code-input');
+  const codeError   = document.getElementById('verify-code-error');
+  const submitBtn   = document.getElementById('verify-submit-btn');
+  const resendBtn   = document.getElementById('resend-btn');
+  const resendMsg   = document.getElementById('resend-msg');
+  const changeLink  = document.getElementById('change-email-link');
 
-    if (++attempts > 100) {
-      clearInterval(interval);
-      document.removeEventListener('visibilitychange', onVisible);
-      inProgress = false;
+  if (emailDisplay) emailDisplay.textContent = email ?? '';
+  card.hidden = false;
+  codeInput?.focus();
+
+  // Submit code
+  submitBtn.addEventListener('click', async () => {
+    const code = codeInput.value.trim();
+    if (code.length !== 6) {
+      codeError.textContent = 'יש להזין קוד בן 6 ספרות.';
+      codeError.classList.remove('d-none');
       return;
     }
+    codeError.classList.add('d-none');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'מאמת...';
 
-    const { ok, data } = await apiFetch(`/auth/verify-status/${uid}`)
-      .catch(() => ({ ok: false, data: {} }));
+    const { ok, data } = await apiFetch('/auth/verify-code', {
+      method: 'POST',
+      body: { uid, code, email: credentials?.email, password: credentials?.password },
+    });
 
-    if (!ok || !data.verified) {
-      inProgress = false;
-      return;
-    }
+    if (credentials) { credentials.email = ''; credentials.password = ''; }
 
-    clearInterval(interval);
-    document.removeEventListener('visibilitychange', onVisible);
-    sessionStorage.removeItem(PENDING_KEY);
-
-    if (!credentials) {
-      dismissWaiting();
-      showToast('האימייל אומת בהצלחה! ניתן להתחבר כעת.', () => {
-        window.location.href = '/he/mentorship/login/';
+    if (ok) {
+      saveSession(data);
+      showToast('האימות הושלם בהצלחה!', () => {
+        window.location.href = targetDashboardUrl ?? dashboardUrl(data.role);
       });
-      return;
+    } else {
+      const msg = getErrorMessage(data?.error?.code) || 'שגיאה באימות. נסה/י שוב.';
+      codeError.textContent = msg;
+      codeError.classList.remove('d-none');
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'אמת/י';
     }
+  });
 
-    try {
-      let loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
-      if (!loginResult.ok && loginResult.data?.error?.code === 'EMAIL_NOT_VERIFIED') {
-        await new Promise(r => setTimeout(r, 2000));
-        loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
-      }
+  // Allow submitting with Enter
+  codeInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') submitBtn.click();
+  });
 
-      credentials.email = '';
-      credentials.password = '';
-      dismissWaiting();
+  // Resend with 60s countdown
+  resendBtn.addEventListener('click', async () => {
+    if (!email) return;
+    resendBtn.disabled = true;
+    await apiFetch('/auth/resend-verification', { method: 'POST', body: { email } });
+    codeInput.value = '';
 
-      if (loginResult.ok) {
-        saveSession(loginResult.data);
-        showToast('האימייל אומת בהצלחה!', () => { window.location.href = dashboardUrl; });
+    let seconds = 60;
+    resendMsg.textContent = `קוד חדש נשלח ✓ — ניתן לשלוח שוב עוד ${seconds} שניות`;
+    resendMsg.classList.remove('d-none');
+
+    const countdown = setInterval(() => {
+      seconds--;
+      if (seconds <= 0) {
+        clearInterval(countdown);
+        resendMsg.classList.add('d-none');
+        resendBtn.disabled = false;
       } else {
-        showToast('האימייל אומת! ניתן להתחבר כעת.', () => {
-          window.location.href = '/he/mentorship/login/';
-        });
+        resendMsg.textContent = `קוד חדש נשלח ✓ — ניתן לשלוח שוב עוד ${seconds} שניות`;
       }
-    } catch {
-      credentials.email = '';
-      credentials.password = '';
-      dismissWaiting();
-      showToast('האימייל אומת! ניתן להתחבר כעת.', () => {
-        window.location.href = '/he/mentorship/login/';
-      });
+    }, 1000);
+  });
+
+  // Change email — go back to the form
+  changeLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    card.hidden = true;
+    if (activeFormWrapper) {
+      activeFormWrapper.classList.remove('d-none');
+      activeFormWrapper = null;
     }
-  }
-
-  const interval = setInterval(check, 3000);
-
-  function onVisible() {
-    if (document.visibilityState === 'visible') check();
-  }
-  document.addEventListener('visibilitychange', onVisible);
+  });
 }
 
 // Already logged in — redirect immediately
 const existing = getSession();
 if (existing) {
   document.getElementById('register-choice').hidden = true;
-  window.location.href = existing.role === 'mentor'
-    ? '/he/mentorship/mentor-dashboard/'
-    : '/he/mentorship/mentee-dashboard/';
-}
-
-// Recover from same-tab navigation: if the user clicked the email link in this
-// tab, the page reloaded but sessionStorage still holds the pending uid.
-// Skip if already logged in (redirect above will handle it).
-if (!existing) {
-  (async function recoverPendingVerification() {
-    const uid = sessionStorage.getItem(PENDING_KEY);
-    if (!uid) return;
-
-    const { ok, data } = await apiFetch(`/auth/verify-status/${uid}`)
-      .catch(() => ({ ok: false, data: {} }));
-
-    if (ok && data.verified) {
-      sessionStorage.removeItem(PENDING_KEY);
-      showToast('האימייל אומת בהצלחה! ניתן להתחבר כעת.', () => {
-        window.location.href = '/he/mentorship/login/';
-      });
-      return;
-    }
-
-    const dismiss = showBlockingMessage('ממתינים לאימות כתובת האימייל — אנא לחץ/י על הקישור שנשלח למייל שלך.');
-    startVerificationPolling(uid, null, dismiss, null);
-  })();
+  window.location.href = dashboardUrl(existing.role);
 }
 
 function splitList(value) {
@@ -130,9 +120,6 @@ async function handleRegisterSubmit(event, config) {
 
   if (!config.validate(form, messageEl)) return;
 
-  // Discard any stale pending state from a previous registration attempt
-  sessionStorage.removeItem(PENDING_KEY);
-
   submitBtn.disabled = true;
   try {
     const { ok, data } = await apiFetch('/auth/register', {
@@ -141,7 +128,12 @@ async function handleRegisterSubmit(event, config) {
     });
 
     if (!ok) {
-      showFormMessage(messageEl, describeAuthError(data.error), true);
+      const code = data?.error?.code;
+      if (code === 'auth/email-already-exists' || code === 'auth/email-already-in-use' || code === 'EMAIL_EXISTS') {
+        showErrorPopup(getErrorMessage(code));
+      } else {
+        showFormMessage(messageEl, describeAuthError(data.error), true);
+      }
       return;
     }
 
@@ -152,11 +144,11 @@ async function handleRegisterSubmit(event, config) {
         window.location.href = config.dashboardUrl;
       });
     } else {
-      sessionStorage.setItem(PENDING_KEY, data.uid);
       const credentials = { email, password };
+      activeFormWrapper = form.closest('[id$="-wrapper"]');
+      activeFormWrapper?.classList.add('d-none');
       form.reset();
-      const dismissWaiting = showBlockingMessage(`נרשמת בהצלחה, ${fullName}! נשלח אליך אימייל אימות — אנא לחץ/י על הקישור שבמייל.`);
-      startVerificationPolling(data.uid, credentials, dismissWaiting, config.dashboardUrl);
+      showVerifyCard(email, data.uid, credentials, config.dashboardUrl);
     }
   } catch (err) {
     showFormMessage(messageEl, describeAuthError(err), true);

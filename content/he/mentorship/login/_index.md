@@ -67,12 +67,15 @@ weight: 30
 <div class="card border-0 shadow-sm">
 <div class="card-body p-4 text-center">
 <div style="font-size:40px;margin-bottom:12px;">✉️</div>
-<h5 class="mb-2">אמתו את כתובת האימייל</h5>
-<p class="text-muted small mb-3">שלחנו קישור לאימות לכתובת <strong id="verify-email-display"></strong>.</p>
-<p class="text-muted small mb-3">לא קיבלתם? בדקו את תיקיית הספאם, או לחצו לשליחה מחדש.</p>
-<button class="btn btn-outline-secondary btn-sm" id="verify-resend-btn">שליחה מחדש</button>
-<span id="verify-resend-countdown" class="text-muted me-2 d-none" style="font-size:13px;"></span>
-<p class="mt-3 small mb-0"><a href="#" id="back-to-login-from-verify">חזרה להתחברות</a></p>
+<h5 class="mb-2">הכנס/י את קוד האימות</h5>
+<p class="text-muted small mb-1">שלחנו קוד בן 6 ספרות אל</p>
+<p class="fw-semibold mb-3" id="verify-email-display"></p>
+<input id="verify-code-input" type="text" inputmode="numeric" maxlength="6" autocomplete="one-time-code" class="form-control form-control-lg text-center mb-2" style="letter-spacing:8px;font-size:1.5rem;max-width:200px;margin:0 auto 12px;" placeholder="------">
+<p id="verify-code-error" class="text-danger small d-none mb-2"></p>
+<button id="verify-submit-btn" type="button" class="btn btn-primary w-100 mb-3">אמת/י</button>
+<button class="btn btn-link btn-sm mb-1" id="verify-resend-btn">שלח/י קוד חדש</button>
+<span id="verify-resend-countdown" class="text-muted d-none" style="font-size:13px;"></span>
+<p class="mt-2 small mb-0"><a href="#" id="back-to-login-from-verify">חזרה להתחברות</a></p>
 </div>
 </div>
 </div>

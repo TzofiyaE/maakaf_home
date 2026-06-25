@@ -187,5 +187,26 @@ weight: 20
 })();
 </script>
 
+<div id="verify-card" hidden dir="rtl">
+<div class="row justify-content-center">
+<div class="col-md-6">
+<div class="card border-0 shadow-sm">
+<div class="card-body p-4 text-center">
+<div style="font-size:2.5rem;margin-bottom:16px">✉️</div>
+<h5 class="fw-bold mb-2">הכנס/י את קוד האימות</h5>
+<p class="text-muted mb-1">שלחנו קוד בן 6 ספרות אל</p>
+<p class="fw-semibold mb-3" id="verify-email-display"></p>
+<input id="verify-code-input" type="text" inputmode="numeric" maxlength="6" autocomplete="one-time-code" class="form-control form-control-lg text-center mb-2" style="letter-spacing:8px;font-size:1.5rem;max-width:200px;margin:0 auto 12px;" placeholder="------">
+<p id="verify-code-error" class="text-danger small d-none mb-2"></p>
+<button id="verify-submit-btn" type="button" class="btn btn-primary w-100 mb-3">אמת/י</button>
+<button id="resend-btn" type="button" class="btn btn-link btn-sm mb-1">שלח/י קוד חדש</button>
+<p id="resend-msg" class="text-success small d-none mb-1">קוד חדש נשלח ✓</p>
+<a href="#" id="change-email-link" class="d-block small text-muted mt-1">שינוי כתובת אימייל</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 <script type="module" src="/js/mentorship/register.js"></script>
 </content>

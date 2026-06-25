@@ -1,5 +1,5 @@
 import { apiFetch, saveSession, getSession, dashboardUrl } from './api.js';
-import { describeAuthError, showFormMessage } from './errors.js';
+import { describeAuthError, showFormMessage, getErrorMessage } from './errors.js';
 import { showToast } from './toast.js';
 
 const wrapper = document.getElementById('login-form-wrapper');
@@ -25,7 +25,6 @@ function showLoginForm() {
   verifyWrapper.classList.add('d-none');
   wrapper.classList.remove('d-none');
   clearInterval(resendTimer);
-  stopVerifyPolling();
 }
 
 function showForgotForm() {
@@ -112,116 +111,99 @@ forgotForm.addEventListener('submit', async (e) => {
   }
 });
 
-// ─── Email verification polling ───────────────────────────────────────────────
+// ─── OTP verification screen (shown after EMAIL_NOT_VERIFIED on login) ────────
 
 let verifyResendTimer = null;
-let verifyPollInterval = null;
-let verifyOnVisible = null;
+let verifyCredentials = null;
+let verifyUid = null;
 
-function stopVerifyPolling() {
-  clearInterval(verifyPollInterval);
-  verifyPollInterval = null;
-  if (verifyOnVisible) {
-    document.removeEventListener('visibilitychange', verifyOnVisible);
-    verifyOnVisible = null;
-  }
-}
-
-function startVerifyPolling(uid, credentials) {
-  let attempts = 0;
-  let inProgress = false;
-
-  async function check() {
-    if (inProgress) return;
-    inProgress = true;
-
-    if (++attempts > 100) {
-      stopVerifyPolling();
-      inProgress = false;
-      return;
-    }
-
-    const { ok, data } = await apiFetch(`/auth/verify-status/${uid}`)
-      .catch(() => ({ ok: false, data: {} }));
-
-    if (!ok || !data.verified) {
-      inProgress = false;
-      return;
-    }
-
-    stopVerifyPolling();
-
-    let loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
-    if (!loginResult.ok && loginResult.data?.error?.code === 'EMAIL_NOT_VERIFIED') {
-      await new Promise(r => setTimeout(r, 2000));
-      loginResult = await apiFetch('/auth/login', { method: 'POST', body: credentials });
-    }
-
-    credentials.email = '';
-    credentials.password = '';
-
-    if (loginResult.ok) {
-      saveSession(loginResult.data);
-      const dest = dashboardUrl(loginResult.data.role);
-      showToast('האימייל אומת בהצלחה!', () => { window.location.href = dest; });
-    } else {
-      showToast('האימייל אומת! אנא נסה/י להתחבר שוב.', () => {
-        window.location.href = '/he/mentorship/login/';
-      });
-    }
-  }
-
-  verifyPollInterval = setInterval(check, 3000);
-
-  verifyOnVisible = () => {
-    if (document.visibilityState === 'visible') check();
-  };
-  document.addEventListener('visibilitychange', verifyOnVisible);
-}
+const verifyCodeInput    = document.getElementById('verify-code-input');
+const verifyCodeError    = document.getElementById('verify-code-error');
+const verifySubmitBtn    = document.getElementById('verify-submit-btn');
 
 function showVerifyEmailScreen(email, credentials, uid) {
   wrapper.classList.add('d-none');
   verifyEmailDisplay.textContent = email;
+  verifyCredentials = credentials;
+  verifyUid = uid;
   verifyWrapper.classList.remove('d-none');
+  verifyCodeInput?.focus();
   startVerifyResendCountdown();
-
-  if (uid && credentials) {
-    startVerifyPolling(uid, credentials);
-  }
 }
 
 function startVerifyResendCountdown() {
-  let seconds = 30;
+  let seconds = 60;
   verifyResendBtn.disabled = true;
-  verifyResendCountdown.textContent = `(${seconds}s)`;
+  verifyResendCountdown.textContent = `ניתן לשלוח שוב עוד ${seconds} שניות`;
   verifyResendCountdown.classList.remove('d-none');
   clearInterval(verifyResendTimer);
   verifyResendTimer = setInterval(() => {
     seconds--;
-    verifyResendCountdown.textContent = `(${seconds}s)`;
     if (seconds <= 0) {
       clearInterval(verifyResendTimer);
       verifyResendBtn.disabled = false;
       verifyResendCountdown.classList.add('d-none');
+    } else {
+      verifyResendCountdown.textContent = `ניתן לשלוח שוב עוד ${seconds} שניות`;
     }
   }, 1000);
 }
 
+verifySubmitBtn.addEventListener('click', async () => {
+  const code = verifyCodeInput.value.trim();
+  if (code.length !== 6) {
+    verifyCodeError.textContent = 'יש להזין קוד בן 6 ספרות.';
+    verifyCodeError.classList.remove('d-none');
+    return;
+  }
+  verifyCodeError.classList.add('d-none');
+  verifySubmitBtn.disabled = true;
+  verifySubmitBtn.textContent = 'מאמת...';
+
+  const { ok, data } = await apiFetch('/auth/verify-code', {
+    method: 'POST',
+    body: {
+      uid: verifyUid,
+      code,
+      email: verifyCredentials?.email,
+      password: verifyCredentials?.password,
+    },
+  });
+
+  if (verifyCredentials) { verifyCredentials.email = ''; verifyCredentials.password = ''; }
+
+  if (ok) {
+    saveSession(data);
+    showToast('האימות הושלם בהצלחה!', () => {
+      window.location.href = dashboardUrl(data.role);
+    });
+  } else {
+    const msg = getErrorMessage(data?.error?.code) || 'שגיאה באימות. נסה/י שוב.';
+    verifyCodeError.textContent = msg;
+    verifyCodeError.classList.remove('d-none');
+    verifySubmitBtn.disabled = false;
+    verifySubmitBtn.textContent = 'אמת/י';
+  }
+});
+
+verifyCodeInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') verifySubmitBtn.click();
+});
+
 verifyResendBtn.addEventListener('click', async () => {
   const email = verifyEmailDisplay.textContent;
   verifyResendBtn.disabled = true;
-  try {
-    await apiFetch('/auth/resend-verification', { method: 'POST', body: { email } });
-  } finally {
-    startVerifyResendCountdown();
-  }
+  await apiFetch('/auth/resend-verification', { method: 'POST', body: { email } });
+  verifyCodeInput.value = '';
+  startVerifyResendCountdown();
 });
 
 document.getElementById('back-to-login-from-verify').addEventListener('click', (e) => {
   e.preventDefault();
   verifyWrapper.classList.add('d-none');
   clearInterval(verifyResendTimer);
-  stopVerifyPolling();
+  verifyCredentials = null;
+  verifyUid = null;
   wrapper.classList.remove('d-none');
 });
 

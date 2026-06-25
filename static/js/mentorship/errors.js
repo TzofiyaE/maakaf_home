@@ -26,6 +26,10 @@ const AUTH_ERROR_MESSAGES = {
   // email verification
   EMAIL_NOT_VERIFIED: 'יש לאמת את כתובת האימייל לפני ההתחברות. בדוק/י את תיבת הדואר שלך.',
 
+  // OTP verification errors
+  INVALID_CODE: 'הקוד שגוי. נסה/י שוב.',
+  CODE_EXPIRED: 'פג תוקף הקוד. שלח/י קוד חדש.',
+
   // request-specific errors
   DUPLICATE_REQUEST:    'כבר שלחת בקשה פעילה למנטור/ית זה/זו. המתן/י לתגובה לפני שליחת בקשה חדשה.',
   MENTOR_UNAVAILABLE:   'המנטור/ית אינ/ה פנוי/ה כרגע לקבלת בקשות חדשות.',
