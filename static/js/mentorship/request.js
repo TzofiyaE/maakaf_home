@@ -1,5 +1,6 @@
 import { apiFetch, getSession, authedFetch } from './api.js';
 import { getErrorMessage, escapeHtml } from './errors.js';
+import { showErrorPopup } from './toast.js';
 
 const statusDiv    = document.getElementById('req-status');
 const formDiv      = document.getElementById('req-form');
@@ -119,7 +120,7 @@ submitBtn.addEventListener('click', async () => {
 
   const topic = topicInput.value.trim();
   if (!topic) {
-    showStatus('יש למלא נושא לבקשה.', 'warning');
+    showErrorPopup('יש למלא נושא לבקשה.');
     return;
   }
   if (topic.length > TOPIC_MAX) {
@@ -148,8 +149,12 @@ submitBtn.addEventListener('click', async () => {
       'success'
     );
   } else {
-    const msg = getErrorMessage(data?.error?.code) || 'שגיאה בשליחת הבקשה. אנא נסה/י שוב.';
-    showStatus(msg, 'danger');
+    const code = data?.error?.code;
+    if (code === 'DUPLICATE_REQUEST') {
+      showErrorPopup(getErrorMessage(code));
+    } else {
+      showStatus(getErrorMessage(code) || 'שגיאה בשליחת הבקשה. אנא נסה/י שוב.', 'danger');
+    }
     submitBtn.disabled = false;
     submitBtn.textContent = 'שליחת בקשה';
   }
