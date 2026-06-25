@@ -201,6 +201,10 @@ const mentorConfig = {
       showFormMessage(messageEl, 'יש למלא קישור לתיאום פגישה (שדה חובה).', true);
       return false;
     }
+    if (!document.getElementById('mentor-visibility-consent').checked) {
+      showFormMessage(messageEl, 'יש לאשר שהפרטים יהיו גלויים בספרייה.', true);
+      return false;
+    }
     return true;
   },
   buildBody(form, fullName, email, password) {
@@ -223,3 +227,8 @@ document.getElementById('mentee-register-form')
   .addEventListener('submit', (e) => handleRegisterSubmit(e, menteeConfig));
 document.getElementById('mentor-register-form')
   .addEventListener('submit', (e) => handleRegisterSubmit(e, mentorConfig));
+
+document.getElementById('mentor-visibility-consent')
+  .addEventListener('change', (e) => {
+    document.getElementById('mentor-submit-btn').disabled = !e.target.checked;
+  });

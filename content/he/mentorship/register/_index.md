@@ -84,7 +84,6 @@ weight: 20
 <div class="card border-0 shadow-sm">
 <div class="card-body p-4">
 <h3 class="card-title mb-1">הרשמה כמנטור/ית</h3>
-<div class="alert alert-info small py-2">כל הפרטים שתספקו יופיעו בספריית המנטורים, למעט כתובת האימייל.</div>
 <p class="text-muted small mb-3">שדות המסומנים ב-<span class="text-danger">*</span> הם שדות חובה.</p>
 <div id="mentor-message" class="alert d-none" role="alert"></div>
 <form id="mentor-register-form">
@@ -133,8 +132,14 @@ weight: 20
     <label class="form-label">קישור לתיאום פגישה (Calendly או שווה ערך) <span class="text-danger">*</span></label>
     <input type="url" name="calendlyUrl" class="form-control" placeholder="https://calendly.com/yourname" required>
   </div>
+  <div class="mb-4 form-check">
+    <input type="checkbox" class="form-check-input" id="mentor-visibility-consent">
+    <label class="form-check-label small" for="mentor-visibility-consent">
+      כל הפרטים שתספקו יופיעו בספריית המנטורים ויהיו גלויים לכולם, <strong>למעט כתובת האימייל</strong>.
+    </label>
+  </div>
   <div class="d-flex gap-2 align-items-center">
-    <button type="submit" class="btn btn-primary">הרשמה כמנטור/ית</button>
+    <button type="submit" class="btn btn-primary" id="mentor-submit-btn" disabled>הרשמה כמנטור/ית</button>
     <button type="button" class="btn btn-link text-muted" id="back-from-mentor">חזרה לבחירה</button>
   </div>
 </form>
