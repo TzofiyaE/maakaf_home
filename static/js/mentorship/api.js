@@ -21,9 +21,9 @@ export function clearSession() {
 }
 
 export function dashboardUrl(role) {
-  return role === 'mentor'
-    ? '/he/mentorship/mentor-dashboard/'
-    : '/he/mentorship/mentee-dashboard/';
+  if (role === 'mentor') return '/he/mentorship/mentor-dashboard/';
+  if (role === 'admin')  return '/he/mentorship/admin/';
+  return '/he/mentorship/mentee-dashboard/';
 }
 
 export async function apiFetch(path, options = {}) {

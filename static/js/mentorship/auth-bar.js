@@ -36,7 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('auth-bar-logout').addEventListener('click', () => {
       if (!confirm('האם אתם בטוחים שברצונכם להתנתק?')) return;
       clearSession();
-      window.location.href = '/he/mentorship/login/';
+      window.location.href = session.role === 'admin'
+        ? '/he/mentorship/admin/'
+        : '/he/mentorship/login/';
     });
   }
 });
