@@ -1,12 +1,5 @@
 ---
-type: "docs"
-title: "מאמרים"
-slug: "articles"
-linkTitle: "מאמרים"
-menu:
-  main:
-    weight: 90
-    identifier: articles
+build:
+  render: never
+  list: never
 ---
-    
-מאמרים קצרים של אוריאל אופיר, מנהל הקהילה, עם המחשבות שלו לגבי עולם הקוד הפתוח.

@@ -179,6 +179,6 @@ _**נשים לב!** שתי הפעולות האלו, פורק וקלון, אלו 
 עכשיו כשתרגלתם את זה במו ידיכם, הגיע הזמן למצוא פרויקטים לתרום אליהם.
 כדי למצוא אותם בעמוד הפרוייקטים המומלצים באתר שלנו.
 
-<a class="btn btn-outline-primary" href="/he/guides/projects" target="_blank">🔗 לפרויקטים המומלצים</a>
+<a class="btn btn-outline-primary" href="/he/guides/" target="_blank">🔗 לפרויקטים המומלצים</a>
 
 {{< comments >}}

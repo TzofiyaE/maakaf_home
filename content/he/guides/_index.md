@@ -2,10 +2,17 @@
 type: "docs"
 title: "הדרכה וחונכות"
 slug: "guides"
-linkTitle: "הדרכה וחונכות"
+linkTitle: "פרויקטים"
+layout: guides-projects
+body_class: "guides-projects"
+no_list: true
+hide_feedback: true
+aliases:
+  - /guides/projects/
+  - /guides/recommended-projects/
 menu:
   main:
-    weight: 30
+    weight: 20
     identifier: projects
 ---
 

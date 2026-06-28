@@ -5,7 +5,7 @@ slug: "blog"
 linkTitle: "בלוג"
 menu:
   main:
-    weight: 70
+    weight: 50
     identifier: blog
 ---
 

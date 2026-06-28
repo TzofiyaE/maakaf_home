@@ -17,6 +17,16 @@
 [context.production]
 command = "npm run build:production"
 
+[[redirects]]
+  from = "/he/guides/projects/"
+  to = "/he/guides/"
+  status = 301
+
+[[redirects]]
+  from = "/he/guides/projects"
+  to = "/he/guides/"
+  status = 301
+
 # Redirect all 404s to our custom 404 page
 [[redirects]]
   from = "/*"

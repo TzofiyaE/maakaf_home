@@ -2,10 +2,10 @@
 title: 'אודות מעקף'
 slug: "about"
 linkTitle: 'אודות'
-weight: 2
+weight: 10
 menu:
   main:
-    weight: 2
+    weight: 10
     identifier: about
 ---
 
