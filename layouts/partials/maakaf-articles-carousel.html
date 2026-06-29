@@ -1,0 +1,50 @@
+{{ $pages := where .Site.RegularPages "Section" "articles" -}}
+{{ $pages = $pages.ByWeight -}}
+{{ $isHebrew := eq .Site.Language.Lang "he" -}}
+
+<section
+  class="maakaf-articles-carousel"
+  dir="rtl"
+  aria-label="{{ if $isHebrew }}מאמרים{{ else }}Articles{{ end }}"
+  data-articles-carousel
+>
+  <div class="maakaf-articles-carousel__viewport">
+    <div class="maakaf-articles-carousel__track" data-track>
+      {{ range $pages -}}
+      {{ $excerpt := .Params.description | default (.Summary | plainify) -}}
+      <article class="maakaf-articles-carousel__card">
+        <div class="maakaf-articles-carousel__card-content">
+          <h2 class="maakaf-articles-carousel__card-title">{{ .Title }}</h2>
+          <p class="maakaf-articles-carousel__card-excerpt">{{ $excerpt | truncate 220 }}</p>
+        </div>
+        <a class="maakaf-articles-carousel__card-link" href="{{ .RelPermalink }}">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          <span>{{ if $isHebrew }}המשך קריאה{{ else }}Read more{{ end }}</span>
+        </a>
+      </article>
+      {{ end -}}
+    </div>
+  </div>
+
+  <div class="maakaf-articles-carousel__nav">
+    <button
+      type="button"
+      class="maakaf-articles-carousel__nav-btn maakaf-articles-carousel__nav-btn--prev"
+      data-prev
+      aria-label="{{ if $isHebrew }}מאמרים קודמים{{ else }}Previous articles{{ end }}"
+      disabled
+    >
+      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+    </button>
+    <button
+      type="button"
+      class="maakaf-articles-carousel__nav-btn maakaf-articles-carousel__nav-btn--next"
+      data-next
+      aria-label="{{ if $isHebrew }}מאמרים הבאים{{ else }}Next articles{{ end }}"
+    >
+      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+    </button>
+  </div>
+</section>
+
+<script type="module" src="/js/articles-carousel.js"></script>

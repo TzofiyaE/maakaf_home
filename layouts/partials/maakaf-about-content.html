@@ -32,45 +32,6 @@
       </div>
     </div>
 
-    <div class="maakaf-about-content__cards" dir="rtl">
-      <article class="maakaf-about-content__card">
-        <h2 class="maakaf-about-content__card-title">
-          {{ if eq .Site.Language.Lang "he" }}אירועי קוד פתוח{{ else }}Open source events{{ end }}
-        </h2>
-        <div class="maakaf-about-content__card-body">
-          {{ if eq .Site.Language.Lang "he" }}
-            <p>כל שבועיים אנחנו נפגשים ל<a href="https://www.meetup.com/maakaf" target="_blank" rel="noopener noreferrer">מסיבת קוד פתוח</a> – מפגש קהילתי מלא קוד, למידה, וחיבורים חדשים. האירועים פתוחים לכולם – גם אם אתם רק מתחילים וגם אם אתם כבר תורמים לקוד פתוח.</p>
-          {{ else }}
-            <p>Every two weeks we meet for an <a href="https://www.meetup.com/maakaf" target="_blank" rel="noopener noreferrer">open source party</a> — a community gathering full of code, learning, and new connections. The events are open to everyone, whether you're just starting out or already contributing to open source.</p>
-          {{ end }}
-        </div>
-      </article>
-
-      <article class="maakaf-about-content__card">
-        <h2 class="maakaf-about-content__card-title">
-          {{ if eq .Site.Language.Lang "he" }}מנטורינג וליווי אישי{{ else }}Mentoring and personal guidance{{ end }}
-        </h2>
-        <div class="maakaf-about-content__card-body">
-          {{ if eq .Site.Language.Lang "he" }}
-            <p>יש לנו את <a href="/he/mentors" target="_blank">תוכנית המנטורינג</a>. כאן כל מתחיל ומתחילה יכולים לקבל ליווי אישי ממנטורים מנוסים, ולעשות את הצעדים הראשונים בעולם הקוד הפתוח.</p>
-          {{ else }}
-            <p>We have a <a href="/mentors" target="_blank">mentoring program</a>. Here, every beginner can receive personal guidance from experienced mentors and take their first steps in the open source world.</p>
-          {{ end }}
-        </div>
-      </article>
-
-      <article class="maakaf-about-content__card">
-        <h2 class="maakaf-about-content__card-title">
-          {{ if eq .Site.Language.Lang "he" }}פרויקטים מומלצים{{ else }}Recommended projects{{ end }}
-        </h2>
-        <div class="maakaf-about-content__card-body">
-          {{ if eq .Site.Language.Lang "he" }}
-            <p>אנחנו גאים לראות חברי קהילה שהפכו לתורמים משמעותיים בפרויקטים כמו <a href="https://github.com/hasadna/open-bus-map-search" target="_blank" rel="noopener noreferrer">Databus</a> – פרויקט קוד פתוח שמנוהל על ידי נועם געש, מנטור ותיק בקהילה שלנו. רוצים להצטרף לפרויקט? ראו את <a href="/he/guides/projects" target="_blank">רשימת הפרויקטים המומלצים</a> שלנו.</p>
-          {{ else }}
-            <p>We're proud to see community members become significant contributors to projects like <a href="https://github.com/hasadna/open-bus-map-search" target="_blank" rel="noopener noreferrer">Databus</a>. Want to join a project? See our <a href="/guides/projects" target="_blank">recommended projects list</a>.</p>
-          {{ end }}
-        </div>
-      </article>
-    </div>
+    {{ partial "maakaf-articles-carousel.html" . }}
   </div>
 </section>

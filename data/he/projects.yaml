@@ -1,0 +1,148 @@
+# Recommended open-source projects — rendered by the guides projects browser.
+itemsPerPage: 6
+
+projects:
+  - id: code-maven
+    name: "קוד מייבן בעברית"
+    verified: false
+    practice: false
+    tag: ""
+    summary: "רוצים ללמוד ולתרום בעברית? הצטרפו לפרויקט המדהים של גאבור סאבו! גאבור הוא מומחה בתחום התוכנה שמנהל אתר לימודי מקיף בעברית עם המון תוכן איכותי."
+    body: |
+      האתר מכיל סרטוני הדרכה, מדריכים וחומרי לימוד במגוון נושאים כמו פייתון, ראסט, גיט ודוקר.
+
+      זו הזדמנות נהדרת להתנסות בתרומה לקוד פתוח בסביבה תומכת ומעודדת, עם דגש על תוכן בעברית שמנגיש ידע טכנולוגי לקהילה הישראלית. אתם יכולים לתרום בכל מיני דרכים - החל מתיקוני טעויות, דרך הוספת תוכן חדש, ועד תרגום חומרים לעברית.
+    links:
+      - label: "אתר קוד מייבן"
+        url: "https://he.code-maven.com"
+      - label: "ריפו בגיטהאב"
+        url: "https://github.com/szabgab/code-maven.com"
+
+  - id: databus
+    name: "דאטאבוס"
+    verified: true
+    practice: false
+    tag: ""
+    summary: "דאטאבוס זה פרויקט ממש מגניב של הסדנא לידע ציבורי! בונים אפליקציה שעוזרת לנו להבין איך התחבורה הציבורית בארץ עובדת (או לא...) בעזרת נתונים אמיתיים של מיקומי אוטובוסים וזמני הגעה."
+    body: |
+      הפרויקט משתמש בטכנולוגיות הכי חדשות (React, TypeScript ועוד), והכל מסודר ומתועד בצורה מעולה. יש פה הכל - מ-Swagger ל-API, עיצובים ב-Figma, וספריית Storybook שמראה את כל הקומפוננטות.
+
+      לא משנה אם אתם מתכנתים מתחילים או מנוסים - פה תלמדו המון! הצוות פשוט מדהים, תמיד שמח לעזור ולענות על שאלות. אווירה כיפית ומקצועית!
+    links:
+      - label: "ריפו בגיטהאב"
+        url: "https://github.com/hasadna/open-bus-map-search"
+
+  - id: maakaf-home
+    name: "האתר שלנו - מעקף"
+    verified: false
+    practice: false
+    tag: ""
+    summary: "האתר שאתם גולשים בו עכשיו? כן, גם הוא קוד פתוח! בנינו אותו עם Hugo (פריימוורק סטטי ממש מגניב), והוא משמש כבית הווירטואלי של קהילת הקוד הפתוח הישראלית."
+    body: |
+      זה מקום מעולה להתחיל בו אם אתם חדשים בעולם הקוד הפתוח. יש פה הכל - כתיבת תוכן, עיצוב, UI/UX ופיתוח של פיצ'רים חדשים. והכי חשוב? הקהילה פה פשוט מדהימה ותמיד שמחה לקבל פנים חדשות!
+    links:
+      - label: "ריפו בגיטהאב"
+        url: "https://github.com/Maakaf/maakaf_home"
+
+  - id: autokitteh
+    name: "AutoKitteh"
+    verified: true
+    practice: false
+    tag: ""
+    summary: "AutoKitteh הוא פלטפורמת קוד פתוח לאוטומציה ואורקסטרציה של תהליכים — חלופה מבוססת-קוד לכלים no-code/low-code, עם ביצוע עמיד (durable) מבוסס Temporal."
+    body: |
+      **למה AutoKitteh מעניין?**
+      - **פלטפורמת מפתחים:** בנייה, פריסה והפעלה של workflows עם webhooks, schedulers וניהול מלא.
+      - **API-first:** כל השירותים נגישים דרך gRPC/HTTP, עם CLI, VS Code extension ו-UI.
+      - **שפות:** Python, Starlark ועוד — גמישות מלאה למפתחים.
+      - **שימושים:** DevOps, FinOps, MLOps, SOAR, אוטומציות פרודוקטיביות ועוד.
+
+      **למה כדאי לתרום?**  
+      הפרויקט פעיל, מתועד, ומזמין תורמים בכל הרמות — קוד, תיעוד, אינטגרציות ודוגמאות. קהילה ישראלית מעורבת ופוטנציאל ללמידה משמעותית על מערכות אמינות ו-workflows.
+    links:
+      - label: "ריפו בגיטהאב"
+        url: "https://github.com/autokitteh/autokitteh"
+      - label: "דוקומנטציה"
+        url: "https://docs.autokitteh.com/"
+
+  - id: qelos
+    name: "Qelos"
+    verified: false
+    practice: false
+    tag: ""
+    summary: "מחפשים פרויקט קוד פתוח שמשלב no-code, AI ופיתוח מתקדם? הכירו את Qelos – פלטפורמה ליצירת אפליקציות SaaS רב-דיירות עם תמיכה מובנית ב-AI ומערכת plugins גמישה!"
+    body: |
+      **למה Qelos זה מגניב?**
+      - **ארכיטקטורה מודולרית מובנית:** לא צריך לבנות מאפס! כל התשתית כבר מוכנה ומאובטחת.
+      - **גמישות מקסימלית:** no-code, low-code, או פיתוח מלא עם גישה לכל הקוד.
+      - **מערכת Plugins עוצמתית:** הרחיבו את האפליקציה בקלות עם plugins מוכנים או צרו משלכם.
+      - **טכנולוגיות מודרניות:** Vue 3.5, Node.js, Express, MongoDB, Redis ועוד.
+
+      **למה כדאי לתרום?**  
+      הפרויקט נוצר על ידי דוד מאיר-לוי, מפתח סיניור עם למעלה מעשור ניסיון. Qelos בנוי בקוד פתוח עם קהילה צומחת שמזמינה למפתחים בכל רמה להצטרף!
+    highlight: "Qelos הוא המקום המושלם למי שרוצה ללמוד איך בונים SaaS מודרני, לתרום לפרויקט עם חזון ברור, ולהיות חלק מקהילה שמשנה את הדרך שבה אנחנו בונים אפליקציות!"
+    links:
+      - label: "ריפו בגיטהאב"
+        url: "https://github.com/qelos-io/qelos"
+      - label: "דוקומנטציה"
+        url: "https://docs.qelos.io/"
+      - label: "Discord"
+        url: "https://discord.gg/8D6TMdzZYJ"
+
+  - id: deadlink-hunter
+    name: "Deadlink-Hunter"
+    verified: false
+    practice: false
+    tag: ""
+    summary: "נמאס לכם מקישורים שבורים בתיעוד? הכירו את Deadlink-Hunter – פרויקט קוד פתוח שנועד למצוא ולתקן קישורים שבורים ב-README ובתיעוד של פרויקטי GitHub!"
+    sections:
+      - heading: "למה זה חשוב?"
+        body: "תיעוד הוא שער הכניסה הראשון לכל פרויקט, אבל לעיתים קרובות הוא מלא בקישורים מתים שמתסכלים את המשתמשים. Deadlink-Hunter בא לפתור את זה עם ממשק משתמש ידידותי ובדיקה חכמה שיודעת להבדיל בין קישור באמת שבור לבין דברים כמו `localhost:4000`."
+      - heading: "מה מיוחד בפרויקט?"
+        bullets:
+          - "Frontend מודרני: בנוי עם React, TypeScript, Vite ו-Mantine - טכנולוגיות העדכניות ביותר!"
+          - "תמיכה ב-Docker: הרצה קלה עם Docker Compose או ישירות דרך Docker"
+          - "בדיקות מקיפות: מערכת בדיקות עם Vitest ו-React Testing Library"
+          - "Storybook: כל הקומפוננטות מתועדות ונגישות לעריכה וצפייה"
+          - "UI/UX מעוצב: עיצוב נקי ואינטואיטיבי שנוצר בהשראת Lovable ו-base44"
+      - heading: "למה כדאי לתרום?"
+        body: "הפרויקט נוצר מתוך רצון להחזיר לקהילת הקוד הפתוח, והקהילה כאן פעילה ומזמינה! יש כבר למעלה מ-50 תורמים, וכל אחד יכול למצוא את מקומו - בין אם זה קוד, עיצוב, תיעוד או בדיקות. הפרויקט משתמש ב-pnpm ומוגדר עם כלי פיתוח מודרניים כמו ESLint, Prettier ו-Husky"
+    warning: "הפרויקט לא מקבל Pull Requests שנוצרו במלואם על ידי AI ללא בדיקה אנושית"
+    links:
+      - label: "Frontend Repository"
+        url: "https://github.com/Deadlink-Hunter/Broken-Link-Website"
+      - label: "Backend Repository"
+        url: "https://github.com/Deadlink-Hunter/Broken-Link-Checker"
+      - label: "Crawler Repository"
+        url: "https://github.com/Deadlink-Hunter/Deadlink-Crawler"
+
+  - id: practice
+    name: "פרויקט תרגול"
+    verified: false
+    practice: true
+    tag: "מתאים למתחילים בקוד פתוח"
+    summary: "Deadlink-Hunter הוא המקום המושלם למתחילים! עם תיעוד ברור, קהילה פעילה וטכנולוגיות מודרניות - זו הזדמנות מעולה ללמוד ולתרום לפרויקט שבאמת עוזר לכולם!"
+    intro: "נמאס לכם מקישורים שבורים בתיעוד? הכירו את Deadlink-Hunter – פרויקט קוד פתוח שנועד למצוא ולתקן קישורים שבורים ב-README ובתיעוד של פרויקטי GitHub!"
+    sections:
+      - heading: "למה זה חשוב?"
+        body: "תיעוד הוא שער הכניסה הראשון לכל פרויקט, אבל לעיתים קרובות הוא מלא בקישורים מתים שמתסכלים את המשתמשים. Deadlink-Hunter בא לפתור את זה עם ממשק משתמש ידידותי ובדיקה חכמה שיודעת להבדיל בין קישור באמת שבור לבין דברים כמו localhost:4000."
+      - heading: "מה מיוחד בפרויקט?"
+        bullets:
+          - "Frontend מודרני: בנוי עם React, TypeScript, Vite ו-Mantine - טכנולוגיות העדכניות ביותר!"
+          - "תמיכה ב-Docker: הרצה קלה עם Docker Compose או ישירות דרך Docker"
+          - "בדיקות מקיפות: מערכת בדיקות עם Vitest ו-React Testing Library"
+          - "Storybook: כל הקומפוננטות מתועדות ונגישות לעריכה וצפייה"
+          - "UI/UX מעוצב: עיצוב נקי ואינטואיטיבי שנוצר בהשראת Lovable ו-base44"
+      - heading: "למה כדאי לתרום?"
+        body: "הפרויקט נוצר מתוך רצון להחזיר לקהילת הקוד הפתוח, והקהילה כאן פעילה ומזמינה! יש כבר למעלה מ-50 תורמים, וכל אחד יכול למצוא את מקומו - בין אם זה קוד, עיצוב, תיעוד או בדיקות. הפרויקט משתמש ב-pnpm ומוגדר עם כלי פיתוח מודרניים כמו ESLint, Prettier ו-Husky"
+    warning: "הפרויקט לא מקבל Pull Requests שנוצרו במלואם על ידי AI ללא בדיקה אנושית"
+    links:
+      - label: "Crawler Repository"
+        url: "https://github.com/Deadlink-Hunter/Deadlink-Crawler"
+      - label: "Backend Repository"
+        url: "https://github.com/Deadlink-Hunter/Broken-Link-Checker"
+      - label: "Frontend Repository"
+        url: "https://github.com/Deadlink-Hunter/Broken-Link-Website"
+    guideLink:
+      label: "מדריך תרומה ראשונה"
+      url: "/he/guides/how_to_start/"

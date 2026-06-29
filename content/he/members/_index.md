@@ -1,10 +1,10 @@
 ---
 type: 'members'
 title: 'חברי הקהילה'
-linkTitle: 'חברים ופעילות'
+linkTitle: 'חברי קהילה'
 menu:
   main:
-    weight: 80
+    weight: 40
     identifier: members
 
 # Page Content

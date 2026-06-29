@@ -2,15 +2,17 @@
 type: 'docs'
 title: 'מנטורינג'
 slug: "mentorship"
-linkTitle: 'מנטורינג'
+linkTitle: 'מנטורים'
 body_class: "no-sidebar"
 menu:
   main:
-    weight: 10
+    weight: 30
     identifier: mentorship
 cascade:
   body_class: "no-sidebar"
 ---
+
+<p dir="rtl"><a href="/he/mentors/">פרוייקט המנטורים</a></p>
 
 <div class="text-center mb-5 mt-3" dir="rtl">
   <h1 class="display-6 mb-2 ms-page-title">תוכנית המנטורינג של מעקף</h1>
@@ -69,4 +71,3 @@ cascade:
 
 <script type="module" src="/js/mentorship/mentorship-home.js"></script>
 <script type="module" src="/js/mentorship/directory.js"></script>
-</content>

@@ -1,0 +1,140 @@
+{{ $data := site.Data.he.projects -}}
+{{ $projects := $data.projects -}}
+{{ $recommended := where $projects "practice" false -}}
+{{ $practiceProjects := where $projects "practice" true -}}
+{{ $itemsPerPage := $data.itemsPerPage | default 6 -}}
+{{ $defaultId := "practice" -}}
+
+<div class="pg-browser__wrap" data-items-per-page="{{ $itemsPerPage }}">
+  <div class="pg-browser__layout">
+    <aside class="pg-browser__aside" aria-label="רשימת פרויקטים">
+      <div class="pg-aside__body">
+        <nav class="pg-nav pg-nav--list" role="tablist" aria-label="פרויקטים מומלצים">
+          {{ range $index, $project := $recommended }}
+          {{ $pageNum := div $index $itemsPerPage | add 1 -}}
+          {{ partial "guides/projects-nav-item.html" (dict "project" $project "defaultId" $defaultId "pageNum" $pageNum) }}
+          {{ end }}
+        </nav>
+
+        {{ if $practiceProjects }}
+        <nav class="pg-nav pg-nav--practice" role="tablist" aria-label="פרויקט תרגול">
+          {{ range $practiceProjects }}
+          {{ partial "guides/projects-nav-item.html" (dict "project" . "defaultId" $defaultId "pageNum" 0) }}
+          {{ end }}
+        </nav>
+        {{ end }}
+      </div>
+
+      {{ $totalPages := div (sub (len $recommended) 1) $itemsPerPage | add 1 -}}
+      {{ if gt $totalPages 1 }}
+      <div class="pg-pagination" data-total-pages="{{ $totalPages }}">
+        <button type="button" class="pg-pagination__btn pg-pagination__btn--prev" aria-label="עמוד קודם" disabled>
+          <svg class="pg-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M7.5 5 12.5 10l-5 5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="pg-pagination__numbers"></div>
+        <button type="button" class="pg-pagination__btn pg-pagination__btn--next" aria-label="עמוד הבא">
+          <svg class="pg-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M12.5 5 7.5 10l5 5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      {{ end }}
+    </aside>
+
+    <article class="pg-browser__main" aria-live="polite">
+      {{ range $projects }}
+      <div class="pg-project-panel{{ if ne .id $defaultId }} d-none{{ end }}"
+           id="pg-panel-{{ .id }}"
+           data-project-id="{{ .id }}"
+           role="tabpanel"
+           aria-labelledby="pg-nav-{{ .id }}">
+        <header class="pg-project-head">
+          <div class="pg-project-head__row">
+            <span class="pg-project-head__logo" aria-hidden="true"></span>
+            <h1 class="pg-project-head__title">{{ .name }}</h1>
+            {{ if .tag }}
+            <span class="pg-tag">
+              <span class="pg-tag__text">{{ .tag }}</span>
+              <svg class="pg-icon pg-icon--puzzle" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M8.5 2.5a1.5 1.5 0 0 1 3 0V4h1.5a1.5 1.5 0 0 1 0 3H11.5v1a1.5 1.5 0 0 1-3 0V7H7a1.5 1.5 0 0 1 0-3h1.5V2.5Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                <path d="M4 11.5a1.5 1.5 0 0 1 3 0V13h1a1.5 1.5 0 0 1 0 3H7v1.5a1.5 1.5 0 0 1-3 0V16H2.5a1.5 1.5 0 0 1 0-3H4v-1.5Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            {{ end }}
+          </div>
+          {{ with .summary }}
+          <p class="pg-project-head__summary">{{ . }}</p>
+          {{ end }}
+        </header>
+
+        {{ with .intro }}
+        <p class="pg-project-intro">{{ . }}</p>
+        {{ end }}
+
+        {{ with .body }}
+        <div class="pg-project-body">{{ . | markdownify }}</div>
+        {{ end }}
+
+        {{ range .sections }}
+        <section class="pg-project-section">
+          <h2 class="pg-project-section__title">{{ .heading }}</h2>
+          {{ with .body }}
+          <p class="pg-project-section__body">{{ . | markdownify }}</p>
+          {{ end }}
+          {{ with .bullets }}
+          <ul class="pg-project-section__list">
+            {{ range . }}
+            <li>{{ . | markdownify }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </section>
+        {{ end }}
+
+        {{ with .highlight }}
+        <div class="pg-banner pg-banner--info">
+          <p>{{ . }}</p>
+        </div>
+        {{ end }}
+
+        {{ with .warning }}
+        <div class="pg-banner pg-banner--warning" role="note">
+          <div class="pg-banner__head">
+            <span class="pg-banner__title">שימו לב</span>
+            <svg class="pg-icon pg-icon--warning" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M10 2.5 17.5 16H2.5L10 2.5Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+              <path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="pg-banner__body">{{ . }}</p>
+        </div>
+        {{ end }}
+
+        <div class="pg-project-links">
+          {{ range .links }}
+          <a class="pg-project-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+            <svg class="pg-icon pg-icon--external" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M6 14 14 6M9 6h5v5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11 6h3v3" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>{{ .label }}</span>
+          </a>
+          {{ end }}
+          {{ with .guideLink }}
+          <a class="pg-project-link" href="{{ .url | relLangURL }}">
+            <svg class="pg-icon pg-icon--external" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M7 13 13 7M8 7h5v5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>{{ .label }}</span>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </article>
+  </div>
+</div>
+
+<script type="module" src="/js/guides/projects-browser.js"></script>
