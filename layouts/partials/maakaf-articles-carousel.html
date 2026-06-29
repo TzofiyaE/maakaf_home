@@ -11,17 +11,9 @@
   <div class="maakaf-articles-carousel__viewport">
     <div class="maakaf-articles-carousel__track" data-track>
       {{ range $pages -}}
-      {{ $excerpt := .Params.description | default (.Summary | plainify) -}}
-      <article class="maakaf-articles-carousel__card">
-        <div class="maakaf-articles-carousel__card-content">
-          <h2 class="maakaf-articles-carousel__card-title">{{ .Title }}</h2>
-          <p class="maakaf-articles-carousel__card-excerpt">{{ $excerpt | truncate 220 }}</p>
-        </div>
-        <a class="maakaf-articles-carousel__card-link" href="{{ .RelPermalink }}">
-          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-          <span>{{ if $isHebrew }}המשך קריאה{{ else }}Read more{{ end }}</span>
-        </a>
-      </article>
+      <div class="maakaf-articles-carousel__slide">
+        {{ partial "maakaf-content-card.html" . }}
+      </div>
       {{ end -}}
     </div>
   </div>

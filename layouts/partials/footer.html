@@ -17,7 +17,8 @@
     <div class="maakaf-footer__content">
       <section class="maakaf-footer__brand" aria-label="{{ if $isHebrew }}אודות מעקף{{ else }}About Maakaf{{ end }}">
         {{ with $logo }}
-          <img class="maakaf-footer__logo" src="{{ .RelPermalink }}" width="139" height="40" alt="{{ if $isHebrew }}מעקף{{ else }}Maakaf{{ end }}">
+          <img class="maakaf-footer__logo maakaf-footer__logo--light" src="{{ .RelPermalink }}" width="139" height="40" alt="{{ if $isHebrew }}מעקף{{ else }}Maakaf{{ end }}">
+          <img class="maakaf-footer__logo maakaf-footer__logo--dark" src="/images/logo-dark.png" width="139" height="40" alt="{{ if $isHebrew }}מעקף{{ else }}Maakaf{{ end }}">
         {{ end }}
         <p>
           {{ if $isHebrew }}

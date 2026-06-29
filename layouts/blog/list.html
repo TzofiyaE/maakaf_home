@@ -1,0 +1,65 @@
+{{ define "main" -}}
+{{ $articles := where .Site.RegularPages "Section" "articles" -}}
+{{ $articles = $articles.ByWeight -}}
+{{ $blogPages := where .Site.RegularPages "Section" .Section -}}
+{{ $blogPages = $blogPages.ByDate.Reverse -}}
+{{ $allPages := slice -}}
+{{ range $articles -}}
+  {{ $allPages = $allPages | append . -}}
+{{ end -}}
+{{ range $blogPages -}}
+  {{ $allPages = $allPages | append . -}}
+{{ end -}}
+{{ $pag := .Paginate $allPages 9 -}}
+{{ $isHebrew := eq .Site.Language.Lang "he" -}}
+
+<div class="maakaf-blog-grid-wrap" dir="rtl">
+  <div class="maakaf-blog-grid">
+    {{ range $pag.Pages -}}
+    {{ partial "maakaf-content-card.html" . }}
+    {{ end -}}
+  </div>
+
+  {{ if gt $pag.TotalPages 1 -}}
+  <nav class="maakaf-blog-pagination" aria-label="{{ if $isHebrew }}עימוד פוסטים{{ else }}Posts pagination{{ end }}">
+    {{ if $pag.HasPrev -}}
+    <a class="maakaf-blog-pagination__btn" href="{{ $pag.Prev.URL }}" aria-label="{{ if $isHebrew }}עמוד קודם{{ else }}Previous page{{ end }}">
+      <svg class="maakaf-blog-pagination__icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M7.5 5 12.5 10l-5 5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    {{ else -}}
+    <span class="maakaf-blog-pagination__btn maakaf-blog-pagination__btn--disabled" aria-hidden="true">
+      <svg class="maakaf-blog-pagination__icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M7.5 5 12.5 10l-5 5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+    {{ end -}}
+
+    <div class="maakaf-blog-pagination__numbers">
+      {{ range $pag.Pagers -}}
+      <a
+        href="{{ .URL }}"
+        class="maakaf-blog-pagination__num{{ if eq . $pag }} maakaf-blog-pagination__num--active{{ end }}"
+        {{ if eq . $pag }}aria-current="page"{{ end }}
+      >{{ .PageNumber }}</a>
+      {{ end -}}
+    </div>
+
+    {{ if $pag.HasNext -}}
+    <a class="maakaf-blog-pagination__btn" href="{{ $pag.Next.URL }}" aria-label="{{ if $isHebrew }}עמוד הבא{{ else }}Next page{{ end }}">
+      <svg class="maakaf-blog-pagination__icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M12.5 5 7.5 10l5 5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    {{ else -}}
+    <span class="maakaf-blog-pagination__btn maakaf-blog-pagination__btn--disabled" aria-hidden="true">
+      <svg class="maakaf-blog-pagination__icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M12.5 5 7.5 10l5 5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+    {{ end -}}
+  </nav>
+  {{ end -}}
+</div>
+{{ end -}}

@@ -1,0 +1,13 @@
+{{ $page := . -}}
+{{ $isHebrew := eq .Site.Language.Lang "he" -}}
+{{ $excerpt := .Params.description | default (.Summary | plainify) -}}
+<article class="maakaf-content-card">
+  <div class="maakaf-content-card__body">
+    <h2 class="maakaf-content-card__title">{{ .Title }}</h2>
+    <p class="maakaf-content-card__excerpt">{{ $excerpt | truncate 220 }}</p>
+  </div>
+  <a class="maakaf-content-card__link" href="{{ .RelPermalink }}">
+    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+    <span>{{ if $isHebrew }}המשך קריאה{{ else }}Read more{{ end }}</span>
+  </a>
+</article>
