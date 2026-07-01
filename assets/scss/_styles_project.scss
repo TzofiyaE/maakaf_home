@@ -1664,6 +1664,27 @@ html[dir="rtl"] {
   background: #fff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   text-align: start;
+  transition: background-color 0.2s ease;
+
+  &:has(.maakaf-home-links__icon--youtube):hover,
+  &:has(.maakaf-home-links__icon--youtube):focus-within {
+    background: #fff0f0;
+  }
+
+  &:has(.maakaf-home-links__icon--blog):hover,
+  &:has(.maakaf-home-links__icon--blog):focus-within {
+    background: #f0f8fe;
+  }
+
+  &:has(.maakaf-home-links__icon--meetup):hover,
+  &:has(.maakaf-home-links__icon--meetup):focus-within {
+    background: #fff0f2;
+  }
+
+  &:has(.maakaf-home-links__icon--advise):hover,
+  &:has(.maakaf-home-links__icon--advise):focus-within {
+    background: #f3eef8;
+  }
 }
 
 .maakaf-home-links__card-content {
@@ -2627,6 +2648,17 @@ html[data-bs-theme="dark"] {
   background: #fff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   text-align: start;
+  transition: background-color 0.2s ease;
+
+  &:has(.maakaf-about-links__icon--discord):hover,
+  &:has(.maakaf-about-links__icon--discord):focus-within {
+    background: #eef3ff;
+  }
+
+  &:has(.maakaf-about-links__icon--whatsapp):hover,
+  &:has(.maakaf-about-links__icon--whatsapp):focus-within {
+    background: #f1fcf2;
+  }
 }
 
 .maakaf-about-links__card-content {
@@ -2859,6 +2891,16 @@ html[data-bs-theme="dark"] {
     border-color: rgba(255, 255, 255, 0.1);
     background: #1d2e4e;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+    &:has(.maakaf-about-links__icon--discord):hover,
+    &:has(.maakaf-about-links__icon--discord):focus-within {
+      background: #243560;
+    }
+
+    &:has(.maakaf-about-links__icon--whatsapp):hover,
+    &:has(.maakaf-about-links__icon--whatsapp):focus-within {
+      background: #1d3e4a;
+    }
   }
 
   .maakaf-about-links__icon--discord {
