@@ -1,0 +1,107 @@
+{{ define "main" -}}
+{{ $isHebrew := eq .Site.Language.Lang "he" -}}
+{{ $blogURL := "/blog/" | relLangURL -}}
+{{ $description := .Params.description | default (.Summary | plainify) -}}
+{{ $categories := .Params.categories | default (slice) -}}
+{{ $related := where .Site.RegularPages "Section" .Section -}}
+{{ $related = where $related "Permalink" "ne" .Permalink -}}
+{{ if gt (len $categories) 0 -}}
+{{ $related = where $related "Params.categories" "intersect" $categories -}}
+{{ end -}}
+{{ $related = $related.ByDate.Reverse | first 3 -}}
+
+<div class="maakaf-blog-article-wrap" dir="rtl">
+  <a class="maakaf-blog-article__back" href="{{ $blogURL }}">
+    <span>{{ if $isHebrew }}חזרה לבלוג{{ else }}Back to blog{{ end }}</span>
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+      <path d="M12.5 5 7.5 10l5 5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <div class="maakaf-blog-article__layout">
+    <aside class="maakaf-blog-article__related" aria-label="{{ if $isHebrew }}מאמרים קשורים{{ else }}Related articles{{ end }}">
+      <div class="maakaf-blog-related">
+        {{ range $related -}}
+        {{ partial "maakaf-content-card.html" . }}
+        {{ end -}}
+      </div>
+    </aside>
+
+    <article class="maakaf-blog-article__main">
+      <header class="maakaf-blog-article__header">
+        <h1 class="maakaf-blog-article__title">{{ .Title }}</h1>
+        {{ with $description -}}
+        <p class="maakaf-blog-article__lead">{{ if $.Params.description }}{{ . }}{{ else }}{{ . | truncate 220 }}{{ end }}</p>
+        {{ end -}}
+
+        <div class="maakaf-blog-article__byline">
+          {{ with .Params.author -}}
+          <span class="maakaf-blog-article__byline-item">
+            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M10 10a3.75 3.75 0 1 0 0-7.5A3.75 3.75 0 0 0 10 10Zm0 1.875c-3.125 0-5.625 1.563-5.625 3.438V18.125h11.25v-2.812c0-1.875-2.5-3.438-5.625-3.438Z" fill="currentColor"/>
+            </svg>
+            <span>{{ . }}</span>
+          </span>
+          {{ end -}}
+          <span class="maakaf-blog-article__byline-item">
+            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M6.25 2.5h1.25V4.375h5V2.5h1.25v1.875h.625A1.875 1.875 0 0 1 16.25 6.25v10a1.875 1.875 0 0 1-1.875 1.875H5.625A1.875 1.875 0 0 1 3.75 16.25v-10a1.875 1.875 0 0 1 1.875-1.875h.625V2.5Zm-.625 4.375v9.375h10V6.875h-10Z" fill="currentColor"/>
+            </svg>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+              {{- if $isHebrew -}}
+              {{- $months := dict "01" "ינואר" "02" "פברואר" "03" "מרץ" "04" "אפריל" "05" "מאי" "06" "יוני" "07" "יולי" "08" "אוגוסט" "09" "ספטמבר" "10" "אוקטובר" "11" "נובמבר" "12" "דצמבר" -}}
+              {{- $month := index $months (.Date.Format "01") -}}
+              {{ .Date.Day }} ב{{ $month }}, {{ .Date.Year }}
+              {{- else -}}
+              {{ .Date.Format "January 2, 2006" }}
+              {{- end -}}
+            </time>
+          </span>
+          {{ if ne .Lastmod .Date -}}
+          <span class="maakaf-blog-article__byline-item maakaf-blog-article__byline-item--updated">
+            <span>{{ if $isHebrew }}עודכן:{{ else }}Updated:{{ end }}</span>
+            <time datetime="{{ .Lastmod.Format "2006-01-02" }}">
+              {{- if $isHebrew -}}
+              {{- $months := dict "01" "ינואר" "02" "פברואר" "03" "מרץ" "04" "אפריל" "05" "מאי" "06" "יוני" "07" "יולי" "08" "אוגוסט" "09" "ספטמבר" "10" "אוקטובר" "11" "נובמבר" "12" "דצמבר" -}}
+              {{- $month := index $months (.Lastmod.Format "01") -}}
+              {{ .Lastmod.Day }} ב{{ $month }}, {{ .Lastmod.Year }}
+              {{- else -}}
+              {{ .Lastmod.Format "January 2, 2006" }}
+              {{- end -}}
+            </time>
+          </span>
+          {{ end -}}
+        </div>
+      </header>
+
+      <div class="maakaf-blog-article__content td-content">
+        {{ .Content }}
+      </div>
+
+      {{ if not (findRE `\{\{<\s*comments` .RawContent) -}}
+      <section class="maakaf-blog-article__comments" aria-label="{{ if $isHebrew }}תגובות{{ else }}Comments{{ end }}">
+        <h2 class="maakaf-blog-article__comments-title">{{ if $isHebrew }}תגובות{{ else }}Comments{{ end }}</h2>
+        <div class="maakaf-comments">
+          <script src="https://giscus.app/client.js"
+                  data-repo="Maakaf/maakaf_home"
+                  data-repo-id="R_kgDOOyyeNg"
+                  data-category="General"
+                  data-category-id="DIC_kwDOOyyeNs4CrwBe"
+                  data-mapping="pathname"
+                  data-strict="0"
+                  data-reactions-enabled="1"
+                  data-emit-metadata="1"
+                  data-input-position="top"
+                  data-theme="preferred_color_scheme"
+                  data-lang="he"
+                  data-loading="lazy"
+                  crossorigin="anonymous"
+                  async>
+          </script>
+        </div>
+      </section>
+      {{ end -}}
+    </article>
+  </div>
+</div>
+{{ end -}}

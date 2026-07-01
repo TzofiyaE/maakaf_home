@@ -1,0 +1,22 @@
+categories:
+  - id: projects
+    label: "פרויקטים"
+    type: accordion
+  - id: learning
+    label: "למידה"
+    url: "/he/guides/how_to_start/"
+    activePrefixes:
+      - "/he/guides/how_to_start"
+      - "/he/guides/automate_advise"
+      - "/he/articles"
+  - id: community
+    label: "קהילה"
+    url: "/he/members/"
+    activePrefixes:
+      - "/he/members"
+      - "/he/about"
+  - id: grow
+    label: "עזרו לנו לצמוח"
+    url: "/he/blog/community-growth-plan/"
+    activePrefixes:
+      - "/he/blog/community-growth-plan"

@@ -195,7 +195,11 @@ html:not([data-bs-theme="dark"]) {
   }
 }
 
-/* Figma navbar: node 436:4409 */
+/* Figma navbar: node 829:6173
+   blur 16px uniform;
+   light: #FFF 80%→50% @ 100.24deg, fill opacity 70%;
+   dark:  #1A1A1A 70%→30% @ 100.24deg;
+   bottom stroke uses the same gradient as the fill. */
 .maakaf-navbar {
   position: fixed;
   top: 0;
@@ -204,35 +208,57 @@ html:not([data-bs-theme="dark"]) {
   z-index: 1030;
   width: 100%;
   padding: 20px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: none;
+  background-color: transparent;
   background-image: linear-gradient(
     100.24deg,
     rgba(255, 255, 255, 0.56) 7.53%,
     rgba(255, 255, 255, 0.35) 96.49%
   );
-  background-color: rgba(250, 250, 250, 0.92);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: none;
   font-family: $font-birzia;
   font-weight: 500;
-  transition: box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    background-image 0.2s ease;
 
-  &.navbar-bg-onscroll,
-  &.navbar-bg-onscroll--fade {
-    background-color: rgba(250, 250, 250, 0.96);
-    border-bottom-color: rgba(0, 0, 0, 0.06);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: linear-gradient(
+      100.24deg,
+      rgba(255, 255, 255, 0.56) 7.53%,
+      rgba(255, 255, 255, 0.35) 96.49%
+    );
+    pointer-events: none;
+    transition: opacity 0.2s ease;
   }
 
   &.td-navbar-cover {
-    background-color: transparent;
-    box-shadow: none;
+    background-image: none;
+
+    &::after {
+      opacity: 0;
+    }
 
     &.navbar-bg-onscroll,
     &.navbar-bg-onscroll--fade {
-      background-color: rgba(250, 250, 250, 0.96);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      background-image: linear-gradient(
+        100.24deg,
+        rgba(255, 255, 255, 0.56) 7.53%,
+        rgba(255, 255, 255, 0.35) 96.49%
+      );
+
+      &::after {
+        opacity: 1;
+      }
     }
   }
 
@@ -492,30 +518,40 @@ html[data-bs-theme="dark"] {
 
 html[data-bs-theme="dark"] {
   .maakaf-navbar {
-    border-bottom-color: rgba(255, 255, 255, 0.08);
-    background-color: rgba(26, 26, 26, 0.92);
+    background-color: transparent;
     background-image: linear-gradient(
       100.24deg,
-      rgba(26, 26, 26, 0.92) 7.53%,
-      rgba(26, 26, 26, 0.78) 96.49%
+      rgba(26, 26, 26, 0.7) 0%,
+      rgba(26, 26, 26, 0.3) 100%
     );
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
 
-    &.navbar-bg-onscroll,
-    &.navbar-bg-onscroll--fade {
-      background-color: rgba(26, 26, 26, 0.98);
-      border-bottom-color: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    &::after {
+      background: linear-gradient(
+        100.24deg,
+        rgba(26, 26, 26, 0.7) 0%,
+        rgba(26, 26, 26, 0.3) 100%
+      );
     }
 
     &.td-navbar-cover {
-      background-color: transparent;
-      box-shadow: none;
+      background-image: none;
+
+      &::after {
+        opacity: 0;
+      }
 
       &.navbar-bg-onscroll,
       &.navbar-bg-onscroll--fade {
-        background-color: rgba(26, 26, 26, 0.98);
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+        background-image: linear-gradient(
+          100.24deg,
+          rgba(26, 26, 26, 0.7) 0%,
+          rgba(26, 26, 26, 0.3) 100%
+        );
+
+        &::after {
+          opacity: 1;
+        }
       }
     }
   }
@@ -2066,14 +2102,22 @@ body.no-sidebar .td-content:has(.maakaf-articles-carousel) {
   will-change: transform;
 }
 
-.maakaf-articles-carousel__card {
-  display: flex;
+.maakaf-articles-carousel__slide {
   flex: 0 0 calc((100% - 64px) / 3);
+  min-width: 0;
+}
+
+/* rtl:begin:ignore */
+
+/* Shared content card — Figma blog grid + articles carousel */
+.maakaf-content-card {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   gap: 32px;
   min-height: 256px;
+  height: 100%;
   padding: 40px;
   border: 1px solid #e6e6e6;
   border-radius: 8px;
@@ -2081,14 +2125,14 @@ body.no-sidebar .td-content:has(.maakaf-articles-carousel) {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.maakaf-articles-carousel__card-content {
+.maakaf-content-card__body {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
 }
 
-.maakaf-articles-carousel__card-title {
+.maakaf-content-card__title {
   width: 100%;
   margin: 0;
   color: #1a1a1a !important;
@@ -2099,7 +2143,7 @@ body.no-sidebar .td-content:has(.maakaf-articles-carousel) {
   text-align: start !important;
 }
 
-.maakaf-articles-carousel__card-excerpt {
+.maakaf-content-card__excerpt {
   margin: 0;
   color: #1a1a1a !important;
   font-family: "IBM Plex Sans Hebrew", sans-serif;
@@ -2109,7 +2153,7 @@ body.no-sidebar .td-content:has(.maakaf-articles-carousel) {
   text-align: start !important;
 }
 
-.maakaf-articles-carousel__card-link {
+.maakaf-content-card__link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -2186,7 +2230,7 @@ body.no-sidebar .td-content:has(.maakaf-articles-carousel) {
     padding: 40px 32px 64px;
   }
 
-  .maakaf-articles-carousel__card {
+  .maakaf-articles-carousel__slide {
     flex: 0 0 calc((100% - 32px) / 2);
   }
 }
@@ -2197,12 +2241,347 @@ body.no-sidebar .td-content:has(.maakaf-articles-carousel) {
     gap: 24px;
   }
 
-  .maakaf-articles-carousel__card {
+  .maakaf-articles-carousel__slide {
     flex: 0 0 100%;
+  }
+
+  .maakaf-content-card {
     min-height: 0;
     padding: 32px 24px;
   }
 }
+
+/* Figma blog grid: node 726:2276 */
+.maakaf-blog-grid-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  width: 100%;
+  direction: rtl;
+}
+
+.maakaf-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+.maakaf-blog-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  direction: rtl;
+}
+
+.maakaf-blog-pagination__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #2c57a5;
+  border-radius: 999px;
+  background: #fff;
+  color: #2c57a5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+
+  &--disabled {
+    border-color: #e6e6e6;
+    color: #bdbdbd;
+    box-shadow: none;
+    pointer-events: none;
+  }
+}
+
+.maakaf-blog-pagination__numbers {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.maakaf-blog-pagination__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  color: #1a1a1a;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+
+  &--active {
+    background: rgba(222, 238, 251, 0.4);
+    color: #2c57a5;
+  }
+
+  &:hover:not(&--active) {
+    background: rgba(222, 238, 251, 0.2);
+  }
+}
+
+body:has(.maakaf-blog-grid-wrap) .td-sidebar-toc {
+  display: none !important;
+}
+
+/* Figma blog article: node 607:10256 */
+body:has(.maakaf-blog-article-wrap) {
+  .td-sidebar,
+  .td-sidebar-toc {
+    display: none !important;
+  }
+
+  .td-main [role="main"] {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-inline: 0 !important;
+  }
+}
+
+.maakaf-blog-article-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 48px;
+
+  @media (max-width: 767.98px) {
+    padding: 48px 16px;
+    gap: 40px;
+  }
+}
+
+.maakaf-blog-article__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1a1a1a;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: #2c57a5;
+    text-decoration: none;
+  }
+}
+
+.maakaf-blog-article__layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  direction: ltr;
+
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+    direction: rtl;
+  }
+}
+
+.maakaf-blog-article__related {
+  flex: 0 0 404px;
+  width: 404px;
+  max-width: 100%;
+  direction: rtl;
+
+  @media (max-width: 991.98px) {
+    flex: none;
+    width: 100%;
+  }
+}
+
+.maakaf-blog-related {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.maakaf-blog-article__main {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 836px;
+  direction: rtl;
+}
+
+.maakaf-blog-article__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 32px;
+  width: 100%;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.maakaf-blog-article__title {
+  width: 100%;
+  margin: 0;
+  color: #1a1a1a !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: start !important;
+
+  @media (max-width: 767.98px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.maakaf-blog-article__lead {
+  width: 100%;
+  margin: 0;
+  color: #1a1a1a !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: start !important;
+}
+
+.maakaf-blog-article__byline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  width: 100%;
+  color: #404040;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.maakaf-blog-article__byline-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  svg {
+    flex-shrink: 0;
+    color: #404040;
+  }
+
+  &--updated {
+    gap: 8px;
+  }
+}
+
+.maakaf-blog-article__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+
+  > h1 {
+    display: none;
+  }
+
+  > .td-byline,
+  > .article-meta,
+  > .list-unstyled,
+  > .td-page-meta__lastmod {
+    display: none;
+  }
+}
+
+.maakaf-blog-article__comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 200px;
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 8px;
+  background: #f5f5f5;
+}
+
+.maakaf-blog-article__comments-title {
+  margin: 0 0 24px;
+  color: #1a1a1a !important;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+html[data-bs-theme="dark"] {
+  .maakaf-blog-article__back {
+    color: #eff8ff;
+
+    &:hover,
+    &:focus-visible {
+      color: #6eb6ec;
+    }
+  }
+
+  .maakaf-blog-article__header {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .maakaf-blog-article__title,
+  .maakaf-blog-article__lead {
+    color: #eff8ff !important;
+  }
+
+  .maakaf-blog-article__byline {
+    color: rgba(239, 248, 255, 0.75);
+  }
+
+  .maakaf-blog-article__comments {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .maakaf-blog-article__comments-title {
+    color: #eff8ff !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .maakaf-blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  .maakaf-blog-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .maakaf-blog-grid-wrap {
+    gap: 32px;
+  }
+}
+
+/* rtl:end:ignore */
 
 /* Figma about links: node 531:25118 */
 .maakaf-about-links {
@@ -2401,6 +2780,163 @@ body.no-sidebar .td-content:has(.maakaf-articles-carousel) {
   }
 }
 
+/* Figma about page dark mode: node 810:2626 */
+html[data-bs-theme="dark"] {
+  .maakaf-about-cover {
+    background: #1a1a1a !important;
+    color: #eff8ff;
+  }
+
+  .maakaf-about-cover__inner {
+    box-shadow: none;
+  }
+
+  .maakaf-about-cover__title,
+  .maakaf-about-cover__body p {
+    color: #eff8ff !important;
+  }
+
+  .maakaf-about-cover__placeholder {
+    background: #1d2e4e;
+  }
+
+  .maakaf-about-content {
+    background: #1a1a1a;
+    color: #eff8ff;
+  }
+
+  .maakaf-about-content__leader-text {
+    color: #eff8ff !important;
+  }
+
+  .maakaf-about-content__leader-link {
+    color: #6eb6ec !important;
+
+    &:hover,
+    &:focus-visible {
+      color: #9dd0f3 !important;
+    }
+  }
+
+  .maakaf-about-content__card {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: #1d2e4e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .maakaf-about-content__card-title,
+  .maakaf-about-content__card-body p {
+    color: #eff8ff !important;
+  }
+
+  .maakaf-about-content__card-body a {
+    color: #6eb6ec !important;
+
+    &:hover,
+    &:focus-visible {
+      color: #9dd0f3 !important;
+    }
+  }
+
+  .maakaf-about-content__vision {
+    background: #1a1a1a;
+
+    p {
+      color: #eff8ff !important;
+    }
+
+    a {
+      color: #6eb6ec !important;
+    }
+  }
+
+  .maakaf-about-links {
+    background: #1a1a1a;
+    color: #eff8ff;
+  }
+
+  .maakaf-about-links__card {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: #1d2e4e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .maakaf-about-links__icon--discord {
+    background: rgba(88, 101, 242, 0.2);
+  }
+
+  .maakaf-about-links__icon--whatsapp {
+    background: rgba(72, 201, 95, 0.2);
+  }
+
+  .maakaf-about-links__card-title,
+  .maakaf-about-links__card-body p {
+    color: #eff8ff !important;
+  }
+
+  .maakaf-about-links__btn {
+    background: #1d2e4e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  }
+
+  .maakaf-about-links__btn--discord {
+    &:hover,
+    &:focus-visible {
+      background: rgba(88, 101, 242, 0.15);
+    }
+  }
+
+  .maakaf-about-links__btn--whatsapp {
+    &:hover,
+    &:focus-visible {
+      background: rgba(72, 201, 95, 0.15);
+    }
+  }
+
+  .maakaf-articles-carousel {
+    background: #1a1a1a;
+    color: #eff8ff;
+  }
+
+  .maakaf-content-card {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: #1d2e4e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .maakaf-content-card__title,
+  .maakaf-content-card__excerpt {
+    color: #eff8ff !important;
+  }
+
+  .maakaf-content-card__link {
+    color: #6eb6ec !important;
+
+    &:hover,
+    &:focus-visible {
+      color: #9dd0f3 !important;
+    }
+  }
+
+  .maakaf-articles-carousel__nav-btn {
+    border-color: rgba(255, 255, 255, 0.15);
+    background: #1d2e4e;
+    color: rgba(239, 248, 255, 0.4);
+
+    &--active:not(:disabled) {
+      border-color: #6eb6ec;
+      color: #6eb6ec;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    &:not(:disabled):hover,
+    &:not(:disabled):focus-visible {
+      border-color: #6eb6ec;
+      color: #6eb6ec;
+    }
+  }
+}
+
 /* Figma footer: node 451:4889 */
 .maakaf-footer {
   width: 100%;
@@ -2581,6 +3117,45 @@ body.no-sidebar .td-content:has(.maakaf-articles-carousel) {
     align-items: flex-start;
     flex-direction: column;
     gap: 16px;
+  }
+}
+
+html[data-bs-theme="light"],
+html:not([data-bs-theme="dark"]) {
+  .maakaf-footer__logo--dark {
+    display: none;
+  }
+}
+
+html[data-bs-theme="dark"] {
+  .maakaf-footer {
+    background: #1a1a1a;
+    color: #eff8ff;
+  }
+
+  .maakaf-footer__logo--light {
+    display: none;
+  }
+
+  .maakaf-footer__column h2 {
+    color: #eff8ff;
+  }
+
+  .maakaf-footer a {
+    color: #eff8ff;
+  }
+
+  .maakaf-footer a:hover,
+  .maakaf-footer a:focus-visible {
+    color: #6eb6ec;
+  }
+
+  .maakaf-footer__bottom {
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .maakaf-footer__credit {
+    color: #9dd0f3;
   }
 }
 
@@ -4415,4 +4990,266 @@ html[data-bs-theme="dark"] {
     }
   }
 }
+/* rtl:end:ignore */
+
+/* ==========================================================================
+   Docsy sidebar — compact accordion (Figma: categories)
+   Wrapped in rtl:ignore so Hugo's RTL CSS pipeline does not flip direction.
+   ========================================================================== */
+
+/* rtl:begin:ignore */
+
+.maakaf-sidebar {
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  direction: rtl;
+  text-align: right;
+
+  .td-sidebar__search {
+    padding: 0 0 1rem;
+  }
+
+  .td-sidebar-nav {
+    padding: 0;
+    margin: 0;
+    max-height: none;
+    overflow: visible;
+    direction: rtl;
+    text-align: right;
+    padding-inline-end: 0 !important;
+    margin-inline: 0 !important;
+  }
+
+  .td-sidebar-nav > .td-sidebar-nav__section {
+    padding: 0;
+  }
+
+  .td-sidebar-nav__section.pe-md-3 {
+    padding-inline-end: 0 !important;
+  }
+}
+
+.maakaf-sidebar__categories {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  direction: rtl;
+}
+
+.maakaf-sidebar__accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.maakaf-sidebar__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 24px 16px 16px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: #1a1a1a;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  text-decoration: none;
+  cursor: pointer;
+  direction: rtl;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+  &:hover:not(.maakaf-sidebar__item--active) {
+    background: rgba(222, 238, 251, 0.25);
+  }
+
+  &--toggle {
+    border: none;
+    appearance: none;
+  }
+
+  &--active {
+    background: #f0f8fe;
+    border-color: #deeefb;
+    color: #2c57a5;
+    font-weight: 500;
+
+    .maakaf-sidebar__arrow-left {
+      opacity: 1;
+    }
+  }
+}
+
+.maakaf-sidebar__label {
+  flex: 0 1 auto;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.maakaf-sidebar__arrow-left {
+  flex-shrink: 0;
+  opacity: 0;
+  color: #2c57a5;
+  margin-inline-start: auto;
+  transition: opacity 0.15s ease;
+}
+
+.maakaf-sidebar__chevron {
+  flex-shrink: 0;
+  color: #1a1a1a;
+  margin-inline-start: auto;
+  transition: transform 0.25s ease;
+}
+
+.maakaf-sidebar__accordion.is-open .maakaf-sidebar__chevron {
+  transform: rotate(180deg);
+}
+
+.maakaf-sidebar__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s ease;
+  overflow: hidden;
+
+  > .td-sidebar-nav,
+  > .maakaf-sidebar__tree {
+    min-height: 0;
+    overflow: hidden;
+  }
+}
+
+.maakaf-sidebar__accordion.is-open .maakaf-sidebar__panel {
+  grid-template-rows: 1fr;
+
+  > .td-sidebar-nav,
+  > .maakaf-sidebar__tree {
+    overflow: visible;
+  }
+}
+
+.maakaf-sidebar__tree-link {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 24px 12px 16px !important;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #1a1a1a !important;
+  font-weight: 400 !important;
+  text-align: right !important;
+  text-decoration: none;
+  direction: rtl;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+
+  &.align-left {
+    text-align: right !important;
+  }
+
+  &:hover:not(.active) {
+    background: rgba(222, 238, 251, 0.25);
+    color: #1a1a1a !important;
+  }
+
+  &.active {
+    background: #f0f8fe;
+    border-color: #deeefb;
+    color: #2c57a5 !important;
+    font-weight: 500 !important;
+
+    .maakaf-sidebar__arrow-left {
+      opacity: 1;
+    }
+  }
+
+  &.tree-root {
+    display: none !important;
+  }
+}
+
+.maakaf-sidebar__tree-label {
+  flex: 0 1 auto;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.maakaf-sidebar__tree-link .maakaf-sidebar__arrow-left {
+  margin-inline-start: auto;
+}
+
+.maakaf-sidebar {
+  .td-sidebar-nav__section .ul-1 {
+    padding: 0 0 8px;
+    margin: 0;
+  }
+
+  .td-sidebar-nav__section .ul-1 ul {
+    padding-inline-start: 0 !important;
+    padding-inline-end: 0 !important;
+  }
+
+  .td-sidebar-nav__section-title {
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .td-sidebar-nav__section .ul-1 > li {
+    margin: 0;
+  }
+}
+
+.td-sidebar {
+  @include media-breakpoint-up(md) {
+    background-color: #fff;
+    border-right: 1px solid #e6e6e6;
+    padding-inline-end: 0.5rem;
+    padding-inline-start: 0;
+    direction: rtl;
+    text-align: right;
+  }
+}
+
+html[data-bs-theme="dark"] {
+  .maakaf-sidebar__item {
+    color: #eff8ff;
+
+    &--active {
+      background: rgba(110, 182, 236, 0.12);
+      border-color: rgba(110, 182, 236, 0.25);
+      color: #6eb6ec;
+    }
+  }
+
+  .maakaf-sidebar__chevron {
+    color: #eff8ff;
+  }
+
+  .maakaf-sidebar__tree-link {
+    color: #eff8ff !important;
+
+    &.active {
+      background: rgba(110, 182, 236, 0.12);
+      border-color: rgba(110, 182, 236, 0.25);
+      color: #6eb6ec !important;
+    }
+  }
+
+  .td-sidebar {
+    @include media-breakpoint-up(md) {
+      background-color: #1d2e4e;
+      border-right-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
 /* rtl:end:ignore */
